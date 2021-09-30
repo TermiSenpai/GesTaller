@@ -30,12 +30,12 @@ namespace Gestaller
         private void InitializeComponent()
         {
             this.btnsMenu = new System.Windows.Forms.Panel();
-            this.btnClientes = new System.Windows.Forms.Button();
-            this.btnDepositos = new System.Windows.Forms.Button();
-            this.btnOrdenes = new System.Windows.Forms.Button();
-            this.btnHistorial = new System.Windows.Forms.Button();
-            this.btnAlmacen = new System.Windows.Forms.Button();
             this.btnOpciones = new System.Windows.Forms.Button();
+            this.btnAlmacen = new System.Windows.Forms.Button();
+            this.btnHistorial = new System.Windows.Forms.Button();
+            this.btnOrdenes = new System.Windows.Forms.Button();
+            this.btnDepositos = new System.Windows.Forms.Button();
+            this.btnClientes = new System.Windows.Forms.Button();
             this.ChildPanel = new System.Windows.Forms.Panel();
             this.btnsMenu.SuspendLayout();
             this.SuspendLayout();
@@ -57,66 +57,21 @@ namespace Gestaller
             this.btnsMenu.Size = new System.Drawing.Size(200, 562);
             this.btnsMenu.TabIndex = 0;
             // 
-            // btnClientes
+            // btnOpciones
             // 
-            this.btnClientes.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnClientes.FlatAppearance.BorderSize = 0;
-            this.btnClientes.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.btnClientes.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnClientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClientes.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.btnClientes.Location = new System.Drawing.Point(0, 0);
-            this.btnClientes.Name = "btnClientes";
-            this.btnClientes.Size = new System.Drawing.Size(200, 55);
-            this.btnClientes.TabIndex = 0;
-            this.btnClientes.Text = "Clientes";
-            this.btnClientes.UseVisualStyleBackColor = true;
-            this.btnClientes.Click += new System.EventHandler(this.btnClientes_Click);
-            // 
-            // btnDepositos
-            // 
-            this.btnDepositos.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnDepositos.FlatAppearance.BorderSize = 0;
-            this.btnDepositos.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.btnDepositos.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnDepositos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDepositos.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.btnDepositos.Location = new System.Drawing.Point(0, 55);
-            this.btnDepositos.Name = "btnDepositos";
-            this.btnDepositos.Size = new System.Drawing.Size(200, 55);
-            this.btnDepositos.TabIndex = 1;
-            this.btnDepositos.Text = "Depósitos";
-            this.btnDepositos.UseVisualStyleBackColor = true;
-            // 
-            // btnOrdenes
-            // 
-            this.btnOrdenes.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnOrdenes.FlatAppearance.BorderSize = 0;
-            this.btnOrdenes.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.btnOrdenes.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnOrdenes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnOrdenes.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.btnOrdenes.Location = new System.Drawing.Point(0, 110);
-            this.btnOrdenes.Name = "btnOrdenes";
-            this.btnOrdenes.Size = new System.Drawing.Size(200, 55);
-            this.btnOrdenes.TabIndex = 2;
-            this.btnOrdenes.Text = "Órdenes";
-            this.btnOrdenes.UseVisualStyleBackColor = true;
-            // 
-            // btnHistorial
-            // 
-            this.btnHistorial.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnHistorial.FlatAppearance.BorderSize = 0;
-            this.btnHistorial.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.btnHistorial.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnHistorial.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHistorial.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.btnHistorial.Location = new System.Drawing.Point(0, 165);
-            this.btnHistorial.Name = "btnHistorial";
-            this.btnHistorial.Size = new System.Drawing.Size(200, 55);
-            this.btnHistorial.TabIndex = 3;
-            this.btnHistorial.Text = "Historial";
-            this.btnHistorial.UseVisualStyleBackColor = true;
+            this.btnOpciones.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnOpciones.FlatAppearance.BorderSize = 0;
+            this.btnOpciones.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.btnOpciones.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnOpciones.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnOpciones.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.btnOpciones.Location = new System.Drawing.Point(0, 275);
+            this.btnOpciones.Name = "btnOpciones";
+            this.btnOpciones.Size = new System.Drawing.Size(200, 55);
+            this.btnOpciones.TabIndex = 5;
+            this.btnOpciones.Text = "Opciones";
+            this.btnOpciones.UseVisualStyleBackColor = true;
+            this.btnOpciones.Click += new System.EventHandler(this.btnOpciones_Click);
             // 
             // btnAlmacen
             // 
@@ -133,20 +88,66 @@ namespace Gestaller
             this.btnAlmacen.Text = "Almacén";
             this.btnAlmacen.UseVisualStyleBackColor = true;
             // 
-            // btnOpciones
+            // btnHistorial
             // 
-            this.btnOpciones.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnOpciones.FlatAppearance.BorderSize = 0;
-            this.btnOpciones.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.btnOpciones.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnOpciones.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnOpciones.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.btnOpciones.Location = new System.Drawing.Point(0, 275);
-            this.btnOpciones.Name = "btnOpciones";
-            this.btnOpciones.Size = new System.Drawing.Size(200, 55);
-            this.btnOpciones.TabIndex = 5;
-            this.btnOpciones.Text = "Opciones";
-            this.btnOpciones.UseVisualStyleBackColor = true;
+            this.btnHistorial.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnHistorial.FlatAppearance.BorderSize = 0;
+            this.btnHistorial.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.btnHistorial.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnHistorial.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHistorial.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.btnHistorial.Location = new System.Drawing.Point(0, 165);
+            this.btnHistorial.Name = "btnHistorial";
+            this.btnHistorial.Size = new System.Drawing.Size(200, 55);
+            this.btnHistorial.TabIndex = 3;
+            this.btnHistorial.Text = "Historial";
+            this.btnHistorial.UseVisualStyleBackColor = true;
+            // 
+            // btnOrdenes
+            // 
+            this.btnOrdenes.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnOrdenes.FlatAppearance.BorderSize = 0;
+            this.btnOrdenes.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.btnOrdenes.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnOrdenes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnOrdenes.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.btnOrdenes.Location = new System.Drawing.Point(0, 110);
+            this.btnOrdenes.Name = "btnOrdenes";
+            this.btnOrdenes.Size = new System.Drawing.Size(200, 55);
+            this.btnOrdenes.TabIndex = 2;
+            this.btnOrdenes.Text = "Órdenes";
+            this.btnOrdenes.UseVisualStyleBackColor = true;
+            // 
+            // btnDepositos
+            // 
+            this.btnDepositos.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnDepositos.FlatAppearance.BorderSize = 0;
+            this.btnDepositos.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.btnDepositos.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnDepositos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDepositos.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.btnDepositos.Location = new System.Drawing.Point(0, 55);
+            this.btnDepositos.Name = "btnDepositos";
+            this.btnDepositos.Size = new System.Drawing.Size(200, 55);
+            this.btnDepositos.TabIndex = 1;
+            this.btnDepositos.Text = "Depósitos";
+            this.btnDepositos.UseVisualStyleBackColor = true;
+            // 
+            // btnClientes
+            // 
+            this.btnClientes.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnClientes.FlatAppearance.BorderSize = 0;
+            this.btnClientes.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.btnClientes.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnClientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClientes.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.btnClientes.Location = new System.Drawing.Point(0, 0);
+            this.btnClientes.Name = "btnClientes";
+            this.btnClientes.Size = new System.Drawing.Size(200, 55);
+            this.btnClientes.TabIndex = 0;
+            this.btnClientes.Text = "Clientes";
+            this.btnClientes.UseVisualStyleBackColor = true;
+            this.btnClientes.Click += new System.EventHandler(this.btnClientes_Click);
             // 
             // ChildPanel
             // 
@@ -168,8 +169,10 @@ namespace Gestaller
             this.Controls.Add(this.btnsMenu);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4);
+            this.MinimumSize = new System.Drawing.Size(800, 600);
             this.Name = "MainMenu";
             this.Text = "GesTaller";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.btnsMenu.ResumeLayout(false);
             this.ResumeLayout(false);
 

@@ -8,3 +8,4 @@ E:\Alex\GesTaller\Gestaller\Gestaller\obj\Debug\Gestaller.csproj.GenerateResourc
 E:\Alex\GesTaller\Gestaller\Gestaller\obj\Debug\Gestaller.csproj.CoreCompileInputs.cache
 E:\Alex\GesTaller\Gestaller\Gestaller\obj\Debug\Gestaller.exe
 E:\Alex\GesTaller\Gestaller\Gestaller\obj\Debug\Gestaller.pdb
+E:\Alex\GesTaller\Gestaller\Gestaller\obj\Debug\Gestaller.Opciones.resources
