@@ -78,9 +78,24 @@ namespace Gestaller
             this.flowLayoutPanel9 = new System.Windows.Forms.FlowLayoutPanel();
             this.lblProvincia = new System.Windows.Forms.Label();
             this.provinciaBox = new System.Windows.Forms.TextBox();
+            this.sqlGroupBox = new System.Windows.Forms.GroupBox();
+            this.sqlFlowPanel = new System.Windows.Forms.FlowLayoutPanel();
+            this.hostFlowPanel = new System.Windows.Forms.FlowLayoutPanel();
+            this.lblHost = new System.Windows.Forms.Label();
+            this.hostBox = new System.Windows.Forms.TextBox();
+            this.flowLayoutPanel10 = new System.Windows.Forms.FlowLayoutPanel();
+            this.lblPort = new System.Windows.Forms.Label();
+            this.portBox = new System.Windows.Forms.TextBox();
+            this.flowLayoutPanel11 = new System.Windows.Forms.FlowLayoutPanel();
+            this.lblUser = new System.Windows.Forms.Label();
+            this.userBox = new System.Windows.Forms.TextBox();
+            this.flowLayoutPanel12 = new System.Windows.Forms.FlowLayoutPanel();
+            this.lblPass = new System.Windows.Forms.Label();
+            this.passBox = new System.Windows.Forms.TextBox();
             this.tabOptions.SuspendLayout();
             this.tabIVA.SuspendLayout();
             this.tabEmpresa.SuspendLayout();
+            this.tabServidor.SuspendLayout();
             this.layoutIVAForm.SuspendLayout();
             this.panelTipo.SuspendLayout();
             this.panelValor.SuspendLayout();
@@ -99,6 +114,12 @@ namespace Gestaller
             this.flowLayoutPanel7.SuspendLayout();
             this.flowLayoutPanel8.SuspendLayout();
             this.flowLayoutPanel9.SuspendLayout();
+            this.sqlGroupBox.SuspendLayout();
+            this.sqlFlowPanel.SuspendLayout();
+            this.hostFlowPanel.SuspendLayout();
+            this.flowLayoutPanel10.SuspendLayout();
+            this.flowLayoutPanel11.SuspendLayout();
+            this.flowLayoutPanel12.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabOptions
@@ -139,6 +160,7 @@ namespace Gestaller
             // 
             // tabServidor
             // 
+            this.tabServidor.Controls.Add(this.sqlGroupBox);
             this.tabServidor.Location = new System.Drawing.Point(4, 29);
             this.tabServidor.Name = "tabServidor";
             this.tabServidor.Padding = new System.Windows.Forms.Padding(3);
@@ -277,12 +299,12 @@ namespace Gestaller
             this.BusinessBox.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.BusinessBox.Controls.Add(this.businessPanel);
             this.BusinessBox.Cursor = System.Windows.Forms.Cursors.Default;
-            this.BusinessBox.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BusinessBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BusinessBox.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.BusinessBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BusinessBox.Location = new System.Drawing.Point(3, 3);
             this.BusinessBox.Name = "BusinessBox";
-            this.BusinessBox.Size = new System.Drawing.Size(986, 152);
+            this.BusinessBox.Size = new System.Drawing.Size(986, 523);
             this.BusinessBox.TabIndex = 0;
             this.BusinessBox.TabStop = false;
             this.BusinessBox.Text = "Datos de empresa";
@@ -598,6 +620,140 @@ namespace Gestaller
             this.provinciaBox.Size = new System.Drawing.Size(100, 26);
             this.provinciaBox.TabIndex = 1;
             // 
+            // sqlGroupBox
+            // 
+            this.sqlGroupBox.AutoSize = true;
+            this.sqlGroupBox.Controls.Add(this.sqlFlowPanel);
+            this.sqlGroupBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.sqlGroupBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sqlGroupBox.Location = new System.Drawing.Point(3, 3);
+            this.sqlGroupBox.Name = "sqlGroupBox";
+            this.sqlGroupBox.Size = new System.Drawing.Size(986, 523);
+            this.sqlGroupBox.TabIndex = 0;
+            this.sqlGroupBox.TabStop = false;
+            this.sqlGroupBox.Text = "SQL";
+            // 
+            // sqlFlowPanel
+            // 
+            this.sqlFlowPanel.AutoSize = true;
+            this.sqlFlowPanel.Controls.Add(this.hostFlowPanel);
+            this.sqlFlowPanel.Controls.Add(this.flowLayoutPanel10);
+            this.sqlFlowPanel.Controls.Add(this.flowLayoutPanel11);
+            this.sqlFlowPanel.Controls.Add(this.flowLayoutPanel12);
+            this.sqlFlowPanel.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.sqlFlowPanel.Location = new System.Drawing.Point(6, 25);
+            this.sqlFlowPanel.Name = "sqlFlowPanel";
+            this.sqlFlowPanel.Size = new System.Drawing.Size(233, 152);
+            this.sqlFlowPanel.TabIndex = 0;
+            // 
+            // hostFlowPanel
+            // 
+            this.hostFlowPanel.AutoSize = true;
+            this.hostFlowPanel.Controls.Add(this.lblHost);
+            this.hostFlowPanel.Controls.Add(this.hostBox);
+            this.hostFlowPanel.Location = new System.Drawing.Point(3, 3);
+            this.hostFlowPanel.Name = "hostFlowPanel";
+            this.hostFlowPanel.Size = new System.Drawing.Size(172, 32);
+            this.hostFlowPanel.TabIndex = 0;
+            // 
+            // lblHost
+            // 
+            this.lblHost.AutoSize = true;
+            this.lblHost.Location = new System.Drawing.Point(3, 5);
+            this.lblHost.Margin = new System.Windows.Forms.Padding(3, 5, 3, 0);
+            this.lblHost.Name = "lblHost";
+            this.lblHost.Size = new System.Drawing.Size(60, 20);
+            this.lblHost.TabIndex = 0;
+            this.lblHost.Text = "HOST";
+            // 
+            // hostBox
+            // 
+            this.hostBox.Location = new System.Drawing.Point(69, 3);
+            this.hostBox.Name = "hostBox";
+            this.hostBox.Size = new System.Drawing.Size(100, 26);
+            this.hostBox.TabIndex = 1;
+            // 
+            // flowLayoutPanel10
+            // 
+            this.flowLayoutPanel10.AutoSize = true;
+            this.flowLayoutPanel10.Controls.Add(this.lblPort);
+            this.flowLayoutPanel10.Controls.Add(this.portBox);
+            this.flowLayoutPanel10.Location = new System.Drawing.Point(3, 41);
+            this.flowLayoutPanel10.Name = "flowLayoutPanel10";
+            this.flowLayoutPanel10.Size = new System.Drawing.Size(171, 32);
+            this.flowLayoutPanel10.TabIndex = 1;
+            // 
+            // lblPort
+            // 
+            this.lblPort.AutoSize = true;
+            this.lblPort.Location = new System.Drawing.Point(3, 5);
+            this.lblPort.Margin = new System.Windows.Forms.Padding(3, 5, 3, 0);
+            this.lblPort.Name = "lblPort";
+            this.lblPort.Size = new System.Drawing.Size(59, 20);
+            this.lblPort.TabIndex = 0;
+            this.lblPort.Text = "PORT";
+            // 
+            // portBox
+            // 
+            this.portBox.Location = new System.Drawing.Point(68, 3);
+            this.portBox.Name = "portBox";
+            this.portBox.Size = new System.Drawing.Size(100, 26);
+            this.portBox.TabIndex = 1;
+            // 
+            // flowLayoutPanel11
+            // 
+            this.flowLayoutPanel11.AutoSize = true;
+            this.flowLayoutPanel11.Controls.Add(this.lblUser);
+            this.flowLayoutPanel11.Controls.Add(this.userBox);
+            this.flowLayoutPanel11.Location = new System.Drawing.Point(3, 79);
+            this.flowLayoutPanel11.Name = "flowLayoutPanel11";
+            this.flowLayoutPanel11.Size = new System.Drawing.Size(171, 32);
+            this.flowLayoutPanel11.TabIndex = 2;
+            // 
+            // lblUser
+            // 
+            this.lblUser.AutoSize = true;
+            this.lblUser.Location = new System.Drawing.Point(3, 5);
+            this.lblUser.Margin = new System.Windows.Forms.Padding(3, 5, 3, 0);
+            this.lblUser.Name = "lblUser";
+            this.lblUser.Size = new System.Drawing.Size(59, 20);
+            this.lblUser.TabIndex = 0;
+            this.lblUser.Text = "USER";
+            // 
+            // userBox
+            // 
+            this.userBox.Location = new System.Drawing.Point(68, 3);
+            this.userBox.Name = "userBox";
+            this.userBox.Size = new System.Drawing.Size(100, 26);
+            this.userBox.TabIndex = 1;
+            // 
+            // flowLayoutPanel12
+            // 
+            this.flowLayoutPanel12.AutoSize = true;
+            this.flowLayoutPanel12.Controls.Add(this.lblPass);
+            this.flowLayoutPanel12.Controls.Add(this.passBox);
+            this.flowLayoutPanel12.Location = new System.Drawing.Point(3, 117);
+            this.flowLayoutPanel12.Name = "flowLayoutPanel12";
+            this.flowLayoutPanel12.Size = new System.Drawing.Size(227, 32);
+            this.flowLayoutPanel12.TabIndex = 3;
+            // 
+            // lblPass
+            // 
+            this.lblPass.AutoSize = true;
+            this.lblPass.Location = new System.Drawing.Point(3, 5);
+            this.lblPass.Margin = new System.Windows.Forms.Padding(3, 5, 3, 0);
+            this.lblPass.Name = "lblPass";
+            this.lblPass.Size = new System.Drawing.Size(115, 20);
+            this.lblPass.TabIndex = 0;
+            this.lblPass.Text = "PASSWORD";
+            // 
+            // passBox
+            // 
+            this.passBox.Location = new System.Drawing.Point(124, 3);
+            this.passBox.Name = "passBox";
+            this.passBox.Size = new System.Drawing.Size(100, 26);
+            this.passBox.TabIndex = 1;
+            // 
             // Opciones
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
@@ -611,6 +767,8 @@ namespace Gestaller
             this.tabOptions.ResumeLayout(false);
             this.tabIVA.ResumeLayout(false);
             this.tabEmpresa.ResumeLayout(false);
+            this.tabServidor.ResumeLayout(false);
+            this.tabServidor.PerformLayout();
             this.layoutIVAForm.ResumeLayout(false);
             this.layoutIVAForm.PerformLayout();
             this.panelTipo.ResumeLayout(false);
@@ -644,6 +802,18 @@ namespace Gestaller
             this.flowLayoutPanel8.PerformLayout();
             this.flowLayoutPanel9.ResumeLayout(false);
             this.flowLayoutPanel9.PerformLayout();
+            this.sqlGroupBox.ResumeLayout(false);
+            this.sqlGroupBox.PerformLayout();
+            this.sqlFlowPanel.ResumeLayout(false);
+            this.sqlFlowPanel.PerformLayout();
+            this.hostFlowPanel.ResumeLayout(false);
+            this.hostFlowPanel.PerformLayout();
+            this.flowLayoutPanel10.ResumeLayout(false);
+            this.flowLayoutPanel10.PerformLayout();
+            this.flowLayoutPanel11.ResumeLayout(false);
+            this.flowLayoutPanel11.PerformLayout();
+            this.flowLayoutPanel12.ResumeLayout(false);
+            this.flowLayoutPanel12.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -699,5 +869,19 @@ namespace Gestaller
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel9;
         private System.Windows.Forms.Label lblProvincia;
         private System.Windows.Forms.TextBox provinciaBox;
+        private System.Windows.Forms.GroupBox sqlGroupBox;
+        private System.Windows.Forms.FlowLayoutPanel sqlFlowPanel;
+        private System.Windows.Forms.FlowLayoutPanel hostFlowPanel;
+        private System.Windows.Forms.Label lblHost;
+        private System.Windows.Forms.TextBox hostBox;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel10;
+        private System.Windows.Forms.Label lblPort;
+        private System.Windows.Forms.TextBox portBox;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel11;
+        private System.Windows.Forms.Label lblUser;
+        private System.Windows.Forms.TextBox userBox;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel12;
+        private System.Windows.Forms.Label lblPass;
+        private System.Windows.Forms.TextBox passBox;
     }
 }
