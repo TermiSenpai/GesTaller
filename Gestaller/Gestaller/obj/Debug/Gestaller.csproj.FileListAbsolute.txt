@@ -1,0 +1,10 @@
+E:\Alex\GesTaller\Gestaller\Gestaller\bin\Debug\Gestaller.exe.config
+E:\Alex\GesTaller\Gestaller\Gestaller\bin\Debug\Gestaller.exe
+E:\Alex\GesTaller\Gestaller\Gestaller\bin\Debug\Gestaller.pdb
+E:\Alex\GesTaller\Gestaller\Gestaller\obj\Debug\Gestaller.csproj.AssemblyReference.cache
+E:\Alex\GesTaller\Gestaller\Gestaller\obj\Debug\Gestaller.MainMenu.resources
+E:\Alex\GesTaller\Gestaller\Gestaller\obj\Debug\Gestaller.Properties.Resources.resources
+E:\Alex\GesTaller\Gestaller\Gestaller\obj\Debug\Gestaller.csproj.GenerateResource.cache
+E:\Alex\GesTaller\Gestaller\Gestaller\obj\Debug\Gestaller.csproj.CoreCompileInputs.cache
+E:\Alex\GesTaller\Gestaller\Gestaller\obj\Debug\Gestaller.exe
+E:\Alex\GesTaller\Gestaller\Gestaller\obj\Debug\Gestaller.pdb
