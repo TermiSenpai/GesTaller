@@ -36,9 +36,21 @@ namespace Gestaller
             this.tabla1_clientes_V = new System.Windows.Forms.TableLayoutPanel();
             this.tabla2_clientes_V = new System.Windows.Forms.TableLayoutPanel();
             this.tabla3_clientes_V = new System.Windows.Forms.TableLayoutPanel();
+            this.Encabezado1 = new System.Windows.Forms.Label();
+            this.Encabezado2 = new System.Windows.Forms.Label();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.botonVaciar = new System.Windows.Forms.Button();
+            this.botonAnadir = new System.Windows.Forms.Button();
+            this.botonModificar = new System.Windows.Forms.Button();
+            this.botonBorrar = new System.Windows.Forms.Button();
+            this.dataGrid = new System.Windows.Forms.DataGridView();
             this.tabControl_Clientes.SuspendLayout();
             this.tab_clientes_vehiculos.SuspendLayout();
             this.tabla1_clientes_V.SuspendLayout();
+            this.tabla2_clientes_V.SuspendLayout();
+            this.tabla3_clientes_V.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGrid)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl_Clientes
@@ -94,6 +106,8 @@ namespace Gestaller
             this.tabla1_clientes_V.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tabla1_clientes_V.Controls.Add(this.tabla3_clientes_V, 0, 1);
             this.tabla1_clientes_V.Controls.Add(this.tabla2_clientes_V, 0, 0);
+            this.tabla1_clientes_V.Controls.Add(this.flowLayoutPanel1, 0, 2);
+            this.tabla1_clientes_V.Controls.Add(this.dataGrid, 0, 3);
             this.tabla1_clientes_V.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabla1_clientes_V.Location = new System.Drawing.Point(0, 0);
             this.tabla1_clientes_V.Margin = new System.Windows.Forms.Padding(0);
@@ -110,6 +124,7 @@ namespace Gestaller
             // 
             this.tabla2_clientes_V.ColumnCount = 1;
             this.tabla2_clientes_V.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tabla2_clientes_V.Controls.Add(this.Encabezado1, 0, 0);
             this.tabla2_clientes_V.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabla2_clientes_V.Location = new System.Drawing.Point(0, 0);
             this.tabla2_clientes_V.Margin = new System.Windows.Forms.Padding(0);
@@ -124,6 +139,7 @@ namespace Gestaller
             // 
             this.tabla3_clientes_V.ColumnCount = 1;
             this.tabla3_clientes_V.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tabla3_clientes_V.Controls.Add(this.Encabezado2, 0, 0);
             this.tabla3_clientes_V.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabla3_clientes_V.Location = new System.Drawing.Point(0, 84);
             this.tabla3_clientes_V.Margin = new System.Windows.Forms.Padding(0);
@@ -133,6 +149,85 @@ namespace Gestaller
             this.tabla3_clientes_V.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 81.81818F));
             this.tabla3_clientes_V.Size = new System.Drawing.Size(792, 84);
             this.tabla3_clientes_V.TabIndex = 1;
+            // 
+            // Encabezado1
+            // 
+            this.Encabezado1.AutoSize = true;
+            this.Encabezado1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Encabezado1.Location = new System.Drawing.Point(3, 0);
+            this.Encabezado1.Name = "Encabezado1";
+            this.Encabezado1.Size = new System.Drawing.Size(786, 15);
+            this.Encabezado1.TabIndex = 0;
+            this.Encabezado1.Text = "DATOS DE FACTURACION DEL CLIENTE";
+            // 
+            // Encabezado2
+            // 
+            this.Encabezado2.AutoSize = true;
+            this.Encabezado2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Encabezado2.Location = new System.Drawing.Point(3, 0);
+            this.Encabezado2.Name = "Encabezado2";
+            this.Encabezado2.Size = new System.Drawing.Size(786, 15);
+            this.Encabezado2.TabIndex = 0;
+            this.Encabezado2.Text = "DATOS DEL VEHICULO";
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Controls.Add(this.botonVaciar);
+            this.flowLayoutPanel1.Controls.Add(this.botonAnadir);
+            this.flowLayoutPanel1.Controls.Add(this.botonModificar);
+            this.flowLayoutPanel1.Controls.Add(this.botonBorrar);
+            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(447, 168);
+            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(0);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(345, 63);
+            this.flowLayoutPanel1.TabIndex = 2;
+            // 
+            // botonVaciar
+            // 
+            this.botonVaciar.Location = new System.Drawing.Point(6, 3);
+            this.botonVaciar.Margin = new System.Windows.Forms.Padding(6, 3, 3, 3);
+            this.botonVaciar.Name = "botonVaciar";
+            this.botonVaciar.Size = new System.Drawing.Size(75, 56);
+            this.botonVaciar.TabIndex = 0;
+            this.botonVaciar.Text = "Vaciar";
+            this.botonVaciar.UseVisualStyleBackColor = true;
+            // 
+            // botonAnadir
+            // 
+            this.botonAnadir.Location = new System.Drawing.Point(87, 3);
+            this.botonAnadir.Name = "botonAnadir";
+            this.botonAnadir.Size = new System.Drawing.Size(75, 56);
+            this.botonAnadir.TabIndex = 1;
+            this.botonAnadir.Text = "Añadir Cliente";
+            this.botonAnadir.UseVisualStyleBackColor = true;
+            // 
+            // botonModificar
+            // 
+            this.botonModificar.Location = new System.Drawing.Point(168, 3);
+            this.botonModificar.Name = "botonModificar";
+            this.botonModificar.Size = new System.Drawing.Size(75, 56);
+            this.botonModificar.TabIndex = 2;
+            this.botonModificar.Text = "Modificar";
+            this.botonModificar.UseVisualStyleBackColor = true;
+            // 
+            // botonBorrar
+            // 
+            this.botonBorrar.Location = new System.Drawing.Point(249, 3);
+            this.botonBorrar.Name = "botonBorrar";
+            this.botonBorrar.Size = new System.Drawing.Size(89, 56);
+            this.botonBorrar.TabIndex = 3;
+            this.botonBorrar.Text = "Borrar";
+            this.botonBorrar.UseVisualStyleBackColor = true;
+            // 
+            // dataGrid
+            // 
+            this.dataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGrid.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGrid.Location = new System.Drawing.Point(3, 234);
+            this.dataGrid.Name = "dataGrid";
+            this.dataGrid.Size = new System.Drawing.Size(786, 187);
+            this.dataGrid.TabIndex = 3;
             // 
             // Clientes
             // 
@@ -146,6 +241,12 @@ namespace Gestaller
             this.tabControl_Clientes.ResumeLayout(false);
             this.tab_clientes_vehiculos.ResumeLayout(false);
             this.tabla1_clientes_V.ResumeLayout(false);
+            this.tabla2_clientes_V.ResumeLayout(false);
+            this.tabla2_clientes_V.PerformLayout();
+            this.tabla3_clientes_V.ResumeLayout(false);
+            this.tabla3_clientes_V.PerformLayout();
+            this.flowLayoutPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGrid)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -159,5 +260,13 @@ namespace Gestaller
         private System.Windows.Forms.TableLayoutPanel tabla1_clientes_V;
         private System.Windows.Forms.TableLayoutPanel tabla2_clientes_V;
         private System.Windows.Forms.TableLayoutPanel tabla3_clientes_V;
+        private System.Windows.Forms.Label Encabezado2;
+        private System.Windows.Forms.Label Encabezado1;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.Button botonVaciar;
+        private System.Windows.Forms.Button botonAnadir;
+        private System.Windows.Forms.Button botonModificar;
+        private System.Windows.Forms.Button botonBorrar;
+        private System.Windows.Forms.DataGridView dataGrid;
     }
 }
