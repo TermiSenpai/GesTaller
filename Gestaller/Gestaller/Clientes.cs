@@ -16,5 +16,10 @@ namespace Gestaller
         {
             InitializeComponent();
         }
+
+        private void tabla2_clientes_V_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
