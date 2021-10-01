@@ -1,0 +1,10 @@
+C:\Users\Alvaro\Documents\Gestaller\Gestaller\Gestaller\bin\Debug\Gestaller.exe.config
+C:\Users\Alvaro\Documents\Gestaller\Gestaller\Gestaller\bin\Debug\Gestaller.exe
+C:\Users\Alvaro\Documents\Gestaller\Gestaller\Gestaller\bin\Debug\Gestaller.pdb
+C:\Users\Alvaro\Documents\Gestaller\Gestaller\Gestaller\obj\Debug\Gestaller.csproj.AssemblyReference.cache
+C:\Users\Alvaro\Documents\Gestaller\Gestaller\Gestaller\obj\Debug\Gestaller.Clientes.resources
+C:\Users\Alvaro\Documents\Gestaller\Gestaller\Gestaller\obj\Debug\Gestaller.Properties.Resources.resources
+C:\Users\Alvaro\Documents\Gestaller\Gestaller\Gestaller\obj\Debug\Gestaller.csproj.GenerateResource.cache
+C:\Users\Alvaro\Documents\Gestaller\Gestaller\Gestaller\obj\Debug\Gestaller.csproj.CoreCompileInputs.cache
+C:\Users\Alvaro\Documents\Gestaller\Gestaller\Gestaller\obj\Debug\Gestaller.exe
+C:\Users\Alvaro\Documents\Gestaller\Gestaller\Gestaller\obj\Debug\Gestaller.pdb
