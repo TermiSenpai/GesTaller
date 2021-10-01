@@ -33,7 +33,12 @@ namespace Gestaller
             this.tab_clientes_vehiculos = new System.Windows.Forms.TabPage();
             this.tab_datos_bancarios = new System.Windows.Forms.TabPage();
             this.tab_otras_direcciones = new System.Windows.Forms.TabPage();
+            this.tabla1_clientes_V = new System.Windows.Forms.TableLayoutPanel();
+            this.tabla2_clientes_V = new System.Windows.Forms.TableLayoutPanel();
+            this.tabla3_clientes_V = new System.Windows.Forms.TableLayoutPanel();
             this.tabControl_Clientes.SuspendLayout();
+            this.tab_clientes_vehiculos.SuspendLayout();
+            this.tabla1_clientes_V.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl_Clientes
@@ -51,11 +56,11 @@ namespace Gestaller
             // 
             // tab_clientes_vehiculos
             // 
+            this.tab_clientes_vehiculos.Controls.Add(this.tabla1_clientes_V);
             this.tab_clientes_vehiculos.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tab_clientes_vehiculos.Location = new System.Drawing.Point(4, 22);
             this.tab_clientes_vehiculos.Margin = new System.Windows.Forms.Padding(0);
             this.tab_clientes_vehiculos.Name = "tab_clientes_vehiculos";
-            this.tab_clientes_vehiculos.Padding = new System.Windows.Forms.Padding(3);
             this.tab_clientes_vehiculos.Size = new System.Drawing.Size(792, 424);
             this.tab_clientes_vehiculos.TabIndex = 0;
             this.tab_clientes_vehiculos.Text = "Clientes-Vehiculos";
@@ -83,6 +88,52 @@ namespace Gestaller
             this.tab_otras_direcciones.Text = "Otras Direcciones";
             this.tab_otras_direcciones.UseVisualStyleBackColor = true;
             // 
+            // tabla1_clientes_V
+            // 
+            this.tabla1_clientes_V.ColumnCount = 1;
+            this.tabla1_clientes_V.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tabla1_clientes_V.Controls.Add(this.tabla3_clientes_V, 0, 1);
+            this.tabla1_clientes_V.Controls.Add(this.tabla2_clientes_V, 0, 0);
+            this.tabla1_clientes_V.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabla1_clientes_V.Location = new System.Drawing.Point(0, 0);
+            this.tabla1_clientes_V.Margin = new System.Windows.Forms.Padding(0);
+            this.tabla1_clientes_V.Name = "tabla1_clientes_V";
+            this.tabla1_clientes_V.RowCount = 4;
+            this.tabla1_clientes_V.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tabla1_clientes_V.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tabla1_clientes_V.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tabla1_clientes_V.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 45F));
+            this.tabla1_clientes_V.Size = new System.Drawing.Size(792, 424);
+            this.tabla1_clientes_V.TabIndex = 0;
+            // 
+            // tabla2_clientes_V
+            // 
+            this.tabla2_clientes_V.ColumnCount = 1;
+            this.tabla2_clientes_V.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tabla2_clientes_V.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabla2_clientes_V.Location = new System.Drawing.Point(0, 0);
+            this.tabla2_clientes_V.Margin = new System.Windows.Forms.Padding(0);
+            this.tabla2_clientes_V.Name = "tabla2_clientes_V";
+            this.tabla2_clientes_V.RowCount = 2;
+            this.tabla2_clientes_V.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 18.18182F));
+            this.tabla2_clientes_V.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 81.81818F));
+            this.tabla2_clientes_V.Size = new System.Drawing.Size(792, 84);
+            this.tabla2_clientes_V.TabIndex = 0;
+            // 
+            // tabla3_clientes_V
+            // 
+            this.tabla3_clientes_V.ColumnCount = 1;
+            this.tabla3_clientes_V.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tabla3_clientes_V.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabla3_clientes_V.Location = new System.Drawing.Point(0, 84);
+            this.tabla3_clientes_V.Margin = new System.Windows.Forms.Padding(0);
+            this.tabla3_clientes_V.Name = "tabla3_clientes_V";
+            this.tabla3_clientes_V.RowCount = 2;
+            this.tabla3_clientes_V.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 18.18182F));
+            this.tabla3_clientes_V.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 81.81818F));
+            this.tabla3_clientes_V.Size = new System.Drawing.Size(792, 84);
+            this.tabla3_clientes_V.TabIndex = 1;
+            // 
             // Clientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -90,8 +141,11 @@ namespace Gestaller
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.tabControl_Clientes);
             this.Name = "Clientes";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Clientes";
             this.tabControl_Clientes.ResumeLayout(false);
+            this.tab_clientes_vehiculos.ResumeLayout(false);
+            this.tabla1_clientes_V.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -102,5 +156,8 @@ namespace Gestaller
         private System.Windows.Forms.TabPage tab_clientes_vehiculos;
         private System.Windows.Forms.TabPage tab_datos_bancarios;
         private System.Windows.Forms.TabPage tab_otras_direcciones;
+        private System.Windows.Forms.TableLayoutPanel tabla1_clientes_V;
+        private System.Windows.Forms.TableLayoutPanel tabla2_clientes_V;
+        private System.Windows.Forms.TableLayoutPanel tabla3_clientes_V;
     }
 }
