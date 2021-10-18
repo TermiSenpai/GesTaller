@@ -20,7 +20,7 @@ namespace Gestaller
         #region Eventos
         private void btnClientes_Click(object sender, EventArgs e)
         {
-            //showChildForm(new Clientes());
+            showChildForm(new Clientes());
         }
         private void btnOpciones_Click(object sender, EventArgs e)
         {
