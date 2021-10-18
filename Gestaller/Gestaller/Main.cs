@@ -12,6 +12,7 @@ namespace Gestaller
 {
     public partial class MainMenu : Form
     {
+        Form _activeForm = null;
         public MainMenu()
         {
             InitializeComponent();
@@ -29,17 +30,19 @@ namespace Gestaller
         #endregion
 
         #region Funciones privadas
-        Form activeForm = null;
         private void showChildForm(Form childForm)
         {
             //si hay un formulario activo se cierra
-            if (activeForm != null)
-                activeForm.Close();
+            if (_activeForm != null)
+                _activeForm.Close();
+
             //se asigna el nuevo formulario
-            activeForm = childForm;
+            _activeForm = childForm;
             childForm.TopLevel = false;
+
             //se oculta el borde del nuevo formulario cargado
             childForm.FormBorderStyle = FormBorderStyle.None;
+
             //se ajusta a todo el espacio del panel
             childForm.Dock = DockStyle.Fill;
             ChildPanel.Controls.Add(childForm);
