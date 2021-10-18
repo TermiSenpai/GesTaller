@@ -34,7 +34,7 @@ namespace Gestaller
             this.btnAlmacen = new System.Windows.Forms.Button();
             this.btnHistorial = new System.Windows.Forms.Button();
             this.btnOrdenes = new System.Windows.Forms.Button();
-            this.btnDepositos = new System.Windows.Forms.Button();
+            this.btnRecepciones = new System.Windows.Forms.Button();
             this.btnClientes = new System.Windows.Forms.Button();
             this.ChildPanel = new System.Windows.Forms.Panel();
             this.btnsMenu.SuspendLayout();
@@ -49,7 +49,7 @@ namespace Gestaller
             this.btnsMenu.Controls.Add(this.btnAlmacen);
             this.btnsMenu.Controls.Add(this.btnHistorial);
             this.btnsMenu.Controls.Add(this.btnOrdenes);
-            this.btnsMenu.Controls.Add(this.btnDepositos);
+            this.btnsMenu.Controls.Add(this.btnRecepciones);
             this.btnsMenu.Controls.Add(this.btnClientes);
             this.btnsMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.btnsMenu.Location = new System.Drawing.Point(0, 0);
@@ -118,20 +118,21 @@ namespace Gestaller
             this.btnOrdenes.Text = "Órdenes";
             this.btnOrdenes.UseVisualStyleBackColor = true;
             // 
-            // btnDepositos
+            // btnRecepciones
             // 
-            this.btnDepositos.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnDepositos.FlatAppearance.BorderSize = 0;
-            this.btnDepositos.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.btnDepositos.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnDepositos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDepositos.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.btnDepositos.Location = new System.Drawing.Point(0, 55);
-            this.btnDepositos.Name = "btnDepositos";
-            this.btnDepositos.Size = new System.Drawing.Size(200, 55);
-            this.btnDepositos.TabIndex = 1;
-            this.btnDepositos.Text = "Depósitos";
-            this.btnDepositos.UseVisualStyleBackColor = true;
+            this.btnRecepciones.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnRecepciones.FlatAppearance.BorderSize = 0;
+            this.btnRecepciones.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.btnRecepciones.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnRecepciones.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRecepciones.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.btnRecepciones.Location = new System.Drawing.Point(0, 55);
+            this.btnRecepciones.Name = "btnRecepciones";
+            this.btnRecepciones.Size = new System.Drawing.Size(200, 55);
+            this.btnRecepciones.TabIndex = 1;
+            this.btnRecepciones.Text = "Recepciones";
+            this.btnRecepciones.UseVisualStyleBackColor = true;
+            this.btnRecepciones.Click += new System.EventHandler(this.btnRecepciones_Click);
             // 
             // btnClientes
             // 
@@ -162,7 +163,7 @@ namespace Gestaller
             // 
             // MainMenu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1000, 562);
             this.Controls.Add(this.ChildPanel);
@@ -186,7 +187,7 @@ namespace Gestaller
         private System.Windows.Forms.Button btnAlmacen;
         private System.Windows.Forms.Button btnHistorial;
         private System.Windows.Forms.Button btnOrdenes;
-        private System.Windows.Forms.Button btnDepositos;
+        private System.Windows.Forms.Button btnRecepciones;
         private System.Windows.Forms.Panel ChildPanel;
     }
 }

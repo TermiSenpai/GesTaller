@@ -22,6 +22,10 @@ namespace Gestaller
         {
             showChildForm(new Clientes());
         }
+        private void btnRecepciones_Click(object sender, EventArgs e)
+        {
+            showChildForm(new Recepciones());
+        }
         private void btnOpciones_Click(object sender, EventArgs e)
         {
             showChildForm(new Opciones());
