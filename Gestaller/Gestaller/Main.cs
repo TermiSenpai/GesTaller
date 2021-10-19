@@ -30,6 +30,10 @@ namespace Gestaller
         {
             showChildForm(new Ordenes());
         }
+        private void btnHistorial_Click(object sender, EventArgs e)
+        {
+            showChildForm(new Historial());
+        }
         private void btnOpciones_Click(object sender, EventArgs e)
         {
             showChildForm(new Opciones());

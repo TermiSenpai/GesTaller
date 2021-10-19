@@ -102,6 +102,7 @@ namespace Gestaller
             this.btnHistorial.TabIndex = 3;
             this.btnHistorial.Text = "Historial";
             this.btnHistorial.UseVisualStyleBackColor = true;
+            this.btnHistorial.Click += new System.EventHandler(this.btnHistorial_Click);
             // 
             // btnOrdenes
             // 
