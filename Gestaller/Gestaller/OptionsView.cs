@@ -10,11 +10,21 @@ using System.Windows.Forms;
 
 namespace Gestaller
 {
-    public partial class Recepciones : Form
+    public partial class OptionsView : Form
     {
-        public Recepciones()
+        public OptionsView()
         {
             InitializeComponent();
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void namePanel_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

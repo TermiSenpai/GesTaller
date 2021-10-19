@@ -1,7 +1,7 @@
 ﻿
 namespace Gestaller
 {
-    partial class Opciones
+    partial class OptionsView
     {
         /// <summary>
         /// Required designer variable.

@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace Gestaller
 {
-    public partial class Clientes : Form
+    public partial class IncomingView : Form
     {
-        public Clientes()
+        public IncomingView()
         {
             InitializeComponent();
-        }
-
-        private void tabla2_clientes_V_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }

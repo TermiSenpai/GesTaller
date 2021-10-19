@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Gestaller
 {
-    public partial class Almacen : Form
+    public partial class WarehouseView : Form
     {
-        public Almacen()
+        public WarehouseView()
         {
             InitializeComponent();
         }

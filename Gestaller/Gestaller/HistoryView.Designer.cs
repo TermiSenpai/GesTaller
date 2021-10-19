@@ -1,7 +1,7 @@
 ﻿
 namespace Gestaller
 {
-    partial class Almacen
+    partial class HistoryView
     {
         /// <summary>
         /// Required designer variable.
@@ -35,20 +35,20 @@ namespace Gestaller
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(602, 55);
+            this.label1.Location = new System.Drawing.Point(88, 377);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(186, 13);
+            this.label1.Size = new System.Drawing.Size(237, 13);
             this.label1.TabIndex = 0;
-            this.label1.Text = " te encuentras en la Vista de Almacen";
+            this.label1.Text = "Este label indica que estás en la vista de historial";
             // 
-            // Almacen
+            // Historial
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label1);
-            this.Name = "Almacen";
-            this.Text = "Almacen";
+            this.Name = "Historial";
+            this.Text = "Historial";
             this.ResumeLayout(false);
             this.PerformLayout();
 

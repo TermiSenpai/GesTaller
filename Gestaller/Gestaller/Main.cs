@@ -20,27 +20,27 @@ namespace Gestaller
         #region Eventos
         private void btnClientes_Click(object sender, EventArgs e)
         {
-            showChildForm(new Clientes());
+            showChildForm(new ClientView());
         }
         private void btnRecepciones_Click(object sender, EventArgs e)
         {
-            showChildForm(new Recepciones());
+            showChildForm(new IncomingView());
         }
         private void btnOrdenes_Click(object sender, EventArgs e)
         {
-            showChildForm(new Ordenes());
+            showChildForm(new OrdersView());
         }
         private void btnHistorial_Click(object sender, EventArgs e)
         {
-            showChildForm(new Historial());
+            showChildForm(new HistoryView());
         }
         private void btnAlmacen_Click(object sender, EventArgs e)
         {
-            showChildForm(new Almacen());
+            showChildForm(new WarehouseView());
         }
         private void btnOpciones_Click(object sender, EventArgs e)
         {
-            showChildForm(new Opciones());
+            showChildForm(new OptionsView());
         }
 
         #endregion

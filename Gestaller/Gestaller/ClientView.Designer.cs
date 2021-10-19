@@ -1,7 +1,7 @@
 ﻿
 namespace Gestaller
 {
-    partial class Clientes
+    partial class ClientView
     {
         /// <summary>
         /// Required designer variable.

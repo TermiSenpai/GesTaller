@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Gestaller
 {
-    public partial class Ordenes : Form
+    public partial class HistoryView : Form
     {
-        public Ordenes()
+        public HistoryView()
         {
             InitializeComponent();
         }

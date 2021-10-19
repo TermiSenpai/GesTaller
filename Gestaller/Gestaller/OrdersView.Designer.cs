@@ -1,7 +1,7 @@
 ﻿
 namespace Gestaller
 {
-    partial class Ordenes
+    partial class OrdersView
     {
         /// <summary>
         /// Required designer variable.
