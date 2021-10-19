@@ -87,6 +87,7 @@ namespace Gestaller
             this.btnAlmacen.TabIndex = 4;
             this.btnAlmacen.Text = "Almacén";
             this.btnAlmacen.UseVisualStyleBackColor = true;
+            this.btnAlmacen.Click += new System.EventHandler(this.btnAlmacen_Click);
             // 
             // btnHistorial
             // 

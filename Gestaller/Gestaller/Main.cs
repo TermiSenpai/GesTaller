@@ -34,6 +34,10 @@ namespace Gestaller
         {
             showChildForm(new Historial());
         }
+        private void btnAlmacen_Click(object sender, EventArgs e)
+        {
+            showChildForm(new Almacen());
+        }
         private void btnOpciones_Click(object sender, EventArgs e)
         {
             showChildForm(new Opciones());
@@ -63,5 +67,6 @@ namespace Gestaller
             childForm.Show();
         }
         #endregion
+
     }
 }
