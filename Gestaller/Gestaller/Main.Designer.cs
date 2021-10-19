@@ -117,6 +117,7 @@ namespace Gestaller
             this.btnOrdenes.TabIndex = 2;
             this.btnOrdenes.Text = "Órdenes";
             this.btnOrdenes.UseVisualStyleBackColor = true;
+            this.btnOrdenes.Click += new System.EventHandler(this.btnOrdenes_Click);
             // 
             // btnRecepciones
             // 

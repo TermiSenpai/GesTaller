@@ -26,6 +26,10 @@ namespace Gestaller
         {
             showChildForm(new Recepciones());
         }
+        private void btnOrdenes_Click(object sender, EventArgs e)
+        {
+            showChildForm(new Ordenes());
+        }
         private void btnOpciones_Click(object sender, EventArgs e)
         {
             showChildForm(new Opciones());
@@ -55,6 +59,5 @@ namespace Gestaller
             childForm.Show();
         }
         #endregion
-
     }
 }
