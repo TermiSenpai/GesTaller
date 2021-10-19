@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace Gestaller
 {
-    public partial class Opciones : Form
+    public partial class HistoryView : Form
     {
-        public Opciones()
+        public HistoryView()
         {
             InitializeComponent();
-        }
-
-        private void panel3_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void namePanel_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }
