@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,6 +17,7 @@ namespace Gestaller
         {
             InitializeComponent();
         }
+
         #region Eventos
         private void btnClientes_Click(object sender, EventArgs e)
         {
@@ -43,6 +44,7 @@ namespace Gestaller
             showChildForm(new OptionsView());
         }
 
+
         #endregion
 
         #region Funciones privadas
@@ -68,5 +70,32 @@ namespace Gestaller
         }
         #endregion
 
-    }
-}
+        #region FormEvents
+        private void MainMenu_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            switch (WindowState)
+            {
+                case FormWindowState.Maximized:
+                    Properties.Settings.Default.Location = RestoreBounds.Location;
+                    Properties.Settings.Default.Size = RestoreBounds.Size;
+                    Properties.Settings.Default.Maximized = true;
+                    Properties.Settings.Default.Minimized = false;
+                    break;
+
+                case FormWindowState.Normal:
+                    Properties.Settings.Default.Location = Location;
+                    Properties.Settings.Default.Size = Size;
+                    Properties.Settings.Default.Maximized = false;
+                    Properties.Settings.Default.Minimized = false;
+                    break;
+
+                default:
+                    Properties.Settings.Default.Location = RestoreBounds.Location;
+                    Properties.Settings.Default.Size = RestoreBounds.Size;
+                    Properties.Settings.Default.Maximized = false;
+                    Properties.Settings.Default.Minimized = true;
+                    break;
+            }
+
+            Properties.Settings.Default.Save();
+        }
