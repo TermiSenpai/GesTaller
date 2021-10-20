@@ -46,25 +46,73 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Views\CueComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Views\CueTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Views\WarehouseView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\WarehouseView.Designer.cs">
+      <DependentUpon>WarehouseView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\HistoryView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\HistoryView.Designer.cs">
+      <DependentUpon>HistoryView.cs</DependentUpon>
+    </Compile>
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Main.Designer.cs">
       <DependentUpon>Main.cs</DependentUpon>
     </Compile>
-    <Compile Include="Opciones.cs">
+    <Compile Include="Views\OptionsView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Opciones.Designer.cs">
-      <DependentUpon>Opciones.cs</DependentUpon>
+    <Compile Include="Views\OptionsView.Designer.cs">
+      <DependentUpon>OptionsView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ClientView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\ClientView.Designer.cs">
+      <DependentUpon>ClientView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\OrdersView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\OrdersView.Designer.cs">
+      <DependentUpon>OrdersView.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\IncomingView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\IncomingView.Designer.cs">
+      <DependentUpon>IncomingView.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Views\WarehouseView.resx">
+      <DependentUpon>WarehouseView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ClientView.resx">
+      <DependentUpon>ClientView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\HistoryView.resx">
+      <DependentUpon>HistoryView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Opciones.resx">
-      <DependentUpon>Opciones.cs</DependentUpon>
+    <EmbeddedResource Include="Views\OptionsView.resx">
+      <DependentUpon>OptionsView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\OrdersView.resx">
+      <DependentUpon>OrdersView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -76,6 +124,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Views\IncomingView.resx">
+      <DependentUpon>IncomingView.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
