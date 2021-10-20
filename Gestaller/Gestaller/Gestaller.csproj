@@ -47,6 +47,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Settings.cs" />
+    <Compile Include="Views\CueComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Views\CueTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Views\WarehouseView.cs">
       <SubType>Form</SubType>
     </Compile>
