@@ -16,7 +16,9 @@ namespace Gestaller
         public MainMenu()
         {
             InitializeComponent();
+            adaptForm(IsOnScreen(this));
         }
+
         #region Eventos
         private void btnClientes_Click(object sender, EventArgs e)
         {
@@ -66,6 +68,88 @@ namespace Gestaller
             childForm.BringToFront();
             childForm.Show();
         }
+
+        private bool IsOnScreen(Form form)
+        {
+            Screen[] screens = Screen.AllScreens;
+            
+            foreach(Screen screen in screens)
+            {
+                Rectangle formRectangle = new Rectangle(form.Left, form.Top,
+                                                         form.Width, form.Height);
+                if (screen.WorkingArea.Contains(formRectangle))
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+        // TODO
+        // Detectar desaparición de segunda pantalla
+        private void adaptForm(bool visible)
+        { 
+            if (!visible)
+            {
+                this.Location = new Point(0, 0);
+            }
+        }
+
+        #endregion
+
+        #region FormEvents
+        private void MainMenu_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            switch (WindowState)
+            {
+                case FormWindowState.Maximized:
+                    Properties.Settings.Default.Location = RestoreBounds.Location;
+                    Properties.Settings.Default.Size = RestoreBounds.Size;
+                    Properties.Settings.Default.Maximized = true;
+                    Properties.Settings.Default.Minimized = false;
+                    break;
+
+                case FormWindowState.Normal:
+                    Properties.Settings.Default.Location = Location;
+                    Properties.Settings.Default.Size = Size;
+                    Properties.Settings.Default.Maximized = false;
+                    Properties.Settings.Default.Minimized = false;
+                    break;
+
+                default:
+                    Properties.Settings.Default.Location = RestoreBounds.Location;
+                    Properties.Settings.Default.Size = RestoreBounds.Size;
+                    Properties.Settings.Default.Maximized = false;
+                    Properties.Settings.Default.Minimized = true;
+                    break;
+            }
+
+            Properties.Settings.Default.Save();
+        }
+
+        private void MainMenu_Load(object sender, EventArgs e)
+        {
+            if (Properties.Settings.Default.Maximized)
+            {
+                WindowState = FormWindowState.Maximized;
+                Location = Properties.Settings.Default.Location;
+                Size = Properties.Settings.Default.Size;
+            }
+
+            else if (Properties.Settings.Default.Minimized)
+            {
+                WindowState = FormWindowState.Minimized;
+                Location = Properties.Settings.Default.Location;
+                Size = Properties.Settings.Default.Size;
+            }
+
+            else
+            {
+                Location = Properties.Settings.Default.Location;
+                Size = Properties.Settings.Default.Size;
+            }
+        }
+
+
         #endregion
 
     }
