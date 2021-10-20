@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,6 +16,7 @@ namespace Gestaller
         public MainMenu()
         {
             InitializeComponent();
+            adaptForm(IsOnScreen(this));
         }
 
         #region Eventos
@@ -43,7 +44,6 @@ namespace Gestaller
         {
             showChildForm(new OptionsView());
         }
-
 
         #endregion
 
@@ -84,6 +84,15 @@ namespace Gestaller
             }
             return false;
         }
+
+        private void adaptForm(bool visible)
+        {
+            if (!visible)
+            {
+                this.Location = new Point(0, 0);
+            }
+        }
+
         #endregion
 
         #region FormEvents
