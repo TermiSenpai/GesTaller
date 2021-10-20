@@ -84,9 +84,10 @@ namespace Gestaller
             }
             return false;
         }
-
+        // TODO
+        // Detectar desaparición de segunda pantalla
         private void adaptForm(bool visible)
-        {
+        { 
             if (!visible)
             {
                 this.Location = new Point(0, 0);
