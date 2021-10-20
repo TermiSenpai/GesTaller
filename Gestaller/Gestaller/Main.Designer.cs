@@ -168,6 +168,7 @@ namespace Gestaller
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(1000, 562);
             this.Controls.Add(this.ChildPanel);
             this.Controls.Add(this.btnsMenu);
@@ -176,7 +177,8 @@ namespace Gestaller
             this.MinimumSize = new System.Drawing.Size(800, 600);
             this.Name = "MainMenu";
             this.Text = "GesTaller";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainMenu_FormClosing);
+            this.Load += new System.EventHandler(this.MainMenu_Load);
             this.btnsMenu.ResumeLayout(false);
             this.ResumeLayout(false);
 
