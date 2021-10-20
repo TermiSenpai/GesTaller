@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -67,6 +67,22 @@ namespace Gestaller
             ChildPanel.Tag = childForm;
             childForm.BringToFront();
             childForm.Show();
+        }
+
+        private bool IsOnScreen(Form form)
+        {
+            Screen[] screens = Screen.AllScreens;
+            
+            foreach(Screen screen in screens)
+            {
+                Rectangle formRectangle = new Rectangle(form.Left, form.Top,
+                                                         form.Width, form.Height);
+                if (screen.WorkingArea.Contains(formRectangle))
+                {
+                    return true;
+                }
+            }
+            return false;
         }
         #endregion
 
