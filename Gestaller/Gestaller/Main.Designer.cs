@@ -168,7 +168,6 @@ namespace Gestaller
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(1000, 562);
             this.Controls.Add(this.ChildPanel);
             this.Controls.Add(this.btnsMenu);
