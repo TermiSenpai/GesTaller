@@ -53,7 +53,7 @@ namespace Gestaller.Views
                             font: Font,
                             bounds: ClientRectangle,
                             foreColor: SystemColors.GrayText,
-                            backColor: Enabled ? BackColor : SystemColors.Control,
+                            backColor: Enabled ? BackColor : SystemColors.ControlText,
                             flags: TextFormatFlags.Top | TextFormatFlags.Left);
                     }
                 }

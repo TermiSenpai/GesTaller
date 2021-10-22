@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -32,65 +33,65 @@ namespace Gestaller.Views
             }
         }
 
-
-        protected override void OnCreateControl()
+        protected override void OnVisibleChanged(EventArgs e)
         {
-            base.OnCreateControl();
-            createCue();
+            base.OnVisibleChanged(e);
+            if(!String.IsNullOrEmpty(CueText) && String.IsNullOrEmpty(Text) && SelectedIndex == -1)
+            {
+                SetCueText(this, CueText);
+            }
         }
 
         protected override void OnEnter(EventArgs e)
         {
             base.OnEnter(e);
-            deleteCue(e);
+            ForeColor = SystemColors.ControlText;
+        }
+        // Código sacado de: https://stackoverflow.com/questions/30622994/c-sharp-winforms-add-an-select-from-list-placeholder-to-databound-combobox
+
+        private const int EM_SETCUEBANNER = 0x1501;
+
+        [DllImport("user32.dll", CharSet = CharSet.Auto)]
+        private static extern Int32 SendMessage(IntPtr hWnd, int msg, int wParam, [MarshalAs(UnmanagedType.LPWStr)] string lParam);
+
+        [DllImport("user32.dll")]
+        private static extern bool GetComboBoxInfo(IntPtr hwnd, ref COMBOBOXINFO pcbi);
+        [StructLayout(LayoutKind.Sequential)]
+
+        private struct COMBOBOXINFO
+        {
+            public int cbSize;
+            public RECT rcItem;
+            public RECT rcButton;
+            public UInt32 stateButton;
+            public IntPtr hwndCombo;
+            public IntPtr hwndItem;
+            public IntPtr hwndList;
         }
 
-        protected override void OnLeave(EventArgs e)
+        [StructLayout(LayoutKind.Sequential)]
+        private struct RECT
         {
-            base.OnEnter(e);
-            createCue();
+            public int left;
+            public int top;
+            public int right;
+            public int bottom;
         }
 
-        protected override void OnDropDown(EventArgs e)
+        public static void SetCueText(ComboBox control, string text)
         {
-            base.OnDropDown(e);
-            //when we click to open the dropdown, we remove that item
-            deleteCue(e);
+            COMBOBOXINFO info = GetComboBoxInfo(control);
+            SendMessage(info.hwndItem, EM_SETCUEBANNER, 0, text);
         }
 
-        protected override void OnDropDownClosed(EventArgs e)
+        private static COMBOBOXINFO GetComboBoxInfo(Control control)
         {
-            base.OnDropDownClosed(e);
-
-            //when we close the dropdown, if we select an item the dropdown
-            //displays that item, if now we set back to our text.
-            if (!base.Focused && base.SelectedIndex == -1)
-            {
-                createCue();
-            }
-        }
-
-        private void createCue()
-        {
-            if (!String.IsNullOrEmpty(CueText) && String.IsNullOrEmpty(base.Text))
-            {
-                //add an item to the combobox at the top
-                base.Items.Insert(0, CueText);
-                //set the text
-                base.Text = CueText;
-                base.ForeColor = SystemColors.GrayText;
-            }
-        }
-
-        private void deleteCue(EventArgs e)
-        {
-            if (base.Text == CueText)
-            {
-                base.Text = "";
-                base.ForeColor = SystemColors.WindowText;
-            }
-            if (base.Items.Contains(CueText))
-                base.Items.RemoveAt(0);
+            COMBOBOXINFO info = new COMBOBOXINFO();
+            //a combobox is made up of three controls, a button, a list and textbox;
+            //we want the textbox
+            info.cbSize = Marshal.SizeOf(info);
+            GetComboBoxInfo(control.Handle, ref info);
+            return info;
         }
     }
 }
