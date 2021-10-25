@@ -53,6 +53,8 @@
     <Compile Include="DataClasses\Order2Item.cs" />
     <Compile Include="DataClasses\TaxRate.cs" />
     <Compile Include="DataClasses\Vehicle.cs" />
+    <Compile Include="Layers\BussinessLogicLayer.cs" />
+    <Compile Include="Layers\DataLayerDummie.cs" />
     <Compile Include="Settings.cs" />
     <Compile Include="Views\CueComboBox.cs">
       <SubType>Component</SubType>
