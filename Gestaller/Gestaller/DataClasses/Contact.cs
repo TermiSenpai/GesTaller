@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Gestaller.Classes
+namespace Gestaller
 {
     public struct Contact
     {
