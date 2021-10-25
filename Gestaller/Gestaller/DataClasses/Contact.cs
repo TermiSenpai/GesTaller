@@ -10,17 +10,17 @@ namespace Gestaller
     {
         public Contact() { }
 
-        public Contact(string  business, string name, string cif, string email, string address,
-                       string town, string district, string fax, string phone, string mobile,
-                       int id, int cp)
+        public Contact(int id, string  company, string fullName, string cif, string email, string address,
+                       string city, string district, string fax, string phone, string mobile,
+                       int cp)
         {
             this.id = id;
-            this.business = business;
-            this.name = name;
+            this.company = company;
+            this.fullName = fullName;
             this.cif = cif;
-            this.address = address;
             this.cp = cp;
-            this.town = town;
+            this.address = address;
+            this.city = city;
             this.district = district;
             this.email = email;
             this.fax = fax;
@@ -28,11 +28,11 @@ namespace Gestaller
             this.mobile = mobile;
         }
         public int id               { get; set; }
-        public string business      { get; set; }
-        public string name          { get; set; }
+        public string company       { get; set; }
+        public string fullName      { get; set; }
         public string cif           { get; set; }
         public string address       { get; set; }
-        public string town          { get; set; }
+        public string city          { get; set; }
         public int cp               { get; set; }
         public string district      { get; set; }
         public string email         { get; set; }
