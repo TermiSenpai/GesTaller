@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace Gestaller
 {
-    public struct Vehicle
+    public class Vehicle
     {
+        public Vehicle() { }
+
         public Vehicle(string enroll, string brand, string model, string kms, string frame,
                        string discharge, string expiration, string motor)
         {

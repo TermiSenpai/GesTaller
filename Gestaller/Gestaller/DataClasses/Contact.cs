@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace Gestaller
 {
-    public struct Contact
+    public class Contact
     {
+        public Contact() { }
+
         public Contact(string  business, string name, string cif, string email, string address,
                        string town, string district, string fax, string phone, string mobile,
                        int id, int cp)
