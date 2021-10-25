@@ -46,13 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DataClasses\ContableHistory.cs" />
     <Compile Include="DataClasses\Contact.cs" />
     <Compile Include="DataClasses\Incoming.cs" />
-    <Compile Include="DataClasses\IncomingHistory.cs" />
-    <Compile Include="DataClasses\InoviceHistory.cs" />
     <Compile Include="DataClasses\Order.cs" />
-    <Compile Include="DataClasses\Product.cs" />
+    <Compile Include="DataClasses\Item.cs" />
+    <Compile Include="DataClasses\Order2Item.cs" />
+    <Compile Include="DataClasses\TaxRate.cs" />
     <Compile Include="DataClasses\Vehicle.cs" />
     <Compile Include="Settings.cs" />
     <Compile Include="Views\CueComboBox.cs">
