@@ -11,7 +11,7 @@ namespace Gestaller
         public Vehicle() { }
 
         public Vehicle(string enroll, string brand, string model, string kms, string frame,
-                       string discharge, string expiration, string motor)
+                       string discharge, string expiration, string engineType)
         {
             this.enroll = enroll;
             this.brand = brand;
@@ -20,16 +20,16 @@ namespace Gestaller
             this.frame = frame;
             this.discharge = discharge;
             this.expiration = expiration;
-            this.motor = motor;
+            this.engineType = engineType;
 
         }
-        string enroll       { get; set; }
-        string brand        { get; set; }
-        string model        { get; set; }
-        string kms          { get; set; }
-        string frame        { get; set; }
-        string discharge    { get; set; }
-        string expiration   { get; set; }
-        string motor        { get; set; }
+        public string enroll       { get; set; }
+        public string brand        { get; set; }
+        public string model        { get; set; }
+        public string kms          { get; set; }
+        public string frame        { get; set; }
+        public string discharge    { get; set; }
+        public string expiration   { get; set; }
+        public string engineType   { get; set; }
     }
 }
