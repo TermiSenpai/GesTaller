@@ -336,16 +336,16 @@ namespace Gestaller
             // 
             this.cueComboBoxNombre.CueText = "Nombre";
             this.cueComboBoxNombre.FormattingEnabled = true;
-            this.cueComboBoxNombre.Location = new System.Drawing.Point(384, 3);
+            this.cueComboBoxNombre.Location = new System.Drawing.Point(3, 33);
             this.cueComboBoxNombre.Name = "cueComboBoxNombre";
-            this.cueComboBoxNombre.Size = new System.Drawing.Size(121, 24);
+            this.cueComboBoxNombre.Size = new System.Drawing.Size(248, 24);
             this.cueComboBoxNombre.TabIndex = 3;
             // 
             // cueComboBoxDireccion
             // 
             this.cueComboBoxDireccion.CueText = "Dirección";
             this.cueComboBoxDireccion.FormattingEnabled = true;
-            this.cueComboBoxDireccion.Location = new System.Drawing.Point(3, 33);
+            this.cueComboBoxDireccion.Location = new System.Drawing.Point(257, 33);
             this.cueComboBoxDireccion.Name = "cueComboBoxDireccion";
             this.cueComboBoxDireccion.Size = new System.Drawing.Size(248, 24);
             this.cueComboBoxDireccion.TabIndex = 4;
@@ -354,7 +354,7 @@ namespace Gestaller
             // 
             this.cueComboBoxLocalidad.CueText = "Localidad";
             this.cueComboBoxLocalidad.FormattingEnabled = true;
-            this.cueComboBoxLocalidad.Location = new System.Drawing.Point(257, 33);
+            this.cueComboBoxLocalidad.Location = new System.Drawing.Point(3, 63);
             this.cueComboBoxLocalidad.Name = "cueComboBoxLocalidad";
             this.cueComboBoxLocalidad.Size = new System.Drawing.Size(121, 24);
             this.cueComboBoxLocalidad.TabIndex = 5;
@@ -363,7 +363,7 @@ namespace Gestaller
             // 
             this.cueComboBoxProvincia.CueText = "Provincia";
             this.cueComboBoxProvincia.FormattingEnabled = true;
-            this.cueComboBoxProvincia.Location = new System.Drawing.Point(384, 33);
+            this.cueComboBoxProvincia.Location = new System.Drawing.Point(130, 63);
             this.cueComboBoxProvincia.Name = "cueComboBoxProvincia";
             this.cueComboBoxProvincia.Size = new System.Drawing.Size(121, 24);
             this.cueComboBoxProvincia.TabIndex = 6;
@@ -372,7 +372,7 @@ namespace Gestaller
             // 
             this.cueComboBoxCP.CueText = "C.P.";
             this.cueComboBoxCP.FormattingEnabled = true;
-            this.cueComboBoxCP.Location = new System.Drawing.Point(3, 63);
+            this.cueComboBoxCP.Location = new System.Drawing.Point(257, 63);
             this.cueComboBoxCP.Name = "cueComboBoxCP";
             this.cueComboBoxCP.Size = new System.Drawing.Size(121, 24);
             this.cueComboBoxCP.TabIndex = 7;
@@ -381,7 +381,7 @@ namespace Gestaller
             // 
             this.cueComboBoxMovil.CueText = "Móvil";
             this.cueComboBoxMovil.FormattingEnabled = true;
-            this.cueComboBoxMovil.Location = new System.Drawing.Point(130, 63);
+            this.cueComboBoxMovil.Location = new System.Drawing.Point(384, 63);
             this.cueComboBoxMovil.Name = "cueComboBoxMovil";
             this.cueComboBoxMovil.Size = new System.Drawing.Size(121, 24);
             this.cueComboBoxMovil.TabIndex = 8;
@@ -390,7 +390,7 @@ namespace Gestaller
             // 
             this.cueComboBoxTelefono.CueText = "Teléfono";
             this.cueComboBoxTelefono.FormattingEnabled = true;
-            this.cueComboBoxTelefono.Location = new System.Drawing.Point(257, 63);
+            this.cueComboBoxTelefono.Location = new System.Drawing.Point(3, 93);
             this.cueComboBoxTelefono.Name = "cueComboBoxTelefono";
             this.cueComboBoxTelefono.Size = new System.Drawing.Size(121, 24);
             this.cueComboBoxTelefono.TabIndex = 9;
@@ -399,7 +399,7 @@ namespace Gestaller
             // 
             this.cueComboBoxFax.CueText = "Fax";
             this.cueComboBoxFax.FormattingEnabled = true;
-            this.cueComboBoxFax.Location = new System.Drawing.Point(384, 63);
+            this.cueComboBoxFax.Location = new System.Drawing.Point(130, 93);
             this.cueComboBoxFax.Name = "cueComboBoxFax";
             this.cueComboBoxFax.Size = new System.Drawing.Size(121, 24);
             this.cueComboBoxFax.TabIndex = 10;
@@ -408,7 +408,7 @@ namespace Gestaller
             // 
             this.cueComboBoxEmail.CueText = "E-Mail";
             this.cueComboBoxEmail.FormattingEnabled = true;
-            this.cueComboBoxEmail.Location = new System.Drawing.Point(3, 93);
+            this.cueComboBoxEmail.Location = new System.Drawing.Point(257, 93);
             this.cueComboBoxEmail.Name = "cueComboBoxEmail";
             this.cueComboBoxEmail.Size = new System.Drawing.Size(248, 24);
             this.cueComboBoxEmail.TabIndex = 11;
