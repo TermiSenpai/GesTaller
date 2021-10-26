@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataClasses\Contact.cs" />
+    <Compile Include="DataClasses\ContactVehicle.cs" />
     <Compile Include="DataClasses\Incoming.cs" />
     <Compile Include="DataClasses\Order.cs" />
     <Compile Include="DataClasses\Item.cs" />
