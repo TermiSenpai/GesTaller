@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Gestaller.DataClasses
+namespace Gestaller
 {
     public class TaxRate
     {
-        TaxRate() { }
+        public TaxRate() { }
 
-        TaxRate(int value, string description)
+        public TaxRate(int value, string description)
         {
             this.value = value;
             this.description = description;

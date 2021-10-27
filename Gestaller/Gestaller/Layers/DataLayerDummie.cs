@@ -77,5 +77,37 @@ namespace Gestaller
 
             return vehicles;
         }
+
+
+        public List<Incoming> GetIncomings()
+        {
+            List<Incoming> incomings = new List<Incoming>();
+            incomings.Add(new Incoming(DateTime.Now, DateTime.UtcNow, DateTime.Today, "Daño leve", 123131.1231f));
+            incomings.Add(new Incoming(DateTime.Now, DateTime.UtcNow, DateTime.Today, "Daño grave", 1231331f));
+            return incomings;
+        }
+
+        public List<Item> GetItems()
+        {
+            List<Item> items = new List<Item>();
+            items.Add(new Item(1, "Caramelo con sabor caramelo", 100, 0.05f, 0.10f));
+            items.Add(new Item(2, "Gato pelado", 10, 50.05f, 55.10f));
+            return items;
+        }
+
+        public List<Order> GetOrders()
+        {
+            List<Order> orders = new List<Order>();
+            orders.Add(new Order(1, 1, 1, 1, DateTime.Now, DateTime.Now, DateTime.Now));
+            orders.Add(new Order(2, 2, 2, 2, DateTime.Now, DateTime.Now, DateTime.Now));
+            return orders;
+        }
+
+        public List<TaxRate> GetTaxRate()
+        {
+            List<TaxRate> taxRates = new List<TaxRate>();
+            taxRates.Add(new TaxRate(1, "Tax1"));
+            return taxRates;
+        }
     }
 }
