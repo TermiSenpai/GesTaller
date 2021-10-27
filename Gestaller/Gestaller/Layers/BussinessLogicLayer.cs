@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -35,5 +35,10 @@ namespace Gestaller.Layers
 
             return contactsVehicles;
         }
-    }
+
+        public List<Incoming> GetIncomings()
+        {
+            return _dataLayerDummie.GetIncomings();
+        }
+
 }

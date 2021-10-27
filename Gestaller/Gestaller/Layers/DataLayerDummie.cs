@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -77,5 +77,14 @@ namespace Gestaller.Layers
 
             return vehicles;
         }
-    }
+
+
+        public List<Incoming> GetIncomings()
+        {
+            List<Incoming> incomings = new List<Incoming>();
+            incomings.Add(new Incoming(DateTime.Now, DateTime.UtcNow, DateTime.Today, "Daño leve", 123131.1231f));
+            incomings.Add(new Incoming(DateTime.Now, DateTime.UtcNow, DateTime.Today, "Daño grave", 1231331f));
+            return incomings;
+        }
+
 }
