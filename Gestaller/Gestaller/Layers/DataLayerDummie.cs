@@ -87,4 +87,10 @@ namespace Gestaller.Layers
             return incomings;
         }
 
-}
+        public List<Item> GetItems()
+        {
+            List<Item> items = new List<Item>();
+            items.Add(new Item(1, "Caramelo con sabor caramelo", 100, 0.05f, 0.10f));
+            items.Add(new Item(2, "Gato pelado", 10, 50.05f, 55.10f));
+            return items;
+        }
