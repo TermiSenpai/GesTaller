@@ -25,11 +25,15 @@ namespace Gestaller.Layers
 
         public List<ContactVehicle> GetContactVehicles()
         {
-            List<ContactVehicle> contactVehicle = new List<ContactVehicle>();
+            List<ContactVehicle> contactsVehicles = new List<ContactVehicle>();
             List<Contact> contacts = _dataLayerDummie.GetContacts();
             List<Vehicle> vehicles = _dataLayerDummie.GetVehicles();
-            contactVehicle.Add(new ContactVehicle(contacts[0],vehicles[0]));
-            return contactVehicle;
+            ContactVehicle first = new ContactVehicle(contacts[0], vehicles[0]);
+            ContactVehicle second = new ContactVehicle(contacts[1], vehicles[1]);
+            contactsVehicles.Add(first);
+            contactsVehicles.Add(second);
+
+            return contactsVehicles;
         }
     }
 }
