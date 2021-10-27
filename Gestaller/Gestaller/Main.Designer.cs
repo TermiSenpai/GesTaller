@@ -68,7 +68,7 @@ namespace Gestaller
             this.btnOpciones.Location = new System.Drawing.Point(0, 275);
             this.btnOpciones.Name = "btnOpciones";
             this.btnOpciones.Size = new System.Drawing.Size(200, 55);
-            this.btnOpciones.TabIndex = 5;
+            this.btnOpciones.TabIndex = 6;
             this.btnOpciones.Text = "Opciones";
             this.btnOpciones.UseVisualStyleBackColor = true;
             this.btnOpciones.Click += new System.EventHandler(this.btnOpciones_Click);
@@ -84,7 +84,7 @@ namespace Gestaller
             this.btnAlmacen.Location = new System.Drawing.Point(0, 220);
             this.btnAlmacen.Name = "btnAlmacen";
             this.btnAlmacen.Size = new System.Drawing.Size(200, 55);
-            this.btnAlmacen.TabIndex = 4;
+            this.btnAlmacen.TabIndex = 5;
             this.btnAlmacen.Text = "Almacén";
             this.btnAlmacen.UseVisualStyleBackColor = true;
             this.btnAlmacen.Click += new System.EventHandler(this.btnAlmacen_Click);
@@ -100,7 +100,7 @@ namespace Gestaller
             this.btnHistorial.Location = new System.Drawing.Point(0, 165);
             this.btnHistorial.Name = "btnHistorial";
             this.btnHistorial.Size = new System.Drawing.Size(200, 55);
-            this.btnHistorial.TabIndex = 3;
+            this.btnHistorial.TabIndex = 4;
             this.btnHistorial.Text = "Historial";
             this.btnHistorial.UseVisualStyleBackColor = true;
             this.btnHistorial.Click += new System.EventHandler(this.btnHistorial_Click);
@@ -116,7 +116,7 @@ namespace Gestaller
             this.btnOrdenes.Location = new System.Drawing.Point(0, 110);
             this.btnOrdenes.Name = "btnOrdenes";
             this.btnOrdenes.Size = new System.Drawing.Size(200, 55);
-            this.btnOrdenes.TabIndex = 2;
+            this.btnOrdenes.TabIndex = 3;
             this.btnOrdenes.Text = "Órdenes";
             this.btnOrdenes.UseVisualStyleBackColor = true;
             this.btnOrdenes.Click += new System.EventHandler(this.btnOrdenes_Click);
@@ -132,7 +132,7 @@ namespace Gestaller
             this.btnRecepciones.Location = new System.Drawing.Point(0, 55);
             this.btnRecepciones.Name = "btnRecepciones";
             this.btnRecepciones.Size = new System.Drawing.Size(200, 55);
-            this.btnRecepciones.TabIndex = 1;
+            this.btnRecepciones.TabIndex = 2;
             this.btnRecepciones.Text = "Recepciones";
             this.btnRecepciones.UseVisualStyleBackColor = true;
             this.btnRecepciones.Click += new System.EventHandler(this.btnRecepciones_Click);
@@ -148,7 +148,7 @@ namespace Gestaller
             this.btnClientes.Location = new System.Drawing.Point(0, 0);
             this.btnClientes.Name = "btnClientes";
             this.btnClientes.Size = new System.Drawing.Size(200, 55);
-            this.btnClientes.TabIndex = 0;
+            this.btnClientes.TabIndex = 1;
             this.btnClientes.Text = "Clientes";
             this.btnClientes.UseVisualStyleBackColor = true;
             this.btnClientes.Click += new System.EventHandler(this.btnClientes_Click);
