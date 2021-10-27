@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -102,3 +102,12 @@ namespace Gestaller.Layers
             orders.Add(new Order(2, 2, 2, 2, DateTime.Now, DateTime.Now, DateTime.Now));
             return orders;
         }
+
+        public List<TaxRate> GetTaxRate()
+        {
+            List<TaxRate> taxRates = new List<TaxRate>();
+            taxRates.Add(new TaxRate(1, "Tax1"));
+            return taxRates;
+        }
+    }
+}
