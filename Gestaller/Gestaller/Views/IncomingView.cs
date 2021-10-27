@@ -12,9 +12,22 @@ namespace Gestaller
 {
     public partial class IncomingView : Form
     {
+        BussinessLogicLayer _bussinessLogicLayer = new BussinessLogicLayer();
         public IncomingView()
         {
             InitializeComponent();
+        }
+
+        private void IncomingView_Load(object sender, EventArgs e)
+        {
+            getDB();
+        }
+
+        private void getDB()
+        {
+            List<Incoming> incomings = _bussinessLogicLayer.GetIncomings();
+
+            dataGridViewDepositos.DataSource = incomings;
         }
     }
 }
