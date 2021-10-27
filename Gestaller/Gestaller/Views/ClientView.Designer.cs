@@ -29,6 +29,7 @@ namespace Gestaller
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.tabControl_Clientes = new System.Windows.Forms.TabControl();
             this.tab_clientes_vehiculos = new System.Windows.Forms.TabPage();
             this.tabla1_clientes_V = new System.Windows.Forms.TableLayoutPanel();
@@ -63,6 +64,7 @@ namespace Gestaller
             this.cueComboBoxTelefono = new Gestaller.Views.CueComboBox();
             this.cueComboBoxFax = new Gestaller.Views.CueComboBox();
             this.cueComboBoxEmail = new Gestaller.Views.CueComboBox();
+            this.contactVehicleBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tabControl_Clientes.SuspendLayout();
             this.tab_clientes_vehiculos.SuspendLayout();
             this.tabla1_clientes_V.SuspendLayout();
@@ -72,6 +74,7 @@ namespace Gestaller
             this.flowFacturacion.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGrid)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.contactVehicleBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl_Clientes
@@ -449,6 +452,10 @@ namespace Gestaller
             this.cueComboBoxEmail.Size = new System.Drawing.Size(248, 24);
             this.cueComboBoxEmail.TabIndex = 6;
             // 
+            // contactVehicleBindingSource
+            // 
+            this.contactVehicleBindingSource.DataSource = typeof(Gestaller.ContactVehicle);
+            // 
             // ClientView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -470,6 +477,7 @@ namespace Gestaller
             this.flowFacturacion.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGrid)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.contactVehicleBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -510,5 +518,8 @@ namespace Gestaller
         private Views.CueComboBox cueComboBoxBastidor;
         private Views.CueComboBox cueComboBoxKilometros;
         private Views.CueComboBox cueComboBoxTipoMotor;
+        private System.Windows.Forms.DataGridViewTextBoxColumn contactDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn vehicleDataGridViewTextBoxColumn;
+        private System.Windows.Forms.BindingSource contactVehicleBindingSource;
     }
 }

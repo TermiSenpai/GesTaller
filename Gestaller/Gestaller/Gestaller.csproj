@@ -138,6 +138,7 @@
     <EmbeddedResource Include="Views\IncomingView.resx">
       <DependentUpon>IncomingView.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="ContactVehicle.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
