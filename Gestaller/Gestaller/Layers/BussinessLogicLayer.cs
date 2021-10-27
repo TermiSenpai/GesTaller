@@ -45,3 +45,8 @@ namespace Gestaller.Layers
         {
             return _dataLayerDummie.GetItems();
         }
+
+        public List<Order> GetOrders()
+        {
+            return _dataLayerDummie.GetOrders();
+        }
