@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Gestaller.Layers;
 
 namespace Gestaller
 {
@@ -18,16 +17,12 @@ namespace Gestaller
         public ClientView()
         {
             InitializeComponent();
+            getDB();
         }
 
         private void tabla2_clientes_V_Paint(object sender, PaintEventArgs e)
         {
 
-        }
-
-        private void ClientView_Load(object sender, EventArgs e)
-        {
-            getDB();
         }
 
         private void getDB()
