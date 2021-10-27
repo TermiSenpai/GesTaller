@@ -47,12 +47,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataClasses\Contact.cs" />
+    <Compile Include="DataClasses\ContactVehicle.cs" />
     <Compile Include="DataClasses\Incoming.cs" />
     <Compile Include="DataClasses\Order.cs" />
     <Compile Include="DataClasses\Item.cs" />
     <Compile Include="DataClasses\Order2Item.cs" />
     <Compile Include="DataClasses\TaxRate.cs" />
     <Compile Include="DataClasses\Vehicle.cs" />
+    <Compile Include="Layers\BussinessLogicLayer.cs" />
+    <Compile Include="Layers\DataLayerDummie.cs" />
     <Compile Include="Settings.cs" />
     <Compile Include="Views\CueComboBox.cs">
       <SubType>Component</SubType>
@@ -135,6 +138,7 @@
     <EmbeddedResource Include="Views\IncomingView.resx">
       <DependentUpon>IncomingView.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="ContactVehicle.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

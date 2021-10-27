@@ -10,9 +10,10 @@ namespace Gestaller
     {
         public Vehicle() { }
 
-        public Vehicle(string enroll, string brand, string model, string kms, string frame,
+        public Vehicle(int id, string enroll, string brand, string model, string kms, string frame,
                        string discharge, string expiration, string engineType)
         {
+            this.id = id;
             this.enroll = enroll;
             this.brand = brand;
             this.model = model;
@@ -23,6 +24,7 @@ namespace Gestaller
             this.engineType = engineType;
 
         }
+        public int id              { get; set; }
         public string enroll       { get; set; }
         public string brand        { get; set; }
         public string model        { get; set; }
