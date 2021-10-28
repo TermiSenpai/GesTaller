@@ -18,12 +18,15 @@ namespace Gestaller
         {
             InitializeComponent();
             getDB();
+            itemSetComboBox();
         }
 
         private void tabla2_clientes_V_Paint(object sender, PaintEventArgs e)
         {
 
         }
+
+        #region events
 
         private void getDB()
         {
@@ -36,6 +39,10 @@ namespace Gestaller
         {
             setGridToComboBox();
         }
+
+        #endregion
+
+        #region private methods
 
         private void setGridToComboBox()
         {
@@ -64,5 +71,55 @@ namespace Gestaller
             cueComboBoxTipoMotor.Text = contactsVehicles[selectedCell].vehicle_engineType;
         }
 
+        private void itemSetComboBox()
+        {
+            List<ContactVehicle> contactsVehicles = _bussinessLogicLayer.GetContactVehicles();
+
+            // Empresa
+            for (int i = 0; i < contactsVehicles.Count(); i++)
+            {
+                #region contacto
+                cueComboBoxEmpresa.Items.Add(contactsVehicles[i].contact_company);
+                // CIF
+                cueComboBoxCIF.Items.Add(contactsVehicles[i].contact_cif);
+                // Nombre
+                cueComboBoxNombre.Items.Add(contactsVehicles[i].contact_fullName);
+                // Dirección
+                cueComboBoxDireccion.Items.Add(contactsVehicles[i].contact_address);
+                // Localidad
+                cueComboBoxLocalidad.Items.Add(contactsVehicles[i].contact_city);
+                // Provincia
+                cueComboBoxProvincia.Items.Add(contactsVehicles[i].contact_district);
+                // CP
+                cueComboBoxCP.Items.Add(contactsVehicles[i].contact_cp);
+                // Movil
+                cueComboBoxMovil.Items.Add(contactsVehicles[i].contact_mobile);
+                // Teléfono
+                cueComboBoxTelefono.Items.Add(contactsVehicles[i].contact_phone);
+                // FAX
+                cueComboBoxFax.Items.Add(contactsVehicles[i].contact_fax);
+                // Email
+                cueComboBoxEmail.Items.Add(contactsVehicles[i].contact_email);
+                #endregion
+
+                #region vehiculo
+                // Matricula
+                cueComboBoxMatricula.Items.Add(contactsVehicles[i].vehicle_enroll);
+                // Marca
+                cueComboBoxMarca.Items.Add(contactsVehicles[i].vehicle_brand);
+                // Modelo
+                cueComboBoxModelo.Items.Add(contactsVehicles[i].vehicle_model);
+                // Bastidor
+                cueComboBoxBastidor.Items.Add(contactsVehicles[i].vehicle_frame);
+                // Kilómetros
+                cueComboBoxKilometros.Items.Add(contactsVehicles[i].vehicle_kms);
+                // Tipo motor
+                cueComboBoxTipoMotor.Items.Add(contactsVehicles[i].vehicle_engineType);
+                #endregion
+            }
+
+        }
+
+        #endregion
     }
 }
