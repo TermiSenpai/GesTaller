@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -30,5 +30,11 @@ namespace Gestaller
             List<ContactVehicle> contactsVehicles = _bussinessLogicLayer.GetContactVehicles();
             dataGrid.DataSource = contactsVehicles;
         }
-    }
+
+        // Al hacer click en cualquier celda se activa el evento
+        private void dataGrid_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            setGridToComboBox();
+        }
+
 }
