@@ -35,6 +35,12 @@ namespace Gestaller
             this.tabla3_clientes_V = new System.Windows.Forms.TableLayoutPanel();
             this.EncabezadoVehiculo = new System.Windows.Forms.Label();
             this.flowVehiculo = new System.Windows.Forms.FlowLayoutPanel();
+            this.cueComboBoxMatricula = new Gestaller.Views.CueComboBox();
+            this.cueComboBoxMarca = new Gestaller.Views.CueComboBox();
+            this.cueComboBoxModelo = new Gestaller.Views.CueComboBox();
+            this.cueComboBoxBastidor = new Gestaller.Views.CueComboBox();
+            this.cueComboBoxKilometros = new Gestaller.Views.CueComboBox();
+            this.cueComboBoxTipoMotor = new Gestaller.Views.CueComboBox();
             this.tabla2_clientes_V = new System.Windows.Forms.TableLayoutPanel();
             this.EncabezadoFacturación = new System.Windows.Forms.Label();
             this.flowFacturacion = new System.Windows.Forms.FlowLayoutPanel();
@@ -76,27 +82,6 @@ namespace Gestaller
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.labelOtrasD = new System.Windows.Forms.Label();
             this.flowLayoutPanel4 = new System.Windows.Forms.FlowLayoutPanel();
-            this.cueComboBoxMatricula = new Gestaller.Views.CueComboBox();
-            this.cueComboBoxMarca = new Gestaller.Views.CueComboBox();
-            this.cueComboBoxModelo = new Gestaller.Views.CueComboBox();
-            this.cueComboBoxBastidor = new Gestaller.Views.CueComboBox();
-            this.cueComboBoxKilometros = new Gestaller.Views.CueComboBox();
-            this.cueComboBoxTipoMotor = new Gestaller.Views.CueComboBox();
-            this.cueComboBoxEmpresa = new Gestaller.Views.CueComboBox();
-            this.cueComboBoxCIF = new Gestaller.Views.CueComboBox();
-            this.cueComboBoxNombre = new Gestaller.Views.CueComboBox();
-            this.cueComboBoxDireccion = new Gestaller.Views.CueComboBox();
-            this.cueComboBoxLocalidad = new Gestaller.Views.CueComboBox();
-            this.cueComboBoxProvincia = new Gestaller.Views.CueComboBox();
-            this.cueComboBoxCP = new Gestaller.Views.CueComboBox();
-            this.cueComboBoxMovil = new Gestaller.Views.CueComboBox();
-            this.cueComboBoxTelefono = new Gestaller.Views.CueComboBox();
-            this.cueComboBoxFax = new Gestaller.Views.CueComboBox();
-            this.cueComboBoxEmail = new Gestaller.Views.CueComboBox();
-            this.cueComboBoxEntidad = new Gestaller.Views.CueComboBox();
-            this.cueTextBoxNumeroCuenta = new Gestaller.Views.CueTextBox();
-            this.cueTextBoxFirma_Pago = new Gestaller.Views.CueTextBox();
-            this.cueTextBoxDias_Pago = new Gestaller.Views.CueTextBox();
             this.cueComboBox3 = new Gestaller.Views.CueComboBox();
             this.cueComboBox4 = new Gestaller.Views.CueComboBox();
             this.cueComboBox5 = new Gestaller.Views.CueComboBox();
@@ -437,6 +422,7 @@ namespace Gestaller
             this.dataGrid.Name = "dataGrid";
             this.dataGrid.Size = new System.Drawing.Size(1328, 535);
             this.dataGrid.TabIndex = 5;
+            this.dataGrid.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGrid_CellMouseClick);
             // 
             // panel2
             // 
@@ -755,6 +741,7 @@ namespace Gestaller
             this.cueComboBox4.Name = "cueComboBox4";
             this.cueComboBox4.Size = new System.Drawing.Size(248, 21);
             this.cueComboBox4.TabIndex = 1;
+            // 
             // cueComboBox5
             // 
             this.cueComboBox5.CueText = "Localidad";
