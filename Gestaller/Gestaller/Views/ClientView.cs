@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -37,4 +37,32 @@ namespace Gestaller
             setGridToComboBox();
         }
 
+        private void setGridToComboBox()
+        {
+            // toma el index de la celda selecionada
+            int selectedCell = dataGrid.CurrentCell.RowIndex;
+            // Toma la lista de datos existente
+            List<ContactVehicle> contactsVehicles = _bussinessLogicLayer.GetContactVehicles();
+
+            // Muestra los datos en los cueComboBox 
+            cueComboBoxEmpresa.Text = contactsVehicles[selectedCell].contact_company;
+            cueComboBoxCIF.Text = contactsVehicles[selectedCell].contact_cif;
+            cueComboBoxNombre.Text = contactsVehicles[selectedCell].contact_fullName;
+            cueComboBoxDireccion.Text = contactsVehicles[selectedCell].contact_address;
+            cueComboBoxLocalidad.Text = contactsVehicles[selectedCell].contact_city;
+            cueComboBoxProvincia.Text = contactsVehicles[selectedCell].contact_district;
+            cueComboBoxCP.Text = contactsVehicles[selectedCell].contact_cp.ToString();
+            cueComboBoxMovil.Text = contactsVehicles[selectedCell].contact_mobile;
+            cueComboBoxTelefono.Text = contactsVehicles[selectedCell].contact_phone;
+            cueComboBoxFax.Text = contactsVehicles[selectedCell].contact_fax;
+            cueComboBoxEmail.Text = contactsVehicles[selectedCell].contact_email;
+            cueComboBoxMatricula.Text = contactsVehicles[selectedCell].vehicle_enroll;
+            cueComboBoxMarca.Text = contactsVehicles[selectedCell].vehicle_brand;
+            cueComboBoxModelo.Text = contactsVehicles[selectedCell].vehicle_model;
+            cueComboBoxBastidor.Text = contactsVehicles[selectedCell].vehicle_frame;
+            cueComboBoxKilometros.Text = contactsVehicles[selectedCell].vehicle_kms;
+            cueComboBoxTipoMotor.Text = contactsVehicles[selectedCell].vehicle_engineType;
+        }
+
+    }
 }
