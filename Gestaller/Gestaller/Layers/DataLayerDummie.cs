@@ -60,6 +60,7 @@ namespace Gestaller
             firstVehicle.discharge = "sdaf";
             firstVehicle.expiration = "Today";
             firstVehicle.engineType = "motorola";
+            firstVehicle.frame = "12313123asfsadf";
             
             Vehicle secondVehicle = new Vehicle();
 
@@ -70,6 +71,7 @@ namespace Gestaller
             secondVehicle.kms = "65489716";
             secondVehicle.discharge = "1231313131";
             secondVehicle.expiration = "10-10";
+            secondVehicle.frame = "123asda";
             secondVehicle.engineType = "Tipo lento";
 
             vehicles.Add(firstVehicle);
