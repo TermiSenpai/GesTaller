@@ -422,6 +422,7 @@ namespace Gestaller
             this.dataGrid.Name = "dataGrid";
             this.dataGrid.Size = new System.Drawing.Size(1328, 535);
             this.dataGrid.TabIndex = 5;
+            this.dataGrid.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGrid_CellMouseClick);
             // 
             // panel2
             // 
@@ -740,6 +741,7 @@ namespace Gestaller
             this.cueComboBox4.Name = "cueComboBox4";
             this.cueComboBox4.Size = new System.Drawing.Size(248, 21);
             this.cueComboBox4.TabIndex = 1;
+            // 
             // cueComboBox5
             // 
             this.cueComboBox5.CueText = "Localidad";
