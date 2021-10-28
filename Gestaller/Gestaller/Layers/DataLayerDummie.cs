@@ -28,17 +28,17 @@ namespace Gestaller
             
             Contact secondContact = new Contact();
             secondContact.id = 2;
-            secondContact.company = "company1";
-            secondContact.fullName = "Roberto Sencillo";
-            secondContact.cif = "12312321vad";
+            secondContact.company = "company2";
+            secondContact.fullName = "Roberto complicado";
+            secondContact.cif = "778212A";
             secondContact.cp = 199903;
-            secondContact.address = "General Ramón yo que se";
-            secondContact.city = "Guadalajara";
-            secondContact.district = "Guadalajara";
-            secondContact.email = "asdfas@gmail.com";
-            secondContact.fax = "nosequesunfax";
-            secondContact.phone = "989898123";
-            secondContact.mobile = "91382411231";
+            secondContact.address = "callecita Ramón yo que se";
+            secondContact.city = "Marchamalo";
+            secondContact.district = "Marchamalo";
+            secondContact.email = "caracol@gmail.com";
+            secondContact.fax = "nosequesunfax2";
+            secondContact.phone = "9898775298123";
+            secondContact.mobile = "11231654";
 
             contacts.Add(firstContact);
             contacts.Add(secondContact);
@@ -64,13 +64,13 @@ namespace Gestaller
             Vehicle secondVehicle = new Vehicle();
 
             secondVehicle.id = 2; 
-            secondVehicle.enroll = "123VCA";
-            secondVehicle.brand = "Mercedes";
-            secondVehicle.model = "benQ";
-            secondVehicle.kms = "1231";
-            secondVehicle.discharge = "sdaf";
-            secondVehicle.expiration = "Today";
-            secondVehicle.engineType = "motorola";
+            secondVehicle.enroll = "987CA";
+            secondVehicle.brand = "6548764";
+            secondVehicle.model = "Citroen";
+            secondVehicle.kms = "65489716";
+            secondVehicle.discharge = "1231313131";
+            secondVehicle.expiration = "10-10";
+            secondVehicle.engineType = "Tipo lento";
 
             vehicles.Add(firstVehicle);
             vehicles.Add(secondVehicle);
