@@ -314,7 +314,6 @@ namespace Gestaller
             this.dataGrid.Name = "dataGrid";
             this.dataGrid.Size = new System.Drawing.Size(608, 500);
             this.dataGrid.TabIndex = 3;
-            this.dataGrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGrid_CellContentClick);
             this.dataGrid.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGrid_CellMouseClick);
             // 
             // tab_datos_bancarios
