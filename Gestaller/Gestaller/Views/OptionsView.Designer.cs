@@ -109,6 +109,7 @@ namespace Gestaller
             // 
             // dataGridViewIVA
             // 
+            this.dataGridViewIVA.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dataGridViewIVA.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewIVA.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridViewIVA.Location = new System.Drawing.Point(3, 241);
