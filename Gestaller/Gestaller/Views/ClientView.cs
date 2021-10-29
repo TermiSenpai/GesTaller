@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Gestaller.Views;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,10 +15,12 @@ namespace Gestaller
     {
         BussinessLogicLayer _bussinessLogicLayer = new BussinessLogicLayer();
         ContactVehicle _clientVehicle = null;
+        List<Control> _controls = new List<Control>();
 
         public ClientView()
         {
             InitializeComponent();
+            addControls();
             getDB();
             clientItemSet();
         }
@@ -35,6 +38,15 @@ namespace Gestaller
             dataGrid.DataSource = contactsVehicles;
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            foreach (CueComboBox cueComboBox in _controls)
+            {
+                cueComboBox.ResetText();
+                cueComboBox.SelectedIndex = -1;
+            }
+        }
+
         // Al hacer click en cualquier celda se activa el evento
         private void dataGrid_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
@@ -47,7 +59,7 @@ namespace Gestaller
             // Toma los datos del clienteVehiculo y los añade al comboBox
             setToComboBox();
         }
-
+        #region comboBoxSelection
         private void cueComboBoxEmpresa_SelectionChangeCommitted(object sender, EventArgs e)
         {
             int comboIndex = cueComboBoxEmpresa.SelectedIndex;
@@ -59,6 +71,18 @@ namespace Gestaller
             int comboIndex = cueComboBoxNombre.SelectedIndex;
             changesComboBoxes(comboIndex);
         }
+        private void cueComboBoxEmail_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            int comboIndex = cueComboBoxEmail.SelectedIndex;
+            changesComboBoxes(comboIndex);
+        }
+        private void cueComboBoxMovil_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            int comboIndex = cueComboBoxMovil.SelectedIndex;
+            changesComboBoxes(comboIndex);
+        }
+
+        #endregion
 
         private void changesComboBoxes(int comboIndex)
         {
@@ -73,6 +97,26 @@ namespace Gestaller
 
         #region private methods
 
+        private void addControls()
+        {
+            _controls.Add(cueComboBoxEmpresa);
+            _controls.Add(cueComboBoxCIF);
+            _controls.Add(cueComboBoxMovil);
+            _controls.Add(cueComboBoxTelefono);
+            _controls.Add(cueComboBoxFax);
+            _controls.Add(cueComboBoxEmail);
+            _controls.Add(cueComboBoxNombre);
+            _controls.Add(cueComboBoxDireccion);
+            _controls.Add(cueComboBoxLocalidad);
+            _controls.Add(cueComboBoxProvincia);
+            _controls.Add(cueComboBoxCP);
+            _controls.Add(cueComboBoxMatricula);
+            _controls.Add(cueComboBoxMarca);
+            _controls.Add(cueComboBoxModelo);
+            _controls.Add(cueComboBoxBastidor);
+            _controls.Add(cueComboBoxKilometros);
+            _controls.Add(cueComboBoxTipoMotor);
+        }
         private List<ContactVehicle> getContactsVehicles()
         {
             return _bussinessLogicLayer.GetContactVehicles();
