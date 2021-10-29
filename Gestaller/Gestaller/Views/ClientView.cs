@@ -18,7 +18,7 @@ namespace Gestaller
         {
             InitializeComponent();
             getDB();
-            itemSetComboBox();
+            clientItemSet();
         }
 
         private void tabla2_clientes_V_Paint(object sender, PaintEventArgs e)
@@ -71,7 +71,7 @@ namespace Gestaller
             cueComboBoxTipoMotor.Text = contactsVehicles[selectedCell].vehicle_engineType;
         }
 
-        private void itemSetComboBox()
+        private void clientItemSet()
         {
             List<ContactVehicle> contactsVehicles = _bussinessLogicLayer.GetContactVehicles();
 
