@@ -338,6 +338,7 @@ namespace Gestaller
             this.cueComboBoxNombre.Name = "cueComboBoxNombre";
             this.cueComboBoxNombre.Size = new System.Drawing.Size(248, 24);
             this.cueComboBoxNombre.TabIndex = 3;
+            this.cueComboBoxNombre.SelectionChangeCommitted += new System.EventHandler(this.cueComboBoxNombre_SelectionChangeCommitted);
             // 
             // cueComboBoxDireccion
             // 
