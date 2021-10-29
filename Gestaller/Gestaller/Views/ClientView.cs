@@ -50,16 +50,23 @@ namespace Gestaller
 
         private void cueComboBoxEmpresa_SelectionChangeCommitted(object sender, EventArgs e)
         {
-            List<ContactVehicle> contactsVehicles = getContactsVehicles();
-
-            selectContactVehicle(contactsVehicles[cueComboBoxEmpresa.SelectedIndex]);
-
-            setToComboBox();
+            int comboIndex = cueComboBoxEmpresa.SelectedIndex;
+            changesComboBoxes(comboIndex);
         }
 
         private void cueComboBoxNombre_SelectionChangeCommitted(object sender, EventArgs e)
         {
+            int comboIndex = cueComboBoxNombre.SelectedIndex;
+            changesComboBoxes(comboIndex);
+        }
 
+        private void changesComboBoxes(int comboIndex)
+        {
+            List<ContactVehicle> contactsVehicles = getContactsVehicles();
+
+            selectContactVehicle(contactsVehicles[comboIndex]);
+
+            setToComboBox();
         }
 
         #endregion
@@ -75,6 +82,7 @@ namespace Gestaller
         {
             _clientVehicle = contactVehicle;
         }
+        
         private void setToComboBox()
         {
 
