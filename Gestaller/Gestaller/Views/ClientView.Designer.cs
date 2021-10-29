@@ -384,6 +384,7 @@ namespace Gestaller
             this.cueComboBoxMovil.Name = "cueComboBoxMovil";
             this.cueComboBoxMovil.Size = new System.Drawing.Size(121, 24);
             this.cueComboBoxMovil.TabIndex = 8;
+            this.cueComboBoxMovil.SelectionChangeCommitted += new System.EventHandler(this.cueComboBoxMovil_SelectionChangeCommitted);
             // 
             // cueComboBoxTelefono
             // 
@@ -411,6 +412,7 @@ namespace Gestaller
             this.cueComboBoxEmail.Name = "cueComboBoxEmail";
             this.cueComboBoxEmail.Size = new System.Drawing.Size(248, 24);
             this.cueComboBoxEmail.TabIndex = 11;
+            this.cueComboBoxEmail.SelectionChangeCommitted += new System.EventHandler(this.cueComboBoxEmail_SelectionChangeCommitted);
             // 
             // dataGrid
             // 
@@ -475,6 +477,7 @@ namespace Gestaller
             this.button1.TabIndex = 3;
             this.button1.Text = "Vaciar";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // tab_datos_bancarios
             // 
