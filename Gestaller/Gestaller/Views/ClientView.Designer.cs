@@ -315,13 +315,11 @@ namespace Gestaller
             this.cueComboBoxEmpresa.CueText = "Empresa";
             this.cueComboBoxEmpresa.ForeColor = System.Drawing.SystemColors.GrayText;
             this.cueComboBoxEmpresa.FormattingEnabled = true;
-            this.cueComboBoxEmpresa.Items.AddRange(new object[] {
-            "Empresa",
-            "Empresa"});
             this.cueComboBoxEmpresa.Location = new System.Drawing.Point(3, 3);
             this.cueComboBoxEmpresa.Name = "cueComboBoxEmpresa";
             this.cueComboBoxEmpresa.Size = new System.Drawing.Size(248, 24);
             this.cueComboBoxEmpresa.TabIndex = 1;
+            this.cueComboBoxEmpresa.SelectionChangeCommitted += new System.EventHandler(this.cueComboBoxEmpresa_SelectionChangeCommitted);
             // 
             // cueComboBoxCIF
             // 
