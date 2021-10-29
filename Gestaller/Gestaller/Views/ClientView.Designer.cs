@@ -315,13 +315,11 @@ namespace Gestaller
             this.cueComboBoxEmpresa.CueText = "Empresa";
             this.cueComboBoxEmpresa.ForeColor = System.Drawing.SystemColors.GrayText;
             this.cueComboBoxEmpresa.FormattingEnabled = true;
-            this.cueComboBoxEmpresa.Items.AddRange(new object[] {
-            "Empresa",
-            "Empresa"});
             this.cueComboBoxEmpresa.Location = new System.Drawing.Point(3, 3);
             this.cueComboBoxEmpresa.Name = "cueComboBoxEmpresa";
             this.cueComboBoxEmpresa.Size = new System.Drawing.Size(248, 24);
             this.cueComboBoxEmpresa.TabIndex = 1;
+            this.cueComboBoxEmpresa.SelectionChangeCommitted += new System.EventHandler(this.cueComboBoxEmpresa_SelectionChangeCommitted);
             // 
             // cueComboBoxCIF
             // 
@@ -340,6 +338,7 @@ namespace Gestaller
             this.cueComboBoxNombre.Name = "cueComboBoxNombre";
             this.cueComboBoxNombre.Size = new System.Drawing.Size(248, 24);
             this.cueComboBoxNombre.TabIndex = 3;
+            this.cueComboBoxNombre.SelectionChangeCommitted += new System.EventHandler(this.cueComboBoxNombre_SelectionChangeCommitted);
             // 
             // cueComboBoxDireccion
             // 
@@ -385,6 +384,7 @@ namespace Gestaller
             this.cueComboBoxMovil.Name = "cueComboBoxMovil";
             this.cueComboBoxMovil.Size = new System.Drawing.Size(121, 24);
             this.cueComboBoxMovil.TabIndex = 8;
+            this.cueComboBoxMovil.SelectionChangeCommitted += new System.EventHandler(this.cueComboBoxMovil_SelectionChangeCommitted);
             // 
             // cueComboBoxTelefono
             // 
@@ -412,6 +412,7 @@ namespace Gestaller
             this.cueComboBoxEmail.Name = "cueComboBoxEmail";
             this.cueComboBoxEmail.Size = new System.Drawing.Size(248, 24);
             this.cueComboBoxEmail.TabIndex = 11;
+            this.cueComboBoxEmail.SelectionChangeCommitted += new System.EventHandler(this.cueComboBoxEmail_SelectionChangeCommitted);
             // 
             // dataGrid
             // 
@@ -476,6 +477,7 @@ namespace Gestaller
             this.button1.TabIndex = 3;
             this.button1.Text = "Vaciar";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // tab_datos_bancarios
             // 
