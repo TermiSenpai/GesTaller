@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -38,7 +38,14 @@ namespace Gestaller
         // Al hacer click en cualquier celda se activa el evento
         private void dataGrid_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
-            setGridToComboBox();
+            // toma el index de la celda selecionada
+            int selectedCell = dataGrid.CurrentCell.RowIndex;
+            // Toma la lista de datos existente
+            List<ContactVehicle> contactsVehicles = _bussinessLogicLayer.GetContactVehicles();
+            // Selecciona el clienteVehiculo activo
+            selectContactVehicle(contactsVehicles[selectedCell]);
+            // Toma los datos del clienteVehiculo y los añade al comboBox
+            setToComboBox();
         }
 
         #endregion
@@ -48,31 +55,27 @@ namespace Gestaller
         {
             _clientVehicle = contactVehicle;
         }
-        private void setGridToComboBox()
+        private void setToComboBox()
         {
-            // toma el index de la celda selecionada
-            int selectedCell = dataGrid.CurrentCell.RowIndex;
-            // Toma la lista de datos existente
-            List<ContactVehicle> contactsVehicles = _bussinessLogicLayer.GetContactVehicles();
 
             // Muestra los datos en los cueComboBox 
-            cueComboBoxEmpresa.Text = contactsVehicles[selectedCell].contact_company;
-            cueComboBoxCIF.Text = contactsVehicles[selectedCell].contact_cif;
-            cueComboBoxNombre.Text = contactsVehicles[selectedCell].contact_fullName;
-            cueComboBoxDireccion.Text = contactsVehicles[selectedCell].contact_address;
-            cueComboBoxLocalidad.Text = contactsVehicles[selectedCell].contact_city;
-            cueComboBoxProvincia.Text = contactsVehicles[selectedCell].contact_district;
-            cueComboBoxCP.Text = contactsVehicles[selectedCell].contact_cp.ToString();
-            cueComboBoxMovil.Text = contactsVehicles[selectedCell].contact_mobile;
-            cueComboBoxTelefono.Text = contactsVehicles[selectedCell].contact_phone;
-            cueComboBoxFax.Text = contactsVehicles[selectedCell].contact_fax;
-            cueComboBoxEmail.Text = contactsVehicles[selectedCell].contact_email;
-            cueComboBoxMatricula.Text = contactsVehicles[selectedCell].vehicle_enroll;
-            cueComboBoxMarca.Text = contactsVehicles[selectedCell].vehicle_brand;
-            cueComboBoxModelo.Text = contactsVehicles[selectedCell].vehicle_model;
-            cueComboBoxBastidor.Text = contactsVehicles[selectedCell].vehicle_frame;
-            cueComboBoxKilometros.Text = contactsVehicles[selectedCell].vehicle_kms;
-            cueComboBoxTipoMotor.Text = contactsVehicles[selectedCell].vehicle_engineType;
+            cueComboBoxEmpresa.Text = _clientVehicle.contact_company;
+            cueComboBoxCIF.Text = _clientVehicle.contact_cif;
+            cueComboBoxNombre.Text = _clientVehicle.contact_fullName;
+            cueComboBoxDireccion.Text = _clientVehicle.contact_address;
+            cueComboBoxLocalidad.Text = _clientVehicle.contact_city;
+            cueComboBoxProvincia.Text = _clientVehicle.contact_district;
+            cueComboBoxCP.Text = _clientVehicle.contact_cp.ToString();
+            cueComboBoxMovil.Text = _clientVehicle.contact_mobile;
+            cueComboBoxTelefono.Text = _clientVehicle.contact_phone;
+            cueComboBoxFax.Text = _clientVehicle.contact_fax;
+            cueComboBoxEmail.Text = _clientVehicle.contact_email;
+            cueComboBoxMatricula.Text = _clientVehicle.vehicle_enroll;
+            cueComboBoxMarca.Text = _clientVehicle.vehicle_brand;
+            cueComboBoxModelo.Text = _clientVehicle.vehicle_model;
+            cueComboBoxBastidor.Text = _clientVehicle.vehicle_frame;
+            cueComboBoxKilometros.Text = _clientVehicle.vehicle_kms;
+            cueComboBoxTipoMotor.Text = _clientVehicle.vehicle_engineType;
         }
 
         private void clientItemSet()
@@ -82,7 +85,7 @@ namespace Gestaller
             for (int i = 0; i < contactsVehicles.Count(); i++)
             {
                 #region contacto
-                
+
                 // Empresa
                 cueComboBoxEmpresa.Items.Add(contactsVehicles[i].contact_company);
                 // CIF
