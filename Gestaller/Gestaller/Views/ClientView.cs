@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -126,5 +126,14 @@ namespace Gestaller
         }
 
         #endregion
+
+        private void cueComboBoxEmpresa_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            List<ContactVehicle> contactsVehicles = _bussinessLogicLayer.GetContactVehicles();
+
+            selectContactVehicle(contactsVehicles[cueComboBoxEmpresa.SelectedIndex]);
+
+            setToComboBox();
+        }
     }
 }
