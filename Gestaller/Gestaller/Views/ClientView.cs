@@ -31,7 +31,7 @@ namespace Gestaller
 
         private void getDB()
         {
-            List<ContactVehicle> contactsVehicles = _bussinessLogicLayer.GetContactVehicles();
+            List<ContactVehicle> contactsVehicles = getContactsVehicles();
             dataGrid.DataSource = contactsVehicles;
         }
 
@@ -41,16 +41,36 @@ namespace Gestaller
             // toma el index de la celda selecionada
             int selectedCell = dataGrid.CurrentCell.RowIndex;
             // Toma la lista de datos existente
-            List<ContactVehicle> contactsVehicles = _bussinessLogicLayer.GetContactVehicles();
+            List<ContactVehicle> contactsVehicles = getContactsVehicles();
             // Selecciona el clienteVehiculo activo
             selectContactVehicle(contactsVehicles[selectedCell]);
             // Toma los datos del clienteVehiculo y los añade al comboBox
             setToComboBox();
         }
 
+        private void cueComboBoxEmpresa_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            List<ContactVehicle> contactsVehicles = getContactsVehicles();
+
+            selectContactVehicle(contactsVehicles[cueComboBoxEmpresa.SelectedIndex]);
+
+            setToComboBox();
+        }
+
+        private void cueComboBoxNombre_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+
+        }
+
         #endregion
 
         #region private methods
+
+        private List<ContactVehicle> getContactsVehicles()
+        {
+            return _bussinessLogicLayer.GetContactVehicles();
+        }
+
         private void selectContactVehicle(ContactVehicle contactVehicle)
         {
             _clientVehicle = contactVehicle;
@@ -80,7 +100,7 @@ namespace Gestaller
 
         private void clientItemSet()
         {
-            List<ContactVehicle> contactsVehicles = _bussinessLogicLayer.GetContactVehicles();
+            List<ContactVehicle> contactsVehicles = getContactsVehicles();
 
             for (int i = 0; i < contactsVehicles.Count(); i++)
             {
@@ -129,14 +149,5 @@ namespace Gestaller
         }
 
         #endregion
-
-        private void cueComboBoxEmpresa_SelectionChangeCommitted(object sender, EventArgs e)
-        {
-            List<ContactVehicle> contactsVehicles = _bussinessLogicLayer.GetContactVehicles();
-
-            selectContactVehicle(contactsVehicles[cueComboBoxEmpresa.SelectedIndex]);
-
-            setToComboBox();
-        }
     }
 }
