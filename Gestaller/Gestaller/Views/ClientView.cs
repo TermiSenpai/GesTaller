@@ -13,6 +13,7 @@ namespace Gestaller
     public partial class ClientView : Form
     {
         BussinessLogicLayer _bussinessLogicLayer = new BussinessLogicLayer();
+        ContactVehicle _clientVehicle = null;
 
         public ClientView()
         {
@@ -43,7 +44,10 @@ namespace Gestaller
         #endregion
 
         #region private methods
-
+        private void selectContactVehicle(ContactVehicle contactVehicle)
+        {
+            _clientVehicle = contactVehicle;
+        }
         private void setGridToComboBox()
         {
             // toma el index de la celda selecionada
@@ -75,10 +79,11 @@ namespace Gestaller
         {
             List<ContactVehicle> contactsVehicles = _bussinessLogicLayer.GetContactVehicles();
 
-            // Empresa
             for (int i = 0; i < contactsVehicles.Count(); i++)
             {
                 #region contacto
+                
+                // Empresa
                 cueComboBoxEmpresa.Items.Add(contactsVehicles[i].contact_company);
                 // CIF
                 cueComboBoxCIF.Items.Add(contactsVehicles[i].contact_cif);
