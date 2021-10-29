@@ -38,12 +38,23 @@ namespace Gestaller
             dataGrid.DataSource = contactsVehicles;
         }
 
+        // Vaciar texto
         private void button1_Click(object sender, EventArgs e)
         {
             foreach (CueComboBox cueComboBox in _controls)
             {
                 cueComboBox.ResetText();
                 cueComboBox.SelectedIndex = -1;
+            }
+
+            foreach(CueTextBox cueTextBox in _controls)
+            {
+                cueTextBox.ResetText();
+            }
+
+            foreach(DateTimePicker dateTimePicker in _controls)
+            {
+                // TODO
             }
         }
 
