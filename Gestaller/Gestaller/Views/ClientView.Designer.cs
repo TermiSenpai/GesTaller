@@ -329,6 +329,7 @@ namespace Gestaller
             this.cueComboBoxCIF.Name = "cueComboBoxCIF";
             this.cueComboBoxCIF.Size = new System.Drawing.Size(121, 24);
             this.cueComboBoxCIF.TabIndex = 2;
+            this.cueComboBoxCIF.SelectionChangeCommitted += new System.EventHandler(this.cueComboBoxCIF_SelectionChangeCommitted);
             // 
             // cueComboBoxNombre
             // 
