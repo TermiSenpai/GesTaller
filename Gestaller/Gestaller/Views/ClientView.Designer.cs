@@ -329,6 +329,7 @@ namespace Gestaller
             this.cueComboBoxCIF.Name = "cueComboBoxCIF";
             this.cueComboBoxCIF.Size = new System.Drawing.Size(121, 24);
             this.cueComboBoxCIF.TabIndex = 2;
+            this.cueComboBoxCIF.SelectionChangeCommitted += new System.EventHandler(this.cueComboBoxCIF_SelectionChangeCommitted);
             // 
             // cueComboBoxNombre
             // 
@@ -348,6 +349,7 @@ namespace Gestaller
             this.cueComboBoxDireccion.Name = "cueComboBoxDireccion";
             this.cueComboBoxDireccion.Size = new System.Drawing.Size(248, 24);
             this.cueComboBoxDireccion.TabIndex = 4;
+            this.cueComboBoxDireccion.SelectionChangeCommitted += new System.EventHandler(this.cueComboBoxDireccion_SelectionChangeCommitted);
             // 
             // cueComboBoxLocalidad
             // 
