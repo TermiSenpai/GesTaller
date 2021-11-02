@@ -57,10 +57,10 @@ namespace Gestaller
             this.cueComboBoxEmail = new Gestaller.Views.CueComboBox();
             this.dataGrid = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.button1ModificarCv = new System.Windows.Forms.Button();
+            this.button2BorrarCv = new System.Windows.Forms.Button();
+            this.button3AnadirCv = new System.Windows.Forms.Button();
+            this.button4VaciarCv = new System.Windows.Forms.Button();
             this.tab_datos_bancarios = new System.Windows.Forms.TabPage();
             this.table1_DatosB = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
@@ -72,10 +72,10 @@ namespace Gestaller
             this.cueTextBoxDias_Pago = new Gestaller.Views.CueTextBox();
             this.dataGridDatosB = new System.Windows.Forms.DataGridView();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
+            this.button1ModificarDb = new System.Windows.Forms.Button();
+            this.button2BorrarDb = new System.Windows.Forms.Button();
+            this.button3AnadirDb = new System.Windows.Forms.Button();
+            this.button4VaciarDb = new System.Windows.Forms.Button();
             this.tab_otras_direcciones = new System.Windows.Forms.TabPage();
             this.tabla1_OtrasD = new System.Windows.Forms.TableLayoutPanel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -92,10 +92,10 @@ namespace Gestaller
             this.cueComboBox9 = new Gestaller.Views.CueComboBox();
             this.cueComboBox10 = new Gestaller.Views.CueComboBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.button1ModificarOd = new System.Windows.Forms.Button();
+            this.button2BorrarOd = new System.Windows.Forms.Button();
+            this.button3AnadirOd = new System.Windows.Forms.Button();
+            this.button4VaciarOd = new System.Windows.Forms.Button();
             this.tabControl_Clientes.SuspendLayout();
             this.tab_clientes_vehiculos.SuspendLayout();
             this.tabla1_clientes_V.SuspendLayout();
@@ -425,56 +425,56 @@ namespace Gestaller
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.button4);
-            this.panel2.Controls.Add(this.button3);
-            this.panel2.Controls.Add(this.button2);
-            this.panel2.Controls.Add(this.button1);
+            this.panel2.Controls.Add(this.button1ModificarCv);
+            this.panel2.Controls.Add(this.button2BorrarCv);
+            this.panel2.Controls.Add(this.button3AnadirCv);
+            this.panel2.Controls.Add(this.button4VaciarCv);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(3, 235);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1328, 23);
             this.panel2.TabIndex = 4;
             // 
-            // button4
+            // button1ModificarCv
             // 
-            this.button4.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button4.Location = new System.Drawing.Point(1014, 0);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 0;
-            this.button4.Text = "Modificar";
-            this.button4.UseVisualStyleBackColor = true;
+            this.button1ModificarCv.Dock = System.Windows.Forms.DockStyle.Right;
+            this.button1ModificarCv.Location = new System.Drawing.Point(1014, 0);
+            this.button1ModificarCv.Name = "button1ModificarCv";
+            this.button1ModificarCv.Size = new System.Drawing.Size(75, 23);
+            this.button1ModificarCv.TabIndex = 0;
+            this.button1ModificarCv.Text = "Modificar";
+            this.button1ModificarCv.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // button2BorrarCv
             // 
-            this.button3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button3.Location = new System.Drawing.Point(1089, 0);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(89, 23);
-            this.button3.TabIndex = 1;
-            this.button3.Text = "Borrar";
-            this.button3.UseVisualStyleBackColor = true;
+            this.button2BorrarCv.Dock = System.Windows.Forms.DockStyle.Right;
+            this.button2BorrarCv.Location = new System.Drawing.Point(1089, 0);
+            this.button2BorrarCv.Name = "button2BorrarCv";
+            this.button2BorrarCv.Size = new System.Drawing.Size(89, 23);
+            this.button2BorrarCv.TabIndex = 1;
+            this.button2BorrarCv.Text = "Borrar";
+            this.button2BorrarCv.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // button3AnadirCv
             // 
-            this.button2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button2.Location = new System.Drawing.Point(1178, 0);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Añadir";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button3AnadirCv.Dock = System.Windows.Forms.DockStyle.Right;
+            this.button3AnadirCv.Location = new System.Drawing.Point(1178, 0);
+            this.button3AnadirCv.Name = "button3AnadirCv";
+            this.button3AnadirCv.Size = new System.Drawing.Size(75, 23);
+            this.button3AnadirCv.TabIndex = 2;
+            this.button3AnadirCv.Text = "Añadir";
+            this.button3AnadirCv.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // button4VaciarCv
             // 
-            this.button1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button1.Location = new System.Drawing.Point(1253, 0);
-            this.button1.Margin = new System.Windows.Forms.Padding(6, 3, 3, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Vaciar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button4VaciarCv.Dock = System.Windows.Forms.DockStyle.Right;
+            this.button4VaciarCv.Location = new System.Drawing.Point(1253, 0);
+            this.button4VaciarCv.Margin = new System.Windows.Forms.Padding(6, 3, 3, 3);
+            this.button4VaciarCv.Name = "button4VaciarCv";
+            this.button4VaciarCv.Size = new System.Drawing.Size(75, 23);
+            this.button4VaciarCv.TabIndex = 3;
+            this.button4VaciarCv.Text = "Vaciar";
+            this.button4VaciarCv.UseVisualStyleBackColor = true;
             // 
             // tab_datos_bancarios
             // 
@@ -589,56 +589,56 @@ namespace Gestaller
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.button9);
-            this.panel3.Controls.Add(this.button10);
-            this.panel3.Controls.Add(this.button11);
-            this.panel3.Controls.Add(this.button12);
+            this.panel3.Controls.Add(this.button1ModificarDb);
+            this.panel3.Controls.Add(this.button2BorrarDb);
+            this.panel3.Controls.Add(this.button3AnadirDb);
+            this.panel3.Controls.Add(this.button4VaciarDb);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(3, 109);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1322, 23);
             this.panel3.TabIndex = 3;
             // 
-            // button9
+            // button1ModificarDb
             // 
-            this.button9.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button9.Location = new System.Drawing.Point(1008, 0);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(75, 23);
-            this.button9.TabIndex = 0;
-            this.button9.Text = "Modificar";
-            this.button9.UseVisualStyleBackColor = true;
+            this.button1ModificarDb.Dock = System.Windows.Forms.DockStyle.Right;
+            this.button1ModificarDb.Location = new System.Drawing.Point(1008, 0);
+            this.button1ModificarDb.Name = "button1ModificarDb";
+            this.button1ModificarDb.Size = new System.Drawing.Size(75, 23);
+            this.button1ModificarDb.TabIndex = 0;
+            this.button1ModificarDb.Text = "Modificar";
+            this.button1ModificarDb.UseVisualStyleBackColor = true;
             // 
-            // button10
+            // button2BorrarDb
             // 
-            this.button10.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button10.Location = new System.Drawing.Point(1083, 0);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(89, 23);
-            this.button10.TabIndex = 1;
-            this.button10.Text = "Borrar";
-            this.button10.UseVisualStyleBackColor = true;
+            this.button2BorrarDb.Dock = System.Windows.Forms.DockStyle.Right;
+            this.button2BorrarDb.Location = new System.Drawing.Point(1083, 0);
+            this.button2BorrarDb.Name = "button2BorrarDb";
+            this.button2BorrarDb.Size = new System.Drawing.Size(89, 23);
+            this.button2BorrarDb.TabIndex = 1;
+            this.button2BorrarDb.Text = "Borrar";
+            this.button2BorrarDb.UseVisualStyleBackColor = true;
             // 
-            // button11
+            // button3AnadirDb
             // 
-            this.button11.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button11.Location = new System.Drawing.Point(1172, 0);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(75, 23);
-            this.button11.TabIndex = 2;
-            this.button11.Text = "Añadir";
-            this.button11.UseVisualStyleBackColor = true;
+            this.button3AnadirDb.Dock = System.Windows.Forms.DockStyle.Right;
+            this.button3AnadirDb.Location = new System.Drawing.Point(1172, 0);
+            this.button3AnadirDb.Name = "button3AnadirDb";
+            this.button3AnadirDb.Size = new System.Drawing.Size(75, 23);
+            this.button3AnadirDb.TabIndex = 2;
+            this.button3AnadirDb.Text = "Añadir";
+            this.button3AnadirDb.UseVisualStyleBackColor = true;
             // 
-            // button12
+            // button4VaciarDb
             // 
-            this.button12.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button12.Location = new System.Drawing.Point(1247, 0);
-            this.button12.Margin = new System.Windows.Forms.Padding(6, 3, 3, 3);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(75, 23);
-            this.button12.TabIndex = 3;
-            this.button12.Text = "Vaciar";
-            this.button12.UseVisualStyleBackColor = true;
+            this.button4VaciarDb.Dock = System.Windows.Forms.DockStyle.Right;
+            this.button4VaciarDb.Location = new System.Drawing.Point(1247, 0);
+            this.button4VaciarDb.Margin = new System.Windows.Forms.Padding(6, 3, 3, 3);
+            this.button4VaciarDb.Name = "button4VaciarDb";
+            this.button4VaciarDb.Size = new System.Drawing.Size(75, 23);
+            this.button4VaciarDb.TabIndex = 3;
+            this.button4VaciarDb.Text = "Vaciar";
+            this.button4VaciarDb.UseVisualStyleBackColor = true;
             // 
             // tab_otras_direcciones
             // 
@@ -806,56 +806,56 @@ namespace Gestaller
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.button7);
-            this.panel1.Controls.Add(this.button8);
-            this.panel1.Controls.Add(this.button6);
-            this.panel1.Controls.Add(this.button5);
+            this.panel1.Controls.Add(this.button1ModificarOd);
+            this.panel1.Controls.Add(this.button2BorrarOd);
+            this.panel1.Controls.Add(this.button3AnadirOd);
+            this.panel1.Controls.Add(this.button4VaciarOd);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(3, 109);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1322, 23);
             this.panel1.TabIndex = 2;
             // 
-            // button7
+            // button1ModificarOd
             // 
-            this.button7.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button7.Location = new System.Drawing.Point(1008, 0);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(75, 23);
-            this.button7.TabIndex = 0;
-            this.button7.Text = "Modificar";
-            this.button7.UseVisualStyleBackColor = true;
+            this.button1ModificarOd.Dock = System.Windows.Forms.DockStyle.Right;
+            this.button1ModificarOd.Location = new System.Drawing.Point(1008, 0);
+            this.button1ModificarOd.Name = "button1ModificarOd";
+            this.button1ModificarOd.Size = new System.Drawing.Size(75, 23);
+            this.button1ModificarOd.TabIndex = 0;
+            this.button1ModificarOd.Text = "Modificar";
+            this.button1ModificarOd.UseVisualStyleBackColor = true;
             // 
-            // button8
+            // button2BorrarOd
             // 
-            this.button8.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button8.Location = new System.Drawing.Point(1083, 0);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(89, 23);
-            this.button8.TabIndex = 1;
-            this.button8.Text = "Borrar";
-            this.button8.UseVisualStyleBackColor = true;
+            this.button2BorrarOd.Dock = System.Windows.Forms.DockStyle.Right;
+            this.button2BorrarOd.Location = new System.Drawing.Point(1083, 0);
+            this.button2BorrarOd.Name = "button2BorrarOd";
+            this.button2BorrarOd.Size = new System.Drawing.Size(89, 23);
+            this.button2BorrarOd.TabIndex = 1;
+            this.button2BorrarOd.Text = "Borrar";
+            this.button2BorrarOd.UseVisualStyleBackColor = true;
             // 
-            // button6
+            // button3AnadirOd
             // 
-            this.button6.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button6.Location = new System.Drawing.Point(1172, 0);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(75, 23);
-            this.button6.TabIndex = 2;
-            this.button6.Text = "Añadir";
-            this.button6.UseVisualStyleBackColor = true;
+            this.button3AnadirOd.Dock = System.Windows.Forms.DockStyle.Right;
+            this.button3AnadirOd.Location = new System.Drawing.Point(1172, 0);
+            this.button3AnadirOd.Name = "button3AnadirOd";
+            this.button3AnadirOd.Size = new System.Drawing.Size(75, 23);
+            this.button3AnadirOd.TabIndex = 2;
+            this.button3AnadirOd.Text = "Añadir";
+            this.button3AnadirOd.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // button4VaciarOd
             // 
-            this.button5.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button5.Location = new System.Drawing.Point(1247, 0);
-            this.button5.Margin = new System.Windows.Forms.Padding(6, 3, 3, 3);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 23);
-            this.button5.TabIndex = 3;
-            this.button5.Text = "Vaciar";
-            this.button5.UseVisualStyleBackColor = true;
+            this.button4VaciarOd.Dock = System.Windows.Forms.DockStyle.Right;
+            this.button4VaciarOd.Location = new System.Drawing.Point(1247, 0);
+            this.button4VaciarOd.Margin = new System.Windows.Forms.Padding(6, 3, 3, 3);
+            this.button4VaciarOd.Name = "button4VaciarOd";
+            this.button4VaciarOd.Size = new System.Drawing.Size(75, 23);
+            this.button4VaciarOd.TabIndex = 3;
+            this.button4VaciarOd.Text = "Vaciar";
+            this.button4VaciarOd.UseVisualStyleBackColor = true;
             // 
             // ClientView
             // 
@@ -938,10 +938,10 @@ namespace Gestaller
         private System.Windows.Forms.DataGridView dataGridDatosB;
         private System.Windows.Forms.TableLayoutPanel tabla1_OtrasD;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button button4VaciarOd;
+        private System.Windows.Forms.Button button3AnadirOd;
+        private System.Windows.Forms.Button button1ModificarOd;
+        private System.Windows.Forms.Button button2BorrarOd;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.Label labelOtrasD;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel4;
@@ -956,14 +956,14 @@ namespace Gestaller
         private Views.CueComboBox cueComboBox10;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1ModificarCv;
+        private System.Windows.Forms.Button button2BorrarCv;
+        private System.Windows.Forms.Button button3AnadirCv;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button1ModificarDb;
+        private System.Windows.Forms.Button button2BorrarDb;
+        private System.Windows.Forms.Button button3AnadirDb;
+        private System.Windows.Forms.Button button4VaciarDb;
+        private System.Windows.Forms.Button button4VaciarCv;
     }
 }
