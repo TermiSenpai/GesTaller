@@ -79,24 +79,34 @@ namespace Gestaller
             changesComboBoxes();
         }
 
+        private void cueComboBoxCIF_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            _comboIndex = cueComboBoxCIF.SelectedIndex;
+            changesComboBoxes();
+        }
+
         private void cueComboBoxNombre_SelectionChangeCommitted(object sender, EventArgs e)
         {
             _comboIndex = cueComboBoxNombre.SelectedIndex;
             changesComboBoxes();
         }
-        private void cueComboBoxEmail_SelectionChangeCommitted(object sender, EventArgs e)
+
+
+        private void cueComboBoxDireccion_SelectionChangeCommitted(object sender, EventArgs e)
         {
-            _comboIndex = cueComboBoxEmail.SelectedIndex;
+            _comboIndex = cueComboBoxDireccion.SelectedIndex;
             changesComboBoxes();
         }
+
         private void cueComboBoxMovil_SelectionChangeCommitted(object sender, EventArgs e)
         {
             _comboIndex = cueComboBoxMovil.SelectedIndex;
             changesComboBoxes();
         }
-        private void cueComboBoxDireccion_SelectionChangeCommitted(object sender, EventArgs e)
+
+        private void cueComboBoxEmail_SelectionChangeCommitted(object sender, EventArgs e)
         {
-            _comboIndex = cueComboBoxDireccion.SelectedIndex;
+            _comboIndex = cueComboBoxEmail.SelectedIndex;
             changesComboBoxes();
         }
 
