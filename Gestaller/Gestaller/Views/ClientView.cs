@@ -17,6 +17,8 @@ namespace Gestaller
         ContactVehicle _clientVehicle = null;
         List<Control> _controls = new List<Control>();
 
+        int _comboIndex;
+
         public ClientView()
         {
             InitializeComponent();
@@ -46,7 +48,7 @@ namespace Gestaller
                 cueComboBox.ResetText();
                 cueComboBox.SelectedIndex = -1;
             }
-
+/*
             foreach(CueTextBox cueTextBox in _controls)
             {
                 cueTextBox.ResetText();
@@ -55,7 +57,7 @@ namespace Gestaller
             foreach(DateTimePicker dateTimePicker in _controls)
             {
                 // TODO
-            }
+            }*/
         }
 
         // Al hacer click en cualquier celda se activa el evento
@@ -73,33 +75,38 @@ namespace Gestaller
         #region comboBoxSelection
         private void cueComboBoxEmpresa_SelectionChangeCommitted(object sender, EventArgs e)
         {
-            int comboIndex = cueComboBoxEmpresa.SelectedIndex;
-            changesComboBoxes(comboIndex);
+            _comboIndex = cueComboBoxEmpresa.SelectedIndex;
+            changesComboBoxes();
         }
 
         private void cueComboBoxNombre_SelectionChangeCommitted(object sender, EventArgs e)
         {
-            int comboIndex = cueComboBoxNombre.SelectedIndex;
-            changesComboBoxes(comboIndex);
+            _comboIndex = cueComboBoxNombre.SelectedIndex;
+            changesComboBoxes();
         }
         private void cueComboBoxEmail_SelectionChangeCommitted(object sender, EventArgs e)
         {
-            int comboIndex = cueComboBoxEmail.SelectedIndex;
-            changesComboBoxes(comboIndex);
+            _comboIndex = cueComboBoxEmail.SelectedIndex;
+            changesComboBoxes();
         }
         private void cueComboBoxMovil_SelectionChangeCommitted(object sender, EventArgs e)
         {
-            int comboIndex = cueComboBoxMovil.SelectedIndex;
-            changesComboBoxes(comboIndex);
+            _comboIndex = cueComboBoxMovil.SelectedIndex;
+            changesComboBoxes();
+        }
+        private void cueComboBoxDireccion_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            _comboIndex = cueComboBoxDireccion.SelectedIndex;
+            changesComboBoxes();
         }
 
         #endregion
 
-        private void changesComboBoxes(int comboIndex)
+        private void changesComboBoxes()
         {
             List<ContactVehicle> contactsVehicles = getContactsVehicles();
 
-            selectContactVehicle(contactsVehicles[comboIndex]);
+            selectContactVehicle(contactsVehicles[_comboIndex]);
 
             setToComboBox();
         }
@@ -212,5 +219,6 @@ namespace Gestaller
         }
 
         #endregion
+
     }
 }
