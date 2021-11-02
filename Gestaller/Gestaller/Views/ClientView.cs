@@ -54,6 +54,7 @@ namespace Gestaller
 
             foreach(DateTimePicker dateTimePicker in _controls)
             {
+                dateTimePicker.ResetText();
                 // TODO
             }
         }
