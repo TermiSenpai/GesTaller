@@ -62,10 +62,10 @@ namespace Gestaller
             this.labelOtrasD = new System.Windows.Forms.Label();
             this.flowLayoutPanel4 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button7 = new System.Windows.Forms.Button();
+            /*this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();*/
             this.cueComboBoxMatricula = new Gestaller.Views.CueComboBox();
             this.cueComboBoxMarca = new Gestaller.Views.CueComboBox();
             this.cueComboBoxModelo = new Gestaller.Views.CueComboBox();
@@ -324,7 +324,7 @@ namespace Gestaller
             this.button4VaciarCv.TabIndex = 3;
             this.button4VaciarCv.Text = "Vaciar";
             this.button4VaciarCv.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button4VaciarCv.Click += new System.EventHandler(this.button1_Click);
             // 
             // tab_datos_bancarios
             // 
@@ -542,10 +542,10 @@ namespace Gestaller
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.button7);
+            /*this.panel1.Controls.Add(this.button7);
             this.panel1.Controls.Add(this.button8);
             this.panel1.Controls.Add(this.button6);
-            this.panel1.Controls.Add(this.button5);
+            this.panel1.Controls.Add(this.button5);*/
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(3, 109);
             this.panel1.Name = "panel1";
@@ -554,17 +554,17 @@ namespace Gestaller
             // 
             // button7
             // 
-            this.button7.Dock = System.Windows.Forms.DockStyle.Right;
+            /*this.button7.Dock = System.Windows.Forms.DockStyle.Right;
             this.button7.Location = new System.Drawing.Point(1008, 0);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(75, 23);
             this.button7.TabIndex = 0;
             this.button7.Text = "Modificar";
-            this.button7.UseVisualStyleBackColor = true;
+            this.button7.UseVisualStyleBackColor = true;*/
             // 
             // button8
             // 
-            this.button8.Dock = System.Windows.Forms.DockStyle.Right;
+            /*this.button8.Dock = System.Windows.Forms.DockStyle.Right;
             this.button8.Location = new System.Drawing.Point(1083, 0);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(89, 23);
@@ -592,7 +592,7 @@ namespace Gestaller
             this.button5.TabIndex = 3;
             this.button5.Text = "Vaciar";
             this.button5.UseVisualStyleBackColor = true;
-            // 
+            // */
             // cueComboBoxMatricula
             // 
             this.cueComboBoxMatricula.CueText = "Matrícula";
