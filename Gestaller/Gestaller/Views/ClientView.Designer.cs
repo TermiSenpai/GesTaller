@@ -272,8 +272,8 @@ namespace Gestaller
             this.tabla2_clientes_V.Margin = new System.Windows.Forms.Padding(0);
             this.tabla2_clientes_V.Name = "tabla2_clientes_V";
             this.tabla2_clientes_V.RowCount = 2;
-            this.tabla2_clientes_V.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tabla2_clientes_V.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
+            this.tabla2_clientes_V.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tabla2_clientes_V.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tabla2_clientes_V.Size = new System.Drawing.Size(1334, 160);
             this.tabla2_clientes_V.TabIndex = 0;
             this.tabla2_clientes_V.Paint += new System.Windows.Forms.PaintEventHandler(this.tabla2_clientes_V_Paint);
@@ -285,7 +285,7 @@ namespace Gestaller
             this.EncabezadoFacturación.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.EncabezadoFacturación.Location = new System.Drawing.Point(3, 0);
             this.EncabezadoFacturación.Name = "EncabezadoFacturación";
-            this.EncabezadoFacturación.Size = new System.Drawing.Size(1328, 32);
+            this.EncabezadoFacturación.Size = new System.Drawing.Size(1328, 20);
             this.EncabezadoFacturación.TabIndex = 0;
             this.EncabezadoFacturación.Text = "DATOS DE FACTURACION DEL CLIENTE";
             // 
@@ -304,10 +304,10 @@ namespace Gestaller
             this.flowFacturacion.Controls.Add(this.cueComboBoxFax);
             this.flowFacturacion.Controls.Add(this.cueComboBoxEmail);
             this.flowFacturacion.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowFacturacion.Location = new System.Drawing.Point(0, 32);
+            this.flowFacturacion.Location = new System.Drawing.Point(0, 20);
             this.flowFacturacion.Margin = new System.Windows.Forms.Padding(0);
             this.flowFacturacion.Name = "flowFacturacion";
-            this.flowFacturacion.Size = new System.Drawing.Size(1334, 128);
+            this.flowFacturacion.Size = new System.Drawing.Size(1334, 140);
             this.flowFacturacion.TabIndex = 1;
             // 
             // cueComboBoxEmpresa
@@ -740,6 +740,7 @@ namespace Gestaller
             this.cueComboBox4.Name = "cueComboBox4";
             this.cueComboBox4.Size = new System.Drawing.Size(248, 21);
             this.cueComboBox4.TabIndex = 1;
+            // 
             // cueComboBox5
             // 
             this.cueComboBox5.CueText = "Localidad";
