@@ -35,26 +35,9 @@ namespace Gestaller
             this.tabla3_clientes_V = new System.Windows.Forms.TableLayoutPanel();
             this.EncabezadoVehiculo = new System.Windows.Forms.Label();
             this.flowVehiculo = new System.Windows.Forms.FlowLayoutPanel();
-            this.cueComboBoxMatricula = new Gestaller.Views.CueComboBox();
-            this.cueComboBoxMarca = new Gestaller.Views.CueComboBox();
-            this.cueComboBoxModelo = new Gestaller.Views.CueComboBox();
-            this.cueComboBoxBastidor = new Gestaller.Views.CueComboBox();
-            this.cueComboBoxKilometros = new Gestaller.Views.CueComboBox();
-            this.cueComboBoxTipoMotor = new Gestaller.Views.CueComboBox();
             this.tabla2_clientes_V = new System.Windows.Forms.TableLayoutPanel();
             this.EncabezadoFacturación = new System.Windows.Forms.Label();
             this.flowFacturacion = new System.Windows.Forms.FlowLayoutPanel();
-            this.cueComboBoxEmpresa = new Gestaller.Views.CueComboBox();
-            this.cueComboBoxCIF = new Gestaller.Views.CueComboBox();
-            this.cueComboBoxNombre = new Gestaller.Views.CueComboBox();
-            this.cueComboBoxDireccion = new Gestaller.Views.CueComboBox();
-            this.cueComboBoxLocalidad = new Gestaller.Views.CueComboBox();
-            this.cueComboBoxProvincia = new Gestaller.Views.CueComboBox();
-            this.cueComboBoxCP = new Gestaller.Views.CueComboBox();
-            this.cueComboBoxMovil = new Gestaller.Views.CueComboBox();
-            this.cueComboBoxTelefono = new Gestaller.Views.CueComboBox();
-            this.cueComboBoxFax = new Gestaller.Views.CueComboBox();
-            this.cueComboBoxEmail = new Gestaller.Views.CueComboBox();
             this.dataGrid = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
             this.button4 = new System.Windows.Forms.Button();
@@ -66,10 +49,6 @@ namespace Gestaller
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.EncabezadoDatos_Bancarios = new System.Windows.Forms.Label();
             this.flowBanco_Caja = new System.Windows.Forms.FlowLayoutPanel();
-            this.cueComboBoxEntidad = new Gestaller.Views.CueComboBox();
-            this.cueTextBoxNumeroCuenta = new Gestaller.Views.CueTextBox();
-            this.cueTextBoxFirma_Pago = new Gestaller.Views.CueTextBox();
-            this.cueTextBoxDias_Pago = new Gestaller.Views.CueTextBox();
             this.dataGridDatosB = new System.Windows.Forms.DataGridView();
             this.panel3 = new System.Windows.Forms.Panel();
             this.button9 = new System.Windows.Forms.Button();
@@ -82,6 +61,32 @@ namespace Gestaller
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.labelOtrasD = new System.Windows.Forms.Label();
             this.flowLayoutPanel4 = new System.Windows.Forms.FlowLayoutPanel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.cueComboBoxMatricula = new Gestaller.Views.CueComboBox();
+            this.cueComboBoxMarca = new Gestaller.Views.CueComboBox();
+            this.cueComboBoxModelo = new Gestaller.Views.CueComboBox();
+            this.cueComboBoxBastidor = new Gestaller.Views.CueComboBox();
+            this.cueComboBoxKilometros = new Gestaller.Views.CueComboBox();
+            this.cueComboBoxTipoMotor = new Gestaller.Views.CueComboBox();
+            this.cueComboBoxEmpresa = new Gestaller.Views.CueComboBox();
+            this.cueComboBoxCIF = new Gestaller.Views.CueComboBox();
+            this.cueComboBoxNombre = new Gestaller.Views.CueComboBox();
+            this.cueComboBoxDireccion = new Gestaller.Views.CueComboBox();
+            this.cueComboBoxLocalidad = new Gestaller.Views.CueComboBox();
+            this.cueComboBoxProvincia = new Gestaller.Views.CueComboBox();
+            this.cueComboBoxCP = new Gestaller.Views.CueComboBox();
+            this.cueComboBoxMovil = new Gestaller.Views.CueComboBox();
+            this.cueComboBoxTelefono = new Gestaller.Views.CueComboBox();
+            this.cueComboBoxFax = new Gestaller.Views.CueComboBox();
+            this.cueComboBoxEmail = new Gestaller.Views.CueComboBox();
+            this.cueComboBoxEntidad = new Gestaller.Views.CueComboBox();
+            this.cueTextBoxNumeroCuenta = new Gestaller.Views.CueTextBox();
+            this.cueTextBoxFirma_Pago = new Gestaller.Views.CueTextBox();
+            this.cueTextBoxDias_Pago = new Gestaller.Views.CueTextBox();
             this.cueComboBox3 = new Gestaller.Views.CueComboBox();
             this.cueComboBox4 = new Gestaller.Views.CueComboBox();
             this.cueComboBox5 = new Gestaller.Views.CueComboBox();
@@ -91,11 +96,6 @@ namespace Gestaller
             this.cueComboBox8 = new Gestaller.Views.CueComboBox();
             this.cueComboBox9 = new Gestaller.Views.CueComboBox();
             this.cueComboBox10 = new Gestaller.Views.CueComboBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
             this.tabControl_Clientes.SuspendLayout();
             this.tab_clientes_vehiculos.SuspendLayout();
             this.tabla1_clientes_V.SuspendLayout();
@@ -207,60 +207,6 @@ namespace Gestaller
             this.flowVehiculo.Size = new System.Drawing.Size(1328, 52);
             this.flowVehiculo.TabIndex = 3;
             // 
-            // cueComboBoxMatricula
-            // 
-            this.cueComboBoxMatricula.CueText = "Matrícula";
-            this.cueComboBoxMatricula.FormattingEnabled = true;
-            this.cueComboBoxMatricula.Location = new System.Drawing.Point(3, 3);
-            this.cueComboBoxMatricula.Name = "cueComboBoxMatricula";
-            this.cueComboBoxMatricula.Size = new System.Drawing.Size(121, 24);
-            this.cueComboBoxMatricula.TabIndex = 0;
-            // 
-            // cueComboBoxMarca
-            // 
-            this.cueComboBoxMarca.CueText = "Marca";
-            this.cueComboBoxMarca.FormattingEnabled = true;
-            this.cueComboBoxMarca.Location = new System.Drawing.Point(130, 3);
-            this.cueComboBoxMarca.Name = "cueComboBoxMarca";
-            this.cueComboBoxMarca.Size = new System.Drawing.Size(121, 24);
-            this.cueComboBoxMarca.TabIndex = 1;
-            // 
-            // cueComboBoxModelo
-            // 
-            this.cueComboBoxModelo.CueText = "Modelo";
-            this.cueComboBoxModelo.FormattingEnabled = true;
-            this.cueComboBoxModelo.Location = new System.Drawing.Point(257, 3);
-            this.cueComboBoxModelo.Name = "cueComboBoxModelo";
-            this.cueComboBoxModelo.Size = new System.Drawing.Size(121, 24);
-            this.cueComboBoxModelo.TabIndex = 2;
-            // 
-            // cueComboBoxBastidor
-            // 
-            this.cueComboBoxBastidor.CueText = "Bastidor";
-            this.cueComboBoxBastidor.FormattingEnabled = true;
-            this.cueComboBoxBastidor.Location = new System.Drawing.Point(384, 3);
-            this.cueComboBoxBastidor.Name = "cueComboBoxBastidor";
-            this.cueComboBoxBastidor.Size = new System.Drawing.Size(121, 24);
-            this.cueComboBoxBastidor.TabIndex = 3;
-            // 
-            // cueComboBoxKilometros
-            // 
-            this.cueComboBoxKilometros.CueText = "Kilómetros";
-            this.cueComboBoxKilometros.FormattingEnabled = true;
-            this.cueComboBoxKilometros.Location = new System.Drawing.Point(511, 3);
-            this.cueComboBoxKilometros.Name = "cueComboBoxKilometros";
-            this.cueComboBoxKilometros.Size = new System.Drawing.Size(121, 24);
-            this.cueComboBoxKilometros.TabIndex = 4;
-            // 
-            // cueComboBoxTipoMotor
-            // 
-            this.cueComboBoxTipoMotor.CueText = "Tipo de Motor";
-            this.cueComboBoxTipoMotor.FormattingEnabled = true;
-            this.cueComboBoxTipoMotor.Location = new System.Drawing.Point(638, 3);
-            this.cueComboBoxTipoMotor.Name = "cueComboBoxTipoMotor";
-            this.cueComboBoxTipoMotor.Size = new System.Drawing.Size(121, 24);
-            this.cueComboBoxTipoMotor.TabIndex = 5;
-            // 
             // tabla2_clientes_V
             // 
             this.tabla2_clientes_V.ColumnCount = 1;
@@ -309,112 +255,6 @@ namespace Gestaller
             this.flowFacturacion.Name = "flowFacturacion";
             this.flowFacturacion.Size = new System.Drawing.Size(1334, 140);
             this.flowFacturacion.TabIndex = 1;
-            // 
-            // cueComboBoxEmpresa
-            // 
-            this.cueComboBoxEmpresa.CueText = "Empresa";
-            this.cueComboBoxEmpresa.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.cueComboBoxEmpresa.FormattingEnabled = true;
-            this.cueComboBoxEmpresa.Location = new System.Drawing.Point(3, 3);
-            this.cueComboBoxEmpresa.Name = "cueComboBoxEmpresa";
-            this.cueComboBoxEmpresa.Size = new System.Drawing.Size(248, 24);
-            this.cueComboBoxEmpresa.TabIndex = 1;
-            this.cueComboBoxEmpresa.SelectionChangeCommitted += new System.EventHandler(this.cueComboBoxEmpresa_SelectionChangeCommitted);
-            // 
-            // cueComboBoxCIF
-            // 
-            this.cueComboBoxCIF.CueText = "C.I.F.";
-            this.cueComboBoxCIF.FormattingEnabled = true;
-            this.cueComboBoxCIF.Location = new System.Drawing.Point(257, 3);
-            this.cueComboBoxCIF.Name = "cueComboBoxCIF";
-            this.cueComboBoxCIF.Size = new System.Drawing.Size(121, 24);
-            this.cueComboBoxCIF.TabIndex = 2;
-            this.cueComboBoxCIF.SelectionChangeCommitted += new System.EventHandler(this.cueComboBoxCIF_SelectionChangeCommitted);
-            // 
-            // cueComboBoxNombre
-            // 
-            this.cueComboBoxNombre.CueText = "Nombre";
-            this.cueComboBoxNombre.FormattingEnabled = true;
-            this.cueComboBoxNombre.Location = new System.Drawing.Point(384, 3);
-            this.cueComboBoxNombre.Name = "cueComboBoxNombre";
-            this.cueComboBoxNombre.Size = new System.Drawing.Size(248, 24);
-            this.cueComboBoxNombre.TabIndex = 3;
-            this.cueComboBoxNombre.SelectionChangeCommitted += new System.EventHandler(this.cueComboBoxNombre_SelectionChangeCommitted);
-            // 
-            // cueComboBoxDireccion
-            // 
-            this.cueComboBoxDireccion.CueText = "Dirección";
-            this.cueComboBoxDireccion.FormattingEnabled = true;
-            this.cueComboBoxDireccion.Location = new System.Drawing.Point(638, 3);
-            this.cueComboBoxDireccion.Name = "cueComboBoxDireccion";
-            this.cueComboBoxDireccion.Size = new System.Drawing.Size(248, 24);
-            this.cueComboBoxDireccion.TabIndex = 4;
-            this.cueComboBoxDireccion.SelectionChangeCommitted += new System.EventHandler(this.cueComboBoxDireccion_SelectionChangeCommitted);
-            // 
-            // cueComboBoxLocalidad
-            // 
-            this.cueComboBoxLocalidad.CueText = "Localidad";
-            this.cueComboBoxLocalidad.FormattingEnabled = true;
-            this.cueComboBoxLocalidad.Location = new System.Drawing.Point(892, 3);
-            this.cueComboBoxLocalidad.Name = "cueComboBoxLocalidad";
-            this.cueComboBoxLocalidad.Size = new System.Drawing.Size(121, 24);
-            this.cueComboBoxLocalidad.TabIndex = 5;
-            // 
-            // cueComboBoxProvincia
-            // 
-            this.cueComboBoxProvincia.CueText = "Provincia";
-            this.cueComboBoxProvincia.FormattingEnabled = true;
-            this.cueComboBoxProvincia.Location = new System.Drawing.Point(1019, 3);
-            this.cueComboBoxProvincia.Name = "cueComboBoxProvincia";
-            this.cueComboBoxProvincia.Size = new System.Drawing.Size(121, 24);
-            this.cueComboBoxProvincia.TabIndex = 6;
-            // 
-            // cueComboBoxCP
-            // 
-            this.cueComboBoxCP.CueText = "C.P.";
-            this.cueComboBoxCP.FormattingEnabled = true;
-            this.cueComboBoxCP.Location = new System.Drawing.Point(1146, 3);
-            this.cueComboBoxCP.Name = "cueComboBoxCP";
-            this.cueComboBoxCP.Size = new System.Drawing.Size(121, 24);
-            this.cueComboBoxCP.TabIndex = 7;
-            // 
-            // cueComboBoxMovil
-            // 
-            this.cueComboBoxMovil.CueText = "Móvil";
-            this.cueComboBoxMovil.FormattingEnabled = true;
-            this.cueComboBoxMovil.Location = new System.Drawing.Point(3, 33);
-            this.cueComboBoxMovil.Name = "cueComboBoxMovil";
-            this.cueComboBoxMovil.Size = new System.Drawing.Size(121, 24);
-            this.cueComboBoxMovil.TabIndex = 8;
-            this.cueComboBoxMovil.SelectionChangeCommitted += new System.EventHandler(this.cueComboBoxMovil_SelectionChangeCommitted);
-            // 
-            // cueComboBoxTelefono
-            // 
-            this.cueComboBoxTelefono.CueText = "Teléfono";
-            this.cueComboBoxTelefono.FormattingEnabled = true;
-            this.cueComboBoxTelefono.Location = new System.Drawing.Point(130, 33);
-            this.cueComboBoxTelefono.Name = "cueComboBoxTelefono";
-            this.cueComboBoxTelefono.Size = new System.Drawing.Size(121, 24);
-            this.cueComboBoxTelefono.TabIndex = 9;
-            // 
-            // cueComboBoxFax
-            // 
-            this.cueComboBoxFax.CueText = "Fax";
-            this.cueComboBoxFax.FormattingEnabled = true;
-            this.cueComboBoxFax.Location = new System.Drawing.Point(257, 33);
-            this.cueComboBoxFax.Name = "cueComboBoxFax";
-            this.cueComboBoxFax.Size = new System.Drawing.Size(121, 24);
-            this.cueComboBoxFax.TabIndex = 10;
-            // 
-            // cueComboBoxEmail
-            // 
-            this.cueComboBoxEmail.CueText = "E-Mail";
-            this.cueComboBoxEmail.FormattingEnabled = true;
-            this.cueComboBoxEmail.Location = new System.Drawing.Point(384, 33);
-            this.cueComboBoxEmail.Name = "cueComboBoxEmail";
-            this.cueComboBoxEmail.Size = new System.Drawing.Size(248, 24);
-            this.cueComboBoxEmail.TabIndex = 11;
-            this.cueComboBoxEmail.SelectionChangeCommitted += new System.EventHandler(this.cueComboBoxEmail_SelectionChangeCommitted);
             // 
             // dataGrid
             // 
@@ -548,39 +388,6 @@ namespace Gestaller
             this.flowBanco_Caja.Name = "flowBanco_Caja";
             this.flowBanco_Caja.Size = new System.Drawing.Size(1316, 74);
             this.flowBanco_Caja.TabIndex = 2;
-            // 
-            // cueComboBoxEntidad
-            // 
-            this.cueComboBoxEntidad.CueText = "Entidad";
-            this.cueComboBoxEntidad.FormattingEnabled = true;
-            this.cueComboBoxEntidad.Location = new System.Drawing.Point(3, 3);
-            this.cueComboBoxEntidad.Name = "cueComboBoxEntidad";
-            this.cueComboBoxEntidad.Size = new System.Drawing.Size(248, 21);
-            this.cueComboBoxEntidad.TabIndex = 1;
-            // 
-            // cueTextBoxNumeroCuenta
-            // 
-            this.cueTextBoxNumeroCuenta.CueText = "Número de Cuenta";
-            this.cueTextBoxNumeroCuenta.Location = new System.Drawing.Point(257, 3);
-            this.cueTextBoxNumeroCuenta.Name = "cueTextBoxNumeroCuenta";
-            this.cueTextBoxNumeroCuenta.Size = new System.Drawing.Size(100, 20);
-            this.cueTextBoxNumeroCuenta.TabIndex = 2;
-            // 
-            // cueTextBoxFirma_Pago
-            // 
-            this.cueTextBoxFirma_Pago.CueText = "Firma Pago";
-            this.cueTextBoxFirma_Pago.Location = new System.Drawing.Point(363, 3);
-            this.cueTextBoxFirma_Pago.Name = "cueTextBoxFirma_Pago";
-            this.cueTextBoxFirma_Pago.Size = new System.Drawing.Size(100, 20);
-            this.cueTextBoxFirma_Pago.TabIndex = 3;
-            // 
-            // cueTextBoxDias_Pago
-            // 
-            this.cueTextBoxDias_Pago.CueText = "Días Pago";
-            this.cueTextBoxDias_Pago.Location = new System.Drawing.Point(469, 3);
-            this.cueTextBoxDias_Pago.Name = "cueTextBoxDias_Pago";
-            this.cueTextBoxDias_Pago.Size = new System.Drawing.Size(100, 20);
-            this.cueTextBoxDias_Pago.TabIndex = 4;
             // 
             // dataGridDatosB
             // 
@@ -728,6 +535,254 @@ namespace Gestaller
             this.flowLayoutPanel4.Size = new System.Drawing.Size(1316, 74);
             this.flowLayoutPanel4.TabIndex = 0;
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.button7);
+            this.panel1.Controls.Add(this.button8);
+            this.panel1.Controls.Add(this.button6);
+            this.panel1.Controls.Add(this.button5);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(3, 109);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1322, 23);
+            this.panel1.TabIndex = 2;
+            // 
+            // button7
+            // 
+            this.button7.Dock = System.Windows.Forms.DockStyle.Right;
+            this.button7.Location = new System.Drawing.Point(1008, 0);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(75, 23);
+            this.button7.TabIndex = 0;
+            this.button7.Text = "Modificar";
+            this.button7.UseVisualStyleBackColor = true;
+            // 
+            // button8
+            // 
+            this.button8.Dock = System.Windows.Forms.DockStyle.Right;
+            this.button8.Location = new System.Drawing.Point(1083, 0);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(89, 23);
+            this.button8.TabIndex = 1;
+            this.button8.Text = "Borrar";
+            this.button8.UseVisualStyleBackColor = true;
+            // 
+            // button6
+            // 
+            this.button6.Dock = System.Windows.Forms.DockStyle.Right;
+            this.button6.Location = new System.Drawing.Point(1172, 0);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(75, 23);
+            this.button6.TabIndex = 2;
+            this.button6.Text = "Añadir";
+            this.button6.UseVisualStyleBackColor = true;
+            // 
+            // button5
+            // 
+            this.button5.Dock = System.Windows.Forms.DockStyle.Right;
+            this.button5.Location = new System.Drawing.Point(1247, 0);
+            this.button5.Margin = new System.Windows.Forms.Padding(6, 3, 3, 3);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(75, 23);
+            this.button5.TabIndex = 3;
+            this.button5.Text = "Vaciar";
+            this.button5.UseVisualStyleBackColor = true;
+            // 
+            // cueComboBoxMatricula
+            // 
+            this.cueComboBoxMatricula.CueText = "Matrícula";
+            this.cueComboBoxMatricula.FormattingEnabled = true;
+            this.cueComboBoxMatricula.Location = new System.Drawing.Point(3, 3);
+            this.cueComboBoxMatricula.Name = "cueComboBoxMatricula";
+            this.cueComboBoxMatricula.Size = new System.Drawing.Size(121, 24);
+            this.cueComboBoxMatricula.TabIndex = 0;
+            this.cueComboBoxMatricula.SelectionChangeCommitted += new System.EventHandler(this.cueComboBoxMatricula_SelectionChangeCommitted);
+            // 
+            // cueComboBoxMarca
+            // 
+            this.cueComboBoxMarca.CueText = "Marca";
+            this.cueComboBoxMarca.FormattingEnabled = true;
+            this.cueComboBoxMarca.Location = new System.Drawing.Point(130, 3);
+            this.cueComboBoxMarca.Name = "cueComboBoxMarca";
+            this.cueComboBoxMarca.Size = new System.Drawing.Size(121, 24);
+            this.cueComboBoxMarca.TabIndex = 1;
+            // 
+            // cueComboBoxModelo
+            // 
+            this.cueComboBoxModelo.CueText = "Modelo";
+            this.cueComboBoxModelo.FormattingEnabled = true;
+            this.cueComboBoxModelo.Location = new System.Drawing.Point(257, 3);
+            this.cueComboBoxModelo.Name = "cueComboBoxModelo";
+            this.cueComboBoxModelo.Size = new System.Drawing.Size(121, 24);
+            this.cueComboBoxModelo.TabIndex = 2;
+            // 
+            // cueComboBoxBastidor
+            // 
+            this.cueComboBoxBastidor.CueText = "Bastidor";
+            this.cueComboBoxBastidor.FormattingEnabled = true;
+            this.cueComboBoxBastidor.Location = new System.Drawing.Point(384, 3);
+            this.cueComboBoxBastidor.Name = "cueComboBoxBastidor";
+            this.cueComboBoxBastidor.Size = new System.Drawing.Size(121, 24);
+            this.cueComboBoxBastidor.TabIndex = 3;
+            this.cueComboBoxBastidor.SelectionChangeCommitted += new System.EventHandler(this.cueComboBoxBastidor_SelectionChangeCommitted);
+            // 
+            // cueComboBoxKilometros
+            // 
+            this.cueComboBoxKilometros.CueText = "Kilómetros";
+            this.cueComboBoxKilometros.FormattingEnabled = true;
+            this.cueComboBoxKilometros.Location = new System.Drawing.Point(511, 3);
+            this.cueComboBoxKilometros.Name = "cueComboBoxKilometros";
+            this.cueComboBoxKilometros.Size = new System.Drawing.Size(121, 24);
+            this.cueComboBoxKilometros.TabIndex = 4;
+            // 
+            // cueComboBoxTipoMotor
+            // 
+            this.cueComboBoxTipoMotor.CueText = "Tipo de Motor";
+            this.cueComboBoxTipoMotor.FormattingEnabled = true;
+            this.cueComboBoxTipoMotor.Location = new System.Drawing.Point(638, 3);
+            this.cueComboBoxTipoMotor.Name = "cueComboBoxTipoMotor";
+            this.cueComboBoxTipoMotor.Size = new System.Drawing.Size(121, 24);
+            this.cueComboBoxTipoMotor.TabIndex = 5;
+            // 
+            // cueComboBoxEmpresa
+            // 
+            this.cueComboBoxEmpresa.CueText = "Empresa";
+            this.cueComboBoxEmpresa.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.cueComboBoxEmpresa.FormattingEnabled = true;
+            this.cueComboBoxEmpresa.Location = new System.Drawing.Point(3, 3);
+            this.cueComboBoxEmpresa.Name = "cueComboBoxEmpresa";
+            this.cueComboBoxEmpresa.Size = new System.Drawing.Size(248, 24);
+            this.cueComboBoxEmpresa.TabIndex = 1;
+            this.cueComboBoxEmpresa.SelectionChangeCommitted += new System.EventHandler(this.cueComboBoxEmpresa_SelectionChangeCommitted);
+            // 
+            // cueComboBoxCIF
+            // 
+            this.cueComboBoxCIF.CueText = "C.I.F.";
+            this.cueComboBoxCIF.FormattingEnabled = true;
+            this.cueComboBoxCIF.Location = new System.Drawing.Point(257, 3);
+            this.cueComboBoxCIF.Name = "cueComboBoxCIF";
+            this.cueComboBoxCIF.Size = new System.Drawing.Size(121, 24);
+            this.cueComboBoxCIF.TabIndex = 2;
+            this.cueComboBoxCIF.SelectionChangeCommitted += new System.EventHandler(this.cueComboBoxCIF_SelectionChangeCommitted);
+            // 
+            // cueComboBoxNombre
+            // 
+            this.cueComboBoxNombre.CueText = "Nombre";
+            this.cueComboBoxNombre.FormattingEnabled = true;
+            this.cueComboBoxNombre.Location = new System.Drawing.Point(384, 3);
+            this.cueComboBoxNombre.Name = "cueComboBoxNombre";
+            this.cueComboBoxNombre.Size = new System.Drawing.Size(248, 24);
+            this.cueComboBoxNombre.TabIndex = 3;
+            this.cueComboBoxNombre.SelectionChangeCommitted += new System.EventHandler(this.cueComboBoxNombre_SelectionChangeCommitted);
+            // 
+            // cueComboBoxDireccion
+            // 
+            this.cueComboBoxDireccion.CueText = "Dirección";
+            this.cueComboBoxDireccion.FormattingEnabled = true;
+            this.cueComboBoxDireccion.Location = new System.Drawing.Point(638, 3);
+            this.cueComboBoxDireccion.Name = "cueComboBoxDireccion";
+            this.cueComboBoxDireccion.Size = new System.Drawing.Size(248, 24);
+            this.cueComboBoxDireccion.TabIndex = 4;
+            this.cueComboBoxDireccion.SelectionChangeCommitted += new System.EventHandler(this.cueComboBoxDireccion_SelectionChangeCommitted);
+            // 
+            // cueComboBoxLocalidad
+            // 
+            this.cueComboBoxLocalidad.CueText = "Localidad";
+            this.cueComboBoxLocalidad.FormattingEnabled = true;
+            this.cueComboBoxLocalidad.Location = new System.Drawing.Point(892, 3);
+            this.cueComboBoxLocalidad.Name = "cueComboBoxLocalidad";
+            this.cueComboBoxLocalidad.Size = new System.Drawing.Size(121, 24);
+            this.cueComboBoxLocalidad.TabIndex = 5;
+            // 
+            // cueComboBoxProvincia
+            // 
+            this.cueComboBoxProvincia.CueText = "Provincia";
+            this.cueComboBoxProvincia.FormattingEnabled = true;
+            this.cueComboBoxProvincia.Location = new System.Drawing.Point(1019, 3);
+            this.cueComboBoxProvincia.Name = "cueComboBoxProvincia";
+            this.cueComboBoxProvincia.Size = new System.Drawing.Size(121, 24);
+            this.cueComboBoxProvincia.TabIndex = 6;
+            // 
+            // cueComboBoxCP
+            // 
+            this.cueComboBoxCP.CueText = "C.P.";
+            this.cueComboBoxCP.FormattingEnabled = true;
+            this.cueComboBoxCP.Location = new System.Drawing.Point(1146, 3);
+            this.cueComboBoxCP.Name = "cueComboBoxCP";
+            this.cueComboBoxCP.Size = new System.Drawing.Size(121, 24);
+            this.cueComboBoxCP.TabIndex = 7;
+            // 
+            // cueComboBoxMovil
+            // 
+            this.cueComboBoxMovil.CueText = "Móvil";
+            this.cueComboBoxMovil.FormattingEnabled = true;
+            this.cueComboBoxMovil.Location = new System.Drawing.Point(3, 33);
+            this.cueComboBoxMovil.Name = "cueComboBoxMovil";
+            this.cueComboBoxMovil.Size = new System.Drawing.Size(121, 24);
+            this.cueComboBoxMovil.TabIndex = 8;
+            this.cueComboBoxMovil.SelectionChangeCommitted += new System.EventHandler(this.cueComboBoxMovil_SelectionChangeCommitted);
+            // 
+            // cueComboBoxTelefono
+            // 
+            this.cueComboBoxTelefono.CueText = "Teléfono";
+            this.cueComboBoxTelefono.FormattingEnabled = true;
+            this.cueComboBoxTelefono.Location = new System.Drawing.Point(130, 33);
+            this.cueComboBoxTelefono.Name = "cueComboBoxTelefono";
+            this.cueComboBoxTelefono.Size = new System.Drawing.Size(121, 24);
+            this.cueComboBoxTelefono.TabIndex = 9;
+            // 
+            // cueComboBoxFax
+            // 
+            this.cueComboBoxFax.CueText = "Fax";
+            this.cueComboBoxFax.FormattingEnabled = true;
+            this.cueComboBoxFax.Location = new System.Drawing.Point(257, 33);
+            this.cueComboBoxFax.Name = "cueComboBoxFax";
+            this.cueComboBoxFax.Size = new System.Drawing.Size(121, 24);
+            this.cueComboBoxFax.TabIndex = 10;
+            // 
+            // cueComboBoxEmail
+            // 
+            this.cueComboBoxEmail.CueText = "E-Mail";
+            this.cueComboBoxEmail.FormattingEnabled = true;
+            this.cueComboBoxEmail.Location = new System.Drawing.Point(384, 33);
+            this.cueComboBoxEmail.Name = "cueComboBoxEmail";
+            this.cueComboBoxEmail.Size = new System.Drawing.Size(248, 24);
+            this.cueComboBoxEmail.TabIndex = 11;
+            this.cueComboBoxEmail.SelectionChangeCommitted += new System.EventHandler(this.cueComboBoxEmail_SelectionChangeCommitted);
+            // 
+            // cueComboBoxEntidad
+            // 
+            this.cueComboBoxEntidad.CueText = "Entidad";
+            this.cueComboBoxEntidad.FormattingEnabled = true;
+            this.cueComboBoxEntidad.Location = new System.Drawing.Point(3, 3);
+            this.cueComboBoxEntidad.Name = "cueComboBoxEntidad";
+            this.cueComboBoxEntidad.Size = new System.Drawing.Size(248, 21);
+            this.cueComboBoxEntidad.TabIndex = 1;
+            // 
+            // cueTextBoxNumeroCuenta
+            // 
+            this.cueTextBoxNumeroCuenta.CueText = "Número de Cuenta";
+            this.cueTextBoxNumeroCuenta.Location = new System.Drawing.Point(257, 3);
+            this.cueTextBoxNumeroCuenta.Name = "cueTextBoxNumeroCuenta";
+            this.cueTextBoxNumeroCuenta.Size = new System.Drawing.Size(100, 20);
+            this.cueTextBoxNumeroCuenta.TabIndex = 2;
+            // 
+            // cueTextBoxFirma_Pago
+            // 
+            this.cueTextBoxFirma_Pago.CueText = "Firma Pago";
+            this.cueTextBoxFirma_Pago.Location = new System.Drawing.Point(363, 3);
+            this.cueTextBoxFirma_Pago.Name = "cueTextBoxFirma_Pago";
+            this.cueTextBoxFirma_Pago.Size = new System.Drawing.Size(100, 20);
+            this.cueTextBoxFirma_Pago.TabIndex = 3;
+            // 
+            // cueTextBoxDias_Pago
+            // 
+            this.cueTextBoxDias_Pago.CueText = "Días Pago";
+            this.cueTextBoxDias_Pago.Location = new System.Drawing.Point(469, 3);
+            this.cueTextBoxDias_Pago.Name = "cueTextBoxDias_Pago";
+            this.cueTextBoxDias_Pago.Size = new System.Drawing.Size(100, 20);
+            this.cueTextBoxDias_Pago.TabIndex = 4;
+            // 
             // cueComboBox3
             // 
             this.cueComboBox3.CueText = "Nombre";
@@ -808,59 +863,6 @@ namespace Gestaller
             this.cueComboBox10.Name = "cueComboBox10";
             this.cueComboBox10.Size = new System.Drawing.Size(248, 21);
             this.cueComboBox10.TabIndex = 8;
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.button7);
-            this.panel1.Controls.Add(this.button8);
-            this.panel1.Controls.Add(this.button6);
-            this.panel1.Controls.Add(this.button5);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(3, 109);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1322, 23);
-            this.panel1.TabIndex = 2;
-            // 
-            // button7
-            // 
-            this.button7.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button7.Location = new System.Drawing.Point(1008, 0);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(75, 23);
-            this.button7.TabIndex = 0;
-            this.button7.Text = "Modificar";
-            this.button7.UseVisualStyleBackColor = true;
-            // 
-            // button8
-            // 
-            this.button8.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button8.Location = new System.Drawing.Point(1083, 0);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(89, 23);
-            this.button8.TabIndex = 1;
-            this.button8.Text = "Borrar";
-            this.button8.UseVisualStyleBackColor = true;
-            // 
-            // button6
-            // 
-            this.button6.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button6.Location = new System.Drawing.Point(1172, 0);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(75, 23);
-            this.button6.TabIndex = 2;
-            this.button6.Text = "Añadir";
-            this.button6.UseVisualStyleBackColor = true;
-            // 
-            // button5
-            // 
-            this.button5.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button5.Location = new System.Drawing.Point(1247, 0);
-            this.button5.Margin = new System.Windows.Forms.Padding(6, 3, 3, 3);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 23);
-            this.button5.TabIndex = 3;
-            this.button5.Text = "Vaciar";
-            this.button5.UseVisualStyleBackColor = true;
             // 
             // ClientView
             // 

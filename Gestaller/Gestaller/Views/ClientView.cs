@@ -110,6 +110,18 @@ namespace Gestaller
             changesComboBoxes();
         }
 
+        private void cueComboBoxMatricula_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            _comboIndex = cueComboBoxMatricula.SelectedIndex;
+            changesComboBoxes();
+        }
+
+        private void cueComboBoxBastidor_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            _comboIndex = cueComboBoxBastidor.SelectedIndex;
+            changesComboBoxes();
+        }
+
         #endregion
 
         private void changesComboBoxes()
@@ -226,9 +238,9 @@ namespace Gestaller
                 #endregion
             }
 
+
         }
 
         #endregion
-
     }
 }
