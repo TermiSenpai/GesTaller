@@ -12,6 +12,7 @@ namespace Gestaller
 {
     public partial class IncomingView : Form
     {
+
         BussinessLogicLayer _bussinessLogicLayer = new BussinessLogicLayer();
         public IncomingView()
         {
@@ -20,16 +21,47 @@ namespace Gestaller
 
         private void IncomingView_Load(object sender, EventArgs e)
         {
-            getDB();
+            getIncomingDB();
+            getVehicleDB();
             incomingItemSet();
         }
 
-        private void getDB()
+        private void getIncomingDB()
         {
             List<Incoming> incomings = _bussinessLogicLayer.GetIncomings();
 
             dataGridViewDepositos.DataSource = incomings;
         }
+
+        private void getVehicleDB()
+        {
+            List<Vehicle> vehicles = _bussinessLogicLayer.GetVehicles();
+
+            dataGridViewVehicles.DataSource = vehicles;
+        }
+
+       /* private void setToComboBox()
+        {
+
+            // Muestra los datos en los cueComboBox 
+            cueComboBoxCliente.Text = _clientVehicle.contact_company;
+            cueComboBoxCIF.Text = _clientVehicle.contact_cif;
+            cueComboBoxNombre.Text = _clientVehicle.contact_fullName;
+            cueComboBoxDireccion.Text = _clientVehicle.contact_address;
+            cueComboBoxLocalidad.Text = _clientVehicle.contact_city;
+            cueComboBoxProvincia.Text = _clientVehicle.contact_district;
+            cueComboBoxCP.Text = _clientVehicle.contact_cp.ToString();
+            cueComboBoxMovil.Text = _clientVehicle.contact_mobile;
+            cueComboBoxTelefono.Text = _clientVehicle.contact_phone;
+            cueComboBoxFax.Text = _clientVehicle.contact_fax;
+            cueComboBoxEmail.Text = _clientVehicle.contact_email;
+            cueComboBoxMatricula.Text = _clientVehicle.vehicle_enroll;
+            cueComboBoxMarca.Text = _clientVehicle.vehicle_brand;
+            cueComboBoxModelo.Text = _clientVehicle.vehicle_model;
+            cueComboBoxBastidor.Text = _clientVehicle.vehicle_frame;
+            cueComboBoxKilometros.Text = _clientVehicle.vehicle_kms;
+            cueComboBoxTipoMotor.Text = _clientVehicle.vehicle_engineType;
+        }*/
 
         private void incomingItemSet()
         {
