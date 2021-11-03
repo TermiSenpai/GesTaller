@@ -42,14 +42,13 @@ namespace Gestaller
             this.cueComboBoxModelo = new Gestaller.Views.CueComboBox();
             this.cueTextBoxKMS = new Gestaller.Views.CueTextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
-            this.cueComboBox1 = new Gestaller.Views.CueComboBox();
-            this.cueComboBox2 = new Gestaller.Views.CueComboBox();
-            this.cueComboBox3 = new Gestaller.Views.CueComboBox();
+            this.ComboBudgetNum1 = new Gestaller.Views.CueComboBox();
+            this.ComboProformaNum1 = new Gestaller.Views.CueComboBox();
+            this.ComboInvoiceNum1 = new Gestaller.Views.CueComboBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.label3 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -63,10 +62,11 @@ namespace Gestaller
             this.label4 = new System.Windows.Forms.Label();
             this.flowLayoutPanel5 = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel6 = new System.Windows.Forms.FlowLayoutPanel();
-            this.cueComboBox8 = new Gestaller.Views.CueComboBox();
-            this.cueComboBox9 = new Gestaller.Views.CueComboBox();
-            this.cueComboBox10 = new Gestaller.Views.CueComboBox();
+            this.ComboBudgetNum2 = new Gestaller.Views.CueComboBox();
+            this.ComboProformaNum2 = new Gestaller.Views.CueComboBox();
+            this.ComboInvoiceNum2 = new Gestaller.Views.CueComboBox();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.label5 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -80,26 +80,32 @@ namespace Gestaller
             this.label6 = new System.Windows.Forms.Label();
             this.flowLayoutPanel8 = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel9 = new System.Windows.Forms.FlowLayoutPanel();
-            this.cueComboBox15 = new Gestaller.Views.CueComboBox();
-            this.cueComboBox16 = new Gestaller.Views.CueComboBox();
-            this.cueComboBox17 = new Gestaller.Views.CueComboBox();
+            this.ComboBudgetNum3 = new Gestaller.Views.CueComboBox();
+            this.ComboProformaNum3 = new Gestaller.Views.CueComboBox();
+            this.ComboInvoiceNum3 = new Gestaller.Views.CueComboBox();
             this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tableLayoutPanel1Presupuesto.SuspendLayout();
             this.panel1.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
-            this.tabPage2.SuspendLayout();
-            this.tabPage3.SuspendLayout();
             this.flowLayoutPanel3.SuspendLayout();
+            this.tabPage2.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.flowLayoutPanel4.SuspendLayout();
             this.flowLayoutPanel6.SuspendLayout();
+            this.tabPage3.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.flowLayoutPanel7.SuspendLayout();
             this.flowLayoutPanel9.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -230,7 +236,7 @@ namespace Gestaller
             // 
             // cueTextBoxKMS
             // 
-            this.cueTextBoxKMS.CueText = "Kmts.";
+            this.cueTextBoxKMS.CueText = "Kilometros";
             this.cueTextBoxKMS.Location = new System.Drawing.Point(3, 30);
             this.cueTextBoxKMS.Name = "cueTextBoxKMS";
             this.cueTextBoxKMS.Size = new System.Drawing.Size(121, 20);
@@ -247,28 +253,6 @@ namespace Gestaller
             this.label2.TabIndex = 3;
             this.label2.Text = "PRESUPUESTO";
             // 
-            // tabPage2
-            // 
-            this.tabPage2.Controls.Add(this.tableLayoutPanel1);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(792, 424);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Proforma";
-            this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // tabPage3
-            // 
-            this.tabPage3.Controls.Add(this.tableLayoutPanel2);
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(792, 424);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Factura";
-            this.tabPage3.UseVisualStyleBackColor = true;
-            // 
             // flowLayoutPanel2
             // 
             this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -279,9 +263,9 @@ namespace Gestaller
             // 
             // flowLayoutPanel3
             // 
-            this.flowLayoutPanel3.Controls.Add(this.cueComboBox1);
-            this.flowLayoutPanel3.Controls.Add(this.cueComboBox2);
-            this.flowLayoutPanel3.Controls.Add(this.cueComboBox3);
+            this.flowLayoutPanel3.Controls.Add(this.ComboBudgetNum1);
+            this.flowLayoutPanel3.Controls.Add(this.ComboProformaNum1);
+            this.flowLayoutPanel3.Controls.Add(this.ComboInvoiceNum1);
             this.flowLayoutPanel3.Controls.Add(this.dateTimePicker1);
             this.flowLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel3.Location = new System.Drawing.Point(3, 145);
@@ -290,32 +274,32 @@ namespace Gestaller
             this.flowLayoutPanel3.Size = new System.Drawing.Size(783, 54);
             this.flowLayoutPanel3.TabIndex = 5;
             // 
-            // cueComboBox1
+            // ComboBudgetNum1
             // 
-            this.cueComboBox1.CueText = "Presupuesto";
-            this.cueComboBox1.FormattingEnabled = true;
-            this.cueComboBox1.Location = new System.Drawing.Point(3, 3);
-            this.cueComboBox1.Name = "cueComboBox1";
-            this.cueComboBox1.Size = new System.Drawing.Size(121, 21);
-            this.cueComboBox1.TabIndex = 0;
+            this.ComboBudgetNum1.CueText = "Nº Presupuesto";
+            this.ComboBudgetNum1.FormattingEnabled = true;
+            this.ComboBudgetNum1.Location = new System.Drawing.Point(3, 3);
+            this.ComboBudgetNum1.Name = "ComboBudgetNum1";
+            this.ComboBudgetNum1.Size = new System.Drawing.Size(121, 21);
+            this.ComboBudgetNum1.TabIndex = 0;
             // 
-            // cueComboBox2
+            // ComboProformaNum1
             // 
-            this.cueComboBox2.CueText = "Proforma";
-            this.cueComboBox2.FormattingEnabled = true;
-            this.cueComboBox2.Location = new System.Drawing.Point(130, 3);
-            this.cueComboBox2.Name = "cueComboBox2";
-            this.cueComboBox2.Size = new System.Drawing.Size(121, 21);
-            this.cueComboBox2.TabIndex = 1;
+            this.ComboProformaNum1.CueText = "Proforma";
+            this.ComboProformaNum1.FormattingEnabled = true;
+            this.ComboProformaNum1.Location = new System.Drawing.Point(130, 3);
+            this.ComboProformaNum1.Name = "ComboProformaNum1";
+            this.ComboProformaNum1.Size = new System.Drawing.Size(121, 21);
+            this.ComboProformaNum1.TabIndex = 1;
             // 
-            // cueComboBox3
+            // ComboInvoiceNum1
             // 
-            this.cueComboBox3.CueText = "Factura";
-            this.cueComboBox3.FormattingEnabled = true;
-            this.cueComboBox3.Location = new System.Drawing.Point(257, 3);
-            this.cueComboBox3.Name = "cueComboBox3";
-            this.cueComboBox3.Size = new System.Drawing.Size(121, 21);
-            this.cueComboBox3.TabIndex = 2;
+            this.ComboInvoiceNum1.CueText = "Factura";
+            this.ComboInvoiceNum1.FormattingEnabled = true;
+            this.ComboInvoiceNum1.Location = new System.Drawing.Point(257, 3);
+            this.ComboInvoiceNum1.Name = "ComboInvoiceNum1";
+            this.ComboInvoiceNum1.Size = new System.Drawing.Size(121, 21);
+            this.ComboInvoiceNum1.TabIndex = 2;
             // 
             // dateTimePicker1
             // 
@@ -325,6 +309,17 @@ namespace Gestaller
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(121, 20);
             this.dateTimePicker1.TabIndex = 8;
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Controls.Add(this.tableLayoutPanel1);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(792, 424);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Proforma";
+            this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // tableLayoutPanel1
             // 
@@ -458,9 +453,9 @@ namespace Gestaller
             // 
             // flowLayoutPanel6
             // 
-            this.flowLayoutPanel6.Controls.Add(this.cueComboBox9);
-            this.flowLayoutPanel6.Controls.Add(this.cueComboBox10);
-            this.flowLayoutPanel6.Controls.Add(this.cueComboBox8);
+            this.flowLayoutPanel6.Controls.Add(this.ComboBudgetNum2);
+            this.flowLayoutPanel6.Controls.Add(this.ComboProformaNum2);
+            this.flowLayoutPanel6.Controls.Add(this.ComboInvoiceNum2);
             this.flowLayoutPanel6.Controls.Add(this.dateTimePicker2);
             this.flowLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel6.Location = new System.Drawing.Point(3, 145);
@@ -469,32 +464,32 @@ namespace Gestaller
             this.flowLayoutPanel6.Size = new System.Drawing.Size(783, 54);
             this.flowLayoutPanel6.TabIndex = 5;
             // 
-            // cueComboBox8
+            // ComboBudgetNum2
             // 
-            this.cueComboBox8.CueText = "Presupuesto";
-            this.cueComboBox8.FormattingEnabled = true;
-            this.cueComboBox8.Location = new System.Drawing.Point(257, 3);
-            this.cueComboBox8.Name = "cueComboBox8";
-            this.cueComboBox8.Size = new System.Drawing.Size(121, 21);
-            this.cueComboBox8.TabIndex = 0;
+            this.ComboBudgetNum2.CueText = "Presupuesto";
+            this.ComboBudgetNum2.FormattingEnabled = true;
+            this.ComboBudgetNum2.Location = new System.Drawing.Point(3, 3);
+            this.ComboBudgetNum2.Name = "ComboBudgetNum2";
+            this.ComboBudgetNum2.Size = new System.Drawing.Size(121, 21);
+            this.ComboBudgetNum2.TabIndex = 0;
             // 
-            // cueComboBox9
+            // ComboProformaNum2
             // 
-            this.cueComboBox9.CueText = "Proforma";
-            this.cueComboBox9.FormattingEnabled = true;
-            this.cueComboBox9.Location = new System.Drawing.Point(3, 3);
-            this.cueComboBox9.Name = "cueComboBox9";
-            this.cueComboBox9.Size = new System.Drawing.Size(121, 21);
-            this.cueComboBox9.TabIndex = 1;
+            this.ComboProformaNum2.CueText = "Proforma";
+            this.ComboProformaNum2.FormattingEnabled = true;
+            this.ComboProformaNum2.Location = new System.Drawing.Point(130, 3);
+            this.ComboProformaNum2.Name = "ComboProformaNum2";
+            this.ComboProformaNum2.Size = new System.Drawing.Size(121, 21);
+            this.ComboProformaNum2.TabIndex = 1;
             // 
-            // cueComboBox10
+            // ComboInvoiceNum2
             // 
-            this.cueComboBox10.CueText = "Factura";
-            this.cueComboBox10.FormattingEnabled = true;
-            this.cueComboBox10.Location = new System.Drawing.Point(130, 3);
-            this.cueComboBox10.Name = "cueComboBox10";
-            this.cueComboBox10.Size = new System.Drawing.Size(121, 21);
-            this.cueComboBox10.TabIndex = 2;
+            this.ComboInvoiceNum2.CueText = "Factura";
+            this.ComboInvoiceNum2.FormattingEnabled = true;
+            this.ComboInvoiceNum2.Location = new System.Drawing.Point(257, 3);
+            this.ComboInvoiceNum2.Name = "ComboInvoiceNum2";
+            this.ComboInvoiceNum2.Size = new System.Drawing.Size(121, 21);
+            this.ComboInvoiceNum2.TabIndex = 2;
             // 
             // dateTimePicker2
             // 
@@ -505,6 +500,17 @@ namespace Gestaller
             this.dateTimePicker2.Size = new System.Drawing.Size(121, 20);
             this.dateTimePicker2.TabIndex = 8;
             // 
+            // tabPage3
+            // 
+            this.tabPage3.Controls.Add(this.tableLayoutPanel2);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(792, 424);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Factura";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
             // tableLayoutPanel2
             // 
             this.tableLayoutPanel2.ColumnCount = 1;
@@ -513,18 +519,21 @@ namespace Gestaller
             this.tableLayoutPanel2.Controls.Add(this.panel3, 0, 2);
             this.tableLayoutPanel2.Controls.Add(this.flowLayoutPanel7, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.label6, 0, 3);
-            this.tableLayoutPanel2.Controls.Add(this.flowLayoutPanel8, 0, 5);
+            this.tableLayoutPanel2.Controls.Add(this.flowLayoutPanel8, 0, 6);
             this.tableLayoutPanel2.Controls.Add(this.flowLayoutPanel9, 0, 4);
+            this.tableLayoutPanel2.Controls.Add(this.panel4, 0, 5);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 6;
+            this.tableLayoutPanel2.RowCount = 7;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 82F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 23F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 54F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 23F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(786, 418);
             this.tableLayoutPanel2.TabIndex = 1;
             // 
@@ -630,16 +639,16 @@ namespace Gestaller
             // flowLayoutPanel8
             // 
             this.flowLayoutPanel8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel8.Location = new System.Drawing.Point(3, 202);
+            this.flowLayoutPanel8.Location = new System.Drawing.Point(3, 225);
             this.flowLayoutPanel8.Name = "flowLayoutPanel8";
-            this.flowLayoutPanel8.Size = new System.Drawing.Size(780, 213);
+            this.flowLayoutPanel8.Size = new System.Drawing.Size(780, 190);
             this.flowLayoutPanel8.TabIndex = 4;
             // 
             // flowLayoutPanel9
             // 
-            this.flowLayoutPanel9.Controls.Add(this.cueComboBox17);
-            this.flowLayoutPanel9.Controls.Add(this.cueComboBox15);
-            this.flowLayoutPanel9.Controls.Add(this.cueComboBox16);
+            this.flowLayoutPanel9.Controls.Add(this.ComboBudgetNum3);
+            this.flowLayoutPanel9.Controls.Add(this.ComboProformaNum3);
+            this.flowLayoutPanel9.Controls.Add(this.ComboInvoiceNum3);
             this.flowLayoutPanel9.Controls.Add(this.dateTimePicker3);
             this.flowLayoutPanel9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel9.Location = new System.Drawing.Point(3, 145);
@@ -648,32 +657,32 @@ namespace Gestaller
             this.flowLayoutPanel9.Size = new System.Drawing.Size(783, 54);
             this.flowLayoutPanel9.TabIndex = 5;
             // 
-            // cueComboBox15
+            // ComboBudgetNum3
             // 
-            this.cueComboBox15.CueText = "Presupuesto";
-            this.cueComboBox15.FormattingEnabled = true;
-            this.cueComboBox15.Location = new System.Drawing.Point(130, 3);
-            this.cueComboBox15.Name = "cueComboBox15";
-            this.cueComboBox15.Size = new System.Drawing.Size(121, 21);
-            this.cueComboBox15.TabIndex = 0;
+            this.ComboBudgetNum3.CueText = "Presupuesto";
+            this.ComboBudgetNum3.FormattingEnabled = true;
+            this.ComboBudgetNum3.Location = new System.Drawing.Point(3, 3);
+            this.ComboBudgetNum3.Name = "ComboBudgetNum3";
+            this.ComboBudgetNum3.Size = new System.Drawing.Size(121, 21);
+            this.ComboBudgetNum3.TabIndex = 0;
             // 
-            // cueComboBox16
+            // ComboProformaNum3
             // 
-            this.cueComboBox16.CueText = "Proforma";
-            this.cueComboBox16.FormattingEnabled = true;
-            this.cueComboBox16.Location = new System.Drawing.Point(257, 3);
-            this.cueComboBox16.Name = "cueComboBox16";
-            this.cueComboBox16.Size = new System.Drawing.Size(121, 21);
-            this.cueComboBox16.TabIndex = 1;
+            this.ComboProformaNum3.CueText = "Proforma";
+            this.ComboProformaNum3.FormattingEnabled = true;
+            this.ComboProformaNum3.Location = new System.Drawing.Point(130, 3);
+            this.ComboProformaNum3.Name = "ComboProformaNum3";
+            this.ComboProformaNum3.Size = new System.Drawing.Size(121, 21);
+            this.ComboProformaNum3.TabIndex = 1;
             // 
-            // cueComboBox17
+            // ComboInvoiceNum3
             // 
-            this.cueComboBox17.CueText = "Factura";
-            this.cueComboBox17.FormattingEnabled = true;
-            this.cueComboBox17.Location = new System.Drawing.Point(3, 3);
-            this.cueComboBox17.Name = "cueComboBox17";
-            this.cueComboBox17.Size = new System.Drawing.Size(121, 21);
-            this.cueComboBox17.TabIndex = 2;
+            this.ComboInvoiceNum3.CueText = "Factura";
+            this.ComboInvoiceNum3.FormattingEnabled = true;
+            this.ComboInvoiceNum3.Location = new System.Drawing.Point(257, 3);
+            this.ComboInvoiceNum3.Name = "ComboInvoiceNum3";
+            this.ComboInvoiceNum3.Size = new System.Drawing.Size(121, 21);
+            this.ComboInvoiceNum3.TabIndex = 2;
             // 
             // dateTimePicker3
             // 
@@ -683,6 +692,59 @@ namespace Gestaller
             this.dateTimePicker3.Name = "dateTimePicker3";
             this.dateTimePicker3.Size = new System.Drawing.Size(121, 20);
             this.dateTimePicker3.TabIndex = 8;
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.button6);
+            this.panel4.Controls.Add(this.button5);
+            this.panel4.Controls.Add(this.button4);
+            this.panel4.Controls.Add(this.button3);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel4.Location = new System.Drawing.Point(0, 199);
+            this.panel4.Margin = new System.Windows.Forms.Padding(0);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(786, 23);
+            this.panel4.TabIndex = 6;
+            // 
+            // button3
+            // 
+            this.button3.Dock = System.Windows.Forms.DockStyle.Right;
+            this.button3.Location = new System.Drawing.Point(761, 0);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(25, 23);
+            this.button3.TabIndex = 0;
+            this.button3.Text = ">|";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            this.button4.Dock = System.Windows.Forms.DockStyle.Right;
+            this.button4.Location = new System.Drawing.Point(736, 0);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(25, 23);
+            this.button4.TabIndex = 1;
+            this.button4.Text = ">";
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // button5
+            // 
+            this.button5.Dock = System.Windows.Forms.DockStyle.Right;
+            this.button5.Location = new System.Drawing.Point(711, 0);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(25, 23);
+            this.button5.TabIndex = 2;
+            this.button5.Text = "<";
+            this.button5.UseVisualStyleBackColor = true;
+            // 
+            // button6
+            // 
+            this.button6.Dock = System.Windows.Forms.DockStyle.Right;
+            this.button6.Location = new System.Drawing.Point(686, 0);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(25, 23);
+            this.button6.TabIndex = 3;
+            this.button6.Text = "|<";
+            this.button6.UseVisualStyleBackColor = true;
             // 
             // OrdersView
             // 
@@ -699,21 +761,22 @@ namespace Gestaller
             this.panel1.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
-            this.tabPage2.ResumeLayout(false);
-            this.tabPage3.ResumeLayout(false);
             this.flowLayoutPanel3.ResumeLayout(false);
+            this.tabPage2.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.flowLayoutPanel4.ResumeLayout(false);
             this.flowLayoutPanel4.PerformLayout();
             this.flowLayoutPanel6.ResumeLayout(false);
+            this.tabPage3.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.flowLayoutPanel7.ResumeLayout(false);
             this.flowLayoutPanel7.PerformLayout();
             this.flowLayoutPanel9.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -737,9 +800,9 @@ namespace Gestaller
         private Views.CueTextBox cueTextBoxKMS;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3;
-        private Views.CueComboBox cueComboBox1;
-        private Views.CueComboBox cueComboBox2;
-        private Views.CueComboBox cueComboBox3;
+        private Views.CueComboBox ComboBudgetNum1;
+        private Views.CueComboBox ComboProformaNum1;
+        private Views.CueComboBox ComboInvoiceNum1;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Label label3;
@@ -754,9 +817,9 @@ namespace Gestaller
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel5;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel6;
-        private Views.CueComboBox cueComboBox9;
-        private Views.CueComboBox cueComboBox10;
-        private Views.CueComboBox cueComboBox8;
+        private Views.CueComboBox ComboProformaNum2;
+        private Views.CueComboBox ComboInvoiceNum2;
+        private Views.CueComboBox ComboBudgetNum2;
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.Label label5;
@@ -771,9 +834,14 @@ namespace Gestaller
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel8;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel9;
-        private Views.CueComboBox cueComboBox17;
-        private Views.CueComboBox cueComboBox15;
-        private Views.CueComboBox cueComboBox16;
+        private Views.CueComboBox ComboInvoiceNum3;
+        private Views.CueComboBox ComboBudgetNum3;
+        private Views.CueComboBox ComboProformaNum3;
         private System.Windows.Forms.DateTimePicker dateTimePicker3;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button3;
     }
 }
