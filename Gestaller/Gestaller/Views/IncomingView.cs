@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Gestaller.Views;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,18 +13,60 @@ namespace Gestaller
 {
     public partial class IncomingView : Form
     {
-
+        List<Control> _controls = new List<Control>();
         BussinessLogicLayer _bussinessLogicLayer = new BussinessLogicLayer();
         public IncomingView()
         {
             InitializeComponent();
         }
 
+        #region events
         private void IncomingView_Load(object sender, EventArgs e)
         {
             getIncomingDB();
             getVehicleDB();
             incomingItemSet();
+        }
+
+        private void button7Vaciar_Click(object sender, EventArgs e)
+        {
+            foreach (Control control in _controls)
+            {
+                if (control is CueComboBox)
+                {
+                    ((CueComboBox)control).ResetText();
+                    ((CueComboBox)control).SelectedIndex = -1;
+                }
+
+                if (control is CueTextBox)
+                {
+                    ((CueTextBox)control).ResetText();
+                }
+
+                if (control is DateTimePicker)
+                {
+                    ((DateTimePicker)control).ResetText();
+                }
+            }
+        }
+        #endregion
+
+        #region private methods
+
+        private void addControls()
+        {
+            _controls.Add(cueComboBoxCliente);
+            _controls.Add(cueComboBoxMatricula);
+            _controls.Add(cueComboBoxMarca);
+            _controls.Add(cueComboBoxModelo);
+            _controls.Add(cueTextBoxKMS);
+            _controls.Add(cueComboBoxTipoMotor);
+            _controls.Add(cueComboBoxBastidor);
+            _controls.Add(dateTimePicker1); // recepción
+            _controls.Add(dateTimePicker2); // Estimado
+            _controls.Add(dateTimePicker3); // Entrega
+            _controls.Add(cueTextBox1); // kilometros recepciones
+            _controls.Add(richTextBox1); // daños
         }
 
         private void getIncomingDB()
@@ -40,28 +83,11 @@ namespace Gestaller
             dataGridViewVehicles.DataSource = vehicles;
         }
 
-       /* private void setToComboBox()
+        private void setToComboBox()
         {
-
-            // Muestra los datos en los cueComboBox 
-            cueComboBoxCliente.Text = _clientVehicle.contact_company;
-            cueComboBoxCIF.Text = _clientVehicle.contact_cif;
-            cueComboBoxNombre.Text = _clientVehicle.contact_fullName;
-            cueComboBoxDireccion.Text = _clientVehicle.contact_address;
-            cueComboBoxLocalidad.Text = _clientVehicle.contact_city;
-            cueComboBoxProvincia.Text = _clientVehicle.contact_district;
-            cueComboBoxCP.Text = _clientVehicle.contact_cp.ToString();
-            cueComboBoxMovil.Text = _clientVehicle.contact_mobile;
-            cueComboBoxTelefono.Text = _clientVehicle.contact_phone;
-            cueComboBoxFax.Text = _clientVehicle.contact_fax;
-            cueComboBoxEmail.Text = _clientVehicle.contact_email;
-            cueComboBoxMatricula.Text = _clientVehicle.vehicle_enroll;
-            cueComboBoxMarca.Text = _clientVehicle.vehicle_brand;
-            cueComboBoxModelo.Text = _clientVehicle.vehicle_model;
-            cueComboBoxBastidor.Text = _clientVehicle.vehicle_frame;
-            cueComboBoxKilometros.Text = _clientVehicle.vehicle_kms;
-            cueComboBoxTipoMotor.Text = _clientVehicle.vehicle_engineType;
-        }*/
+            // TODO
+            // Muestra los datos en los cueComboBox             
+        }
 
         private void incomingItemSet()
         {
@@ -88,5 +114,7 @@ namespace Gestaller
                 #endregion
             }
         }
+
+        #endregion
     }
 }
