@@ -96,7 +96,6 @@ namespace Gestaller
             this.cueComboBox8 = new Gestaller.Views.CueComboBox();
             this.cueComboBox9 = new Gestaller.Views.CueComboBox();
             this.cueComboBox10 = new Gestaller.Views.CueComboBox();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.button1ModificarOd = new System.Windows.Forms.Button();
             this.button2BorrarOd = new System.Windows.Forms.Button();
             this.button3AnadirOd = new System.Windows.Forms.Button();
