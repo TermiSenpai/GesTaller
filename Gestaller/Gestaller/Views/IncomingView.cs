@@ -40,22 +40,24 @@ namespace Gestaller
 
         private void dataGridViewVehicles_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
-            cellClickEvent();
+            int selectedCell = dataGridViewVehicles.CurrentCell.RowIndex;
+            cellClickEvent(selectedCell);
         }
 
         private void dataGridViewDepositos_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
-            cellClickEvent();
+            int selectedCell = dataGridViewDepositos.CurrentCell.RowIndex;
+            cellClickEvent(selectedCell);
         }
 
         #endregion
 
         #region private methods
 
-        void cellClickEvent()
+        void cellClickEvent(int index)
         {
-            int selectedCell = dataGridViewDepositos.CurrentCell.RowIndex;
-            List<Incoming> incomings = GetIncomings();
+            int selectedCell = index;
+            List<Incoming> incomings = getIncomings();
             List<ContactVehicle> contactsVehicles = getContactsVehicles();
             selectContactVehicle(contactsVehicles[selectedCell]);
             selectIncoming(incomings[selectedCell]);
@@ -118,12 +120,6 @@ namespace Gestaller
             dataGridViewVehicles.DataSource = vehicles;
         }
 
-        // Obtener datos de cliente
-        private void getClientDB()
-        {
-            List<Contact> contacts = _bussinessLogicLayer.GetContacts();
-        }
-
         private void selectContactVehicle(ContactVehicle contactVehicle)
         {
             _clientVehicle = contactVehicle;
@@ -183,7 +179,7 @@ namespace Gestaller
             return _bussinessLogicLayer.GetContactVehicles();
         }
 
-        private List<Incoming> GetIncomings()
+        private List<Incoming> getIncomings()
         {
             return _bussinessLogicLayer.GetIncomings();
         }
