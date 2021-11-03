@@ -31,6 +31,14 @@ namespace Gestaller
 
         private void button7Vaciar_Click(object sender, EventArgs e)
         {
+            clearText();
+        }
+        #endregion
+
+        #region private methods
+
+        private void clearText()
+        {
             foreach (Control control in _controls)
             {
                 if (control is CueComboBox)
@@ -50,9 +58,6 @@ namespace Gestaller
                 }
             }
         }
-        #endregion
-
-        #region private methods
 
         private void addControls()
         {
