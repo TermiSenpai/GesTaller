@@ -13,8 +13,11 @@ namespace Gestaller
 {
     public partial class IncomingView : Form
     {
-        List<Control> _controls = new List<Control>();
         BussinessLogicLayer _bussinessLogicLayer = new BussinessLogicLayer();
+        List<Control> _controls = new List<Control>();
+        ContactVehicle _clientVehicle = null;
+        Incoming _incoming = null;
+
         public IncomingView()
         {
             InitializeComponent();
@@ -22,6 +25,7 @@ namespace Gestaller
         }
 
         #region events
+
         private void IncomingView_Load(object sender, EventArgs e)
         {
             getIncomingDB();
@@ -33,10 +37,35 @@ namespace Gestaller
         {
             clearText();
         }
+
+        private void dataGridViewVehicles_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            int selectedCell = dataGridViewVehicles.CurrentCell.RowIndex;
+            cellClickEvent(selectedCell);
+        }
+
+        private void dataGridViewDepositos_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            int selectedCell = dataGridViewDepositos.CurrentCell.RowIndex;
+            cellClickEvent(selectedCell);
+        }
+
         #endregion
 
         #region private methods
 
+        // Evento al clickar en alguna celda o fila de un dataGridView
+        void cellClickEvent(int index)
+        {
+            int selectedCell = index;
+            List<Incoming> incomings = getIncomings();
+            List<ContactVehicle> contactsVehicles = getContactsVehicles();
+            selectContactVehicle(contactsVehicles[selectedCell]);
+            selectIncoming(incomings[selectedCell]);
+            setToComboBox();
+        }
+
+        // Vaciar texto
         private void clearText()
         {
             foreach (Control control in _controls)
@@ -54,11 +83,12 @@ namespace Gestaller
 
                 if (control is DateTimePicker)
                 {
-                    ((DateTimePicker)control).ResetText();
+                    ((DateTimePicker)control).Value = DateTime.Today;
                 }
             }
         }
 
+        // Añadir controles
         private void addControls()
         {
             _controls.Add(cueComboBoxCliente);
@@ -75,6 +105,7 @@ namespace Gestaller
             _controls.Add(richTextBox1); // daños
         }
 
+        // Obtener datos de incomings
         private void getIncomingDB()
         {
             List<Incoming> incomings = _bussinessLogicLayer.GetIncomings();
@@ -82,6 +113,7 @@ namespace Gestaller
             dataGridViewDepositos.DataSource = incomings;
         }
 
+        // Obtener datos de vehiculos
         private void getVehicleDB()
         {
             List<Vehicle> vehicles = _bussinessLogicLayer.GetVehicles();
@@ -89,12 +121,38 @@ namespace Gestaller
             dataGridViewVehicles.DataSource = vehicles;
         }
 
+        // ContactVehicle activo
+        private void selectContactVehicle(ContactVehicle contactVehicle)
+        {
+            _clientVehicle = contactVehicle;
+        }
+
+        // Incoming activo
+        private void selectIncoming(Incoming incoming)
+        {
+            _incoming = incoming;
+        }
+
+        // Añade los elementos activos al valor del comboBox
         private void setToComboBox()
         {
             // TODO
-            // Muestra los datos en los cueComboBox             
+            // Muestra los datos en los cueComboBox
+
+            cueComboBoxCliente.Text = _clientVehicle.contact_fullName;
+            cueComboBoxMatricula.Text = _clientVehicle.vehicle_enroll;
+            cueComboBoxMarca.Text = _clientVehicle.vehicle_brand;
+            cueComboBoxModelo.Text = _clientVehicle.vehicle_model;
+            cueTextBoxKMS.Text = _clientVehicle.vehicle_kms;
+            cueComboBoxTipoMotor.Text = _clientVehicle.vehicle_engineType;
+            cueComboBoxBastidor.Text = _clientVehicle.vehicle_frame;
+            dateTimePicker1.Value = _incoming.incomingDate; // recepción
+            dateTimePicker2.Value = _incoming.estimatedDate; // estimado
+            dateTimePicker3.Value = _incoming.departureDate; // Entrega
+
         }
 
+        // Añade la lista de items a los comboBoxes
         private void incomingItemSet()
         {
             List<ContactVehicle> contactsVehicles = _bussinessLogicLayer.GetContactVehicles();
@@ -120,6 +178,22 @@ namespace Gestaller
                 #endregion
             }
         }
+
+        // Obtiene la lista de contactVehicles
+        private List<ContactVehicle> getContactsVehicles()
+        {
+            return _bussinessLogicLayer.GetContactVehicles();
+        }
+
+        // Obtiene la lista de incomings 
+        private List<Incoming> getIncomings()
+        {
+            return _bussinessLogicLayer.GetIncomings();
+        }
+
+        #endregion
+
+        #region comboBoxSelectionEvent
 
         #endregion
     }
