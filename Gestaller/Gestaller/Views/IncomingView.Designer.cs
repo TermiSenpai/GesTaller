@@ -245,6 +245,7 @@ namespace Gestaller
             this.dataGridViewVehicles.Name = "dataGridViewVehicles";
             this.dataGridViewVehicles.Size = new System.Drawing.Size(677, 205);
             this.dataGridViewVehicles.TabIndex = 0;
+            this.dataGridViewVehicles.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridViewVehicles_CellMouseClick);
             // 
             // flowIncoming_Buttons
             // 
@@ -334,6 +335,7 @@ namespace Gestaller
             this.dataGridViewDepositos.Name = "dataGridViewDepositos";
             this.dataGridViewDepositos.Size = new System.Drawing.Size(1366, 211);
             this.dataGridViewDepositos.TabIndex = 8;
+            this.dataGridViewDepositos.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridViewDepositos_CellMouseClick);
             // 
             // flowLayoutPanel1
             // 

@@ -22,6 +22,7 @@ namespace Gestaller
         }
 
         #region events
+
         private void IncomingView_Load(object sender, EventArgs e)
         {
             getIncomingDB();
@@ -33,10 +34,22 @@ namespace Gestaller
         {
             clearText();
         }
+
+        private void dataGridViewVehicles_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+
+        }
+
+        private void dataGridViewDepositos_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+
+        }
+
         #endregion
 
         #region private methods
 
+        // Vaciar texto
         private void clearText()
         {
             foreach (Control control in _controls)
@@ -59,6 +72,7 @@ namespace Gestaller
             }
         }
 
+        // Añadir controles
         private void addControls()
         {
             _controls.Add(cueComboBoxCliente);
@@ -75,6 +89,7 @@ namespace Gestaller
             _controls.Add(richTextBox1); // daños
         }
 
+        // Obtener datos de incomings
         private void getIncomingDB()
         {
             List<Incoming> incomings = _bussinessLogicLayer.GetIncomings();
@@ -82,12 +97,20 @@ namespace Gestaller
             dataGridViewDepositos.DataSource = incomings;
         }
 
+        // Obtener datos de vehiculos
         private void getVehicleDB()
         {
             List<Vehicle> vehicles = _bussinessLogicLayer.GetVehicles();
 
             dataGridViewVehicles.DataSource = vehicles;
         }
+        
+        // Obtener datos de cliente
+        private void getClientDB()
+        {
+            List<Contact> contacts = _bussinessLogicLayer.GetContacts();
+        }
+
 
         private void setToComboBox()
         {
