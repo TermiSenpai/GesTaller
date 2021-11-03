@@ -50,6 +50,7 @@ namespace Gestaller
             this.button4Borrar = new System.Windows.Forms.Button();
             this.button5Presupuesto = new System.Windows.Forms.Button();
             this.button6Entregar = new System.Windows.Forms.Button();
+            this.button7Vaciar = new System.Windows.Forms.Button();
             this.dataGridViewDepositos = new System.Windows.Forms.DataGridView();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -65,7 +66,6 @@ namespace Gestaller
             this.label3 = new System.Windows.Forms.Label();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.button7Vaciar = new System.Windows.Forms.Button();
             this.table1Recepciones_Main_Container.SuspendLayout();
             this.flowDatos_Vehiculos.SuspendLayout();
             this.table1Recepciones_Down_Side.SuspendLayout();
@@ -316,6 +316,16 @@ namespace Gestaller
             this.button6Entregar.Text = "Entregar";
             this.button6Entregar.UseVisualStyleBackColor = true;
             // 
+            // button7Vaciar
+            // 
+            this.button7Vaciar.Location = new System.Drawing.Point(489, 3);
+            this.button7Vaciar.Name = "button7Vaciar";
+            this.button7Vaciar.Size = new System.Drawing.Size(75, 23);
+            this.button7Vaciar.TabIndex = 6;
+            this.button7Vaciar.Text = "Vaciar";
+            this.button7Vaciar.UseVisualStyleBackColor = true;
+            this.button7Vaciar.Click += new System.EventHandler(this.button7Vaciar_Click);
+            // 
             // dataGridViewDepositos
             // 
             this.dataGridViewDepositos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -460,15 +470,6 @@ namespace Gestaller
             this.label6.Size = new System.Drawing.Size(1378, 20);
             this.label6.TabIndex = 4;
             this.label6.Text = "OBSERVACIÓN DE DAÑOS";
-            // 
-            // button7Vaciar
-            // 
-            this.button7Vaciar.Location = new System.Drawing.Point(489, 3);
-            this.button7Vaciar.Name = "button7Vaciar";
-            this.button7Vaciar.Size = new System.Drawing.Size(75, 23);
-            this.button7Vaciar.TabIndex = 6;
-            this.button7Vaciar.Text = "Vaciar";
-            this.button7Vaciar.UseVisualStyleBackColor = true;
             // 
             // IncomingView
             // 
