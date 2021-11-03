@@ -226,7 +226,6 @@ namespace Gestaller
             this.tabla2_clientes_V.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tabla2_clientes_V.Size = new System.Drawing.Size(1334, 160);
             this.tabla2_clientes_V.TabIndex = 0;
-            this.tabla2_clientes_V.Paint += new System.Windows.Forms.PaintEventHandler(this.tabla2_clientes_V_Paint);
             // 
             // EncabezadoFacturación
             // 

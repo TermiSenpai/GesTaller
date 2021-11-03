@@ -54,6 +54,7 @@ namespace Gestaller
 
         #region private methods
 
+        // Evento al clickar en alguna celda o fila de un dataGridView
         void cellClickEvent(int index)
         {
             int selectedCell = index;
@@ -120,16 +121,19 @@ namespace Gestaller
             dataGridViewVehicles.DataSource = vehicles;
         }
 
+        // ContactVehicle activo
         private void selectContactVehicle(ContactVehicle contactVehicle)
         {
             _clientVehicle = contactVehicle;
         }
 
+        // Incoming activo
         private void selectIncoming(Incoming incoming)
         {
             _incoming = incoming;
         }
 
+        // Añade los elementos activos al valor del comboBox
         private void setToComboBox()
         {
             // TODO
@@ -148,6 +152,7 @@ namespace Gestaller
 
         }
 
+        // Añade la lista de items a los comboBoxes
         private void incomingItemSet()
         {
             List<ContactVehicle> contactsVehicles = _bussinessLogicLayer.GetContactVehicles();
@@ -174,15 +179,21 @@ namespace Gestaller
             }
         }
 
+        // Obtiene la lista de contactVehicles
         private List<ContactVehicle> getContactsVehicles()
         {
             return _bussinessLogicLayer.GetContactVehicles();
         }
 
+        // Obtiene la lista de incomings 
         private List<Incoming> getIncomings()
         {
             return _bussinessLogicLayer.GetIncomings();
         }
+
+        #endregion
+
+        #region comboBoxSelectionEvent
 
         #endregion
     }
