@@ -18,6 +18,7 @@ namespace Gestaller
         public IncomingView()
         {
             InitializeComponent();
+            addControls();
         }
 
         #region events
