@@ -13,8 +13,11 @@ namespace Gestaller
 {
     public partial class IncomingView : Form
     {
-        List<Control> _controls = new List<Control>();
         BussinessLogicLayer _bussinessLogicLayer = new BussinessLogicLayer();
+        List<Control> _controls = new List<Control>();
+        ContactVehicle _clientVehicle = null;
+        Incoming _incoming = null;
+
         public IncomingView()
         {
             InitializeComponent();
@@ -37,17 +40,27 @@ namespace Gestaller
 
         private void dataGridViewVehicles_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
-
+            cellClickEvent();
         }
 
         private void dataGridViewDepositos_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
-
+            cellClickEvent();
         }
 
         #endregion
 
         #region private methods
+
+        void cellClickEvent()
+        {
+            int selectedCell = dataGridViewDepositos.CurrentCell.RowIndex;
+            List<Incoming> incomings = GetIncomings();
+            List<ContactVehicle> contactsVehicles = getContactsVehicles();
+            selectContactVehicle(contactsVehicles[selectedCell]);
+            selectIncoming(incomings[selectedCell]);
+            setToComboBox();
+        }
 
         // Vaciar texto
         private void clearText()
@@ -67,7 +80,7 @@ namespace Gestaller
 
                 if (control is DateTimePicker)
                 {
-                    ((DateTimePicker)control).ResetText();
+                    ((DateTimePicker)control).Value = DateTime.Today;
                 }
             }
         }
@@ -104,18 +117,39 @@ namespace Gestaller
 
             dataGridViewVehicles.DataSource = vehicles;
         }
-        
+
         // Obtener datos de cliente
         private void getClientDB()
         {
             List<Contact> contacts = _bussinessLogicLayer.GetContacts();
         }
 
+        private void selectContactVehicle(ContactVehicle contactVehicle)
+        {
+            _clientVehicle = contactVehicle;
+        }
+
+        private void selectIncoming(Incoming incoming)
+        {
+            _incoming = incoming;
+        }
 
         private void setToComboBox()
         {
             // TODO
-            // Muestra los datos en los cueComboBox             
+            // Muestra los datos en los cueComboBox
+
+            cueComboBoxCliente.Text = _clientVehicle.contact_fullName;
+            cueComboBoxMatricula.Text = _clientVehicle.vehicle_enroll;
+            cueComboBoxMarca.Text = _clientVehicle.vehicle_brand;
+            cueComboBoxModelo.Text = _clientVehicle.vehicle_model;
+            cueTextBoxKMS.Text = _clientVehicle.vehicle_kms;
+            cueComboBoxTipoMotor.Text = _clientVehicle.vehicle_engineType;
+            cueComboBoxBastidor.Text = _clientVehicle.vehicle_frame;
+            dateTimePicker1.Value = _incoming.incomingDate; // recepción
+            dateTimePicker2.Value = _incoming.estimatedDate; // estimado
+            dateTimePicker3.Value = _incoming.departureDate; // Entrega
+
         }
 
         private void incomingItemSet()
@@ -142,6 +176,16 @@ namespace Gestaller
                 cueComboBoxTipoMotor.Items.Add(contactsVehicles[i].vehicle_engineType);
                 #endregion
             }
+        }
+
+        private List<ContactVehicle> getContactsVehicles()
+        {
+            return _bussinessLogicLayer.GetContactVehicles();
+        }
+
+        private List<Incoming> GetIncomings()
+        {
+            return _bussinessLogicLayer.GetIncomings();
         }
 
         #endregion
