@@ -43,21 +43,24 @@ namespace Gestaller
         // Vaciar texto
         private void button1_Click(object sender, EventArgs e)
         {
-            foreach (CueComboBox cueComboBox in _controls)
+            foreach (Control control in _controls)
             {
-                cueComboBox.ResetText();
-                cueComboBox.SelectedIndex = -1;
-            }
-/*
-            foreach(CueTextBox cueTextBox in _controls)
-            {
-                cueTextBox.ResetText();
-            }
+                if(control is CueComboBox)
+                {
+                    ((CueComboBox)control).ResetText();
+                    ((CueComboBox)control).SelectedIndex = -1;
+                }
 
-            foreach(DateTimePicker dateTimePicker in _controls)
-            {
-                // TODO
-            }*/
+                if(control is CueTextBox)
+                {
+                    ((CueTextBox)control).ResetText();
+                }
+
+                if(control is DateTimePicker)
+                {
+                    ((DateTimePicker)control).ResetText();
+                }
+            }
         }
 
         // Al hacer click en cualquier celda se activa el evento
@@ -157,6 +160,7 @@ namespace Gestaller
             _controls.Add(cueComboBoxKilometros);
             _controls.Add(cueComboBoxTipoMotor);
         }
+
         private List<ContactVehicle> getContactsVehicles()
         {
             return _bussinessLogicLayer.GetContactVehicles();
