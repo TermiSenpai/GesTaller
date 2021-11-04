@@ -36,7 +36,7 @@ namespace Gestaller
             this.buttonFirstPage_Pre = new System.Windows.Forms.Button();
             this.buttonPreviousPage_Pre = new System.Windows.Forms.Button();
             this.buttonNextPage_Pre = new System.Windows.Forms.Button();
-            this.buttonLasttPage_Pre = new System.Windows.Forms.Button();
+            this.buttonLastPage_Pre = new System.Windows.Forms.Button();
             this.label1Cliente_Pre = new System.Windows.Forms.Label();
             this.panel1_Pre = new System.Windows.Forms.Panel();
             this.button1Cliente_SearchBudget_Pre = new System.Windows.Forms.Button();
@@ -259,7 +259,7 @@ namespace Gestaller
             this.panel2_Pre.Controls.Add(this.buttonFirstPage_Pre);
             this.panel2_Pre.Controls.Add(this.buttonPreviousPage_Pre);
             this.panel2_Pre.Controls.Add(this.buttonNextPage_Pre);
-            this.panel2_Pre.Controls.Add(this.buttonLasttPage_Pre);
+            this.panel2_Pre.Controls.Add(this.buttonLastPage_Pre);
             this.panel2_Pre.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2_Pre.Location = new System.Drawing.Point(0, 253);
             this.panel2_Pre.Margin = new System.Windows.Forms.Padding(0);
@@ -297,15 +297,15 @@ namespace Gestaller
             this.buttonNextPage_Pre.Text = ">";
             this.buttonNextPage_Pre.UseVisualStyleBackColor = true;
             // 
-            // buttonLasttPage_Pre
+            // buttonLastPage_Pre
             // 
-            this.buttonLasttPage_Pre.Dock = System.Windows.Forms.DockStyle.Right;
-            this.buttonLasttPage_Pre.Location = new System.Drawing.Point(1139, 0);
-            this.buttonLasttPage_Pre.Name = "buttonLasttPage_Pre";
-            this.buttonLasttPage_Pre.Size = new System.Drawing.Size(25, 23);
-            this.buttonLasttPage_Pre.TabIndex = 0;
-            this.buttonLasttPage_Pre.Text = ">|";
-            this.buttonLasttPage_Pre.UseVisualStyleBackColor = true;
+            this.buttonLastPage_Pre.Dock = System.Windows.Forms.DockStyle.Right;
+            this.buttonLastPage_Pre.Location = new System.Drawing.Point(1139, 0);
+            this.buttonLastPage_Pre.Name = "buttonLastPage_Pre";
+            this.buttonLastPage_Pre.Size = new System.Drawing.Size(25, 23);
+            this.buttonLastPage_Pre.TabIndex = 0;
+            this.buttonLastPage_Pre.Text = ">|";
+            this.buttonLastPage_Pre.UseVisualStyleBackColor = true;
             // 
             // label1Cliente_Pre
             // 
@@ -1779,7 +1779,7 @@ namespace Gestaller
         private System.Windows.Forms.Button buttonFirstPage_Pre;
         private System.Windows.Forms.Button buttonPreviousPage_Pre;
         private System.Windows.Forms.Button buttonNextPage_Pre;
-        private System.Windows.Forms.Button buttonLasttPage_Pre;
+        private System.Windows.Forms.Button buttonLastPage_Pre;
         private System.Windows.Forms.RichTextBox richTextBox1Presupuesto_Pre;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Button button19;
