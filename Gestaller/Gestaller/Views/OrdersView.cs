@@ -12,12 +12,31 @@ namespace Gestaller
 {
     public partial class OrdersView : Form
     {
+        BussinessLogicLayer _businessLogicLayer = new BussinessLogicLayer();
         public OrdersView()
         {
             InitializeComponent();
         }
 
         private void panel5_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void OrdersView_Load(object sender, EventArgs e)
+        {
+            getDB();
+        }
+
+        private void getDB()
+        {
+            List<Order> orders = _businessLogicLayer.GetOrders();
+            dataGridView3.DataSource = orders;
+            dataGridView2.DataSource = orders;
+            dataGridView1.DataSource = orders;
+        }
+
+        private void dataGridView3_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
 
         }
