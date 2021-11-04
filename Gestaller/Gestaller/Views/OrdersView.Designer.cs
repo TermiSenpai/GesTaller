@@ -583,7 +583,6 @@ namespace Gestaller
             this.button9Devolucion_Pre.TabIndex = 4;
             this.button9Devolucion_Pre.Text = "Devolución";
             this.button9Devolucion_Pre.UseVisualStyleBackColor = true;
-            this.button9Devolucion_Pre.Click += new System.EventHandler(this.button26_Click);
             // 
             // dataGridView1_Pre
             // 
