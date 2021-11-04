@@ -71,6 +71,10 @@ namespace Gestaller
             this.button36 = new System.Windows.Forms.Button();
             this.button37 = new System.Windows.Forms.Button();
             this.button38 = new System.Windows.Forms.Button();
+            this.flowLayoutPanel8 = new System.Windows.Forms.FlowLayoutPanel();
+            this.cueTextBox13 = new Gestaller.Views.CueTextBox();
+            this.cueTextBox14 = new Gestaller.Views.CueTextBox();
+            this.cueTextBox15 = new Gestaller.Views.CueTextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel8 = new System.Windows.Forms.Panel();
@@ -112,6 +116,10 @@ namespace Gestaller
             this.button32 = new System.Windows.Forms.Button();
             this.button33 = new System.Windows.Forms.Button();
             this.button34 = new System.Windows.Forms.Button();
+            this.flowLayoutPanel5 = new System.Windows.Forms.FlowLayoutPanel();
+            this.cueTextBox16 = new Gestaller.Views.CueTextBox();
+            this.cueTextBox17 = new Gestaller.Views.CueTextBox();
+            this.cueTextBox18 = new Gestaller.Views.CueTextBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.label5 = new System.Windows.Forms.Label();
@@ -123,6 +131,7 @@ namespace Gestaller
             this.cueComboBox13 = new Gestaller.Views.CueComboBox();
             this.cueComboBox14 = new Gestaller.Views.CueComboBox();
             this.cueTextBox2 = new Gestaller.Views.CueTextBox();
+            this.cueTextBox12 = new Gestaller.Views.CueTextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.flowLayoutPanel9 = new System.Windows.Forms.FlowLayoutPanel();
             this.ComboBudgetNum3 = new Gestaller.Views.CueComboBox();
@@ -153,16 +162,7 @@ namespace Gestaller
             this.button12 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.cueTextBox12 = new Gestaller.Views.CueTextBox();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
-            this.flowLayoutPanel5 = new System.Windows.Forms.FlowLayoutPanel();
-            this.flowLayoutPanel8 = new System.Windows.Forms.FlowLayoutPanel();
-            this.cueTextBox13 = new Gestaller.Views.CueTextBox();
-            this.cueTextBox14 = new Gestaller.Views.CueTextBox();
-            this.cueTextBox15 = new Gestaller.Views.CueTextBox();
-            this.cueTextBox16 = new Gestaller.Views.CueTextBox();
-            this.cueTextBox17 = new Gestaller.Views.CueTextBox();
-            this.cueTextBox18 = new Gestaller.Views.CueTextBox();
             this.cueTextBox19 = new Gestaller.Views.CueTextBox();
             this.cueTextBox20 = new Gestaller.Views.CueTextBox();
             this.cueTextBox21 = new Gestaller.Views.CueTextBox();
@@ -176,6 +176,7 @@ namespace Gestaller
             this.panel9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
             this.panel12.SuspendLayout();
+            this.flowLayoutPanel8.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel8.SuspendLayout();
@@ -185,6 +186,7 @@ namespace Gestaller
             this.panel10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.panel11.SuspendLayout();
+            this.flowLayoutPanel5.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -195,8 +197,6 @@ namespace Gestaller
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.flowLayoutPanel2.SuspendLayout();
-            this.flowLayoutPanel5.SuspendLayout();
-            this.flowLayoutPanel8.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -648,6 +648,45 @@ namespace Gestaller
             this.button38.Text = "Borrar Pre.";
             this.button38.UseVisualStyleBackColor = true;
             // 
+            // flowLayoutPanel8
+            // 
+            this.flowLayoutPanel8.Controls.Add(this.cueTextBox13);
+            this.flowLayoutPanel8.Controls.Add(this.cueTextBox14);
+            this.flowLayoutPanel8.Controls.Add(this.cueTextBox15);
+            this.flowLayoutPanel8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutPanel8.Location = new System.Drawing.Point(0, 375);
+            this.flowLayoutPanel8.Margin = new System.Windows.Forms.Padding(0);
+            this.flowLayoutPanel8.Name = "flowLayoutPanel8";
+            this.flowLayoutPanel8.Size = new System.Drawing.Size(1164, 20);
+            this.flowLayoutPanel8.TabIndex = 14;
+            // 
+            // cueTextBox13
+            // 
+            this.cueTextBox13.CueText = "Base Imponible";
+            this.cueTextBox13.Location = new System.Drawing.Point(3, 0);
+            this.cueTextBox13.Margin = new System.Windows.Forms.Padding(3, 0, 3, 3);
+            this.cueTextBox13.Name = "cueTextBox13";
+            this.cueTextBox13.Size = new System.Drawing.Size(248, 20);
+            this.cueTextBox13.TabIndex = 0;
+            // 
+            // cueTextBox14
+            // 
+            this.cueTextBox14.CueText = "I.V.A.";
+            this.cueTextBox14.Location = new System.Drawing.Point(257, 0);
+            this.cueTextBox14.Margin = new System.Windows.Forms.Padding(3, 0, 3, 3);
+            this.cueTextBox14.Name = "cueTextBox14";
+            this.cueTextBox14.Size = new System.Drawing.Size(121, 20);
+            this.cueTextBox14.TabIndex = 1;
+            // 
+            // cueTextBox15
+            // 
+            this.cueTextBox15.CueText = "Total";
+            this.cueTextBox15.Location = new System.Drawing.Point(384, 0);
+            this.cueTextBox15.Margin = new System.Windows.Forms.Padding(3, 0, 3, 3);
+            this.cueTextBox15.Name = "cueTextBox15";
+            this.cueTextBox15.Size = new System.Drawing.Size(121, 20);
+            this.cueTextBox15.TabIndex = 2;
+            // 
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.tableLayoutPanel1);
@@ -1086,6 +1125,45 @@ namespace Gestaller
             this.button34.Text = "Borrar Pre.";
             this.button34.UseVisualStyleBackColor = true;
             // 
+            // flowLayoutPanel5
+            // 
+            this.flowLayoutPanel5.Controls.Add(this.cueTextBox16);
+            this.flowLayoutPanel5.Controls.Add(this.cueTextBox17);
+            this.flowLayoutPanel5.Controls.Add(this.cueTextBox18);
+            this.flowLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutPanel5.Location = new System.Drawing.Point(0, 375);
+            this.flowLayoutPanel5.Margin = new System.Windows.Forms.Padding(0);
+            this.flowLayoutPanel5.Name = "flowLayoutPanel5";
+            this.flowLayoutPanel5.Size = new System.Drawing.Size(1164, 20);
+            this.flowLayoutPanel5.TabIndex = 13;
+            // 
+            // cueTextBox16
+            // 
+            this.cueTextBox16.CueText = "Base Imponible";
+            this.cueTextBox16.Location = new System.Drawing.Point(3, 0);
+            this.cueTextBox16.Margin = new System.Windows.Forms.Padding(3, 0, 3, 3);
+            this.cueTextBox16.Name = "cueTextBox16";
+            this.cueTextBox16.Size = new System.Drawing.Size(248, 20);
+            this.cueTextBox16.TabIndex = 3;
+            // 
+            // cueTextBox17
+            // 
+            this.cueTextBox17.CueText = "I.V.A.";
+            this.cueTextBox17.Location = new System.Drawing.Point(257, 0);
+            this.cueTextBox17.Margin = new System.Windows.Forms.Padding(3, 0, 3, 3);
+            this.cueTextBox17.Name = "cueTextBox17";
+            this.cueTextBox17.Size = new System.Drawing.Size(121, 20);
+            this.cueTextBox17.TabIndex = 4;
+            // 
+            // cueTextBox18
+            // 
+            this.cueTextBox18.CueText = "Total";
+            this.cueTextBox18.Location = new System.Drawing.Point(384, 0);
+            this.cueTextBox18.Margin = new System.Windows.Forms.Padding(3, 0, 3, 3);
+            this.cueTextBox18.Name = "cueTextBox18";
+            this.cueTextBox18.Size = new System.Drawing.Size(121, 20);
+            this.cueTextBox18.TabIndex = 5;
+            // 
             // tabPage3
             // 
             this.tabPage3.Controls.Add(this.tableLayoutPanel2);
@@ -1219,6 +1297,14 @@ namespace Gestaller
             this.cueTextBox2.Name = "cueTextBox2";
             this.cueTextBox2.Size = new System.Drawing.Size(121, 20);
             this.cueTextBox2.TabIndex = 7;
+            // 
+            // cueTextBox12
+            // 
+            this.cueTextBox12.CueText = null;
+            this.cueTextBox12.Location = new System.Drawing.Point(892, 3);
+            this.cueTextBox12.Name = "cueTextBox12";
+            this.cueTextBox12.Size = new System.Drawing.Size(100, 20);
+            this.cueTextBox12.TabIndex = 10;
             // 
             // label6
             // 
@@ -1527,14 +1613,6 @@ namespace Gestaller
             this.dataGridView1.Size = new System.Drawing.Size(1158, 70);
             this.dataGridView1.TabIndex = 10;
             // 
-            // cueTextBox12
-            // 
-            this.cueTextBox12.CueText = null;
-            this.cueTextBox12.Location = new System.Drawing.Point(892, 3);
-            this.cueTextBox12.Name = "cueTextBox12";
-            this.cueTextBox12.Size = new System.Drawing.Size(100, 20);
-            this.cueTextBox12.TabIndex = 10;
-            // 
             // flowLayoutPanel2
             // 
             this.flowLayoutPanel2.Controls.Add(this.cueTextBox19);
@@ -1546,84 +1624,6 @@ namespace Gestaller
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
             this.flowLayoutPanel2.Size = new System.Drawing.Size(1164, 20);
             this.flowLayoutPanel2.TabIndex = 11;
-            // 
-            // flowLayoutPanel5
-            // 
-            this.flowLayoutPanel5.Controls.Add(this.cueTextBox16);
-            this.flowLayoutPanel5.Controls.Add(this.cueTextBox17);
-            this.flowLayoutPanel5.Controls.Add(this.cueTextBox18);
-            this.flowLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel5.Location = new System.Drawing.Point(0, 375);
-            this.flowLayoutPanel5.Margin = new System.Windows.Forms.Padding(0);
-            this.flowLayoutPanel5.Name = "flowLayoutPanel5";
-            this.flowLayoutPanel5.Size = new System.Drawing.Size(1164, 20);
-            this.flowLayoutPanel5.TabIndex = 13;
-            // 
-            // flowLayoutPanel8
-            // 
-            this.flowLayoutPanel8.Controls.Add(this.cueTextBox13);
-            this.flowLayoutPanel8.Controls.Add(this.cueTextBox14);
-            this.flowLayoutPanel8.Controls.Add(this.cueTextBox15);
-            this.flowLayoutPanel8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel8.Location = new System.Drawing.Point(0, 375);
-            this.flowLayoutPanel8.Margin = new System.Windows.Forms.Padding(0);
-            this.flowLayoutPanel8.Name = "flowLayoutPanel8";
-            this.flowLayoutPanel8.Size = new System.Drawing.Size(1164, 20);
-            this.flowLayoutPanel8.TabIndex = 14;
-            // 
-            // cueTextBox13
-            // 
-            this.cueTextBox13.CueText = "Base Imponible";
-            this.cueTextBox13.Location = new System.Drawing.Point(3, 0);
-            this.cueTextBox13.Margin = new System.Windows.Forms.Padding(3, 0, 3, 3);
-            this.cueTextBox13.Name = "cueTextBox13";
-            this.cueTextBox13.Size = new System.Drawing.Size(248, 20);
-            this.cueTextBox13.TabIndex = 0;
-            // 
-            // cueTextBox14
-            // 
-            this.cueTextBox14.CueText = "I.V.A.";
-            this.cueTextBox14.Location = new System.Drawing.Point(257, 0);
-            this.cueTextBox14.Margin = new System.Windows.Forms.Padding(3, 0, 3, 3);
-            this.cueTextBox14.Name = "cueTextBox14";
-            this.cueTextBox14.Size = new System.Drawing.Size(121, 20);
-            this.cueTextBox14.TabIndex = 1;
-            // 
-            // cueTextBox15
-            // 
-            this.cueTextBox15.CueText = "Total";
-            this.cueTextBox15.Location = new System.Drawing.Point(384, 0);
-            this.cueTextBox15.Margin = new System.Windows.Forms.Padding(3, 0, 3, 3);
-            this.cueTextBox15.Name = "cueTextBox15";
-            this.cueTextBox15.Size = new System.Drawing.Size(121, 20);
-            this.cueTextBox15.TabIndex = 2;
-            // 
-            // cueTextBox16
-            // 
-            this.cueTextBox16.CueText = "Base Imponible";
-            this.cueTextBox16.Location = new System.Drawing.Point(3, 0);
-            this.cueTextBox16.Margin = new System.Windows.Forms.Padding(3, 0, 3, 3);
-            this.cueTextBox16.Name = "cueTextBox16";
-            this.cueTextBox16.Size = new System.Drawing.Size(248, 20);
-            this.cueTextBox16.TabIndex = 3;
-            // 
-            // cueTextBox17
-            // 
-            this.cueTextBox17.CueText = "I.V.A.";
-            this.cueTextBox17.Location = new System.Drawing.Point(257, 0);
-            this.cueTextBox17.Margin = new System.Windows.Forms.Padding(3, 0, 3, 3);
-            this.cueTextBox17.Name = "cueTextBox17";
-            this.cueTextBox17.Size = new System.Drawing.Size(121, 20);
-            this.cueTextBox17.TabIndex = 4;
-            // 
-            // cueTextBox18
-            // 
-            this.cueTextBox18.CueText = "Total";
-            this.cueTextBox18.Location = new System.Drawing.Point(384, 0);
-            this.cueTextBox18.Margin = new System.Windows.Forms.Padding(3, 0, 3, 3);
-            this.cueTextBox18.Name = "cueTextBox18";
-            this.cueTextBox18.Size = new System.Drawing.Size(121, 20);
-            this.cueTextBox18.TabIndex = 5;
             // 
             // cueTextBox19
             // 
@@ -1660,6 +1660,7 @@ namespace Gestaller
             this.Controls.Add(this.tabControl1);
             this.Name = "OrdersView";
             this.Text = "Ordenes";
+            this.Load += new System.EventHandler(this.OrdersView_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tableLayoutPanel1Presupuesto.ResumeLayout(false);
@@ -1673,6 +1674,8 @@ namespace Gestaller
             this.panel9.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
             this.panel12.ResumeLayout(false);
+            this.flowLayoutPanel8.ResumeLayout(false);
+            this.flowLayoutPanel8.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
@@ -1685,6 +1688,8 @@ namespace Gestaller
             this.panel10.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.panel11.ResumeLayout(false);
+            this.flowLayoutPanel5.ResumeLayout(false);
+            this.flowLayoutPanel5.PerformLayout();
             this.tabPage3.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
@@ -1699,10 +1704,6 @@ namespace Gestaller
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.flowLayoutPanel2.ResumeLayout(false);
             this.flowLayoutPanel2.PerformLayout();
-            this.flowLayoutPanel5.ResumeLayout(false);
-            this.flowLayoutPanel5.PerformLayout();
-            this.flowLayoutPanel8.ResumeLayout(false);
-            this.flowLayoutPanel8.PerformLayout();
             this.ResumeLayout(false);
 
         }
