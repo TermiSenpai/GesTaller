@@ -128,6 +128,7 @@ namespace Gestaller
             this.cueComboBoxCliente.Name = "cueComboBoxCliente";
             this.cueComboBoxCliente.Size = new System.Drawing.Size(248, 21);
             this.cueComboBoxCliente.TabIndex = 0;
+            this.cueComboBoxCliente.SelectedIndexChanged += new System.EventHandler(this.cueComboBoxCliente_SelectedIndexChanged);
             // 
             // cueComboBoxMatricula
             // 
@@ -137,6 +138,7 @@ namespace Gestaller
             this.cueComboBoxMatricula.Name = "cueComboBoxMatricula";
             this.cueComboBoxMatricula.Size = new System.Drawing.Size(121, 21);
             this.cueComboBoxMatricula.TabIndex = 1;
+            this.cueComboBoxMatricula.SelectedIndexChanged += new System.EventHandler(this.cueComboBoxMatricula_SelectedIndexChanged);
             // 
             // cueComboBoxMarca
             // 
@@ -181,6 +183,7 @@ namespace Gestaller
             this.cueComboBoxBastidor.Name = "cueComboBoxBastidor";
             this.cueComboBoxBastidor.Size = new System.Drawing.Size(121, 21);
             this.cueComboBoxBastidor.TabIndex = 6;
+            this.cueComboBoxBastidor.SelectedIndexChanged += new System.EventHandler(this.cueComboBoxBastidor_SelectedIndexChanged);
             // 
             // label1
             // 
