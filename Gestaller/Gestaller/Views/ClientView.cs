@@ -16,46 +16,34 @@ namespace Gestaller
         BussinessLogicLayer _bussinessLogicLayer = new BussinessLogicLayer();
         ContactVehicle _clientVehicle = null;
         List<Control> _controls = new List<Control>();
+        int _comboIndex;
 
         public ClientView()
         {
             InitializeComponent();
+        }
+
+        #region events
+
+        // Ejecutado al cargar la vista
+        private void ClientView_Load(object sender, EventArgs e)
+        {
             addControls();
             getDB();
             clientItemSet();
         }
 
-        private void tabla2_clientes_V_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        #region events
-
+        // Obtiene los datos de clientVehicle
         private void getDB()
         {
             List<ContactVehicle> contactsVehicles = getContactsVehicles();
             dataGrid.DataSource = contactsVehicles;
         }
 
-        // Vaciar texto
+        // Vaciar texto (botón vaciar)
         private void button1_Click(object sender, EventArgs e)
         {
-            foreach (CueComboBox cueComboBox in _controls)
-            {
-                cueComboBox.ResetText();
-                cueComboBox.SelectedIndex = -1;
-            }
-
-            foreach(CueTextBox cueTextBox in _controls)
-            {
-                cueTextBox.ResetText();
-            }
-
-            foreach(DateTimePicker dateTimePicker in _controls)
-            {
-                // TODO
-            }
+            clearText();
         }
 
         // Al hacer click en cualquier celda se activa el evento
@@ -70,44 +58,45 @@ namespace Gestaller
             // Toma los datos del clienteVehiculo y los añade al comboBox
             setToComboBox();
         }
-        #region comboBoxSelection
-        private void cueComboBoxEmpresa_SelectionChangeCommitted(object sender, EventArgs e)
-        {
-            int comboIndex = cueComboBoxEmpresa.SelectedIndex;
-            changesComboBoxes(comboIndex);
-        }
-
-        private void cueComboBoxNombre_SelectionChangeCommitted(object sender, EventArgs e)
-        {
-            int comboIndex = cueComboBoxNombre.SelectedIndex;
-            changesComboBoxes(comboIndex);
-        }
-        private void cueComboBoxEmail_SelectionChangeCommitted(object sender, EventArgs e)
-        {
-            int comboIndex = cueComboBoxEmail.SelectedIndex;
-            changesComboBoxes(comboIndex);
-        }
-        private void cueComboBoxMovil_SelectionChangeCommitted(object sender, EventArgs e)
-        {
-            int comboIndex = cueComboBoxMovil.SelectedIndex;
-            changesComboBoxes(comboIndex);
-        }
-
-        #endregion
-
-        private void changesComboBoxes(int comboIndex)
-        {
-            List<ContactVehicle> contactsVehicles = getContactsVehicles();
-
-            selectContactVehicle(contactsVehicles[comboIndex]);
-
-            setToComboBox();
-        }
 
         #endregion
 
         #region private methods
 
+        // Vacia el texto de los comboBoxes
+        private void clearText()
+        {
+            foreach (Control control in _controls)
+            {
+                if (control is CueComboBox)
+                {
+                    ((CueComboBox)control).ResetText();
+                    ((CueComboBox)control).SelectedIndex = -1;
+                }
+
+                if (control is CueTextBox)
+                {
+                    ((CueTextBox)control).ResetText();
+                }
+
+                if (control is DateTimePicker)
+                {
+                    ((DateTimePicker)control).ResetText();
+                }
+            }
+        }
+
+        // Obtiene la lista de contactsVehicles del index seleccionado
+        private void changesComboBoxes()
+        {
+            List<ContactVehicle> contactsVehicles = getContactsVehicles();
+
+            selectContactVehicle(contactsVehicles[_comboIndex]);
+
+            setToComboBox();
+        }
+
+        // Añade los controles a la lista 
         private void addControls()
         {
             _controls.Add(cueComboBoxEmpresa);
@@ -128,19 +117,22 @@ namespace Gestaller
             _controls.Add(cueComboBoxKilometros);
             _controls.Add(cueComboBoxTipoMotor);
         }
+
+        // Obtiene la lista de todos los contactsVehicles
         private List<ContactVehicle> getContactsVehicles()
         {
             return _bussinessLogicLayer.GetContactVehicles();
         }
 
+        // Selecciona el contactVehicle en uso
         private void selectContactVehicle(ContactVehicle contactVehicle)
         {
             _clientVehicle = contactVehicle;
         }
-        
+
+        // Modifica el valor de todos los comboBoxes al del contactVehicle en uso
         private void setToComboBox()
         {
-
             // Muestra los datos en los cueComboBox 
             cueComboBoxEmpresa.Text = _clientVehicle.contact_company;
             cueComboBoxCIF.Text = _clientVehicle.contact_cif;
@@ -161,6 +153,7 @@ namespace Gestaller
             cueComboBoxTipoMotor.Text = _clientVehicle.vehicle_engineType;
         }
 
+        // Añade los items de los comboBoxes a la lista que se muestra
         private void clientItemSet()
         {
             List<ContactVehicle> contactsVehicles = getContactsVehicles();
@@ -209,8 +202,62 @@ namespace Gestaller
                 #endregion
             }
 
+
         }
 
         #endregion
+
+        #region comboBoxSelectionEvent
+
+        private void cueComboBoxEmpresa_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            _comboIndex = cueComboBoxEmpresa.SelectedIndex;
+            changesComboBoxes();
+        }
+
+        private void cueComboBoxCIF_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            _comboIndex = cueComboBoxCIF.SelectedIndex;
+            changesComboBoxes();
+        }
+
+        private void cueComboBoxNombre_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            _comboIndex = cueComboBoxNombre.SelectedIndex;
+            changesComboBoxes();
+        }
+
+        private void cueComboBoxDireccion_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            _comboIndex = cueComboBoxDireccion.SelectedIndex;
+            changesComboBoxes();
+        }
+
+        private void cueComboBoxMovil_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            _comboIndex = cueComboBoxMovil.SelectedIndex;
+            changesComboBoxes();
+        }
+
+        private void cueComboBoxEmail_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            _comboIndex = cueComboBoxEmail.SelectedIndex;
+            changesComboBoxes();
+        }
+
+        private void cueComboBoxMatricula_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            _comboIndex = cueComboBoxMatricula.SelectedIndex;
+            changesComboBoxes();
+        }
+
+        private void cueComboBoxBastidor_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            _comboIndex = cueComboBoxBastidor.SelectedIndex;
+            changesComboBoxes();
+        }
+
+        #endregion
+
     }
 }

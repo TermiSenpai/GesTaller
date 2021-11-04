@@ -30,6 +30,15 @@ namespace Gestaller
         private void InitializeComponent()
         {
             this.table1Recepciones_Main_Container = new System.Windows.Forms.TableLayoutPanel();
+            this.flowDatos_Vehiculos = new System.Windows.Forms.FlowLayoutPanel();
+            this.cueComboBoxCliente = new Gestaller.Views.CueComboBox();
+            this.cueComboBoxMatricula = new Gestaller.Views.CueComboBox();
+            this.cueComboBoxMarca = new Gestaller.Views.CueComboBox();
+            this.cueComboBoxModelo = new Gestaller.Views.CueComboBox();
+            this.cueTextBoxKMS = new Gestaller.Views.CueTextBox();
+            this.cueComboBoxTipoMotor = new Gestaller.Views.CueComboBox();
+            this.cueComboBoxBastidor = new Gestaller.Views.CueComboBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.table1Recepciones_Down_Side = new System.Windows.Forms.TableLayoutPanel();
             this.table1Recepciones_Grids = new System.Windows.Forms.TableLayoutPanel();
             this.table1Recepciones_Vehicle = new System.Windows.Forms.TableLayoutPanel();
@@ -41,38 +50,30 @@ namespace Gestaller
             this.button4Borrar = new System.Windows.Forms.Button();
             this.button5Presupuesto = new System.Windows.Forms.Button();
             this.button6Entregar = new System.Windows.Forms.Button();
+            this.button7Vaciar = new System.Windows.Forms.Button();
             this.dataGridViewDepositos = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
-            this.flowDatos_Vehiculos = new System.Windows.Forms.FlowLayoutPanel();
-            this.cueTextBoxKMS = new Gestaller.Views.CueTextBox();
-            this.cueComboBoxBastidor = new Gestaller.Views.CueComboBox();
-            this.cueComboBoxCliente = new Gestaller.Views.CueComboBox();
-            this.cueComboBoxMarca = new Gestaller.Views.CueComboBox();
-            this.cueComboBoxModelo = new Gestaller.Views.CueComboBox();
-            this.cueComboBoxTipoMotor = new Gestaller.Views.CueComboBox();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.cueComboBoxMatricula = new Gestaller.Views.CueComboBox();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
             this.cueTextBox1 = new Gestaller.Views.CueTextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.table1Recepciones_Main_Container.SuspendLayout();
+            this.flowDatos_Vehiculos.SuspendLayout();
             this.table1Recepciones_Down_Side.SuspendLayout();
             this.table1Recepciones_Grids.SuspendLayout();
             this.table1Recepciones_Vehicle.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewVehicles)).BeginInit();
             this.flowIncoming_Buttons.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDepositos)).BeginInit();
-            this.flowDatos_Vehiculos.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -104,6 +105,94 @@ namespace Gestaller
             this.table1Recepciones_Main_Container.Size = new System.Drawing.Size(1384, 789);
             this.table1Recepciones_Main_Container.TabIndex = 0;
             // 
+            // flowDatos_Vehiculos
+            // 
+            this.flowDatos_Vehiculos.Controls.Add(this.cueComboBoxCliente);
+            this.flowDatos_Vehiculos.Controls.Add(this.cueComboBoxMatricula);
+            this.flowDatos_Vehiculos.Controls.Add(this.cueComboBoxMarca);
+            this.flowDatos_Vehiculos.Controls.Add(this.cueComboBoxModelo);
+            this.flowDatos_Vehiculos.Controls.Add(this.cueTextBoxKMS);
+            this.flowDatos_Vehiculos.Controls.Add(this.cueComboBoxTipoMotor);
+            this.flowDatos_Vehiculos.Controls.Add(this.cueComboBoxBastidor);
+            this.flowDatos_Vehiculos.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowDatos_Vehiculos.Location = new System.Drawing.Point(3, 23);
+            this.flowDatos_Vehiculos.Name = "flowDatos_Vehiculos";
+            this.flowDatos_Vehiculos.Size = new System.Drawing.Size(1378, 90);
+            this.flowDatos_Vehiculos.TabIndex = 1;
+            // 
+            // cueComboBoxCliente
+            // 
+            this.cueComboBoxCliente.CueText = "Cliente";
+            this.cueComboBoxCliente.FormattingEnabled = true;
+            this.cueComboBoxCliente.Location = new System.Drawing.Point(3, 3);
+            this.cueComboBoxCliente.Name = "cueComboBoxCliente";
+            this.cueComboBoxCliente.Size = new System.Drawing.Size(248, 21);
+            this.cueComboBoxCliente.TabIndex = 0;
+            // 
+            // cueComboBoxMatricula
+            // 
+            this.cueComboBoxMatricula.CueText = "Matrícula";
+            this.cueComboBoxMatricula.FormattingEnabled = true;
+            this.cueComboBoxMatricula.Location = new System.Drawing.Point(257, 3);
+            this.cueComboBoxMatricula.Name = "cueComboBoxMatricula";
+            this.cueComboBoxMatricula.Size = new System.Drawing.Size(121, 21);
+            this.cueComboBoxMatricula.TabIndex = 1;
+            // 
+            // cueComboBoxMarca
+            // 
+            this.cueComboBoxMarca.CueText = "Marca";
+            this.cueComboBoxMarca.FormattingEnabled = true;
+            this.cueComboBoxMarca.Location = new System.Drawing.Point(384, 3);
+            this.cueComboBoxMarca.Name = "cueComboBoxMarca";
+            this.cueComboBoxMarca.Size = new System.Drawing.Size(121, 21);
+            this.cueComboBoxMarca.TabIndex = 2;
+            // 
+            // cueComboBoxModelo
+            // 
+            this.cueComboBoxModelo.CueText = "Modelo";
+            this.cueComboBoxModelo.FormattingEnabled = true;
+            this.cueComboBoxModelo.Location = new System.Drawing.Point(511, 3);
+            this.cueComboBoxModelo.Name = "cueComboBoxModelo";
+            this.cueComboBoxModelo.Size = new System.Drawing.Size(248, 21);
+            this.cueComboBoxModelo.TabIndex = 3;
+            // 
+            // cueTextBoxKMS
+            // 
+            this.cueTextBoxKMS.CueText = "Kilómetros";
+            this.cueTextBoxKMS.Location = new System.Drawing.Point(765, 3);
+            this.cueTextBoxKMS.Name = "cueTextBoxKMS";
+            this.cueTextBoxKMS.Size = new System.Drawing.Size(121, 20);
+            this.cueTextBoxKMS.TabIndex = 4;
+            // 
+            // cueComboBoxTipoMotor
+            // 
+            this.cueComboBoxTipoMotor.CueText = "Tipo de Motor";
+            this.cueComboBoxTipoMotor.FormattingEnabled = true;
+            this.cueComboBoxTipoMotor.Location = new System.Drawing.Point(892, 3);
+            this.cueComboBoxTipoMotor.Name = "cueComboBoxTipoMotor";
+            this.cueComboBoxTipoMotor.Size = new System.Drawing.Size(121, 21);
+            this.cueComboBoxTipoMotor.TabIndex = 5;
+            // 
+            // cueComboBoxBastidor
+            // 
+            this.cueComboBoxBastidor.CueText = "Bastidor";
+            this.cueComboBoxBastidor.FormattingEnabled = true;
+            this.cueComboBoxBastidor.Location = new System.Drawing.Point(1019, 3);
+            this.cueComboBoxBastidor.Name = "cueComboBoxBastidor";
+            this.cueComboBoxBastidor.Size = new System.Drawing.Size(121, 21);
+            this.cueComboBoxBastidor.TabIndex = 6;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.label1.Location = new System.Drawing.Point(3, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(1378, 20);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "VEHÍCULO";
+            // 
             // table1Recepciones_Down_Side
             // 
             this.table1Recepciones_Down_Side.ColumnCount = 1;
@@ -116,7 +205,7 @@ namespace Gestaller
             this.table1Recepciones_Down_Side.RowCount = 1;
             this.table1Recepciones_Down_Side.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.table1Recepciones_Down_Side.Size = new System.Drawing.Size(1378, 440);
-            this.table1Recepciones_Down_Side.TabIndex = 0;
+            this.table1Recepciones_Down_Side.TabIndex = 6;
             // 
             // table1Recepciones_Grids
             // 
@@ -146,7 +235,7 @@ namespace Gestaller
             this.table1Recepciones_Vehicle.RowCount = 1;
             this.table1Recepciones_Vehicle.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.table1Recepciones_Vehicle.Size = new System.Drawing.Size(1366, 211);
-            this.table1Recepciones_Vehicle.TabIndex = 0;
+            this.table1Recepciones_Vehicle.TabIndex = 1;
             // 
             // dataGridViewVehicles
             // 
@@ -156,6 +245,7 @@ namespace Gestaller
             this.dataGridViewVehicles.Name = "dataGridViewVehicles";
             this.dataGridViewVehicles.Size = new System.Drawing.Size(677, 205);
             this.dataGridViewVehicles.TabIndex = 0;
+            this.dataGridViewVehicles.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridViewVehicles_CellMouseClick);
             // 
             // flowIncoming_Buttons
             // 
@@ -166,11 +256,12 @@ namespace Gestaller
             this.flowIncoming_Buttons.Controls.Add(this.button4Borrar);
             this.flowIncoming_Buttons.Controls.Add(this.button5Presupuesto);
             this.flowIncoming_Buttons.Controls.Add(this.button6Entregar);
+            this.flowIncoming_Buttons.Controls.Add(this.button7Vaciar);
             this.flowIncoming_Buttons.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowIncoming_Buttons.Location = new System.Drawing.Point(686, 3);
             this.flowIncoming_Buttons.Name = "flowIncoming_Buttons";
             this.flowIncoming_Buttons.Size = new System.Drawing.Size(677, 205);
-            this.flowIncoming_Buttons.TabIndex = 1;
+            this.flowIncoming_Buttons.TabIndex = 7;
             // 
             // button1Create
             // 
@@ -226,6 +317,16 @@ namespace Gestaller
             this.button6Entregar.Text = "Entregar";
             this.button6Entregar.UseVisualStyleBackColor = true;
             // 
+            // button7Vaciar
+            // 
+            this.button7Vaciar.Location = new System.Drawing.Point(489, 3);
+            this.button7Vaciar.Name = "button7Vaciar";
+            this.button7Vaciar.Size = new System.Drawing.Size(75, 23);
+            this.button7Vaciar.TabIndex = 6;
+            this.button7Vaciar.Text = "Vaciar";
+            this.button7Vaciar.UseVisualStyleBackColor = true;
+            this.button7Vaciar.Click += new System.EventHandler(this.button7Vaciar_Click);
+            // 
             // dataGridViewDepositos
             // 
             this.dataGridViewDepositos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -233,86 +334,30 @@ namespace Gestaller
             this.dataGridViewDepositos.Location = new System.Drawing.Point(3, 220);
             this.dataGridViewDepositos.Name = "dataGridViewDepositos";
             this.dataGridViewDepositos.Size = new System.Drawing.Size(1366, 211);
-            this.dataGridViewDepositos.TabIndex = 1;
+            this.dataGridViewDepositos.TabIndex = 8;
+            this.dataGridViewDepositos.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridViewDepositos_CellMouseClick);
             // 
-            // label1
+            // flowLayoutPanel1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(3, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(1378, 20);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "VEHÍCULO";
+            this.flowLayoutPanel1.AutoScroll = true;
+            this.flowLayoutPanel1.Controls.Add(this.panel1);
+            this.flowLayoutPanel1.Controls.Add(this.panel2);
+            this.flowLayoutPanel1.Controls.Add(this.panel3);
+            this.flowLayoutPanel1.Controls.Add(this.cueTextBox1);
+            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 139);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1378, 70);
+            this.flowLayoutPanel1.TabIndex = 3;
             // 
-            // flowDatos_Vehiculos
+            // panel1
             // 
-            this.flowDatos_Vehiculos.Controls.Add(this.cueComboBoxCliente);
-            this.flowDatos_Vehiculos.Controls.Add(this.cueComboBoxMatricula);
-            this.flowDatos_Vehiculos.Controls.Add(this.cueComboBoxMarca);
-            this.flowDatos_Vehiculos.Controls.Add(this.cueComboBoxModelo);
-            this.flowDatos_Vehiculos.Controls.Add(this.cueTextBoxKMS);
-            this.flowDatos_Vehiculos.Controls.Add(this.cueComboBoxTipoMotor);
-            this.flowDatos_Vehiculos.Controls.Add(this.cueComboBoxBastidor);
-            this.flowDatos_Vehiculos.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowDatos_Vehiculos.Location = new System.Drawing.Point(3, 23);
-            this.flowDatos_Vehiculos.Name = "flowDatos_Vehiculos";
-            this.flowDatos_Vehiculos.Size = new System.Drawing.Size(1378, 90);
-            this.flowDatos_Vehiculos.TabIndex = 3;
-            // 
-            // cueTextBoxKMS
-            // 
-            this.cueTextBoxKMS.CueText = "Kmts.";
-            this.cueTextBoxKMS.Location = new System.Drawing.Point(765, 3);
-            this.cueTextBoxKMS.Name = "cueTextBoxKMS";
-            this.cueTextBoxKMS.Size = new System.Drawing.Size(121, 20);
-            this.cueTextBoxKMS.TabIndex = 1;
-            // 
-            // cueComboBoxBastidor
-            // 
-            this.cueComboBoxBastidor.CueText = "Bastidor";
-            this.cueComboBoxBastidor.FormattingEnabled = true;
-            this.cueComboBoxBastidor.Location = new System.Drawing.Point(1019, 3);
-            this.cueComboBoxBastidor.Name = "cueComboBoxBastidor";
-            this.cueComboBoxBastidor.Size = new System.Drawing.Size(121, 21);
-            this.cueComboBoxBastidor.TabIndex = 2;
-            // 
-            // cueComboBoxCliente
-            // 
-            this.cueComboBoxCliente.CueText = "Cliente";
-            this.cueComboBoxCliente.FormattingEnabled = true;
-            this.cueComboBoxCliente.Location = new System.Drawing.Point(3, 3);
-            this.cueComboBoxCliente.Name = "cueComboBoxCliente";
-            this.cueComboBoxCliente.Size = new System.Drawing.Size(248, 21);
-            this.cueComboBoxCliente.TabIndex = 3;
-            // 
-            // cueComboBoxMarca
-            // 
-            this.cueComboBoxMarca.CueText = "Marca";
-            this.cueComboBoxMarca.FormattingEnabled = true;
-            this.cueComboBoxMarca.Location = new System.Drawing.Point(384, 3);
-            this.cueComboBoxMarca.Name = "cueComboBoxMarca";
-            this.cueComboBoxMarca.Size = new System.Drawing.Size(121, 21);
-            this.cueComboBoxMarca.TabIndex = 4;
-            // 
-            // cueComboBoxModelo
-            // 
-            this.cueComboBoxModelo.CueText = "Modelo";
-            this.cueComboBoxModelo.FormattingEnabled = true;
-            this.cueComboBoxModelo.Location = new System.Drawing.Point(511, 3);
-            this.cueComboBoxModelo.Name = "cueComboBoxModelo";
-            this.cueComboBoxModelo.Size = new System.Drawing.Size(248, 21);
-            this.cueComboBoxModelo.TabIndex = 5;
-            // 
-            // cueComboBoxTipoMotor
-            // 
-            this.cueComboBoxTipoMotor.CueText = "Tipo de Motor";
-            this.cueComboBoxTipoMotor.FormattingEnabled = true;
-            this.cueComboBoxTipoMotor.Location = new System.Drawing.Point(892, 3);
-            this.cueComboBoxTipoMotor.Name = "cueComboBoxTipoMotor";
-            this.cueComboBoxTipoMotor.Size = new System.Drawing.Size(121, 21);
-            this.cueComboBoxTipoMotor.TabIndex = 6;
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.dateTimePicker1);
+            this.panel1.Location = new System.Drawing.Point(3, 3);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(248, 26);
+            this.panel1.TabIndex = 0;
             // 
             // label2
             // 
@@ -333,38 +378,14 @@ namespace Gestaller
             this.dateTimePicker1.Size = new System.Drawing.Size(121, 20);
             this.dateTimePicker1.TabIndex = 7;
             // 
-            // cueComboBoxMatricula
+            // panel2
             // 
-            this.cueComboBoxMatricula.CueText = "Matrícula";
-            this.cueComboBoxMatricula.FormattingEnabled = true;
-            this.cueComboBoxMatricula.Location = new System.Drawing.Point(257, 3);
-            this.cueComboBoxMatricula.Name = "cueComboBoxMatricula";
-            this.cueComboBoxMatricula.Size = new System.Drawing.Size(121, 21);
-            this.cueComboBoxMatricula.TabIndex = 0;
-            // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.AutoScroll = true;
-            this.flowLayoutPanel1.Controls.Add(this.panel1);
-            this.flowLayoutPanel1.Controls.Add(this.panel2);
-            this.flowLayoutPanel1.Controls.Add(this.panel3);
-            this.flowLayoutPanel1.Controls.Add(this.cueTextBox1);
-            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 139);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1378, 70);
-            this.flowLayoutPanel1.TabIndex = 4;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.label3.Location = new System.Drawing.Point(3, 116);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(1378, 20);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "RECEPCIONES";
+            this.panel2.Controls.Add(this.label4);
+            this.panel2.Controls.Add(this.dateTimePicker2);
+            this.panel2.Location = new System.Drawing.Point(257, 3);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(248, 26);
+            this.panel2.TabIndex = 1;
             // 
             // label4
             // 
@@ -376,16 +397,6 @@ namespace Gestaller
             this.label4.TabIndex = 9;
             this.label4.Text = "Estimado";
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(3, 6);
-            this.label5.Margin = new System.Windows.Forms.Padding(3, 6, 3, 3);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(44, 13);
-            this.label5.TabIndex = 10;
-            this.label5.Text = "Entrega";
-            // 
             // dateTimePicker2
             // 
             this.dateTimePicker2.CustomFormat = " dd";
@@ -394,32 +405,6 @@ namespace Gestaller
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(121, 20);
             this.dateTimePicker2.TabIndex = 11;
-            // 
-            // dateTimePicker3
-            // 
-            this.dateTimePicker3.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker3.Location = new System.Drawing.Point(124, 3);
-            this.dateTimePicker3.Name = "dateTimePicker3";
-            this.dateTimePicker3.Size = new System.Drawing.Size(121, 20);
-            this.dateTimePicker3.TabIndex = 12;
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.dateTimePicker1);
-            this.panel1.Location = new System.Drawing.Point(3, 3);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(248, 26);
-            this.panel1.TabIndex = 0;
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.label4);
-            this.panel2.Controls.Add(this.dateTimePicker2);
-            this.panel2.Location = new System.Drawing.Point(257, 3);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(248, 26);
-            this.panel2.TabIndex = 1;
             // 
             // panel3
             // 
@@ -430,14 +415,43 @@ namespace Gestaller
             this.panel3.Size = new System.Drawing.Size(248, 26);
             this.panel3.TabIndex = 2;
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(3, 6);
+            this.label5.Margin = new System.Windows.Forms.Padding(3, 6, 3, 3);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(44, 13);
+            this.label5.TabIndex = 10;
+            this.label5.Text = "Entrega";
+            // 
+            // dateTimePicker3
+            // 
+            this.dateTimePicker3.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker3.Location = new System.Drawing.Point(124, 3);
+            this.dateTimePicker3.Name = "dateTimePicker3";
+            this.dateTimePicker3.Size = new System.Drawing.Size(121, 20);
+            this.dateTimePicker3.TabIndex = 12;
+            // 
             // cueTextBox1
             // 
-            this.cueTextBox1.CueText = "Kmts.";
+            this.cueTextBox1.CueText = "Kilómetros";
             this.cueTextBox1.Location = new System.Drawing.Point(765, 6);
             this.cueTextBox1.Margin = new System.Windows.Forms.Padding(3, 6, 3, 3);
             this.cueTextBox1.Name = "cueTextBox1";
             this.cueTextBox1.Size = new System.Drawing.Size(121, 20);
             this.cueTextBox1.TabIndex = 3;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.label3.Location = new System.Drawing.Point(3, 116);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(1378, 20);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "RECEPCIONES";
             // 
             // richTextBox1
             // 
@@ -445,7 +459,7 @@ namespace Gestaller
             this.richTextBox1.Location = new System.Drawing.Point(3, 235);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(1378, 105);
-            this.richTextBox1.TabIndex = 6;
+            this.richTextBox1.TabIndex = 5;
             this.richTextBox1.Text = "";
             // 
             // label6
@@ -456,7 +470,7 @@ namespace Gestaller
             this.label6.Location = new System.Drawing.Point(3, 212);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(1378, 20);
-            this.label6.TabIndex = 7;
+            this.label6.TabIndex = 4;
             this.label6.Text = "OBSERVACIÓN DE DAÑOS";
             // 
             // IncomingView
@@ -470,14 +484,14 @@ namespace Gestaller
             this.Load += new System.EventHandler(this.IncomingView_Load);
             this.table1Recepciones_Main_Container.ResumeLayout(false);
             this.table1Recepciones_Main_Container.PerformLayout();
+            this.flowDatos_Vehiculos.ResumeLayout(false);
+            this.flowDatos_Vehiculos.PerformLayout();
             this.table1Recepciones_Down_Side.ResumeLayout(false);
             this.table1Recepciones_Grids.ResumeLayout(false);
             this.table1Recepciones_Vehicle.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewVehicles)).EndInit();
             this.flowIncoming_Buttons.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDepositos)).EndInit();
-            this.flowDatos_Vehiculos.ResumeLayout(false);
-            this.flowDatos_Vehiculos.PerformLayout();
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
             this.panel1.ResumeLayout(false);
@@ -528,5 +542,6 @@ namespace Gestaller
         private Views.CueTextBox cueTextBox1;
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button button7Vaciar;
     }
 }
