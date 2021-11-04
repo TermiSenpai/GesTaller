@@ -593,6 +593,7 @@ namespace Gestaller
             this.dataGridView3.Name = "dataGridView3";
             this.dataGridView3.Size = new System.Drawing.Size(1158, 70);
             this.dataGridView3.TabIndex = 10;
+            this.dataGridView3.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView3_CellMouseClick);
             // 
             // panel4_Pre
             // 
@@ -1650,6 +1651,7 @@ namespace Gestaller
             this.Controls.Add(this.tabControlOrdenes);
             this.Name = "OrdersView";
             this.Text = "Ordenes";
+            this.Load += new System.EventHandler(this.OrdersView_Load);
             this.tabControlOrdenes.ResumeLayout(false);
             this.tabPagePresupuesto.ResumeLayout(false);
             this.tableLayoutPanel1Presupuesto.ResumeLayout(false);
