@@ -17,6 +17,7 @@ namespace Gestaller
         List<Control> _controls = new List<Control>();
         ContactVehicle _clientVehicle = null;
         Incoming _incoming = null;
+        int _comboIndex;
 
         public IncomingView()
         {
@@ -53,6 +54,17 @@ namespace Gestaller
         #endregion
 
         #region private methods
+
+        private void changesComboBoxes()
+        {
+            List<ContactVehicle> contactsVehicles = getContactsVehicles();
+            List<Incoming> incomings = getIncomings();
+
+            selectContactVehicle(contactsVehicles[_comboIndex]);
+            selectIncoming(incomings[_comboIndex]);
+
+            setToComboBox();
+        }
 
         // Evento al clickar en alguna celda o fila de un dataGridView
         void cellClickEvent(int index)
