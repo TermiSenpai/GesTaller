@@ -39,7 +39,7 @@ namespace Gestaller
             this.buttonLastPage_Pre = new System.Windows.Forms.Button();
             this.label1Cliente_Pre = new System.Windows.Forms.Label();
             this.panel1_Pre = new System.Windows.Forms.Panel();
-            this.button1Cliente_SearchBudget_Pre = new System.Windows.Forms.Button();
+            this.button1SearchBudget_Pre = new System.Windows.Forms.Button();
             this.flowLayoutPanel1Cliente_Pre = new System.Windows.Forms.FlowLayoutPanel();
             this.cueComboBox1Cliente_Cliente_Pre = new Gestaller.Views.CueComboBox();
             this.cueComboBox2Cliente_Matricula_Pre = new Gestaller.Views.CueComboBox();
@@ -61,20 +61,20 @@ namespace Gestaller
             this.cueTextBox9Presupuesto_IVA_Pre = new Gestaller.Views.CueTextBox();
             this.richTextBox1Presupuesto_Pre = new System.Windows.Forms.RichTextBox();
             this.panel3_Pre = new System.Windows.Forms.Panel();
-            this.button23 = new System.Windows.Forms.Button();
-            this.button24 = new System.Windows.Forms.Button();
-            this.button25 = new System.Windows.Forms.Button();
-            this.button26 = new System.Windows.Forms.Button();
+            this.button6Anadir_Pre = new System.Windows.Forms.Button();
+            this.button7Borrar_Pre = new System.Windows.Forms.Button();
+            this.button8Modificar_Pre = new System.Windows.Forms.Button();
+            this.button9Devolucion_Pre = new System.Windows.Forms.Button();
             this.dataGridView1_Pre = new System.Windows.Forms.DataGridView();
             this.panel4_Pre = new System.Windows.Forms.Panel();
-            this.button35 = new System.Windows.Forms.Button();
-            this.button36 = new System.Windows.Forms.Button();
-            this.button37 = new System.Windows.Forms.Button();
-            this.button38 = new System.Windows.Forms.Button();
+            this.button10Imprimir_Pre = new System.Windows.Forms.Button();
+            this.button11GenProforma_Pre = new System.Windows.Forms.Button();
+            this.button12GenInvoice_Pre = new System.Windows.Forms.Button();
+            this.button13DeleteBudget_Pre = new System.Windows.Forms.Button();
             this.flowLayoutPanel3Impuestos_Pre = new System.Windows.Forms.FlowLayoutPanel();
-            this.cueTextBox13 = new Gestaller.Views.CueTextBox();
-            this.cueTextBox14 = new Gestaller.Views.CueTextBox();
-            this.cueTextBox15 = new Gestaller.Views.CueTextBox();
+            this.cueTextBox2Base_Pre = new Gestaller.Views.CueTextBox();
+            this.cueTextBox3IVA_Pre = new Gestaller.Views.CueTextBox();
+            this.cueTextBox4Total_Pre = new Gestaller.Views.CueTextBox();
             this.tabPageProforma = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel1Proforma = new System.Windows.Forms.TableLayoutPanel();
             this.panel8 = new System.Windows.Forms.Panel();
@@ -320,7 +320,7 @@ namespace Gestaller
             // 
             // panel1_Pre
             // 
-            this.panel1_Pre.Controls.Add(this.button1Cliente_SearchBudget_Pre);
+            this.panel1_Pre.Controls.Add(this.button1SearchBudget_Pre);
             this.panel1_Pre.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1_Pre.Location = new System.Drawing.Point(0, 102);
             this.panel1_Pre.Margin = new System.Windows.Forms.Padding(0);
@@ -328,15 +328,15 @@ namespace Gestaller
             this.panel1_Pre.Size = new System.Drawing.Size(1164, 23);
             this.panel1_Pre.TabIndex = 1;
             // 
-            // button1Cliente_SearchBudget_Pre
+            // button1SearchBudget_Pre
             // 
-            this.button1Cliente_SearchBudget_Pre.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button1Cliente_SearchBudget_Pre.Location = new System.Drawing.Point(1089, 0);
-            this.button1Cliente_SearchBudget_Pre.Name = "button1Cliente_SearchBudget_Pre";
-            this.button1Cliente_SearchBudget_Pre.Size = new System.Drawing.Size(75, 23);
-            this.button1Cliente_SearchBudget_Pre.TabIndex = 0;
-            this.button1Cliente_SearchBudget_Pre.Text = "Buscar";
-            this.button1Cliente_SearchBudget_Pre.UseVisualStyleBackColor = true;
+            this.button1SearchBudget_Pre.Dock = System.Windows.Forms.DockStyle.Right;
+            this.button1SearchBudget_Pre.Location = new System.Drawing.Point(1089, 0);
+            this.button1SearchBudget_Pre.Name = "button1SearchBudget_Pre";
+            this.button1SearchBudget_Pre.Size = new System.Drawing.Size(75, 23);
+            this.button1SearchBudget_Pre.TabIndex = 0;
+            this.button1SearchBudget_Pre.Text = "Buscar";
+            this.button1SearchBudget_Pre.UseVisualStyleBackColor = true;
             // 
             // flowLayoutPanel1Cliente_Pre
             // 
@@ -533,10 +533,10 @@ namespace Gestaller
             // 
             // panel3_Pre
             // 
-            this.panel3_Pre.Controls.Add(this.button23);
-            this.panel3_Pre.Controls.Add(this.button24);
-            this.panel3_Pre.Controls.Add(this.button25);
-            this.panel3_Pre.Controls.Add(this.button26);
+            this.panel3_Pre.Controls.Add(this.button6Anadir_Pre);
+            this.panel3_Pre.Controls.Add(this.button7Borrar_Pre);
+            this.panel3_Pre.Controls.Add(this.button8Modificar_Pre);
+            this.panel3_Pre.Controls.Add(this.button9Devolucion_Pre);
             this.panel3_Pre.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3_Pre.Location = new System.Drawing.Point(0, 276);
             this.panel3_Pre.Margin = new System.Windows.Forms.Padding(0);
@@ -544,45 +544,46 @@ namespace Gestaller
             this.panel3_Pre.Size = new System.Drawing.Size(1164, 23);
             this.panel3_Pre.TabIndex = 9;
             // 
-            // button23
+            // button6Anadir_Pre
             // 
-            this.button23.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button23.Location = new System.Drawing.Point(864, 0);
-            this.button23.Name = "button23";
-            this.button23.Size = new System.Drawing.Size(75, 23);
-            this.button23.TabIndex = 0;
-            this.button23.Text = "Añadir";
-            this.button23.UseVisualStyleBackColor = true;
+            this.button6Anadir_Pre.Dock = System.Windows.Forms.DockStyle.Right;
+            this.button6Anadir_Pre.Location = new System.Drawing.Point(864, 0);
+            this.button6Anadir_Pre.Name = "button6Anadir_Pre";
+            this.button6Anadir_Pre.Size = new System.Drawing.Size(75, 23);
+            this.button6Anadir_Pre.TabIndex = 0;
+            this.button6Anadir_Pre.Text = "Añadir";
+            this.button6Anadir_Pre.UseVisualStyleBackColor = true;
             // 
-            // button24
+            // button7Borrar_Pre
             // 
-            this.button24.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button24.Location = new System.Drawing.Point(939, 0);
-            this.button24.Name = "button24";
-            this.button24.Size = new System.Drawing.Size(75, 23);
-            this.button24.TabIndex = 2;
-            this.button24.Text = "Borrar";
-            this.button24.UseVisualStyleBackColor = true;
+            this.button7Borrar_Pre.Dock = System.Windows.Forms.DockStyle.Right;
+            this.button7Borrar_Pre.Location = new System.Drawing.Point(939, 0);
+            this.button7Borrar_Pre.Name = "button7Borrar_Pre";
+            this.button7Borrar_Pre.Size = new System.Drawing.Size(75, 23);
+            this.button7Borrar_Pre.TabIndex = 2;
+            this.button7Borrar_Pre.Text = "Borrar";
+            this.button7Borrar_Pre.UseVisualStyleBackColor = true;
             // 
-            // button25
+            // button8Modificar_Pre
             // 
-            this.button25.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button25.Location = new System.Drawing.Point(1014, 0);
-            this.button25.Name = "button25";
-            this.button25.Size = new System.Drawing.Size(75, 23);
-            this.button25.TabIndex = 1;
-            this.button25.Text = "Modificar";
-            this.button25.UseVisualStyleBackColor = true;
+            this.button8Modificar_Pre.Dock = System.Windows.Forms.DockStyle.Right;
+            this.button8Modificar_Pre.Location = new System.Drawing.Point(1014, 0);
+            this.button8Modificar_Pre.Name = "button8Modificar_Pre";
+            this.button8Modificar_Pre.Size = new System.Drawing.Size(75, 23);
+            this.button8Modificar_Pre.TabIndex = 1;
+            this.button8Modificar_Pre.Text = "Modificar";
+            this.button8Modificar_Pre.UseVisualStyleBackColor = true;
             // 
-            // button26
+            // button9Devolucion_Pre
             // 
-            this.button26.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button26.Location = new System.Drawing.Point(1089, 0);
-            this.button26.Name = "button26";
-            this.button26.Size = new System.Drawing.Size(75, 23);
-            this.button26.TabIndex = 4;
-            this.button26.Text = "Devolución";
-            this.button26.UseVisualStyleBackColor = true;
+            this.button9Devolucion_Pre.Dock = System.Windows.Forms.DockStyle.Right;
+            this.button9Devolucion_Pre.Location = new System.Drawing.Point(1089, 0);
+            this.button9Devolucion_Pre.Name = "button9Devolucion_Pre";
+            this.button9Devolucion_Pre.Size = new System.Drawing.Size(75, 23);
+            this.button9Devolucion_Pre.TabIndex = 4;
+            this.button9Devolucion_Pre.Text = "Devolución";
+            this.button9Devolucion_Pre.UseVisualStyleBackColor = true;
+            this.button9Devolucion_Pre.Click += new System.EventHandler(this.button26_Click);
             // 
             // dataGridView1_Pre
             // 
@@ -597,10 +598,10 @@ namespace Gestaller
             // 
             // panel4_Pre
             // 
-            this.panel4_Pre.Controls.Add(this.button35);
-            this.panel4_Pre.Controls.Add(this.button36);
-            this.panel4_Pre.Controls.Add(this.button37);
-            this.panel4_Pre.Controls.Add(this.button38);
+            this.panel4_Pre.Controls.Add(this.button10Imprimir_Pre);
+            this.panel4_Pre.Controls.Add(this.button11GenProforma_Pre);
+            this.panel4_Pre.Controls.Add(this.button12GenInvoice_Pre);
+            this.panel4_Pre.Controls.Add(this.button13DeleteBudget_Pre);
             this.panel4_Pre.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel4_Pre.Location = new System.Drawing.Point(0, 395);
             this.panel4_Pre.Margin = new System.Windows.Forms.Padding(0);
@@ -608,51 +609,51 @@ namespace Gestaller
             this.panel4_Pre.Size = new System.Drawing.Size(1164, 23);
             this.panel4_Pre.TabIndex = 13;
             // 
-            // button35
+            // button10Imprimir_Pre
             // 
-            this.button35.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button35.Location = new System.Drawing.Point(864, 0);
-            this.button35.Name = "button35";
-            this.button35.Size = new System.Drawing.Size(75, 23);
-            this.button35.TabIndex = 3;
-            this.button35.Text = "Imprimir";
-            this.button35.UseVisualStyleBackColor = true;
+            this.button10Imprimir_Pre.Dock = System.Windows.Forms.DockStyle.Right;
+            this.button10Imprimir_Pre.Location = new System.Drawing.Point(864, 0);
+            this.button10Imprimir_Pre.Name = "button10Imprimir_Pre";
+            this.button10Imprimir_Pre.Size = new System.Drawing.Size(75, 23);
+            this.button10Imprimir_Pre.TabIndex = 3;
+            this.button10Imprimir_Pre.Text = "Imprimir";
+            this.button10Imprimir_Pre.UseVisualStyleBackColor = true;
             // 
-            // button36
+            // button11GenProforma_Pre
             // 
-            this.button36.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button36.Location = new System.Drawing.Point(939, 0);
-            this.button36.Name = "button36";
-            this.button36.Size = new System.Drawing.Size(75, 23);
-            this.button36.TabIndex = 2;
-            this.button36.Text = "Gen. Profor.";
-            this.button36.UseVisualStyleBackColor = true;
+            this.button11GenProforma_Pre.Dock = System.Windows.Forms.DockStyle.Right;
+            this.button11GenProforma_Pre.Location = new System.Drawing.Point(939, 0);
+            this.button11GenProforma_Pre.Name = "button11GenProforma_Pre";
+            this.button11GenProforma_Pre.Size = new System.Drawing.Size(75, 23);
+            this.button11GenProforma_Pre.TabIndex = 2;
+            this.button11GenProforma_Pre.Text = "Gen. Profor.";
+            this.button11GenProforma_Pre.UseVisualStyleBackColor = true;
             // 
-            // button37
+            // button12GenInvoice_Pre
             // 
-            this.button37.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button37.Location = new System.Drawing.Point(1014, 0);
-            this.button37.Name = "button37";
-            this.button37.Size = new System.Drawing.Size(75, 23);
-            this.button37.TabIndex = 1;
-            this.button37.Text = "Gen.Factur.";
-            this.button37.UseVisualStyleBackColor = true;
+            this.button12GenInvoice_Pre.Dock = System.Windows.Forms.DockStyle.Right;
+            this.button12GenInvoice_Pre.Location = new System.Drawing.Point(1014, 0);
+            this.button12GenInvoice_Pre.Name = "button12GenInvoice_Pre";
+            this.button12GenInvoice_Pre.Size = new System.Drawing.Size(75, 23);
+            this.button12GenInvoice_Pre.TabIndex = 1;
+            this.button12GenInvoice_Pre.Text = "Gen.Factur.";
+            this.button12GenInvoice_Pre.UseVisualStyleBackColor = true;
             // 
-            // button38
+            // button13DeleteBudget_Pre
             // 
-            this.button38.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button38.Location = new System.Drawing.Point(1089, 0);
-            this.button38.Name = "button38";
-            this.button38.Size = new System.Drawing.Size(75, 23);
-            this.button38.TabIndex = 0;
-            this.button38.Text = "Borrar Pre.";
-            this.button38.UseVisualStyleBackColor = true;
+            this.button13DeleteBudget_Pre.Dock = System.Windows.Forms.DockStyle.Right;
+            this.button13DeleteBudget_Pre.Location = new System.Drawing.Point(1089, 0);
+            this.button13DeleteBudget_Pre.Name = "button13DeleteBudget_Pre";
+            this.button13DeleteBudget_Pre.Size = new System.Drawing.Size(75, 23);
+            this.button13DeleteBudget_Pre.TabIndex = 0;
+            this.button13DeleteBudget_Pre.Text = "Borrar Pre.";
+            this.button13DeleteBudget_Pre.UseVisualStyleBackColor = true;
             // 
             // flowLayoutPanel3Impuestos_Pre
             // 
-            this.flowLayoutPanel3Impuestos_Pre.Controls.Add(this.cueTextBox13);
-            this.flowLayoutPanel3Impuestos_Pre.Controls.Add(this.cueTextBox14);
-            this.flowLayoutPanel3Impuestos_Pre.Controls.Add(this.cueTextBox15);
+            this.flowLayoutPanel3Impuestos_Pre.Controls.Add(this.cueTextBox2Base_Pre);
+            this.flowLayoutPanel3Impuestos_Pre.Controls.Add(this.cueTextBox3IVA_Pre);
+            this.flowLayoutPanel3Impuestos_Pre.Controls.Add(this.cueTextBox4Total_Pre);
             this.flowLayoutPanel3Impuestos_Pre.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel3Impuestos_Pre.Location = new System.Drawing.Point(0, 375);
             this.flowLayoutPanel3Impuestos_Pre.Margin = new System.Windows.Forms.Padding(0);
@@ -660,32 +661,32 @@ namespace Gestaller
             this.flowLayoutPanel3Impuestos_Pre.Size = new System.Drawing.Size(1164, 20);
             this.flowLayoutPanel3Impuestos_Pre.TabIndex = 14;
             // 
-            // cueTextBox13
+            // cueTextBox2Base_Pre
             // 
-            this.cueTextBox13.CueText = "Base Imponible";
-            this.cueTextBox13.Location = new System.Drawing.Point(3, 0);
-            this.cueTextBox13.Margin = new System.Windows.Forms.Padding(3, 0, 3, 3);
-            this.cueTextBox13.Name = "cueTextBox13";
-            this.cueTextBox13.Size = new System.Drawing.Size(248, 20);
-            this.cueTextBox13.TabIndex = 0;
+            this.cueTextBox2Base_Pre.CueText = "Base Imponible";
+            this.cueTextBox2Base_Pre.Location = new System.Drawing.Point(3, 0);
+            this.cueTextBox2Base_Pre.Margin = new System.Windows.Forms.Padding(3, 0, 3, 3);
+            this.cueTextBox2Base_Pre.Name = "cueTextBox2Base_Pre";
+            this.cueTextBox2Base_Pre.Size = new System.Drawing.Size(248, 20);
+            this.cueTextBox2Base_Pre.TabIndex = 0;
             // 
-            // cueTextBox14
+            // cueTextBox3IVA_Pre
             // 
-            this.cueTextBox14.CueText = "I.V.A.";
-            this.cueTextBox14.Location = new System.Drawing.Point(257, 0);
-            this.cueTextBox14.Margin = new System.Windows.Forms.Padding(3, 0, 3, 3);
-            this.cueTextBox14.Name = "cueTextBox14";
-            this.cueTextBox14.Size = new System.Drawing.Size(121, 20);
-            this.cueTextBox14.TabIndex = 1;
+            this.cueTextBox3IVA_Pre.CueText = "I.V.A.";
+            this.cueTextBox3IVA_Pre.Location = new System.Drawing.Point(257, 0);
+            this.cueTextBox3IVA_Pre.Margin = new System.Windows.Forms.Padding(3, 0, 3, 3);
+            this.cueTextBox3IVA_Pre.Name = "cueTextBox3IVA_Pre";
+            this.cueTextBox3IVA_Pre.Size = new System.Drawing.Size(121, 20);
+            this.cueTextBox3IVA_Pre.TabIndex = 1;
             // 
-            // cueTextBox15
+            // cueTextBox4Total_Pre
             // 
-            this.cueTextBox15.CueText = "Total";
-            this.cueTextBox15.Location = new System.Drawing.Point(384, 0);
-            this.cueTextBox15.Margin = new System.Windows.Forms.Padding(3, 0, 3, 3);
-            this.cueTextBox15.Name = "cueTextBox15";
-            this.cueTextBox15.Size = new System.Drawing.Size(121, 20);
-            this.cueTextBox15.TabIndex = 2;
+            this.cueTextBox4Total_Pre.CueText = "Total";
+            this.cueTextBox4Total_Pre.Location = new System.Drawing.Point(384, 0);
+            this.cueTextBox4Total_Pre.Margin = new System.Windows.Forms.Padding(3, 0, 3, 3);
+            this.cueTextBox4Total_Pre.Name = "cueTextBox4Total_Pre";
+            this.cueTextBox4Total_Pre.Size = new System.Drawing.Size(121, 20);
+            this.cueTextBox4Total_Pre.TabIndex = 2;
             // 
             // tabPageProforma
             // 
@@ -1708,7 +1709,7 @@ namespace Gestaller
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1Presupuesto;
         private System.Windows.Forms.Label label1Cliente_Pre;
         private System.Windows.Forms.Panel panel1_Pre;
-        private System.Windows.Forms.Button button1Cliente_SearchBudget_Pre;
+        private System.Windows.Forms.Button button1SearchBudget_Pre;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1Cliente_Pre;
         private System.Windows.Forms.Label label2Presupuesto_Pre;
         private Views.CueComboBox cueComboBox1Cliente_Cliente_Pre;
@@ -1790,16 +1791,16 @@ namespace Gestaller
         private System.Windows.Forms.Button button22;
         private System.Windows.Forms.RichTextBox richTextBox3;
         private System.Windows.Forms.Panel panel3_Pre;
-        private System.Windows.Forms.Button button23;
-        private System.Windows.Forms.Button button24;
-        private System.Windows.Forms.Button button25;
-        private System.Windows.Forms.Button button26;
+        private System.Windows.Forms.Button button6Anadir_Pre;
+        private System.Windows.Forms.Button button7Borrar_Pre;
+        private System.Windows.Forms.Button button8Modificar_Pre;
+        private System.Windows.Forms.Button button9Devolucion_Pre;
         private System.Windows.Forms.DataGridView dataGridView1_Pre;
         private System.Windows.Forms.Panel panel4_Pre;
-        private System.Windows.Forms.Button button35;
-        private System.Windows.Forms.Button button36;
-        private System.Windows.Forms.Button button37;
-        private System.Windows.Forms.Button button38;
+        private System.Windows.Forms.Button button10Imprimir_Pre;
+        private System.Windows.Forms.Button button11GenProforma_Pre;
+        private System.Windows.Forms.Button button12GenInvoice_Pre;
+        private System.Windows.Forms.Button button13DeleteBudget_Pre;
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.Button button27;
         private System.Windows.Forms.Button button28;
@@ -1826,9 +1827,9 @@ namespace Gestaller
         private Views.CueTextBox cueTextBox10;
         private Views.CueTextBox cueTextBox11;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3Impuestos_Pre;
-        private Views.CueTextBox cueTextBox13;
-        private Views.CueTextBox cueTextBox14;
-        private Views.CueTextBox cueTextBox15;
+        private Views.CueTextBox cueTextBox2Base_Pre;
+        private Views.CueTextBox cueTextBox3IVA_Pre;
+        private Views.CueTextBox cueTextBox4Total_Pre;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel5;
         private Views.CueTextBox cueTextBox16;
         private Views.CueTextBox cueTextBox17;
