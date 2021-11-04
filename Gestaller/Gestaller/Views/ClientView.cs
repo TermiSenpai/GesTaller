@@ -21,12 +21,17 @@ namespace Gestaller
         public ClientView()
         {
             InitializeComponent();
+        }
+
+        #region events
+
+        // Ejecutado al cargar la vista
+        private void ClientView_Load(object sender, EventArgs e)
+        {
             addControls();
             getDB();
             clientItemSet();
         }
-
-        #region events
 
         // Obtiene los datos de clientVehicle
         private void getDB()
@@ -35,8 +40,8 @@ namespace Gestaller
             dataGrid.DataSource = contactsVehicles;
         }
 
-        // Vaciar texto
-        private void button1_Click(object sender, EventArgs e) 
+        // Vaciar texto (botón vaciar)
+        private void button1_Click(object sender, EventArgs e)
         {
             clearText();
         }
@@ -124,7 +129,7 @@ namespace Gestaller
         {
             _clientVehicle = contactVehicle;
         }
-        
+
         // Modifica el valor de todos los comboBoxes al del contactVehicle en uso
         private void setToComboBox()
         {
@@ -253,5 +258,6 @@ namespace Gestaller
         }
 
         #endregion
+
     }
 }
