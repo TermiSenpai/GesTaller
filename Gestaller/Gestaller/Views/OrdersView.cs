@@ -31,7 +31,7 @@ namespace Gestaller
         private void getDB()
         {
             List<Order> orders = _businessLogicLayer.GetOrders();
-            dataGridView3.DataSource = orders;
+            dataGridView1_Pre.DataSource = orders;
             dataGridView2.DataSource = orders;
             dataGridView1.DataSource = orders;
         }

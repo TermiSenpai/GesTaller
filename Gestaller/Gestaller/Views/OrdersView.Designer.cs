@@ -65,7 +65,7 @@ namespace Gestaller
             this.button24 = new System.Windows.Forms.Button();
             this.button25 = new System.Windows.Forms.Button();
             this.button26 = new System.Windows.Forms.Button();
-            this.dataGridView3 = new System.Windows.Forms.DataGridView();
+            this.dataGridView1_Pre = new System.Windows.Forms.DataGridView();
             this.panel4_Pre = new System.Windows.Forms.Panel();
             this.button35 = new System.Windows.Forms.Button();
             this.button36 = new System.Windows.Forms.Button();
@@ -173,7 +173,7 @@ namespace Gestaller
             this.flowLayoutPanel1Cliente_Pre.SuspendLayout();
             this.flowLayoutPanel2Presupuesto_Pre.SuspendLayout();
             this.panel3_Pre.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1_Pre)).BeginInit();
             this.panel4_Pre.SuspendLayout();
             this.flowLayoutPanel3Impuestos_Pre.SuspendLayout();
             this.tabPageProforma.SuspendLayout();
@@ -233,7 +233,7 @@ namespace Gestaller
             this.tableLayoutPanel1Presupuesto.Controls.Add(this.flowLayoutPanel2Presupuesto_Pre, 0, 4);
             this.tableLayoutPanel1Presupuesto.Controls.Add(this.richTextBox1Presupuesto_Pre, 0, 5);
             this.tableLayoutPanel1Presupuesto.Controls.Add(this.panel3_Pre, 0, 7);
-            this.tableLayoutPanel1Presupuesto.Controls.Add(this.dataGridView3, 0, 8);
+            this.tableLayoutPanel1Presupuesto.Controls.Add(this.dataGridView1_Pre, 0, 8);
             this.tableLayoutPanel1Presupuesto.Controls.Add(this.panel4_Pre, 0, 10);
             this.tableLayoutPanel1Presupuesto.Controls.Add(this.flowLayoutPanel3Impuestos_Pre, 0, 9);
             this.tableLayoutPanel1Presupuesto.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -584,16 +584,16 @@ namespace Gestaller
             this.button26.Text = "Devolución";
             this.button26.UseVisualStyleBackColor = true;
             // 
-            // dataGridView3
+            // dataGridView1_Pre
             // 
-            this.dataGridView3.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
-            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView3.Location = new System.Drawing.Point(3, 302);
-            this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.Size = new System.Drawing.Size(1158, 70);
-            this.dataGridView3.TabIndex = 10;
-            this.dataGridView3.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView3_CellMouseClick);
+            this.dataGridView1_Pre.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dataGridView1_Pre.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1_Pre.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView1_Pre.Location = new System.Drawing.Point(3, 302);
+            this.dataGridView1_Pre.Name = "dataGridView1_Pre";
+            this.dataGridView1_Pre.Size = new System.Drawing.Size(1158, 70);
+            this.dataGridView1_Pre.TabIndex = 10;
+            this.dataGridView1_Pre.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView3_CellMouseClick);
             // 
             // panel4_Pre
             // 
@@ -1663,7 +1663,7 @@ namespace Gestaller
             this.flowLayoutPanel2Presupuesto_Pre.ResumeLayout(false);
             this.flowLayoutPanel2Presupuesto_Pre.PerformLayout();
             this.panel3_Pre.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1_Pre)).EndInit();
             this.panel4_Pre.ResumeLayout(false);
             this.flowLayoutPanel3Impuestos_Pre.ResumeLayout(false);
             this.flowLayoutPanel3Impuestos_Pre.PerformLayout();
@@ -1794,7 +1794,7 @@ namespace Gestaller
         private System.Windows.Forms.Button button24;
         private System.Windows.Forms.Button button25;
         private System.Windows.Forms.Button button26;
-        private System.Windows.Forms.DataGridView dataGridView3;
+        private System.Windows.Forms.DataGridView dataGridView1_Pre;
         private System.Windows.Forms.Panel panel4_Pre;
         private System.Windows.Forms.Button button35;
         private System.Windows.Forms.Button button36;
