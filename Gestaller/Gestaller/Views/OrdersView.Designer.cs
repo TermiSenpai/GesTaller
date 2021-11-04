@@ -131,7 +131,6 @@ namespace Gestaller
             this.cueComboBox13 = new Gestaller.Views.CueComboBox();
             this.cueComboBox14 = new Gestaller.Views.CueComboBox();
             this.cueTextBox2 = new Gestaller.Views.CueTextBox();
-            this.cueTextBox12 = new Gestaller.Views.CueTextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.flowLayoutPanel9 = new System.Windows.Forms.FlowLayoutPanel();
             this.ComboBudgetNum3 = new Gestaller.Views.CueComboBox();
@@ -1296,14 +1295,6 @@ namespace Gestaller
             this.cueTextBox2.Name = "cueTextBox2";
             this.cueTextBox2.Size = new System.Drawing.Size(121, 20);
             this.cueTextBox2.TabIndex = 7;
-            // 
-            // cueTextBox12
-            // 
-            this.cueTextBox12.CueText = null;
-            this.cueTextBox12.Location = new System.Drawing.Point(892, 3);
-            this.cueTextBox12.Name = "cueTextBox12";
-            this.cueTextBox12.Size = new System.Drawing.Size(100, 20);
-            this.cueTextBox12.TabIndex = 10;
             // 
             // label6
             // 

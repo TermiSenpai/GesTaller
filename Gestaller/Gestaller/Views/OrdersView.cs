@@ -35,5 +35,10 @@ namespace Gestaller
             dataGridView2.DataSource = orders;
             dataGridView1.DataSource = orders;
         }
+
+        private void dataGridView3_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+
+        }
     }
 }
