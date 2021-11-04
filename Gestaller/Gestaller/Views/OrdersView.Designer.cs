@@ -52,7 +52,25 @@ namespace Gestaller
             this.ComboProformaNum1 = new Gestaller.Views.CueComboBox();
             this.ComboInvoiceNum1 = new Gestaller.Views.CueComboBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.cueComboBox9 = new Gestaller.Views.CueComboBox();
+            this.cueComboBox10 = new Gestaller.Views.CueComboBox();
+            this.cueTextBox6 = new Gestaller.Views.CueTextBox();
+            this.cueComboBox17 = new Gestaller.Views.CueComboBox();
+            this.cueComboBox18 = new Gestaller.Views.CueComboBox();
+            this.cueTextBox8 = new Gestaller.Views.CueTextBox();
+            this.cueTextBox9 = new Gestaller.Views.CueTextBox();
             this.richTextBox2 = new System.Windows.Forms.RichTextBox();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.button23 = new System.Windows.Forms.Button();
+            this.button24 = new System.Windows.Forms.Button();
+            this.button25 = new System.Windows.Forms.Button();
+            this.button26 = new System.Windows.Forms.Button();
+            this.dataGridView3 = new System.Windows.Forms.DataGridView();
+            this.panel12 = new System.Windows.Forms.Panel();
+            this.button35 = new System.Windows.Forms.Button();
+            this.button36 = new System.Windows.Forms.Button();
+            this.button37 = new System.Windows.Forms.Button();
+            this.button38 = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel8 = new System.Windows.Forms.Panel();
@@ -75,7 +93,25 @@ namespace Gestaller
             this.ComboProformaNum2 = new Gestaller.Views.CueComboBox();
             this.ComboInvoiceNum2 = new Gestaller.Views.CueComboBox();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.cueComboBox15 = new Gestaller.Views.CueComboBox();
+            this.cueComboBox16 = new Gestaller.Views.CueComboBox();
+            this.cueTextBox7 = new Gestaller.Views.CueTextBox();
+            this.cueComboBox19 = new Gestaller.Views.CueComboBox();
+            this.cueComboBox20 = new Gestaller.Views.CueComboBox();
+            this.cueTextBox10 = new Gestaller.Views.CueTextBox();
+            this.cueTextBox11 = new Gestaller.Views.CueTextBox();
             this.richTextBox3 = new System.Windows.Forms.RichTextBox();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.button27 = new System.Windows.Forms.Button();
+            this.button28 = new System.Windows.Forms.Button();
+            this.button29 = new System.Windows.Forms.Button();
+            this.button30 = new System.Windows.Forms.Button();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.button31 = new System.Windows.Forms.Button();
+            this.button32 = new System.Windows.Forms.Button();
+            this.button33 = new System.Windows.Forms.Button();
+            this.button34 = new System.Windows.Forms.Button();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.label5 = new System.Windows.Forms.Label();
@@ -117,28 +153,19 @@ namespace Gestaller
             this.button12 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.button23 = new System.Windows.Forms.Button();
-            this.button24 = new System.Windows.Forms.Button();
-            this.button25 = new System.Windows.Forms.Button();
-            this.button26 = new System.Windows.Forms.Button();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.button27 = new System.Windows.Forms.Button();
-            this.button28 = new System.Windows.Forms.Button();
-            this.button29 = new System.Windows.Forms.Button();
-            this.button30 = new System.Windows.Forms.Button();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.dataGridView3 = new System.Windows.Forms.DataGridView();
-            this.panel11 = new System.Windows.Forms.Panel();
-            this.button31 = new System.Windows.Forms.Button();
-            this.button32 = new System.Windows.Forms.Button();
-            this.button33 = new System.Windows.Forms.Button();
-            this.button34 = new System.Windows.Forms.Button();
-            this.panel12 = new System.Windows.Forms.Panel();
-            this.button35 = new System.Windows.Forms.Button();
-            this.button36 = new System.Windows.Forms.Button();
-            this.button37 = new System.Windows.Forms.Button();
-            this.button38 = new System.Windows.Forms.Button();
+            this.cueTextBox12 = new Gestaller.Views.CueTextBox();
+            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel5 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel8 = new System.Windows.Forms.FlowLayoutPanel();
+            this.cueTextBox13 = new Gestaller.Views.CueTextBox();
+            this.cueTextBox14 = new Gestaller.Views.CueTextBox();
+            this.cueTextBox15 = new Gestaller.Views.CueTextBox();
+            this.cueTextBox16 = new Gestaller.Views.CueTextBox();
+            this.cueTextBox17 = new Gestaller.Views.CueTextBox();
+            this.cueTextBox18 = new Gestaller.Views.CueTextBox();
+            this.cueTextBox19 = new Gestaller.Views.CueTextBox();
+            this.cueTextBox20 = new Gestaller.Views.CueTextBox();
+            this.cueTextBox21 = new Gestaller.Views.CueTextBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tableLayoutPanel1Presupuesto.SuspendLayout();
@@ -146,12 +173,18 @@ namespace Gestaller
             this.panel1.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.flowLayoutPanel3.SuspendLayout();
+            this.panel9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
+            this.panel12.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel8.SuspendLayout();
             this.panel2.SuspendLayout();
             this.flowLayoutPanel4.SuspendLayout();
             this.flowLayoutPanel6.SuspendLayout();
+            this.panel10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            this.panel11.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -161,12 +194,9 @@ namespace Gestaller
             this.panel5.SuspendLayout();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.panel9.SuspendLayout();
-            this.panel10.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
-            this.panel11.SuspendLayout();
-            this.panel12.SuspendLayout();
+            this.flowLayoutPanel2.SuspendLayout();
+            this.flowLayoutPanel5.SuspendLayout();
+            this.flowLayoutPanel8.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -206,6 +236,7 @@ namespace Gestaller
             this.tableLayoutPanel1Presupuesto.Controls.Add(this.panel9, 0, 7);
             this.tableLayoutPanel1Presupuesto.Controls.Add(this.dataGridView3, 0, 8);
             this.tableLayoutPanel1Presupuesto.Controls.Add(this.panel12, 0, 10);
+            this.tableLayoutPanel1Presupuesto.Controls.Add(this.flowLayoutPanel8, 0, 9);
             this.tableLayoutPanel1Presupuesto.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1Presupuesto.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel1Presupuesto.Name = "tableLayoutPanel1Presupuesto";
@@ -382,6 +413,13 @@ namespace Gestaller
             this.flowLayoutPanel3.Controls.Add(this.ComboProformaNum1);
             this.flowLayoutPanel3.Controls.Add(this.ComboInvoiceNum1);
             this.flowLayoutPanel3.Controls.Add(this.dateTimePicker1);
+            this.flowLayoutPanel3.Controls.Add(this.cueComboBox9);
+            this.flowLayoutPanel3.Controls.Add(this.cueComboBox10);
+            this.flowLayoutPanel3.Controls.Add(this.cueTextBox6);
+            this.flowLayoutPanel3.Controls.Add(this.cueComboBox17);
+            this.flowLayoutPanel3.Controls.Add(this.cueComboBox18);
+            this.flowLayoutPanel3.Controls.Add(this.cueTextBox8);
+            this.flowLayoutPanel3.Controls.Add(this.cueTextBox9);
             this.flowLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel3.Location = new System.Drawing.Point(3, 145);
             this.flowLayoutPanel3.Margin = new System.Windows.Forms.Padding(3, 0, 0, 0);
@@ -425,6 +463,66 @@ namespace Gestaller
             this.dateTimePicker1.Size = new System.Drawing.Size(121, 20);
             this.dateTimePicker1.TabIndex = 8;
             // 
+            // cueComboBox9
+            // 
+            this.cueComboBox9.CueText = "Ref.Producto";
+            this.cueComboBox9.FormattingEnabled = true;
+            this.cueComboBox9.Location = new System.Drawing.Point(511, 3);
+            this.cueComboBox9.Name = "cueComboBox9";
+            this.cueComboBox9.Size = new System.Drawing.Size(121, 21);
+            this.cueComboBox9.TabIndex = 12;
+            // 
+            // cueComboBox10
+            // 
+            this.cueComboBox10.CueText = "Decripción";
+            this.cueComboBox10.FormattingEnabled = true;
+            this.cueComboBox10.Location = new System.Drawing.Point(638, 3);
+            this.cueComboBox10.Name = "cueComboBox10";
+            this.cueComboBox10.Size = new System.Drawing.Size(375, 21);
+            this.cueComboBox10.TabIndex = 13;
+            // 
+            // cueTextBox6
+            // 
+            this.cueTextBox6.CueText = "P.V.P.";
+            this.cueTextBox6.Location = new System.Drawing.Point(1019, 3);
+            this.cueTextBox6.Name = "cueTextBox6";
+            this.cueTextBox6.Size = new System.Drawing.Size(121, 20);
+            this.cueTextBox6.TabIndex = 14;
+            // 
+            // cueComboBox17
+            // 
+            this.cueComboBox17.CueText = "Cantidad";
+            this.cueComboBox17.FormattingEnabled = true;
+            this.cueComboBox17.Location = new System.Drawing.Point(3, 30);
+            this.cueComboBox17.Name = "cueComboBox17";
+            this.cueComboBox17.Size = new System.Drawing.Size(121, 21);
+            this.cueComboBox17.TabIndex = 16;
+            // 
+            // cueComboBox18
+            // 
+            this.cueComboBox18.CueText = "Descuento";
+            this.cueComboBox18.FormattingEnabled = true;
+            this.cueComboBox18.Location = new System.Drawing.Point(130, 30);
+            this.cueComboBox18.Name = "cueComboBox18";
+            this.cueComboBox18.Size = new System.Drawing.Size(121, 21);
+            this.cueComboBox18.TabIndex = 17;
+            // 
+            // cueTextBox8
+            // 
+            this.cueTextBox8.CueText = "Total Línea";
+            this.cueTextBox8.Location = new System.Drawing.Point(257, 30);
+            this.cueTextBox8.Name = "cueTextBox8";
+            this.cueTextBox8.Size = new System.Drawing.Size(121, 20);
+            this.cueTextBox8.TabIndex = 18;
+            // 
+            // cueTextBox9
+            // 
+            this.cueTextBox9.CueText = "I.V.A.";
+            this.cueTextBox9.Location = new System.Drawing.Point(384, 30);
+            this.cueTextBox9.Name = "cueTextBox9";
+            this.cueTextBox9.Size = new System.Drawing.Size(121, 20);
+            this.cueTextBox9.TabIndex = 19;
+            // 
             // richTextBox2
             // 
             this.richTextBox2.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -433,6 +531,122 @@ namespace Gestaller
             this.richTextBox2.Size = new System.Drawing.Size(1158, 48);
             this.richTextBox2.TabIndex = 6;
             this.richTextBox2.Text = "";
+            // 
+            // panel9
+            // 
+            this.panel9.Controls.Add(this.button23);
+            this.panel9.Controls.Add(this.button24);
+            this.panel9.Controls.Add(this.button25);
+            this.panel9.Controls.Add(this.button26);
+            this.panel9.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel9.Location = new System.Drawing.Point(0, 276);
+            this.panel9.Margin = new System.Windows.Forms.Padding(0);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(1164, 23);
+            this.panel9.TabIndex = 9;
+            // 
+            // button23
+            // 
+            this.button23.Dock = System.Windows.Forms.DockStyle.Right;
+            this.button23.Location = new System.Drawing.Point(864, 0);
+            this.button23.Name = "button23";
+            this.button23.Size = new System.Drawing.Size(75, 23);
+            this.button23.TabIndex = 0;
+            this.button23.Text = "Añadir";
+            this.button23.UseVisualStyleBackColor = true;
+            // 
+            // button24
+            // 
+            this.button24.Dock = System.Windows.Forms.DockStyle.Right;
+            this.button24.Location = new System.Drawing.Point(939, 0);
+            this.button24.Name = "button24";
+            this.button24.Size = new System.Drawing.Size(75, 23);
+            this.button24.TabIndex = 2;
+            this.button24.Text = "Borrar";
+            this.button24.UseVisualStyleBackColor = true;
+            // 
+            // button25
+            // 
+            this.button25.Dock = System.Windows.Forms.DockStyle.Right;
+            this.button25.Location = new System.Drawing.Point(1014, 0);
+            this.button25.Name = "button25";
+            this.button25.Size = new System.Drawing.Size(75, 23);
+            this.button25.TabIndex = 1;
+            this.button25.Text = "Modificar";
+            this.button25.UseVisualStyleBackColor = true;
+            // 
+            // button26
+            // 
+            this.button26.Dock = System.Windows.Forms.DockStyle.Right;
+            this.button26.Location = new System.Drawing.Point(1089, 0);
+            this.button26.Name = "button26";
+            this.button26.Size = new System.Drawing.Size(75, 23);
+            this.button26.TabIndex = 4;
+            this.button26.Text = "Devolución";
+            this.button26.UseVisualStyleBackColor = true;
+            // 
+            // dataGridView3
+            // 
+            this.dataGridView3.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView3.Location = new System.Drawing.Point(3, 302);
+            this.dataGridView3.Name = "dataGridView3";
+            this.dataGridView3.Size = new System.Drawing.Size(1158, 70);
+            this.dataGridView3.TabIndex = 10;
+            // 
+            // panel12
+            // 
+            this.panel12.Controls.Add(this.button35);
+            this.panel12.Controls.Add(this.button36);
+            this.panel12.Controls.Add(this.button37);
+            this.panel12.Controls.Add(this.button38);
+            this.panel12.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel12.Location = new System.Drawing.Point(0, 395);
+            this.panel12.Margin = new System.Windows.Forms.Padding(0);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(1164, 23);
+            this.panel12.TabIndex = 13;
+            // 
+            // button35
+            // 
+            this.button35.Dock = System.Windows.Forms.DockStyle.Right;
+            this.button35.Location = new System.Drawing.Point(864, 0);
+            this.button35.Name = "button35";
+            this.button35.Size = new System.Drawing.Size(75, 23);
+            this.button35.TabIndex = 3;
+            this.button35.Text = "Imprimir";
+            this.button35.UseVisualStyleBackColor = true;
+            // 
+            // button36
+            // 
+            this.button36.Dock = System.Windows.Forms.DockStyle.Right;
+            this.button36.Location = new System.Drawing.Point(939, 0);
+            this.button36.Name = "button36";
+            this.button36.Size = new System.Drawing.Size(75, 23);
+            this.button36.TabIndex = 2;
+            this.button36.Text = "Gen. Profor.";
+            this.button36.UseVisualStyleBackColor = true;
+            // 
+            // button37
+            // 
+            this.button37.Dock = System.Windows.Forms.DockStyle.Right;
+            this.button37.Location = new System.Drawing.Point(1014, 0);
+            this.button37.Name = "button37";
+            this.button37.Size = new System.Drawing.Size(75, 23);
+            this.button37.TabIndex = 1;
+            this.button37.Text = "Gen.Factur.";
+            this.button37.UseVisualStyleBackColor = true;
+            // 
+            // button38
+            // 
+            this.button38.Dock = System.Windows.Forms.DockStyle.Right;
+            this.button38.Location = new System.Drawing.Point(1089, 0);
+            this.button38.Name = "button38";
+            this.button38.Size = new System.Drawing.Size(75, 23);
+            this.button38.TabIndex = 0;
+            this.button38.Text = "Borrar Pre.";
+            this.button38.UseVisualStyleBackColor = true;
             // 
             // tabPage2
             // 
@@ -459,6 +673,7 @@ namespace Gestaller
             this.tableLayoutPanel1.Controls.Add(this.panel10, 0, 7);
             this.tableLayoutPanel1.Controls.Add(this.dataGridView2, 0, 8);
             this.tableLayoutPanel1.Controls.Add(this.panel11, 0, 10);
+            this.tableLayoutPanel1.Controls.Add(this.flowLayoutPanel5, 0, 9);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -474,6 +689,7 @@ namespace Gestaller
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 23F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1164, 418);
             this.tableLayoutPanel1.TabIndex = 1;
             // 
@@ -612,7 +828,7 @@ namespace Gestaller
             // 
             // cueTextBox1
             // 
-            this.cueTextBox1.CueText = "Kmts.";
+            this.cueTextBox1.CueText = "Kilometros";
             this.cueTextBox1.Location = new System.Drawing.Point(765, 3);
             this.cueTextBox1.Name = "cueTextBox1";
             this.cueTextBox1.Size = new System.Drawing.Size(121, 20);
@@ -635,6 +851,13 @@ namespace Gestaller
             this.flowLayoutPanel6.Controls.Add(this.ComboProformaNum2);
             this.flowLayoutPanel6.Controls.Add(this.ComboInvoiceNum2);
             this.flowLayoutPanel6.Controls.Add(this.dateTimePicker2);
+            this.flowLayoutPanel6.Controls.Add(this.cueComboBox15);
+            this.flowLayoutPanel6.Controls.Add(this.cueComboBox16);
+            this.flowLayoutPanel6.Controls.Add(this.cueTextBox7);
+            this.flowLayoutPanel6.Controls.Add(this.cueComboBox19);
+            this.flowLayoutPanel6.Controls.Add(this.cueComboBox20);
+            this.flowLayoutPanel6.Controls.Add(this.cueTextBox10);
+            this.flowLayoutPanel6.Controls.Add(this.cueTextBox11);
             this.flowLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel6.Location = new System.Drawing.Point(3, 145);
             this.flowLayoutPanel6.Margin = new System.Windows.Forms.Padding(3, 0, 0, 0);
@@ -678,6 +901,66 @@ namespace Gestaller
             this.dateTimePicker2.Size = new System.Drawing.Size(121, 20);
             this.dateTimePicker2.TabIndex = 8;
             // 
+            // cueComboBox15
+            // 
+            this.cueComboBox15.CueText = "Ref.Producto";
+            this.cueComboBox15.FormattingEnabled = true;
+            this.cueComboBox15.Location = new System.Drawing.Point(511, 3);
+            this.cueComboBox15.Name = "cueComboBox15";
+            this.cueComboBox15.Size = new System.Drawing.Size(121, 21);
+            this.cueComboBox15.TabIndex = 12;
+            // 
+            // cueComboBox16
+            // 
+            this.cueComboBox16.CueText = "Decripción";
+            this.cueComboBox16.FormattingEnabled = true;
+            this.cueComboBox16.Location = new System.Drawing.Point(638, 3);
+            this.cueComboBox16.Name = "cueComboBox16";
+            this.cueComboBox16.Size = new System.Drawing.Size(375, 21);
+            this.cueComboBox16.TabIndex = 13;
+            // 
+            // cueTextBox7
+            // 
+            this.cueTextBox7.CueText = "P.V.P.";
+            this.cueTextBox7.Location = new System.Drawing.Point(1019, 3);
+            this.cueTextBox7.Name = "cueTextBox7";
+            this.cueTextBox7.Size = new System.Drawing.Size(121, 20);
+            this.cueTextBox7.TabIndex = 14;
+            // 
+            // cueComboBox19
+            // 
+            this.cueComboBox19.CueText = "Cantidad";
+            this.cueComboBox19.FormattingEnabled = true;
+            this.cueComboBox19.Location = new System.Drawing.Point(3, 30);
+            this.cueComboBox19.Name = "cueComboBox19";
+            this.cueComboBox19.Size = new System.Drawing.Size(121, 21);
+            this.cueComboBox19.TabIndex = 16;
+            // 
+            // cueComboBox20
+            // 
+            this.cueComboBox20.CueText = "Descuento";
+            this.cueComboBox20.FormattingEnabled = true;
+            this.cueComboBox20.Location = new System.Drawing.Point(130, 30);
+            this.cueComboBox20.Name = "cueComboBox20";
+            this.cueComboBox20.Size = new System.Drawing.Size(121, 21);
+            this.cueComboBox20.TabIndex = 17;
+            // 
+            // cueTextBox10
+            // 
+            this.cueTextBox10.CueText = "Total Línea";
+            this.cueTextBox10.Location = new System.Drawing.Point(257, 30);
+            this.cueTextBox10.Name = "cueTextBox10";
+            this.cueTextBox10.Size = new System.Drawing.Size(121, 20);
+            this.cueTextBox10.TabIndex = 18;
+            // 
+            // cueTextBox11
+            // 
+            this.cueTextBox11.CueText = "I.V.A.";
+            this.cueTextBox11.Location = new System.Drawing.Point(384, 30);
+            this.cueTextBox11.Name = "cueTextBox11";
+            this.cueTextBox11.Size = new System.Drawing.Size(121, 20);
+            this.cueTextBox11.TabIndex = 19;
+            // 
             // richTextBox3
             // 
             this.richTextBox3.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -686,6 +969,122 @@ namespace Gestaller
             this.richTextBox3.Size = new System.Drawing.Size(1158, 48);
             this.richTextBox3.TabIndex = 6;
             this.richTextBox3.Text = "";
+            // 
+            // panel10
+            // 
+            this.panel10.Controls.Add(this.button27);
+            this.panel10.Controls.Add(this.button28);
+            this.panel10.Controls.Add(this.button29);
+            this.panel10.Controls.Add(this.button30);
+            this.panel10.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel10.Location = new System.Drawing.Point(0, 276);
+            this.panel10.Margin = new System.Windows.Forms.Padding(0);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(1164, 23);
+            this.panel10.TabIndex = 10;
+            // 
+            // button27
+            // 
+            this.button27.Dock = System.Windows.Forms.DockStyle.Right;
+            this.button27.Location = new System.Drawing.Point(864, 0);
+            this.button27.Name = "button27";
+            this.button27.Size = new System.Drawing.Size(75, 23);
+            this.button27.TabIndex = 0;
+            this.button27.Text = "Añadir";
+            this.button27.UseVisualStyleBackColor = true;
+            // 
+            // button28
+            // 
+            this.button28.Dock = System.Windows.Forms.DockStyle.Right;
+            this.button28.Location = new System.Drawing.Point(939, 0);
+            this.button28.Name = "button28";
+            this.button28.Size = new System.Drawing.Size(75, 23);
+            this.button28.TabIndex = 2;
+            this.button28.Text = "Borrar";
+            this.button28.UseVisualStyleBackColor = true;
+            // 
+            // button29
+            // 
+            this.button29.Dock = System.Windows.Forms.DockStyle.Right;
+            this.button29.Location = new System.Drawing.Point(1014, 0);
+            this.button29.Name = "button29";
+            this.button29.Size = new System.Drawing.Size(75, 23);
+            this.button29.TabIndex = 1;
+            this.button29.Text = "Modificar";
+            this.button29.UseVisualStyleBackColor = true;
+            // 
+            // button30
+            // 
+            this.button30.Dock = System.Windows.Forms.DockStyle.Right;
+            this.button30.Location = new System.Drawing.Point(1089, 0);
+            this.button30.Name = "button30";
+            this.button30.Size = new System.Drawing.Size(75, 23);
+            this.button30.TabIndex = 4;
+            this.button30.Text = "Devolución";
+            this.button30.UseVisualStyleBackColor = true;
+            // 
+            // dataGridView2
+            // 
+            this.dataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView2.Location = new System.Drawing.Point(3, 302);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.Size = new System.Drawing.Size(1158, 70);
+            this.dataGridView2.TabIndex = 11;
+            // 
+            // panel11
+            // 
+            this.panel11.Controls.Add(this.button31);
+            this.panel11.Controls.Add(this.button32);
+            this.panel11.Controls.Add(this.button33);
+            this.panel11.Controls.Add(this.button34);
+            this.panel11.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel11.Location = new System.Drawing.Point(0, 395);
+            this.panel11.Margin = new System.Windows.Forms.Padding(0);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(1164, 23);
+            this.panel11.TabIndex = 12;
+            // 
+            // button31
+            // 
+            this.button31.Dock = System.Windows.Forms.DockStyle.Right;
+            this.button31.Location = new System.Drawing.Point(864, 0);
+            this.button31.Name = "button31";
+            this.button31.Size = new System.Drawing.Size(75, 23);
+            this.button31.TabIndex = 3;
+            this.button31.Text = "Imprimir";
+            this.button31.UseVisualStyleBackColor = true;
+            // 
+            // button32
+            // 
+            this.button32.Dock = System.Windows.Forms.DockStyle.Right;
+            this.button32.Location = new System.Drawing.Point(939, 0);
+            this.button32.Name = "button32";
+            this.button32.Size = new System.Drawing.Size(75, 23);
+            this.button32.TabIndex = 2;
+            this.button32.Text = "Gen. Profor.";
+            this.button32.UseVisualStyleBackColor = true;
+            // 
+            // button33
+            // 
+            this.button33.Dock = System.Windows.Forms.DockStyle.Right;
+            this.button33.Location = new System.Drawing.Point(1014, 0);
+            this.button33.Name = "button33";
+            this.button33.Size = new System.Drawing.Size(75, 23);
+            this.button33.TabIndex = 1;
+            this.button33.Text = "Gen.Factur.";
+            this.button33.UseVisualStyleBackColor = true;
+            // 
+            // button34
+            // 
+            this.button34.Dock = System.Windows.Forms.DockStyle.Right;
+            this.button34.Location = new System.Drawing.Point(1089, 0);
+            this.button34.Name = "button34";
+            this.button34.Size = new System.Drawing.Size(75, 23);
+            this.button34.TabIndex = 0;
+            this.button34.Text = "Borrar Pre.";
+            this.button34.UseVisualStyleBackColor = true;
             // 
             // tabPage3
             // 
@@ -712,6 +1111,7 @@ namespace Gestaller
             this.tableLayoutPanel2.Controls.Add(this.panel5, 0, 7);
             this.tableLayoutPanel2.Controls.Add(this.panel6, 0, 10);
             this.tableLayoutPanel2.Controls.Add(this.dataGridView1, 0, 8);
+            this.tableLayoutPanel2.Controls.Add(this.flowLayoutPanel2, 0, 9);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
@@ -769,6 +1169,7 @@ namespace Gestaller
             this.flowLayoutPanel7.Controls.Add(this.cueComboBox13);
             this.flowLayoutPanel7.Controls.Add(this.cueComboBox14);
             this.flowLayoutPanel7.Controls.Add(this.cueTextBox2);
+            this.flowLayoutPanel7.Controls.Add(this.cueTextBox12);
             this.flowLayoutPanel7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel7.Location = new System.Drawing.Point(3, 23);
             this.flowLayoutPanel7.Name = "flowLayoutPanel7";
@@ -813,7 +1214,7 @@ namespace Gestaller
             // 
             // cueTextBox2
             // 
-            this.cueTextBox2.CueText = "Kmts.";
+            this.cueTextBox2.CueText = "Kilometros";
             this.cueTextBox2.Location = new System.Drawing.Point(765, 3);
             this.cueTextBox2.Name = "cueTextBox2";
             this.cueTextBox2.Size = new System.Drawing.Size(121, 20);
@@ -1126,237 +1527,130 @@ namespace Gestaller
             this.dataGridView1.Size = new System.Drawing.Size(1158, 70);
             this.dataGridView1.TabIndex = 10;
             // 
-            // panel9
+            // cueTextBox12
             // 
-            this.panel9.Controls.Add(this.button23);
-            this.panel9.Controls.Add(this.button24);
-            this.panel9.Controls.Add(this.button25);
-            this.panel9.Controls.Add(this.button26);
-            this.panel9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel9.Location = new System.Drawing.Point(0, 276);
-            this.panel9.Margin = new System.Windows.Forms.Padding(0);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(1164, 23);
-            this.panel9.TabIndex = 9;
+            this.cueTextBox12.CueText = null;
+            this.cueTextBox12.Location = new System.Drawing.Point(892, 3);
+            this.cueTextBox12.Name = "cueTextBox12";
+            this.cueTextBox12.Size = new System.Drawing.Size(100, 20);
+            this.cueTextBox12.TabIndex = 10;
             // 
-            // button23
+            // flowLayoutPanel2
             // 
-            this.button23.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button23.Location = new System.Drawing.Point(864, 0);
-            this.button23.Name = "button23";
-            this.button23.Size = new System.Drawing.Size(75, 23);
-            this.button23.TabIndex = 0;
-            this.button23.Text = "Añadir";
-            this.button23.UseVisualStyleBackColor = true;
+            this.flowLayoutPanel2.Controls.Add(this.cueTextBox19);
+            this.flowLayoutPanel2.Controls.Add(this.cueTextBox20);
+            this.flowLayoutPanel2.Controls.Add(this.cueTextBox21);
+            this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(0, 375);
+            this.flowLayoutPanel2.Margin = new System.Windows.Forms.Padding(0);
+            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(1164, 20);
+            this.flowLayoutPanel2.TabIndex = 11;
             // 
-            // button24
+            // flowLayoutPanel5
             // 
-            this.button24.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button24.Location = new System.Drawing.Point(939, 0);
-            this.button24.Name = "button24";
-            this.button24.Size = new System.Drawing.Size(75, 23);
-            this.button24.TabIndex = 2;
-            this.button24.Text = "Borrar";
-            this.button24.UseVisualStyleBackColor = true;
+            this.flowLayoutPanel5.Controls.Add(this.cueTextBox16);
+            this.flowLayoutPanel5.Controls.Add(this.cueTextBox17);
+            this.flowLayoutPanel5.Controls.Add(this.cueTextBox18);
+            this.flowLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutPanel5.Location = new System.Drawing.Point(0, 375);
+            this.flowLayoutPanel5.Margin = new System.Windows.Forms.Padding(0);
+            this.flowLayoutPanel5.Name = "flowLayoutPanel5";
+            this.flowLayoutPanel5.Size = new System.Drawing.Size(1164, 20);
+            this.flowLayoutPanel5.TabIndex = 13;
             // 
-            // button25
+            // flowLayoutPanel8
             // 
-            this.button25.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button25.Location = new System.Drawing.Point(1014, 0);
-            this.button25.Name = "button25";
-            this.button25.Size = new System.Drawing.Size(75, 23);
-            this.button25.TabIndex = 1;
-            this.button25.Text = "Modificar";
-            this.button25.UseVisualStyleBackColor = true;
+            this.flowLayoutPanel8.Controls.Add(this.cueTextBox13);
+            this.flowLayoutPanel8.Controls.Add(this.cueTextBox14);
+            this.flowLayoutPanel8.Controls.Add(this.cueTextBox15);
+            this.flowLayoutPanel8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutPanel8.Location = new System.Drawing.Point(0, 375);
+            this.flowLayoutPanel8.Margin = new System.Windows.Forms.Padding(0);
+            this.flowLayoutPanel8.Name = "flowLayoutPanel8";
+            this.flowLayoutPanel8.Size = new System.Drawing.Size(1164, 20);
+            this.flowLayoutPanel8.TabIndex = 14;
             // 
-            // button26
+            // cueTextBox13
             // 
-            this.button26.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button26.Location = new System.Drawing.Point(1089, 0);
-            this.button26.Name = "button26";
-            this.button26.Size = new System.Drawing.Size(75, 23);
-            this.button26.TabIndex = 4;
-            this.button26.Text = "Devolución";
-            this.button26.UseVisualStyleBackColor = true;
+            this.cueTextBox13.CueText = "Base Imponible";
+            this.cueTextBox13.Location = new System.Drawing.Point(3, 0);
+            this.cueTextBox13.Margin = new System.Windows.Forms.Padding(3, 0, 3, 3);
+            this.cueTextBox13.Name = "cueTextBox13";
+            this.cueTextBox13.Size = new System.Drawing.Size(248, 20);
+            this.cueTextBox13.TabIndex = 0;
             // 
-            // panel10
+            // cueTextBox14
             // 
-            this.panel10.Controls.Add(this.button27);
-            this.panel10.Controls.Add(this.button28);
-            this.panel10.Controls.Add(this.button29);
-            this.panel10.Controls.Add(this.button30);
-            this.panel10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel10.Location = new System.Drawing.Point(0, 276);
-            this.panel10.Margin = new System.Windows.Forms.Padding(0);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(1164, 23);
-            this.panel10.TabIndex = 10;
+            this.cueTextBox14.CueText = "I.V.A.";
+            this.cueTextBox14.Location = new System.Drawing.Point(257, 0);
+            this.cueTextBox14.Margin = new System.Windows.Forms.Padding(3, 0, 3, 3);
+            this.cueTextBox14.Name = "cueTextBox14";
+            this.cueTextBox14.Size = new System.Drawing.Size(121, 20);
+            this.cueTextBox14.TabIndex = 1;
             // 
-            // button27
+            // cueTextBox15
             // 
-            this.button27.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button27.Location = new System.Drawing.Point(864, 0);
-            this.button27.Name = "button27";
-            this.button27.Size = new System.Drawing.Size(75, 23);
-            this.button27.TabIndex = 0;
-            this.button27.Text = "Añadir";
-            this.button27.UseVisualStyleBackColor = true;
+            this.cueTextBox15.CueText = "Total";
+            this.cueTextBox15.Location = new System.Drawing.Point(384, 0);
+            this.cueTextBox15.Margin = new System.Windows.Forms.Padding(3, 0, 3, 3);
+            this.cueTextBox15.Name = "cueTextBox15";
+            this.cueTextBox15.Size = new System.Drawing.Size(121, 20);
+            this.cueTextBox15.TabIndex = 2;
             // 
-            // button28
+            // cueTextBox16
             // 
-            this.button28.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button28.Location = new System.Drawing.Point(939, 0);
-            this.button28.Name = "button28";
-            this.button28.Size = new System.Drawing.Size(75, 23);
-            this.button28.TabIndex = 2;
-            this.button28.Text = "Borrar";
-            this.button28.UseVisualStyleBackColor = true;
+            this.cueTextBox16.CueText = "Base Imponible";
+            this.cueTextBox16.Location = new System.Drawing.Point(3, 0);
+            this.cueTextBox16.Margin = new System.Windows.Forms.Padding(3, 0, 3, 3);
+            this.cueTextBox16.Name = "cueTextBox16";
+            this.cueTextBox16.Size = new System.Drawing.Size(248, 20);
+            this.cueTextBox16.TabIndex = 3;
             // 
-            // button29
+            // cueTextBox17
             // 
-            this.button29.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button29.Location = new System.Drawing.Point(1014, 0);
-            this.button29.Name = "button29";
-            this.button29.Size = new System.Drawing.Size(75, 23);
-            this.button29.TabIndex = 1;
-            this.button29.Text = "Modificar";
-            this.button29.UseVisualStyleBackColor = true;
+            this.cueTextBox17.CueText = "I.V.A.";
+            this.cueTextBox17.Location = new System.Drawing.Point(257, 0);
+            this.cueTextBox17.Margin = new System.Windows.Forms.Padding(3, 0, 3, 3);
+            this.cueTextBox17.Name = "cueTextBox17";
+            this.cueTextBox17.Size = new System.Drawing.Size(121, 20);
+            this.cueTextBox17.TabIndex = 4;
             // 
-            // button30
+            // cueTextBox18
             // 
-            this.button30.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button30.Location = new System.Drawing.Point(1089, 0);
-            this.button30.Name = "button30";
-            this.button30.Size = new System.Drawing.Size(75, 23);
-            this.button30.TabIndex = 4;
-            this.button30.Text = "Devolución";
-            this.button30.UseVisualStyleBackColor = true;
+            this.cueTextBox18.CueText = "Total";
+            this.cueTextBox18.Location = new System.Drawing.Point(384, 0);
+            this.cueTextBox18.Margin = new System.Windows.Forms.Padding(3, 0, 3, 3);
+            this.cueTextBox18.Name = "cueTextBox18";
+            this.cueTextBox18.Size = new System.Drawing.Size(121, 20);
+            this.cueTextBox18.TabIndex = 5;
             // 
-            // dataGridView2
+            // cueTextBox19
             // 
-            this.dataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView2.Location = new System.Drawing.Point(3, 302);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(1158, 70);
-            this.dataGridView2.TabIndex = 11;
+            this.cueTextBox19.CueText = "Base Imponible";
+            this.cueTextBox19.Location = new System.Drawing.Point(3, 0);
+            this.cueTextBox19.Margin = new System.Windows.Forms.Padding(3, 0, 3, 3);
+            this.cueTextBox19.Name = "cueTextBox19";
+            this.cueTextBox19.Size = new System.Drawing.Size(248, 20);
+            this.cueTextBox19.TabIndex = 3;
             // 
-            // dataGridView3
+            // cueTextBox20
             // 
-            this.dataGridView3.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
-            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView3.Location = new System.Drawing.Point(3, 302);
-            this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.Size = new System.Drawing.Size(1158, 70);
-            this.dataGridView3.TabIndex = 10;
+            this.cueTextBox20.CueText = "I.V.A.";
+            this.cueTextBox20.Location = new System.Drawing.Point(257, 0);
+            this.cueTextBox20.Margin = new System.Windows.Forms.Padding(3, 0, 3, 3);
+            this.cueTextBox20.Name = "cueTextBox20";
+            this.cueTextBox20.Size = new System.Drawing.Size(121, 20);
+            this.cueTextBox20.TabIndex = 4;
             // 
-            // panel11
+            // cueTextBox21
             // 
-            this.panel11.Controls.Add(this.button31);
-            this.panel11.Controls.Add(this.button32);
-            this.panel11.Controls.Add(this.button33);
-            this.panel11.Controls.Add(this.button34);
-            this.panel11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel11.Location = new System.Drawing.Point(0, 395);
-            this.panel11.Margin = new System.Windows.Forms.Padding(0);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(1164, 23);
-            this.panel11.TabIndex = 12;
-            // 
-            // button31
-            // 
-            this.button31.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button31.Location = new System.Drawing.Point(864, 0);
-            this.button31.Name = "button31";
-            this.button31.Size = new System.Drawing.Size(75, 23);
-            this.button31.TabIndex = 3;
-            this.button31.Text = "Imprimir";
-            this.button31.UseVisualStyleBackColor = true;
-            // 
-            // button32
-            // 
-            this.button32.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button32.Location = new System.Drawing.Point(939, 0);
-            this.button32.Name = "button32";
-            this.button32.Size = new System.Drawing.Size(75, 23);
-            this.button32.TabIndex = 2;
-            this.button32.Text = "Gen. Profor.";
-            this.button32.UseVisualStyleBackColor = true;
-            // 
-            // button33
-            // 
-            this.button33.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button33.Location = new System.Drawing.Point(1014, 0);
-            this.button33.Name = "button33";
-            this.button33.Size = new System.Drawing.Size(75, 23);
-            this.button33.TabIndex = 1;
-            this.button33.Text = "Gen.Factur.";
-            this.button33.UseVisualStyleBackColor = true;
-            // 
-            // button34
-            // 
-            this.button34.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button34.Location = new System.Drawing.Point(1089, 0);
-            this.button34.Name = "button34";
-            this.button34.Size = new System.Drawing.Size(75, 23);
-            this.button34.TabIndex = 0;
-            this.button34.Text = "Borrar Pre.";
-            this.button34.UseVisualStyleBackColor = true;
-            // 
-            // panel12
-            // 
-            this.panel12.Controls.Add(this.button35);
-            this.panel12.Controls.Add(this.button36);
-            this.panel12.Controls.Add(this.button37);
-            this.panel12.Controls.Add(this.button38);
-            this.panel12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel12.Location = new System.Drawing.Point(0, 395);
-            this.panel12.Margin = new System.Windows.Forms.Padding(0);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(1164, 23);
-            this.panel12.TabIndex = 13;
-            // 
-            // button35
-            // 
-            this.button35.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button35.Location = new System.Drawing.Point(864, 0);
-            this.button35.Name = "button35";
-            this.button35.Size = new System.Drawing.Size(75, 23);
-            this.button35.TabIndex = 3;
-            this.button35.Text = "Imprimir";
-            this.button35.UseVisualStyleBackColor = true;
-            // 
-            // button36
-            // 
-            this.button36.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button36.Location = new System.Drawing.Point(939, 0);
-            this.button36.Name = "button36";
-            this.button36.Size = new System.Drawing.Size(75, 23);
-            this.button36.TabIndex = 2;
-            this.button36.Text = "Gen. Profor.";
-            this.button36.UseVisualStyleBackColor = true;
-            // 
-            // button37
-            // 
-            this.button37.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button37.Location = new System.Drawing.Point(1014, 0);
-            this.button37.Name = "button37";
-            this.button37.Size = new System.Drawing.Size(75, 23);
-            this.button37.TabIndex = 1;
-            this.button37.Text = "Gen.Factur.";
-            this.button37.UseVisualStyleBackColor = true;
-            // 
-            // button38
-            // 
-            this.button38.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button38.Location = new System.Drawing.Point(1089, 0);
-            this.button38.Name = "button38";
-            this.button38.Size = new System.Drawing.Size(75, 23);
-            this.button38.TabIndex = 0;
-            this.button38.Text = "Borrar Pre.";
-            this.button38.UseVisualStyleBackColor = true;
+            this.cueTextBox21.CueText = "Total";
+            this.cueTextBox21.Location = new System.Drawing.Point(384, 0);
+            this.cueTextBox21.Margin = new System.Windows.Forms.Padding(3, 0, 3, 3);
+            this.cueTextBox21.Name = "cueTextBox21";
+            this.cueTextBox21.Size = new System.Drawing.Size(121, 20);
+            this.cueTextBox21.TabIndex = 5;
             // 
             // OrdersView
             // 
@@ -1375,6 +1669,10 @@ namespace Gestaller
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
             this.flowLayoutPanel3.ResumeLayout(false);
+            this.flowLayoutPanel3.PerformLayout();
+            this.panel9.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
+            this.panel12.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
@@ -1383,6 +1681,10 @@ namespace Gestaller
             this.flowLayoutPanel4.ResumeLayout(false);
             this.flowLayoutPanel4.PerformLayout();
             this.flowLayoutPanel6.ResumeLayout(false);
+            this.flowLayoutPanel6.PerformLayout();
+            this.panel10.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            this.panel11.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
@@ -1395,12 +1697,12 @@ namespace Gestaller
             this.panel5.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.panel9.ResumeLayout(false);
-            this.panel10.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
-            this.panel11.ResumeLayout(false);
-            this.panel12.ResumeLayout(false);
+            this.flowLayoutPanel2.ResumeLayout(false);
+            this.flowLayoutPanel2.PerformLayout();
+            this.flowLayoutPanel5.ResumeLayout(false);
+            this.flowLayoutPanel5.PerformLayout();
+            this.flowLayoutPanel8.ResumeLayout(false);
+            this.flowLayoutPanel8.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1517,5 +1819,32 @@ namespace Gestaller
         private System.Windows.Forms.Button button32;
         private System.Windows.Forms.Button button33;
         private System.Windows.Forms.Button button34;
+        private Views.CueComboBox cueComboBox9;
+        private Views.CueComboBox cueComboBox10;
+        private Views.CueTextBox cueTextBox6;
+        private Views.CueComboBox cueComboBox17;
+        private Views.CueComboBox cueComboBox18;
+        private Views.CueTextBox cueTextBox8;
+        private Views.CueTextBox cueTextBox9;
+        private Views.CueComboBox cueComboBox15;
+        private Views.CueComboBox cueComboBox16;
+        private Views.CueTextBox cueTextBox7;
+        private Views.CueComboBox cueComboBox19;
+        private Views.CueComboBox cueComboBox20;
+        private Views.CueTextBox cueTextBox10;
+        private Views.CueTextBox cueTextBox11;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel8;
+        private Views.CueTextBox cueTextBox13;
+        private Views.CueTextBox cueTextBox14;
+        private Views.CueTextBox cueTextBox15;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel5;
+        private Views.CueTextBox cueTextBox16;
+        private Views.CueTextBox cueTextBox17;
+        private Views.CueTextBox cueTextBox18;
+        private Views.CueTextBox cueTextBox12;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
+        private Views.CueTextBox cueTextBox19;
+        private Views.CueTextBox cueTextBox20;
+        private Views.CueTextBox cueTextBox21;
     }
 }
