@@ -206,7 +206,25 @@ namespace Gestaller
         #endregion
 
         #region comboBoxSelectionEvent
+        private void cueComboBoxCliente_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            _comboIndex = cueComboBoxCliente.SelectedIndex;
+            changesComboBoxes();
+        }
+
+        private void cueComboBoxMatricula_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            _comboIndex = cueComboBoxMatricula.SelectedIndex;
+            changesComboBoxes();
+        }
+
+        private void cueComboBoxBastidor_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            _comboIndex = cueComboBoxBastidor.SelectedIndex;
+            changesComboBoxes();
+        }
 
         #endregion
+
     }
 }
