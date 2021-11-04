@@ -32,6 +32,8 @@ namespace Gestaller
         {
             List<Order> orders = _businessLogicLayer.GetOrders();
             dataGridView3.DataSource = orders;
+            dataGridView2.DataSource = orders;
+            dataGridView1.DataSource = orders;
         }
     }
 }
