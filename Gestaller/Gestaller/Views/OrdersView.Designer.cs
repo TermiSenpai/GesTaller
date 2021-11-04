@@ -29,7 +29,7 @@ namespace Gestaller
         /// </summary>
         private void InitializeComponent()
         {
-            this.tabControlOrdenes = new System.Windows.Forms.TabControl();
+            this.cueComboBox4Cliente_Modelo_Pro = new System.Windows.Forms.TabControl();
             this.tabPagePresupuesto = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel1Presupuesto = new System.Windows.Forms.TableLayoutPanel();
             this.panel2_Pre = new System.Windows.Forms.Panel();
@@ -86,11 +86,11 @@ namespace Gestaller
             this.panel2 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.flowLayoutPanel1Cliente_Pro = new System.Windows.Forms.FlowLayoutPanel();
-            this.cueComboBox4 = new Gestaller.Views.CueComboBox();
-            this.cueComboBox5 = new Gestaller.Views.CueComboBox();
-            this.cueComboBox6 = new Gestaller.Views.CueComboBox();
+            this.cueComboBox1Cliente_Cliente_Pro = new Gestaller.Views.CueComboBox();
+            this.cueComboBox2Cliente_Matricula_Pro = new Gestaller.Views.CueComboBox();
+            this.cueComboBox3Cliente_Marca_Pro = new Gestaller.Views.CueComboBox();
             this.cueComboBox7 = new Gestaller.Views.CueComboBox();
-            this.cueTextBox1 = new Gestaller.Views.CueTextBox();
+            this.cueTextBox1Cliente_Km_Pro = new Gestaller.Views.CueTextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.flowLayoutPanel6 = new System.Windows.Forms.FlowLayoutPanel();
             this.ComboBudgetNum2 = new Gestaller.Views.CueComboBox();
@@ -126,11 +126,11 @@ namespace Gestaller
             this.panel3 = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
             this.flowLayoutPanel1Cliente_F = new System.Windows.Forms.FlowLayoutPanel();
-            this.cueComboBox11 = new Gestaller.Views.CueComboBox();
-            this.cueComboBox12 = new Gestaller.Views.CueComboBox();
-            this.cueComboBox13 = new Gestaller.Views.CueComboBox();
-            this.cueComboBox14 = new Gestaller.Views.CueComboBox();
-            this.cueTextBox2 = new Gestaller.Views.CueTextBox();
+            this.cueComboBox1Cliente_Cliente_F = new Gestaller.Views.CueComboBox();
+            this.cueComboBox2Cliente_Matricula_F = new Gestaller.Views.CueComboBox();
+            this.cueComboBox3Cliente_Marca_F = new Gestaller.Views.CueComboBox();
+            this.cueComboBox4Cliente_Modelo_F = new Gestaller.Views.CueComboBox();
+            this.cueTextBox1Cliente_Km_F = new Gestaller.Views.CueTextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.flowLayoutPanel9 = new System.Windows.Forms.FlowLayoutPanel();
             this.ComboBudgetNum3 = new Gestaller.Views.CueComboBox();
@@ -165,7 +165,7 @@ namespace Gestaller
             this.cueTextBox19 = new Gestaller.Views.CueTextBox();
             this.cueTextBox20 = new Gestaller.Views.CueTextBox();
             this.cueTextBox21 = new Gestaller.Views.CueTextBox();
-            this.tabControlOrdenes.SuspendLayout();
+            this.cueComboBox4Cliente_Modelo_Pro.SuspendLayout();
             this.tabPagePresupuesto.SuspendLayout();
             this.tableLayoutPanel1Presupuesto.SuspendLayout();
             this.panel2_Pre.SuspendLayout();
@@ -198,17 +198,17 @@ namespace Gestaller
             this.flowLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // tabControlOrdenes
+            // cueComboBox4Cliente_Modelo_Pro
             // 
-            this.tabControlOrdenes.Controls.Add(this.tabPagePresupuesto);
-            this.tabControlOrdenes.Controls.Add(this.tabPageProforma);
-            this.tabControlOrdenes.Controls.Add(this.tabPageFactura);
-            this.tabControlOrdenes.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabControlOrdenes.Location = new System.Drawing.Point(0, 0);
-            this.tabControlOrdenes.Name = "tabControlOrdenes";
-            this.tabControlOrdenes.SelectedIndex = 0;
-            this.tabControlOrdenes.Size = new System.Drawing.Size(1178, 450);
-            this.tabControlOrdenes.TabIndex = 0;
+            this.cueComboBox4Cliente_Modelo_Pro.Controls.Add(this.tabPagePresupuesto);
+            this.cueComboBox4Cliente_Modelo_Pro.Controls.Add(this.tabPageProforma);
+            this.cueComboBox4Cliente_Modelo_Pro.Controls.Add(this.tabPageFactura);
+            this.cueComboBox4Cliente_Modelo_Pro.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cueComboBox4Cliente_Modelo_Pro.Location = new System.Drawing.Point(0, 0);
+            this.cueComboBox4Cliente_Modelo_Pro.Name = "cueComboBox4Cliente_Modelo_Pro";
+            this.cueComboBox4Cliente_Modelo_Pro.SelectedIndex = 0;
+            this.cueComboBox4Cliente_Modelo_Pro.Size = new System.Drawing.Size(1178, 450);
+            this.cueComboBox4Cliente_Modelo_Pro.TabIndex = 0;
             // 
             // tabPagePresupuesto
             // 
@@ -818,43 +818,43 @@ namespace Gestaller
             // 
             // flowLayoutPanel1Cliente_Pro
             // 
-            this.flowLayoutPanel1Cliente_Pro.Controls.Add(this.cueComboBox4);
-            this.flowLayoutPanel1Cliente_Pro.Controls.Add(this.cueComboBox5);
-            this.flowLayoutPanel1Cliente_Pro.Controls.Add(this.cueComboBox6);
+            this.flowLayoutPanel1Cliente_Pro.Controls.Add(this.cueComboBox1Cliente_Cliente_Pro);
+            this.flowLayoutPanel1Cliente_Pro.Controls.Add(this.cueComboBox2Cliente_Matricula_Pro);
+            this.flowLayoutPanel1Cliente_Pro.Controls.Add(this.cueComboBox3Cliente_Marca_Pro);
             this.flowLayoutPanel1Cliente_Pro.Controls.Add(this.cueComboBox7);
-            this.flowLayoutPanel1Cliente_Pro.Controls.Add(this.cueTextBox1);
+            this.flowLayoutPanel1Cliente_Pro.Controls.Add(this.cueTextBox1Cliente_Km_Pro);
             this.flowLayoutPanel1Cliente_Pro.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1Cliente_Pro.Location = new System.Drawing.Point(3, 23);
             this.flowLayoutPanel1Cliente_Pro.Name = "flowLayoutPanel1Cliente_Pro";
             this.flowLayoutPanel1Cliente_Pro.Size = new System.Drawing.Size(1158, 76);
             this.flowLayoutPanel1Cliente_Pro.TabIndex = 2;
             // 
-            // cueComboBox4
+            // cueComboBox1Cliente_Cliente_Pro
             // 
-            this.cueComboBox4.CueText = "Cliente";
-            this.cueComboBox4.FormattingEnabled = true;
-            this.cueComboBox4.Location = new System.Drawing.Point(3, 3);
-            this.cueComboBox4.Name = "cueComboBox4";
-            this.cueComboBox4.Size = new System.Drawing.Size(248, 21);
-            this.cueComboBox4.TabIndex = 4;
+            this.cueComboBox1Cliente_Cliente_Pro.CueText = "Cliente";
+            this.cueComboBox1Cliente_Cliente_Pro.FormattingEnabled = true;
+            this.cueComboBox1Cliente_Cliente_Pro.Location = new System.Drawing.Point(3, 3);
+            this.cueComboBox1Cliente_Cliente_Pro.Name = "cueComboBox1Cliente_Cliente_Pro";
+            this.cueComboBox1Cliente_Cliente_Pro.Size = new System.Drawing.Size(248, 21);
+            this.cueComboBox1Cliente_Cliente_Pro.TabIndex = 4;
             // 
-            // cueComboBox5
+            // cueComboBox2Cliente_Matricula_Pro
             // 
-            this.cueComboBox5.CueText = "Matrícula";
-            this.cueComboBox5.FormattingEnabled = true;
-            this.cueComboBox5.Location = new System.Drawing.Point(257, 3);
-            this.cueComboBox5.Name = "cueComboBox5";
-            this.cueComboBox5.Size = new System.Drawing.Size(121, 21);
-            this.cueComboBox5.TabIndex = 6;
+            this.cueComboBox2Cliente_Matricula_Pro.CueText = "Matrícula";
+            this.cueComboBox2Cliente_Matricula_Pro.FormattingEnabled = true;
+            this.cueComboBox2Cliente_Matricula_Pro.Location = new System.Drawing.Point(257, 3);
+            this.cueComboBox2Cliente_Matricula_Pro.Name = "cueComboBox2Cliente_Matricula_Pro";
+            this.cueComboBox2Cliente_Matricula_Pro.Size = new System.Drawing.Size(121, 21);
+            this.cueComboBox2Cliente_Matricula_Pro.TabIndex = 6;
             // 
-            // cueComboBox6
+            // cueComboBox3Cliente_Marca_Pro
             // 
-            this.cueComboBox6.CueText = "Marca";
-            this.cueComboBox6.FormattingEnabled = true;
-            this.cueComboBox6.Location = new System.Drawing.Point(384, 3);
-            this.cueComboBox6.Name = "cueComboBox6";
-            this.cueComboBox6.Size = new System.Drawing.Size(121, 21);
-            this.cueComboBox6.TabIndex = 8;
+            this.cueComboBox3Cliente_Marca_Pro.CueText = "Marca";
+            this.cueComboBox3Cliente_Marca_Pro.FormattingEnabled = true;
+            this.cueComboBox3Cliente_Marca_Pro.Location = new System.Drawing.Point(384, 3);
+            this.cueComboBox3Cliente_Marca_Pro.Name = "cueComboBox3Cliente_Marca_Pro";
+            this.cueComboBox3Cliente_Marca_Pro.Size = new System.Drawing.Size(121, 21);
+            this.cueComboBox3Cliente_Marca_Pro.TabIndex = 8;
             // 
             // cueComboBox7
             // 
@@ -865,13 +865,13 @@ namespace Gestaller
             this.cueComboBox7.Size = new System.Drawing.Size(248, 21);
             this.cueComboBox7.TabIndex = 9;
             // 
-            // cueTextBox1
+            // cueTextBox1Cliente_Km_Pro
             // 
-            this.cueTextBox1.CueText = "Kilometros";
-            this.cueTextBox1.Location = new System.Drawing.Point(765, 3);
-            this.cueTextBox1.Name = "cueTextBox1";
-            this.cueTextBox1.Size = new System.Drawing.Size(121, 20);
-            this.cueTextBox1.TabIndex = 7;
+            this.cueTextBox1Cliente_Km_Pro.CueText = "Kilometros";
+            this.cueTextBox1Cliente_Km_Pro.Location = new System.Drawing.Point(765, 3);
+            this.cueTextBox1Cliente_Km_Pro.Name = "cueTextBox1Cliente_Km_Pro";
+            this.cueTextBox1Cliente_Km_Pro.Size = new System.Drawing.Size(121, 20);
+            this.cueTextBox1Cliente_Km_Pro.TabIndex = 7;
             // 
             // label4
             // 
@@ -1242,60 +1242,60 @@ namespace Gestaller
             // 
             // flowLayoutPanel1Cliente_F
             // 
-            this.flowLayoutPanel1Cliente_F.Controls.Add(this.cueComboBox11);
-            this.flowLayoutPanel1Cliente_F.Controls.Add(this.cueComboBox12);
-            this.flowLayoutPanel1Cliente_F.Controls.Add(this.cueComboBox13);
-            this.flowLayoutPanel1Cliente_F.Controls.Add(this.cueComboBox14);
-            this.flowLayoutPanel1Cliente_F.Controls.Add(this.cueTextBox2);
+            this.flowLayoutPanel1Cliente_F.Controls.Add(this.cueComboBox1Cliente_Cliente_F);
+            this.flowLayoutPanel1Cliente_F.Controls.Add(this.cueComboBox2Cliente_Matricula_F);
+            this.flowLayoutPanel1Cliente_F.Controls.Add(this.cueComboBox3Cliente_Marca_F);
+            this.flowLayoutPanel1Cliente_F.Controls.Add(this.cueComboBox4Cliente_Modelo_F);
+            this.flowLayoutPanel1Cliente_F.Controls.Add(this.cueTextBox1Cliente_Km_F);
             this.flowLayoutPanel1Cliente_F.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1Cliente_F.Location = new System.Drawing.Point(3, 23);
             this.flowLayoutPanel1Cliente_F.Name = "flowLayoutPanel1Cliente_F";
             this.flowLayoutPanel1Cliente_F.Size = new System.Drawing.Size(1158, 76);
             this.flowLayoutPanel1Cliente_F.TabIndex = 2;
             // 
-            // cueComboBox11
+            // cueComboBox1Cliente_Cliente_F
             // 
-            this.cueComboBox11.CueText = "Cliente";
-            this.cueComboBox11.FormattingEnabled = true;
-            this.cueComboBox11.Location = new System.Drawing.Point(3, 3);
-            this.cueComboBox11.Name = "cueComboBox11";
-            this.cueComboBox11.Size = new System.Drawing.Size(248, 21);
-            this.cueComboBox11.TabIndex = 4;
+            this.cueComboBox1Cliente_Cliente_F.CueText = "Cliente";
+            this.cueComboBox1Cliente_Cliente_F.FormattingEnabled = true;
+            this.cueComboBox1Cliente_Cliente_F.Location = new System.Drawing.Point(3, 3);
+            this.cueComboBox1Cliente_Cliente_F.Name = "cueComboBox1Cliente_Cliente_F";
+            this.cueComboBox1Cliente_Cliente_F.Size = new System.Drawing.Size(248, 21);
+            this.cueComboBox1Cliente_Cliente_F.TabIndex = 4;
             // 
-            // cueComboBox12
+            // cueComboBox2Cliente_Matricula_F
             // 
-            this.cueComboBox12.CueText = "Matrícula";
-            this.cueComboBox12.FormattingEnabled = true;
-            this.cueComboBox12.Location = new System.Drawing.Point(257, 3);
-            this.cueComboBox12.Name = "cueComboBox12";
-            this.cueComboBox12.Size = new System.Drawing.Size(121, 21);
-            this.cueComboBox12.TabIndex = 6;
+            this.cueComboBox2Cliente_Matricula_F.CueText = "Matrícula";
+            this.cueComboBox2Cliente_Matricula_F.FormattingEnabled = true;
+            this.cueComboBox2Cliente_Matricula_F.Location = new System.Drawing.Point(257, 3);
+            this.cueComboBox2Cliente_Matricula_F.Name = "cueComboBox2Cliente_Matricula_F";
+            this.cueComboBox2Cliente_Matricula_F.Size = new System.Drawing.Size(121, 21);
+            this.cueComboBox2Cliente_Matricula_F.TabIndex = 6;
             // 
-            // cueComboBox13
+            // cueComboBox3Cliente_Marca_F
             // 
-            this.cueComboBox13.CueText = "Marca";
-            this.cueComboBox13.FormattingEnabled = true;
-            this.cueComboBox13.Location = new System.Drawing.Point(384, 3);
-            this.cueComboBox13.Name = "cueComboBox13";
-            this.cueComboBox13.Size = new System.Drawing.Size(121, 21);
-            this.cueComboBox13.TabIndex = 8;
+            this.cueComboBox3Cliente_Marca_F.CueText = "Marca";
+            this.cueComboBox3Cliente_Marca_F.FormattingEnabled = true;
+            this.cueComboBox3Cliente_Marca_F.Location = new System.Drawing.Point(384, 3);
+            this.cueComboBox3Cliente_Marca_F.Name = "cueComboBox3Cliente_Marca_F";
+            this.cueComboBox3Cliente_Marca_F.Size = new System.Drawing.Size(121, 21);
+            this.cueComboBox3Cliente_Marca_F.TabIndex = 8;
             // 
-            // cueComboBox14
+            // cueComboBox4Cliente_Modelo_F
             // 
-            this.cueComboBox14.CueText = "Modelo";
-            this.cueComboBox14.FormattingEnabled = true;
-            this.cueComboBox14.Location = new System.Drawing.Point(511, 3);
-            this.cueComboBox14.Name = "cueComboBox14";
-            this.cueComboBox14.Size = new System.Drawing.Size(248, 21);
-            this.cueComboBox14.TabIndex = 9;
+            this.cueComboBox4Cliente_Modelo_F.CueText = "Modelo";
+            this.cueComboBox4Cliente_Modelo_F.FormattingEnabled = true;
+            this.cueComboBox4Cliente_Modelo_F.Location = new System.Drawing.Point(511, 3);
+            this.cueComboBox4Cliente_Modelo_F.Name = "cueComboBox4Cliente_Modelo_F";
+            this.cueComboBox4Cliente_Modelo_F.Size = new System.Drawing.Size(248, 21);
+            this.cueComboBox4Cliente_Modelo_F.TabIndex = 9;
             // 
-            // cueTextBox2
+            // cueTextBox1Cliente_Km_F
             // 
-            this.cueTextBox2.CueText = "Kilometros";
-            this.cueTextBox2.Location = new System.Drawing.Point(765, 3);
-            this.cueTextBox2.Name = "cueTextBox2";
-            this.cueTextBox2.Size = new System.Drawing.Size(121, 20);
-            this.cueTextBox2.TabIndex = 7;
+            this.cueTextBox1Cliente_Km_F.CueText = "Kilometros";
+            this.cueTextBox1Cliente_Km_F.Location = new System.Drawing.Point(765, 3);
+            this.cueTextBox1Cliente_Km_F.Name = "cueTextBox1Cliente_Km_F";
+            this.cueTextBox1Cliente_Km_F.Size = new System.Drawing.Size(121, 20);
+            this.cueTextBox1Cliente_Km_F.TabIndex = 7;
             // 
             // label6
             // 
@@ -1648,11 +1648,11 @@ namespace Gestaller
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1178, 450);
-            this.Controls.Add(this.tabControlOrdenes);
+            this.Controls.Add(this.cueComboBox4Cliente_Modelo_Pro);
             this.Name = "OrdersView";
             this.Text = "Ordenes";
             this.Load += new System.EventHandler(this.OrdersView_Load);
-            this.tabControlOrdenes.ResumeLayout(false);
+            this.cueComboBox4Cliente_Modelo_Pro.ResumeLayout(false);
             this.tabPagePresupuesto.ResumeLayout(false);
             this.tableLayoutPanel1Presupuesto.ResumeLayout(false);
             this.tableLayoutPanel1Presupuesto.PerformLayout();
@@ -1701,7 +1701,7 @@ namespace Gestaller
 
         #endregion
 
-        private System.Windows.Forms.TabControl tabControlOrdenes;
+        private System.Windows.Forms.TabControl cueComboBox4Cliente_Modelo_Pro;
         private System.Windows.Forms.TabPage tabPagePresupuesto;
         private System.Windows.Forms.TabPage tabPageProforma;
         private System.Windows.Forms.TabPage tabPageFactura;
@@ -1726,11 +1726,11 @@ namespace Gestaller
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1Cliente_Pro;
-        private Views.CueComboBox cueComboBox4;
-        private Views.CueComboBox cueComboBox5;
-        private Views.CueComboBox cueComboBox6;
+        private Views.CueComboBox cueComboBox1Cliente_Cliente_Pro;
+        private Views.CueComboBox cueComboBox2Cliente_Matricula_Pro;
+        private Views.CueComboBox cueComboBox3Cliente_Marca_Pro;
         private Views.CueComboBox cueComboBox7;
-        private Views.CueTextBox cueTextBox1;
+        private Views.CueTextBox cueTextBox1Cliente_Km_Pro;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel6;
         private Views.CueComboBox ComboProformaNum2;
@@ -1742,11 +1742,11 @@ namespace Gestaller
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1Cliente_F;
-        private Views.CueComboBox cueComboBox11;
-        private Views.CueComboBox cueComboBox12;
-        private Views.CueComboBox cueComboBox13;
-        private Views.CueComboBox cueComboBox14;
-        private Views.CueTextBox cueTextBox2;
+        private Views.CueComboBox cueComboBox1Cliente_Cliente_F;
+        private Views.CueComboBox cueComboBox2Cliente_Matricula_F;
+        private Views.CueComboBox cueComboBox3Cliente_Marca_F;
+        private Views.CueComboBox cueComboBox4Cliente_Modelo_F;
+        private Views.CueTextBox cueTextBox1Cliente_Km_F;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel9;
         private Views.CueComboBox ComboInvoiceNum3;
