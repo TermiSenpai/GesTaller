@@ -43,8 +43,8 @@ namespace Gestaller
         {
             List<Order> orders = _businessLogicLayer.GetOrders();
             dataGridView1_Pre.DataSource = orders;
-            dataGridView2.DataSource = orders;
-            dataGridView1.DataSource = orders;
+            dataGridView1_Pro.DataSource = orders;
+            dataGridView1_F.DataSource = orders;
         }
 
         private void getOrdersItems()
