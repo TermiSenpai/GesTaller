@@ -28,6 +28,7 @@ namespace Gestaller
         private void OrdersView_Load(object sender, EventArgs e)
         {
             getDB();
+            getOrdersItems();
         }
         
         private void dataGridView3_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
@@ -58,6 +59,13 @@ namespace Gestaller
                 cueComboBox2Cliente_Matricula_Pre.Items.Add(contactsVehicles[i].vehicle_enroll);
                 cueComboBox3Cliente_Marca_Pre.Items.Add(contactsVehicles[i].vehicle_brand);
                 cueComboBox4Cliente_Modelo_Pre.Items.Add(contactsVehicles[i].vehicle_model);
+                cueComboBox1Presupuesto_BudgetNum_Pre.Items.Add(orders[i].numBudget);
+                cueComboBox2Presupuesto_ProformaNum_Pre.Items.Add(orders[i].numProForma);
+                cueComboBox3Presupuesto_InvoiceNum_Pre.Items.Add(orders[i].numInvoice);
+                // cueComboBox1.Items.Add(orders[i].reference); // referencia
+                // cueComboBox2.Items.Add(orders[i].numBudget); // descripcion
+                // cueComboBox3.Items.Add(orders[i].numBudget); // cantidad
+                // cueComboBox8.Items.Add(orders[i].numBudget); // descuento
             }
 
         }
