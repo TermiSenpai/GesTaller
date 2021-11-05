@@ -23,10 +23,21 @@ namespace Gestaller
 
         }
 
+        #region events
+
         private void OrdersView_Load(object sender, EventArgs e)
         {
             getDB();
         }
+        
+        private void dataGridView3_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+
+        }
+
+        #endregion
+
+        #region private methods
 
         private void getDB()
         {
@@ -36,9 +47,21 @@ namespace Gestaller
             dataGridView1.DataSource = orders;
         }
 
-        private void dataGridView3_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        private void getOrdersItems()
         {
+            List<ContactVehicle> contactsVehicles = _businessLogicLayer.GetContactVehicles();
+            List<Order> orders = _businessLogicLayer.GetOrders();
+
+            for(int i = 0; i < orders.Count(); i++)
+            {
+                cueComboBox1Cliente_Cliente_Pre.Items.Add(contactsVehicles[i].contact_fullName);
+                cueComboBox2Cliente_Matricula_Pre.Items.Add(contactsVehicles[i].vehicle_enroll);
+                cueComboBox3Cliente_Marca_Pre.Items.Add(contactsVehicles[i].vehicle_brand);
+                cueComboBox4Cliente_Modelo_Pre.Items.Add(contactsVehicles[i].vehicle_model);
+            }
 
         }
+
+        #endregion
     }
 }
