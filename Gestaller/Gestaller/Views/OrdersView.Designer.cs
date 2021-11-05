@@ -44,7 +44,6 @@ namespace Gestaller
             this.cueComboBox1Cliente_Cliente_Pre = new Gestaller.Views.CueComboBox();
             this.cueComboBox2Cliente_Matricula_Pre = new Gestaller.Views.CueComboBox();
             this.cueComboBox3Cliente_Marca_Pre = new Gestaller.Views.CueComboBox();
-            this.cueComboBox4Cliente_Modelo_Pre = new Gestaller.Views.CueComboBox();
             this.cueTextBox1Cliente_Km_Pre = new Gestaller.Views.CueTextBox();
             this.label2Presupuesto_Pre = new System.Windows.Forms.Label();
             this.flowLayoutPanel2Presupuesto_Pre = new System.Windows.Forms.FlowLayoutPanel();
@@ -83,13 +82,13 @@ namespace Gestaller
             this.button21 = new System.Windows.Forms.Button();
             this.button22 = new System.Windows.Forms.Button();
             this.label1Cliente_Pro = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.panel1_Pro = new System.Windows.Forms.Panel();
+            this.button1SearchBudget_Pro = new System.Windows.Forms.Button();
             this.flowLayoutPanel1Cliente_Pro = new System.Windows.Forms.FlowLayoutPanel();
             this.cueComboBox1Cliente_Cliente_Pro = new Gestaller.Views.CueComboBox();
             this.cueComboBox2Cliente_Matricula_Pro = new Gestaller.Views.CueComboBox();
             this.cueComboBox3Cliente_Marca_Pro = new Gestaller.Views.CueComboBox();
-            this.cueComboBox7 = new Gestaller.Views.CueComboBox();
+            this.cueComboBox3Cliente_Modelo_Pro = new Gestaller.Views.CueComboBox();
             this.cueTextBox1Cliente_Km_Pro = new Gestaller.Views.CueTextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.flowLayoutPanel6 = new System.Windows.Forms.FlowLayoutPanel();
@@ -123,8 +122,8 @@ namespace Gestaller
             this.tabPageFactura = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel1Factura = new System.Windows.Forms.TableLayoutPanel();
             this.label1Cliente_F = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
+            this.panel1_F = new System.Windows.Forms.Panel();
+            this.button1SearchBudget_F = new System.Windows.Forms.Button();
             this.flowLayoutPanel1Cliente_F = new System.Windows.Forms.FlowLayoutPanel();
             this.cueComboBox1Cliente_Cliente_F = new Gestaller.Views.CueComboBox();
             this.cueComboBox2Cliente_Matricula_F = new Gestaller.Views.CueComboBox();
@@ -165,6 +164,7 @@ namespace Gestaller
             this.cueTextBox19 = new Gestaller.Views.CueTextBox();
             this.cueTextBox20 = new Gestaller.Views.CueTextBox();
             this.cueTextBox21 = new Gestaller.Views.CueTextBox();
+            this.cueComboBox4Cliente_Modelo_Pre = new Gestaller.Views.CueComboBox();
             this.cueComboBox4Cliente_Modelo_Pro.SuspendLayout();
             this.tabPagePresupuesto.SuspendLayout();
             this.tableLayoutPanel1Presupuesto.SuspendLayout();
@@ -179,7 +179,7 @@ namespace Gestaller
             this.tabPageProforma.SuspendLayout();
             this.tableLayoutPanel1Proforma.SuspendLayout();
             this.panel8.SuspendLayout();
-            this.panel2.SuspendLayout();
+            this.panel1_Pro.SuspendLayout();
             this.flowLayoutPanel1Cliente_Pro.SuspendLayout();
             this.flowLayoutPanel6.SuspendLayout();
             this.panel10.SuspendLayout();
@@ -188,7 +188,7 @@ namespace Gestaller
             this.flowLayoutPanel5.SuspendLayout();
             this.tabPageFactura.SuspendLayout();
             this.tableLayoutPanel1Factura.SuspendLayout();
-            this.panel3.SuspendLayout();
+            this.panel1_F.SuspendLayout();
             this.flowLayoutPanel1Cliente_F.SuspendLayout();
             this.flowLayoutPanel9.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -377,15 +377,6 @@ namespace Gestaller
             this.cueComboBox3Cliente_Marca_Pre.Name = "cueComboBox3Cliente_Marca_Pre";
             this.cueComboBox3Cliente_Marca_Pre.Size = new System.Drawing.Size(121, 21);
             this.cueComboBox3Cliente_Marca_Pre.TabIndex = 8;
-            // 
-            // cueComboBox4Cliente_Modelo_Pre
-            // 
-            this.cueComboBox4Cliente_Modelo_Pre.CueText = "Modelo";
-            this.cueComboBox4Cliente_Modelo_Pre.FormattingEnabled = true;
-            this.cueComboBox4Cliente_Modelo_Pre.Location = new System.Drawing.Point(511, 3);
-            this.cueComboBox4Cliente_Modelo_Pre.Name = "cueComboBox4Cliente_Modelo_Pre";
-            this.cueComboBox4Cliente_Modelo_Pre.Size = new System.Drawing.Size(248, 21);
-            this.cueComboBox4Cliente_Modelo_Pre.TabIndex = 9;
             // 
             // cueTextBox1Cliente_Km_Pre
             // 
@@ -704,7 +695,7 @@ namespace Gestaller
             this.tableLayoutPanel1Proforma.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1Proforma.Controls.Add(this.panel8, 0, 6);
             this.tableLayoutPanel1Proforma.Controls.Add(this.label1Cliente_Pro, 0, 0);
-            this.tableLayoutPanel1Proforma.Controls.Add(this.panel2, 0, 2);
+            this.tableLayoutPanel1Proforma.Controls.Add(this.panel1_Pro, 0, 2);
             this.tableLayoutPanel1Proforma.Controls.Add(this.flowLayoutPanel1Cliente_Pro, 0, 1);
             this.tableLayoutPanel1Proforma.Controls.Add(this.label4, 0, 3);
             this.tableLayoutPanel1Proforma.Controls.Add(this.flowLayoutPanel6, 0, 4);
@@ -796,32 +787,32 @@ namespace Gestaller
             this.label1Cliente_Pro.TabIndex = 0;
             this.label1Cliente_Pro.Text = "CLIENTE";
             // 
-            // panel2
+            // panel1_Pro
             // 
-            this.panel2.Controls.Add(this.button1);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(0, 102);
-            this.panel2.Margin = new System.Windows.Forms.Padding(0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1164, 23);
-            this.panel2.TabIndex = 1;
+            this.panel1_Pro.Controls.Add(this.button1SearchBudget_Pro);
+            this.panel1_Pro.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1_Pro.Location = new System.Drawing.Point(0, 102);
+            this.panel1_Pro.Margin = new System.Windows.Forms.Padding(0);
+            this.panel1_Pro.Name = "panel1_Pro";
+            this.panel1_Pro.Size = new System.Drawing.Size(1164, 23);
+            this.panel1_Pro.TabIndex = 1;
             // 
-            // button1
+            // button1SearchBudget_Pro
             // 
-            this.button1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button1.Location = new System.Drawing.Point(1089, 0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Buscar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1SearchBudget_Pro.Dock = System.Windows.Forms.DockStyle.Right;
+            this.button1SearchBudget_Pro.Location = new System.Drawing.Point(1089, 0);
+            this.button1SearchBudget_Pro.Name = "button1SearchBudget_Pro";
+            this.button1SearchBudget_Pro.Size = new System.Drawing.Size(75, 23);
+            this.button1SearchBudget_Pro.TabIndex = 0;
+            this.button1SearchBudget_Pro.Text = "Buscar";
+            this.button1SearchBudget_Pro.UseVisualStyleBackColor = true;
             // 
             // flowLayoutPanel1Cliente_Pro
             // 
             this.flowLayoutPanel1Cliente_Pro.Controls.Add(this.cueComboBox1Cliente_Cliente_Pro);
             this.flowLayoutPanel1Cliente_Pro.Controls.Add(this.cueComboBox2Cliente_Matricula_Pro);
             this.flowLayoutPanel1Cliente_Pro.Controls.Add(this.cueComboBox3Cliente_Marca_Pro);
-            this.flowLayoutPanel1Cliente_Pro.Controls.Add(this.cueComboBox7);
+            this.flowLayoutPanel1Cliente_Pro.Controls.Add(this.cueComboBox3Cliente_Modelo_Pro);
             this.flowLayoutPanel1Cliente_Pro.Controls.Add(this.cueTextBox1Cliente_Km_Pro);
             this.flowLayoutPanel1Cliente_Pro.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1Cliente_Pro.Location = new System.Drawing.Point(3, 23);
@@ -856,14 +847,14 @@ namespace Gestaller
             this.cueComboBox3Cliente_Marca_Pro.Size = new System.Drawing.Size(121, 21);
             this.cueComboBox3Cliente_Marca_Pro.TabIndex = 8;
             // 
-            // cueComboBox7
+            // cueComboBox3Cliente_Modelo_Pro
             // 
-            this.cueComboBox7.CueText = "Modelo";
-            this.cueComboBox7.FormattingEnabled = true;
-            this.cueComboBox7.Location = new System.Drawing.Point(511, 3);
-            this.cueComboBox7.Name = "cueComboBox7";
-            this.cueComboBox7.Size = new System.Drawing.Size(248, 21);
-            this.cueComboBox7.TabIndex = 9;
+            this.cueComboBox3Cliente_Modelo_Pro.CueText = "Modelo";
+            this.cueComboBox3Cliente_Modelo_Pro.FormattingEnabled = true;
+            this.cueComboBox3Cliente_Modelo_Pro.Location = new System.Drawing.Point(511, 3);
+            this.cueComboBox3Cliente_Modelo_Pro.Name = "cueComboBox3Cliente_Modelo_Pro";
+            this.cueComboBox3Cliente_Modelo_Pro.Size = new System.Drawing.Size(248, 21);
+            this.cueComboBox3Cliente_Modelo_Pro.TabIndex = 9;
             // 
             // cueTextBox1Cliente_Km_Pro
             // 
@@ -1180,7 +1171,7 @@ namespace Gestaller
             this.tableLayoutPanel1Factura.ColumnCount = 1;
             this.tableLayoutPanel1Factura.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1Factura.Controls.Add(this.label1Cliente_F, 0, 0);
-            this.tableLayoutPanel1Factura.Controls.Add(this.panel3, 0, 2);
+            this.tableLayoutPanel1Factura.Controls.Add(this.panel1_F, 0, 2);
             this.tableLayoutPanel1Factura.Controls.Add(this.flowLayoutPanel1Cliente_F, 0, 1);
             this.tableLayoutPanel1Factura.Controls.Add(this.label6, 0, 3);
             this.tableLayoutPanel1Factura.Controls.Add(this.flowLayoutPanel9, 0, 4);
@@ -1220,25 +1211,25 @@ namespace Gestaller
             this.label1Cliente_F.TabIndex = 0;
             this.label1Cliente_F.Text = "CLIENTE";
             // 
-            // panel3
+            // panel1_F
             // 
-            this.panel3.Controls.Add(this.button2);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(0, 102);
-            this.panel3.Margin = new System.Windows.Forms.Padding(0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1164, 23);
-            this.panel3.TabIndex = 1;
+            this.panel1_F.Controls.Add(this.button1SearchBudget_F);
+            this.panel1_F.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1_F.Location = new System.Drawing.Point(0, 102);
+            this.panel1_F.Margin = new System.Windows.Forms.Padding(0);
+            this.panel1_F.Name = "panel1_F";
+            this.panel1_F.Size = new System.Drawing.Size(1164, 23);
+            this.panel1_F.TabIndex = 1;
             // 
-            // button2
+            // button1SearchBudget_F
             // 
-            this.button2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button2.Location = new System.Drawing.Point(1089, 0);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 0;
-            this.button2.Text = "Buscar";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button1SearchBudget_F.Dock = System.Windows.Forms.DockStyle.Right;
+            this.button1SearchBudget_F.Location = new System.Drawing.Point(1089, 0);
+            this.button1SearchBudget_F.Name = "button1SearchBudget_F";
+            this.button1SearchBudget_F.Size = new System.Drawing.Size(75, 23);
+            this.button1SearchBudget_F.TabIndex = 0;
+            this.button1SearchBudget_F.Text = "Buscar";
+            this.button1SearchBudget_F.UseVisualStyleBackColor = true;
             // 
             // flowLayoutPanel1Cliente_F
             // 
@@ -1643,6 +1634,15 @@ namespace Gestaller
             this.cueTextBox21.Size = new System.Drawing.Size(121, 20);
             this.cueTextBox21.TabIndex = 5;
             // 
+            // cueComboBox4Cliente_Modelo_Pre
+            // 
+            this.cueComboBox4Cliente_Modelo_Pre.CueText = "Modelo";
+            this.cueComboBox4Cliente_Modelo_Pre.FormattingEnabled = true;
+            this.cueComboBox4Cliente_Modelo_Pre.Location = new System.Drawing.Point(511, 3);
+            this.cueComboBox4Cliente_Modelo_Pre.Name = "cueComboBox4Cliente_Modelo_Pre";
+            this.cueComboBox4Cliente_Modelo_Pre.Size = new System.Drawing.Size(248, 21);
+            this.cueComboBox4Cliente_Modelo_Pre.TabIndex = 9;
+            // 
             // OrdersView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1671,7 +1671,7 @@ namespace Gestaller
             this.tableLayoutPanel1Proforma.ResumeLayout(false);
             this.tableLayoutPanel1Proforma.PerformLayout();
             this.panel8.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
+            this.panel1_Pro.ResumeLayout(false);
             this.flowLayoutPanel1Cliente_Pro.ResumeLayout(false);
             this.flowLayoutPanel1Cliente_Pro.PerformLayout();
             this.flowLayoutPanel6.ResumeLayout(false);
@@ -1684,7 +1684,7 @@ namespace Gestaller
             this.tabPageFactura.ResumeLayout(false);
             this.tableLayoutPanel1Factura.ResumeLayout(false);
             this.tableLayoutPanel1Factura.PerformLayout();
-            this.panel3.ResumeLayout(false);
+            this.panel1_F.ResumeLayout(false);
             this.flowLayoutPanel1Cliente_F.ResumeLayout(false);
             this.flowLayoutPanel1Cliente_F.PerformLayout();
             this.flowLayoutPanel9.ResumeLayout(false);
@@ -1714,7 +1714,6 @@ namespace Gestaller
         private Views.CueComboBox cueComboBox1Cliente_Cliente_Pre;
         private Views.CueComboBox cueComboBox2Cliente_Matricula_Pre;
         private Views.CueComboBox cueComboBox3Cliente_Marca_Pre;
-        private Views.CueComboBox cueComboBox4Cliente_Modelo_Pre;
         private Views.CueTextBox cueTextBox1Cliente_Km_Pre;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2Presupuesto_Pre;
         private Views.CueComboBox cueComboBox1Presupuesto_BudgetNum_Pre;
@@ -1723,13 +1722,13 @@ namespace Gestaller
         private System.Windows.Forms.DateTimePicker dateTimePicker1Presupuesto_Date_Pre;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1Proforma;
         private System.Windows.Forms.Label label1Cliente_Pro;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Panel panel1_Pro;
+        private System.Windows.Forms.Button button1SearchBudget_Pro;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1Cliente_Pro;
         private Views.CueComboBox cueComboBox1Cliente_Cliente_Pro;
         private Views.CueComboBox cueComboBox2Cliente_Matricula_Pro;
         private Views.CueComboBox cueComboBox3Cliente_Marca_Pro;
-        private Views.CueComboBox cueComboBox7;
+        private Views.CueComboBox cueComboBox3Cliente_Modelo_Pro;
         private Views.CueTextBox cueTextBox1Cliente_Km_Pro;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel6;
@@ -1739,8 +1738,8 @@ namespace Gestaller
         private System.Windows.Forms.DateTimePicker dateTimePicker2Presupuesto_Date_Pro;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1Factura;
         private System.Windows.Forms.Label label1Cliente_F;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Panel panel1_F;
+        private System.Windows.Forms.Button button1SearchBudget_F;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1Cliente_F;
         private Views.CueComboBox cueComboBox1Cliente_Cliente_F;
         private Views.CueComboBox cueComboBox2Cliente_Matricula_F;
@@ -1837,5 +1836,6 @@ namespace Gestaller
         private Views.CueTextBox cueTextBox19;
         private Views.CueTextBox cueTextBox20;
         private Views.CueTextBox cueTextBox21;
+        private Views.CueComboBox cueComboBox4Cliente_Modelo_Pre;
     }
 }
