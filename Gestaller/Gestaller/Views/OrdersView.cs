@@ -134,5 +134,39 @@ namespace Gestaller
         }
 
         #endregion
+
+        #region presupuesto comboBox selection event
+
+        private void cueComboBox1Cliente_Cliente_Pre_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            _comboIndex = cueComboBox1Cliente_Cliente_Pre.SelectedIndex;
+            changesComboBoxes();
+        }
+
+        private void cueComboBox2Cliente_Matricula_Pre_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            _comboIndex = cueComboBox2Cliente_Matricula_Pre.SelectedIndex;
+            changesComboBoxes();
+        }
+
+        private void cueComboBox1Presupuesto_BudgetNum_Pre_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            _comboIndex = cueComboBox1Presupuesto_BudgetNum_Pre.SelectedIndex;
+            changesComboBoxes();
+        }
+
+        private void cueComboBox2Presupuesto_ProformaNum_Pre_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            _comboIndex = cueComboBox2Presupuesto_ProformaNum_Pre.SelectedIndex;
+            changesComboBoxes();
+        }
+
+        private void cueComboBox3Presupuesto_InvoiceNum_Pre_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            _comboIndex = cueComboBox3Presupuesto_InvoiceNum_Pre.SelectedIndex;
+            changesComboBoxes();
+        }
+
+        #endregion
     }
 }

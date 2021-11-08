@@ -108,6 +108,7 @@ namespace Gestaller
             this.panel3_Pro = new System.Windows.Forms.Panel();
             this.button6Anadir_Pro = new System.Windows.Forms.Button();
             this.button7Borrar_Pro = new System.Windows.Forms.Button();
+            this.button8Modificar_Pro = new System.Windows.Forms.Button();
             this.button9Devolucion_Pro = new System.Windows.Forms.Button();
             this.dataGridView1_Pro = new System.Windows.Forms.DataGridView();
             this.panel4_Pro = new System.Windows.Forms.Panel();
@@ -164,7 +165,6 @@ namespace Gestaller
             this.cueTextBox2Base_F = new Gestaller.Views.CueTextBox();
             this.cueTextBox3IVA_F = new Gestaller.Views.CueTextBox();
             this.cueTextBox4Total_F = new Gestaller.Views.CueTextBox();
-            this.button8Modificar_Pro = new System.Windows.Forms.Button();
             this.cueComboBox4Cliente_Modelo_Pro.SuspendLayout();
             this.tabPagePresupuesto.SuspendLayout();
             this.tableLayoutPanel1Presupuesto.SuspendLayout();
@@ -359,6 +359,7 @@ namespace Gestaller
             this.cueComboBox1Cliente_Cliente_Pre.Name = "cueComboBox1Cliente_Cliente_Pre";
             this.cueComboBox1Cliente_Cliente_Pre.Size = new System.Drawing.Size(248, 21);
             this.cueComboBox1Cliente_Cliente_Pre.TabIndex = 0;
+            this.cueComboBox1Cliente_Cliente_Pre.SelectionChangeCommitted += new System.EventHandler(this.cueComboBox1Cliente_Cliente_Pre_SelectionChangeCommitted);
             // 
             // cueComboBox2Cliente_Matricula_Pre
             // 
@@ -368,6 +369,7 @@ namespace Gestaller
             this.cueComboBox2Cliente_Matricula_Pre.Name = "cueComboBox2Cliente_Matricula_Pre";
             this.cueComboBox2Cliente_Matricula_Pre.Size = new System.Drawing.Size(121, 21);
             this.cueComboBox2Cliente_Matricula_Pre.TabIndex = 1;
+            this.cueComboBox2Cliente_Matricula_Pre.SelectionChangeCommitted += new System.EventHandler(this.cueComboBox2Cliente_Matricula_Pre_SelectionChangeCommitted);
             // 
             // cueComboBox3Cliente_Marca_Pre
             // 
@@ -434,6 +436,7 @@ namespace Gestaller
             this.cueComboBox1Presupuesto_BudgetNum_Pre.Name = "cueComboBox1Presupuesto_BudgetNum_Pre";
             this.cueComboBox1Presupuesto_BudgetNum_Pre.Size = new System.Drawing.Size(121, 21);
             this.cueComboBox1Presupuesto_BudgetNum_Pre.TabIndex = 0;
+            this.cueComboBox1Presupuesto_BudgetNum_Pre.SelectionChangeCommitted += new System.EventHandler(this.cueComboBox1Presupuesto_BudgetNum_Pre_SelectionChangeCommitted);
             // 
             // cueComboBox2Presupuesto_ProformaNum_Pre
             // 
@@ -443,6 +446,7 @@ namespace Gestaller
             this.cueComboBox2Presupuesto_ProformaNum_Pre.Name = "cueComboBox2Presupuesto_ProformaNum_Pre";
             this.cueComboBox2Presupuesto_ProformaNum_Pre.Size = new System.Drawing.Size(121, 21);
             this.cueComboBox2Presupuesto_ProformaNum_Pre.TabIndex = 1;
+            this.cueComboBox2Presupuesto_ProformaNum_Pre.SelectionChangeCommitted += new System.EventHandler(this.cueComboBox2Presupuesto_ProformaNum_Pre_SelectionChangeCommitted);
             // 
             // cueComboBox3Presupuesto_InvoiceNum_Pre
             // 
@@ -452,6 +456,7 @@ namespace Gestaller
             this.cueComboBox3Presupuesto_InvoiceNum_Pre.Name = "cueComboBox3Presupuesto_InvoiceNum_Pre";
             this.cueComboBox3Presupuesto_InvoiceNum_Pre.Size = new System.Drawing.Size(121, 21);
             this.cueComboBox3Presupuesto_InvoiceNum_Pre.TabIndex = 2;
+            this.cueComboBox3Presupuesto_InvoiceNum_Pre.SelectionChangeCommitted += new System.EventHandler(this.cueComboBox3Presupuesto_InvoiceNum_Pre_SelectionChangeCommitted);
             // 
             // dateTimePicker1Presupuesto_Date_Pre
             // 
@@ -1041,6 +1046,16 @@ namespace Gestaller
             this.button7Borrar_Pro.TabIndex = 1;
             this.button7Borrar_Pro.Text = "Borrar";
             this.button7Borrar_Pro.UseVisualStyleBackColor = true;
+            // 
+            // button8Modificar_Pro
+            // 
+            this.button8Modificar_Pro.Dock = System.Windows.Forms.DockStyle.Right;
+            this.button8Modificar_Pro.Location = new System.Drawing.Point(1014, 0);
+            this.button8Modificar_Pro.Name = "button8Modificar_Pro";
+            this.button8Modificar_Pro.Size = new System.Drawing.Size(75, 23);
+            this.button8Modificar_Pro.TabIndex = 2;
+            this.button8Modificar_Pro.Text = "Modificar";
+            this.button8Modificar_Pro.UseVisualStyleBackColor = true;
             // 
             // button9Devolucion_Pro
             // 
@@ -1632,16 +1647,6 @@ namespace Gestaller
             this.cueTextBox4Total_F.Name = "cueTextBox4Total_F";
             this.cueTextBox4Total_F.Size = new System.Drawing.Size(121, 20);
             this.cueTextBox4Total_F.TabIndex = 2;
-            // 
-            // button8Modificar_Pro
-            // 
-            this.button8Modificar_Pro.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button8Modificar_Pro.Location = new System.Drawing.Point(1014, 0);
-            this.button8Modificar_Pro.Name = "button8Modificar_Pro";
-            this.button8Modificar_Pro.Size = new System.Drawing.Size(75, 23);
-            this.button8Modificar_Pro.TabIndex = 2;
-            this.button8Modificar_Pro.Text = "Modificar";
-            this.button8Modificar_Pro.UseVisualStyleBackColor = true;
             // 
             // OrdersView
             // 
