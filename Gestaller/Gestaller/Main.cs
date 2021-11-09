@@ -154,32 +154,32 @@ namespace Gestaller
 
         private void btnClientes_Click_1(object sender, EventArgs e)
         {
-
+            showChildForm(new ClientView());
         }
 
         private void btnRecepciones_Click_1(object sender, EventArgs e)
         {
-
+            showChildForm(new IncomingView());
         }
 
         private void btnOrdenes_Click_1(object sender, EventArgs e)
         {
-
+            showChildForm(new OrdersView());
         }
 
         private void btnHistorial_Click_1(object sender, EventArgs e)
         {
-
+            showChildForm(new HistoryView());
         }
 
         private void btnAlmacen_Click_1(object sender, EventArgs e)
         {
-
+            showChildForm(new WarehouseView());
         }
 
         private void btnOpciones_Click_1(object sender, EventArgs e)
         {
-
+            showChildForm(new OptionsView());
         }
     }
 }
