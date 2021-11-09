@@ -24,11 +24,6 @@ namespace Gestaller
             InitializeComponent();
         }
 
-        private void panel5_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         #region events
 
         private void OrdersView_Load(object sender, EventArgs e)
@@ -49,19 +44,24 @@ namespace Gestaller
 
         void cellClickEvent()
         {
-            List<Order> orders = getOrders();
-            List<ContactVehicle> contactsVehicles = getContactsVehicles();
-            selectActiveContactVehicle(contactsVehicles[_selectedCell]);
-            selectActiveOrder(orders[_selectedCell]);
-            setToComboBox();
+            _selectedCell = dataGridView1_Pre.CurrentCell.RowIndex;
+            setItemToComboBox();
+        }
+
+        private void setItemToComboBox()
+        {
+            List<Item> items = getItems();
+            cueComboBox4Presupuesto_Referencia_Pre.Text = items[_selectedCell].reference.ToString();
+            cueComboBox5Presupuesto_Descripción_Pre.Text = items[_selectedCell].description;
+            cueTextBox1Presupuesto_PVP_Pre.Text = items[_selectedCell].PVP.ToString();                                  
         }
 
         private void getDB()
         {
-            List<Order> orders = _businessLogicLayer.GetOrders();
-            dataGridView1_Pre.DataSource = orders;
-            dataGridView1_Pro.DataSource = orders;
-            dataGridView1_F.DataSource = orders;
+            List<Item> items = _businessLogicLayer.GetItems();
+            dataGridView1_Pre.DataSource = items;
+            dataGridView1_Pro.DataSource = items;
+            dataGridView1_F.DataSource = items;
         }
 
         private void getOrdersItems()
@@ -131,6 +131,11 @@ namespace Gestaller
         private List<Order> getOrders()
         {
             return _businessLogicLayer.GetOrders();
+        }
+        
+        private List<Item> getItems()
+        {
+            return _businessLogicLayer.GetItems();
         }
 
         #endregion
