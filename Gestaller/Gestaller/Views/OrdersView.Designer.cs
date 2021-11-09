@@ -1503,8 +1503,7 @@ namespace Gestaller
             this.panel3_F.Margin = new System.Windows.Forms.Padding(0);
             this.panel3_F.Name = "panel3_F";
             this.panel3_F.Size = new System.Drawing.Size(1164, 23);
-            this.panel3_F.TabIndex = 7;
-            this.panel3_F.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint);
+            this.panel3_F.TabIndex = 7; 
             // 
             // button6Anadir_F
             // 

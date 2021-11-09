@@ -24,11 +24,6 @@ namespace Gestaller
             InitializeComponent();
         }
 
-        private void panel5_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         #region events
 
         private void OrdersView_Load(object sender, EventArgs e)
