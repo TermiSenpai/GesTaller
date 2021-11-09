@@ -152,7 +152,9 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\Logo Taller.png" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="Resources\car.png" />
   </ItemGroup>

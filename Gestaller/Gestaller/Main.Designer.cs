@@ -30,13 +30,14 @@ namespace Gestaller
         private void InitializeComponent()
         {
             this.btnsMenu = new System.Windows.Forms.Panel();
-            this.btnOpciones = new System.Windows.Forms.Button();
-            this.btnAlmacen = new System.Windows.Forms.Button();
-            this.btnHistorial = new System.Windows.Forms.Button();
-            this.btnOrdenes = new System.Windows.Forms.Button();
-            this.btnRecepciones = new System.Windows.Forms.Button();
             this.btnClientes = new System.Windows.Forms.Button();
+            this.btnRecepciones = new System.Windows.Forms.Button();
+            this.btnOrdenes = new System.Windows.Forms.Button();
+            this.btnHistorial = new System.Windows.Forms.Button();
+            this.btnAlmacen = new System.Windows.Forms.Button();
+            this.btnOpciones = new System.Windows.Forms.Button();
             this.ChildPanel = new System.Windows.Forms.Panel();
+            this.LogoEmpresa = new System.Windows.Forms.Panel();
             this.btnsMenu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -51,91 +52,12 @@ namespace Gestaller
             this.btnsMenu.Controls.Add(this.btnOrdenes);
             this.btnsMenu.Controls.Add(this.btnRecepciones);
             this.btnsMenu.Controls.Add(this.btnClientes);
+            this.btnsMenu.Controls.Add(this.LogoEmpresa);
             this.btnsMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.btnsMenu.Location = new System.Drawing.Point(0, 0);
             this.btnsMenu.Name = "btnsMenu";
             this.btnsMenu.Size = new System.Drawing.Size(200, 562);
             this.btnsMenu.TabIndex = 0;
-            // 
-            // btnOpciones
-            // 
-            this.btnOpciones.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnOpciones.FlatAppearance.BorderSize = 0;
-            this.btnOpciones.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.btnOpciones.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnOpciones.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnOpciones.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.btnOpciones.Location = new System.Drawing.Point(0, 275);
-            this.btnOpciones.Name = "btnOpciones";
-            this.btnOpciones.Size = new System.Drawing.Size(200, 55);
-            this.btnOpciones.TabIndex = 6;
-            this.btnOpciones.Text = "Opciones";
-            this.btnOpciones.UseVisualStyleBackColor = true;
-            this.btnOpciones.Click += new System.EventHandler(this.btnOpciones_Click);
-            // 
-            // btnAlmacen
-            // 
-            this.btnAlmacen.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnAlmacen.FlatAppearance.BorderSize = 0;
-            this.btnAlmacen.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.btnAlmacen.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnAlmacen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAlmacen.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.btnAlmacen.Location = new System.Drawing.Point(0, 220);
-            this.btnAlmacen.Name = "btnAlmacen";
-            this.btnAlmacen.Size = new System.Drawing.Size(200, 55);
-            this.btnAlmacen.TabIndex = 5;
-            this.btnAlmacen.Text = "Almacén";
-            this.btnAlmacen.UseVisualStyleBackColor = true;
-            this.btnAlmacen.Click += new System.EventHandler(this.btnAlmacen_Click);
-            // 
-            // btnHistorial
-            // 
-            this.btnHistorial.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnHistorial.FlatAppearance.BorderSize = 0;
-            this.btnHistorial.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.btnHistorial.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnHistorial.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHistorial.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.btnHistorial.Location = new System.Drawing.Point(0, 165);
-            this.btnHistorial.Name = "btnHistorial";
-            this.btnHistorial.Size = new System.Drawing.Size(200, 55);
-            this.btnHistorial.TabIndex = 4;
-            this.btnHistorial.Text = "Historial";
-            this.btnHistorial.UseVisualStyleBackColor = true;
-            this.btnHistorial.Click += new System.EventHandler(this.btnHistorial_Click);
-            // 
-            // btnOrdenes
-            // 
-            this.btnOrdenes.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnOrdenes.FlatAppearance.BorderSize = 0;
-            this.btnOrdenes.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.btnOrdenes.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnOrdenes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnOrdenes.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.btnOrdenes.Location = new System.Drawing.Point(0, 110);
-            this.btnOrdenes.Name = "btnOrdenes";
-            this.btnOrdenes.Size = new System.Drawing.Size(200, 55);
-            this.btnOrdenes.TabIndex = 3;
-            this.btnOrdenes.Text = "Órdenes";
-            this.btnOrdenes.UseVisualStyleBackColor = true;
-            this.btnOrdenes.Click += new System.EventHandler(this.btnOrdenes_Click);
-            // 
-            // btnRecepciones
-            // 
-            this.btnRecepciones.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnRecepciones.FlatAppearance.BorderSize = 0;
-            this.btnRecepciones.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.btnRecepciones.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnRecepciones.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRecepciones.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.btnRecepciones.Location = new System.Drawing.Point(0, 55);
-            this.btnRecepciones.Name = "btnRecepciones";
-            this.btnRecepciones.Size = new System.Drawing.Size(200, 55);
-            this.btnRecepciones.TabIndex = 2;
-            this.btnRecepciones.Text = "Recepciones";
-            this.btnRecepciones.UseVisualStyleBackColor = true;
-            this.btnRecepciones.Click += new System.EventHandler(this.btnRecepciones_Click);
             // 
             // btnClientes
             // 
@@ -145,13 +67,93 @@ namespace Gestaller
             this.btnClientes.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ButtonFace;
             this.btnClientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClientes.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.btnClientes.Location = new System.Drawing.Point(0, 0);
+            this.btnClientes.Location = new System.Drawing.Point(0, 100);
             this.btnClientes.Name = "btnClientes";
             this.btnClientes.Size = new System.Drawing.Size(200, 55);
-            this.btnClientes.TabIndex = 1;
+            this.btnClientes.TabIndex = 7;
             this.btnClientes.Text = "Clientes";
             this.btnClientes.UseVisualStyleBackColor = true;
-            this.btnClientes.Click += new System.EventHandler(this.btnClientes_Click);
+            this.btnClientes.Click += new System.EventHandler(this.btnClientes_Click_1);
+            // 
+            // btnRecepciones
+            // 
+            this.btnRecepciones.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnRecepciones.FlatAppearance.BorderSize = 0;
+            this.btnRecepciones.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.btnRecepciones.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnRecepciones.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRecepciones.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.btnRecepciones.Location = new System.Drawing.Point(0, 155);
+            this.btnRecepciones.Name = "btnRecepciones";
+            this.btnRecepciones.Size = new System.Drawing.Size(200, 55);
+            this.btnRecepciones.TabIndex = 8;
+            this.btnRecepciones.Text = "Recepciones";
+            this.btnRecepciones.UseVisualStyleBackColor = true;
+            this.btnRecepciones.Click += new System.EventHandler(this.btnRecepciones_Click_1);
+            // 
+            // btnOrdenes
+            // 
+            this.btnOrdenes.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnOrdenes.FlatAppearance.BorderSize = 0;
+            this.btnOrdenes.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.btnOrdenes.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnOrdenes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnOrdenes.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.btnOrdenes.Location = new System.Drawing.Point(0, 210);
+            this.btnOrdenes.Name = "btnOrdenes";
+            this.btnOrdenes.Size = new System.Drawing.Size(200, 55);
+            this.btnOrdenes.TabIndex = 9;
+            this.btnOrdenes.Text = "Órdenes";
+            this.btnOrdenes.UseVisualStyleBackColor = true;
+            this.btnOrdenes.Click += new System.EventHandler(this.btnOrdenes_Click_1);
+            // 
+            // btnHistorial
+            // 
+            this.btnHistorial.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnHistorial.FlatAppearance.BorderSize = 0;
+            this.btnHistorial.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.btnHistorial.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnHistorial.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHistorial.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.btnHistorial.Location = new System.Drawing.Point(0, 265);
+            this.btnHistorial.Name = "btnHistorial";
+            this.btnHistorial.Size = new System.Drawing.Size(200, 55);
+            this.btnHistorial.TabIndex = 10;
+            this.btnHistorial.Text = "Historial";
+            this.btnHistorial.UseVisualStyleBackColor = true;
+            this.btnHistorial.Click += new System.EventHandler(this.btnHistorial_Click_1);
+            // 
+            // btnAlmacen
+            // 
+            this.btnAlmacen.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnAlmacen.FlatAppearance.BorderSize = 0;
+            this.btnAlmacen.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.btnAlmacen.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnAlmacen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAlmacen.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.btnAlmacen.Location = new System.Drawing.Point(0, 320);
+            this.btnAlmacen.Name = "btnAlmacen";
+            this.btnAlmacen.Size = new System.Drawing.Size(200, 55);
+            this.btnAlmacen.TabIndex = 11;
+            this.btnAlmacen.Text = "Almacén";
+            this.btnAlmacen.UseVisualStyleBackColor = true;
+            this.btnAlmacen.Click += new System.EventHandler(this.btnAlmacen_Click_1);
+            // 
+            // btnOpciones
+            // 
+            this.btnOpciones.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnOpciones.FlatAppearance.BorderSize = 0;
+            this.btnOpciones.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.btnOpciones.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnOpciones.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnOpciones.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.btnOpciones.Location = new System.Drawing.Point(0, 375);
+            this.btnOpciones.Name = "btnOpciones";
+            this.btnOpciones.Size = new System.Drawing.Size(200, 55);
+            this.btnOpciones.TabIndex = 12;
+            this.btnOpciones.Text = "Opciones";
+            this.btnOpciones.UseVisualStyleBackColor = true;
+            this.btnOpciones.Click += new System.EventHandler(this.btnOpciones_Click_1);
             // 
             // ChildPanel
             // 
@@ -163,6 +165,15 @@ namespace Gestaller
             this.ChildPanel.Name = "ChildPanel";
             this.ChildPanel.Size = new System.Drawing.Size(800, 562);
             this.ChildPanel.TabIndex = 1;
+            // 
+            // LogoEmpresa
+            // 
+            this.LogoEmpresa.BackgroundImage = global::Gestaller.Properties.Resources.Logo_Taller;
+            this.LogoEmpresa.Dock = System.Windows.Forms.DockStyle.Top;
+            this.LogoEmpresa.Location = new System.Drawing.Point(0, 0);
+            this.LogoEmpresa.Name = "LogoEmpresa";
+            this.LogoEmpresa.Size = new System.Drawing.Size(200, 100);
+            this.LogoEmpresa.TabIndex = 0;
             // 
             // MainMenu
             // 
@@ -186,13 +197,14 @@ namespace Gestaller
         #endregion
 
         private System.Windows.Forms.Panel btnsMenu;
-        private System.Windows.Forms.Button btnClientes;
+        private System.Windows.Forms.Panel ChildPanel;
         private System.Windows.Forms.Button btnOpciones;
         private System.Windows.Forms.Button btnAlmacen;
         private System.Windows.Forms.Button btnHistorial;
         private System.Windows.Forms.Button btnOrdenes;
         private System.Windows.Forms.Button btnRecepciones;
-        private System.Windows.Forms.Panel ChildPanel;
+        private System.Windows.Forms.Button btnClientes;
+        private System.Windows.Forms.Panel LogoEmpresa;
     }
 }
 

@@ -152,5 +152,34 @@ namespace Gestaller
 
         #endregion
 
+        private void btnClientes_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnRecepciones_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnOrdenes_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnHistorial_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAlmacen_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnOpciones_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
