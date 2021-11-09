@@ -39,8 +39,8 @@ namespace Gestaller
 
         private void dataGridView3_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
-            //_selectedCell = dataGridView1_Pre.CurrentCell.RowIndex;
-            //cellClickEvent();
+            _selectedCell = dataGridView1_Pre.CurrentCell.RowIndex;
+            cellClickEvent();
         }
 
         #endregion
@@ -49,11 +49,16 @@ namespace Gestaller
 
         void cellClickEvent()
         {
-            List<Order> orders = getOrders();
-            List<ContactVehicle> contactsVehicles = getContactsVehicles();
-            selectActiveContactVehicle(contactsVehicles[_selectedCell]);
-            selectActiveOrder(orders[_selectedCell]);
-            setToComboBox();
+            _selectedCell = dataGridView1_Pre.CurrentCell.RowIndex;
+            setItemToComboBox();
+        }
+
+        private void setItemToComboBox()
+        {
+            List<Item> items = getItems();
+            cueComboBox4Presupuesto_Referencia_Pre.Text = items[_selectedCell].reference.ToString();
+            cueComboBox5Presupuesto_Descripción_Pre.Text = items[_selectedCell].description;
+            cueTextBox1Presupuesto_PVP_Pre.Text = items[_selectedCell].PVP.ToString();                                  
         }
 
         private void getDB()
@@ -131,6 +136,11 @@ namespace Gestaller
         private List<Order> getOrders()
         {
             return _businessLogicLayer.GetOrders();
+        }
+        
+        private List<Item> getItems()
+        {
+            return _businessLogicLayer.GetItems();
         }
 
         #endregion
