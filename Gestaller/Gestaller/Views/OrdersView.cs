@@ -39,8 +39,8 @@ namespace Gestaller
 
         private void dataGridView3_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
-            _selectedCell = dataGridView1_Pre.CurrentCell.RowIndex;
-            cellClickEvent();
+            //_selectedCell = dataGridView1_Pre.CurrentCell.RowIndex;
+            //cellClickEvent();
         }
 
         #endregion
@@ -58,10 +58,10 @@ namespace Gestaller
 
         private void getDB()
         {
-            List<Order> orders = _businessLogicLayer.GetOrders();
-            dataGridView1_Pre.DataSource = orders;
-            dataGridView1_Pro.DataSource = orders;
-            dataGridView1_F.DataSource = orders;
+            List<Item> items = _businessLogicLayer.GetItems();
+            dataGridView1_Pre.DataSource = items;
+            dataGridView1_Pro.DataSource = items;
+            dataGridView1_F.DataSource = items;
         }
 
         private void getOrdersItems()
