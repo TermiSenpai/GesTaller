@@ -78,10 +78,6 @@ namespace Gestaller
                 cueComboBox1Presupuesto_BudgetNum_Pre.Items.Add(orders[i].numBudget);
                 cueComboBox2Presupuesto_ProformaNum_Pre.Items.Add(orders[i].numProForma);
                 cueComboBox3Presupuesto_InvoiceNum_Pre.Items.Add(orders[i].numInvoice);
-                // cueComboBox1.Items.Add(orders[i].reference); // referencia
-                // cueComboBox2.Items.Add(orders[i].numBudget); // descripcion
-                // cueComboBox3.Items.Add(orders[i].numBudget); // cantidad
-                // cueComboBox8.Items.Add(orders[i].numBudget); // descuento
             }
 
         }
