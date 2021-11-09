@@ -165,6 +165,9 @@ namespace Gestaller
             this.cueTextBox2Base_F = new Gestaller.Views.CueTextBox();
             this.cueTextBox3IVA_F = new Gestaller.Views.CueTextBox();
             this.cueTextBox4Total_F = new Gestaller.Views.CueTextBox();
+            this.label3Producto_Pre = new System.Windows.Forms.Label();
+            this.label4Observacion_Pre = new System.Windows.Forms.Label();
+            this.flowLayoutPanel3Producto_Pre = new System.Windows.Forms.FlowLayoutPanel();
             this.cueComboBox4Cliente_Modelo_Pro.SuspendLayout();
             this.tabPagePresupuesto.SuspendLayout();
             this.tableLayoutPanel1Presupuesto.SuspendLayout();
@@ -196,6 +199,7 @@ namespace Gestaller
             this.panel4_F.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1_F)).BeginInit();
             this.flowLayoutPanel3Impuestos_F.SuspendLayout();
+            this.flowLayoutPanel3Producto_Pre.SuspendLayout();
             this.SuspendLayout();
             // 
             // cueComboBox4Cliente_Modelo_Pro
@@ -207,7 +211,7 @@ namespace Gestaller
             this.cueComboBox4Cliente_Modelo_Pro.Location = new System.Drawing.Point(0, 0);
             this.cueComboBox4Cliente_Modelo_Pro.Name = "cueComboBox4Cliente_Modelo_Pro";
             this.cueComboBox4Cliente_Modelo_Pro.SelectedIndex = 0;
-            this.cueComboBox4Cliente_Modelo_Pro.Size = new System.Drawing.Size(1178, 450);
+            this.cueComboBox4Cliente_Modelo_Pro.Size = new System.Drawing.Size(1178, 581);
             this.cueComboBox4Cliente_Modelo_Pro.TabIndex = 0;
             // 
             // tabPagePresupuesto
@@ -216,42 +220,49 @@ namespace Gestaller
             this.tabPagePresupuesto.Location = new System.Drawing.Point(4, 22);
             this.tabPagePresupuesto.Name = "tabPagePresupuesto";
             this.tabPagePresupuesto.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPagePresupuesto.Size = new System.Drawing.Size(1170, 424);
+            this.tabPagePresupuesto.Size = new System.Drawing.Size(1170, 555);
             this.tabPagePresupuesto.TabIndex = 0;
             this.tabPagePresupuesto.Text = "Presupuesto";
             this.tabPagePresupuesto.UseVisualStyleBackColor = true;
             // 
             // tableLayoutPanel1Presupuesto
             // 
+            this.tableLayoutPanel1Presupuesto.AutoScroll = true;
             this.tableLayoutPanel1Presupuesto.ColumnCount = 1;
             this.tableLayoutPanel1Presupuesto.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1Presupuesto.Controls.Add(this.panel2_Pre, 0, 6);
+            this.tableLayoutPanel1Presupuesto.Controls.Add(this.panel2_Pre, 0, 5);
             this.tableLayoutPanel1Presupuesto.Controls.Add(this.label1Cliente_Pre, 0, 0);
             this.tableLayoutPanel1Presupuesto.Controls.Add(this.panel1_Pre, 0, 2);
             this.tableLayoutPanel1Presupuesto.Controls.Add(this.flowLayoutPanel1Cliente_Pre, 0, 1);
             this.tableLayoutPanel1Presupuesto.Controls.Add(this.label2Presupuesto_Pre, 0, 3);
             this.tableLayoutPanel1Presupuesto.Controls.Add(this.flowLayoutPanel2Presupuesto_Pre, 0, 4);
-            this.tableLayoutPanel1Presupuesto.Controls.Add(this.richTextBox1Presupuesto_Pre, 0, 5);
-            this.tableLayoutPanel1Presupuesto.Controls.Add(this.panel3_Pre, 0, 7);
-            this.tableLayoutPanel1Presupuesto.Controls.Add(this.dataGridView1_Pre, 0, 8);
-            this.tableLayoutPanel1Presupuesto.Controls.Add(this.panel4_Pre, 0, 10);
-            this.tableLayoutPanel1Presupuesto.Controls.Add(this.flowLayoutPanel3Impuestos_Pre, 0, 9);
+            this.tableLayoutPanel1Presupuesto.Controls.Add(this.panel3_Pre, 0, 10);
+            this.tableLayoutPanel1Presupuesto.Controls.Add(this.dataGridView1_Pre, 0, 11);
+            this.tableLayoutPanel1Presupuesto.Controls.Add(this.panel4_Pre, 0, 13);
+            this.tableLayoutPanel1Presupuesto.Controls.Add(this.flowLayoutPanel3Impuestos_Pre, 0, 12);
+            this.tableLayoutPanel1Presupuesto.Controls.Add(this.richTextBox1Presupuesto_Pre, 0, 9);
+            this.tableLayoutPanel1Presupuesto.Controls.Add(this.label3Producto_Pre, 0, 6);
+            this.tableLayoutPanel1Presupuesto.Controls.Add(this.label4Observacion_Pre, 0, 8);
+            this.tableLayoutPanel1Presupuesto.Controls.Add(this.flowLayoutPanel3Producto_Pre, 0, 7);
             this.tableLayoutPanel1Presupuesto.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1Presupuesto.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel1Presupuesto.Name = "tableLayoutPanel1Presupuesto";
-            this.tableLayoutPanel1Presupuesto.RowCount = 11;
+            this.tableLayoutPanel1Presupuesto.RowCount = 14;
             this.tableLayoutPanel1Presupuesto.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1Presupuesto.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 82F));
+            this.tableLayoutPanel1Presupuesto.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 56F));
             this.tableLayoutPanel1Presupuesto.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 23F));
             this.tableLayoutPanel1Presupuesto.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1Presupuesto.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 54F));
-            this.tableLayoutPanel1Presupuesto.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 54F));
             this.tableLayoutPanel1Presupuesto.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 23F));
+            this.tableLayoutPanel1Presupuesto.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1Presupuesto.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 54F));
+            this.tableLayoutPanel1Presupuesto.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1Presupuesto.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 54F));
             this.tableLayoutPanel1Presupuesto.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 23F));
             this.tableLayoutPanel1Presupuesto.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1Presupuesto.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1Presupuesto.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 23F));
-            this.tableLayoutPanel1Presupuesto.Size = new System.Drawing.Size(1164, 418);
+            this.tableLayoutPanel1Presupuesto.Size = new System.Drawing.Size(1164, 549);
             this.tableLayoutPanel1Presupuesto.TabIndex = 0;
             // 
             // panel2_Pre
@@ -261,11 +272,11 @@ namespace Gestaller
             this.panel2_Pre.Controls.Add(this.buttonNextPage_Pre);
             this.panel2_Pre.Controls.Add(this.buttonLastPage_Pre);
             this.panel2_Pre.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2_Pre.Location = new System.Drawing.Point(0, 253);
+            this.panel2_Pre.Location = new System.Drawing.Point(0, 173);
             this.panel2_Pre.Margin = new System.Windows.Forms.Padding(0);
             this.panel2_Pre.Name = "panel2_Pre";
             this.panel2_Pre.Size = new System.Drawing.Size(1164, 23);
-            this.panel2_Pre.TabIndex = 6;
+            this.panel2_Pre.TabIndex = 5;
             // 
             // buttonFirstPage_Pre
             // 
@@ -322,7 +333,7 @@ namespace Gestaller
             // 
             this.panel1_Pre.Controls.Add(this.button1SearchBudget_Pre);
             this.panel1_Pre.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1_Pre.Location = new System.Drawing.Point(0, 102);
+            this.panel1_Pre.Location = new System.Drawing.Point(0, 76);
             this.panel1_Pre.Margin = new System.Windows.Forms.Padding(0);
             this.panel1_Pre.Name = "panel1_Pre";
             this.panel1_Pre.Size = new System.Drawing.Size(1164, 23);
@@ -340,6 +351,7 @@ namespace Gestaller
             // 
             // flowLayoutPanel1Cliente_Pre
             // 
+            this.flowLayoutPanel1Cliente_Pre.AutoScroll = true;
             this.flowLayoutPanel1Cliente_Pre.Controls.Add(this.cueComboBox1Cliente_Cliente_Pre);
             this.flowLayoutPanel1Cliente_Pre.Controls.Add(this.cueComboBox2Cliente_Matricula_Pre);
             this.flowLayoutPanel1Cliente_Pre.Controls.Add(this.cueComboBox3Cliente_Marca_Pre);
@@ -348,7 +360,7 @@ namespace Gestaller
             this.flowLayoutPanel1Cliente_Pre.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1Cliente_Pre.Location = new System.Drawing.Point(3, 23);
             this.flowLayoutPanel1Cliente_Pre.Name = "flowLayoutPanel1Cliente_Pre";
-            this.flowLayoutPanel1Cliente_Pre.Size = new System.Drawing.Size(1158, 76);
+            this.flowLayoutPanel1Cliente_Pre.Size = new System.Drawing.Size(1158, 50);
             this.flowLayoutPanel1Cliente_Pre.TabIndex = 1;
             // 
             // cueComboBox1Cliente_Cliente_Pre
@@ -402,7 +414,7 @@ namespace Gestaller
             this.label2Presupuesto_Pre.AutoSize = true;
             this.label2Presupuesto_Pre.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label2Presupuesto_Pre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.label2Presupuesto_Pre.Location = new System.Drawing.Point(3, 125);
+            this.label2Presupuesto_Pre.Location = new System.Drawing.Point(3, 99);
             this.label2Presupuesto_Pre.Name = "label2Presupuesto_Pre";
             this.label2Presupuesto_Pre.Size = new System.Drawing.Size(1158, 20);
             this.label2Presupuesto_Pre.TabIndex = 3;
@@ -414,15 +426,8 @@ namespace Gestaller
             this.flowLayoutPanel2Presupuesto_Pre.Controls.Add(this.cueComboBox2Presupuesto_ProformaNum_Pre);
             this.flowLayoutPanel2Presupuesto_Pre.Controls.Add(this.cueComboBox3Presupuesto_InvoiceNum_Pre);
             this.flowLayoutPanel2Presupuesto_Pre.Controls.Add(this.dateTimePicker1Presupuesto_Date_Pre);
-            this.flowLayoutPanel2Presupuesto_Pre.Controls.Add(this.cueComboBox4Presupuesto_Referencia_Pre);
-            this.flowLayoutPanel2Presupuesto_Pre.Controls.Add(this.cueComboBox5Presupuesto_Descripción_Pre);
-            this.flowLayoutPanel2Presupuesto_Pre.Controls.Add(this.cueTextBox1Presupuesto_PVP_Pre);
-            this.flowLayoutPanel2Presupuesto_Pre.Controls.Add(this.cueComboBox6Presupuesto_Cantidad_Pre);
-            this.flowLayoutPanel2Presupuesto_Pre.Controls.Add(this.cueComboBox7Presupuesto_Descuento_Pre);
-            this.flowLayoutPanel2Presupuesto_Pre.Controls.Add(this.cueTextBox8Presupuesto_Total_Pre);
-            this.flowLayoutPanel2Presupuesto_Pre.Controls.Add(this.cueTextBox9Presupuesto_IVA_Pre);
             this.flowLayoutPanel2Presupuesto_Pre.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel2Presupuesto_Pre.Location = new System.Drawing.Point(3, 145);
+            this.flowLayoutPanel2Presupuesto_Pre.Location = new System.Drawing.Point(3, 119);
             this.flowLayoutPanel2Presupuesto_Pre.Margin = new System.Windows.Forms.Padding(3, 0, 0, 0);
             this.flowLayoutPanel2Presupuesto_Pre.Name = "flowLayoutPanel2Presupuesto_Pre";
             this.flowLayoutPanel2Presupuesto_Pre.Size = new System.Drawing.Size(1161, 54);
@@ -471,69 +476,69 @@ namespace Gestaller
             // 
             this.cueComboBox4Presupuesto_Referencia_Pre.CueText = "Ref.Producto";
             this.cueComboBox4Presupuesto_Referencia_Pre.FormattingEnabled = true;
-            this.cueComboBox4Presupuesto_Referencia_Pre.Location = new System.Drawing.Point(511, 3);
+            this.cueComboBox4Presupuesto_Referencia_Pre.Location = new System.Drawing.Point(3, 3);
             this.cueComboBox4Presupuesto_Referencia_Pre.Name = "cueComboBox4Presupuesto_Referencia_Pre";
             this.cueComboBox4Presupuesto_Referencia_Pre.Size = new System.Drawing.Size(121, 21);
-            this.cueComboBox4Presupuesto_Referencia_Pre.TabIndex = 4;
+            this.cueComboBox4Presupuesto_Referencia_Pre.TabIndex = 0;
             // 
             // cueComboBox5Presupuesto_Descripción_Pre
             // 
             this.cueComboBox5Presupuesto_Descripción_Pre.CueText = "Decripción";
             this.cueComboBox5Presupuesto_Descripción_Pre.FormattingEnabled = true;
-            this.cueComboBox5Presupuesto_Descripción_Pre.Location = new System.Drawing.Point(638, 3);
+            this.cueComboBox5Presupuesto_Descripción_Pre.Location = new System.Drawing.Point(130, 3);
             this.cueComboBox5Presupuesto_Descripción_Pre.Name = "cueComboBox5Presupuesto_Descripción_Pre";
             this.cueComboBox5Presupuesto_Descripción_Pre.Size = new System.Drawing.Size(375, 21);
-            this.cueComboBox5Presupuesto_Descripción_Pre.TabIndex = 5;
+            this.cueComboBox5Presupuesto_Descripción_Pre.TabIndex = 1;
             // 
             // cueTextBox1Presupuesto_PVP_Pre
             // 
             this.cueTextBox1Presupuesto_PVP_Pre.CueText = "P.V.P.";
-            this.cueTextBox1Presupuesto_PVP_Pre.Location = new System.Drawing.Point(1019, 3);
+            this.cueTextBox1Presupuesto_PVP_Pre.Location = new System.Drawing.Point(511, 3);
             this.cueTextBox1Presupuesto_PVP_Pre.Name = "cueTextBox1Presupuesto_PVP_Pre";
             this.cueTextBox1Presupuesto_PVP_Pre.Size = new System.Drawing.Size(121, 20);
-            this.cueTextBox1Presupuesto_PVP_Pre.TabIndex = 6;
+            this.cueTextBox1Presupuesto_PVP_Pre.TabIndex = 2;
             // 
             // cueComboBox6Presupuesto_Cantidad_Pre
             // 
             this.cueComboBox6Presupuesto_Cantidad_Pre.CueText = "Cantidad";
             this.cueComboBox6Presupuesto_Cantidad_Pre.FormattingEnabled = true;
-            this.cueComboBox6Presupuesto_Cantidad_Pre.Location = new System.Drawing.Point(3, 30);
+            this.cueComboBox6Presupuesto_Cantidad_Pre.Location = new System.Drawing.Point(638, 3);
             this.cueComboBox6Presupuesto_Cantidad_Pre.Name = "cueComboBox6Presupuesto_Cantidad_Pre";
             this.cueComboBox6Presupuesto_Cantidad_Pre.Size = new System.Drawing.Size(121, 21);
-            this.cueComboBox6Presupuesto_Cantidad_Pre.TabIndex = 7;
+            this.cueComboBox6Presupuesto_Cantidad_Pre.TabIndex = 3;
             // 
             // cueComboBox7Presupuesto_Descuento_Pre
             // 
             this.cueComboBox7Presupuesto_Descuento_Pre.CueText = "Descuento";
             this.cueComboBox7Presupuesto_Descuento_Pre.FormattingEnabled = true;
-            this.cueComboBox7Presupuesto_Descuento_Pre.Location = new System.Drawing.Point(130, 30);
+            this.cueComboBox7Presupuesto_Descuento_Pre.Location = new System.Drawing.Point(765, 3);
             this.cueComboBox7Presupuesto_Descuento_Pre.Name = "cueComboBox7Presupuesto_Descuento_Pre";
             this.cueComboBox7Presupuesto_Descuento_Pre.Size = new System.Drawing.Size(121, 21);
-            this.cueComboBox7Presupuesto_Descuento_Pre.TabIndex = 8;
+            this.cueComboBox7Presupuesto_Descuento_Pre.TabIndex = 4;
             // 
             // cueTextBox8Presupuesto_Total_Pre
             // 
             this.cueTextBox8Presupuesto_Total_Pre.CueText = "Total Línea";
-            this.cueTextBox8Presupuesto_Total_Pre.Location = new System.Drawing.Point(257, 30);
+            this.cueTextBox8Presupuesto_Total_Pre.Location = new System.Drawing.Point(892, 3);
             this.cueTextBox8Presupuesto_Total_Pre.Name = "cueTextBox8Presupuesto_Total_Pre";
             this.cueTextBox8Presupuesto_Total_Pre.Size = new System.Drawing.Size(121, 20);
-            this.cueTextBox8Presupuesto_Total_Pre.TabIndex = 9;
+            this.cueTextBox8Presupuesto_Total_Pre.TabIndex = 5;
             // 
             // cueTextBox9Presupuesto_IVA_Pre
             // 
             this.cueTextBox9Presupuesto_IVA_Pre.CueText = "I.V.A.";
-            this.cueTextBox9Presupuesto_IVA_Pre.Location = new System.Drawing.Point(384, 30);
+            this.cueTextBox9Presupuesto_IVA_Pre.Location = new System.Drawing.Point(1019, 3);
             this.cueTextBox9Presupuesto_IVA_Pre.Name = "cueTextBox9Presupuesto_IVA_Pre";
             this.cueTextBox9Presupuesto_IVA_Pre.Size = new System.Drawing.Size(121, 20);
-            this.cueTextBox9Presupuesto_IVA_Pre.TabIndex = 10;
+            this.cueTextBox9Presupuesto_IVA_Pre.TabIndex = 6;
             // 
             // richTextBox1Presupuesto_Pre
             // 
             this.richTextBox1Presupuesto_Pre.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.richTextBox1Presupuesto_Pre.Location = new System.Drawing.Point(3, 202);
+            this.richTextBox1Presupuesto_Pre.Location = new System.Drawing.Point(3, 293);
             this.richTextBox1Presupuesto_Pre.Name = "richTextBox1Presupuesto_Pre";
             this.richTextBox1Presupuesto_Pre.Size = new System.Drawing.Size(1158, 48);
-            this.richTextBox1Presupuesto_Pre.TabIndex = 5;
+            this.richTextBox1Presupuesto_Pre.TabIndex = 9;
             this.richTextBox1Presupuesto_Pre.Text = "";
             // 
             // panel3_Pre
@@ -543,11 +548,11 @@ namespace Gestaller
             this.panel3_Pre.Controls.Add(this.button8Modificar_Pre);
             this.panel3_Pre.Controls.Add(this.button9Devolucion_Pre);
             this.panel3_Pre.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3_Pre.Location = new System.Drawing.Point(0, 276);
+            this.panel3_Pre.Location = new System.Drawing.Point(0, 344);
             this.panel3_Pre.Margin = new System.Windows.Forms.Padding(0);
             this.panel3_Pre.Name = "panel3_Pre";
             this.panel3_Pre.Size = new System.Drawing.Size(1164, 23);
-            this.panel3_Pre.TabIndex = 7;
+            this.panel3_Pre.TabIndex = 10;
             // 
             // button6Anadir_Pre
             // 
@@ -594,10 +599,10 @@ namespace Gestaller
             this.dataGridView1_Pre.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dataGridView1_Pre.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1_Pre.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1_Pre.Location = new System.Drawing.Point(3, 302);
+            this.dataGridView1_Pre.Location = new System.Drawing.Point(3, 370);
             this.dataGridView1_Pre.Name = "dataGridView1_Pre";
-            this.dataGridView1_Pre.Size = new System.Drawing.Size(1158, 70);
-            this.dataGridView1_Pre.TabIndex = 8;
+            this.dataGridView1_Pre.Size = new System.Drawing.Size(1158, 133);
+            this.dataGridView1_Pre.TabIndex = 11;
             this.dataGridView1_Pre.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView3_CellMouseClick);
             // 
             // panel4_Pre
@@ -607,11 +612,11 @@ namespace Gestaller
             this.panel4_Pre.Controls.Add(this.button12GenInvoice_Pre);
             this.panel4_Pre.Controls.Add(this.button13DeleteBudget_Pre);
             this.panel4_Pre.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4_Pre.Location = new System.Drawing.Point(0, 395);
+            this.panel4_Pre.Location = new System.Drawing.Point(0, 526);
             this.panel4_Pre.Margin = new System.Windows.Forms.Padding(0);
             this.panel4_Pre.Name = "panel4_Pre";
             this.panel4_Pre.Size = new System.Drawing.Size(1164, 23);
-            this.panel4_Pre.TabIndex = 10;
+            this.panel4_Pre.TabIndex = 13;
             // 
             // button10Imprimir_Pre
             // 
@@ -655,15 +660,16 @@ namespace Gestaller
             // 
             // flowLayoutPanel3Impuestos_Pre
             // 
+            this.flowLayoutPanel3Impuestos_Pre.AutoScroll = true;
             this.flowLayoutPanel3Impuestos_Pre.Controls.Add(this.cueTextBox2Base_Pre);
             this.flowLayoutPanel3Impuestos_Pre.Controls.Add(this.cueTextBox3IVA_Pre);
             this.flowLayoutPanel3Impuestos_Pre.Controls.Add(this.cueTextBox4Total_Pre);
             this.flowLayoutPanel3Impuestos_Pre.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel3Impuestos_Pre.Location = new System.Drawing.Point(0, 375);
+            this.flowLayoutPanel3Impuestos_Pre.Location = new System.Drawing.Point(0, 506);
             this.flowLayoutPanel3Impuestos_Pre.Margin = new System.Windows.Forms.Padding(0);
             this.flowLayoutPanel3Impuestos_Pre.Name = "flowLayoutPanel3Impuestos_Pre";
             this.flowLayoutPanel3Impuestos_Pre.Size = new System.Drawing.Size(1164, 20);
-            this.flowLayoutPanel3Impuestos_Pre.TabIndex = 9;
+            this.flowLayoutPanel3Impuestos_Pre.TabIndex = 12;
             // 
             // cueTextBox2Base_Pre
             // 
@@ -698,7 +704,7 @@ namespace Gestaller
             this.tabPageProforma.Location = new System.Drawing.Point(4, 22);
             this.tabPageProforma.Name = "tabPageProforma";
             this.tabPageProforma.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageProforma.Size = new System.Drawing.Size(1170, 424);
+            this.tabPageProforma.Size = new System.Drawing.Size(1170, 555);
             this.tabPageProforma.TabIndex = 1;
             this.tabPageProforma.Text = "Proforma";
             this.tabPageProforma.UseVisualStyleBackColor = true;
@@ -734,7 +740,7 @@ namespace Gestaller
             this.tableLayoutPanel1Proforma.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1Proforma.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 23F));
             this.tableLayoutPanel1Proforma.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1Proforma.Size = new System.Drawing.Size(1164, 418);
+            this.tableLayoutPanel1Proforma.Size = new System.Drawing.Size(1164, 549);
             this.tableLayoutPanel1Proforma.TabIndex = 1;
             // 
             // panel2_Pro
@@ -1074,7 +1080,7 @@ namespace Gestaller
             this.dataGridView1_Pro.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1_Pro.Location = new System.Drawing.Point(3, 302);
             this.dataGridView1_Pro.Name = "dataGridView1_Pro";
-            this.dataGridView1_Pro.Size = new System.Drawing.Size(1158, 70);
+            this.dataGridView1_Pro.Size = new System.Drawing.Size(1158, 201);
             this.dataGridView1_Pro.TabIndex = 8;
             // 
             // panel4_Pro
@@ -1084,7 +1090,7 @@ namespace Gestaller
             this.panel4_Pro.Controls.Add(this.button12GenInvoice_Pro);
             this.panel4_Pro.Controls.Add(this.button13DeleteBudget_Pro);
             this.panel4_Pro.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4_Pro.Location = new System.Drawing.Point(0, 395);
+            this.panel4_Pro.Location = new System.Drawing.Point(0, 526);
             this.panel4_Pro.Margin = new System.Windows.Forms.Padding(0);
             this.panel4_Pro.Name = "panel4_Pro";
             this.panel4_Pro.Size = new System.Drawing.Size(1164, 23);
@@ -1136,7 +1142,7 @@ namespace Gestaller
             this.flowLayoutPanel3Impuestos_Pro.Controls.Add(this.cueTextBox3IVA_Pro);
             this.flowLayoutPanel3Impuestos_Pro.Controls.Add(this.cueTextBox4Total_Pro);
             this.flowLayoutPanel3Impuestos_Pro.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel3Impuestos_Pro.Location = new System.Drawing.Point(0, 375);
+            this.flowLayoutPanel3Impuestos_Pro.Location = new System.Drawing.Point(0, 506);
             this.flowLayoutPanel3Impuestos_Pro.Margin = new System.Windows.Forms.Padding(0);
             this.flowLayoutPanel3Impuestos_Pro.Name = "flowLayoutPanel3Impuestos_Pro";
             this.flowLayoutPanel3Impuestos_Pro.Size = new System.Drawing.Size(1164, 20);
@@ -1648,11 +1654,50 @@ namespace Gestaller
             this.cueTextBox4Total_F.Size = new System.Drawing.Size(121, 20);
             this.cueTextBox4Total_F.TabIndex = 2;
             // 
+            // label3Producto_Pre
+            // 
+            this.label3Producto_Pre.AutoSize = true;
+            this.label3Producto_Pre.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label3Producto_Pre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.label3Producto_Pre.Location = new System.Drawing.Point(3, 196);
+            this.label3Producto_Pre.Name = "label3Producto_Pre";
+            this.label3Producto_Pre.Size = new System.Drawing.Size(1158, 20);
+            this.label3Producto_Pre.TabIndex = 6;
+            this.label3Producto_Pre.Text = "PRODUCTO";
+            // 
+            // label4Observacion_Pre
+            // 
+            this.label4Observacion_Pre.AutoSize = true;
+            this.label4Observacion_Pre.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label4Observacion_Pre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.label4Observacion_Pre.Location = new System.Drawing.Point(3, 270);
+            this.label4Observacion_Pre.Name = "label4Observacion_Pre";
+            this.label4Observacion_Pre.Size = new System.Drawing.Size(1158, 20);
+            this.label4Observacion_Pre.TabIndex = 8;
+            this.label4Observacion_Pre.Text = "OBSERVACIONES";
+            // 
+            // flowLayoutPanel3Producto_Pre
+            // 
+            this.flowLayoutPanel3Producto_Pre.AutoScroll = true;
+            this.flowLayoutPanel3Producto_Pre.Controls.Add(this.cueComboBox4Presupuesto_Referencia_Pre);
+            this.flowLayoutPanel3Producto_Pre.Controls.Add(this.cueComboBox5Presupuesto_Descripción_Pre);
+            this.flowLayoutPanel3Producto_Pre.Controls.Add(this.cueTextBox1Presupuesto_PVP_Pre);
+            this.flowLayoutPanel3Producto_Pre.Controls.Add(this.cueComboBox6Presupuesto_Cantidad_Pre);
+            this.flowLayoutPanel3Producto_Pre.Controls.Add(this.cueComboBox7Presupuesto_Descuento_Pre);
+            this.flowLayoutPanel3Producto_Pre.Controls.Add(this.cueTextBox8Presupuesto_Total_Pre);
+            this.flowLayoutPanel3Producto_Pre.Controls.Add(this.cueTextBox9Presupuesto_IVA_Pre);
+            this.flowLayoutPanel3Producto_Pre.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutPanel3Producto_Pre.Location = new System.Drawing.Point(3, 216);
+            this.flowLayoutPanel3Producto_Pre.Margin = new System.Windows.Forms.Padding(3, 0, 0, 0);
+            this.flowLayoutPanel3Producto_Pre.Name = "flowLayoutPanel3Producto_Pre";
+            this.flowLayoutPanel3Producto_Pre.Size = new System.Drawing.Size(1161, 54);
+            this.flowLayoutPanel3Producto_Pre.TabIndex = 7;
+            // 
             // OrdersView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1178, 450);
+            this.ClientSize = new System.Drawing.Size(1178, 581);
             this.Controls.Add(this.cueComboBox4Cliente_Modelo_Pro);
             this.Name = "OrdersView";
             this.Text = "Ordenes";
@@ -1666,7 +1711,6 @@ namespace Gestaller
             this.flowLayoutPanel1Cliente_Pre.ResumeLayout(false);
             this.flowLayoutPanel1Cliente_Pre.PerformLayout();
             this.flowLayoutPanel2Presupuesto_Pre.ResumeLayout(false);
-            this.flowLayoutPanel2Presupuesto_Pre.PerformLayout();
             this.panel3_Pre.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1_Pre)).EndInit();
             this.panel4_Pre.ResumeLayout(false);
@@ -1700,6 +1744,8 @@ namespace Gestaller
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1_F)).EndInit();
             this.flowLayoutPanel3Impuestos_F.ResumeLayout(false);
             this.flowLayoutPanel3Impuestos_F.PerformLayout();
+            this.flowLayoutPanel3Producto_Pre.ResumeLayout(false);
+            this.flowLayoutPanel3Producto_Pre.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1842,5 +1888,8 @@ namespace Gestaller
         private Views.CueTextBox cueTextBox4Total_F;
         private Views.CueComboBox cueComboBox4Cliente_Modelo_Pre;
         private System.Windows.Forms.Button button8Modificar_Pro;
+        private System.Windows.Forms.Label label3Producto_Pre;
+        private System.Windows.Forms.Label label4Observacion_Pre;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3Producto_Pre;
     }
 }
