@@ -1132,6 +1132,7 @@ namespace Gestaller
             this.Grid_Proforma.Name = "Grid_Proforma";
             this.Grid_Proforma.Size = new System.Drawing.Size(1158, 133);
             this.Grid_Proforma.TabIndex = 11;
+            this.Grid_Proforma.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.Grid_Proforma_CellMouseClick);
             // 
             // panel4_Pro
             // 
@@ -1738,6 +1739,7 @@ namespace Gestaller
             this.Grid_Factura.Name = "Grid_Factura";
             this.Grid_Factura.Size = new System.Drawing.Size(1158, 133);
             this.Grid_Factura.TabIndex = 11;
+            this.Grid_Factura.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.Grid_Factura_CellMouseClick);
             // 
             // label3Producto_F
             // 

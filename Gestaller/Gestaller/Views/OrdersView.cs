@@ -29,7 +29,7 @@ namespace Gestaller
         private void OrdersView_Load(object sender, EventArgs e)
         {
             getDB();
-            getOrdersItems();
+            getBudgetItems();
         }
 
         #endregion
@@ -69,7 +69,7 @@ namespace Gestaller
         private void dataGridView3_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
             _selectedCell = Grid_Presupuesto.CurrentCell.RowIndex;
-            cellClickEvent();
+            budgetCellClick();
         }
 
         #region presupuesto comboBox selection event
@@ -110,7 +110,7 @@ namespace Gestaller
 
         #region budget private methods
 
-        void cellClickEvent()
+        void budgetCellClick()
         {
             _selectedCell = Grid_Presupuesto.CurrentCell.RowIndex;
             setBudgetItemComboBox();
@@ -124,7 +124,7 @@ namespace Gestaller
             PVP_Pre.Text = items[_selectedCell].PVP.ToString();                                  
         }
 
-        private void getOrdersItems()
+        private void getBudgetItems()
         {
             List<ContactVehicle> contactsVehicles = _businessLogicLayer.GetContactVehicles();
             List<Order> orders = _businessLogicLayer.GetOrders();
@@ -170,15 +170,40 @@ namespace Gestaller
 
         #region preforma events
 
+        private void Grid_Proforma_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+
+        }
+
+        #region preforma comboBox selection event
+
 
 
         #endregion
-        
+
+        #endregion
+
+        #region preforma private methods
+
+        #endregion
+
         #region invoice events
 
+        private void Grid_Factura_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+
+        }
+
+        #region invoice comboBox selection event
+
 
 
         #endregion
 
+        #endregion
+
+        #region invoice private methods
+
+        #endregion
     }
 }
