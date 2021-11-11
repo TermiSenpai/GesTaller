@@ -808,7 +808,6 @@ namespace Gestaller
             this.tableLayoutPanel1Proforma.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1Proforma.Size = new System.Drawing.Size(1164, 549);
             this.tableLayoutPanel1Proforma.TabIndex = 0;
-            this.tableLayoutPanel1Proforma.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1Proforma_Paint);
             // 
             // panel2
             // 
