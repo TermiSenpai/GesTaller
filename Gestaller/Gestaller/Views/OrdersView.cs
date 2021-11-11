@@ -168,7 +168,7 @@ namespace Gestaller
 
         #endregion
 
-        #region preforma events
+        #region proforma events
 
         private void Grid_Proforma_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
@@ -184,7 +184,7 @@ namespace Gestaller
 
         #endregion
 
-        #region preforma private methods
+        #region proforma private methods
 
         private void getProformaItems()
         {
@@ -209,6 +209,30 @@ namespace Gestaller
             Referencia_Proforma.Text = items[_selectedCell].reference.ToString();
             Descripción_Proforma.Text = items[_selectedCell].description;
             PVP_Proforma.Text = items[_selectedCell].PVP.ToString();
+        }
+
+        private void changesProformaComboBoxes()
+        {
+            List<ContactVehicle> contactsVehicles = getContactsVehicles();
+            List<Order> orders = getOrders();
+
+            selectActiveContactVehicle(contactsVehicles[_comboIndex]);
+            selectActiveOrder(orders[_comboIndex]);
+
+            proformaSetToComboBox();
+        }
+
+        private void proformaSetToComboBox()
+        {
+            Cliente_Proforma.Text = _clientVehicle.contact_fullName;
+            Matricula_Proforma.Text = _clientVehicle.vehicle_enroll;
+            Marca_Proforma.Text = _clientVehicle.vehicle_brand;
+            Modelo_Proforma.Text = _clientVehicle.vehicle_model;
+            Km_Proforma.Text = _clientVehicle.vehicle_kms;
+            Presupuesto_Proforma.Text = _order.numBudget.ToString(); // presupuesto
+            Proforma_Proforma.Text = _order.numProForma.ToString(); // proforma
+            Factura_Proforma.Text = _order.numInvoice.ToString(); // factura
+            Fecha_Proforma.Value = _order.dateBudget;
         }
 
         #endregion
