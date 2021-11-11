@@ -30,6 +30,7 @@ namespace Gestaller
         {
             getDB();
             getBudgetItems();
+            getProformaItems();
         }
 
         #endregion
@@ -139,7 +140,6 @@ namespace Gestaller
                 Matricula_Pre.Items.Add(contactsVehicles[i].vehicle_enroll);
                 Cliente_Pre.Items.Add(contactsVehicles[i].contact_fullName);
             }
-
         }
 
         private void budgetSetToComboBox()
@@ -172,7 +172,8 @@ namespace Gestaller
 
         private void Grid_Proforma_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
-
+            _selectedCell = Grid_Proforma.CurrentCell.RowIndex;
+            setProformaItemsToComboBox();
         }
 
         #region preforma comboBox selection event
@@ -184,6 +185,31 @@ namespace Gestaller
         #endregion
 
         #region preforma private methods
+
+        private void getProformaItems()
+        {
+            List<ContactVehicle> contactsVehicles = _businessLogicLayer.GetContactVehicles();
+            List<Order> orders = _businessLogicLayer.GetOrders();
+
+            for (int i = 0; i < orders.Count(); i++)
+            {
+                Factura_Proforma.Items.Add(orders[i].numInvoice);
+                Proforma_Proforma.Items.Add(orders[i].numProForma);
+                Presupuesto_Proforma.Items.Add(orders[i].numBudget);
+                Modelo_Proforma.Items.Add(contactsVehicles[i].vehicle_model);
+                Marca_Proforma.Items.Add(contactsVehicles[i].vehicle_brand);
+                Matricula_Proforma.Items.Add(contactsVehicles[i].vehicle_enroll);
+                Cliente_Proforma.Items.Add(contactsVehicles[i].contact_fullName);
+            }
+        }
+
+        private void setProformaItemsToComboBox()
+        {
+            List<Item> items = getItems();
+            Referencia_Proforma.Text = items[_selectedCell].reference.ToString();
+            Descripción_Proforma.Text = items[_selectedCell].description;
+            PVP_Proforma.Text = items[_selectedCell].PVP.ToString();
+        }
 
         #endregion
 
