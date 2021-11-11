@@ -32,18 +32,27 @@ namespace Gestaller
             this.cueComboBox4Cliente_Modelo_Pro = new System.Windows.Forms.TabControl();
             this.tabPagePresupuesto = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel1Presupuesto = new System.Windows.Forms.TableLayoutPanel();
-            this.panel2_Pre = new System.Windows.Forms.Panel();
-            this.btnFirstPage_Pre = new System.Windows.Forms.Button();
-            this.btnPreviousPage_Pre = new System.Windows.Forms.Button();
-            this.btnnNextPage_Pre = new System.Windows.Forms.Button();
-            this.btnLastPage_Pre = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.Base_Presupuesto = new Gestaller.Views.CueTextBox();
+            this.IVA_Presupuesto = new Gestaller.Views.CueTextBox();
+            this.Total_Presupuesto = new Gestaller.Views.CueTextBox();
             this.label1Cliente_Pre = new System.Windows.Forms.Label();
             this.panel1_Pre = new System.Windows.Forms.Panel();
             this.btn_Search_Pre = new System.Windows.Forms.Button();
             this.flowLayoutPanel1Cliente_Pre = new System.Windows.Forms.FlowLayoutPanel();
+            this.Cliente_Pre = new Gestaller.Views.CueComboBox();
+            this.Matricula_Pre = new Gestaller.Views.CueComboBox();
+            this.Marca_Pre = new Gestaller.Views.CueComboBox();
+            this.Modelo_Pre = new Gestaller.Views.CueComboBox();
+            this.Km_Pre = new Gestaller.Views.CueTextBox();
             this.label2Presupuesto_Pre = new System.Windows.Forms.Label();
             this.flowLayoutPanel2Presupuesto_Pre = new System.Windows.Forms.FlowLayoutPanel();
+            this.Presupuesto_Pre = new Gestaller.Views.CueComboBox();
+            this.Proforma_Pre = new Gestaller.Views.CueComboBox();
+            this.Factura_Pre = new Gestaller.Views.CueComboBox();
             this.Fecha_Pre = new System.Windows.Forms.DateTimePicker();
+            this.label3Producto_Pre = new System.Windows.Forms.Label();
+            this.Observaciones_Pre = new System.Windows.Forms.RichTextBox();
             this.panel3_Pre = new System.Windows.Forms.Panel();
             this.btnAnadir_Pre = new System.Windows.Forms.Button();
             this.btnBorrarObj_Pre = new System.Windows.Forms.Button();
@@ -51,85 +60,12 @@ namespace Gestaller
             this.btnDevolucion_Pre = new System.Windows.Forms.Button();
             this.Grid_Presupuesto = new System.Windows.Forms.DataGridView();
             this.panel4_Pre = new System.Windows.Forms.Panel();
+            this.btnImprimir_Pre = new System.Windows.Forms.Button();
             this.btnPresupuestor_Pre = new System.Windows.Forms.Button();
             this.btnProforma_Pre = new System.Windows.Forms.Button();
             this.btnFactura_Pre = new System.Windows.Forms.Button();
             this.btnBorrarPresupuesto_Pre = new System.Windows.Forms.Button();
-            this.flowLayoutPanel3Impuestos_Pre = new System.Windows.Forms.FlowLayoutPanel();
-            this.Observaciones_Pre = new System.Windows.Forms.RichTextBox();
-            this.label3Producto_Pre = new System.Windows.Forms.Label();
-            this.label4Observacion_Pre = new System.Windows.Forms.Label();
             this.flowLayoutPanel3Producto_Pre = new System.Windows.Forms.FlowLayoutPanel();
-            this.tabPageProforma = new System.Windows.Forms.TabPage();
-            this.tableLayoutPanel1Proforma = new System.Windows.Forms.TableLayoutPanel();
-            this.panel2_Pro = new System.Windows.Forms.Panel();
-            this.btnFirstPage_Proforma = new System.Windows.Forms.Button();
-            this.btnPreviousPage_Proforma = new System.Windows.Forms.Button();
-            this.btnNextPage_Proforma = new System.Windows.Forms.Button();
-            this.btnLastPage_Proforma = new System.Windows.Forms.Button();
-            this.label1Cliente_Pro = new System.Windows.Forms.Label();
-            this.panel1_Pro = new System.Windows.Forms.Panel();
-            this.btn_Search_Proforma = new System.Windows.Forms.Button();
-            this.flowLayoutPanel1Cliente_Pro = new System.Windows.Forms.FlowLayoutPanel();
-            this.label2Presupuesto_Pro = new System.Windows.Forms.Label();
-            this.flowLayoutPanel2Presupuesto_Pro = new System.Windows.Forms.FlowLayoutPanel();
-            this.Fecha_Proforma = new System.Windows.Forms.DateTimePicker();
-            this.Observaciones_Proforma = new System.Windows.Forms.RichTextBox();
-            this.panel3_Pro = new System.Windows.Forms.Panel();
-            this.btnAnadir_Proforma = new System.Windows.Forms.Button();
-            this.btnBorrarObj_Proforma = new System.Windows.Forms.Button();
-            this.btnModificar_Proforma = new System.Windows.Forms.Button();
-            this.btnDevolucion_Proforma = new System.Windows.Forms.Button();
-            this.Grid_Proforma = new System.Windows.Forms.DataGridView();
-            this.panel4_Pro = new System.Windows.Forms.Panel();
-            this.btnPresupuesto_Proforma = new System.Windows.Forms.Button();
-            this.btnProforma_Proforma = new System.Windows.Forms.Button();
-            this.btnFactura_Proforma = new System.Windows.Forms.Button();
-            this.btnBorrarProforma_Proforma = new System.Windows.Forms.Button();
-            this.flowLayoutPanel3Impuestos_Pro = new System.Windows.Forms.FlowLayoutPanel();
-            this.tabPageFactura = new System.Windows.Forms.TabPage();
-            this.tableLayoutPanel1Factura = new System.Windows.Forms.TableLayoutPanel();
-            this.label1Cliente_F = new System.Windows.Forms.Label();
-            this.panel1_F = new System.Windows.Forms.Panel();
-            this.btn_Search_F = new System.Windows.Forms.Button();
-            this.flowLayoutPanel1Cliente_F = new System.Windows.Forms.FlowLayoutPanel();
-            this.label2Presupuesto_F = new System.Windows.Forms.Label();
-            this.flowLayoutPanel2Presupuesto_F = new System.Windows.Forms.FlowLayoutPanel();
-            this.panel2_F = new System.Windows.Forms.Panel();
-            this.btnFirstPage_F = new System.Windows.Forms.Button();
-            this.btnPreviousPage_F = new System.Windows.Forms.Button();
-            this.btnNextPage_F = new System.Windows.Forms.Button();
-            this.btnLastPage_F = new System.Windows.Forms.Button();
-            this.Observaciones_F = new System.Windows.Forms.RichTextBox();
-            this.panel3_F = new System.Windows.Forms.Panel();
-            this.btnAnadir_F = new System.Windows.Forms.Button();
-            this.btnBorrarObj_F = new System.Windows.Forms.Button();
-            this.btnModificar_F = new System.Windows.Forms.Button();
-            this.btnDevolucion_F = new System.Windows.Forms.Button();
-            this.panel4_F = new System.Windows.Forms.Panel();
-            this.btnPresupuesto_F = new System.Windows.Forms.Button();
-            this.button11GenProforma_F = new System.Windows.Forms.Button();
-            this.button12GenInvoice_F = new System.Windows.Forms.Button();
-            this.btnBorrarFactura_F = new System.Windows.Forms.Button();
-            this.Grid_Factura = new System.Windows.Forms.DataGridView();
-            this.flowLayoutPanel3Impuestos_F = new System.Windows.Forms.FlowLayoutPanel();
-            this.label3Producto_Pro = new System.Windows.Forms.Label();
-            this.label4Observacion_Pro = new System.Windows.Forms.Label();
-            this.label3Producto_F = new System.Windows.Forms.Label();
-            this.label4Observacion_F = new System.Windows.Forms.Label();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
-            this.Cliente_Pre = new Gestaller.Views.CueComboBox();
-            this.Matricula_Pre = new Gestaller.Views.CueComboBox();
-            this.Marca_Pre = new Gestaller.Views.CueComboBox();
-            this.Modelo_Pre = new Gestaller.Views.CueComboBox();
-            this.Km_Pre = new Gestaller.Views.CueTextBox();
-            this.Presupuesto_Pre = new Gestaller.Views.CueComboBox();
-            this.Proforma_Pre = new Gestaller.Views.CueComboBox();
-            this.Factura_Pre = new Gestaller.Views.CueComboBox();
-            this.Base_Pre = new Gestaller.Views.CueTextBox();
-            this.IVA_Pre = new Gestaller.Views.CueTextBox();
-            this.Total_Pre = new Gestaller.Views.CueTextBox();
             this.Referencia_Pre = new Gestaller.Views.CueComboBox();
             this.Descripción_Pre = new Gestaller.Views.CueComboBox();
             this.PVP_Pre = new Gestaller.Views.CueTextBox();
@@ -137,6 +73,53 @@ namespace Gestaller
             this.Descuento_Pre = new Gestaller.Views.CueComboBox();
             this.Total_Linea_Pre = new Gestaller.Views.CueTextBox();
             this.IVA_Producto_Pre = new Gestaller.Views.CueTextBox();
+            this.label4Observacion_Pre = new System.Windows.Forms.Label();
+            this.panel2_Pre = new System.Windows.Forms.Panel();
+            this.btnFirstPage_Pre = new System.Windows.Forms.Button();
+            this.btnPreviousPage_Pre = new System.Windows.Forms.Button();
+            this.btnnNextPage_Pre = new System.Windows.Forms.Button();
+            this.btnLastPage_Pre = new System.Windows.Forms.Button();
+            this.tabPageProforma = new System.Windows.Forms.TabPage();
+            this.tableLayoutPanel1Proforma = new System.Windows.Forms.TableLayoutPanel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.Base_Proforma = new Gestaller.Views.CueTextBox();
+            this.IVA_Proforma = new Gestaller.Views.CueTextBox();
+            this.Total_Proforma = new Gestaller.Views.CueTextBox();
+            this.label1Cliente_Pro = new System.Windows.Forms.Label();
+            this.panel1_Pro = new System.Windows.Forms.Panel();
+            this.btn_Search_Proforma = new System.Windows.Forms.Button();
+            this.flowLayoutPanel1Cliente_Pro = new System.Windows.Forms.FlowLayoutPanel();
+            this.Cliente_Proforma = new Gestaller.Views.CueComboBox();
+            this.Matricula_Proforma = new Gestaller.Views.CueComboBox();
+            this.Marca_Proforma = new Gestaller.Views.CueComboBox();
+            this.Modelo_Proforma = new Gestaller.Views.CueComboBox();
+            this.Km_Proforma = new Gestaller.Views.CueTextBox();
+            this.label2Presupuesto_Pro = new System.Windows.Forms.Label();
+            this.flowLayoutPanel2Presupuesto_Pro = new System.Windows.Forms.FlowLayoutPanel();
+            this.Presupuesto_Proforma = new Gestaller.Views.CueComboBox();
+            this.Proforma_Proforma = new Gestaller.Views.CueComboBox();
+            this.Factura_Proforma = new Gestaller.Views.CueComboBox();
+            this.Fecha_Proforma = new System.Windows.Forms.DateTimePicker();
+            this.panel3_Pro = new System.Windows.Forms.Panel();
+            this.btnAnadir_Proforma = new System.Windows.Forms.Button();
+            this.btnBorrarObj_Proforma = new System.Windows.Forms.Button();
+            this.btnModificar_Proforma = new System.Windows.Forms.Button();
+            this.btnDevolucion_Proforma = new System.Windows.Forms.Button();
+            this.label3Producto_Pro = new System.Windows.Forms.Label();
+            this.label4Observacion_Pro = new System.Windows.Forms.Label();
+            this.panel2_Pro = new System.Windows.Forms.Panel();
+            this.btnFirstPage_Proforma = new System.Windows.Forms.Button();
+            this.btnPreviousPage_Proforma = new System.Windows.Forms.Button();
+            this.btnNextPage_Proforma = new System.Windows.Forms.Button();
+            this.btnLastPage_Proforma = new System.Windows.Forms.Button();
+            this.Grid_Proforma = new System.Windows.Forms.DataGridView();
+            this.panel4_Pro = new System.Windows.Forms.Panel();
+            this.btnImprimir_Proforma = new System.Windows.Forms.Button();
+            this.btnPresupuesto_Proforma = new System.Windows.Forms.Button();
+            this.btnProforma_Proforma = new System.Windows.Forms.Button();
+            this.btnFactura_Proforma = new System.Windows.Forms.Button();
+            this.btnBorrarProforma_Proforma = new System.Windows.Forms.Button();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.Referencia_Proforma = new Gestaller.Views.CueComboBox();
             this.Descripción_Proforma = new Gestaller.Views.CueComboBox();
             this.PVP_Proforma = new Gestaller.Views.CueTextBox();
@@ -144,16 +127,10 @@ namespace Gestaller
             this.Descuento_Proforma = new Gestaller.Views.CueComboBox();
             this.Total_Linea_Proforma = new Gestaller.Views.CueTextBox();
             this.IVA_Producto_Proforma = new Gestaller.Views.CueTextBox();
-            this.Cliente_Proforma = new Gestaller.Views.CueComboBox();
-            this.Matricula_Proforma = new Gestaller.Views.CueComboBox();
-            this.Modelo_Proforma = new Gestaller.Views.CueComboBox();
-            this.Km_Proforma = new Gestaller.Views.CueTextBox();
-            this.Presupuesto_Proforma = new Gestaller.Views.CueComboBox();
-            this.Proforma_Proforma = new Gestaller.Views.CueComboBox();
-            this.Factura_Proforma = new Gestaller.Views.CueComboBox();
-            this.Base_Proforma = new Gestaller.Views.CueTextBox();
-            this.IVA_Proforma = new Gestaller.Views.CueTextBox();
-            this.Total_Proforma = new Gestaller.Views.CueTextBox();
+            this.Observaciones_Proforma = new System.Windows.Forms.RichTextBox();
+            this.tabPageFactura = new System.Windows.Forms.TabPage();
+            this.tableLayoutPanel1Factura = new System.Windows.Forms.TableLayoutPanel();
+            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.Referencia_F = new Gestaller.Views.CueComboBox();
             this.Descripcion_F = new Gestaller.Views.CueComboBox();
             this.PVP_Factura = new Gestaller.Views.CueTextBox();
@@ -161,46 +138,71 @@ namespace Gestaller
             this.Descuento_Factura = new Gestaller.Views.CueComboBox();
             this.Total_Linea_Factura = new Gestaller.Views.CueTextBox();
             this.IVA_Producto_Factura = new Gestaller.Views.CueTextBox();
+            this.label1Cliente_F = new System.Windows.Forms.Label();
+            this.panel1_F = new System.Windows.Forms.Panel();
+            this.btn_Search_F = new System.Windows.Forms.Button();
+            this.flowLayoutPanel1Cliente_F = new System.Windows.Forms.FlowLayoutPanel();
             this.cueComboBox1Cliente_Cliente_F = new Gestaller.Views.CueComboBox();
             this.cueComboBox2Cliente_Matricula_F = new Gestaller.Views.CueComboBox();
             this.cueComboBox3Cliente_Marca_F = new Gestaller.Views.CueComboBox();
             this.cueComboBox4Cliente_Modelo_F = new Gestaller.Views.CueComboBox();
             this.cueTextBox1Cliente_Km_F = new Gestaller.Views.CueTextBox();
+            this.label2Presupuesto_F = new System.Windows.Forms.Label();
+            this.flowLayoutPanel2Presupuesto_F = new System.Windows.Forms.FlowLayoutPanel();
             this.Presupuesto_F = new Gestaller.Views.CueComboBox();
             this.Proforma_F = new Gestaller.Views.CueComboBox();
             this.Factura_F = new Gestaller.Views.CueComboBox();
-            this.cueTextBox2Base_F = new Gestaller.Views.CueTextBox();
-            this.cueTextBox3IVA_F = new Gestaller.Views.CueTextBox();
-            this.cueTextBox4Total_F = new Gestaller.Views.CueTextBox();
-            this.btnImprimir_Pre = new System.Windows.Forms.Button();
-            this.btnImprimir_Proforma = new System.Windows.Forms.Button();
-            this.btnImprimir_F = new System.Windows.Forms.Button();
-            this.Marca_Proforma = new Gestaller.Views.CueComboBox();
             this.Fecha_F = new System.Windows.Forms.DateTimePicker();
+            this.panel2_F = new System.Windows.Forms.Panel();
+            this.btnFirstPage_F = new System.Windows.Forms.Button();
+            this.btnPreviousPage_F = new System.Windows.Forms.Button();
+            this.btnNextPage_F = new System.Windows.Forms.Button();
+            this.btnLastPage_F = new System.Windows.Forms.Button();
+            this.panel3_F = new System.Windows.Forms.Panel();
+            this.btnAnadir_F = new System.Windows.Forms.Button();
+            this.btnBorrarObj_F = new System.Windows.Forms.Button();
+            this.btnModificar_F = new System.Windows.Forms.Button();
+            this.btnDevolucion_F = new System.Windows.Forms.Button();
+            this.panel4_F = new System.Windows.Forms.Panel();
+            this.btnImprimir_F = new System.Windows.Forms.Button();
+            this.btnPresupuesto_F = new System.Windows.Forms.Button();
+            this.button11GenProforma_F = new System.Windows.Forms.Button();
+            this.button12GenInvoice_F = new System.Windows.Forms.Button();
+            this.btnBorrarFactura_F = new System.Windows.Forms.Button();
+            this.Grid_Factura = new System.Windows.Forms.DataGridView();
+            this.label3Producto_F = new System.Windows.Forms.Label();
+            this.label4Observacion_F = new System.Windows.Forms.Label();
+            this.Observaciones_F = new System.Windows.Forms.RichTextBox();
+            this.Panel3Impuestos_Factura = new System.Windows.Forms.Panel();
+            this.Base_Factura = new Gestaller.Views.CueTextBox();
+            this.IVA_Factura = new Gestaller.Views.CueTextBox();
+            this.Total_Factura = new Gestaller.Views.CueTextBox();
             this.cueComboBox4Cliente_Modelo_Pro.SuspendLayout();
             this.tabPagePresupuesto.SuspendLayout();
             this.tableLayoutPanel1Presupuesto.SuspendLayout();
-            this.panel2_Pre.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.panel1_Pre.SuspendLayout();
             this.flowLayoutPanel1Cliente_Pre.SuspendLayout();
             this.flowLayoutPanel2Presupuesto_Pre.SuspendLayout();
             this.panel3_Pre.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Grid_Presupuesto)).BeginInit();
             this.panel4_Pre.SuspendLayout();
-            this.flowLayoutPanel3Impuestos_Pre.SuspendLayout();
             this.flowLayoutPanel3Producto_Pre.SuspendLayout();
+            this.panel2_Pre.SuspendLayout();
             this.tabPageProforma.SuspendLayout();
             this.tableLayoutPanel1Proforma.SuspendLayout();
-            this.panel2_Pro.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.panel1_Pro.SuspendLayout();
             this.flowLayoutPanel1Cliente_Pro.SuspendLayout();
             this.flowLayoutPanel2Presupuesto_Pro.SuspendLayout();
             this.panel3_Pro.SuspendLayout();
+            this.panel2_Pro.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Grid_Proforma)).BeginInit();
             this.panel4_Pro.SuspendLayout();
-            this.flowLayoutPanel3Impuestos_Pro.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
             this.tabPageFactura.SuspendLayout();
             this.tableLayoutPanel1Factura.SuspendLayout();
+            this.flowLayoutPanel2.SuspendLayout();
             this.panel1_F.SuspendLayout();
             this.flowLayoutPanel1Cliente_F.SuspendLayout();
             this.flowLayoutPanel2Presupuesto_F.SuspendLayout();
@@ -208,9 +210,7 @@ namespace Gestaller
             this.panel3_F.SuspendLayout();
             this.panel4_F.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Grid_Factura)).BeginInit();
-            this.flowLayoutPanel3Impuestos_F.SuspendLayout();
-            this.flowLayoutPanel1.SuspendLayout();
-            this.flowLayoutPanel2.SuspendLayout();
+            this.Panel3Impuestos_Factura.SuspendLayout();
             this.SuspendLayout();
             // 
             // cueComboBox4Cliente_Modelo_Pro
@@ -241,93 +241,79 @@ namespace Gestaller
             this.tableLayoutPanel1Presupuesto.AutoScroll = true;
             this.tableLayoutPanel1Presupuesto.ColumnCount = 1;
             this.tableLayoutPanel1Presupuesto.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1Presupuesto.Controls.Add(this.panel2_Pre, 0, 5);
+            this.tableLayoutPanel1Presupuesto.Controls.Add(this.panel1, 0, 12);
             this.tableLayoutPanel1Presupuesto.Controls.Add(this.label1Cliente_Pre, 0, 0);
             this.tableLayoutPanel1Presupuesto.Controls.Add(this.panel1_Pre, 0, 2);
             this.tableLayoutPanel1Presupuesto.Controls.Add(this.flowLayoutPanel1Cliente_Pre, 0, 1);
             this.tableLayoutPanel1Presupuesto.Controls.Add(this.label2Presupuesto_Pre, 0, 3);
             this.tableLayoutPanel1Presupuesto.Controls.Add(this.flowLayoutPanel2Presupuesto_Pre, 0, 4);
+            this.tableLayoutPanel1Presupuesto.Controls.Add(this.label3Producto_Pre, 0, 8);
+            this.tableLayoutPanel1Presupuesto.Controls.Add(this.Observaciones_Pre, 0, 6);
             this.tableLayoutPanel1Presupuesto.Controls.Add(this.panel3_Pre, 0, 10);
             this.tableLayoutPanel1Presupuesto.Controls.Add(this.Grid_Presupuesto, 0, 11);
-            this.tableLayoutPanel1Presupuesto.Controls.Add(this.panel4_Pre, 0, 13);
-            this.tableLayoutPanel1Presupuesto.Controls.Add(this.flowLayoutPanel3Impuestos_Pre, 0, 12);
-            this.tableLayoutPanel1Presupuesto.Controls.Add(this.Observaciones_Pre, 0, 9);
-            this.tableLayoutPanel1Presupuesto.Controls.Add(this.label3Producto_Pre, 0, 6);
-            this.tableLayoutPanel1Presupuesto.Controls.Add(this.label4Observacion_Pre, 0, 8);
-            this.tableLayoutPanel1Presupuesto.Controls.Add(this.flowLayoutPanel3Producto_Pre, 0, 7);
+            this.tableLayoutPanel1Presupuesto.Controls.Add(this.panel4_Pre, 0, 12);
+            this.tableLayoutPanel1Presupuesto.Controls.Add(this.flowLayoutPanel3Producto_Pre, 0, 9);
+            this.tableLayoutPanel1Presupuesto.Controls.Add(this.label4Observacion_Pre, 0, 5);
+            this.tableLayoutPanel1Presupuesto.Controls.Add(this.panel2_Pre, 0, 7);
             this.tableLayoutPanel1Presupuesto.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1Presupuesto.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel1Presupuesto.Name = "tableLayoutPanel1Presupuesto";
-            this.tableLayoutPanel1Presupuesto.RowCount = 14;
+            this.tableLayoutPanel1Presupuesto.RowCount = 13;
             this.tableLayoutPanel1Presupuesto.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1Presupuesto.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 56F));
             this.tableLayoutPanel1Presupuesto.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 23F));
             this.tableLayoutPanel1Presupuesto.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1Presupuesto.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 54F));
-            this.tableLayoutPanel1Presupuesto.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 23F));
             this.tableLayoutPanel1Presupuesto.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1Presupuesto.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 54F));
+            this.tableLayoutPanel1Presupuesto.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 23F));
             this.tableLayoutPanel1Presupuesto.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1Presupuesto.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 54F));
             this.tableLayoutPanel1Presupuesto.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 23F));
             this.tableLayoutPanel1Presupuesto.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1Presupuesto.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1Presupuesto.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 23F));
+            this.tableLayoutPanel1Presupuesto.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1Presupuesto.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1Presupuesto.Size = new System.Drawing.Size(1164, 549);
             this.tableLayoutPanel1Presupuesto.TabIndex = 0;
             // 
-            // panel2_Pre
+            // panel1
             // 
-            this.panel2_Pre.Controls.Add(this.btnFirstPage_Pre);
-            this.panel2_Pre.Controls.Add(this.btnPreviousPage_Pre);
-            this.panel2_Pre.Controls.Add(this.btnnNextPage_Pre);
-            this.panel2_Pre.Controls.Add(this.btnLastPage_Pre);
-            this.panel2_Pre.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2_Pre.Location = new System.Drawing.Point(0, 173);
-            this.panel2_Pre.Margin = new System.Windows.Forms.Padding(0);
-            this.panel2_Pre.Name = "panel2_Pre";
-            this.panel2_Pre.Size = new System.Drawing.Size(1164, 23);
-            this.panel2_Pre.TabIndex = 5;
+            this.panel1.Controls.Add(this.Base_Presupuesto);
+            this.panel1.Controls.Add(this.IVA_Presupuesto);
+            this.panel1.Controls.Add(this.Total_Presupuesto);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel1.Location = new System.Drawing.Point(790, 509);
+            this.panel1.Margin = new System.Windows.Forms.Padding(0, 0, 1, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(373, 20);
+            this.panel1.TabIndex = 12;
             // 
-            // btnFirstPage_Pre
+            // Base_Presupuesto
             // 
-            this.btnFirstPage_Pre.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnFirstPage_Pre.Location = new System.Drawing.Point(1064, 0);
-            this.btnFirstPage_Pre.Name = "btnFirstPage_Pre";
-            this.btnFirstPage_Pre.Size = new System.Drawing.Size(25, 23);
-            this.btnFirstPage_Pre.TabIndex = 0;
-            this.btnFirstPage_Pre.Text = "|<";
-            this.btnFirstPage_Pre.UseVisualStyleBackColor = true;
+            this.Base_Presupuesto.CueText = "Base Imponible";
+            this.Base_Presupuesto.Dock = System.Windows.Forms.DockStyle.Left;
+            this.Base_Presupuesto.Location = new System.Drawing.Point(0, 0);
+            this.Base_Presupuesto.Name = "Base_Presupuesto";
+            this.Base_Presupuesto.Size = new System.Drawing.Size(121, 20);
+            this.Base_Presupuesto.TabIndex = 0;
             // 
-            // btnPreviousPage_Pre
+            // IVA_Presupuesto
             // 
-            this.btnPreviousPage_Pre.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnPreviousPage_Pre.Location = new System.Drawing.Point(1089, 0);
-            this.btnPreviousPage_Pre.Name = "btnPreviousPage_Pre";
-            this.btnPreviousPage_Pre.Size = new System.Drawing.Size(25, 23);
-            this.btnPreviousPage_Pre.TabIndex = 1;
-            this.btnPreviousPage_Pre.Text = "<";
-            this.btnPreviousPage_Pre.UseVisualStyleBackColor = true;
+            this.IVA_Presupuesto.CueText = "I.V.A.";
+            this.IVA_Presupuesto.Location = new System.Drawing.Point(127, 0);
+            this.IVA_Presupuesto.Name = "IVA_Presupuesto";
+            this.IVA_Presupuesto.Size = new System.Drawing.Size(121, 20);
+            this.IVA_Presupuesto.TabIndex = 1;
             // 
-            // btnnNextPage_Pre
+            // Total_Presupuesto
             // 
-            this.btnnNextPage_Pre.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnnNextPage_Pre.Location = new System.Drawing.Point(1114, 0);
-            this.btnnNextPage_Pre.Name = "btnnNextPage_Pre";
-            this.btnnNextPage_Pre.Size = new System.Drawing.Size(25, 23);
-            this.btnnNextPage_Pre.TabIndex = 2;
-            this.btnnNextPage_Pre.Text = ">";
-            this.btnnNextPage_Pre.UseVisualStyleBackColor = true;
-            // 
-            // btnLastPage_Pre
-            // 
-            this.btnLastPage_Pre.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnLastPage_Pre.Location = new System.Drawing.Point(1139, 0);
-            this.btnLastPage_Pre.Name = "btnLastPage_Pre";
-            this.btnLastPage_Pre.Size = new System.Drawing.Size(25, 23);
-            this.btnLastPage_Pre.TabIndex = 3;
-            this.btnLastPage_Pre.Text = ">|";
-            this.btnLastPage_Pre.UseVisualStyleBackColor = true;
+            this.Total_Presupuesto.CueText = "Total";
+            this.Total_Presupuesto.Dock = System.Windows.Forms.DockStyle.Right;
+            this.Total_Presupuesto.Location = new System.Drawing.Point(255, 0);
+            this.Total_Presupuesto.Name = "Total_Presupuesto";
+            this.Total_Presupuesto.Size = new System.Drawing.Size(118, 20);
+            this.Total_Presupuesto.TabIndex = 2;
             // 
             // label1Cliente_Pre
             // 
@@ -374,6 +360,52 @@ namespace Gestaller
             this.flowLayoutPanel1Cliente_Pre.Size = new System.Drawing.Size(1158, 50);
             this.flowLayoutPanel1Cliente_Pre.TabIndex = 1;
             // 
+            // Cliente_Pre
+            // 
+            this.Cliente_Pre.CueText = "Cliente";
+            this.Cliente_Pre.FormattingEnabled = true;
+            this.Cliente_Pre.Location = new System.Drawing.Point(3, 3);
+            this.Cliente_Pre.Name = "Cliente_Pre";
+            this.Cliente_Pre.Size = new System.Drawing.Size(248, 21);
+            this.Cliente_Pre.TabIndex = 0;
+            this.Cliente_Pre.SelectionChangeCommitted += new System.EventHandler(this.cueComboBox1Cliente_Cliente_Pre_SelectionChangeCommitted);
+            // 
+            // Matricula_Pre
+            // 
+            this.Matricula_Pre.CueText = "Matrícula";
+            this.Matricula_Pre.FormattingEnabled = true;
+            this.Matricula_Pre.Location = new System.Drawing.Point(257, 3);
+            this.Matricula_Pre.Name = "Matricula_Pre";
+            this.Matricula_Pre.Size = new System.Drawing.Size(121, 21);
+            this.Matricula_Pre.TabIndex = 1;
+            this.Matricula_Pre.SelectionChangeCommitted += new System.EventHandler(this.cueComboBox2Cliente_Matricula_Pre_SelectionChangeCommitted);
+            // 
+            // Marca_Pre
+            // 
+            this.Marca_Pre.CueText = "Marca";
+            this.Marca_Pre.FormattingEnabled = true;
+            this.Marca_Pre.Location = new System.Drawing.Point(384, 3);
+            this.Marca_Pre.Name = "Marca_Pre";
+            this.Marca_Pre.Size = new System.Drawing.Size(121, 21);
+            this.Marca_Pre.TabIndex = 2;
+            // 
+            // Modelo_Pre
+            // 
+            this.Modelo_Pre.CueText = "Modelo";
+            this.Modelo_Pre.FormattingEnabled = true;
+            this.Modelo_Pre.Location = new System.Drawing.Point(511, 3);
+            this.Modelo_Pre.Name = "Modelo_Pre";
+            this.Modelo_Pre.Size = new System.Drawing.Size(248, 21);
+            this.Modelo_Pre.TabIndex = 3;
+            // 
+            // Km_Pre
+            // 
+            this.Km_Pre.CueText = "Kilometros";
+            this.Km_Pre.Location = new System.Drawing.Point(765, 3);
+            this.Km_Pre.Name = "Km_Pre";
+            this.Km_Pre.Size = new System.Drawing.Size(121, 20);
+            this.Km_Pre.TabIndex = 4;
+            // 
             // label2Presupuesto_Pre
             // 
             this.label2Presupuesto_Pre.AutoSize = true;
@@ -398,6 +430,36 @@ namespace Gestaller
             this.flowLayoutPanel2Presupuesto_Pre.Size = new System.Drawing.Size(1161, 54);
             this.flowLayoutPanel2Presupuesto_Pre.TabIndex = 4;
             // 
+            // Presupuesto_Pre
+            // 
+            this.Presupuesto_Pre.CueText = "Nº Presupuesto";
+            this.Presupuesto_Pre.FormattingEnabled = true;
+            this.Presupuesto_Pre.Location = new System.Drawing.Point(3, 3);
+            this.Presupuesto_Pre.Name = "Presupuesto_Pre";
+            this.Presupuesto_Pre.Size = new System.Drawing.Size(121, 21);
+            this.Presupuesto_Pre.TabIndex = 0;
+            this.Presupuesto_Pre.SelectionChangeCommitted += new System.EventHandler(this.cueComboBox1Presupuesto_BudgetNum_Pre_SelectionChangeCommitted);
+            // 
+            // Proforma_Pre
+            // 
+            this.Proforma_Pre.CueText = "Nº Proforma";
+            this.Proforma_Pre.FormattingEnabled = true;
+            this.Proforma_Pre.Location = new System.Drawing.Point(130, 3);
+            this.Proforma_Pre.Name = "Proforma_Pre";
+            this.Proforma_Pre.Size = new System.Drawing.Size(121, 21);
+            this.Proforma_Pre.TabIndex = 1;
+            this.Proforma_Pre.SelectionChangeCommitted += new System.EventHandler(this.cueComboBox2Presupuesto_ProformaNum_Pre_SelectionChangeCommitted);
+            // 
+            // Factura_Pre
+            // 
+            this.Factura_Pre.CueText = "Nº Factura";
+            this.Factura_Pre.FormattingEnabled = true;
+            this.Factura_Pre.Location = new System.Drawing.Point(257, 3);
+            this.Factura_Pre.Name = "Factura_Pre";
+            this.Factura_Pre.Size = new System.Drawing.Size(121, 21);
+            this.Factura_Pre.TabIndex = 2;
+            this.Factura_Pre.SelectionChangeCommitted += new System.EventHandler(this.cueComboBox3Presupuesto_InvoiceNum_Pre_SelectionChangeCommitted);
+            // 
             // Fecha_Pre
             // 
             this.Fecha_Pre.CustomFormat = "";
@@ -406,6 +468,26 @@ namespace Gestaller
             this.Fecha_Pre.Name = "Fecha_Pre";
             this.Fecha_Pre.Size = new System.Drawing.Size(121, 20);
             this.Fecha_Pre.TabIndex = 3;
+            // 
+            // label3Producto_Pre
+            // 
+            this.label3Producto_Pre.AutoSize = true;
+            this.label3Producto_Pre.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label3Producto_Pre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.label3Producto_Pre.Location = new System.Drawing.Point(3, 270);
+            this.label3Producto_Pre.Name = "label3Producto_Pre";
+            this.label3Producto_Pre.Size = new System.Drawing.Size(1158, 20);
+            this.label3Producto_Pre.TabIndex = 8;
+            this.label3Producto_Pre.Text = "PRODUCTO";
+            // 
+            // Observaciones_Pre
+            // 
+            this.Observaciones_Pre.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Observaciones_Pre.Location = new System.Drawing.Point(3, 196);
+            this.Observaciones_Pre.Name = "Observaciones_Pre";
+            this.Observaciones_Pre.Size = new System.Drawing.Size(1158, 48);
+            this.Observaciones_Pre.TabIndex = 6;
+            this.Observaciones_Pre.Text = "";
             // 
             // panel3_Pre
             // 
@@ -467,7 +549,7 @@ namespace Gestaller
             this.Grid_Presupuesto.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Grid_Presupuesto.Location = new System.Drawing.Point(3, 370);
             this.Grid_Presupuesto.Name = "Grid_Presupuesto";
-            this.Grid_Presupuesto.Size = new System.Drawing.Size(1158, 133);
+            this.Grid_Presupuesto.Size = new System.Drawing.Size(1158, 136);
             this.Grid_Presupuesto.TabIndex = 11;
             this.Grid_Presupuesto.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView3_CellMouseClick);
             // 
@@ -479,18 +561,28 @@ namespace Gestaller
             this.panel4_Pre.Controls.Add(this.btnFactura_Pre);
             this.panel4_Pre.Controls.Add(this.btnBorrarPresupuesto_Pre);
             this.panel4_Pre.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4_Pre.Location = new System.Drawing.Point(0, 526);
+            this.panel4_Pre.Location = new System.Drawing.Point(0, 529);
             this.panel4_Pre.Margin = new System.Windows.Forms.Padding(0);
             this.panel4_Pre.Name = "panel4_Pre";
-            this.panel4_Pre.Size = new System.Drawing.Size(1164, 23);
+            this.panel4_Pre.Size = new System.Drawing.Size(1164, 20);
             this.panel4_Pre.TabIndex = 13;
+            // 
+            // btnImprimir_Pre
+            // 
+            this.btnImprimir_Pre.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnImprimir_Pre.Location = new System.Drawing.Point(789, 0);
+            this.btnImprimir_Pre.Name = "btnImprimir_Pre";
+            this.btnImprimir_Pre.Size = new System.Drawing.Size(75, 20);
+            this.btnImprimir_Pre.TabIndex = 0;
+            this.btnImprimir_Pre.Text = "Imprimir";
+            this.btnImprimir_Pre.UseVisualStyleBackColor = true;
             // 
             // btnPresupuestor_Pre
             // 
             this.btnPresupuestor_Pre.Dock = System.Windows.Forms.DockStyle.Right;
             this.btnPresupuestor_Pre.Location = new System.Drawing.Point(864, 0);
             this.btnPresupuestor_Pre.Name = "btnPresupuestor_Pre";
-            this.btnPresupuestor_Pre.Size = new System.Drawing.Size(75, 23);
+            this.btnPresupuestor_Pre.Size = new System.Drawing.Size(75, 20);
             this.btnPresupuestor_Pre.TabIndex = 1;
             this.btnPresupuestor_Pre.Text = "Gen. Presu";
             this.btnPresupuestor_Pre.UseVisualStyleBackColor = true;
@@ -500,7 +592,7 @@ namespace Gestaller
             this.btnProforma_Pre.Dock = System.Windows.Forms.DockStyle.Right;
             this.btnProforma_Pre.Location = new System.Drawing.Point(939, 0);
             this.btnProforma_Pre.Name = "btnProforma_Pre";
-            this.btnProforma_Pre.Size = new System.Drawing.Size(75, 23);
+            this.btnProforma_Pre.Size = new System.Drawing.Size(75, 20);
             this.btnProforma_Pre.TabIndex = 2;
             this.btnProforma_Pre.Text = "Gen. Profor.";
             this.btnProforma_Pre.UseVisualStyleBackColor = true;
@@ -510,7 +602,7 @@ namespace Gestaller
             this.btnFactura_Pre.Dock = System.Windows.Forms.DockStyle.Right;
             this.btnFactura_Pre.Location = new System.Drawing.Point(1014, 0);
             this.btnFactura_Pre.Name = "btnFactura_Pre";
-            this.btnFactura_Pre.Size = new System.Drawing.Size(75, 23);
+            this.btnFactura_Pre.Size = new System.Drawing.Size(75, 20);
             this.btnFactura_Pre.TabIndex = 3;
             this.btnFactura_Pre.Text = "Gen.Factur.";
             this.btnFactura_Pre.UseVisualStyleBackColor = true;
@@ -520,54 +612,10 @@ namespace Gestaller
             this.btnBorrarPresupuesto_Pre.Dock = System.Windows.Forms.DockStyle.Right;
             this.btnBorrarPresupuesto_Pre.Location = new System.Drawing.Point(1089, 0);
             this.btnBorrarPresupuesto_Pre.Name = "btnBorrarPresupuesto_Pre";
-            this.btnBorrarPresupuesto_Pre.Size = new System.Drawing.Size(75, 23);
+            this.btnBorrarPresupuesto_Pre.Size = new System.Drawing.Size(75, 20);
             this.btnBorrarPresupuesto_Pre.TabIndex = 4;
             this.btnBorrarPresupuesto_Pre.Text = "Borrar Pre.";
             this.btnBorrarPresupuesto_Pre.UseVisualStyleBackColor = true;
-            // 
-            // flowLayoutPanel3Impuestos_Pre
-            // 
-            this.flowLayoutPanel3Impuestos_Pre.AutoScroll = true;
-            this.flowLayoutPanel3Impuestos_Pre.Controls.Add(this.Base_Pre);
-            this.flowLayoutPanel3Impuestos_Pre.Controls.Add(this.IVA_Pre);
-            this.flowLayoutPanel3Impuestos_Pre.Controls.Add(this.Total_Pre);
-            this.flowLayoutPanel3Impuestos_Pre.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel3Impuestos_Pre.Location = new System.Drawing.Point(0, 506);
-            this.flowLayoutPanel3Impuestos_Pre.Margin = new System.Windows.Forms.Padding(0);
-            this.flowLayoutPanel3Impuestos_Pre.Name = "flowLayoutPanel3Impuestos_Pre";
-            this.flowLayoutPanel3Impuestos_Pre.Size = new System.Drawing.Size(1164, 20);
-            this.flowLayoutPanel3Impuestos_Pre.TabIndex = 12;
-            // 
-            // Observaciones_Pre
-            // 
-            this.Observaciones_Pre.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Observaciones_Pre.Location = new System.Drawing.Point(3, 293);
-            this.Observaciones_Pre.Name = "Observaciones_Pre";
-            this.Observaciones_Pre.Size = new System.Drawing.Size(1158, 48);
-            this.Observaciones_Pre.TabIndex = 9;
-            this.Observaciones_Pre.Text = "";
-            // 
-            // label3Producto_Pre
-            // 
-            this.label3Producto_Pre.AutoSize = true;
-            this.label3Producto_Pre.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label3Producto_Pre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.label3Producto_Pre.Location = new System.Drawing.Point(3, 196);
-            this.label3Producto_Pre.Name = "label3Producto_Pre";
-            this.label3Producto_Pre.Size = new System.Drawing.Size(1158, 20);
-            this.label3Producto_Pre.TabIndex = 6;
-            this.label3Producto_Pre.Text = "PRODUCTO";
-            // 
-            // label4Observacion_Pre
-            // 
-            this.label4Observacion_Pre.AutoSize = true;
-            this.label4Observacion_Pre.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label4Observacion_Pre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.label4Observacion_Pre.Location = new System.Drawing.Point(3, 270);
-            this.label4Observacion_Pre.Name = "label4Observacion_Pre";
-            this.label4Observacion_Pre.Size = new System.Drawing.Size(1158, 20);
-            this.label4Observacion_Pre.TabIndex = 8;
-            this.label4Observacion_Pre.Text = "OBSERVACIONES";
             // 
             // flowLayoutPanel3Producto_Pre
             // 
@@ -580,11 +628,135 @@ namespace Gestaller
             this.flowLayoutPanel3Producto_Pre.Controls.Add(this.Total_Linea_Pre);
             this.flowLayoutPanel3Producto_Pre.Controls.Add(this.IVA_Producto_Pre);
             this.flowLayoutPanel3Producto_Pre.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel3Producto_Pre.Location = new System.Drawing.Point(3, 216);
+            this.flowLayoutPanel3Producto_Pre.Location = new System.Drawing.Point(3, 290);
             this.flowLayoutPanel3Producto_Pre.Margin = new System.Windows.Forms.Padding(3, 0, 0, 0);
             this.flowLayoutPanel3Producto_Pre.Name = "flowLayoutPanel3Producto_Pre";
             this.flowLayoutPanel3Producto_Pre.Size = new System.Drawing.Size(1161, 54);
-            this.flowLayoutPanel3Producto_Pre.TabIndex = 7;
+            this.flowLayoutPanel3Producto_Pre.TabIndex = 9;
+            // 
+            // Referencia_Pre
+            // 
+            this.Referencia_Pre.CueText = "Ref.Producto";
+            this.Referencia_Pre.FormattingEnabled = true;
+            this.Referencia_Pre.Location = new System.Drawing.Point(3, 3);
+            this.Referencia_Pre.Name = "Referencia_Pre";
+            this.Referencia_Pre.Size = new System.Drawing.Size(121, 21);
+            this.Referencia_Pre.TabIndex = 0;
+            // 
+            // Descripción_Pre
+            // 
+            this.Descripción_Pre.CueText = "Decripción";
+            this.Descripción_Pre.FormattingEnabled = true;
+            this.Descripción_Pre.Location = new System.Drawing.Point(130, 3);
+            this.Descripción_Pre.Name = "Descripción_Pre";
+            this.Descripción_Pre.Size = new System.Drawing.Size(375, 21);
+            this.Descripción_Pre.TabIndex = 1;
+            // 
+            // PVP_Pre
+            // 
+            this.PVP_Pre.CueText = "P.V.P.";
+            this.PVP_Pre.Location = new System.Drawing.Point(511, 3);
+            this.PVP_Pre.Name = "PVP_Pre";
+            this.PVP_Pre.Size = new System.Drawing.Size(121, 20);
+            this.PVP_Pre.TabIndex = 2;
+            // 
+            // Cantidad_Pre
+            // 
+            this.Cantidad_Pre.CueText = "Cantidad";
+            this.Cantidad_Pre.FormattingEnabled = true;
+            this.Cantidad_Pre.Location = new System.Drawing.Point(638, 3);
+            this.Cantidad_Pre.Name = "Cantidad_Pre";
+            this.Cantidad_Pre.Size = new System.Drawing.Size(121, 21);
+            this.Cantidad_Pre.TabIndex = 3;
+            // 
+            // Descuento_Pre
+            // 
+            this.Descuento_Pre.CueText = "Descuento";
+            this.Descuento_Pre.FormattingEnabled = true;
+            this.Descuento_Pre.Location = new System.Drawing.Point(765, 3);
+            this.Descuento_Pre.Name = "Descuento_Pre";
+            this.Descuento_Pre.Size = new System.Drawing.Size(121, 21);
+            this.Descuento_Pre.TabIndex = 4;
+            // 
+            // Total_Linea_Pre
+            // 
+            this.Total_Linea_Pre.CueText = "Total Línea";
+            this.Total_Linea_Pre.Location = new System.Drawing.Point(892, 3);
+            this.Total_Linea_Pre.Name = "Total_Linea_Pre";
+            this.Total_Linea_Pre.Size = new System.Drawing.Size(121, 20);
+            this.Total_Linea_Pre.TabIndex = 5;
+            // 
+            // IVA_Producto_Pre
+            // 
+            this.IVA_Producto_Pre.CueText = "I.V.A.";
+            this.IVA_Producto_Pre.Location = new System.Drawing.Point(1019, 3);
+            this.IVA_Producto_Pre.Name = "IVA_Producto_Pre";
+            this.IVA_Producto_Pre.Size = new System.Drawing.Size(121, 20);
+            this.IVA_Producto_Pre.TabIndex = 6;
+            // 
+            // label4Observacion_Pre
+            // 
+            this.label4Observacion_Pre.AutoSize = true;
+            this.label4Observacion_Pre.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label4Observacion_Pre.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4Observacion_Pre.Location = new System.Drawing.Point(3, 173);
+            this.label4Observacion_Pre.Name = "label4Observacion_Pre";
+            this.label4Observacion_Pre.Size = new System.Drawing.Size(1158, 20);
+            this.label4Observacion_Pre.TabIndex = 5;
+            this.label4Observacion_Pre.Text = "Observaciones";
+            // 
+            // panel2_Pre
+            // 
+            this.panel2_Pre.Controls.Add(this.btnFirstPage_Pre);
+            this.panel2_Pre.Controls.Add(this.btnPreviousPage_Pre);
+            this.panel2_Pre.Controls.Add(this.btnnNextPage_Pre);
+            this.panel2_Pre.Controls.Add(this.btnLastPage_Pre);
+            this.panel2_Pre.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2_Pre.Location = new System.Drawing.Point(0, 247);
+            this.panel2_Pre.Margin = new System.Windows.Forms.Padding(0);
+            this.panel2_Pre.Name = "panel2_Pre";
+            this.panel2_Pre.Size = new System.Drawing.Size(1164, 23);
+            this.panel2_Pre.TabIndex = 7;
+            // 
+            // btnFirstPage_Pre
+            // 
+            this.btnFirstPage_Pre.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnFirstPage_Pre.Location = new System.Drawing.Point(1064, 0);
+            this.btnFirstPage_Pre.Name = "btnFirstPage_Pre";
+            this.btnFirstPage_Pre.Size = new System.Drawing.Size(25, 23);
+            this.btnFirstPage_Pre.TabIndex = 0;
+            this.btnFirstPage_Pre.Text = "|<";
+            this.btnFirstPage_Pre.UseVisualStyleBackColor = true;
+            // 
+            // btnPreviousPage_Pre
+            // 
+            this.btnPreviousPage_Pre.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnPreviousPage_Pre.Location = new System.Drawing.Point(1089, 0);
+            this.btnPreviousPage_Pre.Name = "btnPreviousPage_Pre";
+            this.btnPreviousPage_Pre.Size = new System.Drawing.Size(25, 23);
+            this.btnPreviousPage_Pre.TabIndex = 1;
+            this.btnPreviousPage_Pre.Text = "<";
+            this.btnPreviousPage_Pre.UseVisualStyleBackColor = true;
+            // 
+            // btnnNextPage_Pre
+            // 
+            this.btnnNextPage_Pre.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnnNextPage_Pre.Location = new System.Drawing.Point(1114, 0);
+            this.btnnNextPage_Pre.Name = "btnnNextPage_Pre";
+            this.btnnNextPage_Pre.Size = new System.Drawing.Size(25, 23);
+            this.btnnNextPage_Pre.TabIndex = 2;
+            this.btnnNextPage_Pre.Text = ">";
+            this.btnnNextPage_Pre.UseVisualStyleBackColor = true;
+            // 
+            // btnLastPage_Pre
+            // 
+            this.btnLastPage_Pre.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnLastPage_Pre.Location = new System.Drawing.Point(1139, 0);
+            this.btnLastPage_Pre.Name = "btnLastPage_Pre";
+            this.btnLastPage_Pre.Size = new System.Drawing.Size(25, 23);
+            this.btnLastPage_Pre.TabIndex = 3;
+            this.btnLastPage_Pre.Text = ">|";
+            this.btnLastPage_Pre.UseVisualStyleBackColor = true;
             // 
             // tabPageProforma
             // 
@@ -601,20 +773,20 @@ namespace Gestaller
             // 
             this.tableLayoutPanel1Proforma.ColumnCount = 1;
             this.tableLayoutPanel1Proforma.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1Proforma.Controls.Add(this.flowLayoutPanel1, 0, 7);
-            this.tableLayoutPanel1Proforma.Controls.Add(this.panel2_Pro, 0, 5);
+            this.tableLayoutPanel1Proforma.Controls.Add(this.panel2, 0, 12);
             this.tableLayoutPanel1Proforma.Controls.Add(this.label1Cliente_Pro, 0, 0);
             this.tableLayoutPanel1Proforma.Controls.Add(this.panel1_Pro, 0, 2);
             this.tableLayoutPanel1Proforma.Controls.Add(this.flowLayoutPanel1Cliente_Pro, 0, 1);
             this.tableLayoutPanel1Proforma.Controls.Add(this.label2Presupuesto_Pro, 0, 3);
             this.tableLayoutPanel1Proforma.Controls.Add(this.flowLayoutPanel2Presupuesto_Pro, 0, 4);
             this.tableLayoutPanel1Proforma.Controls.Add(this.panel3_Pro, 0, 10);
+            this.tableLayoutPanel1Proforma.Controls.Add(this.label3Producto_Pro, 0, 8);
+            this.tableLayoutPanel1Proforma.Controls.Add(this.label4Observacion_Pro, 0, 5);
+            this.tableLayoutPanel1Proforma.Controls.Add(this.panel2_Pro, 0, 7);
             this.tableLayoutPanel1Proforma.Controls.Add(this.Grid_Proforma, 0, 11);
             this.tableLayoutPanel1Proforma.Controls.Add(this.panel4_Pro, 0, 13);
-            this.tableLayoutPanel1Proforma.Controls.Add(this.flowLayoutPanel3Impuestos_Pro, 0, 12);
-            this.tableLayoutPanel1Proforma.Controls.Add(this.Observaciones_Proforma, 0, 9);
-            this.tableLayoutPanel1Proforma.Controls.Add(this.label3Producto_Pro, 0, 6);
-            this.tableLayoutPanel1Proforma.Controls.Add(this.label4Observacion_Pro, 0, 8);
+            this.tableLayoutPanel1Proforma.Controls.Add(this.flowLayoutPanel1, 0, 9);
+            this.tableLayoutPanel1Proforma.Controls.Add(this.Observaciones_Proforma, 0, 6);
             this.tableLayoutPanel1Proforma.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1Proforma.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel1Proforma.Name = "tableLayoutPanel1Proforma";
@@ -624,9 +796,9 @@ namespace Gestaller
             this.tableLayoutPanel1Proforma.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 23F));
             this.tableLayoutPanel1Proforma.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1Proforma.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 54F));
-            this.tableLayoutPanel1Proforma.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 23F));
             this.tableLayoutPanel1Proforma.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1Proforma.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 54F));
+            this.tableLayoutPanel1Proforma.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 23F));
             this.tableLayoutPanel1Proforma.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1Proforma.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 54F));
             this.tableLayoutPanel1Proforma.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 23F));
@@ -635,61 +807,46 @@ namespace Gestaller
             this.tableLayoutPanel1Proforma.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 23F));
             this.tableLayoutPanel1Proforma.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1Proforma.Size = new System.Drawing.Size(1164, 549);
-            this.tableLayoutPanel1Proforma.TabIndex = 1;
+            this.tableLayoutPanel1Proforma.TabIndex = 0;
             this.tableLayoutPanel1Proforma.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1Proforma_Paint);
             // 
-            // panel2_Pro
+            // panel2
             // 
-            this.panel2_Pro.Controls.Add(this.btnFirstPage_Proforma);
-            this.panel2_Pro.Controls.Add(this.btnPreviousPage_Proforma);
-            this.panel2_Pro.Controls.Add(this.btnNextPage_Proforma);
-            this.panel2_Pro.Controls.Add(this.btnLastPage_Proforma);
-            this.panel2_Pro.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2_Pro.Location = new System.Drawing.Point(0, 173);
-            this.panel2_Pro.Margin = new System.Windows.Forms.Padding(0);
-            this.panel2_Pro.Name = "panel2_Pro";
-            this.panel2_Pro.Size = new System.Drawing.Size(1164, 23);
-            this.panel2_Pro.TabIndex = 5;
+            this.panel2.Controls.Add(this.Base_Proforma);
+            this.panel2.Controls.Add(this.IVA_Proforma);
+            this.panel2.Controls.Add(this.Total_Proforma);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel2.Location = new System.Drawing.Point(790, 506);
+            this.panel2.Margin = new System.Windows.Forms.Padding(0, 0, 1, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(373, 20);
+            this.panel2.TabIndex = 12;
             // 
-            // btnFirstPage_Proforma
+            // Base_Proforma
             // 
-            this.btnFirstPage_Proforma.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnFirstPage_Proforma.Location = new System.Drawing.Point(1064, 0);
-            this.btnFirstPage_Proforma.Name = "btnFirstPage_Proforma";
-            this.btnFirstPage_Proforma.Size = new System.Drawing.Size(25, 23);
-            this.btnFirstPage_Proforma.TabIndex = 0;
-            this.btnFirstPage_Proforma.Text = "|<";
-            this.btnFirstPage_Proforma.UseVisualStyleBackColor = true;
+            this.Base_Proforma.CueText = "Base Imponible";
+            this.Base_Proforma.Dock = System.Windows.Forms.DockStyle.Left;
+            this.Base_Proforma.Location = new System.Drawing.Point(0, 0);
+            this.Base_Proforma.Name = "Base_Proforma";
+            this.Base_Proforma.Size = new System.Drawing.Size(121, 20);
+            this.Base_Proforma.TabIndex = 0;
             // 
-            // btnPreviousPage_Proforma
+            // IVA_Proforma
             // 
-            this.btnPreviousPage_Proforma.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnPreviousPage_Proforma.Location = new System.Drawing.Point(1089, 0);
-            this.btnPreviousPage_Proforma.Name = "btnPreviousPage_Proforma";
-            this.btnPreviousPage_Proforma.Size = new System.Drawing.Size(25, 23);
-            this.btnPreviousPage_Proforma.TabIndex = 1;
-            this.btnPreviousPage_Proforma.Text = "<";
-            this.btnPreviousPage_Proforma.UseVisualStyleBackColor = true;
+            this.IVA_Proforma.CueText = "I.V.A.";
+            this.IVA_Proforma.Location = new System.Drawing.Point(127, 0);
+            this.IVA_Proforma.Name = "IVA_Proforma";
+            this.IVA_Proforma.Size = new System.Drawing.Size(121, 20);
+            this.IVA_Proforma.TabIndex = 1;
             // 
-            // btnNextPage_Proforma
+            // Total_Proforma
             // 
-            this.btnNextPage_Proforma.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnNextPage_Proforma.Location = new System.Drawing.Point(1114, 0);
-            this.btnNextPage_Proforma.Name = "btnNextPage_Proforma";
-            this.btnNextPage_Proforma.Size = new System.Drawing.Size(25, 23);
-            this.btnNextPage_Proforma.TabIndex = 2;
-            this.btnNextPage_Proforma.Text = ">";
-            this.btnNextPage_Proforma.UseVisualStyleBackColor = true;
-            // 
-            // btnLastPage_Proforma
-            // 
-            this.btnLastPage_Proforma.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnLastPage_Proforma.Location = new System.Drawing.Point(1139, 0);
-            this.btnLastPage_Proforma.Name = "btnLastPage_Proforma";
-            this.btnLastPage_Proforma.Size = new System.Drawing.Size(25, 23);
-            this.btnLastPage_Proforma.TabIndex = 3;
-            this.btnLastPage_Proforma.Text = ">|";
-            this.btnLastPage_Proforma.UseVisualStyleBackColor = true;
+            this.Total_Proforma.CueText = "Total";
+            this.Total_Proforma.Dock = System.Windows.Forms.DockStyle.Right;
+            this.Total_Proforma.Location = new System.Drawing.Point(255, 0);
+            this.Total_Proforma.Name = "Total_Proforma";
+            this.Total_Proforma.Size = new System.Drawing.Size(118, 20);
+            this.Total_Proforma.TabIndex = 2;
             // 
             // label1Cliente_Pro
             // 
@@ -735,6 +892,50 @@ namespace Gestaller
             this.flowLayoutPanel1Cliente_Pro.Size = new System.Drawing.Size(1158, 50);
             this.flowLayoutPanel1Cliente_Pro.TabIndex = 1;
             // 
+            // Cliente_Proforma
+            // 
+            this.Cliente_Proforma.CueText = "Cliente";
+            this.Cliente_Proforma.FormattingEnabled = true;
+            this.Cliente_Proforma.Location = new System.Drawing.Point(3, 3);
+            this.Cliente_Proforma.Name = "Cliente_Proforma";
+            this.Cliente_Proforma.Size = new System.Drawing.Size(248, 21);
+            this.Cliente_Proforma.TabIndex = 0;
+            // 
+            // Matricula_Proforma
+            // 
+            this.Matricula_Proforma.CueText = "Matrícula";
+            this.Matricula_Proforma.FormattingEnabled = true;
+            this.Matricula_Proforma.Location = new System.Drawing.Point(257, 3);
+            this.Matricula_Proforma.Name = "Matricula_Proforma";
+            this.Matricula_Proforma.Size = new System.Drawing.Size(121, 21);
+            this.Matricula_Proforma.TabIndex = 1;
+            // 
+            // Marca_Proforma
+            // 
+            this.Marca_Proforma.CueText = "Marca";
+            this.Marca_Proforma.FormattingEnabled = true;
+            this.Marca_Proforma.Location = new System.Drawing.Point(384, 3);
+            this.Marca_Proforma.Name = "Marca_Proforma";
+            this.Marca_Proforma.Size = new System.Drawing.Size(121, 21);
+            this.Marca_Proforma.TabIndex = 2;
+            // 
+            // Modelo_Proforma
+            // 
+            this.Modelo_Proforma.CueText = "Modelo";
+            this.Modelo_Proforma.FormattingEnabled = true;
+            this.Modelo_Proforma.Location = new System.Drawing.Point(511, 3);
+            this.Modelo_Proforma.Name = "Modelo_Proforma";
+            this.Modelo_Proforma.Size = new System.Drawing.Size(248, 21);
+            this.Modelo_Proforma.TabIndex = 3;
+            // 
+            // Km_Proforma
+            // 
+            this.Km_Proforma.CueText = "Kilometros";
+            this.Km_Proforma.Location = new System.Drawing.Point(765, 3);
+            this.Km_Proforma.Name = "Km_Proforma";
+            this.Km_Proforma.Size = new System.Drawing.Size(121, 20);
+            this.Km_Proforma.TabIndex = 4;
+            // 
             // label2Presupuesto_Pro
             // 
             this.label2Presupuesto_Pro.AutoSize = true;
@@ -759,6 +960,33 @@ namespace Gestaller
             this.flowLayoutPanel2Presupuesto_Pro.Size = new System.Drawing.Size(1161, 54);
             this.flowLayoutPanel2Presupuesto_Pro.TabIndex = 4;
             // 
+            // Presupuesto_Proforma
+            // 
+            this.Presupuesto_Proforma.CueText = "Nº Presupuesto";
+            this.Presupuesto_Proforma.FormattingEnabled = true;
+            this.Presupuesto_Proforma.Location = new System.Drawing.Point(3, 3);
+            this.Presupuesto_Proforma.Name = "Presupuesto_Proforma";
+            this.Presupuesto_Proforma.Size = new System.Drawing.Size(121, 21);
+            this.Presupuesto_Proforma.TabIndex = 0;
+            // 
+            // Proforma_Proforma
+            // 
+            this.Proforma_Proforma.CueText = "Nº Proforma";
+            this.Proforma_Proforma.FormattingEnabled = true;
+            this.Proforma_Proforma.Location = new System.Drawing.Point(130, 3);
+            this.Proforma_Proforma.Name = "Proforma_Proforma";
+            this.Proforma_Proforma.Size = new System.Drawing.Size(121, 21);
+            this.Proforma_Proforma.TabIndex = 1;
+            // 
+            // Factura_Proforma
+            // 
+            this.Factura_Proforma.CueText = "Nº Factura";
+            this.Factura_Proforma.FormattingEnabled = true;
+            this.Factura_Proforma.Location = new System.Drawing.Point(257, 3);
+            this.Factura_Proforma.Name = "Factura_Proforma";
+            this.Factura_Proforma.Size = new System.Drawing.Size(121, 21);
+            this.Factura_Proforma.TabIndex = 2;
+            // 
             // Fecha_Proforma
             // 
             this.Fecha_Proforma.CustomFormat = "";
@@ -767,15 +995,6 @@ namespace Gestaller
             this.Fecha_Proforma.Name = "Fecha_Proforma";
             this.Fecha_Proforma.Size = new System.Drawing.Size(121, 20);
             this.Fecha_Proforma.TabIndex = 3;
-            // 
-            // Observaciones_Proforma
-            // 
-            this.Observaciones_Proforma.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Observaciones_Proforma.Location = new System.Drawing.Point(3, 293);
-            this.Observaciones_Proforma.Name = "Observaciones_Proforma";
-            this.Observaciones_Proforma.Size = new System.Drawing.Size(1158, 48);
-            this.Observaciones_Proforma.TabIndex = 9;
-            this.Observaciones_Proforma.Text = "";
             // 
             // panel3_Pro
             // 
@@ -830,6 +1049,81 @@ namespace Gestaller
             this.btnDevolucion_Proforma.Text = "Devolución";
             this.btnDevolucion_Proforma.UseVisualStyleBackColor = true;
             // 
+            // label3Producto_Pro
+            // 
+            this.label3Producto_Pro.AutoSize = true;
+            this.label3Producto_Pro.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label3Producto_Pro.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.label3Producto_Pro.Location = new System.Drawing.Point(3, 270);
+            this.label3Producto_Pro.Name = "label3Producto_Pro";
+            this.label3Producto_Pro.Size = new System.Drawing.Size(1158, 20);
+            this.label3Producto_Pro.TabIndex = 8;
+            this.label3Producto_Pro.Text = "PRODUCTO";
+            // 
+            // label4Observacion_Pro
+            // 
+            this.label4Observacion_Pro.AutoSize = true;
+            this.label4Observacion_Pro.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label4Observacion_Pro.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.label4Observacion_Pro.Location = new System.Drawing.Point(3, 173);
+            this.label4Observacion_Pro.Name = "label4Observacion_Pro";
+            this.label4Observacion_Pro.Size = new System.Drawing.Size(1158, 20);
+            this.label4Observacion_Pro.TabIndex = 5;
+            this.label4Observacion_Pro.Text = "Observaciones";
+            // 
+            // panel2_Pro
+            // 
+            this.panel2_Pro.Controls.Add(this.btnFirstPage_Proforma);
+            this.panel2_Pro.Controls.Add(this.btnPreviousPage_Proforma);
+            this.panel2_Pro.Controls.Add(this.btnNextPage_Proforma);
+            this.panel2_Pro.Controls.Add(this.btnLastPage_Proforma);
+            this.panel2_Pro.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2_Pro.Location = new System.Drawing.Point(0, 247);
+            this.panel2_Pro.Margin = new System.Windows.Forms.Padding(0);
+            this.panel2_Pro.Name = "panel2_Pro";
+            this.panel2_Pro.Size = new System.Drawing.Size(1164, 23);
+            this.panel2_Pro.TabIndex = 7;
+            // 
+            // btnFirstPage_Proforma
+            // 
+            this.btnFirstPage_Proforma.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnFirstPage_Proforma.Location = new System.Drawing.Point(1064, 0);
+            this.btnFirstPage_Proforma.Name = "btnFirstPage_Proforma";
+            this.btnFirstPage_Proforma.Size = new System.Drawing.Size(25, 23);
+            this.btnFirstPage_Proforma.TabIndex = 0;
+            this.btnFirstPage_Proforma.Text = "|<";
+            this.btnFirstPage_Proforma.UseVisualStyleBackColor = true;
+            // 
+            // btnPreviousPage_Proforma
+            // 
+            this.btnPreviousPage_Proforma.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnPreviousPage_Proforma.Location = new System.Drawing.Point(1089, 0);
+            this.btnPreviousPage_Proforma.Name = "btnPreviousPage_Proforma";
+            this.btnPreviousPage_Proforma.Size = new System.Drawing.Size(25, 23);
+            this.btnPreviousPage_Proforma.TabIndex = 1;
+            this.btnPreviousPage_Proforma.Text = "<";
+            this.btnPreviousPage_Proforma.UseVisualStyleBackColor = true;
+            // 
+            // btnNextPage_Proforma
+            // 
+            this.btnNextPage_Proforma.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnNextPage_Proforma.Location = new System.Drawing.Point(1114, 0);
+            this.btnNextPage_Proforma.Name = "btnNextPage_Proforma";
+            this.btnNextPage_Proforma.Size = new System.Drawing.Size(25, 23);
+            this.btnNextPage_Proforma.TabIndex = 2;
+            this.btnNextPage_Proforma.Text = ">";
+            this.btnNextPage_Proforma.UseVisualStyleBackColor = true;
+            // 
+            // btnLastPage_Proforma
+            // 
+            this.btnLastPage_Proforma.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnLastPage_Proforma.Location = new System.Drawing.Point(1139, 0);
+            this.btnLastPage_Proforma.Name = "btnLastPage_Proforma";
+            this.btnLastPage_Proforma.Size = new System.Drawing.Size(25, 23);
+            this.btnLastPage_Proforma.TabIndex = 3;
+            this.btnLastPage_Proforma.Text = ">|";
+            this.btnLastPage_Proforma.UseVisualStyleBackColor = true;
+            // 
             // Grid_Proforma
             // 
             this.Grid_Proforma.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
@@ -853,6 +1147,16 @@ namespace Gestaller
             this.panel4_Pro.Name = "panel4_Pro";
             this.panel4_Pro.Size = new System.Drawing.Size(1164, 23);
             this.panel4_Pro.TabIndex = 13;
+            // 
+            // btnImprimir_Proforma
+            // 
+            this.btnImprimir_Proforma.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnImprimir_Proforma.Location = new System.Drawing.Point(789, 0);
+            this.btnImprimir_Proforma.Name = "btnImprimir_Proforma";
+            this.btnImprimir_Proforma.Size = new System.Drawing.Size(75, 23);
+            this.btnImprimir_Proforma.TabIndex = 0;
+            this.btnImprimir_Proforma.Text = "Imprimir";
+            this.btnImprimir_Proforma.UseVisualStyleBackColor = true;
             // 
             // btnPresupuesto_Proforma
             // 
@@ -894,17 +1198,90 @@ namespace Gestaller
             this.btnBorrarProforma_Proforma.Text = "Borrar Pro.";
             this.btnBorrarProforma_Proforma.UseVisualStyleBackColor = true;
             // 
-            // flowLayoutPanel3Impuestos_Pro
+            // flowLayoutPanel1
             // 
-            this.flowLayoutPanel3Impuestos_Pro.Controls.Add(this.Base_Proforma);
-            this.flowLayoutPanel3Impuestos_Pro.Controls.Add(this.IVA_Proforma);
-            this.flowLayoutPanel3Impuestos_Pro.Controls.Add(this.Total_Proforma);
-            this.flowLayoutPanel3Impuestos_Pro.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel3Impuestos_Pro.Location = new System.Drawing.Point(0, 506);
-            this.flowLayoutPanel3Impuestos_Pro.Margin = new System.Windows.Forms.Padding(0);
-            this.flowLayoutPanel3Impuestos_Pro.Name = "flowLayoutPanel3Impuestos_Pro";
-            this.flowLayoutPanel3Impuestos_Pro.Size = new System.Drawing.Size(1164, 20);
-            this.flowLayoutPanel3Impuestos_Pro.TabIndex = 12;
+            this.flowLayoutPanel1.AutoScroll = true;
+            this.flowLayoutPanel1.Controls.Add(this.Referencia_Proforma);
+            this.flowLayoutPanel1.Controls.Add(this.Descripción_Proforma);
+            this.flowLayoutPanel1.Controls.Add(this.PVP_Proforma);
+            this.flowLayoutPanel1.Controls.Add(this.Cantidad_Proforma);
+            this.flowLayoutPanel1.Controls.Add(this.Descuento_Proforma);
+            this.flowLayoutPanel1.Controls.Add(this.Total_Linea_Proforma);
+            this.flowLayoutPanel1.Controls.Add(this.IVA_Producto_Proforma);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 290);
+            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 0, 0, 0);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1161, 54);
+            this.flowLayoutPanel1.TabIndex = 9;
+            // 
+            // Referencia_Proforma
+            // 
+            this.Referencia_Proforma.CueText = "Ref.Producto";
+            this.Referencia_Proforma.FormattingEnabled = true;
+            this.Referencia_Proforma.Location = new System.Drawing.Point(3, 3);
+            this.Referencia_Proforma.Name = "Referencia_Proforma";
+            this.Referencia_Proforma.Size = new System.Drawing.Size(121, 21);
+            this.Referencia_Proforma.TabIndex = 0;
+            // 
+            // Descripción_Proforma
+            // 
+            this.Descripción_Proforma.CueText = "Decripción";
+            this.Descripción_Proforma.FormattingEnabled = true;
+            this.Descripción_Proforma.Location = new System.Drawing.Point(130, 3);
+            this.Descripción_Proforma.Name = "Descripción_Proforma";
+            this.Descripción_Proforma.Size = new System.Drawing.Size(375, 21);
+            this.Descripción_Proforma.TabIndex = 1;
+            // 
+            // PVP_Proforma
+            // 
+            this.PVP_Proforma.CueText = "P.V.P.";
+            this.PVP_Proforma.Location = new System.Drawing.Point(511, 3);
+            this.PVP_Proforma.Name = "PVP_Proforma";
+            this.PVP_Proforma.Size = new System.Drawing.Size(121, 20);
+            this.PVP_Proforma.TabIndex = 2;
+            // 
+            // Cantidad_Proforma
+            // 
+            this.Cantidad_Proforma.CueText = "Cantidad";
+            this.Cantidad_Proforma.FormattingEnabled = true;
+            this.Cantidad_Proforma.Location = new System.Drawing.Point(638, 3);
+            this.Cantidad_Proforma.Name = "Cantidad_Proforma";
+            this.Cantidad_Proforma.Size = new System.Drawing.Size(121, 21);
+            this.Cantidad_Proforma.TabIndex = 3;
+            // 
+            // Descuento_Proforma
+            // 
+            this.Descuento_Proforma.CueText = "Descuento";
+            this.Descuento_Proforma.FormattingEnabled = true;
+            this.Descuento_Proforma.Location = new System.Drawing.Point(765, 3);
+            this.Descuento_Proforma.Name = "Descuento_Proforma";
+            this.Descuento_Proforma.Size = new System.Drawing.Size(121, 21);
+            this.Descuento_Proforma.TabIndex = 4;
+            // 
+            // Total_Linea_Proforma
+            // 
+            this.Total_Linea_Proforma.CueText = "Total Línea";
+            this.Total_Linea_Proforma.Location = new System.Drawing.Point(892, 3);
+            this.Total_Linea_Proforma.Name = "Total_Linea_Proforma";
+            this.Total_Linea_Proforma.Size = new System.Drawing.Size(121, 20);
+            this.Total_Linea_Proforma.TabIndex = 5;
+            // 
+            // IVA_Producto_Proforma
+            // 
+            this.IVA_Producto_Proforma.CueText = "I.V.A.";
+            this.IVA_Producto_Proforma.Location = new System.Drawing.Point(1019, 3);
+            this.IVA_Producto_Proforma.Name = "IVA_Producto_Proforma";
+            this.IVA_Producto_Proforma.Size = new System.Drawing.Size(121, 20);
+            this.IVA_Producto_Proforma.TabIndex = 6;
+            // 
+            // Observaciones_Proforma
+            // 
+            this.Observaciones_Proforma.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Observaciones_Proforma.Location = new System.Drawing.Point(3, 196);
+            this.Observaciones_Proforma.Name = "Observaciones_Proforma";
+            this.Observaciones_Proforma.Size = new System.Drawing.Size(1158, 48);
+            this.Observaciones_Proforma.TabIndex = 6;
+            this.Observaciones_Proforma.Text = "";
             // 
             // tabPageFactura
             // 
@@ -931,10 +1308,10 @@ namespace Gestaller
             this.tableLayoutPanel1Factura.Controls.Add(this.panel3_F, 0, 10);
             this.tableLayoutPanel1Factura.Controls.Add(this.panel4_F, 0, 13);
             this.tableLayoutPanel1Factura.Controls.Add(this.Grid_Factura, 0, 11);
-            this.tableLayoutPanel1Factura.Controls.Add(this.flowLayoutPanel3Impuestos_F, 0, 12);
             this.tableLayoutPanel1Factura.Controls.Add(this.label3Producto_F, 0, 6);
             this.tableLayoutPanel1Factura.Controls.Add(this.label4Observacion_F, 0, 8);
             this.tableLayoutPanel1Factura.Controls.Add(this.Observaciones_F, 0, 9);
+            this.tableLayoutPanel1Factura.Controls.Add(this.Panel3Impuestos_Factura, 0, 12);
             this.tableLayoutPanel1Factura.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1Factura.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel1Factura.Name = "tableLayoutPanel1Factura";
@@ -956,6 +1333,83 @@ namespace Gestaller
             this.tableLayoutPanel1Factura.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1Factura.Size = new System.Drawing.Size(1164, 549);
             this.tableLayoutPanel1Factura.TabIndex = 1;
+            // 
+            // flowLayoutPanel2
+            // 
+            this.flowLayoutPanel2.AutoScroll = true;
+            this.flowLayoutPanel2.Controls.Add(this.Referencia_F);
+            this.flowLayoutPanel2.Controls.Add(this.Descripcion_F);
+            this.flowLayoutPanel2.Controls.Add(this.PVP_Factura);
+            this.flowLayoutPanel2.Controls.Add(this.Cantidad_Factura);
+            this.flowLayoutPanel2.Controls.Add(this.Descuento_Factura);
+            this.flowLayoutPanel2.Controls.Add(this.Total_Linea_Factura);
+            this.flowLayoutPanel2.Controls.Add(this.IVA_Producto_Factura);
+            this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(3, 216);
+            this.flowLayoutPanel2.Margin = new System.Windows.Forms.Padding(3, 0, 0, 0);
+            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(1161, 54);
+            this.flowLayoutPanel2.TabIndex = 7;
+            // 
+            // Referencia_F
+            // 
+            this.Referencia_F.CueText = "Ref.Producto";
+            this.Referencia_F.FormattingEnabled = true;
+            this.Referencia_F.Location = new System.Drawing.Point(3, 3);
+            this.Referencia_F.Name = "Referencia_F";
+            this.Referencia_F.Size = new System.Drawing.Size(121, 21);
+            this.Referencia_F.TabIndex = 0;
+            // 
+            // Descripcion_F
+            // 
+            this.Descripcion_F.CueText = "Decripción";
+            this.Descripcion_F.FormattingEnabled = true;
+            this.Descripcion_F.Location = new System.Drawing.Point(130, 3);
+            this.Descripcion_F.Name = "Descripcion_F";
+            this.Descripcion_F.Size = new System.Drawing.Size(375, 21);
+            this.Descripcion_F.TabIndex = 1;
+            // 
+            // PVP_Factura
+            // 
+            this.PVP_Factura.CueText = "P.V.P.";
+            this.PVP_Factura.Location = new System.Drawing.Point(511, 3);
+            this.PVP_Factura.Name = "PVP_Factura";
+            this.PVP_Factura.Size = new System.Drawing.Size(121, 20);
+            this.PVP_Factura.TabIndex = 2;
+            // 
+            // Cantidad_Factura
+            // 
+            this.Cantidad_Factura.CueText = "Cantidad";
+            this.Cantidad_Factura.FormattingEnabled = true;
+            this.Cantidad_Factura.Location = new System.Drawing.Point(638, 3);
+            this.Cantidad_Factura.Name = "Cantidad_Factura";
+            this.Cantidad_Factura.Size = new System.Drawing.Size(121, 21);
+            this.Cantidad_Factura.TabIndex = 3;
+            // 
+            // Descuento_Factura
+            // 
+            this.Descuento_Factura.CueText = "Descuento";
+            this.Descuento_Factura.FormattingEnabled = true;
+            this.Descuento_Factura.Location = new System.Drawing.Point(765, 3);
+            this.Descuento_Factura.Name = "Descuento_Factura";
+            this.Descuento_Factura.Size = new System.Drawing.Size(121, 21);
+            this.Descuento_Factura.TabIndex = 4;
+            // 
+            // Total_Linea_Factura
+            // 
+            this.Total_Linea_Factura.CueText = "Total Línea";
+            this.Total_Linea_Factura.Location = new System.Drawing.Point(892, 3);
+            this.Total_Linea_Factura.Name = "Total_Linea_Factura";
+            this.Total_Linea_Factura.Size = new System.Drawing.Size(121, 20);
+            this.Total_Linea_Factura.TabIndex = 5;
+            // 
+            // IVA_Producto_Factura
+            // 
+            this.IVA_Producto_Factura.CueText = "I.V.A.";
+            this.IVA_Producto_Factura.Location = new System.Drawing.Point(1019, 3);
+            this.IVA_Producto_Factura.Name = "IVA_Producto_Factura";
+            this.IVA_Producto_Factura.Size = new System.Drawing.Size(121, 20);
+            this.IVA_Producto_Factura.TabIndex = 6;
             // 
             // label1Cliente_F
             // 
@@ -1001,6 +1455,50 @@ namespace Gestaller
             this.flowLayoutPanel1Cliente_F.Size = new System.Drawing.Size(1158, 50);
             this.flowLayoutPanel1Cliente_F.TabIndex = 1;
             // 
+            // cueComboBox1Cliente_Cliente_F
+            // 
+            this.cueComboBox1Cliente_Cliente_F.CueText = "Cliente";
+            this.cueComboBox1Cliente_Cliente_F.FormattingEnabled = true;
+            this.cueComboBox1Cliente_Cliente_F.Location = new System.Drawing.Point(3, 3);
+            this.cueComboBox1Cliente_Cliente_F.Name = "cueComboBox1Cliente_Cliente_F";
+            this.cueComboBox1Cliente_Cliente_F.Size = new System.Drawing.Size(248, 21);
+            this.cueComboBox1Cliente_Cliente_F.TabIndex = 0;
+            // 
+            // cueComboBox2Cliente_Matricula_F
+            // 
+            this.cueComboBox2Cliente_Matricula_F.CueText = "Matrícula";
+            this.cueComboBox2Cliente_Matricula_F.FormattingEnabled = true;
+            this.cueComboBox2Cliente_Matricula_F.Location = new System.Drawing.Point(257, 3);
+            this.cueComboBox2Cliente_Matricula_F.Name = "cueComboBox2Cliente_Matricula_F";
+            this.cueComboBox2Cliente_Matricula_F.Size = new System.Drawing.Size(121, 21);
+            this.cueComboBox2Cliente_Matricula_F.TabIndex = 1;
+            // 
+            // cueComboBox3Cliente_Marca_F
+            // 
+            this.cueComboBox3Cliente_Marca_F.CueText = "Marca";
+            this.cueComboBox3Cliente_Marca_F.FormattingEnabled = true;
+            this.cueComboBox3Cliente_Marca_F.Location = new System.Drawing.Point(384, 3);
+            this.cueComboBox3Cliente_Marca_F.Name = "cueComboBox3Cliente_Marca_F";
+            this.cueComboBox3Cliente_Marca_F.Size = new System.Drawing.Size(121, 21);
+            this.cueComboBox3Cliente_Marca_F.TabIndex = 2;
+            // 
+            // cueComboBox4Cliente_Modelo_F
+            // 
+            this.cueComboBox4Cliente_Modelo_F.CueText = "Modelo";
+            this.cueComboBox4Cliente_Modelo_F.FormattingEnabled = true;
+            this.cueComboBox4Cliente_Modelo_F.Location = new System.Drawing.Point(511, 3);
+            this.cueComboBox4Cliente_Modelo_F.Name = "cueComboBox4Cliente_Modelo_F";
+            this.cueComboBox4Cliente_Modelo_F.Size = new System.Drawing.Size(248, 21);
+            this.cueComboBox4Cliente_Modelo_F.TabIndex = 3;
+            // 
+            // cueTextBox1Cliente_Km_F
+            // 
+            this.cueTextBox1Cliente_Km_F.CueText = "Kilometros";
+            this.cueTextBox1Cliente_Km_F.Location = new System.Drawing.Point(765, 3);
+            this.cueTextBox1Cliente_Km_F.Name = "cueTextBox1Cliente_Km_F";
+            this.cueTextBox1Cliente_Km_F.Size = new System.Drawing.Size(121, 20);
+            this.cueTextBox1Cliente_Km_F.TabIndex = 4;
+            // 
             // label2Presupuesto_F
             // 
             this.label2Presupuesto_F.AutoSize = true;
@@ -1025,6 +1523,42 @@ namespace Gestaller
             this.flowLayoutPanel2Presupuesto_F.Name = "flowLayoutPanel2Presupuesto_F";
             this.flowLayoutPanel2Presupuesto_F.Size = new System.Drawing.Size(1161, 54);
             this.flowLayoutPanel2Presupuesto_F.TabIndex = 4;
+            // 
+            // Presupuesto_F
+            // 
+            this.Presupuesto_F.CueText = "Nº Presupuesto";
+            this.Presupuesto_F.FormattingEnabled = true;
+            this.Presupuesto_F.Location = new System.Drawing.Point(3, 3);
+            this.Presupuesto_F.Name = "Presupuesto_F";
+            this.Presupuesto_F.Size = new System.Drawing.Size(121, 21);
+            this.Presupuesto_F.TabIndex = 0;
+            // 
+            // Proforma_F
+            // 
+            this.Proforma_F.CueText = "Nº Proforma";
+            this.Proforma_F.FormattingEnabled = true;
+            this.Proforma_F.Location = new System.Drawing.Point(130, 3);
+            this.Proforma_F.Name = "Proforma_F";
+            this.Proforma_F.Size = new System.Drawing.Size(121, 21);
+            this.Proforma_F.TabIndex = 1;
+            // 
+            // Factura_F
+            // 
+            this.Factura_F.CueText = "Nº Factura";
+            this.Factura_F.FormattingEnabled = true;
+            this.Factura_F.Location = new System.Drawing.Point(257, 3);
+            this.Factura_F.Name = "Factura_F";
+            this.Factura_F.Size = new System.Drawing.Size(121, 21);
+            this.Factura_F.TabIndex = 2;
+            // 
+            // Fecha_F
+            // 
+            this.Fecha_F.CustomFormat = "";
+            this.Fecha_F.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.Fecha_F.Location = new System.Drawing.Point(384, 3);
+            this.Fecha_F.Name = "Fecha_F";
+            this.Fecha_F.Size = new System.Drawing.Size(121, 20);
+            this.Fecha_F.TabIndex = 3;
             // 
             // panel2_F
             // 
@@ -1078,15 +1612,6 @@ namespace Gestaller
             this.btnLastPage_F.TabIndex = 3;
             this.btnLastPage_F.Text = ">|";
             this.btnLastPage_F.UseVisualStyleBackColor = true;
-            // 
-            // Observaciones_F
-            // 
-            this.Observaciones_F.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Observaciones_F.Location = new System.Drawing.Point(3, 293);
-            this.Observaciones_F.Name = "Observaciones_F";
-            this.Observaciones_F.Size = new System.Drawing.Size(1158, 48);
-            this.Observaciones_F.TabIndex = 9;
-            this.Observaciones_F.Text = "";
             // 
             // panel3_F
             // 
@@ -1155,6 +1680,16 @@ namespace Gestaller
             this.panel4_F.Size = new System.Drawing.Size(1164, 23);
             this.panel4_F.TabIndex = 13;
             // 
+            // btnImprimir_F
+            // 
+            this.btnImprimir_F.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnImprimir_F.Location = new System.Drawing.Point(789, 0);
+            this.btnImprimir_F.Name = "btnImprimir_F";
+            this.btnImprimir_F.Size = new System.Drawing.Size(75, 23);
+            this.btnImprimir_F.TabIndex = 0;
+            this.btnImprimir_F.Text = "Imprimir";
+            this.btnImprimir_F.UseVisualStyleBackColor = true;
+            // 
             // btnPresupuesto_F
             // 
             this.btnPresupuesto_F.Dock = System.Windows.Forms.DockStyle.Right;
@@ -1205,40 +1740,6 @@ namespace Gestaller
             this.Grid_Factura.Size = new System.Drawing.Size(1158, 133);
             this.Grid_Factura.TabIndex = 11;
             // 
-            // flowLayoutPanel3Impuestos_F
-            // 
-            this.flowLayoutPanel3Impuestos_F.Controls.Add(this.cueTextBox2Base_F);
-            this.flowLayoutPanel3Impuestos_F.Controls.Add(this.cueTextBox3IVA_F);
-            this.flowLayoutPanel3Impuestos_F.Controls.Add(this.cueTextBox4Total_F);
-            this.flowLayoutPanel3Impuestos_F.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel3Impuestos_F.Location = new System.Drawing.Point(0, 506);
-            this.flowLayoutPanel3Impuestos_F.Margin = new System.Windows.Forms.Padding(0);
-            this.flowLayoutPanel3Impuestos_F.Name = "flowLayoutPanel3Impuestos_F";
-            this.flowLayoutPanel3Impuestos_F.Size = new System.Drawing.Size(1164, 20);
-            this.flowLayoutPanel3Impuestos_F.TabIndex = 12;
-            // 
-            // label3Producto_Pro
-            // 
-            this.label3Producto_Pro.AutoSize = true;
-            this.label3Producto_Pro.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label3Producto_Pro.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.label3Producto_Pro.Location = new System.Drawing.Point(3, 196);
-            this.label3Producto_Pro.Name = "label3Producto_Pro";
-            this.label3Producto_Pro.Size = new System.Drawing.Size(1158, 20);
-            this.label3Producto_Pro.TabIndex = 6;
-            this.label3Producto_Pro.Text = "PRODUCTO";
-            // 
-            // label4Observacion_Pro
-            // 
-            this.label4Observacion_Pro.AutoSize = true;
-            this.label4Observacion_Pro.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label4Observacion_Pro.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.label4Observacion_Pro.Location = new System.Drawing.Point(3, 270);
-            this.label4Observacion_Pro.Name = "label4Observacion_Pro";
-            this.label4Observacion_Pro.Size = new System.Drawing.Size(1158, 20);
-            this.label4Observacion_Pro.TabIndex = 8;
-            this.label4Observacion_Pro.Text = "OBSERVACIONES";
-            // 
             // label3Producto_F
             // 
             this.label3Producto_F.AutoSize = true;
@@ -1261,557 +1762,52 @@ namespace Gestaller
             this.label4Observacion_F.TabIndex = 8;
             this.label4Observacion_F.Text = "OBSERVACIONES";
             // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.AutoScroll = true;
-            this.flowLayoutPanel1.Controls.Add(this.Referencia_Proforma);
-            this.flowLayoutPanel1.Controls.Add(this.Descripción_Proforma);
-            this.flowLayoutPanel1.Controls.Add(this.PVP_Proforma);
-            this.flowLayoutPanel1.Controls.Add(this.Cantidad_Proforma);
-            this.flowLayoutPanel1.Controls.Add(this.Descuento_Proforma);
-            this.flowLayoutPanel1.Controls.Add(this.Total_Linea_Proforma);
-            this.flowLayoutPanel1.Controls.Add(this.IVA_Producto_Proforma);
-            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 216);
-            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 0, 0, 0);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1161, 54);
-            this.flowLayoutPanel1.TabIndex = 7;
-            // 
-            // flowLayoutPanel2
-            // 
-            this.flowLayoutPanel2.AutoScroll = true;
-            this.flowLayoutPanel2.Controls.Add(this.Referencia_F);
-            this.flowLayoutPanel2.Controls.Add(this.Descripcion_F);
-            this.flowLayoutPanel2.Controls.Add(this.PVP_Factura);
-            this.flowLayoutPanel2.Controls.Add(this.Cantidad_Factura);
-            this.flowLayoutPanel2.Controls.Add(this.Descuento_Factura);
-            this.flowLayoutPanel2.Controls.Add(this.Total_Linea_Factura);
-            this.flowLayoutPanel2.Controls.Add(this.IVA_Producto_Factura);
-            this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(3, 216);
-            this.flowLayoutPanel2.Margin = new System.Windows.Forms.Padding(3, 0, 0, 0);
-            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(1161, 54);
-            this.flowLayoutPanel2.TabIndex = 7;
-            // 
-            // Cliente_Pre
-            // 
-            this.Cliente_Pre.CueText = "Cliente";
-            this.Cliente_Pre.FormattingEnabled = true;
-            this.Cliente_Pre.Location = new System.Drawing.Point(3, 3);
-            this.Cliente_Pre.Name = "Cliente_Pre";
-            this.Cliente_Pre.Size = new System.Drawing.Size(248, 21);
-            this.Cliente_Pre.TabIndex = 0;
-            this.Cliente_Pre.SelectionChangeCommitted += new System.EventHandler(this.cueComboBox1Cliente_Cliente_Pre_SelectionChangeCommitted);
-            // 
-            // Matricula_Pre
-            // 
-            this.Matricula_Pre.CueText = "Matrícula";
-            this.Matricula_Pre.FormattingEnabled = true;
-            this.Matricula_Pre.Location = new System.Drawing.Point(257, 3);
-            this.Matricula_Pre.Name = "Matricula_Pre";
-            this.Matricula_Pre.Size = new System.Drawing.Size(121, 21);
-            this.Matricula_Pre.TabIndex = 1;
-            this.Matricula_Pre.SelectionChangeCommitted += new System.EventHandler(this.cueComboBox2Cliente_Matricula_Pre_SelectionChangeCommitted);
-            // 
-            // Marca_Pre
-            // 
-            this.Marca_Pre.CueText = "Marca";
-            this.Marca_Pre.FormattingEnabled = true;
-            this.Marca_Pre.Location = new System.Drawing.Point(384, 3);
-            this.Marca_Pre.Name = "Marca_Pre";
-            this.Marca_Pre.Size = new System.Drawing.Size(121, 21);
-            this.Marca_Pre.TabIndex = 2;
-            // 
-            // Modelo_Pre
-            // 
-            this.Modelo_Pre.CueText = "Modelo";
-            this.Modelo_Pre.FormattingEnabled = true;
-            this.Modelo_Pre.Location = new System.Drawing.Point(511, 3);
-            this.Modelo_Pre.Name = "Modelo_Pre";
-            this.Modelo_Pre.Size = new System.Drawing.Size(248, 21);
-            this.Modelo_Pre.TabIndex = 3;
-            // 
-            // Km_Pre
-            // 
-            this.Km_Pre.CueText = "Kilometros";
-            this.Km_Pre.Location = new System.Drawing.Point(765, 3);
-            this.Km_Pre.Name = "Km_Pre";
-            this.Km_Pre.Size = new System.Drawing.Size(121, 20);
-            this.Km_Pre.TabIndex = 4;
-            // 
-            // Presupuesto_Pre
-            // 
-            this.Presupuesto_Pre.CueText = "Nº Presupuesto";
-            this.Presupuesto_Pre.FormattingEnabled = true;
-            this.Presupuesto_Pre.Location = new System.Drawing.Point(3, 3);
-            this.Presupuesto_Pre.Name = "Presupuesto_Pre";
-            this.Presupuesto_Pre.Size = new System.Drawing.Size(121, 21);
-            this.Presupuesto_Pre.TabIndex = 0;
-            this.Presupuesto_Pre.SelectionChangeCommitted += new System.EventHandler(this.cueComboBox1Presupuesto_BudgetNum_Pre_SelectionChangeCommitted);
-            // 
-            // Proforma_Pre
-            // 
-            this.Proforma_Pre.CueText = "Nº Proforma";
-            this.Proforma_Pre.FormattingEnabled = true;
-            this.Proforma_Pre.Location = new System.Drawing.Point(130, 3);
-            this.Proforma_Pre.Name = "Proforma_Pre";
-            this.Proforma_Pre.Size = new System.Drawing.Size(121, 21);
-            this.Proforma_Pre.TabIndex = 1;
-            this.Proforma_Pre.SelectionChangeCommitted += new System.EventHandler(this.cueComboBox2Presupuesto_ProformaNum_Pre_SelectionChangeCommitted);
-            // 
-            // Factura_Pre
-            // 
-            this.Factura_Pre.CueText = "Nº Factura";
-            this.Factura_Pre.FormattingEnabled = true;
-            this.Factura_Pre.Location = new System.Drawing.Point(257, 3);
-            this.Factura_Pre.Name = "Factura_Pre";
-            this.Factura_Pre.Size = new System.Drawing.Size(121, 21);
-            this.Factura_Pre.TabIndex = 2;
-            this.Factura_Pre.SelectionChangeCommitted += new System.EventHandler(this.cueComboBox3Presupuesto_InvoiceNum_Pre_SelectionChangeCommitted);
-            // 
-            // Base_Pre
-            // 
-            this.Base_Pre.CueText = "Base Imponible";
-            this.Base_Pre.Location = new System.Drawing.Point(3, 0);
-            this.Base_Pre.Margin = new System.Windows.Forms.Padding(3, 0, 3, 3);
-            this.Base_Pre.Name = "Base_Pre";
-            this.Base_Pre.Size = new System.Drawing.Size(248, 20);
-            this.Base_Pre.TabIndex = 0;
-            // 
-            // IVA_Pre
-            // 
-            this.IVA_Pre.CueText = "I.V.A.";
-            this.IVA_Pre.Location = new System.Drawing.Point(257, 0);
-            this.IVA_Pre.Margin = new System.Windows.Forms.Padding(3, 0, 3, 3);
-            this.IVA_Pre.Name = "IVA_Pre";
-            this.IVA_Pre.Size = new System.Drawing.Size(121, 20);
-            this.IVA_Pre.TabIndex = 1;
-            // 
-            // Total_Pre
-            // 
-            this.Total_Pre.CueText = "Total";
-            this.Total_Pre.Location = new System.Drawing.Point(384, 0);
-            this.Total_Pre.Margin = new System.Windows.Forms.Padding(3, 0, 3, 3);
-            this.Total_Pre.Name = "Total_Pre";
-            this.Total_Pre.Size = new System.Drawing.Size(121, 20);
-            this.Total_Pre.TabIndex = 2;
-            // 
-            // Referencia_Pre
-            // 
-            this.Referencia_Pre.CueText = "Ref.Producto";
-            this.Referencia_Pre.FormattingEnabled = true;
-            this.Referencia_Pre.Location = new System.Drawing.Point(3, 3);
-            this.Referencia_Pre.Name = "Referencia_Pre";
-            this.Referencia_Pre.Size = new System.Drawing.Size(121, 21);
-            this.Referencia_Pre.TabIndex = 0;
-            // 
-            // Descripción_Pre
-            // 
-            this.Descripción_Pre.CueText = "Decripción";
-            this.Descripción_Pre.FormattingEnabled = true;
-            this.Descripción_Pre.Location = new System.Drawing.Point(130, 3);
-            this.Descripción_Pre.Name = "Descripción_Pre";
-            this.Descripción_Pre.Size = new System.Drawing.Size(375, 21);
-            this.Descripción_Pre.TabIndex = 1;
-            // 
-            // PVP_Pre
-            // 
-            this.PVP_Pre.CueText = "P.V.P.";
-            this.PVP_Pre.Location = new System.Drawing.Point(511, 3);
-            this.PVP_Pre.Name = "PVP_Pre";
-            this.PVP_Pre.Size = new System.Drawing.Size(121, 20);
-            this.PVP_Pre.TabIndex = 2;
-            // 
-            // Cantidad_Pre
-            // 
-            this.Cantidad_Pre.CueText = "Cantidad";
-            this.Cantidad_Pre.FormattingEnabled = true;
-            this.Cantidad_Pre.Location = new System.Drawing.Point(638, 3);
-            this.Cantidad_Pre.Name = "Cantidad_Pre";
-            this.Cantidad_Pre.Size = new System.Drawing.Size(121, 21);
-            this.Cantidad_Pre.TabIndex = 3;
-            // 
-            // Descuento_Pre
-            // 
-            this.Descuento_Pre.CueText = "Descuento";
-            this.Descuento_Pre.FormattingEnabled = true;
-            this.Descuento_Pre.Location = new System.Drawing.Point(765, 3);
-            this.Descuento_Pre.Name = "Descuento_Pre";
-            this.Descuento_Pre.Size = new System.Drawing.Size(121, 21);
-            this.Descuento_Pre.TabIndex = 4;
-            // 
-            // Total_Linea_Pre
-            // 
-            this.Total_Linea_Pre.CueText = "Total Línea";
-            this.Total_Linea_Pre.Location = new System.Drawing.Point(892, 3);
-            this.Total_Linea_Pre.Name = "Total_Linea_Pre";
-            this.Total_Linea_Pre.Size = new System.Drawing.Size(121, 20);
-            this.Total_Linea_Pre.TabIndex = 5;
-            // 
-            // IVA_Producto_Pre
-            // 
-            this.IVA_Producto_Pre.CueText = "I.V.A.";
-            this.IVA_Producto_Pre.Location = new System.Drawing.Point(1019, 3);
-            this.IVA_Producto_Pre.Name = "IVA_Producto_Pre";
-            this.IVA_Producto_Pre.Size = new System.Drawing.Size(121, 20);
-            this.IVA_Producto_Pre.TabIndex = 6;
-            // 
-            // Referencia_Proforma
-            // 
-            this.Referencia_Proforma.CueText = "Ref.Producto";
-            this.Referencia_Proforma.FormattingEnabled = true;
-            this.Referencia_Proforma.Location = new System.Drawing.Point(3, 3);
-            this.Referencia_Proforma.Name = "Referencia_Proforma";
-            this.Referencia_Proforma.Size = new System.Drawing.Size(121, 21);
-            this.Referencia_Proforma.TabIndex = 0;
-            // 
-            // Descripción_Proforma
-            // 
-            this.Descripción_Proforma.CueText = "Decripción";
-            this.Descripción_Proforma.FormattingEnabled = true;
-            this.Descripción_Proforma.Location = new System.Drawing.Point(130, 3);
-            this.Descripción_Proforma.Name = "Descripción_Proforma";
-            this.Descripción_Proforma.Size = new System.Drawing.Size(375, 21);
-            this.Descripción_Proforma.TabIndex = 1;
-            // 
-            // PVP_Proforma
-            // 
-            this.PVP_Proforma.CueText = "P.V.P.";
-            this.PVP_Proforma.Location = new System.Drawing.Point(511, 3);
-            this.PVP_Proforma.Name = "PVP_Proforma";
-            this.PVP_Proforma.Size = new System.Drawing.Size(121, 20);
-            this.PVP_Proforma.TabIndex = 2;
-            // 
-            // Cantidad_Proforma
-            // 
-            this.Cantidad_Proforma.CueText = "Cantidad";
-            this.Cantidad_Proforma.FormattingEnabled = true;
-            this.Cantidad_Proforma.Location = new System.Drawing.Point(638, 3);
-            this.Cantidad_Proforma.Name = "Cantidad_Proforma";
-            this.Cantidad_Proforma.Size = new System.Drawing.Size(121, 21);
-            this.Cantidad_Proforma.TabIndex = 3;
-            // 
-            // Descuento_Proforma
-            // 
-            this.Descuento_Proforma.CueText = "Descuento";
-            this.Descuento_Proforma.FormattingEnabled = true;
-            this.Descuento_Proforma.Location = new System.Drawing.Point(765, 3);
-            this.Descuento_Proforma.Name = "Descuento_Proforma";
-            this.Descuento_Proforma.Size = new System.Drawing.Size(121, 21);
-            this.Descuento_Proforma.TabIndex = 4;
-            // 
-            // Total_Linea_Proforma
-            // 
-            this.Total_Linea_Proforma.CueText = "Total Línea";
-            this.Total_Linea_Proforma.Location = new System.Drawing.Point(892, 3);
-            this.Total_Linea_Proforma.Name = "Total_Linea_Proforma";
-            this.Total_Linea_Proforma.Size = new System.Drawing.Size(121, 20);
-            this.Total_Linea_Proforma.TabIndex = 5;
-            // 
-            // IVA_Producto_Proforma
-            // 
-            this.IVA_Producto_Proforma.CueText = "I.V.A.";
-            this.IVA_Producto_Proforma.Location = new System.Drawing.Point(1019, 3);
-            this.IVA_Producto_Proforma.Name = "IVA_Producto_Proforma";
-            this.IVA_Producto_Proforma.Size = new System.Drawing.Size(121, 20);
-            this.IVA_Producto_Proforma.TabIndex = 6;
-            // 
-            // Cliente_Proforma
-            // 
-            this.Cliente_Proforma.CueText = "Cliente";
-            this.Cliente_Proforma.FormattingEnabled = true;
-            this.Cliente_Proforma.Location = new System.Drawing.Point(3, 3);
-            this.Cliente_Proforma.Name = "Cliente_Proforma";
-            this.Cliente_Proforma.Size = new System.Drawing.Size(248, 21);
-            this.Cliente_Proforma.TabIndex = 0;
-            // 
-            // Matricula_Proforma
-            // 
-            this.Matricula_Proforma.CueText = "Matrícula";
-            this.Matricula_Proforma.FormattingEnabled = true;
-            this.Matricula_Proforma.Location = new System.Drawing.Point(257, 3);
-            this.Matricula_Proforma.Name = "Matricula_Proforma";
-            this.Matricula_Proforma.Size = new System.Drawing.Size(121, 21);
-            this.Matricula_Proforma.TabIndex = 1;
-            // 
-            // Modelo_Proforma
-            // 
-            this.Modelo_Proforma.CueText = "Modelo";
-            this.Modelo_Proforma.FormattingEnabled = true;
-            this.Modelo_Proforma.Location = new System.Drawing.Point(511, 3);
-            this.Modelo_Proforma.Name = "Modelo_Proforma";
-            this.Modelo_Proforma.Size = new System.Drawing.Size(248, 21);
-            this.Modelo_Proforma.TabIndex = 3;
-            // 
-            // Km_Proforma
-            // 
-            this.Km_Proforma.CueText = "Kilometros";
-            this.Km_Proforma.Location = new System.Drawing.Point(765, 3);
-            this.Km_Proforma.Name = "Km_Proforma";
-            this.Km_Proforma.Size = new System.Drawing.Size(121, 20);
-            this.Km_Proforma.TabIndex = 4;
-            // 
-            // Presupuesto_Proforma
-            // 
-            this.Presupuesto_Proforma.CueText = "Nº Presupuesto";
-            this.Presupuesto_Proforma.FormattingEnabled = true;
-            this.Presupuesto_Proforma.Location = new System.Drawing.Point(3, 3);
-            this.Presupuesto_Proforma.Name = "Presupuesto_Proforma";
-            this.Presupuesto_Proforma.Size = new System.Drawing.Size(121, 21);
-            this.Presupuesto_Proforma.TabIndex = 0;
-            // 
-            // Proforma_Proforma
-            // 
-            this.Proforma_Proforma.CueText = "Nº Proforma";
-            this.Proforma_Proforma.FormattingEnabled = true;
-            this.Proforma_Proforma.Location = new System.Drawing.Point(130, 3);
-            this.Proforma_Proforma.Name = "Proforma_Proforma";
-            this.Proforma_Proforma.Size = new System.Drawing.Size(121, 21);
-            this.Proforma_Proforma.TabIndex = 1;
-            // 
-            // Factura_Proforma
-            // 
-            this.Factura_Proforma.CueText = "Nº Factura";
-            this.Factura_Proforma.FormattingEnabled = true;
-            this.Factura_Proforma.Location = new System.Drawing.Point(257, 3);
-            this.Factura_Proforma.Name = "Factura_Proforma";
-            this.Factura_Proforma.Size = new System.Drawing.Size(121, 21);
-            this.Factura_Proforma.TabIndex = 2;
-            // 
-            // Base_Proforma
-            // 
-            this.Base_Proforma.CueText = "Base Imponible";
-            this.Base_Proforma.Location = new System.Drawing.Point(3, 0);
-            this.Base_Proforma.Margin = new System.Windows.Forms.Padding(3, 0, 3, 3);
-            this.Base_Proforma.Name = "Base_Proforma";
-            this.Base_Proforma.Size = new System.Drawing.Size(248, 20);
-            this.Base_Proforma.TabIndex = 0;
-            // 
-            // IVA_Proforma
-            // 
-            this.IVA_Proforma.CueText = "I.V.A.";
-            this.IVA_Proforma.Location = new System.Drawing.Point(257, 0);
-            this.IVA_Proforma.Margin = new System.Windows.Forms.Padding(3, 0, 3, 3);
-            this.IVA_Proforma.Name = "IVA_Proforma";
-            this.IVA_Proforma.Size = new System.Drawing.Size(121, 20);
-            this.IVA_Proforma.TabIndex = 1;
-            // 
-            // Total_Proforma
-            // 
-            this.Total_Proforma.CueText = "Total";
-            this.Total_Proforma.Location = new System.Drawing.Point(384, 0);
-            this.Total_Proforma.Margin = new System.Windows.Forms.Padding(3, 0, 3, 3);
-            this.Total_Proforma.Name = "Total_Proforma";
-            this.Total_Proforma.Size = new System.Drawing.Size(121, 20);
-            this.Total_Proforma.TabIndex = 2;
-            // 
-            // Referencia_F
-            // 
-            this.Referencia_F.CueText = "Ref.Producto";
-            this.Referencia_F.FormattingEnabled = true;
-            this.Referencia_F.Location = new System.Drawing.Point(3, 3);
-            this.Referencia_F.Name = "Referencia_F";
-            this.Referencia_F.Size = new System.Drawing.Size(121, 21);
-            this.Referencia_F.TabIndex = 0;
-            // 
-            // Descripcion_F
-            // 
-            this.Descripcion_F.CueText = "Decripción";
-            this.Descripcion_F.FormattingEnabled = true;
-            this.Descripcion_F.Location = new System.Drawing.Point(130, 3);
-            this.Descripcion_F.Name = "Descripcion_F";
-            this.Descripcion_F.Size = new System.Drawing.Size(375, 21);
-            this.Descripcion_F.TabIndex = 1;
-            // 
-            // PVP_Factura
-            // 
-            this.PVP_Factura.CueText = "P.V.P.";
-            this.PVP_Factura.Location = new System.Drawing.Point(511, 3);
-            this.PVP_Factura.Name = "PVP_Factura";
-            this.PVP_Factura.Size = new System.Drawing.Size(121, 20);
-            this.PVP_Factura.TabIndex = 2;
-            // 
-            // Cantidad_Factura
-            // 
-            this.Cantidad_Factura.CueText = "Cantidad";
-            this.Cantidad_Factura.FormattingEnabled = true;
-            this.Cantidad_Factura.Location = new System.Drawing.Point(638, 3);
-            this.Cantidad_Factura.Name = "Cantidad_Factura";
-            this.Cantidad_Factura.Size = new System.Drawing.Size(121, 21);
-            this.Cantidad_Factura.TabIndex = 3;
-            // 
-            // Descuento_Factura
-            // 
-            this.Descuento_Factura.CueText = "Descuento";
-            this.Descuento_Factura.FormattingEnabled = true;
-            this.Descuento_Factura.Location = new System.Drawing.Point(765, 3);
-            this.Descuento_Factura.Name = "Descuento_Factura";
-            this.Descuento_Factura.Size = new System.Drawing.Size(121, 21);
-            this.Descuento_Factura.TabIndex = 4;
-            // 
-            // Total_Linea_Factura
-            // 
-            this.Total_Linea_Factura.CueText = "Total Línea";
-            this.Total_Linea_Factura.Location = new System.Drawing.Point(892, 3);
-            this.Total_Linea_Factura.Name = "Total_Linea_Factura";
-            this.Total_Linea_Factura.Size = new System.Drawing.Size(121, 20);
-            this.Total_Linea_Factura.TabIndex = 5;
-            // 
-            // IVA_Producto_Factura
-            // 
-            this.IVA_Producto_Factura.CueText = "I.V.A.";
-            this.IVA_Producto_Factura.Location = new System.Drawing.Point(1019, 3);
-            this.IVA_Producto_Factura.Name = "IVA_Producto_Factura";
-            this.IVA_Producto_Factura.Size = new System.Drawing.Size(121, 20);
-            this.IVA_Producto_Factura.TabIndex = 6;
-            // 
-            // cueComboBox1Cliente_Cliente_F
-            // 
-            this.cueComboBox1Cliente_Cliente_F.CueText = "Cliente";
-            this.cueComboBox1Cliente_Cliente_F.FormattingEnabled = true;
-            this.cueComboBox1Cliente_Cliente_F.Location = new System.Drawing.Point(3, 3);
-            this.cueComboBox1Cliente_Cliente_F.Name = "cueComboBox1Cliente_Cliente_F";
-            this.cueComboBox1Cliente_Cliente_F.Size = new System.Drawing.Size(248, 21);
-            this.cueComboBox1Cliente_Cliente_F.TabIndex = 0;
-            // 
-            // cueComboBox2Cliente_Matricula_F
-            // 
-            this.cueComboBox2Cliente_Matricula_F.CueText = "Matrícula";
-            this.cueComboBox2Cliente_Matricula_F.FormattingEnabled = true;
-            this.cueComboBox2Cliente_Matricula_F.Location = new System.Drawing.Point(257, 3);
-            this.cueComboBox2Cliente_Matricula_F.Name = "cueComboBox2Cliente_Matricula_F";
-            this.cueComboBox2Cliente_Matricula_F.Size = new System.Drawing.Size(121, 21);
-            this.cueComboBox2Cliente_Matricula_F.TabIndex = 1;
-            // 
-            // cueComboBox3Cliente_Marca_F
-            // 
-            this.cueComboBox3Cliente_Marca_F.CueText = "Marca";
-            this.cueComboBox3Cliente_Marca_F.FormattingEnabled = true;
-            this.cueComboBox3Cliente_Marca_F.Location = new System.Drawing.Point(384, 3);
-            this.cueComboBox3Cliente_Marca_F.Name = "cueComboBox3Cliente_Marca_F";
-            this.cueComboBox3Cliente_Marca_F.Size = new System.Drawing.Size(121, 21);
-            this.cueComboBox3Cliente_Marca_F.TabIndex = 2;
-            // 
-            // cueComboBox4Cliente_Modelo_F
-            // 
-            this.cueComboBox4Cliente_Modelo_F.CueText = "Modelo";
-            this.cueComboBox4Cliente_Modelo_F.FormattingEnabled = true;
-            this.cueComboBox4Cliente_Modelo_F.Location = new System.Drawing.Point(511, 3);
-            this.cueComboBox4Cliente_Modelo_F.Name = "cueComboBox4Cliente_Modelo_F";
-            this.cueComboBox4Cliente_Modelo_F.Size = new System.Drawing.Size(248, 21);
-            this.cueComboBox4Cliente_Modelo_F.TabIndex = 3;
-            // 
-            // cueTextBox1Cliente_Km_F
-            // 
-            this.cueTextBox1Cliente_Km_F.CueText = "Kilometros";
-            this.cueTextBox1Cliente_Km_F.Location = new System.Drawing.Point(765, 3);
-            this.cueTextBox1Cliente_Km_F.Name = "cueTextBox1Cliente_Km_F";
-            this.cueTextBox1Cliente_Km_F.Size = new System.Drawing.Size(121, 20);
-            this.cueTextBox1Cliente_Km_F.TabIndex = 4;
-            // 
-            // Presupuesto_F
-            // 
-            this.Presupuesto_F.CueText = "Nº Presupuesto";
-            this.Presupuesto_F.FormattingEnabled = true;
-            this.Presupuesto_F.Location = new System.Drawing.Point(3, 3);
-            this.Presupuesto_F.Name = "Presupuesto_F";
-            this.Presupuesto_F.Size = new System.Drawing.Size(121, 21);
-            this.Presupuesto_F.TabIndex = 0;
-            // 
-            // Proforma_F
-            // 
-            this.Proforma_F.CueText = "Nº Proforma";
-            this.Proforma_F.FormattingEnabled = true;
-            this.Proforma_F.Location = new System.Drawing.Point(130, 3);
-            this.Proforma_F.Name = "Proforma_F";
-            this.Proforma_F.Size = new System.Drawing.Size(121, 21);
-            this.Proforma_F.TabIndex = 1;
-            // 
-            // Factura_F
-            // 
-            this.Factura_F.CueText = "Nº Factura";
-            this.Factura_F.FormattingEnabled = true;
-            this.Factura_F.Location = new System.Drawing.Point(257, 3);
-            this.Factura_F.Name = "Factura_F";
-            this.Factura_F.Size = new System.Drawing.Size(121, 21);
-            this.Factura_F.TabIndex = 2;
-            // 
-            // cueTextBox2Base_F
-            // 
-            this.cueTextBox2Base_F.CueText = "Base Imponible";
-            this.cueTextBox2Base_F.Location = new System.Drawing.Point(3, 0);
-            this.cueTextBox2Base_F.Margin = new System.Windows.Forms.Padding(3, 0, 3, 3);
-            this.cueTextBox2Base_F.Name = "cueTextBox2Base_F";
-            this.cueTextBox2Base_F.Size = new System.Drawing.Size(248, 20);
-            this.cueTextBox2Base_F.TabIndex = 0;
-            // 
-            // cueTextBox3IVA_F
-            // 
-            this.cueTextBox3IVA_F.CueText = "I.V.A.";
-            this.cueTextBox3IVA_F.Location = new System.Drawing.Point(257, 0);
-            this.cueTextBox3IVA_F.Margin = new System.Windows.Forms.Padding(3, 0, 3, 3);
-            this.cueTextBox3IVA_F.Name = "cueTextBox3IVA_F";
-            this.cueTextBox3IVA_F.Size = new System.Drawing.Size(121, 20);
-            this.cueTextBox3IVA_F.TabIndex = 1;
-            // 
-            // cueTextBox4Total_F
-            // 
-            this.cueTextBox4Total_F.CueText = "Total";
-            this.cueTextBox4Total_F.Location = new System.Drawing.Point(384, 0);
-            this.cueTextBox4Total_F.Margin = new System.Windows.Forms.Padding(3, 0, 3, 3);
-            this.cueTextBox4Total_F.Name = "cueTextBox4Total_F";
-            this.cueTextBox4Total_F.Size = new System.Drawing.Size(121, 20);
-            this.cueTextBox4Total_F.TabIndex = 2;
-            // 
-            // btnImprimir_Pre
-            // 
-            this.btnImprimir_Pre.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnImprimir_Pre.Location = new System.Drawing.Point(789, 0);
-            this.btnImprimir_Pre.Name = "btnImprimir_Pre";
-            this.btnImprimir_Pre.Size = new System.Drawing.Size(75, 23);
-            this.btnImprimir_Pre.TabIndex = 0;
-            this.btnImprimir_Pre.Text = "Imprimir";
-            this.btnImprimir_Pre.UseVisualStyleBackColor = true;
-            // 
-            // btnImprimir_Proforma
-            // 
-            this.btnImprimir_Proforma.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnImprimir_Proforma.Location = new System.Drawing.Point(789, 0);
-            this.btnImprimir_Proforma.Name = "btnImprimir_Proforma";
-            this.btnImprimir_Proforma.Size = new System.Drawing.Size(75, 23);
-            this.btnImprimir_Proforma.TabIndex = 5;
-            this.btnImprimir_Proforma.Text = "Imprimir";
-            this.btnImprimir_Proforma.UseVisualStyleBackColor = true;
-            // 
-            // btnImprimir_F
-            // 
-            this.btnImprimir_F.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnImprimir_F.Location = new System.Drawing.Point(789, 0);
-            this.btnImprimir_F.Name = "btnImprimir_F";
-            this.btnImprimir_F.Size = new System.Drawing.Size(75, 23);
-            this.btnImprimir_F.TabIndex = 5;
-            this.btnImprimir_F.Text = "Imprimir";
-            this.btnImprimir_F.UseVisualStyleBackColor = true;
-            // 
-            // Marca_Proforma
-            // 
-            this.Marca_Proforma.CueText = "Marca";
-            this.Marca_Proforma.FormattingEnabled = true;
-            this.Marca_Proforma.Location = new System.Drawing.Point(384, 3);
-            this.Marca_Proforma.Name = "Marca_Proforma";
-            this.Marca_Proforma.Size = new System.Drawing.Size(121, 21);
-            this.Marca_Proforma.TabIndex = 2;
-            // 
-            // Fecha_F
-            // 
-            this.Fecha_F.CustomFormat = "";
-            this.Fecha_F.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.Fecha_F.Location = new System.Drawing.Point(384, 3);
-            this.Fecha_F.Name = "Fecha_F";
-            this.Fecha_F.Size = new System.Drawing.Size(121, 20);
-            this.Fecha_F.TabIndex = 3;
+            // Observaciones_F
+            // 
+            this.Observaciones_F.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Observaciones_F.Location = new System.Drawing.Point(3, 293);
+            this.Observaciones_F.Name = "Observaciones_F";
+            this.Observaciones_F.Size = new System.Drawing.Size(1158, 48);
+            this.Observaciones_F.TabIndex = 9;
+            this.Observaciones_F.Text = "";
+            // 
+            // Panel3Impuestos_Factura
+            // 
+            this.Panel3Impuestos_Factura.Controls.Add(this.Base_Factura);
+            this.Panel3Impuestos_Factura.Controls.Add(this.IVA_Factura);
+            this.Panel3Impuestos_Factura.Controls.Add(this.Total_Factura);
+            this.Panel3Impuestos_Factura.Dock = System.Windows.Forms.DockStyle.Right;
+            this.Panel3Impuestos_Factura.Location = new System.Drawing.Point(790, 506);
+            this.Panel3Impuestos_Factura.Margin = new System.Windows.Forms.Padding(0, 0, 1, 0);
+            this.Panel3Impuestos_Factura.Name = "Panel3Impuestos_Factura";
+            this.Panel3Impuestos_Factura.Size = new System.Drawing.Size(373, 20);
+            this.Panel3Impuestos_Factura.TabIndex = 12;
+            // 
+            // Base_Factura
+            // 
+            this.Base_Factura.CueText = "Base Imponible";
+            this.Base_Factura.Dock = System.Windows.Forms.DockStyle.Left;
+            this.Base_Factura.Location = new System.Drawing.Point(0, 0);
+            this.Base_Factura.Name = "Base_Factura";
+            this.Base_Factura.Size = new System.Drawing.Size(121, 20);
+            this.Base_Factura.TabIndex = 0;
+            // 
+            // IVA_Factura
+            // 
+            this.IVA_Factura.CueText = "I.V.A.";
+            this.IVA_Factura.Location = new System.Drawing.Point(127, 0);
+            this.IVA_Factura.Name = "IVA_Factura";
+            this.IVA_Factura.Size = new System.Drawing.Size(121, 20);
+            this.IVA_Factura.TabIndex = 1;
+            // 
+            // Total_Factura
+            // 
+            this.Total_Factura.CueText = "Total";
+            this.Total_Factura.Dock = System.Windows.Forms.DockStyle.Right;
+            this.Total_Factura.Location = new System.Drawing.Point(255, 0);
+            this.Total_Factura.Name = "Total_Factura";
+            this.Total_Factura.Size = new System.Drawing.Size(118, 20);
+            this.Total_Factura.TabIndex = 2;
             // 
             // OrdersView
             // 
@@ -1826,7 +1822,8 @@ namespace Gestaller
             this.tabPagePresupuesto.ResumeLayout(false);
             this.tableLayoutPanel1Presupuesto.ResumeLayout(false);
             this.tableLayoutPanel1Presupuesto.PerformLayout();
-            this.panel2_Pre.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.panel1_Pre.ResumeLayout(false);
             this.flowLayoutPanel1Cliente_Pre.ResumeLayout(false);
             this.flowLayoutPanel1Cliente_Pre.PerformLayout();
@@ -1834,26 +1831,29 @@ namespace Gestaller
             this.panel3_Pre.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.Grid_Presupuesto)).EndInit();
             this.panel4_Pre.ResumeLayout(false);
-            this.flowLayoutPanel3Impuestos_Pre.ResumeLayout(false);
-            this.flowLayoutPanel3Impuestos_Pre.PerformLayout();
             this.flowLayoutPanel3Producto_Pre.ResumeLayout(false);
             this.flowLayoutPanel3Producto_Pre.PerformLayout();
+            this.panel2_Pre.ResumeLayout(false);
             this.tabPageProforma.ResumeLayout(false);
             this.tableLayoutPanel1Proforma.ResumeLayout(false);
             this.tableLayoutPanel1Proforma.PerformLayout();
-            this.panel2_Pro.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.panel1_Pro.ResumeLayout(false);
             this.flowLayoutPanel1Cliente_Pro.ResumeLayout(false);
             this.flowLayoutPanel1Cliente_Pro.PerformLayout();
             this.flowLayoutPanel2Presupuesto_Pro.ResumeLayout(false);
             this.panel3_Pro.ResumeLayout(false);
+            this.panel2_Pro.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.Grid_Proforma)).EndInit();
             this.panel4_Pro.ResumeLayout(false);
-            this.flowLayoutPanel3Impuestos_Pro.ResumeLayout(false);
-            this.flowLayoutPanel3Impuestos_Pro.PerformLayout();
+            this.flowLayoutPanel1.ResumeLayout(false);
+            this.flowLayoutPanel1.PerformLayout();
             this.tabPageFactura.ResumeLayout(false);
             this.tableLayoutPanel1Factura.ResumeLayout(false);
             this.tableLayoutPanel1Factura.PerformLayout();
+            this.flowLayoutPanel2.ResumeLayout(false);
+            this.flowLayoutPanel2.PerformLayout();
             this.panel1_F.ResumeLayout(false);
             this.flowLayoutPanel1Cliente_F.ResumeLayout(false);
             this.flowLayoutPanel1Cliente_F.PerformLayout();
@@ -1862,12 +1862,8 @@ namespace Gestaller
             this.panel3_F.ResumeLayout(false);
             this.panel4_F.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.Grid_Factura)).EndInit();
-            this.flowLayoutPanel3Impuestos_F.ResumeLayout(false);
-            this.flowLayoutPanel3Impuestos_F.PerformLayout();
-            this.flowLayoutPanel1.ResumeLayout(false);
-            this.flowLayoutPanel1.PerformLayout();
-            this.flowLayoutPanel2.ResumeLayout(false);
-            this.flowLayoutPanel2.PerformLayout();
+            this.Panel3Impuestos_Factura.ResumeLayout(false);
+            this.Panel3Impuestos_Factura.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1980,18 +1976,9 @@ namespace Gestaller
         private Views.CueComboBox Descuento_Pre;
         private Views.CueTextBox Total_Linea_Pre;
         private Views.CueTextBox IVA_Producto_Pre;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3Impuestos_Pre;
-        private Views.CueTextBox Base_Pre;
-        private Views.CueTextBox IVA_Pre;
-        private Views.CueTextBox Total_Pre;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3Impuestos_Pro;
-        private Views.CueTextBox Base_Proforma;
-        private Views.CueTextBox IVA_Proforma;
-        private Views.CueTextBox Total_Proforma;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3Impuestos_F;
-        private Views.CueTextBox cueTextBox2Base_F;
-        private Views.CueTextBox cueTextBox3IVA_F;
-        private Views.CueTextBox cueTextBox4Total_F;
+        private Views.CueTextBox Base_Factura;
+        private Views.CueTextBox IVA_Factura;
+        private Views.CueTextBox Total_Factura;
         private Views.CueComboBox Modelo_Pre;
         private System.Windows.Forms.Button btnModificar_Proforma;
         private System.Windows.Forms.Label label3Producto_Pre;
@@ -2022,5 +2009,14 @@ namespace Gestaller
         private System.Windows.Forms.Button btnImprimir_F;
         private Views.CueComboBox Marca_Proforma;
         private System.Windows.Forms.DateTimePicker Fecha_F;
+        private System.Windows.Forms.Panel Panel3Impuestos_Factura;
+        private System.Windows.Forms.Panel panel1;
+        private Views.CueTextBox Base_Presupuesto;
+        private Views.CueTextBox IVA_Presupuesto;
+        private Views.CueTextBox Total_Presupuesto;
+        private System.Windows.Forms.Panel panel2;
+        private Views.CueTextBox Base_Proforma;
+        private Views.CueTextBox IVA_Proforma;
+        private Views.CueTextBox Total_Proforma;
     }
 }
