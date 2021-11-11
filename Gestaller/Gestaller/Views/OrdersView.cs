@@ -54,20 +54,13 @@ namespace Gestaller
             _order = order;
         }
 
-        private List<ContactVehicle> getContactsVehicles()
-        {
-            return _businessLogicLayer.GetContactVehicles();
-        }
-
-        private List<Order> getOrders()
-        {
-            return _businessLogicLayer.GetOrders();
-        }
+        private List<ContactVehicle> getContactsVehicles() => _businessLogicLayer.GetContactVehicles();
         
-        private List<Item> getItems()
-        {
-            return _businessLogicLayer.GetItems();
-        }
+
+        private List<Order> getOrders() => _businessLogicLayer.GetOrders();
+        
+        
+        private List<Item> getItems() => _businessLogicLayer.GetItems();
 
         #endregion
 
@@ -172,6 +165,18 @@ namespace Gestaller
 
             budgetSetToComboBox();
         }
+
+        #endregion
+
+        #region preforma events
+
+
+
+        #endregion
+        
+        #region invoice events
+
+
 
         #endregion
 
