@@ -29,7 +29,8 @@ namespace Gestaller
         private void OrdersView_Load(object sender, EventArgs e)
         {
             getDB();
-            getBudgetItems();
+            getBudgetClientItems();
+            setComboItems();
             getProformaItems();
         }
 
@@ -62,6 +63,14 @@ namespace Gestaller
         
         
         private List<Item> getItems() => _businessLogicLayer.GetItems();
+
+        private void setBudgetItemComboBox()
+        {
+            List<Item> items = getItems();
+            Referencia_Pre.Text = items[_selectedCell].reference.ToString();
+            Descripción_Pre.Text = items[_selectedCell].description;
+            PVP_Pre.Text = items[_selectedCell].PVP.ToString();                                  
+        }
 
         #endregion
 
@@ -117,15 +126,8 @@ namespace Gestaller
             setBudgetItemComboBox();
         }
 
-        private void setBudgetItemComboBox()
-        {
-            List<Item> items = getItems();
-            Referencia_Pre.Text = items[_selectedCell].reference.ToString();
-            Descripción_Pre.Text = items[_selectedCell].description;
-            PVP_Pre.Text = items[_selectedCell].PVP.ToString();                                  
-        }
 
-        private void getBudgetItems()
+        private void getBudgetClientItems()
         {
             List<ContactVehicle> contactsVehicles = _businessLogicLayer.GetContactVehicles();
             List<Order> orders = _businessLogicLayer.GetOrders();
@@ -139,6 +141,23 @@ namespace Gestaller
                 Marca_Pre.Items.Add(contactsVehicles[i].vehicle_brand);
                 Matricula_Pre.Items.Add(contactsVehicles[i].vehicle_enroll);
                 Cliente_Pre.Items.Add(contactsVehicles[i].contact_fullName);
+            }
+        }
+
+        private void setComboItems()
+        {
+            List<Item> items = getItems();
+
+            for(int i = 0; i < items.Count(); i++)
+            {
+                Referencia_Pre.Items.Add(items[i].reference);
+                Descripción_Pre.Items.Add(items[i].description);
+
+                Referencia_Proforma.Items.Add(items[i].reference);
+                Descripción_Proforma.Items.Add(items[i].description);
+
+                Referencia_F.Items.Add(items[i].reference);
+                Descripcion_F.Items.Add(items[i].description);
             }
         }
 
