@@ -76,7 +76,7 @@ namespace Gestaller
             budgetCellClick();
         }
 
-        #region presupuesto comboBox selection event
+        #region presupuesto client comboBox selection event
 
         private void cueComboBox1Cliente_Cliente_Pre_SelectionChangeCommitted(object sender, EventArgs e)
         {
@@ -246,9 +246,26 @@ namespace Gestaller
 
         #endregion
 
+        #region item comboBox selection event
+
+        private void Referencia_Proforma_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            _selectedCell = Referencia_Proforma.SelectedIndex;
+            setProformaItemsToComboBox();
+        }
+
+        private void Descripción_Proforma_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            _selectedCell = Descripción_Proforma.SelectedIndex;
+            setProformaItemsToComboBox();
+        }
+
+        #endregion
+
         #endregion
 
         #region proforma private methods
+
 
         private void getProformaItems()
         {
