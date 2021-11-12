@@ -176,9 +176,37 @@ namespace Gestaller
             setProformaItemsToComboBox();
         }
 
-        #region preforma comboBox selection event
+        #region proforma comboBox selection event
 
+        private void Cliente_Proforma_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            _comboIndex = Cliente_Proforma.SelectedIndex;
+            changesProformaComboBoxes();
+        }
 
+        private void Matricula_Proforma_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            _comboIndex = Matricula_Proforma.SelectedIndex;
+            changesProformaComboBoxes();
+        }
+
+        private void Presupuesto_Proforma_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            _comboIndex = Presupuesto_Proforma.SelectedIndex;
+            changesProformaComboBoxes();
+        }
+
+        private void Proforma_Proforma_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            _comboIndex = Proforma_Proforma.SelectedIndex;
+            changesProformaComboBoxes();
+        }
+
+        private void Factura_Proforma_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            _comboIndex = Factura_Proforma.SelectedIndex;
+            changesProformaComboBoxes();
+        }
 
         #endregion
 
@@ -255,5 +283,6 @@ namespace Gestaller
         #region invoice private methods
 
         #endregion
+
     }
 }

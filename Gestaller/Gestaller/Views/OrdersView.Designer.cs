@@ -899,6 +899,7 @@ namespace Gestaller
             this.Cliente_Proforma.Name = "Cliente_Proforma";
             this.Cliente_Proforma.Size = new System.Drawing.Size(248, 21);
             this.Cliente_Proforma.TabIndex = 0;
+            this.Cliente_Proforma.SelectionChangeCommitted += new System.EventHandler(this.Cliente_Proforma_SelectionChangeCommitted);
             // 
             // Matricula_Proforma
             // 
@@ -908,6 +909,7 @@ namespace Gestaller
             this.Matricula_Proforma.Name = "Matricula_Proforma";
             this.Matricula_Proforma.Size = new System.Drawing.Size(121, 21);
             this.Matricula_Proforma.TabIndex = 1;
+            this.Matricula_Proforma.SelectionChangeCommitted += new System.EventHandler(this.Matricula_Proforma_SelectionChangeCommitted);
             // 
             // Marca_Proforma
             // 
@@ -967,6 +969,7 @@ namespace Gestaller
             this.Presupuesto_Proforma.Name = "Presupuesto_Proforma";
             this.Presupuesto_Proforma.Size = new System.Drawing.Size(121, 21);
             this.Presupuesto_Proforma.TabIndex = 0;
+            this.Presupuesto_Proforma.SelectionChangeCommitted += new System.EventHandler(this.Presupuesto_Proforma_SelectionChangeCommitted);
             // 
             // Proforma_Proforma
             // 
@@ -976,6 +979,7 @@ namespace Gestaller
             this.Proforma_Proforma.Name = "Proforma_Proforma";
             this.Proforma_Proforma.Size = new System.Drawing.Size(121, 21);
             this.Proforma_Proforma.TabIndex = 1;
+            this.Proforma_Proforma.SelectionChangeCommitted += new System.EventHandler(this.Proforma_Proforma_SelectionChangeCommitted);
             // 
             // Factura_Proforma
             // 
@@ -985,6 +989,7 @@ namespace Gestaller
             this.Factura_Proforma.Name = "Factura_Proforma";
             this.Factura_Proforma.Size = new System.Drawing.Size(121, 21);
             this.Factura_Proforma.TabIndex = 2;
+            this.Factura_Proforma.SelectionChangeCommitted += new System.EventHandler(this.Factura_Proforma_SelectionChangeCommitted);
             // 
             // Fecha_Proforma
             // 
