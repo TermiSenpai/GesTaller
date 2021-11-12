@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -116,16 +116,39 @@ namespace Gestaller
 
         #endregion
 
+        #region item comboBox selection event
+
+        private void Referencia_Pre_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            _selectedCell = Referencia_Pre.SelectedIndex;
+            setBudgetItemComboBox();
+        }
+
+        private void Descripción_Pre_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            _selectedCell = Descripción_Pre.SelectedIndex;
+            setBudgetItemComboBox();
+        }
+
+        #endregion
+
         #endregion
 
         #region budget private methods
+
+        private void setBudgetItemComboBox()
+        {
+            List<Item> items = getItems();
+            Referencia_Pre.Text = items[_selectedCell].reference.ToString();
+            Descripción_Pre.Text = items[_selectedCell].description;
+            PVP_Pre.Text = items[_selectedCell].PVP.ToString();
+        }
 
         void budgetCellClick()
         {
             _selectedCell = Grid_Presupuesto.CurrentCell.RowIndex;
             setBudgetItemComboBox();
         }
-
 
         private void getBudgetClientItems()
         {
