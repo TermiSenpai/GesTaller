@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -327,7 +327,23 @@ namespace Gestaller
 
         #region invoice comboBox selection event
 
+        
 
+        #endregion
+
+        #region item comboBox selection event
+
+        private void Referencia_F_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            _selectedCell = Referencia_F.SelectedIndex;
+            setInvoiceItemsToComboBox();
+        }
+
+        private void Descripcion_F_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            _selectedCell = Descripcion_F.SelectedIndex;
+            setInvoiceItemsToComboBox();
+        }
 
         #endregion
 
@@ -335,7 +351,14 @@ namespace Gestaller
 
         #region invoice private methods
 
-        #endregion
+        private void setInvoiceItemsToComboBox()
+        {
+            List<Item> items = getItems();
+            Referencia_F.Text = items[_selectedCell].reference.ToString();
+            Descripcion_F.Text = items[_selectedCell].description;
+            PVP_Factura.Text = items[_selectedCell].PVP.ToString();
+        }
 
+        #endregion
     }
 }
