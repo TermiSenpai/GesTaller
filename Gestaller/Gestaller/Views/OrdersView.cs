@@ -64,13 +64,7 @@ namespace Gestaller
         
         private List<Item> getItems() => _businessLogicLayer.GetItems();
 
-        private void setBudgetItemComboBox()
-        {
-            List<Item> items = getItems();
-            Referencia_Pre.Text = items[_selectedCell].reference.ToString();
-            Descripción_Pre.Text = items[_selectedCell].description;
-            PVP_Pre.Text = items[_selectedCell].PVP.ToString();                                  
-        }
+        
 
         #endregion
 
