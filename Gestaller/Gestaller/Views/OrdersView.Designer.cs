@@ -642,6 +642,7 @@ namespace Gestaller
             this.Referencia_Pre.Name = "Referencia_Pre";
             this.Referencia_Pre.Size = new System.Drawing.Size(121, 21);
             this.Referencia_Pre.TabIndex = 0;
+            this.Referencia_Pre.SelectionChangeCommitted += new System.EventHandler(this.Referencia_Pre_SelectionChangeCommitted);
             // 
             // Descripción_Pre
             // 
@@ -651,6 +652,7 @@ namespace Gestaller
             this.Descripción_Pre.Name = "Descripción_Pre";
             this.Descripción_Pre.Size = new System.Drawing.Size(375, 21);
             this.Descripción_Pre.TabIndex = 1;
+            this.Descripción_Pre.SelectionChangeCommitted += new System.EventHandler(this.Descripción_Pre_SelectionChangeCommitted);
             // 
             // PVP_Pre
             // 
@@ -1227,6 +1229,7 @@ namespace Gestaller
             this.Referencia_Proforma.Name = "Referencia_Proforma";
             this.Referencia_Proforma.Size = new System.Drawing.Size(121, 21);
             this.Referencia_Proforma.TabIndex = 0;
+            this.Referencia_Proforma.SelectionChangeCommitted += new System.EventHandler(this.Referencia_Proforma_SelectionChangeCommitted);
             // 
             // Descripción_Proforma
             // 
@@ -1236,6 +1239,7 @@ namespace Gestaller
             this.Descripción_Proforma.Name = "Descripción_Proforma";
             this.Descripción_Proforma.Size = new System.Drawing.Size(375, 21);
             this.Descripción_Proforma.TabIndex = 1;
+            this.Descripción_Proforma.SelectionChangeCommitted += new System.EventHandler(this.Descripción_Proforma_SelectionChangeCommitted);
             // 
             // PVP_Proforma
             // 
@@ -1364,6 +1368,7 @@ namespace Gestaller
             this.Referencia_F.Name = "Referencia_F";
             this.Referencia_F.Size = new System.Drawing.Size(121, 21);
             this.Referencia_F.TabIndex = 0;
+            this.Referencia_F.SelectionChangeCommitted += new System.EventHandler(this.Referencia_F_SelectionChangeCommitted);
             // 
             // Descripcion_F
             // 
@@ -1373,6 +1378,7 @@ namespace Gestaller
             this.Descripcion_F.Name = "Descripcion_F";
             this.Descripcion_F.Size = new System.Drawing.Size(375, 21);
             this.Descripcion_F.TabIndex = 1;
+            this.Descripcion_F.SelectionChangeCommitted += new System.EventHandler(this.Descripcion_F_SelectionChangeCommitted);
             // 
             // PVP_Factura
             // 
