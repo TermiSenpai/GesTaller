@@ -32,6 +32,7 @@ namespace Gestaller
             getBudgetClientItems();
             setComboItems();
             getProformaItems();
+            getInvoiceItems();
         }
 
         #endregion
@@ -327,7 +328,35 @@ namespace Gestaller
 
         #region invoice comboBox selection event
 
-        
+        private void cueComboBox1Cliente_Cliente_F_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            _comboIndex = cueComboBox1Cliente_Cliente_F.SelectedIndex;
+            changesInvoiceComboBoxes();
+        }
+
+        private void cueComboBox2Cliente_Matricula_F_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            _comboIndex = cueComboBox2Cliente_Matricula_F.SelectedIndex;
+            changesInvoiceComboBoxes();
+        }
+
+        private void Presupuesto_F_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            _comboIndex = Presupuesto_F.SelectedIndex;
+            changesInvoiceComboBoxes();
+        }
+
+        private void Proforma_F_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            _comboIndex = Proforma_F.SelectedIndex;
+            changesInvoiceComboBoxes();
+        }
+
+        private void Factura_F_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            _comboIndex = Factura_F.SelectedIndex;
+            changesInvoiceComboBoxes();
+        }
 
         #endregion
 
@@ -351,6 +380,34 @@ namespace Gestaller
 
         #region invoice private methods
 
+        private void getInvoiceItems()
+        {
+            List<ContactVehicle> contactsVehicles = _businessLogicLayer.GetContactVehicles();
+            List<Order> orders = _businessLogicLayer.GetOrders();
+
+            for (int i = 0; i < orders.Count(); i++)
+            {
+                Factura_F.Items.Add(orders[i].numInvoice);
+                Proforma_F.Items.Add(orders[i].numProForma);
+                Presupuesto_F.Items.Add(orders[i].numBudget);
+                cueComboBox4Cliente_Modelo_F.Items.Add(contactsVehicles[i].vehicle_model);
+                cueComboBox3Cliente_Marca_F.Items.Add(contactsVehicles[i].vehicle_brand);
+                cueComboBox2Cliente_Matricula_F.Items.Add(contactsVehicles[i].vehicle_enroll);
+                cueComboBox1Cliente_Cliente_F.Items.Add(contactsVehicles[i].contact_fullName);
+            }
+        }
+
+        private void changesInvoiceComboBoxes()
+        {
+            List<ContactVehicle> contactsVehicles = getContactsVehicles();
+            List<Order> orders = getOrders();
+
+            selectActiveContactVehicle(contactsVehicles[_comboIndex]);
+            selectActiveOrder(orders[_comboIndex]);
+
+            invoiceSetToComboBox();
+        }
+
         private void invoiceSetToComboBox()
         {
             cueComboBox1Cliente_Cliente_F.Text = _clientVehicle.contact_fullName;
@@ -373,5 +430,7 @@ namespace Gestaller
         }
 
         #endregion
+
+        
     }
 }

@@ -1474,6 +1474,7 @@ namespace Gestaller
             this.cueComboBox1Cliente_Cliente_F.Name = "cueComboBox1Cliente_Cliente_F";
             this.cueComboBox1Cliente_Cliente_F.Size = new System.Drawing.Size(248, 21);
             this.cueComboBox1Cliente_Cliente_F.TabIndex = 0;
+            this.cueComboBox1Cliente_Cliente_F.SelectionChangeCommitted += new System.EventHandler(this.cueComboBox1Cliente_Cliente_F_SelectionChangeCommitted);
             // 
             // cueComboBox2Cliente_Matricula_F
             // 
@@ -1483,6 +1484,7 @@ namespace Gestaller
             this.cueComboBox2Cliente_Matricula_F.Name = "cueComboBox2Cliente_Matricula_F";
             this.cueComboBox2Cliente_Matricula_F.Size = new System.Drawing.Size(121, 21);
             this.cueComboBox2Cliente_Matricula_F.TabIndex = 1;
+            this.cueComboBox2Cliente_Matricula_F.SelectionChangeCommitted += new System.EventHandler(this.cueComboBox2Cliente_Matricula_F_SelectionChangeCommitted);
             // 
             // cueComboBox3Cliente_Marca_F
             // 
@@ -1543,6 +1545,7 @@ namespace Gestaller
             this.Presupuesto_F.Name = "Presupuesto_F";
             this.Presupuesto_F.Size = new System.Drawing.Size(121, 21);
             this.Presupuesto_F.TabIndex = 0;
+            this.Presupuesto_F.SelectionChangeCommitted += new System.EventHandler(this.Presupuesto_F_SelectionChangeCommitted);
             // 
             // Proforma_F
             // 
@@ -1552,6 +1555,7 @@ namespace Gestaller
             this.Proforma_F.Name = "Proforma_F";
             this.Proforma_F.Size = new System.Drawing.Size(121, 21);
             this.Proforma_F.TabIndex = 1;
+            this.Proforma_F.SelectionChangeCommitted += new System.EventHandler(this.Proforma_F_SelectionChangeCommitted);
             // 
             // Factura_F
             // 
@@ -1561,6 +1565,7 @@ namespace Gestaller
             this.Factura_F.Name = "Factura_F";
             this.Factura_F.Size = new System.Drawing.Size(121, 21);
             this.Factura_F.TabIndex = 2;
+            this.Factura_F.SelectionChangeCommitted += new System.EventHandler(this.Factura_F_SelectionChangeCommitted);
             // 
             // Fecha_F
             // 
