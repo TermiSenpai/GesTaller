@@ -642,6 +642,7 @@ namespace Gestaller
             this.Referencia_Pre.Name = "Referencia_Pre";
             this.Referencia_Pre.Size = new System.Drawing.Size(121, 21);
             this.Referencia_Pre.TabIndex = 0;
+            this.Referencia_Pre.SelectionChangeCommitted += new System.EventHandler(this.Referencia_Pre_SelectionChangeCommitted);
             // 
             // Descripción_Pre
             // 
@@ -651,6 +652,7 @@ namespace Gestaller
             this.Descripción_Pre.Name = "Descripción_Pre";
             this.Descripción_Pre.Size = new System.Drawing.Size(375, 21);
             this.Descripción_Pre.TabIndex = 1;
+            this.Descripción_Pre.SelectionChangeCommitted += new System.EventHandler(this.Descripción_Pre_SelectionChangeCommitted);
             // 
             // PVP_Pre
             // 
@@ -808,7 +810,6 @@ namespace Gestaller
             this.tableLayoutPanel1Proforma.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1Proforma.Size = new System.Drawing.Size(1164, 549);
             this.tableLayoutPanel1Proforma.TabIndex = 0;
-            this.tableLayoutPanel1Proforma.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1Proforma_Paint);
             // 
             // panel2
             // 
@@ -900,6 +901,7 @@ namespace Gestaller
             this.Cliente_Proforma.Name = "Cliente_Proforma";
             this.Cliente_Proforma.Size = new System.Drawing.Size(248, 21);
             this.Cliente_Proforma.TabIndex = 0;
+            this.Cliente_Proforma.SelectionChangeCommitted += new System.EventHandler(this.Cliente_Proforma_SelectionChangeCommitted);
             // 
             // Matricula_Proforma
             // 
@@ -909,6 +911,7 @@ namespace Gestaller
             this.Matricula_Proforma.Name = "Matricula_Proforma";
             this.Matricula_Proforma.Size = new System.Drawing.Size(121, 21);
             this.Matricula_Proforma.TabIndex = 1;
+            this.Matricula_Proforma.SelectionChangeCommitted += new System.EventHandler(this.Matricula_Proforma_SelectionChangeCommitted);
             // 
             // Marca_Proforma
             // 
@@ -968,6 +971,7 @@ namespace Gestaller
             this.Presupuesto_Proforma.Name = "Presupuesto_Proforma";
             this.Presupuesto_Proforma.Size = new System.Drawing.Size(121, 21);
             this.Presupuesto_Proforma.TabIndex = 0;
+            this.Presupuesto_Proforma.SelectionChangeCommitted += new System.EventHandler(this.Presupuesto_Proforma_SelectionChangeCommitted);
             // 
             // Proforma_Proforma
             // 
@@ -977,6 +981,7 @@ namespace Gestaller
             this.Proforma_Proforma.Name = "Proforma_Proforma";
             this.Proforma_Proforma.Size = new System.Drawing.Size(121, 21);
             this.Proforma_Proforma.TabIndex = 1;
+            this.Proforma_Proforma.SelectionChangeCommitted += new System.EventHandler(this.Proforma_Proforma_SelectionChangeCommitted);
             // 
             // Factura_Proforma
             // 
@@ -986,6 +991,7 @@ namespace Gestaller
             this.Factura_Proforma.Name = "Factura_Proforma";
             this.Factura_Proforma.Size = new System.Drawing.Size(121, 21);
             this.Factura_Proforma.TabIndex = 2;
+            this.Factura_Proforma.SelectionChangeCommitted += new System.EventHandler(this.Factura_Proforma_SelectionChangeCommitted);
             // 
             // Fecha_Proforma
             // 
@@ -1133,6 +1139,7 @@ namespace Gestaller
             this.Grid_Proforma.Name = "Grid_Proforma";
             this.Grid_Proforma.Size = new System.Drawing.Size(1158, 133);
             this.Grid_Proforma.TabIndex = 11;
+            this.Grid_Proforma.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.Grid_Proforma_CellMouseClick);
             // 
             // panel4_Pro
             // 
@@ -1222,6 +1229,7 @@ namespace Gestaller
             this.Referencia_Proforma.Name = "Referencia_Proforma";
             this.Referencia_Proforma.Size = new System.Drawing.Size(121, 21);
             this.Referencia_Proforma.TabIndex = 0;
+            this.Referencia_Proforma.SelectionChangeCommitted += new System.EventHandler(this.Referencia_Proforma_SelectionChangeCommitted);
             // 
             // Descripción_Proforma
             // 
@@ -1231,6 +1239,7 @@ namespace Gestaller
             this.Descripción_Proforma.Name = "Descripción_Proforma";
             this.Descripción_Proforma.Size = new System.Drawing.Size(375, 21);
             this.Descripción_Proforma.TabIndex = 1;
+            this.Descripción_Proforma.SelectionChangeCommitted += new System.EventHandler(this.Descripción_Proforma_SelectionChangeCommitted);
             // 
             // PVP_Proforma
             // 
@@ -1359,6 +1368,7 @@ namespace Gestaller
             this.Referencia_F.Name = "Referencia_F";
             this.Referencia_F.Size = new System.Drawing.Size(121, 21);
             this.Referencia_F.TabIndex = 0;
+            this.Referencia_F.SelectionChangeCommitted += new System.EventHandler(this.Referencia_F_SelectionChangeCommitted);
             // 
             // Descripcion_F
             // 
@@ -1368,6 +1378,7 @@ namespace Gestaller
             this.Descripcion_F.Name = "Descripcion_F";
             this.Descripcion_F.Size = new System.Drawing.Size(375, 21);
             this.Descripcion_F.TabIndex = 1;
+            this.Descripcion_F.SelectionChangeCommitted += new System.EventHandler(this.Descripcion_F_SelectionChangeCommitted);
             // 
             // PVP_Factura
             // 
@@ -1463,6 +1474,7 @@ namespace Gestaller
             this.cueComboBox1Cliente_Cliente_F.Name = "cueComboBox1Cliente_Cliente_F";
             this.cueComboBox1Cliente_Cliente_F.Size = new System.Drawing.Size(248, 21);
             this.cueComboBox1Cliente_Cliente_F.TabIndex = 0;
+            this.cueComboBox1Cliente_Cliente_F.SelectionChangeCommitted += new System.EventHandler(this.cueComboBox1Cliente_Cliente_F_SelectionChangeCommitted);
             // 
             // cueComboBox2Cliente_Matricula_F
             // 
@@ -1472,6 +1484,7 @@ namespace Gestaller
             this.cueComboBox2Cliente_Matricula_F.Name = "cueComboBox2Cliente_Matricula_F";
             this.cueComboBox2Cliente_Matricula_F.Size = new System.Drawing.Size(121, 21);
             this.cueComboBox2Cliente_Matricula_F.TabIndex = 1;
+            this.cueComboBox2Cliente_Matricula_F.SelectionChangeCommitted += new System.EventHandler(this.cueComboBox2Cliente_Matricula_F_SelectionChangeCommitted);
             // 
             // cueComboBox3Cliente_Marca_F
             // 
@@ -1532,6 +1545,7 @@ namespace Gestaller
             this.Presupuesto_F.Name = "Presupuesto_F";
             this.Presupuesto_F.Size = new System.Drawing.Size(121, 21);
             this.Presupuesto_F.TabIndex = 0;
+            this.Presupuesto_F.SelectionChangeCommitted += new System.EventHandler(this.Presupuesto_F_SelectionChangeCommitted);
             // 
             // Proforma_F
             // 
@@ -1541,6 +1555,7 @@ namespace Gestaller
             this.Proforma_F.Name = "Proforma_F";
             this.Proforma_F.Size = new System.Drawing.Size(121, 21);
             this.Proforma_F.TabIndex = 1;
+            this.Proforma_F.SelectionChangeCommitted += new System.EventHandler(this.Proforma_F_SelectionChangeCommitted);
             // 
             // Factura_F
             // 
@@ -1550,6 +1565,7 @@ namespace Gestaller
             this.Factura_F.Name = "Factura_F";
             this.Factura_F.Size = new System.Drawing.Size(121, 21);
             this.Factura_F.TabIndex = 2;
+            this.Factura_F.SelectionChangeCommitted += new System.EventHandler(this.Factura_F_SelectionChangeCommitted);
             // 
             // Fecha_F
             // 
@@ -1739,6 +1755,7 @@ namespace Gestaller
             this.Grid_Factura.Name = "Grid_Factura";
             this.Grid_Factura.Size = new System.Drawing.Size(1158, 133);
             this.Grid_Factura.TabIndex = 11;
+            this.Grid_Factura.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.Grid_Factura_CellMouseClick);
             // 
             // label3Producto_F
             // 
