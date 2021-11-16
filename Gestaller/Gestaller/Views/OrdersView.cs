@@ -351,6 +351,19 @@ namespace Gestaller
 
         #region invoice private methods
 
+        private void invoiceSetToComboBox()
+        {
+            cueComboBox1Cliente_Cliente_F.Text = _clientVehicle.contact_fullName;
+            cueComboBox2Cliente_Matricula_F.Text = _clientVehicle.vehicle_enroll;
+            cueComboBox3Cliente_Marca_F.Text = _clientVehicle.vehicle_brand;
+            cueComboBox4Cliente_Modelo_F.Text = _clientVehicle.vehicle_model;
+            cueTextBox1Cliente_Km_F.Text = _clientVehicle.vehicle_kms;
+            Presupuesto_F.Text = _order.numBudget.ToString(); // presupuesto
+            Proforma_F.Text = _order.numProForma.ToString(); // proforma
+            Factura_F.Text = _order.numInvoice.ToString(); // factura
+            Fecha_F.Value = _order.dateBudget;
+        }
+
         private void setInvoiceItemsToComboBox()
         {
             List<Item> items = getItems();
