@@ -323,7 +323,7 @@ namespace Gestaller
 
         private void Grid_Factura_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
-
+            invoiceCellClick();
         }
 
         #region invoice comboBox selection event
@@ -379,6 +379,20 @@ namespace Gestaller
         #endregion
 
         #region invoice private methods
+
+        private void invoiceCellClick()
+        {
+            _selectedCell = Grid_Presupuesto.CurrentCell.RowIndex;
+            setInvoiceItemComboBox();
+        }
+
+        private void setInvoiceItemComboBox()
+        {
+            List<Item> items = getItems();
+            Referencia_F.Text = items[_selectedCell].reference.ToString();
+            Descripcion_F.Text = items[_selectedCell].description;
+            PVP_Factura.Text = items[_selectedCell].PVP.ToString();
+        }
 
         private void getInvoiceItems()
         {
