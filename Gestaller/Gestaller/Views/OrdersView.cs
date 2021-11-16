@@ -69,6 +69,9 @@ namespace Gestaller
 
         #endregion
 
+
+
+
         #region budget events
         
         private void dataGridView3_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
@@ -205,6 +208,9 @@ namespace Gestaller
 
         #endregion
 
+
+
+
         #region proforma events
 
         private void Grid_Proforma_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
@@ -318,6 +324,9 @@ namespace Gestaller
         }
 
         #endregion
+
+
+
 
         #region invoice events
 
