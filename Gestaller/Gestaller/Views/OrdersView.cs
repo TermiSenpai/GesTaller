@@ -403,7 +403,5 @@ namespace Gestaller
         }
 
         #endregion
-
-        #endregion
     }
 }
