@@ -35,5 +35,25 @@ namespace Gestaller
 
             return contactsVehicles;
         }
+
+        public List<Incoming> GetIncomings()
+        {
+            return _dataLayerDummie.GetIncomings();
+        }
+
+        public List<Item> GetItems()
+        {
+            return _dataLayerDummie.GetItems();
+        }
+
+        public List<Order> GetOrders()
+        {
+            return _dataLayerDummie.GetOrders();
+        }
+
+        public List<TaxRate> GetTaxRate()
+        {
+            return _dataLayerDummie.GetTaxRate();
+        }
     }
 }

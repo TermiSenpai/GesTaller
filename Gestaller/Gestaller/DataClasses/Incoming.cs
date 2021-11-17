@@ -22,8 +22,8 @@ namespace Gestaller
         public DateTime incomingDate    { get; set; }
         public DateTime departureDate   { get; set; }
         public DateTime estimatedDate   { get; set; }
-        public string damages           { get; set; }
         public float kms                { get; set; }
+        public string damages           { get; set; }
 
     }
 }

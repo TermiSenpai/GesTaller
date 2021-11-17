@@ -30,7 +30,10 @@ namespace Gestaller
         private void InitializeComponent()
         {
             this.tableOpciones = new System.Windows.Forms.TableLayoutPanel();
-            this.label1DatosEm = new System.Windows.Forms.Label();
+            this.dataGridViewIVA = new System.Windows.Forms.DataGridView();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.cueComboBoxValor = new Gestaller.Views.CueComboBox();
+            this.cueComboBoxTipoIVA = new Gestaller.Views.CueComboBox();
             this.flowDatosEm = new System.Windows.Forms.FlowLayoutPanel();
             this.cueComboBoxEmpresa = new Gestaller.Views.CueComboBox();
             this.cueComboBoxCIF = new Gestaller.Views.CueComboBox();
@@ -42,13 +45,14 @@ namespace Gestaller
             this.cueComboBoxTelefono = new Gestaller.Views.CueComboBox();
             this.cueComboBoxFax = new Gestaller.Views.CueComboBox();
             this.cueComboBoxEmail = new Gestaller.Views.CueComboBox();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.labelIVA = new System.Windows.Forms.Label();
+            this.label1DatosEm = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.buttonAddTaxRate = new System.Windows.Forms.Button();
             this.buttonDeleteTaxRate = new System.Windows.Forms.Button();
             this.buttonModifyTaxRate = new System.Windows.Forms.Button();
-            this.buttonAddTaxRate = new System.Windows.Forms.Button();
-            this.cueComboBoxValor = new Gestaller.Views.CueComboBox();
-            this.cueComboBoxTipoIVA = new Gestaller.Views.CueComboBox();
-            this.dataGridViewIVA = new System.Windows.Forms.DataGridView();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.buttonSaveCompany = new System.Windows.Forms.Button();
             this.tabControlOpciones = new System.Windows.Forms.TabControl();
             this.tabPageDatosE = new System.Windows.Forms.TabPage();
             this.tabPageServidor = new System.Windows.Forms.TabPage();
@@ -56,21 +60,19 @@ namespace Gestaller
             this.labelServidor = new System.Windows.Forms.Label();
             this.tableLayoutPanelServidor = new System.Windows.Forms.TableLayoutPanel();
             this.panelLoggin_Servidor = new System.Windows.Forms.Panel();
+            this.buttonTestServer = new System.Windows.Forms.Button();
+            this.buttonSaveServer = new System.Windows.Forms.Button();
+            this.cueTextBoxUsuario = new Gestaller.Views.CueTextBox();
             this.cueTextBoxContrasena = new Gestaller.Views.CueTextBox();
             this.flowLayoutPanelConex_Servidor = new System.Windows.Forms.FlowLayoutPanel();
             this.cueTextBoxHost = new Gestaller.Views.CueTextBox();
             this.cueTextBoxPuerto = new Gestaller.Views.CueTextBox();
-            this.cueTextBoxUsuario = new Gestaller.Views.CueTextBox();
-            this.labelIVA = new System.Windows.Forms.Label();
-            this.buttonSaveServer = new System.Windows.Forms.Button();
-            this.buttonTestServer = new System.Windows.Forms.Button();
-            this.buttonSaveCompany = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.tableOpciones.SuspendLayout();
-            this.flowDatosEm.SuspendLayout();
-            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewIVA)).BeginInit();
+            this.panel1.SuspendLayout();
+            this.flowDatosEm.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.tabControlOpciones.SuspendLayout();
             this.tabPageDatosE.SuspendLayout();
             this.tabPageServidor.SuspendLayout();
@@ -78,8 +80,6 @@ namespace Gestaller
             this.tableLayoutPanelServidor.SuspendLayout();
             this.panelLoggin_Servidor.SuspendLayout();
             this.flowLayoutPanelConex_Servidor.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableOpciones
@@ -99,23 +99,50 @@ namespace Gestaller
             this.tableOpciones.RowCount = 7;
             this.tableOpciones.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 24F));
             this.tableOpciones.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 96F));
-            this.tableOpciones.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
+            this.tableOpciones.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 29F));
             this.tableOpciones.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 24F));
             this.tableOpciones.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 36F));
-            this.tableOpciones.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
+            this.tableOpciones.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 29F));
             this.tableOpciones.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableOpciones.Size = new System.Drawing.Size(761, 527);
             this.tableOpciones.TabIndex = 0;
             // 
-            // label1DatosEm
+            // dataGridViewIVA
             // 
-            this.label1DatosEm.AutoSize = true;
-            this.label1DatosEm.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.label1DatosEm.Location = new System.Drawing.Point(3, 7);
-            this.label1DatosEm.Name = "label1DatosEm";
-            this.label1DatosEm.Size = new System.Drawing.Size(755, 17);
-            this.label1DatosEm.TabIndex = 0;
-            this.label1DatosEm.Text = "DATOS DE EMPRESA";
+            this.dataGridViewIVA.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dataGridViewIVA.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewIVA.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridViewIVA.Location = new System.Drawing.Point(3, 241);
+            this.dataGridViewIVA.Name = "dataGridViewIVA";
+            this.dataGridViewIVA.Size = new System.Drawing.Size(755, 297);
+            this.dataGridViewIVA.TabIndex = 4;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.cueComboBoxValor);
+            this.panel1.Controls.Add(this.cueComboBoxTipoIVA);
+            this.panel1.Location = new System.Drawing.Point(3, 176);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(334, 30);
+            this.panel1.TabIndex = 3;
+            // 
+            // cueComboBoxValor
+            // 
+            this.cueComboBoxValor.CueText = "Valor";
+            this.cueComboBoxValor.FormattingEnabled = true;
+            this.cueComboBoxValor.Location = new System.Drawing.Point(130, 3);
+            this.cueComboBoxValor.Name = "cueComboBoxValor";
+            this.cueComboBoxValor.Size = new System.Drawing.Size(121, 24);
+            this.cueComboBoxValor.TabIndex = 1;
+            // 
+            // cueComboBoxTipoIVA
+            // 
+            this.cueComboBoxTipoIVA.CueText = "Tipo";
+            this.cueComboBoxTipoIVA.FormattingEnabled = true;
+            this.cueComboBoxTipoIVA.Location = new System.Drawing.Point(3, 3);
+            this.cueComboBoxTipoIVA.Name = "cueComboBoxTipoIVA";
+            this.cueComboBoxTipoIVA.Size = new System.Drawing.Size(121, 24);
+            this.cueComboBoxTipoIVA.TabIndex = 0;
             // 
             // flowDatosEm
             // 
@@ -230,21 +257,58 @@ namespace Gestaller
             this.cueComboBoxEmail.Size = new System.Drawing.Size(248, 24);
             this.cueComboBoxEmail.TabIndex = 10;
             // 
-            // panel1
+            // labelIVA
             // 
-            this.panel1.Controls.Add(this.cueComboBoxValor);
-            this.panel1.Controls.Add(this.cueComboBoxTipoIVA);
-            this.panel1.Location = new System.Drawing.Point(3, 182);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(334, 30);
-            this.panel1.TabIndex = 3;
+            this.labelIVA.AutoSize = true;
+            this.labelIVA.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.labelIVA.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.labelIVA.Location = new System.Drawing.Point(3, 156);
+            this.labelIVA.Name = "labelIVA";
+            this.labelIVA.Size = new System.Drawing.Size(755, 17);
+            this.labelIVA.TabIndex = 2;
+            this.labelIVA.Text = "I.V.A.";
+            // 
+            // label1DatosEm
+            // 
+            this.label1DatosEm.AutoSize = true;
+            this.label1DatosEm.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.label1DatosEm.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.label1DatosEm.Location = new System.Drawing.Point(3, 7);
+            this.label1DatosEm.Name = "label1DatosEm";
+            this.label1DatosEm.Size = new System.Drawing.Size(755, 17);
+            this.label1DatosEm.TabIndex = 0;
+            this.label1DatosEm.Text = "DATOS DE EMPRESA";
+            // 
+            // panel2
+            // 
+            this.panel2.AutoSize = true;
+            this.panel2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.panel2.Controls.Add(this.buttonAddTaxRate);
+            this.panel2.Controls.Add(this.buttonDeleteTaxRate);
+            this.panel2.Controls.Add(this.buttonModifyTaxRate);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(3, 212);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(755, 23);
+            this.panel2.TabIndex = 6;
+            // 
+            // buttonAddTaxRate
+            // 
+            this.buttonAddTaxRate.Dock = System.Windows.Forms.DockStyle.Right;
+            this.buttonAddTaxRate.Location = new System.Drawing.Point(530, 0);
+            this.buttonAddTaxRate.Name = "buttonAddTaxRate";
+            this.buttonAddTaxRate.Size = new System.Drawing.Size(75, 23);
+            this.buttonAddTaxRate.TabIndex = 2;
+            this.buttonAddTaxRate.Text = "Agregar";
+            this.buttonAddTaxRate.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.buttonAddTaxRate.UseVisualStyleBackColor = true;
             // 
             // buttonDeleteTaxRate
             // 
             this.buttonDeleteTaxRate.Dock = System.Windows.Forms.DockStyle.Right;
             this.buttonDeleteTaxRate.Location = new System.Drawing.Point(605, 0);
             this.buttonDeleteTaxRate.Name = "buttonDeleteTaxRate";
-            this.buttonDeleteTaxRate.Size = new System.Drawing.Size(75, 29);
+            this.buttonDeleteTaxRate.Size = new System.Drawing.Size(75, 23);
             this.buttonDeleteTaxRate.TabIndex = 4;
             this.buttonDeleteTaxRate.Text = "Eliminar";
             this.buttonDeleteTaxRate.UseVisualStyleBackColor = true;
@@ -254,47 +318,31 @@ namespace Gestaller
             this.buttonModifyTaxRate.Dock = System.Windows.Forms.DockStyle.Right;
             this.buttonModifyTaxRate.Location = new System.Drawing.Point(680, 0);
             this.buttonModifyTaxRate.Name = "buttonModifyTaxRate";
-            this.buttonModifyTaxRate.Size = new System.Drawing.Size(75, 29);
+            this.buttonModifyTaxRate.Size = new System.Drawing.Size(75, 23);
             this.buttonModifyTaxRate.TabIndex = 3;
             this.buttonModifyTaxRate.Text = "Modificar";
             this.buttonModifyTaxRate.UseVisualStyleBackColor = true;
             // 
-            // buttonAddTaxRate
+            // panel3
             // 
-            this.buttonAddTaxRate.Dock = System.Windows.Forms.DockStyle.Right;
-            this.buttonAddTaxRate.Location = new System.Drawing.Point(530, 0);
-            this.buttonAddTaxRate.Name = "buttonAddTaxRate";
-            this.buttonAddTaxRate.Size = new System.Drawing.Size(75, 29);
-            this.buttonAddTaxRate.TabIndex = 2;
-            this.buttonAddTaxRate.Text = "Agregar";
-            this.buttonAddTaxRate.UseVisualStyleBackColor = true;
+            this.panel3.AutoSize = true;
+            this.panel3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.panel3.Controls.Add(this.buttonSaveCompany);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel3.Location = new System.Drawing.Point(3, 123);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(755, 23);
+            this.panel3.TabIndex = 7;
             // 
-            // cueComboBoxValor
+            // buttonSaveCompany
             // 
-            this.cueComboBoxValor.CueText = "Valor";
-            this.cueComboBoxValor.FormattingEnabled = true;
-            this.cueComboBoxValor.Location = new System.Drawing.Point(130, 3);
-            this.cueComboBoxValor.Name = "cueComboBoxValor";
-            this.cueComboBoxValor.Size = new System.Drawing.Size(121, 24);
-            this.cueComboBoxValor.TabIndex = 1;
-            // 
-            // cueComboBoxTipoIVA
-            // 
-            this.cueComboBoxTipoIVA.CueText = "Tipo";
-            this.cueComboBoxTipoIVA.FormattingEnabled = true;
-            this.cueComboBoxTipoIVA.Location = new System.Drawing.Point(3, 3);
-            this.cueComboBoxTipoIVA.Name = "cueComboBoxTipoIVA";
-            this.cueComboBoxTipoIVA.Size = new System.Drawing.Size(121, 24);
-            this.cueComboBoxTipoIVA.TabIndex = 0;
-            // 
-            // dataGridViewIVA
-            // 
-            this.dataGridViewIVA.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewIVA.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridViewIVA.Location = new System.Drawing.Point(3, 253);
-            this.dataGridViewIVA.Name = "dataGridViewIVA";
-            this.dataGridViewIVA.Size = new System.Drawing.Size(755, 297);
-            this.dataGridViewIVA.TabIndex = 4;
+            this.buttonSaveCompany.Dock = System.Windows.Forms.DockStyle.Right;
+            this.buttonSaveCompany.Location = new System.Drawing.Point(680, 0);
+            this.buttonSaveCompany.Name = "buttonSaveCompany";
+            this.buttonSaveCompany.Size = new System.Drawing.Size(75, 23);
+            this.buttonSaveCompany.TabIndex = 5;
+            this.buttonSaveCompany.Text = "Guardar";
+            this.buttonSaveCompany.UseVisualStyleBackColor = true;
             // 
             // tabControlOpciones
             // 
@@ -348,6 +396,7 @@ namespace Gestaller
             // 
             this.labelServidor.AutoSize = true;
             this.labelServidor.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.labelServidor.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
             this.labelServidor.Location = new System.Drawing.Point(3, 7);
             this.labelServidor.Name = "labelServidor";
             this.labelServidor.Size = new System.Drawing.Size(755, 17);
@@ -379,8 +428,34 @@ namespace Gestaller
             this.panelLoggin_Servidor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelLoggin_Servidor.Location = new System.Drawing.Point(3, 38);
             this.panelLoggin_Servidor.Name = "panelLoggin_Servidor";
-            this.panelLoggin_Servidor.Size = new System.Drawing.Size(254, 98);
+            this.panelLoggin_Servidor.Size = new System.Drawing.Size(749, 456);
             this.panelLoggin_Servidor.TabIndex = 1;
+            // 
+            // buttonTestServer
+            // 
+            this.buttonTestServer.Location = new System.Drawing.Point(176, 65);
+            this.buttonTestServer.Name = "buttonTestServer";
+            this.buttonTestServer.Size = new System.Drawing.Size(75, 23);
+            this.buttonTestServer.TabIndex = 6;
+            this.buttonTestServer.Text = "Probar";
+            this.buttonTestServer.UseVisualStyleBackColor = true;
+            // 
+            // buttonSaveServer
+            // 
+            this.buttonSaveServer.Location = new System.Drawing.Point(95, 65);
+            this.buttonSaveServer.Name = "buttonSaveServer";
+            this.buttonSaveServer.Size = new System.Drawing.Size(75, 23);
+            this.buttonSaveServer.TabIndex = 5;
+            this.buttonSaveServer.Text = "Guardar";
+            this.buttonSaveServer.UseVisualStyleBackColor = true;
+            // 
+            // cueTextBoxUsuario
+            // 
+            this.cueTextBoxUsuario.CueText = "Usuario";
+            this.cueTextBoxUsuario.Location = new System.Drawing.Point(3, 3);
+            this.cueTextBoxUsuario.Name = "cueTextBoxUsuario";
+            this.cueTextBoxUsuario.Size = new System.Drawing.Size(248, 23);
+            this.cueTextBoxUsuario.TabIndex = 3;
             // 
             // cueTextBoxContrasena
             // 
@@ -397,7 +472,7 @@ namespace Gestaller
             this.flowLayoutPanelConex_Servidor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanelConex_Servidor.Location = new System.Drawing.Point(3, 3);
             this.flowLayoutPanelConex_Servidor.Name = "flowLayoutPanelConex_Servidor";
-            this.flowLayoutPanelConex_Servidor.Size = new System.Drawing.Size(254, 29);
+            this.flowLayoutPanelConex_Servidor.Size = new System.Drawing.Size(749, 29);
             this.flowLayoutPanelConex_Servidor.TabIndex = 0;
             // 
             // cueTextBoxHost
@@ -417,76 +492,6 @@ namespace Gestaller
             this.cueTextBoxPuerto.Size = new System.Drawing.Size(121, 23);
             this.cueTextBoxPuerto.TabIndex = 2;
             // 
-            // cueTextBoxUsuario
-            // 
-            this.cueTextBoxUsuario.CueText = "Usuario";
-            this.cueTextBoxUsuario.Location = new System.Drawing.Point(3, 3);
-            this.cueTextBoxUsuario.Name = "cueTextBoxUsuario";
-            this.cueTextBoxUsuario.Size = new System.Drawing.Size(248, 23);
-            this.cueTextBoxUsuario.TabIndex = 3;
-            // 
-            // labelIVA
-            // 
-            this.labelIVA.AutoSize = true;
-            this.labelIVA.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.labelIVA.Location = new System.Drawing.Point(3, 162);
-            this.labelIVA.Name = "labelIVA";
-            this.labelIVA.Size = new System.Drawing.Size(755, 17);
-            this.labelIVA.TabIndex = 2;
-            this.labelIVA.Text = "I.V.A.";
-            // 
-            // buttonSaveServer
-            // 
-            this.buttonSaveServer.Location = new System.Drawing.Point(95, 65);
-            this.buttonSaveServer.Name = "buttonSaveServer";
-            this.buttonSaveServer.Size = new System.Drawing.Size(75, 23);
-            this.buttonSaveServer.TabIndex = 5;
-            this.buttonSaveServer.Text = "Guardar";
-            this.buttonSaveServer.UseVisualStyleBackColor = true;
-            // 
-            // buttonTestServer
-            // 
-            this.buttonTestServer.Location = new System.Drawing.Point(176, 65);
-            this.buttonTestServer.Name = "buttonTestServer";
-            this.buttonTestServer.Size = new System.Drawing.Size(75, 23);
-            this.buttonTestServer.TabIndex = 6;
-            this.buttonTestServer.Text = "Probar";
-            this.buttonTestServer.UseVisualStyleBackColor = true;
-            // 
-            // buttonSaveCompany
-            // 
-            this.buttonSaveCompany.Dock = System.Windows.Forms.DockStyle.Right;
-            this.buttonSaveCompany.Location = new System.Drawing.Point(680, 0);
-            this.buttonSaveCompany.Name = "buttonSaveCompany";
-            this.buttonSaveCompany.Size = new System.Drawing.Size(75, 29);
-            this.buttonSaveCompany.TabIndex = 5;
-            this.buttonSaveCompany.Text = "Guardar";
-            this.buttonSaveCompany.UseVisualStyleBackColor = true;
-            // 
-            // panel2
-            // 
-            this.panel2.AutoSize = true;
-            this.panel2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.panel2.Controls.Add(this.buttonAddTaxRate);
-            this.panel2.Controls.Add(this.buttonDeleteTaxRate);
-            this.panel2.Controls.Add(this.buttonModifyTaxRate);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(3, 218);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(755, 29);
-            this.panel2.TabIndex = 6;
-            // 
-            // panel3
-            // 
-            this.panel3.AutoSize = true;
-            this.panel3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.panel3.Controls.Add(this.buttonSaveCompany);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(3, 123);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(755, 29);
-            this.panel3.TabIndex = 7;
-            // 
             // OptionsView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -499,9 +504,11 @@ namespace Gestaller
             this.Text = "Opciones";
             this.tableOpciones.ResumeLayout(false);
             this.tableOpciones.PerformLayout();
-            this.flowDatosEm.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewIVA)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.flowDatosEm.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
             this.tabControlOpciones.ResumeLayout(false);
             this.tabPageDatosE.ResumeLayout(false);
             this.tabPageServidor.ResumeLayout(false);
@@ -513,8 +520,6 @@ namespace Gestaller
             this.panelLoggin_Servidor.PerformLayout();
             this.flowLayoutPanelConex_Servidor.ResumeLayout(false);
             this.flowLayoutPanelConex_Servidor.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
