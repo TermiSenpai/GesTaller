@@ -50,6 +50,35 @@ namespace Gestaller
             setToComboBox();
         }
 
+        private void setItemsToComboBox()
+        {
+            List<Item> items = getItems();
+
+            switch (ordenesTab.SelectedIndex)
+            {
+                // Presupuesto
+                case 0:
+                    Referencia_Pre.Text = items[_selectedCell].reference.ToString();
+                    Descripción_Pre.Text = items[_selectedCell].description;
+                    PVP_Pre.Text = items[_selectedCell].PVP.ToString();
+                    break;
+                    
+                // Proforma
+                case 1:
+                    Referencia_Proforma.Text = items[_selectedCell].reference.ToString();
+                    Descripción_Proforma.Text = items[_selectedCell].description;
+                    PVP_Proforma.Text = items[_selectedCell].PVP.ToString();
+                    break;
+
+                // Factura
+                case 2:
+                    Referencia_F.Text = items[_selectedCell].reference.ToString();
+                    Descripcion_F.Text = items[_selectedCell].description;
+                    PVP_Factura.Text = items[_selectedCell].PVP.ToString();
+                    break;
+            }
+        }
+
         private void setToComboBox()
         {
             switch (ordenesTab.SelectedIndex)
