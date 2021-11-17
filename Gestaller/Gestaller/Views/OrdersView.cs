@@ -62,7 +62,7 @@ namespace Gestaller
                     Descripción_Pre.Text = items[_selectedCell].description;
                     PVP_Pre.Text = items[_selectedCell].PVP.ToString();
                     break;
-                    
+
                 // Proforma
                 case 1:
                     Referencia_Proforma.Text = items[_selectedCell].reference.ToString();
@@ -103,9 +103,9 @@ namespace Gestaller
                     Marca_Proforma.Text = _clientVehicle.vehicle_brand;
                     Modelo_Proforma.Text = _clientVehicle.vehicle_model;
                     Km_Proforma.Text = _clientVehicle.vehicle_kms;
-                    Presupuesto_Proforma.Text = _order.numBudget.ToString(); 
-                    Proforma_Proforma.Text = _order.numProForma.ToString(); 
-                    Factura_Proforma.Text = _order.numInvoice.ToString(); 
+                    Presupuesto_Proforma.Text = _order.numBudget.ToString();
+                    Proforma_Proforma.Text = _order.numProForma.ToString();
+                    Factura_Proforma.Text = _order.numInvoice.ToString();
                     Fecha_Proforma.Value = _order.dateBudget;
                     break;
 
@@ -116,9 +116,9 @@ namespace Gestaller
                     Marca_Factura.Text = _clientVehicle.vehicle_brand;
                     Modelo_Factura.Text = _clientVehicle.vehicle_model;
                     Kilometro_Factura.Text = _clientVehicle.vehicle_kms;
-                    Presupuesto_F.Text = _order.numBudget.ToString(); 
-                    Proforma_F.Text = _order.numProForma.ToString(); 
-                    Factura_F.Text = _order.numInvoice.ToString(); 
+                    Presupuesto_F.Text = _order.numBudget.ToString();
+                    Proforma_F.Text = _order.numProForma.ToString();
+                    Factura_F.Text = _order.numInvoice.ToString();
                     Fecha_F.Value = _order.dateBudget;
                     break;
             }
@@ -141,7 +141,7 @@ namespace Gestaller
         private List<Order> getOrders() => _businessLogicLayer.GetOrders();
 
         private List<Item> getItems() => _businessLogicLayer.GetItems();
-        
+
         private void setComboItems()
         {
             List<Item> items = getItems();
@@ -263,7 +263,7 @@ namespace Gestaller
             _selectedCell = Grid_Presupuesto.CurrentCell.RowIndex;
             setItemsToComboBox();
         }
-                
+
         #endregion
 
 
@@ -401,9 +401,7 @@ namespace Gestaller
             _selectedCell = Grid_Presupuesto.CurrentCell.RowIndex;
             setItemsToComboBox();
         }
-                
+
         #endregion
-
-
     }
 }
