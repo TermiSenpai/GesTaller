@@ -339,13 +339,13 @@ namespace Gestaller
 
         private void cueComboBox1Cliente_Cliente_F_SelectionChangeCommitted(object sender, EventArgs e)
         {
-            _comboIndex = cueComboBox1Cliente_Cliente_F.SelectedIndex;
+            _comboIndex = Cliente_Factura.SelectedIndex;
             changesInvoiceComboBoxes();
         }
 
         private void cueComboBox2Cliente_Matricula_F_SelectionChangeCommitted(object sender, EventArgs e)
         {
-            _comboIndex = cueComboBox2Cliente_Matricula_F.SelectedIndex;
+            _comboIndex = Matricula_Factura.SelectedIndex;
             changesInvoiceComboBoxes();
         }
 
@@ -413,10 +413,10 @@ namespace Gestaller
                 Factura_F.Items.Add(orders[i].numInvoice);
                 Proforma_F.Items.Add(orders[i].numProForma);
                 Presupuesto_F.Items.Add(orders[i].numBudget);
-                cueComboBox4Cliente_Modelo_F.Items.Add(contactsVehicles[i].vehicle_model);
-                cueComboBox3Cliente_Marca_F.Items.Add(contactsVehicles[i].vehicle_brand);
-                cueComboBox2Cliente_Matricula_F.Items.Add(contactsVehicles[i].vehicle_enroll);
-                cueComboBox1Cliente_Cliente_F.Items.Add(contactsVehicles[i].contact_fullName);
+                Modelo_Factura.Items.Add(contactsVehicles[i].vehicle_model);
+                Marca_Factura.Items.Add(contactsVehicles[i].vehicle_brand);
+                Matricula_Factura.Items.Add(contactsVehicles[i].vehicle_enroll);
+                Cliente_Factura.Items.Add(contactsVehicles[i].contact_fullName);
             }
         }
 
@@ -433,11 +433,11 @@ namespace Gestaller
 
         private void invoiceSetToComboBox()
         {
-            cueComboBox1Cliente_Cliente_F.Text = _clientVehicle.contact_fullName;
-            cueComboBox2Cliente_Matricula_F.Text = _clientVehicle.vehicle_enroll;
-            cueComboBox3Cliente_Marca_F.Text = _clientVehicle.vehicle_brand;
-            cueComboBox4Cliente_Modelo_F.Text = _clientVehicle.vehicle_model;
-            cueTextBox1Cliente_Km_F.Text = _clientVehicle.vehicle_kms;
+            Cliente_Factura.Text = _clientVehicle.contact_fullName;
+            Matricula_Factura.Text = _clientVehicle.vehicle_enroll;
+            Marca_Factura.Text = _clientVehicle.vehicle_brand;
+            Modelo_Factura.Text = _clientVehicle.vehicle_model;
+            Kilometro_Factura.Text = _clientVehicle.vehicle_kms;
             Presupuesto_F.Text = _order.numBudget.ToString(); // presupuesto
             Proforma_F.Text = _order.numProForma.ToString(); // proforma
             Factura_F.Text = _order.numInvoice.ToString(); // factura
