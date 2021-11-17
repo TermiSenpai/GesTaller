@@ -29,7 +29,7 @@ namespace Gestaller
         /// </summary>
         private void InitializeComponent()
         {
-            this.cueComboBox4Cliente_Modelo_Pro = new System.Windows.Forms.TabControl();
+            this.ordenesTab = new System.Windows.Forms.TabControl();
             this.tabPagePresupuesto = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel1Presupuesto = new System.Windows.Forms.TableLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -177,7 +177,7 @@ namespace Gestaller
             this.Base_Factura = new Gestaller.Views.CueTextBox();
             this.IVA_Factura = new Gestaller.Views.CueTextBox();
             this.Total_Factura = new Gestaller.Views.CueTextBox();
-            this.cueComboBox4Cliente_Modelo_Pro.SuspendLayout();
+            this.ordenesTab.SuspendLayout();
             this.tabPagePresupuesto.SuspendLayout();
             this.tableLayoutPanel1Presupuesto.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -213,17 +213,17 @@ namespace Gestaller
             this.Panel3Impuestos_Factura.SuspendLayout();
             this.SuspendLayout();
             // 
-            // cueComboBox4Cliente_Modelo_Pro
+            // ordenesTab
             // 
-            this.cueComboBox4Cliente_Modelo_Pro.Controls.Add(this.tabPagePresupuesto);
-            this.cueComboBox4Cliente_Modelo_Pro.Controls.Add(this.tabPageProforma);
-            this.cueComboBox4Cliente_Modelo_Pro.Controls.Add(this.tabPageFactura);
-            this.cueComboBox4Cliente_Modelo_Pro.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.cueComboBox4Cliente_Modelo_Pro.Location = new System.Drawing.Point(0, 0);
-            this.cueComboBox4Cliente_Modelo_Pro.Name = "cueComboBox4Cliente_Modelo_Pro";
-            this.cueComboBox4Cliente_Modelo_Pro.SelectedIndex = 0;
-            this.cueComboBox4Cliente_Modelo_Pro.Size = new System.Drawing.Size(1178, 581);
-            this.cueComboBox4Cliente_Modelo_Pro.TabIndex = 0;
+            this.ordenesTab.Controls.Add(this.tabPagePresupuesto);
+            this.ordenesTab.Controls.Add(this.tabPageProforma);
+            this.ordenesTab.Controls.Add(this.tabPageFactura);
+            this.ordenesTab.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ordenesTab.Location = new System.Drawing.Point(0, 0);
+            this.ordenesTab.Name = "ordenesTab";
+            this.ordenesTab.SelectedIndex = 0;
+            this.ordenesTab.Size = new System.Drawing.Size(1178, 581);
+            this.ordenesTab.TabIndex = 0;
             // 
             // tabPagePresupuesto
             // 
@@ -1831,11 +1831,11 @@ namespace Gestaller
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1178, 581);
-            this.Controls.Add(this.cueComboBox4Cliente_Modelo_Pro);
+            this.Controls.Add(this.ordenesTab);
             this.Name = "OrdersView";
             this.Text = "Ordenes";
             this.Load += new System.EventHandler(this.OrdersView_Load);
-            this.cueComboBox4Cliente_Modelo_Pro.ResumeLayout(false);
+            this.ordenesTab.ResumeLayout(false);
             this.tabPagePresupuesto.ResumeLayout(false);
             this.tableLayoutPanel1Presupuesto.ResumeLayout(false);
             this.tableLayoutPanel1Presupuesto.PerformLayout();
@@ -1887,7 +1887,7 @@ namespace Gestaller
 
         #endregion
 
-        private System.Windows.Forms.TabControl cueComboBox4Cliente_Modelo_Pro;
+        private System.Windows.Forms.TabControl ordenesTab;
         private System.Windows.Forms.TabPage tabPagePresupuesto;
         private System.Windows.Forms.TabPage tabPageProforma;
         private System.Windows.Forms.TabPage tabPageFactura;
