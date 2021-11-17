@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -39,6 +39,16 @@ namespace Gestaller
 
         #region private methods
 
+        private void changesActiveElements()
+        {
+            List<ContactVehicle> contactsVehicles = getContactsVehicles();
+            List<Order> orders = getOrders();
+
+            selectActiveContactVehicle(contactsVehicles[_comboIndex]);
+            selectActiveOrder(orders[_comboIndex]);
+
+            setToComboBox();
+        }
         private void getDB()
         {
             List<Item> items = _businessLogicLayer.GetItems();
