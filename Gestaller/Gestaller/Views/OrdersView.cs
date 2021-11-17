@@ -149,9 +149,23 @@ namespace Gestaller
         
         
         private List<Item> getItems() => _businessLogicLayer.GetItems();
-
         
+        private void setComboItems()
+        {
+            List<Item> items = getItems();
 
+            for (int i = 0; i < items.Count(); i++)
+            {
+                Referencia_Pre.Items.Add(items[i].reference);
+                Descripción_Pre.Items.Add(items[i].description);
+
+                Referencia_Proforma.Items.Add(items[i].reference);
+                Descripción_Proforma.Items.Add(items[i].description);
+
+                Referencia_F.Items.Add(items[i].reference);
+                Descripcion_F.Items.Add(items[i].description);
+            }
+        }
         #endregion
 
 
