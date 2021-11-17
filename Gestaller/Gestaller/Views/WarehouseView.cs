@@ -16,5 +16,10 @@ namespace Gestaller
         {
             InitializeComponent();
         }
+
+        private void cueTextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
