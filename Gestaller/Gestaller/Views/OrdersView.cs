@@ -49,6 +49,52 @@ namespace Gestaller
 
             setToComboBox();
         }
+
+        private void setToComboBox()
+        {
+            switch (ordenesTab.SelectedIndex)
+            {
+                // Presupuesto tab
+                case 0:
+                    Cliente_Pre.Text = _clientVehicle.contact_fullName;
+                    Matricula_Pre.Text = _clientVehicle.vehicle_enroll;
+                    Marca_Pre.Text = _clientVehicle.vehicle_brand;
+                    Modelo_Pre.Text = _clientVehicle.vehicle_model;
+                    Km_Pre.Text = _clientVehicle.vehicle_kms;
+                    Presupuesto_Pre.Text = _order.numBudget.ToString();
+                    Proforma_Pre.Text = _order.numProForma.ToString();
+                    Factura_Pre.Text = _order.numInvoice.ToString();
+                    Fecha_Pre.Value = _order.dateBudget;
+                    break;
+
+                // Proforma tab
+                case 1:
+                    Cliente_Proforma.Text = _clientVehicle.contact_fullName;
+                    Matricula_Proforma.Text = _clientVehicle.vehicle_enroll;
+                    Marca_Proforma.Text = _clientVehicle.vehicle_brand;
+                    Modelo_Proforma.Text = _clientVehicle.vehicle_model;
+                    Km_Proforma.Text = _clientVehicle.vehicle_kms;
+                    Presupuesto_Proforma.Text = _order.numBudget.ToString(); 
+                    Proforma_Proforma.Text = _order.numProForma.ToString(); 
+                    Factura_Proforma.Text = _order.numInvoice.ToString(); 
+                    Fecha_Proforma.Value = _order.dateBudget;
+                    break;
+
+                // Factura tab
+                case 2:
+                    Cliente_Factura.Text = _clientVehicle.contact_fullName;
+                    Matricula_Factura.Text = _clientVehicle.vehicle_enroll;
+                    Marca_Factura.Text = _clientVehicle.vehicle_brand;
+                    Modelo_Factura.Text = _clientVehicle.vehicle_model;
+                    Kilometro_Factura.Text = _clientVehicle.vehicle_kms;
+                    Presupuesto_F.Text = _order.numBudget.ToString(); 
+                    Proforma_F.Text = _order.numProForma.ToString(); 
+                    Factura_F.Text = _order.numInvoice.ToString(); 
+                    Fecha_F.Value = _order.dateBudget;
+                    break;
+            }
+        }
+
         private void getDB()
         {
             List<Item> items = _businessLogicLayer.GetItems();
