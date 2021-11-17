@@ -166,6 +166,43 @@ namespace Gestaller
                 Descripcion_F.Items.Add(items[i].description);
             }
         }
+
+        private void setClientItems()
+        {
+            List<ContactVehicle> contactsVehicles = _businessLogicLayer.GetContactVehicles();
+            List<Order> orders = _businessLogicLayer.GetOrders();
+
+            for (int i = 0; i < orders.Count(); i++)
+            {
+                // [PRESUPUESTO]
+                Factura_Pre.Items.Add(orders[i].numInvoice);
+                Proforma_Pre.Items.Add(orders[i].numProForma);
+                Presupuesto_Pre.Items.Add(orders[i].numBudget);
+                Modelo_Pre.Items.Add(contactsVehicles[i].vehicle_model);
+                Marca_Pre.Items.Add(contactsVehicles[i].vehicle_brand);
+                Matricula_Pre.Items.Add(contactsVehicles[i].vehicle_enroll);
+                Cliente_Pre.Items.Add(contactsVehicles[i].contact_fullName);
+
+                // [PROFORMA]
+                Factura_Proforma.Items.Add(orders[i].numInvoice);
+                Proforma_Proforma.Items.Add(orders[i].numProForma);
+                Presupuesto_Proforma.Items.Add(orders[i].numBudget);
+                Modelo_Proforma.Items.Add(contactsVehicles[i].vehicle_model);
+                Marca_Proforma.Items.Add(contactsVehicles[i].vehicle_brand);
+                Matricula_Proforma.Items.Add(contactsVehicles[i].vehicle_enroll);
+                Cliente_Proforma.Items.Add(contactsVehicles[i].contact_fullName);
+
+                // [FACTURA]
+                Factura_F.Items.Add(orders[i].numInvoice);
+                Proforma_F.Items.Add(orders[i].numProForma);
+                Presupuesto_F.Items.Add(orders[i].numBudget);
+                Modelo_Factura.Items.Add(contactsVehicles[i].vehicle_model);
+                Marca_Factura.Items.Add(contactsVehicles[i].vehicle_brand);
+                Matricula_Factura.Items.Add(contactsVehicles[i].vehicle_enroll);
+                Cliente_Factura.Items.Add(contactsVehicles[i].contact_fullName);
+            }
+        }
+
         #endregion
 
 
