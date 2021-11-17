@@ -24,15 +24,15 @@ namespace Gestaller
             InitializeComponent();
         }
 
+
+
         #region events
 
         private void OrdersView_Load(object sender, EventArgs e)
         {
             getDB();
-            getBudgetClientItems();
+            setClientItems();
             setComboItems();
-            getProformaItems();
-            getInvoiceItems();
         }
 
         #endregion
