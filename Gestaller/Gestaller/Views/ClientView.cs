@@ -65,6 +65,7 @@ namespace Gestaller
 
         #region private methods
 
+        // Crea y añade un nuevo contacto y vehiculo
         private void newContact()
         {
             Contact contact = new Contact();
