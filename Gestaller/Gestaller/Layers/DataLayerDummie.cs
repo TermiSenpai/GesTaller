@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -111,6 +111,20 @@ namespace Gestaller
             List<TaxRate> taxRates = new List<TaxRate>();
             taxRates.Add(new TaxRate(1, "Tax1"));
             return taxRates;
+        }
+
+        public void addContact(Contact contact)
+        {
+            contact.id = _contacts.Count();
+
+            _contacts.Add(contact);
+        }
+
+        public void addVehicle(Vehicle vehicle)
+        {
+            vehicle.id = _vehicles.Count();
+
+            _vehicles.Add(vehicle);
         }
     }
 }

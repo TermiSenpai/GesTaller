@@ -59,9 +59,42 @@ namespace Gestaller
             setToComboBox();
         }
 
+        private void button3AnadirCv_Click(object sender, EventArgs e) => newContact();
+
         #endregion
 
         #region private methods
+
+        private void newContact()
+        {
+            Contact contact = new Contact();
+            Vehicle vehicle = new Vehicle();
+            
+            contact.company = cueComboBoxEmpresa.Text;
+            contact.cif = cueComboBoxCIF.Text;
+            contact.fullName = cueComboBoxNombre.Text;
+            contact.address = cueComboBoxDireccion.Text;
+            contact.city = cueComboBoxLocalidad.Text;
+            contact.district = cueComboBoxProvincia.Text;
+            contact.cp = int.Parse(cueComboBoxCP.Text);
+            contact.mobile = cueComboBoxMovil.Text;
+            contact.phone = cueComboBoxTelefono.Text;
+            contact.fax = cueComboBoxFax.Text;
+            contact.email = cueComboBoxEmail.Text;
+
+            _bussinessLogicLayer.newContact(contact);
+
+            vehicle.enroll = cueComboBoxMatricula.Text;
+            vehicle.brand = cueComboBoxMarca.Text;
+            vehicle.model = cueComboBoxModelo.Text;
+            vehicle.frame = cueComboBoxBastidor.Text;
+            vehicle.kms = cueComboBoxKilometros.Text;
+            vehicle.engineType = cueComboBoxTipoMotor.Text;
+
+            _bussinessLogicLayer.newVehicle(vehicle);
+
+            getDB();
+        }
 
         // Vacia el texto de los comboBoxes
         private void clearText()
