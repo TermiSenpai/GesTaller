@@ -34,6 +34,7 @@ namespace Gestaller
 
         #region provate methods
 
+        // busca las facturas entre el rango de fechas
         private void dateSearch()
         {
             DateTime dateIni = dateTimePicker1Hist_Contable_FechaInicio.Value;
@@ -50,6 +51,7 @@ namespace Gestaller
             dataGridView1Hist_Contable.DataSource = dateOrders;
         }
 
+        // obtiene la lista de ordenes y la selecciona como source para el grid
         private void getDB()
         {
             List<Order> orders = getOrders();
@@ -57,6 +59,7 @@ namespace Gestaller
             dataGridView1Hist_Contable.DataSource = orders;
         }
 
+        // Obtiene la lista de ordenes del bussiness layer
         private List<Order> getOrders()
         {
             return _bussinessLogicLayer.GetOrders();
