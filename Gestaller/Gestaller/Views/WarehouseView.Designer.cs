@@ -166,7 +166,6 @@ namespace Gestaller
             this.btEliminar_Productos.TabIndex = 1;
             this.btEliminar_Productos.Text = "Eliminar";
             this.btEliminar_Productos.UseVisualStyleBackColor = true;
-            this.btEliminar_Productos.Click += new System.EventHandler(this.Eliminar_Productos_Click);
             // 
             // btModificar_Productos
             // 
