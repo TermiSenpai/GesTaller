@@ -33,58 +33,58 @@ namespace Gestaller
             this.Productos = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.btAnadir_Productos = new System.Windows.Forms.Button();
+            this.btEliminar_Productos = new System.Windows.Forms.Button();
+            this.btModificar_Productos = new System.Windows.Forms.Button();
+            this.btVaciar_Productos = new System.Windows.Forms.Button();
+            this.Grid_Productos = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
-            this.cueComboBox8 = new Gestaller.Views.CueComboBox();
-            this.cueComboBox9 = new Gestaller.Views.CueComboBox();
-            this.cueComboBox10 = new Gestaller.Views.CueComboBox();
-            this.cueComboBox14 = new Gestaller.Views.CueComboBox();
+            this.Referecia_Productos = new Gestaller.Views.CueComboBox();
+            this.Proveedor_Productos = new Gestaller.Views.CueTextBox();
+            this.Descripcion_Productos = new Gestaller.Views.CueComboBox();
+            this.Base_Productos = new Gestaller.Views.CueTextBox();
+            this.IVA_Productos = new Gestaller.Views.CueComboBox();
+            this.PVP_Productos = new Gestaller.Views.CueComboBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.Detallada_Productos = new System.Windows.Forms.RichTextBox();
             this.Proveedores = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Grid_Proveedores = new System.Windows.Forms.DataGridView();
             this.panel4_Pre = new System.Windows.Forms.Panel();
-            this.btnImprimir_Pre = new System.Windows.Forms.Button();
-            this.btnPresupuestor_Pre = new System.Windows.Forms.Button();
-            this.btnProforma_Pre = new System.Windows.Forms.Button();
-            this.btnFactura_Pre = new System.Windows.Forms.Button();
+            this.btVaciar_Proveedores = new System.Windows.Forms.Button();
+            this.btAnadir_Proveedores = new System.Windows.Forms.Button();
+            this.btModificar_Proveedores = new System.Windows.Forms.Button();
+            this.btBorrar_Proveedores = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.cueComboBoxCIF = new Gestaller.Views.CueComboBox();
-            this.cueComboBoxNombre = new Gestaller.Views.CueComboBox();
-            this.cueComboBoxLocalidad = new Gestaller.Views.CueComboBox();
-            this.cueComboBoxDireccion = new Gestaller.Views.CueComboBox();
-            this.cueComboBoxProvincia = new Gestaller.Views.CueComboBox();
-            this.cueComboBoxCP = new Gestaller.Views.CueComboBox();
-            this.cueComboBoxMovil = new Gestaller.Views.CueComboBox();
-            this.cueComboBoxTelefono = new Gestaller.Views.CueComboBox();
-            this.cueComboBoxFax = new Gestaller.Views.CueComboBox();
-            this.cueComboBoxEmail = new Gestaller.Views.CueComboBox();
-            this.cueComboBox1 = new Gestaller.Views.CueComboBox();
-            this.cueComboBox2 = new Gestaller.Views.CueComboBox();
-            this.cueTextBox1 = new Gestaller.Views.CueTextBox();
-            this.cueComboBox3 = new Gestaller.Views.CueComboBox();
-            this.cueComboBox5 = new Gestaller.Views.CueComboBox();
-            this.cueComboBox4 = new Gestaller.Views.CueComboBox();
-            this.cueComboBox6 = new Gestaller.Views.CueComboBox();
-            this.cueComboBox7 = new Gestaller.Views.CueComboBox();
-            this.cueTextBox2 = new Gestaller.Views.CueTextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.cueTextBox3 = new Gestaller.Views.CueTextBox();
+            this.NIF_Proveedores = new Gestaller.Views.CueComboBox();
+            this.Nombre_Proveedores = new Gestaller.Views.CueComboBox();
+            this.Localidad_Proveedores = new Gestaller.Views.CueComboBox();
+            this.Direccion_Proveedores = new Gestaller.Views.CueComboBox();
+            this.Provincia_Proveedores = new Gestaller.Views.CueComboBox();
+            this.CP_Proveedores = new Gestaller.Views.CueComboBox();
+            this.Movil_Proveedores = new Gestaller.Views.CueComboBox();
+            this.Telefono_Proveedores = new Gestaller.Views.CueComboBox();
+            this.Fax_Proveedores = new Gestaller.Views.CueComboBox();
+            this.Email_Proveedores = new Gestaller.Views.CueComboBox();
+            this.NoCuenta_Proveedores = new Gestaller.Views.CueComboBox();
+            this.Entidad_Proveedores = new Gestaller.Views.CueComboBox();
+            this.firmaPago_Proveedores = new Gestaller.Views.CueTextBox();
+            this.diasPago_Proveedores = new Gestaller.Views.CueComboBox();
+            this.Localidad2_Proveedores = new Gestaller.Views.CueComboBox();
+            this.Direccion2_Proveedores = new Gestaller.Views.CueComboBox();
+            this.Provincia2_Proveedores = new Gestaller.Views.CueComboBox();
+            this.CP2_Proveedores = new Gestaller.Views.CueComboBox();
             this.tabControl1.SuspendLayout();
             this.Productos.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Grid_Productos)).BeginInit();
             this.flowLayoutPanel2.SuspendLayout();
             this.Proveedores.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Grid_Proveedores)).BeginInit();
             this.panel4_Pre.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -116,11 +116,11 @@ namespace Gestaller
             this.tableLayoutPanel2.ColumnCount = 1;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel2.Controls.Add(this.panel1, 0, 4);
-            this.tableLayoutPanel2.Controls.Add(this.dataGridView2, 0, 5);
+            this.tableLayoutPanel2.Controls.Add(this.Grid_Productos, 0, 5);
             this.tableLayoutPanel2.Controls.Add(this.label2, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.flowLayoutPanel2, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.label3, 0, 2);
-            this.tableLayoutPanel2.Controls.Add(this.richTextBox1, 0, 3);
+            this.tableLayoutPanel2.Controls.Add(this.Detallada_Productos, 0, 3);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
@@ -136,65 +136,65 @@ namespace Gestaller
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.button3);
-            this.panel1.Controls.Add(this.button4);
+            this.panel1.Controls.Add(this.btAnadir_Productos);
+            this.panel1.Controls.Add(this.btEliminar_Productos);
+            this.panel1.Controls.Add(this.btModificar_Productos);
+            this.panel1.Controls.Add(this.btVaciar_Productos);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 208);
             this.panel1.Margin = new System.Windows.Forms.Padding(0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(786, 23);
-            this.panel1.TabIndex = 15;
+            this.panel1.TabIndex = 4;
             // 
-            // button1
+            // btAnadir_Productos
             // 
-            this.button1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button1.Location = new System.Drawing.Point(486, 0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Vaciar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btAnadir_Productos.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btAnadir_Productos.Location = new System.Drawing.Point(486, 0);
+            this.btAnadir_Productos.Name = "btAnadir_Productos";
+            this.btAnadir_Productos.Size = new System.Drawing.Size(75, 23);
+            this.btAnadir_Productos.TabIndex = 0;
+            this.btAnadir_Productos.Text = "Añadir";
+            this.btAnadir_Productos.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btEliminar_Productos
             // 
-            this.button2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button2.Location = new System.Drawing.Point(561, 0);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Añadir";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btEliminar_Productos.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btEliminar_Productos.Location = new System.Drawing.Point(561, 0);
+            this.btEliminar_Productos.Name = "btEliminar_Productos";
+            this.btEliminar_Productos.Size = new System.Drawing.Size(75, 23);
+            this.btEliminar_Productos.TabIndex = 1;
+            this.btEliminar_Productos.Text = "Eliminar";
+            this.btEliminar_Productos.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btModificar_Productos
             // 
-            this.button3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button3.Location = new System.Drawing.Point(636, 0);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Modificar";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btModificar_Productos.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btModificar_Productos.Location = new System.Drawing.Point(636, 0);
+            this.btModificar_Productos.Name = "btModificar_Productos";
+            this.btModificar_Productos.Size = new System.Drawing.Size(75, 23);
+            this.btModificar_Productos.TabIndex = 2;
+            this.btModificar_Productos.Text = "Modificar";
+            this.btModificar_Productos.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // btVaciar_Productos
             // 
-            this.button4.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button4.Location = new System.Drawing.Point(711, 0);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "Borrar";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btVaciar_Productos.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btVaciar_Productos.Location = new System.Drawing.Point(711, 0);
+            this.btVaciar_Productos.Name = "btVaciar_Productos";
+            this.btVaciar_Productos.Size = new System.Drawing.Size(75, 23);
+            this.btVaciar_Productos.TabIndex = 3;
+            this.btVaciar_Productos.Text = "Vaciar";
+            this.btVaciar_Productos.UseVisualStyleBackColor = true;
             // 
-            // dataGridView2
+            // Grid_Productos
             // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView2.Location = new System.Drawing.Point(3, 234);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(780, 282);
-            this.dataGridView2.TabIndex = 0;
+            this.Grid_Productos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Grid_Productos.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Grid_Productos.Location = new System.Drawing.Point(3, 234);
+            this.Grid_Productos.Name = "Grid_Productos";
+            this.Grid_Productos.Size = new System.Drawing.Size(780, 282);
+            this.Grid_Productos.TabIndex = 5;
             // 
             // label2
             // 
@@ -204,58 +204,93 @@ namespace Gestaller
             this.label2.Location = new System.Drawing.Point(3, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(780, 20);
-            this.label2.TabIndex = 1;
+            this.label2.TabIndex = 0;
             this.label2.Text = "PRODUCTOS";
             // 
             // flowLayoutPanel2
             // 
-            this.flowLayoutPanel2.Controls.Add(this.cueComboBox8);
-            this.flowLayoutPanel2.Controls.Add(this.cueTextBox2);
-            this.flowLayoutPanel2.Controls.Add(this.cueComboBox10);
-            this.flowLayoutPanel2.Controls.Add(this.cueTextBox3);
-            this.flowLayoutPanel2.Controls.Add(this.cueComboBox14);
-            this.flowLayoutPanel2.Controls.Add(this.cueComboBox9);
+            this.flowLayoutPanel2.Controls.Add(this.Referecia_Productos);
+            this.flowLayoutPanel2.Controls.Add(this.Proveedor_Productos);
+            this.flowLayoutPanel2.Controls.Add(this.Descripcion_Productos);
+            this.flowLayoutPanel2.Controls.Add(this.Base_Productos);
+            this.flowLayoutPanel2.Controls.Add(this.IVA_Productos);
+            this.flowLayoutPanel2.Controls.Add(this.PVP_Productos);
             this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel2.Location = new System.Drawing.Point(3, 23);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
             this.flowLayoutPanel2.Size = new System.Drawing.Size(780, 90);
-            this.flowLayoutPanel2.TabIndex = 2;
+            this.flowLayoutPanel2.TabIndex = 1;
             // 
-            // cueComboBox8
+            // Referecia_Productos
             // 
-            this.cueComboBox8.CueText = "Referencia";
-            this.cueComboBox8.FormattingEnabled = true;
-            this.cueComboBox8.Location = new System.Drawing.Point(3, 3);
-            this.cueComboBox8.Name = "cueComboBox8";
-            this.cueComboBox8.Size = new System.Drawing.Size(121, 21);
-            this.cueComboBox8.TabIndex = 0;
+            this.Referecia_Productos.CueText = "Referencia";
+            this.Referecia_Productos.FormattingEnabled = true;
+            this.Referecia_Productos.Location = new System.Drawing.Point(3, 3);
+            this.Referecia_Productos.Name = "Referecia_Productos";
+            this.Referecia_Productos.Size = new System.Drawing.Size(121, 21);
+            this.Referecia_Productos.TabIndex = 0;
             // 
-            // cueComboBox9
+            // Proveedor_Productos
             // 
-            this.cueComboBox9.CueText = "P.V.P.";
-            this.cueComboBox9.FormattingEnabled = true;
-            this.cueComboBox9.Location = new System.Drawing.Point(130, 30);
-            this.cueComboBox9.Name = "cueComboBox9";
-            this.cueComboBox9.Size = new System.Drawing.Size(121, 21);
-            this.cueComboBox9.TabIndex = 1;
+            this.Proveedor_Productos.CueText = "Proveedor";
+            this.Proveedor_Productos.Location = new System.Drawing.Point(130, 3);
+            this.Proveedor_Productos.Name = "Proveedor_Productos";
+            this.Proveedor_Productos.Size = new System.Drawing.Size(121, 20);
+            this.Proveedor_Productos.TabIndex = 1;
             // 
-            // cueComboBox10
+            // Descripcion_Productos
             // 
-            this.cueComboBox10.CueText = "Descripción";
-            this.cueComboBox10.FormattingEnabled = true;
-            this.cueComboBox10.Location = new System.Drawing.Point(257, 3);
-            this.cueComboBox10.Name = "cueComboBox10";
-            this.cueComboBox10.Size = new System.Drawing.Size(375, 21);
-            this.cueComboBox10.TabIndex = 2;
+            this.Descripcion_Productos.CueText = "Descripción";
+            this.Descripcion_Productos.FormattingEnabled = true;
+            this.Descripcion_Productos.Location = new System.Drawing.Point(257, 3);
+            this.Descripcion_Productos.Name = "Descripcion_Productos";
+            this.Descripcion_Productos.Size = new System.Drawing.Size(375, 21);
+            this.Descripcion_Productos.TabIndex = 2;
             // 
-            // cueComboBox14
+            // Base_Productos
             // 
-            this.cueComboBox14.CueText = "I.V.A.";
-            this.cueComboBox14.FormattingEnabled = true;
-            this.cueComboBox14.Location = new System.Drawing.Point(3, 30);
-            this.cueComboBox14.Name = "cueComboBox14";
-            this.cueComboBox14.Size = new System.Drawing.Size(121, 21);
-            this.cueComboBox14.TabIndex = 6;
+            this.Base_Productos.CueText = "Precio Base";
+            this.Base_Productos.Location = new System.Drawing.Point(638, 3);
+            this.Base_Productos.Name = "Base_Productos";
+            this.Base_Productos.Size = new System.Drawing.Size(121, 20);
+            this.Base_Productos.TabIndex = 3;
+            // 
+            // IVA_Productos
+            // 
+            this.IVA_Productos.CueText = "I.V.A.";
+            this.IVA_Productos.FormattingEnabled = true;
+            this.IVA_Productos.Location = new System.Drawing.Point(3, 30);
+            this.IVA_Productos.Name = "IVA_Productos";
+            this.IVA_Productos.Size = new System.Drawing.Size(121, 21);
+            this.IVA_Productos.TabIndex = 4;
+            // 
+            // PVP_Productos
+            // 
+            this.PVP_Productos.CueText = "P.V.P.";
+            this.PVP_Productos.FormattingEnabled = true;
+            this.PVP_Productos.Location = new System.Drawing.Point(130, 30);
+            this.PVP_Productos.Name = "PVP_Productos";
+            this.PVP_Productos.Size = new System.Drawing.Size(121, 21);
+            this.PVP_Productos.TabIndex = 5;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label3.Location = new System.Drawing.Point(3, 116);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(780, 20);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Descripción Detallada";
+            // 
+            // Detallada_Productos
+            // 
+            this.Detallada_Productos.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Detallada_Productos.Location = new System.Drawing.Point(3, 139);
+            this.Detallada_Productos.Name = "Detallada_Productos";
+            this.Detallada_Productos.Size = new System.Drawing.Size(780, 66);
+            this.Detallada_Productos.TabIndex = 3;
+            this.Detallada_Productos.Text = "";
             // 
             // Proveedores
             // 
@@ -272,7 +307,7 @@ namespace Gestaller
             // 
             this.tableLayoutPanel1.ColumnCount = 1;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Controls.Add(this.dataGridView1, 0, 3);
+            this.tableLayoutPanel1.Controls.Add(this.Grid_Proveedores, 0, 3);
             this.tableLayoutPanel1.Controls.Add(this.panel4_Pre, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.flowLayoutPanel1, 0, 1);
@@ -287,67 +322,67 @@ namespace Gestaller
             this.tableLayoutPanel1.Size = new System.Drawing.Size(786, 519);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
-            // dataGridView1
+            // Grid_Proveedores
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(3, 202);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(780, 314);
-            this.dataGridView1.TabIndex = 0;
+            this.Grid_Proveedores.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Grid_Proveedores.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Grid_Proveedores.Location = new System.Drawing.Point(3, 202);
+            this.Grid_Proveedores.Name = "Grid_Proveedores";
+            this.Grid_Proveedores.Size = new System.Drawing.Size(780, 314);
+            this.Grid_Proveedores.TabIndex = 3;
             // 
             // panel4_Pre
             // 
-            this.panel4_Pre.Controls.Add(this.btnImprimir_Pre);
-            this.panel4_Pre.Controls.Add(this.btnPresupuestor_Pre);
-            this.panel4_Pre.Controls.Add(this.btnProforma_Pre);
-            this.panel4_Pre.Controls.Add(this.btnFactura_Pre);
+            this.panel4_Pre.Controls.Add(this.btVaciar_Proveedores);
+            this.panel4_Pre.Controls.Add(this.btAnadir_Proveedores);
+            this.panel4_Pre.Controls.Add(this.btModificar_Proveedores);
+            this.panel4_Pre.Controls.Add(this.btBorrar_Proveedores);
             this.panel4_Pre.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel4_Pre.Location = new System.Drawing.Point(0, 176);
             this.panel4_Pre.Margin = new System.Windows.Forms.Padding(0);
             this.panel4_Pre.Name = "panel4_Pre";
             this.panel4_Pre.Size = new System.Drawing.Size(786, 23);
-            this.panel4_Pre.TabIndex = 14;
+            this.panel4_Pre.TabIndex = 2;
             // 
-            // btnImprimir_Pre
+            // btVaciar_Proveedores
             // 
-            this.btnImprimir_Pre.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnImprimir_Pre.Location = new System.Drawing.Point(486, 0);
-            this.btnImprimir_Pre.Name = "btnImprimir_Pre";
-            this.btnImprimir_Pre.Size = new System.Drawing.Size(75, 23);
-            this.btnImprimir_Pre.TabIndex = 0;
-            this.btnImprimir_Pre.Text = "Vaciar";
-            this.btnImprimir_Pre.UseVisualStyleBackColor = true;
+            this.btVaciar_Proveedores.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btVaciar_Proveedores.Location = new System.Drawing.Point(486, 0);
+            this.btVaciar_Proveedores.Name = "btVaciar_Proveedores";
+            this.btVaciar_Proveedores.Size = new System.Drawing.Size(75, 23);
+            this.btVaciar_Proveedores.TabIndex = 0;
+            this.btVaciar_Proveedores.Text = "Vaciar";
+            this.btVaciar_Proveedores.UseVisualStyleBackColor = true;
             // 
-            // btnPresupuestor_Pre
+            // btAnadir_Proveedores
             // 
-            this.btnPresupuestor_Pre.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnPresupuestor_Pre.Location = new System.Drawing.Point(561, 0);
-            this.btnPresupuestor_Pre.Name = "btnPresupuestor_Pre";
-            this.btnPresupuestor_Pre.Size = new System.Drawing.Size(75, 23);
-            this.btnPresupuestor_Pre.TabIndex = 1;
-            this.btnPresupuestor_Pre.Text = "Añadir";
-            this.btnPresupuestor_Pre.UseVisualStyleBackColor = true;
+            this.btAnadir_Proveedores.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btAnadir_Proveedores.Location = new System.Drawing.Point(561, 0);
+            this.btAnadir_Proveedores.Name = "btAnadir_Proveedores";
+            this.btAnadir_Proveedores.Size = new System.Drawing.Size(75, 23);
+            this.btAnadir_Proveedores.TabIndex = 1;
+            this.btAnadir_Proveedores.Text = "Añadir";
+            this.btAnadir_Proveedores.UseVisualStyleBackColor = true;
             // 
-            // btnProforma_Pre
+            // btModificar_Proveedores
             // 
-            this.btnProforma_Pre.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnProforma_Pre.Location = new System.Drawing.Point(636, 0);
-            this.btnProforma_Pre.Name = "btnProforma_Pre";
-            this.btnProforma_Pre.Size = new System.Drawing.Size(75, 23);
-            this.btnProforma_Pre.TabIndex = 2;
-            this.btnProforma_Pre.Text = "Modificar";
-            this.btnProforma_Pre.UseVisualStyleBackColor = true;
+            this.btModificar_Proveedores.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btModificar_Proveedores.Location = new System.Drawing.Point(636, 0);
+            this.btModificar_Proveedores.Name = "btModificar_Proveedores";
+            this.btModificar_Proveedores.Size = new System.Drawing.Size(75, 23);
+            this.btModificar_Proveedores.TabIndex = 2;
+            this.btModificar_Proveedores.Text = "Modificar";
+            this.btModificar_Proveedores.UseVisualStyleBackColor = true;
             // 
-            // btnFactura_Pre
+            // btBorrar_Proveedores
             // 
-            this.btnFactura_Pre.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnFactura_Pre.Location = new System.Drawing.Point(711, 0);
-            this.btnFactura_Pre.Name = "btnFactura_Pre";
-            this.btnFactura_Pre.Size = new System.Drawing.Size(75, 23);
-            this.btnFactura_Pre.TabIndex = 3;
-            this.btnFactura_Pre.Text = "Borrar";
-            this.btnFactura_Pre.UseVisualStyleBackColor = true;
+            this.btBorrar_Proveedores.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btBorrar_Proveedores.Location = new System.Drawing.Point(711, 0);
+            this.btBorrar_Proveedores.Name = "btBorrar_Proveedores";
+            this.btBorrar_Proveedores.Size = new System.Drawing.Size(75, 23);
+            this.btBorrar_Proveedores.TabIndex = 3;
+            this.btBorrar_Proveedores.Text = "Borrar";
+            this.btBorrar_Proveedores.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
@@ -357,231 +392,197 @@ namespace Gestaller
             this.label1.Location = new System.Drawing.Point(3, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(780, 20);
-            this.label1.TabIndex = 15;
+            this.label1.TabIndex = 0;
             this.label1.Text = "DATOS PROVEEDOR";
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.Controls.Add(this.cueComboBoxCIF);
-            this.flowLayoutPanel1.Controls.Add(this.cueComboBoxNombre);
-            this.flowLayoutPanel1.Controls.Add(this.cueComboBoxLocalidad);
-            this.flowLayoutPanel1.Controls.Add(this.cueComboBoxDireccion);
-            this.flowLayoutPanel1.Controls.Add(this.cueComboBoxProvincia);
-            this.flowLayoutPanel1.Controls.Add(this.cueComboBoxCP);
-            this.flowLayoutPanel1.Controls.Add(this.cueComboBoxMovil);
-            this.flowLayoutPanel1.Controls.Add(this.cueComboBoxTelefono);
-            this.flowLayoutPanel1.Controls.Add(this.cueComboBoxFax);
-            this.flowLayoutPanel1.Controls.Add(this.cueComboBoxEmail);
-            this.flowLayoutPanel1.Controls.Add(this.cueComboBox1);
-            this.flowLayoutPanel1.Controls.Add(this.cueComboBox2);
-            this.flowLayoutPanel1.Controls.Add(this.cueTextBox1);
-            this.flowLayoutPanel1.Controls.Add(this.cueComboBox3);
-            this.flowLayoutPanel1.Controls.Add(this.cueComboBox5);
-            this.flowLayoutPanel1.Controls.Add(this.cueComboBox4);
-            this.flowLayoutPanel1.Controls.Add(this.cueComboBox6);
-            this.flowLayoutPanel1.Controls.Add(this.cueComboBox7);
+            this.flowLayoutPanel1.AutoScroll = true;
+            this.flowLayoutPanel1.Controls.Add(this.NIF_Proveedores);
+            this.flowLayoutPanel1.Controls.Add(this.Nombre_Proveedores);
+            this.flowLayoutPanel1.Controls.Add(this.Localidad_Proveedores);
+            this.flowLayoutPanel1.Controls.Add(this.Direccion_Proveedores);
+            this.flowLayoutPanel1.Controls.Add(this.Provincia_Proveedores);
+            this.flowLayoutPanel1.Controls.Add(this.CP_Proveedores);
+            this.flowLayoutPanel1.Controls.Add(this.Movil_Proveedores);
+            this.flowLayoutPanel1.Controls.Add(this.Telefono_Proveedores);
+            this.flowLayoutPanel1.Controls.Add(this.Fax_Proveedores);
+            this.flowLayoutPanel1.Controls.Add(this.Email_Proveedores);
+            this.flowLayoutPanel1.Controls.Add(this.NoCuenta_Proveedores);
+            this.flowLayoutPanel1.Controls.Add(this.Entidad_Proveedores);
+            this.flowLayoutPanel1.Controls.Add(this.firmaPago_Proveedores);
+            this.flowLayoutPanel1.Controls.Add(this.diasPago_Proveedores);
+            this.flowLayoutPanel1.Controls.Add(this.Localidad2_Proveedores);
+            this.flowLayoutPanel1.Controls.Add(this.Direccion2_Proveedores);
+            this.flowLayoutPanel1.Controls.Add(this.Provincia2_Proveedores);
+            this.flowLayoutPanel1.Controls.Add(this.CP2_Proveedores);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 23);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(780, 150);
-            this.flowLayoutPanel1.TabIndex = 16;
+            this.flowLayoutPanel1.TabIndex = 1;
             // 
-            // cueComboBoxCIF
+            // NIF_Proveedores
             // 
-            this.cueComboBoxCIF.CueText = "N.I.F.";
-            this.cueComboBoxCIF.FormattingEnabled = true;
-            this.cueComboBoxCIF.Location = new System.Drawing.Point(3, 3);
-            this.cueComboBoxCIF.Name = "cueComboBoxCIF";
-            this.cueComboBoxCIF.Size = new System.Drawing.Size(121, 21);
-            this.cueComboBoxCIF.TabIndex = 5;
+            this.NIF_Proveedores.CueText = "N.I.F.";
+            this.NIF_Proveedores.FormattingEnabled = true;
+            this.NIF_Proveedores.Location = new System.Drawing.Point(3, 3);
+            this.NIF_Proveedores.Name = "NIF_Proveedores";
+            this.NIF_Proveedores.Size = new System.Drawing.Size(121, 21);
+            this.NIF_Proveedores.TabIndex = 0;
             // 
-            // cueComboBoxNombre
+            // Nombre_Proveedores
             // 
-            this.cueComboBoxNombre.CueText = "Nombre";
-            this.cueComboBoxNombre.FormattingEnabled = true;
-            this.cueComboBoxNombre.Location = new System.Drawing.Point(130, 3);
-            this.cueComboBoxNombre.Name = "cueComboBoxNombre";
-            this.cueComboBoxNombre.Size = new System.Drawing.Size(248, 21);
-            this.cueComboBoxNombre.TabIndex = 4;
+            this.Nombre_Proveedores.CueText = "Nombre";
+            this.Nombre_Proveedores.FormattingEnabled = true;
+            this.Nombre_Proveedores.Location = new System.Drawing.Point(130, 3);
+            this.Nombre_Proveedores.Name = "Nombre_Proveedores";
+            this.Nombre_Proveedores.Size = new System.Drawing.Size(248, 21);
+            this.Nombre_Proveedores.TabIndex = 1;
             // 
-            // cueComboBoxLocalidad
+            // Localidad_Proveedores
             // 
-            this.cueComboBoxLocalidad.CueText = "Localidad";
-            this.cueComboBoxLocalidad.FormattingEnabled = true;
-            this.cueComboBoxLocalidad.Location = new System.Drawing.Point(384, 3);
-            this.cueComboBoxLocalidad.Name = "cueComboBoxLocalidad";
-            this.cueComboBoxLocalidad.Size = new System.Drawing.Size(121, 21);
-            this.cueComboBoxLocalidad.TabIndex = 16;
+            this.Localidad_Proveedores.CueText = "Localidad";
+            this.Localidad_Proveedores.FormattingEnabled = true;
+            this.Localidad_Proveedores.Location = new System.Drawing.Point(384, 3);
+            this.Localidad_Proveedores.Name = "Localidad_Proveedores";
+            this.Localidad_Proveedores.Size = new System.Drawing.Size(121, 21);
+            this.Localidad_Proveedores.TabIndex = 2;
             // 
-            // cueComboBoxDireccion
+            // Direccion_Proveedores
             // 
-            this.cueComboBoxDireccion.CueText = "Dirección";
-            this.cueComboBoxDireccion.FormattingEnabled = true;
-            this.cueComboBoxDireccion.Location = new System.Drawing.Point(511, 3);
-            this.cueComboBoxDireccion.Name = "cueComboBoxDireccion";
-            this.cueComboBoxDireccion.Size = new System.Drawing.Size(248, 21);
-            this.cueComboBoxDireccion.TabIndex = 15;
+            this.Direccion_Proveedores.CueText = "Dirección";
+            this.Direccion_Proveedores.FormattingEnabled = true;
+            this.Direccion_Proveedores.Location = new System.Drawing.Point(511, 3);
+            this.Direccion_Proveedores.Name = "Direccion_Proveedores";
+            this.Direccion_Proveedores.Size = new System.Drawing.Size(248, 21);
+            this.Direccion_Proveedores.TabIndex = 3;
             // 
-            // cueComboBoxProvincia
+            // Provincia_Proveedores
             // 
-            this.cueComboBoxProvincia.CueText = "Provincia";
-            this.cueComboBoxProvincia.FormattingEnabled = true;
-            this.cueComboBoxProvincia.Location = new System.Drawing.Point(3, 30);
-            this.cueComboBoxProvincia.Name = "cueComboBoxProvincia";
-            this.cueComboBoxProvincia.Size = new System.Drawing.Size(121, 21);
-            this.cueComboBoxProvincia.TabIndex = 17;
+            this.Provincia_Proveedores.CueText = "Provincia";
+            this.Provincia_Proveedores.FormattingEnabled = true;
+            this.Provincia_Proveedores.Location = new System.Drawing.Point(3, 30);
+            this.Provincia_Proveedores.Name = "Provincia_Proveedores";
+            this.Provincia_Proveedores.Size = new System.Drawing.Size(121, 21);
+            this.Provincia_Proveedores.TabIndex = 4;
             // 
-            // cueComboBoxCP
+            // CP_Proveedores
             // 
-            this.cueComboBoxCP.CueText = "C.P.";
-            this.cueComboBoxCP.FormattingEnabled = true;
-            this.cueComboBoxCP.Location = new System.Drawing.Point(130, 30);
-            this.cueComboBoxCP.Name = "cueComboBoxCP";
-            this.cueComboBoxCP.Size = new System.Drawing.Size(121, 21);
-            this.cueComboBoxCP.TabIndex = 18;
+            this.CP_Proveedores.CueText = "C.P.";
+            this.CP_Proveedores.FormattingEnabled = true;
+            this.CP_Proveedores.Location = new System.Drawing.Point(130, 30);
+            this.CP_Proveedores.Name = "CP_Proveedores";
+            this.CP_Proveedores.Size = new System.Drawing.Size(121, 21);
+            this.CP_Proveedores.TabIndex = 5;
             // 
-            // cueComboBoxMovil
+            // Movil_Proveedores
             // 
-            this.cueComboBoxMovil.CueText = "Móvil";
-            this.cueComboBoxMovil.FormattingEnabled = true;
-            this.cueComboBoxMovil.Location = new System.Drawing.Point(257, 30);
-            this.cueComboBoxMovil.Name = "cueComboBoxMovil";
-            this.cueComboBoxMovil.Size = new System.Drawing.Size(121, 21);
-            this.cueComboBoxMovil.TabIndex = 9;
+            this.Movil_Proveedores.CueText = "Móvil";
+            this.Movil_Proveedores.FormattingEnabled = true;
+            this.Movil_Proveedores.Location = new System.Drawing.Point(257, 30);
+            this.Movil_Proveedores.Name = "Movil_Proveedores";
+            this.Movil_Proveedores.Size = new System.Drawing.Size(121, 21);
+            this.Movil_Proveedores.TabIndex = 6;
             // 
-            // cueComboBoxTelefono
+            // Telefono_Proveedores
             // 
-            this.cueComboBoxTelefono.CueText = "Teléfono";
-            this.cueComboBoxTelefono.FormattingEnabled = true;
-            this.cueComboBoxTelefono.Location = new System.Drawing.Point(384, 30);
-            this.cueComboBoxTelefono.Name = "cueComboBoxTelefono";
-            this.cueComboBoxTelefono.Size = new System.Drawing.Size(121, 21);
-            this.cueComboBoxTelefono.TabIndex = 12;
+            this.Telefono_Proveedores.CueText = "Teléfono";
+            this.Telefono_Proveedores.FormattingEnabled = true;
+            this.Telefono_Proveedores.Location = new System.Drawing.Point(384, 30);
+            this.Telefono_Proveedores.Name = "Telefono_Proveedores";
+            this.Telefono_Proveedores.Size = new System.Drawing.Size(121, 21);
+            this.Telefono_Proveedores.TabIndex = 7;
             // 
-            // cueComboBoxFax
+            // Fax_Proveedores
             // 
-            this.cueComboBoxFax.CueText = "Fax";
-            this.cueComboBoxFax.FormattingEnabled = true;
-            this.cueComboBoxFax.Location = new System.Drawing.Point(511, 30);
-            this.cueComboBoxFax.Name = "cueComboBoxFax";
-            this.cueComboBoxFax.Size = new System.Drawing.Size(121, 21);
-            this.cueComboBoxFax.TabIndex = 13;
+            this.Fax_Proveedores.CueText = "Fax";
+            this.Fax_Proveedores.FormattingEnabled = true;
+            this.Fax_Proveedores.Location = new System.Drawing.Point(511, 30);
+            this.Fax_Proveedores.Name = "Fax_Proveedores";
+            this.Fax_Proveedores.Size = new System.Drawing.Size(121, 21);
+            this.Fax_Proveedores.TabIndex = 8;
             // 
-            // cueComboBoxEmail
+            // Email_Proveedores
             // 
-            this.cueComboBoxEmail.CueText = "E-Mail";
-            this.cueComboBoxEmail.FormattingEnabled = true;
-            this.cueComboBoxEmail.Location = new System.Drawing.Point(3, 57);
-            this.cueComboBoxEmail.Name = "cueComboBoxEmail";
-            this.cueComboBoxEmail.Size = new System.Drawing.Size(248, 21);
-            this.cueComboBoxEmail.TabIndex = 14;
+            this.Email_Proveedores.CueText = "E-Mail";
+            this.Email_Proveedores.FormattingEnabled = true;
+            this.Email_Proveedores.Location = new System.Drawing.Point(3, 57);
+            this.Email_Proveedores.Name = "Email_Proveedores";
+            this.Email_Proveedores.Size = new System.Drawing.Size(248, 21);
+            this.Email_Proveedores.TabIndex = 9;
             // 
-            // cueComboBox1
+            // NoCuenta_Proveedores
             // 
-            this.cueComboBox1.CueText = "Nº De Cuenta";
-            this.cueComboBox1.FormattingEnabled = true;
-            this.cueComboBox1.Location = new System.Drawing.Point(257, 57);
-            this.cueComboBox1.Name = "cueComboBox1";
-            this.cueComboBox1.Size = new System.Drawing.Size(248, 21);
-            this.cueComboBox1.TabIndex = 19;
+            this.NoCuenta_Proveedores.CueText = "Nº De Cuenta";
+            this.NoCuenta_Proveedores.FormattingEnabled = true;
+            this.NoCuenta_Proveedores.Location = new System.Drawing.Point(257, 57);
+            this.NoCuenta_Proveedores.Name = "NoCuenta_Proveedores";
+            this.NoCuenta_Proveedores.Size = new System.Drawing.Size(248, 21);
+            this.NoCuenta_Proveedores.TabIndex = 10;
             // 
-            // cueComboBox2
+            // Entidad_Proveedores
             // 
-            this.cueComboBox2.CueText = "Entidad";
-            this.cueComboBox2.FormattingEnabled = true;
-            this.cueComboBox2.Location = new System.Drawing.Point(511, 57);
-            this.cueComboBox2.Name = "cueComboBox2";
-            this.cueComboBox2.Size = new System.Drawing.Size(121, 21);
-            this.cueComboBox2.TabIndex = 20;
+            this.Entidad_Proveedores.CueText = "Entidad";
+            this.Entidad_Proveedores.FormattingEnabled = true;
+            this.Entidad_Proveedores.Location = new System.Drawing.Point(511, 57);
+            this.Entidad_Proveedores.Name = "Entidad_Proveedores";
+            this.Entidad_Proveedores.Size = new System.Drawing.Size(121, 21);
+            this.Entidad_Proveedores.TabIndex = 11;
             // 
-            // cueTextBox1
+            // firmaPago_Proveedores
             // 
-            this.cueTextBox1.CueText = "Firma-Pago";
-            this.cueTextBox1.Location = new System.Drawing.Point(638, 57);
-            this.cueTextBox1.Name = "cueTextBox1";
-            this.cueTextBox1.Size = new System.Drawing.Size(121, 20);
-            this.cueTextBox1.TabIndex = 22;
-            this.cueTextBox1.TextChanged += new System.EventHandler(this.cueTextBox1_TextChanged);
+            this.firmaPago_Proveedores.CueText = "Firma-Pago";
+            this.firmaPago_Proveedores.Location = new System.Drawing.Point(638, 57);
+            this.firmaPago_Proveedores.Name = "firmaPago_Proveedores";
+            this.firmaPago_Proveedores.Size = new System.Drawing.Size(121, 20);
+            this.firmaPago_Proveedores.TabIndex = 12;
+            this.firmaPago_Proveedores.TextChanged += new System.EventHandler(this.cueTextBox1_TextChanged);
             // 
-            // cueComboBox3
+            // diasPago_Proveedores
             // 
-            this.cueComboBox3.CueText = "Días-Pago";
-            this.cueComboBox3.FormattingEnabled = true;
-            this.cueComboBox3.Location = new System.Drawing.Point(3, 84);
-            this.cueComboBox3.Name = "cueComboBox3";
-            this.cueComboBox3.Size = new System.Drawing.Size(121, 21);
-            this.cueComboBox3.TabIndex = 21;
+            this.diasPago_Proveedores.CueText = "Días-Pago";
+            this.diasPago_Proveedores.FormattingEnabled = true;
+            this.diasPago_Proveedores.Location = new System.Drawing.Point(3, 84);
+            this.diasPago_Proveedores.Name = "diasPago_Proveedores";
+            this.diasPago_Proveedores.Size = new System.Drawing.Size(121, 21);
+            this.diasPago_Proveedores.TabIndex = 13;
             // 
-            // cueComboBox5
+            // Localidad2_Proveedores
             // 
-            this.cueComboBox5.CueText = "Localidad 2";
-            this.cueComboBox5.FormattingEnabled = true;
-            this.cueComboBox5.Location = new System.Drawing.Point(130, 84);
-            this.cueComboBox5.Name = "cueComboBox5";
-            this.cueComboBox5.Size = new System.Drawing.Size(121, 21);
-            this.cueComboBox5.TabIndex = 24;
+            this.Localidad2_Proveedores.CueText = "Localidad 2";
+            this.Localidad2_Proveedores.FormattingEnabled = true;
+            this.Localidad2_Proveedores.Location = new System.Drawing.Point(130, 84);
+            this.Localidad2_Proveedores.Name = "Localidad2_Proveedores";
+            this.Localidad2_Proveedores.Size = new System.Drawing.Size(121, 21);
+            this.Localidad2_Proveedores.TabIndex = 14;
             // 
-            // cueComboBox4
+            // Direccion2_Proveedores
             // 
-            this.cueComboBox4.CueText = "Dirección 2";
-            this.cueComboBox4.FormattingEnabled = true;
-            this.cueComboBox4.Location = new System.Drawing.Point(257, 84);
-            this.cueComboBox4.Name = "cueComboBox4";
-            this.cueComboBox4.Size = new System.Drawing.Size(248, 21);
-            this.cueComboBox4.TabIndex = 23;
+            this.Direccion2_Proveedores.CueText = "Dirección 2";
+            this.Direccion2_Proveedores.FormattingEnabled = true;
+            this.Direccion2_Proveedores.Location = new System.Drawing.Point(257, 84);
+            this.Direccion2_Proveedores.Name = "Direccion2_Proveedores";
+            this.Direccion2_Proveedores.Size = new System.Drawing.Size(248, 21);
+            this.Direccion2_Proveedores.TabIndex = 15;
             // 
-            // cueComboBox6
+            // Provincia2_Proveedores
             // 
-            this.cueComboBox6.CueText = "Provincia 2";
-            this.cueComboBox6.FormattingEnabled = true;
-            this.cueComboBox6.Location = new System.Drawing.Point(511, 84);
-            this.cueComboBox6.Name = "cueComboBox6";
-            this.cueComboBox6.Size = new System.Drawing.Size(121, 21);
-            this.cueComboBox6.TabIndex = 25;
+            this.Provincia2_Proveedores.CueText = "Provincia 2";
+            this.Provincia2_Proveedores.FormattingEnabled = true;
+            this.Provincia2_Proveedores.Location = new System.Drawing.Point(511, 84);
+            this.Provincia2_Proveedores.Name = "Provincia2_Proveedores";
+            this.Provincia2_Proveedores.Size = new System.Drawing.Size(121, 21);
+            this.Provincia2_Proveedores.TabIndex = 16;
             // 
-            // cueComboBox7
+            // CP2_Proveedores
             // 
-            this.cueComboBox7.CueText = "C.P. 2";
-            this.cueComboBox7.FormattingEnabled = true;
-            this.cueComboBox7.Location = new System.Drawing.Point(638, 84);
-            this.cueComboBox7.Name = "cueComboBox7";
-            this.cueComboBox7.Size = new System.Drawing.Size(121, 21);
-            this.cueComboBox7.TabIndex = 26;
-            // 
-            // cueTextBox2
-            // 
-            this.cueTextBox2.CueText = "Proveedor";
-            this.cueTextBox2.Location = new System.Drawing.Point(130, 3);
-            this.cueTextBox2.Name = "cueTextBox2";
-            this.cueTextBox2.Size = new System.Drawing.Size(121, 20);
-            this.cueTextBox2.TabIndex = 7;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label3.Location = new System.Drawing.Point(3, 116);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(780, 20);
-            this.label3.TabIndex = 16;
-            this.label3.Text = "Descripción Detallada";
-            // 
-            // richTextBox1
-            // 
-            this.richTextBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.richTextBox1.Location = new System.Drawing.Point(3, 139);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(780, 66);
-            this.richTextBox1.TabIndex = 17;
-            this.richTextBox1.Text = "";
-            // 
-            // cueTextBox3
-            // 
-            this.cueTextBox3.CueText = "Precio Base";
-            this.cueTextBox3.Location = new System.Drawing.Point(638, 3);
-            this.cueTextBox3.Name = "cueTextBox3";
-            this.cueTextBox3.Size = new System.Drawing.Size(121, 20);
-            this.cueTextBox3.TabIndex = 8;
+            this.CP2_Proveedores.CueText = "C.P. 2";
+            this.CP2_Proveedores.FormattingEnabled = true;
+            this.CP2_Proveedores.Location = new System.Drawing.Point(638, 84);
+            this.CP2_Proveedores.Name = "CP2_Proveedores";
+            this.CP2_Proveedores.Size = new System.Drawing.Size(121, 21);
+            this.CP2_Proveedores.TabIndex = 17;
             // 
             // WarehouseView
             // 
@@ -596,13 +597,13 @@ namespace Gestaller
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Grid_Productos)).EndInit();
             this.flowLayoutPanel2.ResumeLayout(false);
             this.flowLayoutPanel2.PerformLayout();
             this.Proveedores.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Grid_Proveedores)).EndInit();
             this.panel4_Pre.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
@@ -616,48 +617,48 @@ namespace Gestaller
         private System.Windows.Forms.TabPage Proveedores;
         private System.Windows.Forms.TabPage Productos;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView Grid_Proveedores;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
-        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridView Grid_Productos;
         private System.Windows.Forms.Panel panel4_Pre;
-        private System.Windows.Forms.Button btnImprimir_Pre;
-        private System.Windows.Forms.Button btnPresupuestor_Pre;
-        private System.Windows.Forms.Button btnProforma_Pre;
-        private System.Windows.Forms.Button btnFactura_Pre;
+        private System.Windows.Forms.Button btVaciar_Proveedores;
+        private System.Windows.Forms.Button btAnadir_Proveedores;
+        private System.Windows.Forms.Button btModificar_Proveedores;
+        private System.Windows.Forms.Button btBorrar_Proveedores;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private Views.CueComboBox cueComboBoxCIF;
-        private Views.CueComboBox cueComboBoxNombre;
-        private Views.CueComboBox cueComboBoxLocalidad;
-        private Views.CueComboBox cueComboBoxDireccion;
-        private Views.CueComboBox cueComboBoxProvincia;
-        private Views.CueComboBox cueComboBoxCP;
-        private Views.CueComboBox cueComboBoxMovil;
-        private Views.CueComboBox cueComboBoxTelefono;
-        private Views.CueComboBox cueComboBoxFax;
-        private Views.CueComboBox cueComboBoxEmail;
-        private Views.CueComboBox cueComboBox1;
-        private Views.CueComboBox cueComboBox2;
-        private Views.CueTextBox cueTextBox1;
-        private Views.CueComboBox cueComboBox3;
-        private Views.CueComboBox cueComboBox4;
-        private Views.CueComboBox cueComboBox5;
-        private Views.CueComboBox cueComboBox6;
-        private Views.CueComboBox cueComboBox7;
+        private Views.CueComboBox NIF_Proveedores;
+        private Views.CueComboBox Nombre_Proveedores;
+        private Views.CueComboBox Localidad_Proveedores;
+        private Views.CueComboBox Direccion_Proveedores;
+        private Views.CueComboBox Provincia_Proveedores;
+        private Views.CueComboBox CP_Proveedores;
+        private Views.CueComboBox Movil_Proveedores;
+        private Views.CueComboBox Telefono_Proveedores;
+        private Views.CueComboBox Fax_Proveedores;
+        private Views.CueComboBox Email_Proveedores;
+        private Views.CueComboBox NoCuenta_Proveedores;
+        private Views.CueComboBox Entidad_Proveedores;
+        private Views.CueTextBox firmaPago_Proveedores;
+        private Views.CueComboBox diasPago_Proveedores;
+        private Views.CueComboBox Direccion2_Proveedores;
+        private Views.CueComboBox Localidad2_Proveedores;
+        private Views.CueComboBox Provincia2_Proveedores;
+        private Views.CueComboBox CP2_Proveedores;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btAnadir_Productos;
+        private System.Windows.Forms.Button btEliminar_Productos;
+        private System.Windows.Forms.Button btModificar_Productos;
+        private System.Windows.Forms.Button btVaciar_Productos;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
-        private Views.CueComboBox cueComboBox8;
-        private Views.CueComboBox cueComboBox9;
-        private Views.CueComboBox cueComboBox10;
-        private Views.CueComboBox cueComboBox14;
-        private Views.CueTextBox cueTextBox2;
-        private Views.CueTextBox cueTextBox3;
+        private Views.CueComboBox Referecia_Productos;
+        private Views.CueComboBox PVP_Productos;
+        private Views.CueComboBox Descripcion_Productos;
+        private Views.CueComboBox IVA_Productos;
+        private Views.CueTextBox Proveedor_Productos;
+        private Views.CueTextBox Base_Productos;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.RichTextBox Detallada_Productos;
     }
 }
