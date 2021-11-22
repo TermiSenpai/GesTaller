@@ -66,16 +66,16 @@ namespace Gestaller
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.EncabezadoDatos_Bancarios = new System.Windows.Forms.Label();
             this.flowBanco_Caja = new System.Windows.Forms.FlowLayoutPanel();
-            this.cueComboBoxEntidad = new Gestaller.Views.CueComboBox();
-            this.cueTextBoxNumeroCuenta = new Gestaller.Views.CueTextBox();
-            this.cueTextBoxFirma_Pago = new Gestaller.Views.CueTextBox();
-            this.cueTextBoxDias_Pago = new Gestaller.Views.CueTextBox();
-            this.dataGridDatosB = new System.Windows.Forms.DataGridView();
+            this.Entidad_DatosBancarios = new Gestaller.Views.CueComboBox();
+            this.NumeroCuenta_DatosBancarios = new Gestaller.Views.CueTextBox();
+            this.FirmaPago_DatosBancarios = new Gestaller.Views.CueTextBox();
+            this.DiasPago_DatosBancarios = new Gestaller.Views.CueTextBox();
+            this.Grid_DatosBancarios = new System.Windows.Forms.DataGridView();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.button1ModificarDb = new System.Windows.Forms.Button();
-            this.button2BorrarDb = new System.Windows.Forms.Button();
-            this.button3AnadirDb = new System.Windows.Forms.Button();
-            this.button4VaciarDb = new System.Windows.Forms.Button();
+            this.btModificar_DatosBancarios = new System.Windows.Forms.Button();
+            this.btBorrar_DatosBancarios = new System.Windows.Forms.Button();
+            this.btAnadir_DatosBancarios = new System.Windows.Forms.Button();
+            this.btVaciar_DatosBancarios = new System.Windows.Forms.Button();
             this.tab_otras_direcciones = new System.Windows.Forms.TabPage();
             this.tabla1_OtrasD = new System.Windows.Forms.TableLayoutPanel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -109,7 +109,7 @@ namespace Gestaller
             this.table1_DatosB.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.flowBanco_Caja.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridDatosB)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Grid_DatosBancarios)).BeginInit();
             this.panel3.SuspendLayout();
             this.tab_otras_direcciones.SuspendLayout();
             this.tabla1_OtrasD.SuspendLayout();
@@ -500,7 +500,7 @@ namespace Gestaller
             this.table1_DatosB.ColumnCount = 1;
             this.table1_DatosB.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.table1_DatosB.Controls.Add(this.tableLayoutPanel1, 0, 0);
-            this.table1_DatosB.Controls.Add(this.dataGridDatosB, 0, 2);
+            this.table1_DatosB.Controls.Add(this.Grid_DatosBancarios, 0, 2);
             this.table1_DatosB.Controls.Add(this.panel3, 0, 1);
             this.table1_DatosB.Dock = System.Windows.Forms.DockStyle.Fill;
             this.table1_DatosB.Location = new System.Drawing.Point(3, 3);
@@ -541,111 +541,111 @@ namespace Gestaller
             // 
             // flowBanco_Caja
             // 
-            this.flowBanco_Caja.Controls.Add(this.cueComboBoxEntidad);
-            this.flowBanco_Caja.Controls.Add(this.cueTextBoxNumeroCuenta);
-            this.flowBanco_Caja.Controls.Add(this.cueTextBoxFirma_Pago);
-            this.flowBanco_Caja.Controls.Add(this.cueTextBoxDias_Pago);
+            this.flowBanco_Caja.Controls.Add(this.Entidad_DatosBancarios);
+            this.flowBanco_Caja.Controls.Add(this.NumeroCuenta_DatosBancarios);
+            this.flowBanco_Caja.Controls.Add(this.FirmaPago_DatosBancarios);
+            this.flowBanco_Caja.Controls.Add(this.DiasPago_DatosBancarios);
             this.flowBanco_Caja.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowBanco_Caja.Location = new System.Drawing.Point(3, 23);
             this.flowBanco_Caja.Name = "flowBanco_Caja";
             this.flowBanco_Caja.Size = new System.Drawing.Size(1316, 74);
             this.flowBanco_Caja.TabIndex = 2;
             // 
-            // cueComboBoxEntidad
+            // Entidad_DatosBancarios
             // 
-            this.cueComboBoxEntidad.CueText = "Entidad";
-            this.cueComboBoxEntidad.FormattingEnabled = true;
-            this.cueComboBoxEntidad.Location = new System.Drawing.Point(3, 3);
-            this.cueComboBoxEntidad.Name = "cueComboBoxEntidad";
-            this.cueComboBoxEntidad.Size = new System.Drawing.Size(248, 21);
-            this.cueComboBoxEntidad.TabIndex = 1;
+            this.Entidad_DatosBancarios.CueText = "Entidad";
+            this.Entidad_DatosBancarios.FormattingEnabled = true;
+            this.Entidad_DatosBancarios.Location = new System.Drawing.Point(3, 3);
+            this.Entidad_DatosBancarios.Name = "Entidad_DatosBancarios";
+            this.Entidad_DatosBancarios.Size = new System.Drawing.Size(248, 21);
+            this.Entidad_DatosBancarios.TabIndex = 1;
             // 
-            // cueTextBoxNumeroCuenta
+            // NumeroCuenta_DatosBancarios
             // 
-            this.cueTextBoxNumeroCuenta.CueText = "Número de Cuenta";
-            this.cueTextBoxNumeroCuenta.Location = new System.Drawing.Point(257, 3);
-            this.cueTextBoxNumeroCuenta.Name = "cueTextBoxNumeroCuenta";
-            this.cueTextBoxNumeroCuenta.Size = new System.Drawing.Size(100, 20);
-            this.cueTextBoxNumeroCuenta.TabIndex = 2;
+            this.NumeroCuenta_DatosBancarios.CueText = "Número de Cuenta";
+            this.NumeroCuenta_DatosBancarios.Location = new System.Drawing.Point(257, 3);
+            this.NumeroCuenta_DatosBancarios.Name = "NumeroCuenta_DatosBancarios";
+            this.NumeroCuenta_DatosBancarios.Size = new System.Drawing.Size(100, 20);
+            this.NumeroCuenta_DatosBancarios.TabIndex = 2;
             // 
-            // cueTextBoxFirma_Pago
+            // FirmaPago_DatosBancarios
             // 
-            this.cueTextBoxFirma_Pago.CueText = "Firma Pago";
-            this.cueTextBoxFirma_Pago.Location = new System.Drawing.Point(363, 3);
-            this.cueTextBoxFirma_Pago.Name = "cueTextBoxFirma_Pago";
-            this.cueTextBoxFirma_Pago.Size = new System.Drawing.Size(100, 20);
-            this.cueTextBoxFirma_Pago.TabIndex = 3;
+            this.FirmaPago_DatosBancarios.CueText = "Firma Pago";
+            this.FirmaPago_DatosBancarios.Location = new System.Drawing.Point(363, 3);
+            this.FirmaPago_DatosBancarios.Name = "FirmaPago_DatosBancarios";
+            this.FirmaPago_DatosBancarios.Size = new System.Drawing.Size(100, 20);
+            this.FirmaPago_DatosBancarios.TabIndex = 3;
             // 
-            // cueTextBoxDias_Pago
+            // DiasPago_DatosBancarios
             // 
-            this.cueTextBoxDias_Pago.CueText = "Días Pago";
-            this.cueTextBoxDias_Pago.Location = new System.Drawing.Point(469, 3);
-            this.cueTextBoxDias_Pago.Name = "cueTextBoxDias_Pago";
-            this.cueTextBoxDias_Pago.Size = new System.Drawing.Size(100, 20);
-            this.cueTextBoxDias_Pago.TabIndex = 4;
+            this.DiasPago_DatosBancarios.CueText = "Días Pago";
+            this.DiasPago_DatosBancarios.Location = new System.Drawing.Point(469, 3);
+            this.DiasPago_DatosBancarios.Name = "DiasPago_DatosBancarios";
+            this.DiasPago_DatosBancarios.Size = new System.Drawing.Size(100, 20);
+            this.DiasPago_DatosBancarios.TabIndex = 4;
             // 
-            // dataGridDatosB
+            // Grid_DatosBancarios
             // 
-            this.dataGridDatosB.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
-            this.dataGridDatosB.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridDatosB.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridDatosB.Location = new System.Drawing.Point(3, 138);
-            this.dataGridDatosB.Name = "dataGridDatosB";
-            this.dataGridDatosB.Size = new System.Drawing.Size(1322, 655);
-            this.dataGridDatosB.TabIndex = 4;
+            this.Grid_DatosBancarios.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.Grid_DatosBancarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Grid_DatosBancarios.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Grid_DatosBancarios.Location = new System.Drawing.Point(3, 138);
+            this.Grid_DatosBancarios.Name = "Grid_DatosBancarios";
+            this.Grid_DatosBancarios.Size = new System.Drawing.Size(1322, 655);
+            this.Grid_DatosBancarios.TabIndex = 4;
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.button1ModificarDb);
-            this.panel3.Controls.Add(this.button2BorrarDb);
-            this.panel3.Controls.Add(this.button3AnadirDb);
-            this.panel3.Controls.Add(this.button4VaciarDb);
+            this.panel3.Controls.Add(this.btModificar_DatosBancarios);
+            this.panel3.Controls.Add(this.btBorrar_DatosBancarios);
+            this.panel3.Controls.Add(this.btAnadir_DatosBancarios);
+            this.panel3.Controls.Add(this.btVaciar_DatosBancarios);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(3, 109);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1322, 23);
             this.panel3.TabIndex = 3;
             // 
-            // button1ModificarDb
+            // btModificar_DatosBancarios
             // 
-            this.button1ModificarDb.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button1ModificarDb.Location = new System.Drawing.Point(1008, 0);
-            this.button1ModificarDb.Name = "button1ModificarDb";
-            this.button1ModificarDb.Size = new System.Drawing.Size(75, 23);
-            this.button1ModificarDb.TabIndex = 0;
-            this.button1ModificarDb.Text = "Modificar";
-            this.button1ModificarDb.UseVisualStyleBackColor = true;
+            this.btModificar_DatosBancarios.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btModificar_DatosBancarios.Location = new System.Drawing.Point(1008, 0);
+            this.btModificar_DatosBancarios.Name = "btModificar_DatosBancarios";
+            this.btModificar_DatosBancarios.Size = new System.Drawing.Size(75, 23);
+            this.btModificar_DatosBancarios.TabIndex = 0;
+            this.btModificar_DatosBancarios.Text = "Modificar";
+            this.btModificar_DatosBancarios.UseVisualStyleBackColor = true;
             // 
-            // button2BorrarDb
+            // btBorrar_DatosBancarios
             // 
-            this.button2BorrarDb.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button2BorrarDb.Location = new System.Drawing.Point(1083, 0);
-            this.button2BorrarDb.Name = "button2BorrarDb";
-            this.button2BorrarDb.Size = new System.Drawing.Size(89, 23);
-            this.button2BorrarDb.TabIndex = 1;
-            this.button2BorrarDb.Text = "Borrar";
-            this.button2BorrarDb.UseVisualStyleBackColor = true;
+            this.btBorrar_DatosBancarios.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btBorrar_DatosBancarios.Location = new System.Drawing.Point(1083, 0);
+            this.btBorrar_DatosBancarios.Name = "btBorrar_DatosBancarios";
+            this.btBorrar_DatosBancarios.Size = new System.Drawing.Size(89, 23);
+            this.btBorrar_DatosBancarios.TabIndex = 1;
+            this.btBorrar_DatosBancarios.Text = "Borrar";
+            this.btBorrar_DatosBancarios.UseVisualStyleBackColor = true;
             // 
-            // button3AnadirDb
+            // btAnadir_DatosBancarios
             // 
-            this.button3AnadirDb.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button3AnadirDb.Location = new System.Drawing.Point(1172, 0);
-            this.button3AnadirDb.Name = "button3AnadirDb";
-            this.button3AnadirDb.Size = new System.Drawing.Size(75, 23);
-            this.button3AnadirDb.TabIndex = 2;
-            this.button3AnadirDb.Text = "Añadir";
-            this.button3AnadirDb.UseVisualStyleBackColor = true;
+            this.btAnadir_DatosBancarios.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btAnadir_DatosBancarios.Location = new System.Drawing.Point(1172, 0);
+            this.btAnadir_DatosBancarios.Name = "btAnadir_DatosBancarios";
+            this.btAnadir_DatosBancarios.Size = new System.Drawing.Size(75, 23);
+            this.btAnadir_DatosBancarios.TabIndex = 2;
+            this.btAnadir_DatosBancarios.Text = "Añadir";
+            this.btAnadir_DatosBancarios.UseVisualStyleBackColor = true;
             // 
-            // button4VaciarDb
+            // btVaciar_DatosBancarios
             // 
-            this.button4VaciarDb.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button4VaciarDb.Location = new System.Drawing.Point(1247, 0);
-            this.button4VaciarDb.Margin = new System.Windows.Forms.Padding(6, 3, 3, 3);
-            this.button4VaciarDb.Name = "button4VaciarDb";
-            this.button4VaciarDb.Size = new System.Drawing.Size(75, 23);
-            this.button4VaciarDb.TabIndex = 3;
-            this.button4VaciarDb.Text = "Vaciar";
-            this.button4VaciarDb.UseVisualStyleBackColor = true;
+            this.btVaciar_DatosBancarios.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btVaciar_DatosBancarios.Location = new System.Drawing.Point(1247, 0);
+            this.btVaciar_DatosBancarios.Margin = new System.Windows.Forms.Padding(6, 3, 3, 3);
+            this.btVaciar_DatosBancarios.Name = "btVaciar_DatosBancarios";
+            this.btVaciar_DatosBancarios.Size = new System.Drawing.Size(75, 23);
+            this.btVaciar_DatosBancarios.TabIndex = 3;
+            this.btVaciar_DatosBancarios.Text = "Vaciar";
+            this.btVaciar_DatosBancarios.UseVisualStyleBackColor = true;
             // 
             // tab_otras_direcciones
             // 
@@ -891,7 +891,7 @@ namespace Gestaller
             this.tableLayoutPanel1.PerformLayout();
             this.flowBanco_Caja.ResumeLayout(false);
             this.flowBanco_Caja.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridDatosB)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Grid_DatosBancarios)).EndInit();
             this.panel3.ResumeLayout(false);
             this.tab_otras_direcciones.ResumeLayout(false);
             this.tabla1_OtrasD.ResumeLayout(false);
@@ -939,11 +939,11 @@ namespace Gestaller
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Label EncabezadoDatos_Bancarios;
         private System.Windows.Forms.FlowLayoutPanel flowBanco_Caja;
-        private Views.CueComboBox cueComboBoxEntidad;
-        private Views.CueTextBox cueTextBoxNumeroCuenta;
-        private Views.CueTextBox cueTextBoxFirma_Pago;
-        private Views.CueTextBox cueTextBoxDias_Pago;
-        private System.Windows.Forms.DataGridView dataGridDatosB;
+        private Views.CueComboBox Entidad_DatosBancarios;
+        private Views.CueTextBox NumeroCuenta_DatosBancarios;
+        private Views.CueTextBox FirmaPago_DatosBancarios;
+        private Views.CueTextBox DiasPago_DatosBancarios;
+        private System.Windows.Forms.DataGridView Grid_DatosBancarios;
         private System.Windows.Forms.TableLayoutPanel tabla1_OtrasD;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button button4VaciarOd;
@@ -968,10 +968,10 @@ namespace Gestaller
         private System.Windows.Forms.Button btBorrar_ClienteVehiculo;
         private System.Windows.Forms.Button btAnadir_ClienteVehiculo;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Button button1ModificarDb;
-        private System.Windows.Forms.Button button2BorrarDb;
-        private System.Windows.Forms.Button button3AnadirDb;
-        private System.Windows.Forms.Button button4VaciarDb;
+        private System.Windows.Forms.Button btModificar_DatosBancarios;
+        private System.Windows.Forms.Button btBorrar_DatosBancarios;
+        private System.Windows.Forms.Button btAnadir_DatosBancarios;
+        private System.Windows.Forms.Button btVaciar_DatosBancarios;
         private System.Windows.Forms.Button btVaciar_ClienteVehiculo;
     }
 }
