@@ -12,9 +12,57 @@ namespace Gestaller
 {
     public partial class HistoryView : Form
     {
+        BussinessLogicLayer _bussinessLogicLayer = new BussinessLogicLayer();
         public HistoryView()
         {
             InitializeComponent();
         }
+
+        #region events
+
+        private void HistoryView_Load(object sender, EventArgs e)
+        {
+            getDB();
+        }
+        
+        private void button1Hist_Contable_Ver_Click(object sender, EventArgs e)
+        {
+            dateSearch();
+        }
+
+        #endregion
+
+        #region provate methods
+
+        private void dateSearch()
+        {
+            DateTime dateIni = dateTimePicker1Hist_Contable_FechaInicio.Value;
+            DateTime dateFin = dateTimePicker2Hist_Contable_FechaFin.Value;
+            List<Order> orders = getOrders();
+            List<Order> dateOrders = new List<Order>();
+            foreach (Order order in orders)
+            {
+                if (order.dateInvoice > dateIni && order.dateInvoice < dateFin)
+                {
+                    dateOrders.Add(order);
+                }             
+            }
+            dataGridView1Hist_Contable.DataSource = dateOrders;
+        }
+
+        private void getDB()
+        {
+            List<Order> orders = getOrders();
+
+            dataGridView1Hist_Contable.DataSource = orders;
+        }
+
+        private List<Order> getOrders()
+        {
+            return _bussinessLogicLayer.GetOrders();
+        }
+
+        #endregion
+
     }
 }

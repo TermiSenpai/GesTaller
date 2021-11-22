@@ -102,7 +102,7 @@ namespace Gestaller
         {
             List<Order> orders = new List<Order>();
             orders.Add(new Order(1, 1, 1, 1, new DateTime(2018, 3, 1), new DateTime(2018, 5, 1), new DateTime(2018, 10, 1)));
-            orders.Add(new Order(2, 2, 2, 2, new DateTime(2020, 3, 1), new DateTime(2021, 10, 1), new DateTime(2021, 12, 1)));
+            orders.Add(new Order(2, 2, 2, 2, new DateTime(2020, 3, 1), new DateTime(2021, 10, 1), new DateTime(2020, 12, 1)));
             return orders;
         }
 
