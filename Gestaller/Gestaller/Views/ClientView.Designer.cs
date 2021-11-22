@@ -35,32 +35,32 @@ namespace Gestaller
             this.tabla3_clientes_V = new System.Windows.Forms.TableLayoutPanel();
             this.EncabezadoVehiculo = new System.Windows.Forms.Label();
             this.flowVehiculo = new System.Windows.Forms.FlowLayoutPanel();
-            this.cueComboBoxMatricula = new Gestaller.Views.CueComboBox();
-            this.cueComboBoxMarca = new Gestaller.Views.CueComboBox();
-            this.cueComboBoxModelo = new Gestaller.Views.CueComboBox();
-            this.cueComboBoxBastidor = new Gestaller.Views.CueComboBox();
-            this.cueComboBoxKilometros = new Gestaller.Views.CueComboBox();
-            this.cueComboBoxTipoMotor = new Gestaller.Views.CueComboBox();
+            this.Matricula_ClienteVehiculo = new Gestaller.Views.CueComboBox();
+            this.Marca_ClienteVehiculo = new Gestaller.Views.CueComboBox();
+            this.Modelo_ClienteVehiculo = new Gestaller.Views.CueComboBox();
+            this.Bastidor_ClienteVehiculo = new Gestaller.Views.CueComboBox();
+            this.Kilometros_ClienteVehiculo = new Gestaller.Views.CueComboBox();
+            this.TipoMotor_ClienteVehiculo = new Gestaller.Views.CueComboBox();
             this.tabla2_clientes_V = new System.Windows.Forms.TableLayoutPanel();
             this.EncabezadoFacturación = new System.Windows.Forms.Label();
             this.flowFacturacion = new System.Windows.Forms.FlowLayoutPanel();
-            this.cueComboBoxEmpresa = new Gestaller.Views.CueComboBox();
-            this.cueComboBoxCIF = new Gestaller.Views.CueComboBox();
-            this.cueComboBoxNombre = new Gestaller.Views.CueComboBox();
-            this.cueComboBoxDireccion = new Gestaller.Views.CueComboBox();
-            this.cueComboBoxLocalidad = new Gestaller.Views.CueComboBox();
-            this.cueComboBoxProvincia = new Gestaller.Views.CueComboBox();
-            this.cueComboBoxCP = new Gestaller.Views.CueComboBox();
-            this.cueComboBoxMovil = new Gestaller.Views.CueComboBox();
-            this.cueComboBoxTelefono = new Gestaller.Views.CueComboBox();
-            this.cueComboBoxFax = new Gestaller.Views.CueComboBox();
-            this.cueComboBoxEmail = new Gestaller.Views.CueComboBox();
-            this.dataGrid = new System.Windows.Forms.DataGridView();
+            this.Empresa_ClienteVehiculo = new Gestaller.Views.CueComboBox();
+            this.CIF_ClienteVehiculo = new Gestaller.Views.CueComboBox();
+            this.Nombre_ClienteVehiculo = new Gestaller.Views.CueComboBox();
+            this.Direccion_ClienteVehiculo = new Gestaller.Views.CueComboBox();
+            this.Localidad_ClienteVehiculo = new Gestaller.Views.CueComboBox();
+            this.Provincia_ClienteVehiculo = new Gestaller.Views.CueComboBox();
+            this.CP_ClienteVehiculo = new Gestaller.Views.CueComboBox();
+            this.Movil_ClienteVehiculo = new Gestaller.Views.CueComboBox();
+            this.Telefono_ClienteVehiculo = new Gestaller.Views.CueComboBox();
+            this.Fax_ClienteVehiculo = new Gestaller.Views.CueComboBox();
+            this.Email_ClienteVehiculo = new Gestaller.Views.CueComboBox();
+            this.Grid_ClienteVehiculo = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button1ModificarCv = new System.Windows.Forms.Button();
-            this.button2BorrarCv = new System.Windows.Forms.Button();
-            this.button3AnadirCv = new System.Windows.Forms.Button();
-            this.button4VaciarCv = new System.Windows.Forms.Button();
+            this.btModificar_ClienteVehiculo = new System.Windows.Forms.Button();
+            this.btBorrar_ClienteVehiculo = new System.Windows.Forms.Button();
+            this.btAnadir_ClienteVehiculo = new System.Windows.Forms.Button();
+            this.btVaciar_ClienteVehiculo = new System.Windows.Forms.Button();
             this.tab_datos_bancarios = new System.Windows.Forms.TabPage();
             this.table1_DatosB = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
@@ -103,7 +103,7 @@ namespace Gestaller
             this.flowVehiculo.SuspendLayout();
             this.tabla2_clientes_V.SuspendLayout();
             this.flowFacturacion.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGrid)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Grid_ClienteVehiculo)).BeginInit();
             this.panel2.SuspendLayout();
             this.tab_datos_bancarios.SuspendLayout();
             this.table1_DatosB.SuspendLayout();
@@ -150,7 +150,7 @@ namespace Gestaller
             this.tabla1_clientes_V.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tabla1_clientes_V.Controls.Add(this.tabla3_clientes_V, 0, 1);
             this.tabla1_clientes_V.Controls.Add(this.tabla2_clientes_V, 0, 0);
-            this.tabla1_clientes_V.Controls.Add(this.dataGrid, 0, 3);
+            this.tabla1_clientes_V.Controls.Add(this.Grid_ClienteVehiculo, 0, 3);
             this.tabla1_clientes_V.Controls.Add(this.panel2, 0, 2);
             this.tabla1_clientes_V.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabla1_clientes_V.Location = new System.Drawing.Point(0, 0);
@@ -175,8 +175,8 @@ namespace Gestaller
             this.tabla3_clientes_V.Margin = new System.Windows.Forms.Padding(0);
             this.tabla3_clientes_V.Name = "tabla3_clientes_V";
             this.tabla3_clientes_V.RowCount = 2;
-            this.tabla3_clientes_V.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tabla3_clientes_V.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
+            this.tabla3_clientes_V.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tabla3_clientes_V.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tabla3_clientes_V.Size = new System.Drawing.Size(1334, 72);
             this.tabla3_clientes_V.TabIndex = 1;
             // 
@@ -187,7 +187,7 @@ namespace Gestaller
             this.EncabezadoVehiculo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.EncabezadoVehiculo.Location = new System.Drawing.Point(3, 0);
             this.EncabezadoVehiculo.Name = "EncabezadoVehiculo";
-            this.EncabezadoVehiculo.Size = new System.Drawing.Size(1328, 14);
+            this.EncabezadoVehiculo.Size = new System.Drawing.Size(1328, 20);
             this.EncabezadoVehiculo.TabIndex = 2;
             this.EncabezadoVehiculo.Text = "DATOS DEL VEHICULO";
             // 
@@ -195,73 +195,73 @@ namespace Gestaller
             // 
             this.flowVehiculo.AutoSize = true;
             this.flowVehiculo.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.flowVehiculo.Controls.Add(this.cueComboBoxMatricula);
-            this.flowVehiculo.Controls.Add(this.cueComboBoxMarca);
-            this.flowVehiculo.Controls.Add(this.cueComboBoxModelo);
-            this.flowVehiculo.Controls.Add(this.cueComboBoxBastidor);
-            this.flowVehiculo.Controls.Add(this.cueComboBoxKilometros);
-            this.flowVehiculo.Controls.Add(this.cueComboBoxTipoMotor);
+            this.flowVehiculo.Controls.Add(this.Matricula_ClienteVehiculo);
+            this.flowVehiculo.Controls.Add(this.Marca_ClienteVehiculo);
+            this.flowVehiculo.Controls.Add(this.Modelo_ClienteVehiculo);
+            this.flowVehiculo.Controls.Add(this.Bastidor_ClienteVehiculo);
+            this.flowVehiculo.Controls.Add(this.Kilometros_ClienteVehiculo);
+            this.flowVehiculo.Controls.Add(this.TipoMotor_ClienteVehiculo);
             this.flowVehiculo.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowVehiculo.Location = new System.Drawing.Point(3, 17);
+            this.flowVehiculo.Location = new System.Drawing.Point(3, 23);
             this.flowVehiculo.Name = "flowVehiculo";
-            this.flowVehiculo.Size = new System.Drawing.Size(1328, 52);
+            this.flowVehiculo.Size = new System.Drawing.Size(1328, 46);
             this.flowVehiculo.TabIndex = 3;
             // 
-            // cueComboBoxMatricula
+            // Matricula_ClienteVehiculo
             // 
-            this.cueComboBoxMatricula.CueText = "Matrícula";
-            this.cueComboBoxMatricula.FormattingEnabled = true;
-            this.cueComboBoxMatricula.Location = new System.Drawing.Point(3, 3);
-            this.cueComboBoxMatricula.Name = "cueComboBoxMatricula";
-            this.cueComboBoxMatricula.Size = new System.Drawing.Size(121, 24);
-            this.cueComboBoxMatricula.TabIndex = 0;
-            this.cueComboBoxMatricula.SelectionChangeCommitted += new System.EventHandler(this.cueComboBoxMatricula_SelectionChangeCommitted);
+            this.Matricula_ClienteVehiculo.CueText = "Matrícula";
+            this.Matricula_ClienteVehiculo.FormattingEnabled = true;
+            this.Matricula_ClienteVehiculo.Location = new System.Drawing.Point(3, 3);
+            this.Matricula_ClienteVehiculo.Name = "Matricula_ClienteVehiculo";
+            this.Matricula_ClienteVehiculo.Size = new System.Drawing.Size(121, 24);
+            this.Matricula_ClienteVehiculo.TabIndex = 0;
+            this.Matricula_ClienteVehiculo.SelectionChangeCommitted += new System.EventHandler(this.cueComboBoxMatricula_SelectionChangeCommitted);
             // 
-            // cueComboBoxMarca
+            // Marca_ClienteVehiculo
             // 
-            this.cueComboBoxMarca.CueText = "Marca";
-            this.cueComboBoxMarca.FormattingEnabled = true;
-            this.cueComboBoxMarca.Location = new System.Drawing.Point(130, 3);
-            this.cueComboBoxMarca.Name = "cueComboBoxMarca";
-            this.cueComboBoxMarca.Size = new System.Drawing.Size(121, 24);
-            this.cueComboBoxMarca.TabIndex = 1;
+            this.Marca_ClienteVehiculo.CueText = "Marca";
+            this.Marca_ClienteVehiculo.FormattingEnabled = true;
+            this.Marca_ClienteVehiculo.Location = new System.Drawing.Point(130, 3);
+            this.Marca_ClienteVehiculo.Name = "Marca_ClienteVehiculo";
+            this.Marca_ClienteVehiculo.Size = new System.Drawing.Size(121, 24);
+            this.Marca_ClienteVehiculo.TabIndex = 1;
             // 
-            // cueComboBoxModelo
+            // Modelo_ClienteVehiculo
             // 
-            this.cueComboBoxModelo.CueText = "Modelo";
-            this.cueComboBoxModelo.FormattingEnabled = true;
-            this.cueComboBoxModelo.Location = new System.Drawing.Point(257, 3);
-            this.cueComboBoxModelo.Name = "cueComboBoxModelo";
-            this.cueComboBoxModelo.Size = new System.Drawing.Size(121, 24);
-            this.cueComboBoxModelo.TabIndex = 2;
+            this.Modelo_ClienteVehiculo.CueText = "Modelo";
+            this.Modelo_ClienteVehiculo.FormattingEnabled = true;
+            this.Modelo_ClienteVehiculo.Location = new System.Drawing.Point(257, 3);
+            this.Modelo_ClienteVehiculo.Name = "Modelo_ClienteVehiculo";
+            this.Modelo_ClienteVehiculo.Size = new System.Drawing.Size(121, 24);
+            this.Modelo_ClienteVehiculo.TabIndex = 2;
             // 
-            // cueComboBoxBastidor
+            // Bastidor_ClienteVehiculo
             // 
-            this.cueComboBoxBastidor.CueText = "Bastidor";
-            this.cueComboBoxBastidor.FormattingEnabled = true;
-            this.cueComboBoxBastidor.Location = new System.Drawing.Point(384, 3);
-            this.cueComboBoxBastidor.Name = "cueComboBoxBastidor";
-            this.cueComboBoxBastidor.Size = new System.Drawing.Size(121, 24);
-            this.cueComboBoxBastidor.TabIndex = 3;
-            this.cueComboBoxBastidor.SelectionChangeCommitted += new System.EventHandler(this.cueComboBoxBastidor_SelectionChangeCommitted);
+            this.Bastidor_ClienteVehiculo.CueText = "Bastidor";
+            this.Bastidor_ClienteVehiculo.FormattingEnabled = true;
+            this.Bastidor_ClienteVehiculo.Location = new System.Drawing.Point(384, 3);
+            this.Bastidor_ClienteVehiculo.Name = "Bastidor_ClienteVehiculo";
+            this.Bastidor_ClienteVehiculo.Size = new System.Drawing.Size(121, 24);
+            this.Bastidor_ClienteVehiculo.TabIndex = 3;
+            this.Bastidor_ClienteVehiculo.SelectionChangeCommitted += new System.EventHandler(this.cueComboBoxBastidor_SelectionChangeCommitted);
             // 
-            // cueComboBoxKilometros
+            // Kilometros_ClienteVehiculo
             // 
-            this.cueComboBoxKilometros.CueText = "Kilómetros";
-            this.cueComboBoxKilometros.FormattingEnabled = true;
-            this.cueComboBoxKilometros.Location = new System.Drawing.Point(511, 3);
-            this.cueComboBoxKilometros.Name = "cueComboBoxKilometros";
-            this.cueComboBoxKilometros.Size = new System.Drawing.Size(121, 24);
-            this.cueComboBoxKilometros.TabIndex = 4;
+            this.Kilometros_ClienteVehiculo.CueText = "Kilómetros";
+            this.Kilometros_ClienteVehiculo.FormattingEnabled = true;
+            this.Kilometros_ClienteVehiculo.Location = new System.Drawing.Point(511, 3);
+            this.Kilometros_ClienteVehiculo.Name = "Kilometros_ClienteVehiculo";
+            this.Kilometros_ClienteVehiculo.Size = new System.Drawing.Size(121, 24);
+            this.Kilometros_ClienteVehiculo.TabIndex = 4;
             // 
-            // cueComboBoxTipoMotor
+            // TipoMotor_ClienteVehiculo
             // 
-            this.cueComboBoxTipoMotor.CueText = "Tipo de Motor";
-            this.cueComboBoxTipoMotor.FormattingEnabled = true;
-            this.cueComboBoxTipoMotor.Location = new System.Drawing.Point(638, 3);
-            this.cueComboBoxTipoMotor.Name = "cueComboBoxTipoMotor";
-            this.cueComboBoxTipoMotor.Size = new System.Drawing.Size(121, 24);
-            this.cueComboBoxTipoMotor.TabIndex = 5;
+            this.TipoMotor_ClienteVehiculo.CueText = "Tipo de Motor";
+            this.TipoMotor_ClienteVehiculo.FormattingEnabled = true;
+            this.TipoMotor_ClienteVehiculo.Location = new System.Drawing.Point(638, 3);
+            this.TipoMotor_ClienteVehiculo.Name = "TipoMotor_ClienteVehiculo";
+            this.TipoMotor_ClienteVehiculo.Size = new System.Drawing.Size(121, 24);
+            this.TipoMotor_ClienteVehiculo.TabIndex = 5;
             // 
             // tabla2_clientes_V
             // 
@@ -293,17 +293,17 @@ namespace Gestaller
             // flowFacturacion
             // 
             this.flowFacturacion.AutoScroll = true;
-            this.flowFacturacion.Controls.Add(this.cueComboBoxEmpresa);
-            this.flowFacturacion.Controls.Add(this.cueComboBoxCIF);
-            this.flowFacturacion.Controls.Add(this.cueComboBoxNombre);
-            this.flowFacturacion.Controls.Add(this.cueComboBoxDireccion);
-            this.flowFacturacion.Controls.Add(this.cueComboBoxLocalidad);
-            this.flowFacturacion.Controls.Add(this.cueComboBoxProvincia);
-            this.flowFacturacion.Controls.Add(this.cueComboBoxCP);
-            this.flowFacturacion.Controls.Add(this.cueComboBoxMovil);
-            this.flowFacturacion.Controls.Add(this.cueComboBoxTelefono);
-            this.flowFacturacion.Controls.Add(this.cueComboBoxFax);
-            this.flowFacturacion.Controls.Add(this.cueComboBoxEmail);
+            this.flowFacturacion.Controls.Add(this.Empresa_ClienteVehiculo);
+            this.flowFacturacion.Controls.Add(this.CIF_ClienteVehiculo);
+            this.flowFacturacion.Controls.Add(this.Nombre_ClienteVehiculo);
+            this.flowFacturacion.Controls.Add(this.Direccion_ClienteVehiculo);
+            this.flowFacturacion.Controls.Add(this.Localidad_ClienteVehiculo);
+            this.flowFacturacion.Controls.Add(this.Provincia_ClienteVehiculo);
+            this.flowFacturacion.Controls.Add(this.CP_ClienteVehiculo);
+            this.flowFacturacion.Controls.Add(this.Movil_ClienteVehiculo);
+            this.flowFacturacion.Controls.Add(this.Telefono_ClienteVehiculo);
+            this.flowFacturacion.Controls.Add(this.Fax_ClienteVehiculo);
+            this.flowFacturacion.Controls.Add(this.Email_ClienteVehiculo);
             this.flowFacturacion.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowFacturacion.Location = new System.Drawing.Point(0, 20);
             this.flowFacturacion.Margin = new System.Windows.Forms.Padding(0);
@@ -311,177 +311,177 @@ namespace Gestaller
             this.flowFacturacion.Size = new System.Drawing.Size(1334, 140);
             this.flowFacturacion.TabIndex = 1;
             // 
-            // cueComboBoxEmpresa
+            // Empresa_ClienteVehiculo
             // 
-            this.cueComboBoxEmpresa.CueText = "Empresa";
-            this.cueComboBoxEmpresa.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.cueComboBoxEmpresa.FormattingEnabled = true;
-            this.cueComboBoxEmpresa.Location = new System.Drawing.Point(3, 3);
-            this.cueComboBoxEmpresa.Name = "cueComboBoxEmpresa";
-            this.cueComboBoxEmpresa.Size = new System.Drawing.Size(248, 24);
-            this.cueComboBoxEmpresa.TabIndex = 1;
-            this.cueComboBoxEmpresa.SelectionChangeCommitted += new System.EventHandler(this.cueComboBoxEmpresa_SelectionChangeCommitted);
+            this.Empresa_ClienteVehiculo.CueText = "Empresa";
+            this.Empresa_ClienteVehiculo.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.Empresa_ClienteVehiculo.FormattingEnabled = true;
+            this.Empresa_ClienteVehiculo.Location = new System.Drawing.Point(3, 3);
+            this.Empresa_ClienteVehiculo.Name = "Empresa_ClienteVehiculo";
+            this.Empresa_ClienteVehiculo.Size = new System.Drawing.Size(248, 24);
+            this.Empresa_ClienteVehiculo.TabIndex = 1;
+            this.Empresa_ClienteVehiculo.SelectionChangeCommitted += new System.EventHandler(this.cueComboBoxEmpresa_SelectionChangeCommitted);
             // 
-            // cueComboBoxCIF
+            // CIF_ClienteVehiculo
             // 
-            this.cueComboBoxCIF.CueText = "C.I.F.";
-            this.cueComboBoxCIF.FormattingEnabled = true;
-            this.cueComboBoxCIF.Location = new System.Drawing.Point(257, 3);
-            this.cueComboBoxCIF.Name = "cueComboBoxCIF";
-            this.cueComboBoxCIF.Size = new System.Drawing.Size(121, 24);
-            this.cueComboBoxCIF.TabIndex = 2;
-            this.cueComboBoxCIF.SelectionChangeCommitted += new System.EventHandler(this.cueComboBoxCIF_SelectionChangeCommitted);
+            this.CIF_ClienteVehiculo.CueText = "C.I.F.";
+            this.CIF_ClienteVehiculo.FormattingEnabled = true;
+            this.CIF_ClienteVehiculo.Location = new System.Drawing.Point(257, 3);
+            this.CIF_ClienteVehiculo.Name = "CIF_ClienteVehiculo";
+            this.CIF_ClienteVehiculo.Size = new System.Drawing.Size(121, 24);
+            this.CIF_ClienteVehiculo.TabIndex = 2;
+            this.CIF_ClienteVehiculo.SelectionChangeCommitted += new System.EventHandler(this.cueComboBoxCIF_SelectionChangeCommitted);
             // 
-            // cueComboBoxNombre
+            // Nombre_ClienteVehiculo
             // 
-            this.cueComboBoxNombre.CueText = "Nombre";
-            this.cueComboBoxNombre.FormattingEnabled = true;
-            this.cueComboBoxNombre.Location = new System.Drawing.Point(384, 3);
-            this.cueComboBoxNombre.Name = "cueComboBoxNombre";
-            this.cueComboBoxNombre.Size = new System.Drawing.Size(248, 24);
-            this.cueComboBoxNombre.TabIndex = 3;
-            this.cueComboBoxNombre.SelectionChangeCommitted += new System.EventHandler(this.cueComboBoxNombre_SelectionChangeCommitted);
+            this.Nombre_ClienteVehiculo.CueText = "Nombre";
+            this.Nombre_ClienteVehiculo.FormattingEnabled = true;
+            this.Nombre_ClienteVehiculo.Location = new System.Drawing.Point(384, 3);
+            this.Nombre_ClienteVehiculo.Name = "Nombre_ClienteVehiculo";
+            this.Nombre_ClienteVehiculo.Size = new System.Drawing.Size(248, 24);
+            this.Nombre_ClienteVehiculo.TabIndex = 3;
+            this.Nombre_ClienteVehiculo.SelectionChangeCommitted += new System.EventHandler(this.cueComboBoxNombre_SelectionChangeCommitted);
             // 
-            // cueComboBoxDireccion
+            // Direccion_ClienteVehiculo
             // 
-            this.cueComboBoxDireccion.CueText = "Dirección";
-            this.cueComboBoxDireccion.FormattingEnabled = true;
-            this.cueComboBoxDireccion.Location = new System.Drawing.Point(638, 3);
-            this.cueComboBoxDireccion.Name = "cueComboBoxDireccion";
-            this.cueComboBoxDireccion.Size = new System.Drawing.Size(248, 24);
-            this.cueComboBoxDireccion.TabIndex = 4;
-            this.cueComboBoxDireccion.SelectionChangeCommitted += new System.EventHandler(this.cueComboBoxDireccion_SelectionChangeCommitted);
+            this.Direccion_ClienteVehiculo.CueText = "Dirección";
+            this.Direccion_ClienteVehiculo.FormattingEnabled = true;
+            this.Direccion_ClienteVehiculo.Location = new System.Drawing.Point(638, 3);
+            this.Direccion_ClienteVehiculo.Name = "Direccion_ClienteVehiculo";
+            this.Direccion_ClienteVehiculo.Size = new System.Drawing.Size(248, 24);
+            this.Direccion_ClienteVehiculo.TabIndex = 4;
+            this.Direccion_ClienteVehiculo.SelectionChangeCommitted += new System.EventHandler(this.cueComboBoxDireccion_SelectionChangeCommitted);
             // 
-            // cueComboBoxLocalidad
+            // Localidad_ClienteVehiculo
             // 
-            this.cueComboBoxLocalidad.CueText = "Localidad";
-            this.cueComboBoxLocalidad.FormattingEnabled = true;
-            this.cueComboBoxLocalidad.Location = new System.Drawing.Point(892, 3);
-            this.cueComboBoxLocalidad.Name = "cueComboBoxLocalidad";
-            this.cueComboBoxLocalidad.Size = new System.Drawing.Size(121, 24);
-            this.cueComboBoxLocalidad.TabIndex = 5;
+            this.Localidad_ClienteVehiculo.CueText = "Localidad";
+            this.Localidad_ClienteVehiculo.FormattingEnabled = true;
+            this.Localidad_ClienteVehiculo.Location = new System.Drawing.Point(892, 3);
+            this.Localidad_ClienteVehiculo.Name = "Localidad_ClienteVehiculo";
+            this.Localidad_ClienteVehiculo.Size = new System.Drawing.Size(121, 24);
+            this.Localidad_ClienteVehiculo.TabIndex = 5;
             // 
-            // cueComboBoxProvincia
+            // Provincia_ClienteVehiculo
             // 
-            this.cueComboBoxProvincia.CueText = "Provincia";
-            this.cueComboBoxProvincia.FormattingEnabled = true;
-            this.cueComboBoxProvincia.Location = new System.Drawing.Point(1019, 3);
-            this.cueComboBoxProvincia.Name = "cueComboBoxProvincia";
-            this.cueComboBoxProvincia.Size = new System.Drawing.Size(121, 24);
-            this.cueComboBoxProvincia.TabIndex = 6;
+            this.Provincia_ClienteVehiculo.CueText = "Provincia";
+            this.Provincia_ClienteVehiculo.FormattingEnabled = true;
+            this.Provincia_ClienteVehiculo.Location = new System.Drawing.Point(1019, 3);
+            this.Provincia_ClienteVehiculo.Name = "Provincia_ClienteVehiculo";
+            this.Provincia_ClienteVehiculo.Size = new System.Drawing.Size(121, 24);
+            this.Provincia_ClienteVehiculo.TabIndex = 6;
             // 
-            // cueComboBoxCP
+            // CP_ClienteVehiculo
             // 
-            this.cueComboBoxCP.CueText = "C.P.";
-            this.cueComboBoxCP.FormattingEnabled = true;
-            this.cueComboBoxCP.Location = new System.Drawing.Point(1146, 3);
-            this.cueComboBoxCP.Name = "cueComboBoxCP";
-            this.cueComboBoxCP.Size = new System.Drawing.Size(121, 24);
-            this.cueComboBoxCP.TabIndex = 7;
+            this.CP_ClienteVehiculo.CueText = "C.P.";
+            this.CP_ClienteVehiculo.FormattingEnabled = true;
+            this.CP_ClienteVehiculo.Location = new System.Drawing.Point(1146, 3);
+            this.CP_ClienteVehiculo.Name = "CP_ClienteVehiculo";
+            this.CP_ClienteVehiculo.Size = new System.Drawing.Size(121, 24);
+            this.CP_ClienteVehiculo.TabIndex = 7;
             // 
-            // cueComboBoxMovil
+            // Movil_ClienteVehiculo
             // 
-            this.cueComboBoxMovil.CueText = "Móvil";
-            this.cueComboBoxMovil.FormattingEnabled = true;
-            this.cueComboBoxMovil.Location = new System.Drawing.Point(3, 33);
-            this.cueComboBoxMovil.Name = "cueComboBoxMovil";
-            this.cueComboBoxMovil.Size = new System.Drawing.Size(121, 24);
-            this.cueComboBoxMovil.TabIndex = 8;
-            this.cueComboBoxMovil.SelectionChangeCommitted += new System.EventHandler(this.cueComboBoxMovil_SelectionChangeCommitted);
+            this.Movil_ClienteVehiculo.CueText = "Móvil";
+            this.Movil_ClienteVehiculo.FormattingEnabled = true;
+            this.Movil_ClienteVehiculo.Location = new System.Drawing.Point(3, 33);
+            this.Movil_ClienteVehiculo.Name = "Movil_ClienteVehiculo";
+            this.Movil_ClienteVehiculo.Size = new System.Drawing.Size(121, 24);
+            this.Movil_ClienteVehiculo.TabIndex = 8;
+            this.Movil_ClienteVehiculo.SelectionChangeCommitted += new System.EventHandler(this.cueComboBoxMovil_SelectionChangeCommitted);
             // 
-            // cueComboBoxTelefono
+            // Telefono_ClienteVehiculo
             // 
-            this.cueComboBoxTelefono.CueText = "Teléfono";
-            this.cueComboBoxTelefono.FormattingEnabled = true;
-            this.cueComboBoxTelefono.Location = new System.Drawing.Point(130, 33);
-            this.cueComboBoxTelefono.Name = "cueComboBoxTelefono";
-            this.cueComboBoxTelefono.Size = new System.Drawing.Size(121, 24);
-            this.cueComboBoxTelefono.TabIndex = 9;
+            this.Telefono_ClienteVehiculo.CueText = "Teléfono";
+            this.Telefono_ClienteVehiculo.FormattingEnabled = true;
+            this.Telefono_ClienteVehiculo.Location = new System.Drawing.Point(130, 33);
+            this.Telefono_ClienteVehiculo.Name = "Telefono_ClienteVehiculo";
+            this.Telefono_ClienteVehiculo.Size = new System.Drawing.Size(121, 24);
+            this.Telefono_ClienteVehiculo.TabIndex = 9;
             // 
-            // cueComboBoxFax
+            // Fax_ClienteVehiculo
             // 
-            this.cueComboBoxFax.CueText = "Fax";
-            this.cueComboBoxFax.FormattingEnabled = true;
-            this.cueComboBoxFax.Location = new System.Drawing.Point(257, 33);
-            this.cueComboBoxFax.Name = "cueComboBoxFax";
-            this.cueComboBoxFax.Size = new System.Drawing.Size(121, 24);
-            this.cueComboBoxFax.TabIndex = 10;
+            this.Fax_ClienteVehiculo.CueText = "Fax";
+            this.Fax_ClienteVehiculo.FormattingEnabled = true;
+            this.Fax_ClienteVehiculo.Location = new System.Drawing.Point(257, 33);
+            this.Fax_ClienteVehiculo.Name = "Fax_ClienteVehiculo";
+            this.Fax_ClienteVehiculo.Size = new System.Drawing.Size(121, 24);
+            this.Fax_ClienteVehiculo.TabIndex = 10;
             // 
-            // cueComboBoxEmail
+            // Email_ClienteVehiculo
             // 
-            this.cueComboBoxEmail.CueText = "E-Mail";
-            this.cueComboBoxEmail.FormattingEnabled = true;
-            this.cueComboBoxEmail.Location = new System.Drawing.Point(384, 33);
-            this.cueComboBoxEmail.Name = "cueComboBoxEmail";
-            this.cueComboBoxEmail.Size = new System.Drawing.Size(248, 24);
-            this.cueComboBoxEmail.TabIndex = 11;
-            this.cueComboBoxEmail.SelectionChangeCommitted += new System.EventHandler(this.cueComboBoxEmail_SelectionChangeCommitted);
+            this.Email_ClienteVehiculo.CueText = "E-Mail";
+            this.Email_ClienteVehiculo.FormattingEnabled = true;
+            this.Email_ClienteVehiculo.Location = new System.Drawing.Point(384, 33);
+            this.Email_ClienteVehiculo.Name = "Email_ClienteVehiculo";
+            this.Email_ClienteVehiculo.Size = new System.Drawing.Size(248, 24);
+            this.Email_ClienteVehiculo.TabIndex = 11;
+            this.Email_ClienteVehiculo.SelectionChangeCommitted += new System.EventHandler(this.cueComboBoxEmail_SelectionChangeCommitted);
             // 
-            // dataGrid
+            // Grid_ClienteVehiculo
             // 
-            this.dataGrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
-            this.dataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGrid.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGrid.Location = new System.Drawing.Point(3, 264);
-            this.dataGrid.Name = "dataGrid";
-            this.dataGrid.Size = new System.Drawing.Size(1328, 535);
-            this.dataGrid.TabIndex = 5;
-            this.dataGrid.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGrid_CellMouseClick);
+            this.Grid_ClienteVehiculo.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.Grid_ClienteVehiculo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Grid_ClienteVehiculo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Grid_ClienteVehiculo.Location = new System.Drawing.Point(3, 264);
+            this.Grid_ClienteVehiculo.Name = "Grid_ClienteVehiculo";
+            this.Grid_ClienteVehiculo.Size = new System.Drawing.Size(1328, 535);
+            this.Grid_ClienteVehiculo.TabIndex = 5;
+            this.Grid_ClienteVehiculo.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGrid_CellMouseClick);
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.button1ModificarCv);
-            this.panel2.Controls.Add(this.button2BorrarCv);
-            this.panel2.Controls.Add(this.button3AnadirCv);
-            this.panel2.Controls.Add(this.button4VaciarCv);
+            this.panel2.Controls.Add(this.btModificar_ClienteVehiculo);
+            this.panel2.Controls.Add(this.btBorrar_ClienteVehiculo);
+            this.panel2.Controls.Add(this.btAnadir_ClienteVehiculo);
+            this.panel2.Controls.Add(this.btVaciar_ClienteVehiculo);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(3, 235);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1328, 23);
             this.panel2.TabIndex = 4;
             // 
-            // button1ModificarCv
+            // btModificar_ClienteVehiculo
             // 
-            this.button1ModificarCv.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button1ModificarCv.Location = new System.Drawing.Point(1014, 0);
-            this.button1ModificarCv.Name = "button1ModificarCv";
-            this.button1ModificarCv.Size = new System.Drawing.Size(75, 23);
-            this.button1ModificarCv.TabIndex = 0;
-            this.button1ModificarCv.Text = "Modificar";
-            this.button1ModificarCv.UseVisualStyleBackColor = true;
+            this.btModificar_ClienteVehiculo.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btModificar_ClienteVehiculo.Location = new System.Drawing.Point(1014, 0);
+            this.btModificar_ClienteVehiculo.Name = "btModificar_ClienteVehiculo";
+            this.btModificar_ClienteVehiculo.Size = new System.Drawing.Size(75, 23);
+            this.btModificar_ClienteVehiculo.TabIndex = 0;
+            this.btModificar_ClienteVehiculo.Text = "Modificar";
+            this.btModificar_ClienteVehiculo.UseVisualStyleBackColor = true;
             // 
-            // button2BorrarCv
+            // btBorrar_ClienteVehiculo
             // 
-            this.button2BorrarCv.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button2BorrarCv.Location = new System.Drawing.Point(1089, 0);
-            this.button2BorrarCv.Name = "button2BorrarCv";
-            this.button2BorrarCv.Size = new System.Drawing.Size(89, 23);
-            this.button2BorrarCv.TabIndex = 1;
-            this.button2BorrarCv.Text = "Borrar";
-            this.button2BorrarCv.UseVisualStyleBackColor = true;
+            this.btBorrar_ClienteVehiculo.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btBorrar_ClienteVehiculo.Location = new System.Drawing.Point(1089, 0);
+            this.btBorrar_ClienteVehiculo.Name = "btBorrar_ClienteVehiculo";
+            this.btBorrar_ClienteVehiculo.Size = new System.Drawing.Size(89, 23);
+            this.btBorrar_ClienteVehiculo.TabIndex = 1;
+            this.btBorrar_ClienteVehiculo.Text = "Borrar";
+            this.btBorrar_ClienteVehiculo.UseVisualStyleBackColor = true;
             // 
-            // button3AnadirCv
+            // btAnadir_ClienteVehiculo
             // 
-            this.button3AnadirCv.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button3AnadirCv.Location = new System.Drawing.Point(1178, 0);
-            this.button3AnadirCv.Name = "button3AnadirCv";
-            this.button3AnadirCv.Size = new System.Drawing.Size(75, 23);
-            this.button3AnadirCv.TabIndex = 2;
-            this.button3AnadirCv.Text = "Añadir";
-            this.button3AnadirCv.UseVisualStyleBackColor = true;
-            this.button3AnadirCv.Click += new System.EventHandler(this.button3AnadirCv_Click);
+            this.btAnadir_ClienteVehiculo.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btAnadir_ClienteVehiculo.Location = new System.Drawing.Point(1178, 0);
+            this.btAnadir_ClienteVehiculo.Name = "btAnadir_ClienteVehiculo";
+            this.btAnadir_ClienteVehiculo.Size = new System.Drawing.Size(75, 23);
+            this.btAnadir_ClienteVehiculo.TabIndex = 2;
+            this.btAnadir_ClienteVehiculo.Text = "Añadir";
+            this.btAnadir_ClienteVehiculo.UseVisualStyleBackColor = true;
+            this.btAnadir_ClienteVehiculo.Click += new System.EventHandler(this.button3AnadirCv_Click);
             // 
-            // button4VaciarCv
+            // btVaciar_ClienteVehiculo
             // 
-            this.button4VaciarCv.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button4VaciarCv.Location = new System.Drawing.Point(1253, 0);
-            this.button4VaciarCv.Margin = new System.Windows.Forms.Padding(6, 3, 3, 3);
-            this.button4VaciarCv.Name = "button4VaciarCv";
-            this.button4VaciarCv.Size = new System.Drawing.Size(75, 23);
-            this.button4VaciarCv.TabIndex = 3;
-            this.button4VaciarCv.Text = "Vaciar";
-            this.button4VaciarCv.UseVisualStyleBackColor = true;
-            this.button4VaciarCv.Click += new System.EventHandler(this.button1_Click);
+            this.btVaciar_ClienteVehiculo.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btVaciar_ClienteVehiculo.Location = new System.Drawing.Point(1253, 0);
+            this.btVaciar_ClienteVehiculo.Margin = new System.Windows.Forms.Padding(6, 3, 3, 3);
+            this.btVaciar_ClienteVehiculo.Name = "btVaciar_ClienteVehiculo";
+            this.btVaciar_ClienteVehiculo.Size = new System.Drawing.Size(75, 23);
+            this.btVaciar_ClienteVehiculo.TabIndex = 3;
+            this.btVaciar_ClienteVehiculo.Text = "Vaciar";
+            this.btVaciar_ClienteVehiculo.UseVisualStyleBackColor = true;
+            this.btVaciar_ClienteVehiculo.Click += new System.EventHandler(this.button1_Click);
             // 
             // tab_datos_bancarios
             // 
@@ -883,7 +883,7 @@ namespace Gestaller
             this.tabla2_clientes_V.ResumeLayout(false);
             this.tabla2_clientes_V.PerformLayout();
             this.flowFacturacion.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGrid)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Grid_ClienteVehiculo)).EndInit();
             this.panel2.ResumeLayout(false);
             this.tab_datos_bancarios.ResumeLayout(false);
             this.table1_DatosB.ResumeLayout(false);
@@ -915,26 +915,26 @@ namespace Gestaller
         private System.Windows.Forms.TableLayoutPanel tabla3_clientes_V;
         private System.Windows.Forms.Label EncabezadoVehiculo;
         private System.Windows.Forms.Label EncabezadoFacturación;
-        private System.Windows.Forms.DataGridView dataGrid;
+        private System.Windows.Forms.DataGridView Grid_ClienteVehiculo;
         private System.Windows.Forms.FlowLayoutPanel flowFacturacion;
-        private Views.CueComboBox cueComboBoxEmpresa;
-        private Views.CueComboBox cueComboBoxCIF;
-        private Views.CueComboBox cueComboBoxMovil;
-        private Views.CueComboBox cueComboBoxTelefono;
-        private Views.CueComboBox cueComboBoxFax;
-        private Views.CueComboBox cueComboBoxEmail;
-        private Views.CueComboBox cueComboBoxNombre;
-        private Views.CueComboBox cueComboBoxDireccion;
-        private Views.CueComboBox cueComboBoxLocalidad;
-        private Views.CueComboBox cueComboBoxProvincia;
-        private Views.CueComboBox cueComboBoxCP;
+        private Views.CueComboBox Empresa_ClienteVehiculo;
+        private Views.CueComboBox CIF_ClienteVehiculo;
+        private Views.CueComboBox Movil_ClienteVehiculo;
+        private Views.CueComboBox Telefono_ClienteVehiculo;
+        private Views.CueComboBox Fax_ClienteVehiculo;
+        private Views.CueComboBox Email_ClienteVehiculo;
+        private Views.CueComboBox Nombre_ClienteVehiculo;
+        private Views.CueComboBox Direccion_ClienteVehiculo;
+        private Views.CueComboBox Localidad_ClienteVehiculo;
+        private Views.CueComboBox Provincia_ClienteVehiculo;
+        private Views.CueComboBox CP_ClienteVehiculo;
         private System.Windows.Forms.FlowLayoutPanel flowVehiculo;
-        private Views.CueComboBox cueComboBoxMatricula;
-        private Views.CueComboBox cueComboBoxMarca;
-        private Views.CueComboBox cueComboBoxModelo;
-        private Views.CueComboBox cueComboBoxBastidor;
-        private Views.CueComboBox cueComboBoxKilometros;
-        private Views.CueComboBox cueComboBoxTipoMotor;
+        private Views.CueComboBox Matricula_ClienteVehiculo;
+        private Views.CueComboBox Marca_ClienteVehiculo;
+        private Views.CueComboBox Modelo_ClienteVehiculo;
+        private Views.CueComboBox Bastidor_ClienteVehiculo;
+        private Views.CueComboBox Kilometros_ClienteVehiculo;
+        private Views.CueComboBox TipoMotor_ClienteVehiculo;
         private System.Windows.Forms.TableLayoutPanel table1_DatosB;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Label EncabezadoDatos_Bancarios;
@@ -964,14 +964,14 @@ namespace Gestaller
         private Views.CueComboBox cueComboBox10;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button button1ModificarCv;
-        private System.Windows.Forms.Button button2BorrarCv;
-        private System.Windows.Forms.Button button3AnadirCv;
+        private System.Windows.Forms.Button btModificar_ClienteVehiculo;
+        private System.Windows.Forms.Button btBorrar_ClienteVehiculo;
+        private System.Windows.Forms.Button btAnadir_ClienteVehiculo;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button button1ModificarDb;
         private System.Windows.Forms.Button button2BorrarDb;
         private System.Windows.Forms.Button button3AnadirDb;
         private System.Windows.Forms.Button button4VaciarDb;
-        private System.Windows.Forms.Button button4VaciarCv;
+        private System.Windows.Forms.Button btVaciar_ClienteVehiculo;
     }
 }
