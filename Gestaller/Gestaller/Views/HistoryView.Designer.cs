@@ -47,24 +47,24 @@ namespace Gestaller
             this.cueTextBox1 = new Gestaller.Views.CueTextBox();
             this.tabPageHistFacturas = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel1Hist_Facturas = new System.Windows.Forms.TableLayoutPanel();
-            this.tabPageHistDeposito = new System.Windows.Forms.TabPage();
-            this.tableLayoutPanel1Hist_Depositos = new System.Windows.Forms.TableLayoutPanel();
-            this.label1 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.cueTextBox2 = new Gestaller.Views.CueTextBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.cueComboBox1 = new Gestaller.Views.CueComboBox();
             this.cueComboBox2 = new Gestaller.Views.CueComboBox();
             this.cueComboBox3 = new Gestaller.Views.CueComboBox();
             this.cueComboBox4 = new Gestaller.Views.CueComboBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.cueTextBox2 = new Gestaller.Views.CueTextBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.tabPageHistDeposito = new System.Windows.Forms.TabPage();
+            this.tableLayoutPanel1Hist_Depositos = new System.Windows.Forms.TableLayoutPanel();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.cueComboBox5 = new Gestaller.Views.CueComboBox();
             this.cueComboBox6 = new Gestaller.Views.CueComboBox();
             this.cueComboBox7 = new Gestaller.Views.CueComboBox();
             this.cueComboBox8 = new Gestaller.Views.CueComboBox();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.label2 = new System.Windows.Forms.Label();
             this.tabControl1Historial.SuspendLayout();
             this.tabPageHistContable.SuspendLayout();
             this.tableHist_Contable.SuspendLayout();
@@ -76,13 +76,13 @@ namespace Gestaller
             this.panel2Hist_Contable.SuspendLayout();
             this.tabPageHistFacturas.SuspendLayout();
             this.tableLayoutPanel1Hist_Facturas.SuspendLayout();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.flowLayoutPanel1.SuspendLayout();
             this.tabPageHistDeposito.SuspendLayout();
             this.tableLayoutPanel1Hist_Depositos.SuspendLayout();
-            this.flowLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.panel1.SuspendLayout();
-            this.flowLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            this.flowLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1Historial
@@ -225,6 +225,7 @@ namespace Gestaller
             this.button1Hist_Contable_Ver.TabIndex = 0;
             this.button1Hist_Contable_Ver.Text = "Ver";
             this.button1Hist_Contable_Ver.UseVisualStyleBackColor = true;
+            this.button1Hist_Contable_Ver.Click += new System.EventHandler(this.button1Hist_Contable_Ver_Click);
             // 
             // dataGridView1Hist_Contable
             // 
@@ -286,45 +287,35 @@ namespace Gestaller
             this.tableLayoutPanel1Hist_Facturas.Size = new System.Drawing.Size(786, 418);
             this.tableLayoutPanel1Hist_Facturas.TabIndex = 1;
             // 
-            // tabPageHistDeposito
+            // panel1
             // 
-            this.tabPageHistDeposito.Controls.Add(this.tableLayoutPanel1Hist_Depositos);
-            this.tabPageHistDeposito.Location = new System.Drawing.Point(4, 22);
-            this.tabPageHistDeposito.Name = "tabPageHistDeposito";
-            this.tabPageHistDeposito.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageHistDeposito.Size = new System.Drawing.Size(792, 424);
-            this.tabPageHistDeposito.TabIndex = 2;
-            this.tabPageHistDeposito.Text = "Historial Depósitos";
-            this.tabPageHistDeposito.UseVisualStyleBackColor = true;
+            this.panel1.Controls.Add(this.cueTextBox2);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(3, 395);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 0, 0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(783, 23);
+            this.panel1.TabIndex = 5;
             // 
-            // tableLayoutPanel1Hist_Depositos
+            // cueTextBox2
             // 
-            this.tableLayoutPanel1Hist_Depositos.ColumnCount = 1;
-            this.tableLayoutPanel1Hist_Depositos.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1Hist_Depositos.Controls.Add(this.dataGridView2, 0, 2);
-            this.tableLayoutPanel1Hist_Depositos.Controls.Add(this.flowLayoutPanel2, 0, 1);
-            this.tableLayoutPanel1Hist_Depositos.Controls.Add(this.label2, 0, 0);
-            this.tableLayoutPanel1Hist_Depositos.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1Hist_Depositos.Location = new System.Drawing.Point(3, 3);
-            this.tableLayoutPanel1Hist_Depositos.Name = "tableLayoutPanel1Hist_Depositos";
-            this.tableLayoutPanel1Hist_Depositos.RowCount = 3;
-            this.tableLayoutPanel1Hist_Depositos.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 23F));
-            this.tableLayoutPanel1Hist_Depositos.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 64F));
-            this.tableLayoutPanel1Hist_Depositos.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1Hist_Depositos.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1Hist_Depositos.Size = new System.Drawing.Size(786, 418);
-            this.tableLayoutPanel1Hist_Depositos.TabIndex = 1;
+            this.cueTextBox2.CueText = "Total € sin I.V.A.";
+            this.cueTextBox2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.cueTextBox2.Location = new System.Drawing.Point(0, 0);
+            this.cueTextBox2.Margin = new System.Windows.Forms.Padding(9, 3, 3, 3);
+            this.cueTextBox2.Name = "cueTextBox2";
+            this.cueTextBox2.Size = new System.Drawing.Size(121, 20);
+            this.cueTextBox2.TabIndex = 0;
             // 
-            // label1
+            // dataGridView1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(3, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(780, 23);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "HISTORIAL DE FACTURAS";
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView1.Location = new System.Drawing.Point(3, 90);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(780, 302);
+            this.dataGridView1.TabIndex = 2;
             // 
             // flowLayoutPanel1
             // 
@@ -374,46 +365,55 @@ namespace Gestaller
             this.cueComboBox4.Size = new System.Drawing.Size(121, 21);
             this.cueComboBox4.TabIndex = 3;
             // 
-            // dataGridView1
+            // label1
             // 
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(3, 90);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(780, 302);
-            this.dataGridView1.TabIndex = 2;
+            this.label1.AutoSize = true;
+            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.label1.Location = new System.Drawing.Point(3, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(780, 23);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "HISTORIAL DE FACTURAS";
             // 
-            // panel1
+            // tabPageHistDeposito
             // 
-            this.panel1.Controls.Add(this.cueTextBox2);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(3, 395);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 0, 0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(783, 23);
-            this.panel1.TabIndex = 5;
+            this.tabPageHistDeposito.Controls.Add(this.tableLayoutPanel1Hist_Depositos);
+            this.tabPageHistDeposito.Location = new System.Drawing.Point(4, 22);
+            this.tabPageHistDeposito.Name = "tabPageHistDeposito";
+            this.tabPageHistDeposito.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageHistDeposito.Size = new System.Drawing.Size(792, 424);
+            this.tabPageHistDeposito.TabIndex = 2;
+            this.tabPageHistDeposito.Text = "Historial Depósitos";
+            this.tabPageHistDeposito.UseVisualStyleBackColor = true;
             // 
-            // cueTextBox2
+            // tableLayoutPanel1Hist_Depositos
             // 
-            this.cueTextBox2.CueText = "Total € sin I.V.A.";
-            this.cueTextBox2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.cueTextBox2.Location = new System.Drawing.Point(0, 0);
-            this.cueTextBox2.Margin = new System.Windows.Forms.Padding(9, 3, 3, 3);
-            this.cueTextBox2.Name = "cueTextBox2";
-            this.cueTextBox2.Size = new System.Drawing.Size(121, 20);
-            this.cueTextBox2.TabIndex = 0;
+            this.tableLayoutPanel1Hist_Depositos.ColumnCount = 1;
+            this.tableLayoutPanel1Hist_Depositos.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1Hist_Depositos.Controls.Add(this.dataGridView2, 0, 2);
+            this.tableLayoutPanel1Hist_Depositos.Controls.Add(this.flowLayoutPanel2, 0, 1);
+            this.tableLayoutPanel1Hist_Depositos.Controls.Add(this.label2, 0, 0);
+            this.tableLayoutPanel1Hist_Depositos.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel1Hist_Depositos.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel1Hist_Depositos.Name = "tableLayoutPanel1Hist_Depositos";
+            this.tableLayoutPanel1Hist_Depositos.RowCount = 3;
+            this.tableLayoutPanel1Hist_Depositos.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 23F));
+            this.tableLayoutPanel1Hist_Depositos.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 64F));
+            this.tableLayoutPanel1Hist_Depositos.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1Hist_Depositos.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1Hist_Depositos.Size = new System.Drawing.Size(786, 418);
+            this.tableLayoutPanel1Hist_Depositos.TabIndex = 1;
             // 
-            // label2
+            // dataGridView2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.label2.Location = new System.Drawing.Point(3, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(780, 23);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "HISTORIAL DE DEPÓSITOS";
+            this.dataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView2.Location = new System.Drawing.Point(3, 90);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.Size = new System.Drawing.Size(780, 325);
+            this.dataGridView2.TabIndex = 5;
             // 
             // flowLayoutPanel2
             // 
@@ -463,15 +463,16 @@ namespace Gestaller
             this.cueComboBox8.Size = new System.Drawing.Size(121, 21);
             this.cueComboBox8.TabIndex = 3;
             // 
-            // dataGridView2
+            // label2
             // 
-            this.dataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView2.Location = new System.Drawing.Point(3, 90);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(780, 325);
-            this.dataGridView2.TabIndex = 5;
+            this.label2.AutoSize = true;
+            this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.label2.Location = new System.Drawing.Point(3, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(780, 23);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "HISTORIAL DE DEPÓSITOS";
             // 
             // HistoryView
             // 
@@ -497,15 +498,15 @@ namespace Gestaller
             this.tabPageHistFacturas.ResumeLayout(false);
             this.tableLayoutPanel1Hist_Facturas.ResumeLayout(false);
             this.tableLayoutPanel1Hist_Facturas.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.flowLayoutPanel1.ResumeLayout(false);
             this.tabPageHistDeposito.ResumeLayout(false);
             this.tableLayoutPanel1Hist_Depositos.ResumeLayout(false);
             this.tableLayoutPanel1Hist_Depositos.PerformLayout();
-            this.flowLayoutPanel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.flowLayoutPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            this.flowLayoutPanel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
