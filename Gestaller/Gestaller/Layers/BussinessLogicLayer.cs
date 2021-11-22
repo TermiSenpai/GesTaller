@@ -55,5 +55,15 @@ namespace Gestaller
         {
             return _dataLayerDummie.GetTaxRate();
         }
+
+        public void newContact(Contact contact)
+        {
+            _dataLayerDummie.addContact(contact);
+        }
+
+        public void newVehicle(Vehicle vehicle)
+        {
+            _dataLayerDummie.addVehicle(vehicle);
+        }
     }
 }

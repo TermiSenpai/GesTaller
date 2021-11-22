@@ -469,6 +469,7 @@ namespace Gestaller
             this.button3AnadirCv.TabIndex = 2;
             this.button3AnadirCv.Text = "Añadir";
             this.button3AnadirCv.UseVisualStyleBackColor = true;
+            this.button3AnadirCv.Click += new System.EventHandler(this.button3AnadirCv_Click);
             // 
             // button4VaciarCv
             // 
