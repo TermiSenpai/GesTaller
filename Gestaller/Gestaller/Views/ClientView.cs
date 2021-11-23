@@ -37,7 +37,7 @@ namespace Gestaller
         private void getDB()
         {
             List<ContactVehicle> contactsVehicles = getContactsVehicles();
-            dataGrid.DataSource = contactsVehicles;
+            Grid_ClienteVehiculo.DataSource = contactsVehicles;
         }
 
         // Vaciar texto (botón vaciar)
@@ -50,7 +50,7 @@ namespace Gestaller
         private void dataGrid_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
             // toma el index de la celda selecionada
-            int selectedCell = dataGrid.CurrentCell.RowIndex;
+            int selectedCell = Grid_ClienteVehiculo.CurrentCell.RowIndex;
             // Toma la lista de datos existente
             List<ContactVehicle> contactsVehicles = getContactsVehicles();
             // Selecciona el clienteVehiculo activo
@@ -71,26 +71,26 @@ namespace Gestaller
             Contact contact = new Contact();
             Vehicle vehicle = new Vehicle();
             
-            contact.company = cueComboBoxEmpresa.Text;
-            contact.cif = cueComboBoxCIF.Text;
-            contact.fullName = cueComboBoxNombre.Text;
-            contact.address = cueComboBoxDireccion.Text;
-            contact.city = cueComboBoxLocalidad.Text;
-            contact.district = cueComboBoxProvincia.Text;
-            contact.cp = int.Parse(cueComboBoxCP.Text);
-            contact.mobile = cueComboBoxMovil.Text;
-            contact.phone = cueComboBoxTelefono.Text;
-            contact.fax = cueComboBoxFax.Text;
-            contact.email = cueComboBoxEmail.Text;
+            contact.company = Empresa_ClienteVehiculo.Text;
+            contact.cif = CIF_ClienteVehiculo.Text;
+            contact.fullName = Nombre_ClienteVehiculo.Text;
+            contact.address = Direccion_ClienteVehiculo.Text;
+            contact.city = Localidad_ClienteVehiculo.Text;
+            contact.district = Provincia_ClienteVehiculo.Text;
+            contact.cp = int.Parse(CP_ClienteVehiculo.Text);
+            contact.mobile = Movil_ClienteVehiculo.Text;
+            contact.phone = Telefono_ClienteVehiculo.Text;
+            contact.fax = Fax_ClienteVehiculo.Text;
+            contact.email = Email_ClienteVehiculo.Text;
 
             _bussinessLogicLayer.newContact(contact);
 
-            vehicle.enroll = cueComboBoxMatricula.Text;
-            vehicle.brand = cueComboBoxMarca.Text;
-            vehicle.model = cueComboBoxModelo.Text;
-            vehicle.frame = cueComboBoxBastidor.Text;
-            vehicle.kms = cueComboBoxKilometros.Text;
-            vehicle.engineType = cueComboBoxTipoMotor.Text;
+            vehicle.enroll = Matricula_ClienteVehiculo.Text;
+            vehicle.brand = Marca_ClienteVehiculo.Text;
+            vehicle.model = Modelo_ClienteVehiculo.Text;
+            vehicle.frame = Bastidor_ClienteVehiculo.Text;
+            vehicle.kms = Kilometros_ClienteVehiculo.Text;
+            vehicle.engineType = TipoMotor_ClienteVehiculo.Text;
 
             _bussinessLogicLayer.newVehicle(vehicle);
 
@@ -133,23 +133,23 @@ namespace Gestaller
         // Añade los controles a la lista 
         private void addControls()
         {
-            _controls.Add(cueComboBoxEmpresa);
-            _controls.Add(cueComboBoxCIF);
-            _controls.Add(cueComboBoxMovil);
-            _controls.Add(cueComboBoxTelefono);
-            _controls.Add(cueComboBoxFax);
-            _controls.Add(cueComboBoxEmail);
-            _controls.Add(cueComboBoxNombre);
-            _controls.Add(cueComboBoxDireccion);
-            _controls.Add(cueComboBoxLocalidad);
-            _controls.Add(cueComboBoxProvincia);
-            _controls.Add(cueComboBoxCP);
-            _controls.Add(cueComboBoxMatricula);
-            _controls.Add(cueComboBoxMarca);
-            _controls.Add(cueComboBoxModelo);
-            _controls.Add(cueComboBoxBastidor);
-            _controls.Add(cueComboBoxKilometros);
-            _controls.Add(cueComboBoxTipoMotor);
+            _controls.Add(Empresa_ClienteVehiculo);
+            _controls.Add(CIF_ClienteVehiculo);
+            _controls.Add(Movil_ClienteVehiculo);
+            _controls.Add(Telefono_ClienteVehiculo);
+            _controls.Add(Fax_ClienteVehiculo);
+            _controls.Add(Email_ClienteVehiculo);
+            _controls.Add(Nombre_ClienteVehiculo);
+            _controls.Add(Direccion_ClienteVehiculo);
+            _controls.Add(Localidad_ClienteVehiculo);
+            _controls.Add(Provincia_ClienteVehiculo);
+            _controls.Add(CP_ClienteVehiculo);
+            _controls.Add(Matricula_ClienteVehiculo);
+            _controls.Add(Marca_ClienteVehiculo);
+            _controls.Add(Modelo_ClienteVehiculo);
+            _controls.Add(Bastidor_ClienteVehiculo);
+            _controls.Add(Kilometros_ClienteVehiculo);
+            _controls.Add(TipoMotor_ClienteVehiculo);
         }
 
         // Obtiene la lista de todos los contactsVehicles
@@ -168,23 +168,23 @@ namespace Gestaller
         private void setToComboBox()
         {
             // Muestra los datos en los cueComboBox 
-            cueComboBoxEmpresa.Text = _clientVehicle.contact_company;
-            cueComboBoxCIF.Text = _clientVehicle.contact_cif;
-            cueComboBoxNombre.Text = _clientVehicle.contact_fullName;
-            cueComboBoxDireccion.Text = _clientVehicle.contact_address;
-            cueComboBoxLocalidad.Text = _clientVehicle.contact_city;
-            cueComboBoxProvincia.Text = _clientVehicle.contact_district;
-            cueComboBoxCP.Text = _clientVehicle.contact_cp.ToString();
-            cueComboBoxMovil.Text = _clientVehicle.contact_mobile;
-            cueComboBoxTelefono.Text = _clientVehicle.contact_phone;
-            cueComboBoxFax.Text = _clientVehicle.contact_fax;
-            cueComboBoxEmail.Text = _clientVehicle.contact_email;
-            cueComboBoxMatricula.Text = _clientVehicle.vehicle_enroll;
-            cueComboBoxMarca.Text = _clientVehicle.vehicle_brand;
-            cueComboBoxModelo.Text = _clientVehicle.vehicle_model;
-            cueComboBoxBastidor.Text = _clientVehicle.vehicle_frame;
-            cueComboBoxKilometros.Text = _clientVehicle.vehicle_kms;
-            cueComboBoxTipoMotor.Text = _clientVehicle.vehicle_engineType;
+            Empresa_ClienteVehiculo.Text = _clientVehicle.contact_company;
+            CIF_ClienteVehiculo.Text = _clientVehicle.contact_cif;
+            Nombre_ClienteVehiculo.Text = _clientVehicle.contact_fullName;
+            Direccion_ClienteVehiculo.Text = _clientVehicle.contact_address;
+            Localidad_ClienteVehiculo.Text = _clientVehicle.contact_city;
+            Provincia_ClienteVehiculo.Text = _clientVehicle.contact_district;
+            CP_ClienteVehiculo.Text = _clientVehicle.contact_cp.ToString();
+            Movil_ClienteVehiculo.Text = _clientVehicle.contact_mobile;
+            Telefono_ClienteVehiculo.Text = _clientVehicle.contact_phone;
+            Fax_ClienteVehiculo.Text = _clientVehicle.contact_fax;
+            Email_ClienteVehiculo.Text = _clientVehicle.contact_email;
+            Matricula_ClienteVehiculo.Text = _clientVehicle.vehicle_enroll;
+            Marca_ClienteVehiculo.Text = _clientVehicle.vehicle_brand;
+            Modelo_ClienteVehiculo.Text = _clientVehicle.vehicle_model;
+            Bastidor_ClienteVehiculo.Text = _clientVehicle.vehicle_frame;
+            Kilometros_ClienteVehiculo.Text = _clientVehicle.vehicle_kms;
+            TipoMotor_ClienteVehiculo.Text = _clientVehicle.vehicle_engineType;
         }
 
         // Añade los items de los comboBoxes a la lista que se muestra
@@ -197,42 +197,42 @@ namespace Gestaller
                 #region contacto
 
                 // Empresa
-                cueComboBoxEmpresa.Items.Add(contactsVehicles[i].contact_company);
+                Empresa_ClienteVehiculo.Items.Add(contactsVehicles[i].contact_company);
                 // CIF
-                cueComboBoxCIF.Items.Add(contactsVehicles[i].contact_cif);
+                CIF_ClienteVehiculo.Items.Add(contactsVehicles[i].contact_cif);
                 // Nombre
-                cueComboBoxNombre.Items.Add(contactsVehicles[i].contact_fullName);
+                Nombre_ClienteVehiculo.Items.Add(contactsVehicles[i].contact_fullName);
                 // Dirección
-                cueComboBoxDireccion.Items.Add(contactsVehicles[i].contact_address);
+                Direccion_ClienteVehiculo.Items.Add(contactsVehicles[i].contact_address);
                 // Localidad
-                cueComboBoxLocalidad.Items.Add(contactsVehicles[i].contact_city);
+                Localidad_ClienteVehiculo.Items.Add(contactsVehicles[i].contact_city);
                 // Provincia
-                cueComboBoxProvincia.Items.Add(contactsVehicles[i].contact_district);
+                Provincia_ClienteVehiculo.Items.Add(contactsVehicles[i].contact_district);
                 // CP
-                cueComboBoxCP.Items.Add(contactsVehicles[i].contact_cp);
+                CP_ClienteVehiculo.Items.Add(contactsVehicles[i].contact_cp);
                 // Movil
-                cueComboBoxMovil.Items.Add(contactsVehicles[i].contact_mobile);
+                Movil_ClienteVehiculo.Items.Add(contactsVehicles[i].contact_mobile);
                 // Teléfono
-                cueComboBoxTelefono.Items.Add(contactsVehicles[i].contact_phone);
+                Telefono_ClienteVehiculo.Items.Add(contactsVehicles[i].contact_phone);
                 // FAX
-                cueComboBoxFax.Items.Add(contactsVehicles[i].contact_fax);
+                Fax_ClienteVehiculo.Items.Add(contactsVehicles[i].contact_fax);
                 // Email
-                cueComboBoxEmail.Items.Add(contactsVehicles[i].contact_email);
+                Email_ClienteVehiculo.Items.Add(contactsVehicles[i].contact_email);
                 #endregion
 
                 #region vehiculo
                 // Matricula
-                cueComboBoxMatricula.Items.Add(contactsVehicles[i].vehicle_enroll);
+                Matricula_ClienteVehiculo.Items.Add(contactsVehicles[i].vehicle_enroll);
                 // Marca
-                cueComboBoxMarca.Items.Add(contactsVehicles[i].vehicle_brand);
+                Marca_ClienteVehiculo.Items.Add(contactsVehicles[i].vehicle_brand);
                 // Modelo
-                cueComboBoxModelo.Items.Add(contactsVehicles[i].vehicle_model);
+                Modelo_ClienteVehiculo.Items.Add(contactsVehicles[i].vehicle_model);
                 // Bastidor
-                cueComboBoxBastidor.Items.Add(contactsVehicles[i].vehicle_frame);
+                Bastidor_ClienteVehiculo.Items.Add(contactsVehicles[i].vehicle_frame);
                 // Kilómetros
-                cueComboBoxKilometros.Items.Add(contactsVehicles[i].vehicle_kms);
+                Kilometros_ClienteVehiculo.Items.Add(contactsVehicles[i].vehicle_kms);
                 // Tipo motor
-                cueComboBoxTipoMotor.Items.Add(contactsVehicles[i].vehicle_engineType);
+                TipoMotor_ClienteVehiculo.Items.Add(contactsVehicles[i].vehicle_engineType);
                 #endregion
             }
 
@@ -245,49 +245,49 @@ namespace Gestaller
 
         private void cueComboBoxEmpresa_SelectionChangeCommitted(object sender, EventArgs e)
         {
-            _comboIndex = cueComboBoxEmpresa.SelectedIndex;
+            _comboIndex = Empresa_ClienteVehiculo.SelectedIndex;
             changesComboBoxes();
         }
 
         private void cueComboBoxCIF_SelectionChangeCommitted(object sender, EventArgs e)
         {
-            _comboIndex = cueComboBoxCIF.SelectedIndex;
+            _comboIndex = CIF_ClienteVehiculo.SelectedIndex;
             changesComboBoxes();
         }
 
         private void cueComboBoxNombre_SelectionChangeCommitted(object sender, EventArgs e)
         {
-            _comboIndex = cueComboBoxNombre.SelectedIndex;
+            _comboIndex = Nombre_ClienteVehiculo.SelectedIndex;
             changesComboBoxes();
         }
 
         private void cueComboBoxDireccion_SelectionChangeCommitted(object sender, EventArgs e)
         {
-            _comboIndex = cueComboBoxDireccion.SelectedIndex;
+            _comboIndex = Direccion_ClienteVehiculo.SelectedIndex;
             changesComboBoxes();
         }
 
         private void cueComboBoxMovil_SelectionChangeCommitted(object sender, EventArgs e)
         {
-            _comboIndex = cueComboBoxMovil.SelectedIndex;
+            _comboIndex = Movil_ClienteVehiculo.SelectedIndex;
             changesComboBoxes();
         }
 
         private void cueComboBoxEmail_SelectionChangeCommitted(object sender, EventArgs e)
         {
-            _comboIndex = cueComboBoxEmail.SelectedIndex;
+            _comboIndex = Email_ClienteVehiculo.SelectedIndex;
             changesComboBoxes();
         }
 
         private void cueComboBoxMatricula_SelectionChangeCommitted(object sender, EventArgs e)
         {
-            _comboIndex = cueComboBoxMatricula.SelectedIndex;
+            _comboIndex = Matricula_ClienteVehiculo.SelectedIndex;
             changesComboBoxes();
         }
 
         private void cueComboBoxBastidor_SelectionChangeCommitted(object sender, EventArgs e)
         {
-            _comboIndex = cueComboBoxBastidor.SelectedIndex;
+            _comboIndex = Bastidor_ClienteVehiculo.SelectedIndex;
             changesComboBoxes();
         }
 

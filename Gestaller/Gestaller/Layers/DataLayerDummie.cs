@@ -8,9 +8,10 @@ namespace Gestaller
 {
     class DataLayerDummie
     {
+            List<Contact> _contacts = new List<Contact>();
+            List<Vehicle> _vehicles = new List<Vehicle>();
         public List<Contact> GetContacts()
         {
-            List<Contact> contacts = new List<Contact>();
 
             Contact firstContact = new Contact();
             firstContact.id = 1;
@@ -40,15 +41,14 @@ namespace Gestaller
             secondContact.phone = "989 87 75 29";
             secondContact.mobile = "684 11 23 16";
 
-            contacts.Add(firstContact);
-            contacts.Add(secondContact);
+            _contacts.Add(firstContact);
+            _contacts.Add(secondContact);
 
-            return contacts;
+            return _contacts;
         }
 
         public List<Vehicle> GetVehicles()
         {
-            List<Vehicle> vehicles = new List<Vehicle>();
 
             Vehicle firstVehicle = new Vehicle();
 
@@ -74,10 +74,10 @@ namespace Gestaller
             secondVehicle.engineType = "TipoMotor 2";
             secondVehicle.frame = "Bastidor 2";
 
-            vehicles.Add(firstVehicle);
-            vehicles.Add(secondVehicle);
+            _vehicles.Add(firstVehicle);
+            _vehicles.Add(secondVehicle);
 
-            return vehicles;
+            return _vehicles;
         }
 
 
