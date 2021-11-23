@@ -41,13 +41,13 @@ namespace Gestaller
 
         private void dataGridViewVehicles_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
-            int selectedCell = dataGridViewVehicles.CurrentCell.RowIndex;
+            int selectedCell = Grid_Vehicles_Recepciones.CurrentCell.RowIndex;
             cellClickEvent(selectedCell);
         }
 
         private void dataGridViewDepositos_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
-            int selectedCell = dataGridViewDepositos.CurrentCell.RowIndex;
+            int selectedCell = Grid_Depositos_Recepciones.CurrentCell.RowIndex;
             cellClickEvent(selectedCell);
         }
         
@@ -116,18 +116,18 @@ namespace Gestaller
         // Añadir controles
         private void addControls()
         {
-            _controls.Add(cueComboBoxCliente);
-            _controls.Add(cueComboBoxMatricula);
-            _controls.Add(cueComboBoxMarca);
-            _controls.Add(cueComboBoxModelo);
-            _controls.Add(cueTextBoxKMS);
-            _controls.Add(cueComboBoxTipoMotor);
-            _controls.Add(cueComboBoxBastidor);
-            _controls.Add(dateTimePicker1); // recepción
-            _controls.Add(dateTimePicker2); // Estimado
-            _controls.Add(dateTimePicker3); // Entrega
-            _controls.Add(cueTextBox1); // kilometros recepciones
-            _controls.Add(richTextBox1); // daños
+            _controls.Add(Cliente_Recepciones);
+            _controls.Add(Matricula_Recepciones);
+            _controls.Add(Marca_Recepciones);
+            _controls.Add(Modelo_Recepciones);
+            _controls.Add(Km_Vehiculo_Recepciones);
+            _controls.Add(TipoMotor_Recepciones);
+            _controls.Add(Bastidor_Recepciones);
+            _controls.Add(Recepcion_Recepciones); // recepción
+            _controls.Add(Estimado_Recepciones); // Estimado
+            _controls.Add(Entrega_Recepciones); // Entrega
+            _controls.Add(Km_Recepciones_Recepciones); // kilometros recepciones
+            _controls.Add(Daños_Recepciones); // daños
         }
 
         // Obtener datos de incomings
@@ -135,7 +135,7 @@ namespace Gestaller
         {
             List<Incoming> incomings = _bussinessLogicLayer.GetIncomings();
 
-            dataGridViewDepositos.DataSource = incomings;
+            Grid_Depositos_Recepciones.DataSource = incomings;
         }
 
         // Obtener datos de vehiculos
@@ -143,7 +143,7 @@ namespace Gestaller
         {
             List<Vehicle> vehicles = _bussinessLogicLayer.GetVehicles();
 
-            dataGridViewVehicles.DataSource = vehicles;
+            Grid_Vehicles_Recepciones.DataSource = vehicles;
         }
 
         // ContactVehicle activo
@@ -164,16 +164,16 @@ namespace Gestaller
             // TODO
             // Muestra los datos en los cueComboBox
 
-            cueComboBoxCliente.Text = _clientVehicle.contact_fullName;
-            cueComboBoxMatricula.Text = _clientVehicle.vehicle_enroll;
-            cueComboBoxMarca.Text = _clientVehicle.vehicle_brand;
-            cueComboBoxModelo.Text = _clientVehicle.vehicle_model;
-            cueTextBoxKMS.Text = _clientVehicle.vehicle_kms;
-            cueComboBoxTipoMotor.Text = _clientVehicle.vehicle_engineType;
-            cueComboBoxBastidor.Text = _clientVehicle.vehicle_frame;
-            dateTimePicker1.Value = _incoming.incomingDate; // recepción
-            dateTimePicker2.Value = _incoming.estimatedDate; // estimado
-            dateTimePicker3.Value = _incoming.departureDate; // Entrega
+            Cliente_Recepciones.Text = _clientVehicle.contact_fullName;
+            Matricula_Recepciones.Text = _clientVehicle.vehicle_enroll;
+            Marca_Recepciones.Text = _clientVehicle.vehicle_brand;
+            Modelo_Recepciones.Text = _clientVehicle.vehicle_model;
+            Km_Vehiculo_Recepciones.Text = _clientVehicle.vehicle_kms;
+            TipoMotor_Recepciones.Text = _clientVehicle.vehicle_engineType;
+            Bastidor_Recepciones.Text = _clientVehicle.vehicle_frame;
+            Recepcion_Recepciones.Value = _incoming.incomingDate; // recepción
+            Estimado_Recepciones.Value = _incoming.estimatedDate; // estimado
+            Entrega_Recepciones.Value = _incoming.departureDate; // Entrega
 
         }
 
@@ -186,20 +186,20 @@ namespace Gestaller
             {
                 #region contacto
                 // Nombre
-                cueComboBoxCliente.Items.Add(contactsVehicles[i].contact_fullName);
+                Cliente_Recepciones.Items.Add(contactsVehicles[i].contact_fullName);
                 #endregion
 
                 #region vehiculo
                 // Matricula
-                cueComboBoxMatricula.Items.Add(contactsVehicles[i].vehicle_enroll);
+                Matricula_Recepciones.Items.Add(contactsVehicles[i].vehicle_enroll);
                 // Marca
-                cueComboBoxMarca.Items.Add(contactsVehicles[i].vehicle_brand);
+                Marca_Recepciones.Items.Add(contactsVehicles[i].vehicle_brand);
                 // Modelo
-                cueComboBoxModelo.Items.Add(contactsVehicles[i].vehicle_model);
+                Modelo_Recepciones.Items.Add(contactsVehicles[i].vehicle_model);
                 // Bastidor
-                cueComboBoxBastidor.Items.Add(contactsVehicles[i].vehicle_frame);
+                Bastidor_Recepciones.Items.Add(contactsVehicles[i].vehicle_frame);
                 // Tipo motor
-                cueComboBoxTipoMotor.Items.Add(contactsVehicles[i].vehicle_engineType);
+                TipoMotor_Recepciones.Items.Add(contactsVehicles[i].vehicle_engineType);
                 #endregion
             }
         }
@@ -221,19 +221,19 @@ namespace Gestaller
         #region comboBoxSelectionEvent
         private void cueComboBoxCliente_SelectedIndexChanged(object sender, EventArgs e)
         {
-            _comboIndex = cueComboBoxCliente.SelectedIndex;
+            _comboIndex = Cliente_Recepciones.SelectedIndex;
             changesComboBoxes();
         }
 
         private void cueComboBoxMatricula_SelectedIndexChanged(object sender, EventArgs e)
         {
-            _comboIndex = cueComboBoxMatricula.SelectedIndex;
+            _comboIndex = Matricula_Recepciones.SelectedIndex;
             changesComboBoxes();
         }
 
         private void cueComboBoxBastidor_SelectedIndexChanged(object sender, EventArgs e)
         {
-            _comboIndex = cueComboBoxBastidor.SelectedIndex;
+            _comboIndex = Bastidor_Recepciones.SelectedIndex;
             changesComboBoxes();
         }
 
