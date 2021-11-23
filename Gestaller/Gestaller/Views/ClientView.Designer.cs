@@ -78,24 +78,24 @@ namespace Gestaller
             this.btVaciar_DatosBancarios = new System.Windows.Forms.Button();
             this.tab_otras_direcciones = new System.Windows.Forms.TabPage();
             this.tabla1_OtrasD = new System.Windows.Forms.TableLayoutPanel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Grid_OtrasDirecciones = new System.Windows.Forms.DataGridView();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.labelOtrasD = new System.Windows.Forms.Label();
             this.flowLayoutPanel4 = new System.Windows.Forms.FlowLayoutPanel();
-            this.cueComboBox3 = new Gestaller.Views.CueComboBox();
-            this.cueComboBox4 = new Gestaller.Views.CueComboBox();
-            this.cueComboBox5 = new Gestaller.Views.CueComboBox();
-            this.cueComboBox6 = new Gestaller.Views.CueComboBox();
-            this.cueComboBox11 = new Gestaller.Views.CueComboBox();
-            this.cueComboBox7 = new Gestaller.Views.CueComboBox();
-            this.cueComboBox8 = new Gestaller.Views.CueComboBox();
-            this.cueComboBox9 = new Gestaller.Views.CueComboBox();
-            this.cueComboBox10 = new Gestaller.Views.CueComboBox();
+            this.Nombre_OtrasDirecciones = new Gestaller.Views.CueComboBox();
+            this.Direccion_OtrasDirecciones = new Gestaller.Views.CueComboBox();
+            this.Localidad_OtrasDirecciones = new Gestaller.Views.CueComboBox();
+            this.Provincia_OtrasDirecciones = new Gestaller.Views.CueComboBox();
+            this.CP_OtrasDirecciones = new Gestaller.Views.CueComboBox();
+            this.Movil_OtrasDirecciones = new Gestaller.Views.CueComboBox();
+            this.Telefono_OtrasDirecciones = new Gestaller.Views.CueComboBox();
+            this.Fax_OtrasDirecciones = new Gestaller.Views.CueComboBox();
+            this.Mail_OtrasDirecciones = new Gestaller.Views.CueComboBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button1ModificarOd = new System.Windows.Forms.Button();
-            this.button2BorrarOd = new System.Windows.Forms.Button();
-            this.button3AnadirOd = new System.Windows.Forms.Button();
-            this.button4VaciarOd = new System.Windows.Forms.Button();
+            this.btModificar_OtrasDirecciones = new System.Windows.Forms.Button();
+            this.btBorrar_OtrasDirecciones = new System.Windows.Forms.Button();
+            this.btAnadir_OtrasDirecciones = new System.Windows.Forms.Button();
+            this.btVaciar_OtrasDirecciones = new System.Windows.Forms.Button();
             this.tabControl_Clientes.SuspendLayout();
             this.tab_clientes_vehiculos.SuspendLayout();
             this.tabla1_clientes_V.SuspendLayout();
@@ -113,7 +113,7 @@ namespace Gestaller
             this.panel3.SuspendLayout();
             this.tab_otras_direcciones.SuspendLayout();
             this.tabla1_OtrasD.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Grid_OtrasDirecciones)).BeginInit();
             this.tableLayoutPanel2.SuspendLayout();
             this.flowLayoutPanel4.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -663,7 +663,7 @@ namespace Gestaller
             // 
             this.tabla1_OtrasD.ColumnCount = 1;
             this.tabla1_OtrasD.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tabla1_OtrasD.Controls.Add(this.dataGridView1, 0, 2);
+            this.tabla1_OtrasD.Controls.Add(this.Grid_OtrasDirecciones, 0, 2);
             this.tabla1_OtrasD.Controls.Add(this.tableLayoutPanel2, 0, 0);
             this.tabla1_OtrasD.Controls.Add(this.panel1, 0, 1);
             this.tabla1_OtrasD.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -676,15 +676,15 @@ namespace Gestaller
             this.tabla1_OtrasD.Size = new System.Drawing.Size(1328, 796);
             this.tabla1_OtrasD.TabIndex = 0;
             // 
-            // dataGridView1
+            // Grid_OtrasDirecciones
             // 
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(3, 138);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1322, 655);
-            this.dataGridView1.TabIndex = 3;
+            this.Grid_OtrasDirecciones.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.Grid_OtrasDirecciones.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Grid_OtrasDirecciones.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Grid_OtrasDirecciones.Location = new System.Drawing.Point(3, 138);
+            this.Grid_OtrasDirecciones.Name = "Grid_OtrasDirecciones";
+            this.Grid_OtrasDirecciones.Size = new System.Drawing.Size(1322, 655);
+            this.Grid_OtrasDirecciones.TabIndex = 3;
             // 
             // tableLayoutPanel2
             // 
@@ -715,154 +715,154 @@ namespace Gestaller
             // flowLayoutPanel4
             // 
             this.flowLayoutPanel4.AutoScroll = true;
-            this.flowLayoutPanel4.Controls.Add(this.cueComboBox3);
-            this.flowLayoutPanel4.Controls.Add(this.cueComboBox4);
-            this.flowLayoutPanel4.Controls.Add(this.cueComboBox5);
-            this.flowLayoutPanel4.Controls.Add(this.cueComboBox6);
-            this.flowLayoutPanel4.Controls.Add(this.cueComboBox11);
-            this.flowLayoutPanel4.Controls.Add(this.cueComboBox7);
-            this.flowLayoutPanel4.Controls.Add(this.cueComboBox8);
-            this.flowLayoutPanel4.Controls.Add(this.cueComboBox9);
-            this.flowLayoutPanel4.Controls.Add(this.cueComboBox10);
+            this.flowLayoutPanel4.Controls.Add(this.Nombre_OtrasDirecciones);
+            this.flowLayoutPanel4.Controls.Add(this.Direccion_OtrasDirecciones);
+            this.flowLayoutPanel4.Controls.Add(this.Localidad_OtrasDirecciones);
+            this.flowLayoutPanel4.Controls.Add(this.Provincia_OtrasDirecciones);
+            this.flowLayoutPanel4.Controls.Add(this.CP_OtrasDirecciones);
+            this.flowLayoutPanel4.Controls.Add(this.Movil_OtrasDirecciones);
+            this.flowLayoutPanel4.Controls.Add(this.Telefono_OtrasDirecciones);
+            this.flowLayoutPanel4.Controls.Add(this.Fax_OtrasDirecciones);
+            this.flowLayoutPanel4.Controls.Add(this.Mail_OtrasDirecciones);
             this.flowLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel4.Location = new System.Drawing.Point(3, 23);
             this.flowLayoutPanel4.Name = "flowLayoutPanel4";
             this.flowLayoutPanel4.Size = new System.Drawing.Size(1316, 74);
             this.flowLayoutPanel4.TabIndex = 0;
             // 
-            // cueComboBox3
+            // Nombre_OtrasDirecciones
             // 
-            this.cueComboBox3.CueText = "Nombre";
-            this.cueComboBox3.FormattingEnabled = true;
-            this.cueComboBox3.Location = new System.Drawing.Point(3, 3);
-            this.cueComboBox3.Name = "cueComboBox3";
-            this.cueComboBox3.Size = new System.Drawing.Size(121, 21);
-            this.cueComboBox3.TabIndex = 0;
+            this.Nombre_OtrasDirecciones.CueText = "Nombre";
+            this.Nombre_OtrasDirecciones.FormattingEnabled = true;
+            this.Nombre_OtrasDirecciones.Location = new System.Drawing.Point(3, 3);
+            this.Nombre_OtrasDirecciones.Name = "Nombre_OtrasDirecciones";
+            this.Nombre_OtrasDirecciones.Size = new System.Drawing.Size(121, 21);
+            this.Nombre_OtrasDirecciones.TabIndex = 0;
             // 
-            // cueComboBox4
+            // Direccion_OtrasDirecciones
             // 
-            this.cueComboBox4.CueText = "Dirección";
-            this.cueComboBox4.FormattingEnabled = true;
-            this.cueComboBox4.Location = new System.Drawing.Point(130, 3);
-            this.cueComboBox4.Name = "cueComboBox4";
-            this.cueComboBox4.Size = new System.Drawing.Size(248, 21);
-            this.cueComboBox4.TabIndex = 1;
+            this.Direccion_OtrasDirecciones.CueText = "Dirección";
+            this.Direccion_OtrasDirecciones.FormattingEnabled = true;
+            this.Direccion_OtrasDirecciones.Location = new System.Drawing.Point(130, 3);
+            this.Direccion_OtrasDirecciones.Name = "Direccion_OtrasDirecciones";
+            this.Direccion_OtrasDirecciones.Size = new System.Drawing.Size(248, 21);
+            this.Direccion_OtrasDirecciones.TabIndex = 1;
             // 
-            // cueComboBox5
+            // Localidad_OtrasDirecciones
             // 
-            this.cueComboBox5.CueText = "Localidad";
-            this.cueComboBox5.FormattingEnabled = true;
-            this.cueComboBox5.Location = new System.Drawing.Point(384, 3);
-            this.cueComboBox5.Name = "cueComboBox5";
-            this.cueComboBox5.Size = new System.Drawing.Size(121, 21);
-            this.cueComboBox5.TabIndex = 2;
+            this.Localidad_OtrasDirecciones.CueText = "Localidad";
+            this.Localidad_OtrasDirecciones.FormattingEnabled = true;
+            this.Localidad_OtrasDirecciones.Location = new System.Drawing.Point(384, 3);
+            this.Localidad_OtrasDirecciones.Name = "Localidad_OtrasDirecciones";
+            this.Localidad_OtrasDirecciones.Size = new System.Drawing.Size(121, 21);
+            this.Localidad_OtrasDirecciones.TabIndex = 2;
             // 
-            // cueComboBox6
+            // Provincia_OtrasDirecciones
             // 
-            this.cueComboBox6.CueText = "Provincia";
-            this.cueComboBox6.FormattingEnabled = true;
-            this.cueComboBox6.Location = new System.Drawing.Point(511, 3);
-            this.cueComboBox6.Name = "cueComboBox6";
-            this.cueComboBox6.Size = new System.Drawing.Size(121, 21);
-            this.cueComboBox6.TabIndex = 3;
+            this.Provincia_OtrasDirecciones.CueText = "Provincia";
+            this.Provincia_OtrasDirecciones.FormattingEnabled = true;
+            this.Provincia_OtrasDirecciones.Location = new System.Drawing.Point(511, 3);
+            this.Provincia_OtrasDirecciones.Name = "Provincia_OtrasDirecciones";
+            this.Provincia_OtrasDirecciones.Size = new System.Drawing.Size(121, 21);
+            this.Provincia_OtrasDirecciones.TabIndex = 3;
             // 
-            // cueComboBox11
+            // CP_OtrasDirecciones
             // 
-            this.cueComboBox11.CueText = "C.P.";
-            this.cueComboBox11.FormattingEnabled = true;
-            this.cueComboBox11.Location = new System.Drawing.Point(638, 3);
-            this.cueComboBox11.Name = "cueComboBox11";
-            this.cueComboBox11.Size = new System.Drawing.Size(121, 21);
-            this.cueComboBox11.TabIndex = 4;
+            this.CP_OtrasDirecciones.CueText = "C.P.";
+            this.CP_OtrasDirecciones.FormattingEnabled = true;
+            this.CP_OtrasDirecciones.Location = new System.Drawing.Point(638, 3);
+            this.CP_OtrasDirecciones.Name = "CP_OtrasDirecciones";
+            this.CP_OtrasDirecciones.Size = new System.Drawing.Size(121, 21);
+            this.CP_OtrasDirecciones.TabIndex = 4;
             // 
-            // cueComboBox7
+            // Movil_OtrasDirecciones
             // 
-            this.cueComboBox7.CueText = "Móvil";
-            this.cueComboBox7.FormattingEnabled = true;
-            this.cueComboBox7.Location = new System.Drawing.Point(765, 3);
-            this.cueComboBox7.Name = "cueComboBox7";
-            this.cueComboBox7.Size = new System.Drawing.Size(121, 21);
-            this.cueComboBox7.TabIndex = 5;
+            this.Movil_OtrasDirecciones.CueText = "Móvil";
+            this.Movil_OtrasDirecciones.FormattingEnabled = true;
+            this.Movil_OtrasDirecciones.Location = new System.Drawing.Point(765, 3);
+            this.Movil_OtrasDirecciones.Name = "Movil_OtrasDirecciones";
+            this.Movil_OtrasDirecciones.Size = new System.Drawing.Size(121, 21);
+            this.Movil_OtrasDirecciones.TabIndex = 5;
             // 
-            // cueComboBox8
+            // Telefono_OtrasDirecciones
             // 
-            this.cueComboBox8.CueText = "Teléfono";
-            this.cueComboBox8.FormattingEnabled = true;
-            this.cueComboBox8.Location = new System.Drawing.Point(892, 3);
-            this.cueComboBox8.Name = "cueComboBox8";
-            this.cueComboBox8.Size = new System.Drawing.Size(121, 21);
-            this.cueComboBox8.TabIndex = 6;
+            this.Telefono_OtrasDirecciones.CueText = "Teléfono";
+            this.Telefono_OtrasDirecciones.FormattingEnabled = true;
+            this.Telefono_OtrasDirecciones.Location = new System.Drawing.Point(892, 3);
+            this.Telefono_OtrasDirecciones.Name = "Telefono_OtrasDirecciones";
+            this.Telefono_OtrasDirecciones.Size = new System.Drawing.Size(121, 21);
+            this.Telefono_OtrasDirecciones.TabIndex = 6;
             // 
-            // cueComboBox9
+            // Fax_OtrasDirecciones
             // 
-            this.cueComboBox9.CueText = "Fax";
-            this.cueComboBox9.FormattingEnabled = true;
-            this.cueComboBox9.Location = new System.Drawing.Point(1019, 3);
-            this.cueComboBox9.Name = "cueComboBox9";
-            this.cueComboBox9.Size = new System.Drawing.Size(121, 21);
-            this.cueComboBox9.TabIndex = 7;
+            this.Fax_OtrasDirecciones.CueText = "Fax";
+            this.Fax_OtrasDirecciones.FormattingEnabled = true;
+            this.Fax_OtrasDirecciones.Location = new System.Drawing.Point(1019, 3);
+            this.Fax_OtrasDirecciones.Name = "Fax_OtrasDirecciones";
+            this.Fax_OtrasDirecciones.Size = new System.Drawing.Size(121, 21);
+            this.Fax_OtrasDirecciones.TabIndex = 7;
             // 
-            // cueComboBox10
+            // Mail_OtrasDirecciones
             // 
-            this.cueComboBox10.CueText = "E-Mail";
-            this.cueComboBox10.FormattingEnabled = true;
-            this.cueComboBox10.Location = new System.Drawing.Point(3, 30);
-            this.cueComboBox10.Name = "cueComboBox10";
-            this.cueComboBox10.Size = new System.Drawing.Size(248, 21);
-            this.cueComboBox10.TabIndex = 8;
+            this.Mail_OtrasDirecciones.CueText = "E-Mail";
+            this.Mail_OtrasDirecciones.FormattingEnabled = true;
+            this.Mail_OtrasDirecciones.Location = new System.Drawing.Point(3, 30);
+            this.Mail_OtrasDirecciones.Name = "Mail_OtrasDirecciones";
+            this.Mail_OtrasDirecciones.Size = new System.Drawing.Size(248, 21);
+            this.Mail_OtrasDirecciones.TabIndex = 8;
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.button1ModificarOd);
-            this.panel1.Controls.Add(this.button2BorrarOd);
-            this.panel1.Controls.Add(this.button3AnadirOd);
-            this.panel1.Controls.Add(this.button4VaciarOd);
+            this.panel1.Controls.Add(this.btModificar_OtrasDirecciones);
+            this.panel1.Controls.Add(this.btBorrar_OtrasDirecciones);
+            this.panel1.Controls.Add(this.btAnadir_OtrasDirecciones);
+            this.panel1.Controls.Add(this.btVaciar_OtrasDirecciones);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(3, 109);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1322, 23);
             this.panel1.TabIndex = 2;
             // 
-            // button1ModificarOd
+            // btModificar_OtrasDirecciones
             // 
-            this.button1ModificarOd.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button1ModificarOd.Location = new System.Drawing.Point(1008, 0);
-            this.button1ModificarOd.Name = "button1ModificarOd";
-            this.button1ModificarOd.Size = new System.Drawing.Size(75, 23);
-            this.button1ModificarOd.TabIndex = 0;
-            this.button1ModificarOd.Text = "Modificar";
-            this.button1ModificarOd.UseVisualStyleBackColor = true;
+            this.btModificar_OtrasDirecciones.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btModificar_OtrasDirecciones.Location = new System.Drawing.Point(1008, 0);
+            this.btModificar_OtrasDirecciones.Name = "btModificar_OtrasDirecciones";
+            this.btModificar_OtrasDirecciones.Size = new System.Drawing.Size(75, 23);
+            this.btModificar_OtrasDirecciones.TabIndex = 0;
+            this.btModificar_OtrasDirecciones.Text = "Modificar";
+            this.btModificar_OtrasDirecciones.UseVisualStyleBackColor = true;
             // 
-            // button2BorrarOd
+            // btBorrar_OtrasDirecciones
             // 
-            this.button2BorrarOd.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button2BorrarOd.Location = new System.Drawing.Point(1083, 0);
-            this.button2BorrarOd.Name = "button2BorrarOd";
-            this.button2BorrarOd.Size = new System.Drawing.Size(89, 23);
-            this.button2BorrarOd.TabIndex = 1;
-            this.button2BorrarOd.Text = "Borrar";
-            this.button2BorrarOd.UseVisualStyleBackColor = true;
+            this.btBorrar_OtrasDirecciones.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btBorrar_OtrasDirecciones.Location = new System.Drawing.Point(1083, 0);
+            this.btBorrar_OtrasDirecciones.Name = "btBorrar_OtrasDirecciones";
+            this.btBorrar_OtrasDirecciones.Size = new System.Drawing.Size(89, 23);
+            this.btBorrar_OtrasDirecciones.TabIndex = 1;
+            this.btBorrar_OtrasDirecciones.Text = "Borrar";
+            this.btBorrar_OtrasDirecciones.UseVisualStyleBackColor = true;
             // 
-            // button3AnadirOd
+            // btAnadir_OtrasDirecciones
             // 
-            this.button3AnadirOd.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button3AnadirOd.Location = new System.Drawing.Point(1172, 0);
-            this.button3AnadirOd.Name = "button3AnadirOd";
-            this.button3AnadirOd.Size = new System.Drawing.Size(75, 23);
-            this.button3AnadirOd.TabIndex = 2;
-            this.button3AnadirOd.Text = "Añadir";
-            this.button3AnadirOd.UseVisualStyleBackColor = true;
+            this.btAnadir_OtrasDirecciones.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btAnadir_OtrasDirecciones.Location = new System.Drawing.Point(1172, 0);
+            this.btAnadir_OtrasDirecciones.Name = "btAnadir_OtrasDirecciones";
+            this.btAnadir_OtrasDirecciones.Size = new System.Drawing.Size(75, 23);
+            this.btAnadir_OtrasDirecciones.TabIndex = 2;
+            this.btAnadir_OtrasDirecciones.Text = "Añadir";
+            this.btAnadir_OtrasDirecciones.UseVisualStyleBackColor = true;
             // 
-            // button4VaciarOd
+            // btVaciar_OtrasDirecciones
             // 
-            this.button4VaciarOd.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button4VaciarOd.Location = new System.Drawing.Point(1247, 0);
-            this.button4VaciarOd.Margin = new System.Windows.Forms.Padding(6, 3, 3, 3);
-            this.button4VaciarOd.Name = "button4VaciarOd";
-            this.button4VaciarOd.Size = new System.Drawing.Size(75, 23);
-            this.button4VaciarOd.TabIndex = 3;
-            this.button4VaciarOd.Text = "Vaciar";
-            this.button4VaciarOd.UseVisualStyleBackColor = true;
+            this.btVaciar_OtrasDirecciones.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btVaciar_OtrasDirecciones.Location = new System.Drawing.Point(1247, 0);
+            this.btVaciar_OtrasDirecciones.Margin = new System.Windows.Forms.Padding(6, 3, 3, 3);
+            this.btVaciar_OtrasDirecciones.Name = "btVaciar_OtrasDirecciones";
+            this.btVaciar_OtrasDirecciones.Size = new System.Drawing.Size(75, 23);
+            this.btVaciar_OtrasDirecciones.TabIndex = 3;
+            this.btVaciar_OtrasDirecciones.Text = "Vaciar";
+            this.btVaciar_OtrasDirecciones.UseVisualStyleBackColor = true;
             // 
             // ClientView
             // 
@@ -895,7 +895,7 @@ namespace Gestaller
             this.panel3.ResumeLayout(false);
             this.tab_otras_direcciones.ResumeLayout(false);
             this.tabla1_OtrasD.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Grid_OtrasDirecciones)).EndInit();
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
             this.flowLayoutPanel4.ResumeLayout(false);
@@ -945,23 +945,23 @@ namespace Gestaller
         private Views.CueTextBox DiasPago_DatosBancarios;
         private System.Windows.Forms.DataGridView Grid_DatosBancarios;
         private System.Windows.Forms.TableLayoutPanel tabla1_OtrasD;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button button4VaciarOd;
-        private System.Windows.Forms.Button button3AnadirOd;
-        private System.Windows.Forms.Button button1ModificarOd;
-        private System.Windows.Forms.Button button2BorrarOd;
+        private System.Windows.Forms.DataGridView Grid_OtrasDirecciones;
+        private System.Windows.Forms.Button btVaciar_OtrasDirecciones;
+        private System.Windows.Forms.Button btAnadir_OtrasDirecciones;
+        private System.Windows.Forms.Button btModificar_OtrasDirecciones;
+        private System.Windows.Forms.Button btBorrar_OtrasDirecciones;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.Label labelOtrasD;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel4;
-        private Views.CueComboBox cueComboBox3;
-        private Views.CueComboBox cueComboBox4;
-        private Views.CueComboBox cueComboBox5;
-        private Views.CueComboBox cueComboBox6;
-        private Views.CueComboBox cueComboBox11;
-        private Views.CueComboBox cueComboBox7;
-        private Views.CueComboBox cueComboBox8;
-        private Views.CueComboBox cueComboBox9;
-        private Views.CueComboBox cueComboBox10;
+        private Views.CueComboBox Nombre_OtrasDirecciones;
+        private Views.CueComboBox Direccion_OtrasDirecciones;
+        private Views.CueComboBox Localidad_OtrasDirecciones;
+        private Views.CueComboBox Provincia_OtrasDirecciones;
+        private Views.CueComboBox CP_OtrasDirecciones;
+        private Views.CueComboBox Movil_OtrasDirecciones;
+        private Views.CueComboBox Telefono_OtrasDirecciones;
+        private Views.CueComboBox Fax_OtrasDirecciones;
+        private Views.CueComboBox Mail_OtrasDirecciones;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btModificar_ClienteVehiculo;
