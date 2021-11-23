@@ -50,7 +50,7 @@ namespace Gestaller
             this.btBorrar_Recepciones = new System.Windows.Forms.Button();
             this.btPresupuesto_Recepciones = new System.Windows.Forms.Button();
             this.btEntregar_Recepciones = new System.Windows.Forms.Button();
-            this.bt7Vaciar_Recepciones = new System.Windows.Forms.Button();
+            this.btVaciar_Recepciones = new System.Windows.Forms.Button();
             this.Grid_Depositos_Recepciones = new System.Windows.Forms.DataGridView();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -259,7 +259,7 @@ namespace Gestaller
             this.flowIncoming_Buttons.Controls.Add(this.btBorrar_Recepciones);
             this.flowIncoming_Buttons.Controls.Add(this.btPresupuesto_Recepciones);
             this.flowIncoming_Buttons.Controls.Add(this.btEntregar_Recepciones);
-            this.flowIncoming_Buttons.Controls.Add(this.bt7Vaciar_Recepciones);
+            this.flowIncoming_Buttons.Controls.Add(this.btVaciar_Recepciones);
             this.flowIncoming_Buttons.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowIncoming_Buttons.Location = new System.Drawing.Point(686, 3);
             this.flowIncoming_Buttons.Name = "flowIncoming_Buttons";
@@ -321,15 +321,15 @@ namespace Gestaller
             this.btEntregar_Recepciones.Text = "Entregar";
             this.btEntregar_Recepciones.UseVisualStyleBackColor = true;
             // 
-            // bt7Vaciar_Recepciones
+            // btVaciar_Recepciones
             // 
-            this.bt7Vaciar_Recepciones.Location = new System.Drawing.Point(489, 3);
-            this.bt7Vaciar_Recepciones.Name = "bt7Vaciar_Recepciones";
-            this.bt7Vaciar_Recepciones.Size = new System.Drawing.Size(75, 23);
-            this.bt7Vaciar_Recepciones.TabIndex = 6;
-            this.bt7Vaciar_Recepciones.Text = "Vaciar";
-            this.bt7Vaciar_Recepciones.UseVisualStyleBackColor = true;
-            this.bt7Vaciar_Recepciones.Click += new System.EventHandler(this.button7Vaciar_Click);
+            this.btVaciar_Recepciones.Location = new System.Drawing.Point(489, 3);
+            this.btVaciar_Recepciones.Name = "btVaciar_Recepciones";
+            this.btVaciar_Recepciones.Size = new System.Drawing.Size(75, 23);
+            this.btVaciar_Recepciones.TabIndex = 6;
+            this.btVaciar_Recepciones.Text = "Vaciar";
+            this.btVaciar_Recepciones.UseVisualStyleBackColor = true;
+            this.btVaciar_Recepciones.Click += new System.EventHandler(this.button7Vaciar_Click);
             // 
             // Grid_Depositos_Recepciones
             // 
@@ -546,6 +546,6 @@ namespace Gestaller
         private Views.CueTextBox Km_Recepciones_Recepciones;
         private System.Windows.Forms.RichTextBox Daños_Recepciones;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Button bt7Vaciar_Recepciones;
+        private System.Windows.Forms.Button btVaciar_Recepciones;
     }
 }
