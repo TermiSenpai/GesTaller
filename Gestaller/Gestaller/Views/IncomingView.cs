@@ -95,7 +95,7 @@ namespace Gestaller
                 if (control is CueComboBox)
                 {
                     ((CueComboBox)control).ResetText();
-                    ((CueComboBox)control).SelectedIndex = -1;
+                    //((CueComboBox)control).SelectedIndex = -1;
                 }
 
                 if (control is CueTextBox)
@@ -107,6 +107,9 @@ namespace Gestaller
                 {
                     ((DateTimePicker)control).Value = DateTime.Today;
                 }
+
+                if (control is RichTextBox)
+                    ((RichTextBox)control).ResetText();
             }
         }
 
