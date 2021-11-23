@@ -274,6 +274,7 @@ namespace Gestaller
             this.button1Create.TabIndex = 0;
             this.button1Create.Text = "Crear";
             this.button1Create.UseVisualStyleBackColor = true;
+            this.button1Create.Click += new System.EventHandler(this.button1Create_Click);
             // 
             // button2Modificar
             // 

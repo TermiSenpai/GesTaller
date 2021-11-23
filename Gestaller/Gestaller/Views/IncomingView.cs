@@ -50,10 +50,20 @@ namespace Gestaller
             int selectedCell = dataGridViewDepositos.CurrentCell.RowIndex;
             cellClickEvent(selectedCell);
         }
+        
+        private void button1Create_Click(object sender, EventArgs e)
+        {
+            createIncoming();
+        }
 
         #endregion
 
         #region private methods
+
+        private void createIncoming()
+        {
+
+        }
 
         private void changesComboBoxes()
         {

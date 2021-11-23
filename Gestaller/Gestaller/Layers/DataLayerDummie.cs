@@ -9,7 +9,7 @@ namespace Gestaller
     class DataLayerDummie
     {
             List<Contact> _contacts = new List<Contact>();
-            List<Vehicle> _vehicles = new List<Vehicle>();
+            
         public List<Contact> GetContacts()
         {
 
@@ -49,7 +49,7 @@ namespace Gestaller
 
         public List<Vehicle> GetVehicles()
         {
-
+            List<Vehicle> _vehicles = new List<Vehicle>();
             Vehicle firstVehicle = new Vehicle();
 
             firstVehicle.id = 1; 
@@ -119,12 +119,13 @@ namespace Gestaller
 
             _contacts.Add(contact);
         }
-
         public void addVehicle(Vehicle vehicle)
         {
+/*
             vehicle.id = _vehicles.Count();
 
             _vehicles.Add(vehicle);
+*/
         }
     }
 }
