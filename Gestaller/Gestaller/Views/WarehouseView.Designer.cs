@@ -186,6 +186,7 @@ namespace Gestaller
             this.btVaciar_Productos.TabIndex = 3;
             this.btVaciar_Productos.Text = "Vaciar";
             this.btVaciar_Productos.UseVisualStyleBackColor = true;
+            this.btVaciar_Productos.Click += new System.EventHandler(this.btVaciar_Productos_Click);
             // 
             // Grid_Productos
             // 
@@ -537,7 +538,6 @@ namespace Gestaller
             this.firmaPago_Proveedores.Name = "firmaPago_Proveedores";
             this.firmaPago_Proveedores.Size = new System.Drawing.Size(121, 20);
             this.firmaPago_Proveedores.TabIndex = 12;
-            this.firmaPago_Proveedores.TextChanged += new System.EventHandler(this.cueTextBox1_TextChanged);
             // 
             // diasPago_Proveedores
             // 
@@ -592,6 +592,7 @@ namespace Gestaller
             this.Controls.Add(this.tabControl1);
             this.Name = "WarehouseView";
             this.Text = "Almacen";
+            this.Load += new System.EventHandler(this.WarehouseView_Load);
             this.tabControl1.ResumeLayout(false);
             this.Productos.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
