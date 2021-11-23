@@ -38,47 +38,47 @@ namespace Gestaller
             this.Total_Presupuesto = new Gestaller.Views.CueTextBox();
             this.label1Cliente_Pre = new System.Windows.Forms.Label();
             this.panel1_Pre = new System.Windows.Forms.Panel();
-            this.btn_Search_Pre = new System.Windows.Forms.Button();
+            this.btBuscar_Presupuesto = new System.Windows.Forms.Button();
             this.flowLayoutPanel1Cliente_Pre = new System.Windows.Forms.FlowLayoutPanel();
-            this.Cliente_Pre = new Gestaller.Views.CueComboBox();
-            this.Matricula_Pre = new Gestaller.Views.CueComboBox();
-            this.Marca_Pre = new Gestaller.Views.CueComboBox();
-            this.Modelo_Pre = new Gestaller.Views.CueComboBox();
-            this.Km_Pre = new Gestaller.Views.CueTextBox();
+            this.Cliente_Presupuesto = new Gestaller.Views.CueComboBox();
+            this.Matricula_Presupuesto = new Gestaller.Views.CueComboBox();
+            this.Marca_Presupuesto = new Gestaller.Views.CueComboBox();
+            this.Modelo_Presupuesto = new Gestaller.Views.CueComboBox();
+            this.Km_Presupuesto = new Gestaller.Views.CueTextBox();
             this.label2Presupuesto_Pre = new System.Windows.Forms.Label();
             this.flowLayoutPanel2Presupuesto_Pre = new System.Windows.Forms.FlowLayoutPanel();
-            this.Presupuesto_Pre = new Gestaller.Views.CueComboBox();
-            this.Proforma_Pre = new Gestaller.Views.CueComboBox();
-            this.Factura_Pre = new Gestaller.Views.CueComboBox();
-            this.Fecha_Pre = new System.Windows.Forms.DateTimePicker();
+            this.Presupuesto_Presupuesto = new Gestaller.Views.CueComboBox();
+            this.Proforma_Presupuesto = new Gestaller.Views.CueComboBox();
+            this.Factura_Presupuesto = new Gestaller.Views.CueComboBox();
+            this.Fecha_Presupuesto = new System.Windows.Forms.DateTimePicker();
             this.label3Producto_Pre = new System.Windows.Forms.Label();
-            this.Observaciones_Pre = new System.Windows.Forms.RichTextBox();
+            this.Observaciones_Presupuesto = new System.Windows.Forms.RichTextBox();
             this.panel3_Pre = new System.Windows.Forms.Panel();
-            this.btnAnadir_Pre = new System.Windows.Forms.Button();
-            this.btnBorrarObj_Pre = new System.Windows.Forms.Button();
-            this.btnModificar_Pre = new System.Windows.Forms.Button();
-            this.btnDevolucion_Pre = new System.Windows.Forms.Button();
+            this.btAnadir_Presupuesto = new System.Windows.Forms.Button();
+            this.btBorrarObj_Presupuesto = new System.Windows.Forms.Button();
+            this.btModificar_Presupuesto = new System.Windows.Forms.Button();
+            this.btDevolucion_Presupuesto = new System.Windows.Forms.Button();
             this.Grid_Presupuesto = new System.Windows.Forms.DataGridView();
             this.panel4_Pre = new System.Windows.Forms.Panel();
-            this.btnImprimir_Pre = new System.Windows.Forms.Button();
-            this.btnPresupuestor_Pre = new System.Windows.Forms.Button();
-            this.btnProforma_Pre = new System.Windows.Forms.Button();
-            this.btnFactura_Pre = new System.Windows.Forms.Button();
-            this.btnBorrarPresupuesto_Pre = new System.Windows.Forms.Button();
+            this.btImprimir_Presupuesto = new System.Windows.Forms.Button();
+            this.btPresupuestor_Presupuesto = new System.Windows.Forms.Button();
+            this.btProforma_Presupuesto = new System.Windows.Forms.Button();
+            this.btFactura_Presupuesto = new System.Windows.Forms.Button();
+            this.btBorrarPresupuesto_Presupuesto = new System.Windows.Forms.Button();
             this.flowLayoutPanel3Producto_Pre = new System.Windows.Forms.FlowLayoutPanel();
-            this.Referencia_Pre = new Gestaller.Views.CueComboBox();
-            this.Descripción_Pre = new Gestaller.Views.CueComboBox();
-            this.PVP_Pre = new Gestaller.Views.CueTextBox();
-            this.Cantidad_Pre = new Gestaller.Views.CueComboBox();
-            this.Descuento_Pre = new Gestaller.Views.CueComboBox();
-            this.Total_Linea_Pre = new Gestaller.Views.CueTextBox();
-            this.IVA_Producto_Pre = new Gestaller.Views.CueTextBox();
+            this.Referencia_Presupuesto = new Gestaller.Views.CueComboBox();
+            this.Descripción_Presupuesto = new Gestaller.Views.CueComboBox();
+            this.PVP_Presupuesto = new Gestaller.Views.CueTextBox();
+            this.Cantidad_Presupuesto = new Gestaller.Views.CueComboBox();
+            this.Descuento_Presupuesto = new Gestaller.Views.CueComboBox();
+            this.Total_Linea_Presupuesto = new Gestaller.Views.CueTextBox();
+            this.IVA_Producto_Presupuesto = new Gestaller.Views.CueTextBox();
             this.label4Observacion_Pre = new System.Windows.Forms.Label();
             this.panel2_Pre = new System.Windows.Forms.Panel();
-            this.btnFirstPage_Pre = new System.Windows.Forms.Button();
-            this.btnPreviousPage_Pre = new System.Windows.Forms.Button();
-            this.btnnNextPage_Pre = new System.Windows.Forms.Button();
-            this.btnLastPage_Pre = new System.Windows.Forms.Button();
+            this.btFirstPage_Presupuesto = new System.Windows.Forms.Button();
+            this.btPreviousPage_Presupuesto = new System.Windows.Forms.Button();
+            this.btNextPage_Presupuesto = new System.Windows.Forms.Button();
+            this.btLastPage_Presupuesto = new System.Windows.Forms.Button();
             this.tabPageProforma = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel1Proforma = new System.Windows.Forms.TableLayoutPanel();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -248,7 +248,7 @@ namespace Gestaller
             this.tableLayoutPanel1Presupuesto.Controls.Add(this.label2Presupuesto_Pre, 0, 3);
             this.tableLayoutPanel1Presupuesto.Controls.Add(this.flowLayoutPanel2Presupuesto_Pre, 0, 4);
             this.tableLayoutPanel1Presupuesto.Controls.Add(this.label3Producto_Pre, 0, 8);
-            this.tableLayoutPanel1Presupuesto.Controls.Add(this.Observaciones_Pre, 0, 6);
+            this.tableLayoutPanel1Presupuesto.Controls.Add(this.Observaciones_Presupuesto, 0, 6);
             this.tableLayoutPanel1Presupuesto.Controls.Add(this.panel3_Pre, 0, 10);
             this.tableLayoutPanel1Presupuesto.Controls.Add(this.Grid_Presupuesto, 0, 11);
             this.tableLayoutPanel1Presupuesto.Controls.Add(this.panel4_Pre, 0, 12);
@@ -328,7 +328,7 @@ namespace Gestaller
             // 
             // panel1_Pre
             // 
-            this.panel1_Pre.Controls.Add(this.btn_Search_Pre);
+            this.panel1_Pre.Controls.Add(this.btBuscar_Presupuesto);
             this.panel1_Pre.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1_Pre.Location = new System.Drawing.Point(0, 76);
             this.panel1_Pre.Margin = new System.Windows.Forms.Padding(0);
@@ -336,75 +336,75 @@ namespace Gestaller
             this.panel1_Pre.Size = new System.Drawing.Size(1164, 23);
             this.panel1_Pre.TabIndex = 2;
             // 
-            // btn_Search_Pre
+            // btBuscar_Presupuesto
             // 
-            this.btn_Search_Pre.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btn_Search_Pre.Location = new System.Drawing.Point(1089, 0);
-            this.btn_Search_Pre.Name = "btn_Search_Pre";
-            this.btn_Search_Pre.Size = new System.Drawing.Size(75, 23);
-            this.btn_Search_Pre.TabIndex = 0;
-            this.btn_Search_Pre.Text = "Buscar";
-            this.btn_Search_Pre.UseVisualStyleBackColor = true;
+            this.btBuscar_Presupuesto.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btBuscar_Presupuesto.Location = new System.Drawing.Point(1089, 0);
+            this.btBuscar_Presupuesto.Name = "btBuscar_Presupuesto";
+            this.btBuscar_Presupuesto.Size = new System.Drawing.Size(75, 23);
+            this.btBuscar_Presupuesto.TabIndex = 0;
+            this.btBuscar_Presupuesto.Text = "Buscar";
+            this.btBuscar_Presupuesto.UseVisualStyleBackColor = true;
             // 
             // flowLayoutPanel1Cliente_Pre
             // 
             this.flowLayoutPanel1Cliente_Pre.AutoScroll = true;
-            this.flowLayoutPanel1Cliente_Pre.Controls.Add(this.Cliente_Pre);
-            this.flowLayoutPanel1Cliente_Pre.Controls.Add(this.Matricula_Pre);
-            this.flowLayoutPanel1Cliente_Pre.Controls.Add(this.Marca_Pre);
-            this.flowLayoutPanel1Cliente_Pre.Controls.Add(this.Modelo_Pre);
-            this.flowLayoutPanel1Cliente_Pre.Controls.Add(this.Km_Pre);
+            this.flowLayoutPanel1Cliente_Pre.Controls.Add(this.Cliente_Presupuesto);
+            this.flowLayoutPanel1Cliente_Pre.Controls.Add(this.Matricula_Presupuesto);
+            this.flowLayoutPanel1Cliente_Pre.Controls.Add(this.Marca_Presupuesto);
+            this.flowLayoutPanel1Cliente_Pre.Controls.Add(this.Modelo_Presupuesto);
+            this.flowLayoutPanel1Cliente_Pre.Controls.Add(this.Km_Presupuesto);
             this.flowLayoutPanel1Cliente_Pre.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1Cliente_Pre.Location = new System.Drawing.Point(3, 23);
             this.flowLayoutPanel1Cliente_Pre.Name = "flowLayoutPanel1Cliente_Pre";
             this.flowLayoutPanel1Cliente_Pre.Size = new System.Drawing.Size(1158, 50);
             this.flowLayoutPanel1Cliente_Pre.TabIndex = 1;
             // 
-            // Cliente_Pre
+            // Cliente_Presupuesto
             // 
-            this.Cliente_Pre.CueText = "Cliente";
-            this.Cliente_Pre.FormattingEnabled = true;
-            this.Cliente_Pre.Location = new System.Drawing.Point(3, 3);
-            this.Cliente_Pre.Name = "Cliente_Pre";
-            this.Cliente_Pre.Size = new System.Drawing.Size(248, 21);
-            this.Cliente_Pre.TabIndex = 0;
-            this.Cliente_Pre.SelectionChangeCommitted += new System.EventHandler(this.cueComboBox1Cliente_Cliente_Pre_SelectionChangeCommitted);
+            this.Cliente_Presupuesto.CueText = "Cliente";
+            this.Cliente_Presupuesto.FormattingEnabled = true;
+            this.Cliente_Presupuesto.Location = new System.Drawing.Point(3, 3);
+            this.Cliente_Presupuesto.Name = "Cliente_Presupuesto";
+            this.Cliente_Presupuesto.Size = new System.Drawing.Size(248, 21);
+            this.Cliente_Presupuesto.TabIndex = 0;
+            this.Cliente_Presupuesto.SelectionChangeCommitted += new System.EventHandler(this.cueComboBox1Cliente_Cliente_Pre_SelectionChangeCommitted);
             // 
-            // Matricula_Pre
+            // Matricula_Presupuesto
             // 
-            this.Matricula_Pre.CueText = "Matrícula";
-            this.Matricula_Pre.FormattingEnabled = true;
-            this.Matricula_Pre.Location = new System.Drawing.Point(257, 3);
-            this.Matricula_Pre.Name = "Matricula_Pre";
-            this.Matricula_Pre.Size = new System.Drawing.Size(121, 21);
-            this.Matricula_Pre.TabIndex = 1;
-            this.Matricula_Pre.SelectionChangeCommitted += new System.EventHandler(this.cueComboBox2Cliente_Matricula_Pre_SelectionChangeCommitted);
+            this.Matricula_Presupuesto.CueText = "Matrícula";
+            this.Matricula_Presupuesto.FormattingEnabled = true;
+            this.Matricula_Presupuesto.Location = new System.Drawing.Point(257, 3);
+            this.Matricula_Presupuesto.Name = "Matricula_Presupuesto";
+            this.Matricula_Presupuesto.Size = new System.Drawing.Size(121, 21);
+            this.Matricula_Presupuesto.TabIndex = 1;
+            this.Matricula_Presupuesto.SelectionChangeCommitted += new System.EventHandler(this.cueComboBox2Cliente_Matricula_Pre_SelectionChangeCommitted);
             // 
-            // Marca_Pre
+            // Marca_Presupuesto
             // 
-            this.Marca_Pre.CueText = "Marca";
-            this.Marca_Pre.FormattingEnabled = true;
-            this.Marca_Pre.Location = new System.Drawing.Point(384, 3);
-            this.Marca_Pre.Name = "Marca_Pre";
-            this.Marca_Pre.Size = new System.Drawing.Size(121, 21);
-            this.Marca_Pre.TabIndex = 2;
+            this.Marca_Presupuesto.CueText = "Marca";
+            this.Marca_Presupuesto.FormattingEnabled = true;
+            this.Marca_Presupuesto.Location = new System.Drawing.Point(384, 3);
+            this.Marca_Presupuesto.Name = "Marca_Presupuesto";
+            this.Marca_Presupuesto.Size = new System.Drawing.Size(121, 21);
+            this.Marca_Presupuesto.TabIndex = 2;
             // 
-            // Modelo_Pre
+            // Modelo_Presupuesto
             // 
-            this.Modelo_Pre.CueText = "Modelo";
-            this.Modelo_Pre.FormattingEnabled = true;
-            this.Modelo_Pre.Location = new System.Drawing.Point(511, 3);
-            this.Modelo_Pre.Name = "Modelo_Pre";
-            this.Modelo_Pre.Size = new System.Drawing.Size(248, 21);
-            this.Modelo_Pre.TabIndex = 3;
+            this.Modelo_Presupuesto.CueText = "Modelo";
+            this.Modelo_Presupuesto.FormattingEnabled = true;
+            this.Modelo_Presupuesto.Location = new System.Drawing.Point(511, 3);
+            this.Modelo_Presupuesto.Name = "Modelo_Presupuesto";
+            this.Modelo_Presupuesto.Size = new System.Drawing.Size(248, 21);
+            this.Modelo_Presupuesto.TabIndex = 3;
             // 
-            // Km_Pre
+            // Km_Presupuesto
             // 
-            this.Km_Pre.CueText = "Kilometros";
-            this.Km_Pre.Location = new System.Drawing.Point(765, 3);
-            this.Km_Pre.Name = "Km_Pre";
-            this.Km_Pre.Size = new System.Drawing.Size(121, 20);
-            this.Km_Pre.TabIndex = 4;
+            this.Km_Presupuesto.CueText = "Kilometros";
+            this.Km_Presupuesto.Location = new System.Drawing.Point(765, 3);
+            this.Km_Presupuesto.Name = "Km_Presupuesto";
+            this.Km_Presupuesto.Size = new System.Drawing.Size(121, 20);
+            this.Km_Presupuesto.TabIndex = 4;
             // 
             // label2Presupuesto_Pre
             // 
@@ -419,10 +419,10 @@ namespace Gestaller
             // 
             // flowLayoutPanel2Presupuesto_Pre
             // 
-            this.flowLayoutPanel2Presupuesto_Pre.Controls.Add(this.Presupuesto_Pre);
-            this.flowLayoutPanel2Presupuesto_Pre.Controls.Add(this.Proforma_Pre);
-            this.flowLayoutPanel2Presupuesto_Pre.Controls.Add(this.Factura_Pre);
-            this.flowLayoutPanel2Presupuesto_Pre.Controls.Add(this.Fecha_Pre);
+            this.flowLayoutPanel2Presupuesto_Pre.Controls.Add(this.Presupuesto_Presupuesto);
+            this.flowLayoutPanel2Presupuesto_Pre.Controls.Add(this.Proforma_Presupuesto);
+            this.flowLayoutPanel2Presupuesto_Pre.Controls.Add(this.Factura_Presupuesto);
+            this.flowLayoutPanel2Presupuesto_Pre.Controls.Add(this.Fecha_Presupuesto);
             this.flowLayoutPanel2Presupuesto_Pre.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel2Presupuesto_Pre.Location = new System.Drawing.Point(3, 119);
             this.flowLayoutPanel2Presupuesto_Pre.Margin = new System.Windows.Forms.Padding(3, 0, 0, 0);
@@ -430,44 +430,44 @@ namespace Gestaller
             this.flowLayoutPanel2Presupuesto_Pre.Size = new System.Drawing.Size(1161, 54);
             this.flowLayoutPanel2Presupuesto_Pre.TabIndex = 4;
             // 
-            // Presupuesto_Pre
+            // Presupuesto_Presupuesto
             // 
-            this.Presupuesto_Pre.CueText = "Nº Presupuesto";
-            this.Presupuesto_Pre.FormattingEnabled = true;
-            this.Presupuesto_Pre.Location = new System.Drawing.Point(3, 3);
-            this.Presupuesto_Pre.Name = "Presupuesto_Pre";
-            this.Presupuesto_Pre.Size = new System.Drawing.Size(121, 21);
-            this.Presupuesto_Pre.TabIndex = 0;
-            this.Presupuesto_Pre.SelectionChangeCommitted += new System.EventHandler(this.cueComboBox1Presupuesto_BudgetNum_Pre_SelectionChangeCommitted);
+            this.Presupuesto_Presupuesto.CueText = "Nº Presupuesto";
+            this.Presupuesto_Presupuesto.FormattingEnabled = true;
+            this.Presupuesto_Presupuesto.Location = new System.Drawing.Point(3, 3);
+            this.Presupuesto_Presupuesto.Name = "Presupuesto_Presupuesto";
+            this.Presupuesto_Presupuesto.Size = new System.Drawing.Size(121, 21);
+            this.Presupuesto_Presupuesto.TabIndex = 0;
+            this.Presupuesto_Presupuesto.SelectionChangeCommitted += new System.EventHandler(this.cueComboBox1Presupuesto_BudgetNum_Pre_SelectionChangeCommitted);
             // 
-            // Proforma_Pre
+            // Proforma_Presupuesto
             // 
-            this.Proforma_Pre.CueText = "Nº Proforma";
-            this.Proforma_Pre.FormattingEnabled = true;
-            this.Proforma_Pre.Location = new System.Drawing.Point(130, 3);
-            this.Proforma_Pre.Name = "Proforma_Pre";
-            this.Proforma_Pre.Size = new System.Drawing.Size(121, 21);
-            this.Proforma_Pre.TabIndex = 1;
-            this.Proforma_Pre.SelectionChangeCommitted += new System.EventHandler(this.cueComboBox2Presupuesto_ProformaNum_Pre_SelectionChangeCommitted);
+            this.Proforma_Presupuesto.CueText = "Nº Proforma";
+            this.Proforma_Presupuesto.FormattingEnabled = true;
+            this.Proforma_Presupuesto.Location = new System.Drawing.Point(130, 3);
+            this.Proforma_Presupuesto.Name = "Proforma_Presupuesto";
+            this.Proforma_Presupuesto.Size = new System.Drawing.Size(121, 21);
+            this.Proforma_Presupuesto.TabIndex = 1;
+            this.Proforma_Presupuesto.SelectionChangeCommitted += new System.EventHandler(this.cueComboBox2Presupuesto_ProformaNum_Pre_SelectionChangeCommitted);
             // 
-            // Factura_Pre
+            // Factura_Presupuesto
             // 
-            this.Factura_Pre.CueText = "Nº Factura";
-            this.Factura_Pre.FormattingEnabled = true;
-            this.Factura_Pre.Location = new System.Drawing.Point(257, 3);
-            this.Factura_Pre.Name = "Factura_Pre";
-            this.Factura_Pre.Size = new System.Drawing.Size(121, 21);
-            this.Factura_Pre.TabIndex = 2;
-            this.Factura_Pre.SelectionChangeCommitted += new System.EventHandler(this.cueComboBox3Presupuesto_InvoiceNum_Pre_SelectionChangeCommitted);
+            this.Factura_Presupuesto.CueText = "Nº Factura";
+            this.Factura_Presupuesto.FormattingEnabled = true;
+            this.Factura_Presupuesto.Location = new System.Drawing.Point(257, 3);
+            this.Factura_Presupuesto.Name = "Factura_Presupuesto";
+            this.Factura_Presupuesto.Size = new System.Drawing.Size(121, 21);
+            this.Factura_Presupuesto.TabIndex = 2;
+            this.Factura_Presupuesto.SelectionChangeCommitted += new System.EventHandler(this.cueComboBox3Presupuesto_InvoiceNum_Pre_SelectionChangeCommitted);
             // 
-            // Fecha_Pre
+            // Fecha_Presupuesto
             // 
-            this.Fecha_Pre.CustomFormat = "";
-            this.Fecha_Pre.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.Fecha_Pre.Location = new System.Drawing.Point(384, 3);
-            this.Fecha_Pre.Name = "Fecha_Pre";
-            this.Fecha_Pre.Size = new System.Drawing.Size(121, 20);
-            this.Fecha_Pre.TabIndex = 3;
+            this.Fecha_Presupuesto.CustomFormat = "";
+            this.Fecha_Presupuesto.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.Fecha_Presupuesto.Location = new System.Drawing.Point(384, 3);
+            this.Fecha_Presupuesto.Name = "Fecha_Presupuesto";
+            this.Fecha_Presupuesto.Size = new System.Drawing.Size(121, 20);
+            this.Fecha_Presupuesto.TabIndex = 3;
             // 
             // label3Producto_Pre
             // 
@@ -480,21 +480,21 @@ namespace Gestaller
             this.label3Producto_Pre.TabIndex = 8;
             this.label3Producto_Pre.Text = "PRODUCTO";
             // 
-            // Observaciones_Pre
+            // Observaciones_Presupuesto
             // 
-            this.Observaciones_Pre.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Observaciones_Pre.Location = new System.Drawing.Point(3, 196);
-            this.Observaciones_Pre.Name = "Observaciones_Pre";
-            this.Observaciones_Pre.Size = new System.Drawing.Size(1158, 48);
-            this.Observaciones_Pre.TabIndex = 6;
-            this.Observaciones_Pre.Text = "";
+            this.Observaciones_Presupuesto.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Observaciones_Presupuesto.Location = new System.Drawing.Point(3, 196);
+            this.Observaciones_Presupuesto.Name = "Observaciones_Presupuesto";
+            this.Observaciones_Presupuesto.Size = new System.Drawing.Size(1158, 48);
+            this.Observaciones_Presupuesto.TabIndex = 6;
+            this.Observaciones_Presupuesto.Text = "";
             // 
             // panel3_Pre
             // 
-            this.panel3_Pre.Controls.Add(this.btnAnadir_Pre);
-            this.panel3_Pre.Controls.Add(this.btnBorrarObj_Pre);
-            this.panel3_Pre.Controls.Add(this.btnModificar_Pre);
-            this.panel3_Pre.Controls.Add(this.btnDevolucion_Pre);
+            this.panel3_Pre.Controls.Add(this.btAnadir_Presupuesto);
+            this.panel3_Pre.Controls.Add(this.btBorrarObj_Presupuesto);
+            this.panel3_Pre.Controls.Add(this.btModificar_Presupuesto);
+            this.panel3_Pre.Controls.Add(this.btDevolucion_Presupuesto);
             this.panel3_Pre.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3_Pre.Location = new System.Drawing.Point(0, 344);
             this.panel3_Pre.Margin = new System.Windows.Forms.Padding(0);
@@ -502,45 +502,45 @@ namespace Gestaller
             this.panel3_Pre.Size = new System.Drawing.Size(1164, 23);
             this.panel3_Pre.TabIndex = 10;
             // 
-            // btnAnadir_Pre
+            // btAnadir_Presupuesto
             // 
-            this.btnAnadir_Pre.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnAnadir_Pre.Location = new System.Drawing.Point(864, 0);
-            this.btnAnadir_Pre.Name = "btnAnadir_Pre";
-            this.btnAnadir_Pre.Size = new System.Drawing.Size(75, 23);
-            this.btnAnadir_Pre.TabIndex = 0;
-            this.btnAnadir_Pre.Text = "Añadir";
-            this.btnAnadir_Pre.UseVisualStyleBackColor = true;
+            this.btAnadir_Presupuesto.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btAnadir_Presupuesto.Location = new System.Drawing.Point(864, 0);
+            this.btAnadir_Presupuesto.Name = "btAnadir_Presupuesto";
+            this.btAnadir_Presupuesto.Size = new System.Drawing.Size(75, 23);
+            this.btAnadir_Presupuesto.TabIndex = 0;
+            this.btAnadir_Presupuesto.Text = "Añadir";
+            this.btAnadir_Presupuesto.UseVisualStyleBackColor = true;
             // 
-            // btnBorrarObj_Pre
+            // btBorrarObj_Presupuesto
             // 
-            this.btnBorrarObj_Pre.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnBorrarObj_Pre.Location = new System.Drawing.Point(939, 0);
-            this.btnBorrarObj_Pre.Name = "btnBorrarObj_Pre";
-            this.btnBorrarObj_Pre.Size = new System.Drawing.Size(75, 23);
-            this.btnBorrarObj_Pre.TabIndex = 1;
-            this.btnBorrarObj_Pre.Text = "Borrar";
-            this.btnBorrarObj_Pre.UseVisualStyleBackColor = true;
+            this.btBorrarObj_Presupuesto.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btBorrarObj_Presupuesto.Location = new System.Drawing.Point(939, 0);
+            this.btBorrarObj_Presupuesto.Name = "btBorrarObj_Presupuesto";
+            this.btBorrarObj_Presupuesto.Size = new System.Drawing.Size(75, 23);
+            this.btBorrarObj_Presupuesto.TabIndex = 1;
+            this.btBorrarObj_Presupuesto.Text = "Borrar";
+            this.btBorrarObj_Presupuesto.UseVisualStyleBackColor = true;
             // 
-            // btnModificar_Pre
+            // btModificar_Presupuesto
             // 
-            this.btnModificar_Pre.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnModificar_Pre.Location = new System.Drawing.Point(1014, 0);
-            this.btnModificar_Pre.Name = "btnModificar_Pre";
-            this.btnModificar_Pre.Size = new System.Drawing.Size(75, 23);
-            this.btnModificar_Pre.TabIndex = 2;
-            this.btnModificar_Pre.Text = "Modificar";
-            this.btnModificar_Pre.UseVisualStyleBackColor = true;
+            this.btModificar_Presupuesto.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btModificar_Presupuesto.Location = new System.Drawing.Point(1014, 0);
+            this.btModificar_Presupuesto.Name = "btModificar_Presupuesto";
+            this.btModificar_Presupuesto.Size = new System.Drawing.Size(75, 23);
+            this.btModificar_Presupuesto.TabIndex = 2;
+            this.btModificar_Presupuesto.Text = "Modificar";
+            this.btModificar_Presupuesto.UseVisualStyleBackColor = true;
             // 
-            // btnDevolucion_Pre
+            // btDevolucion_Presupuesto
             // 
-            this.btnDevolucion_Pre.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnDevolucion_Pre.Location = new System.Drawing.Point(1089, 0);
-            this.btnDevolucion_Pre.Name = "btnDevolucion_Pre";
-            this.btnDevolucion_Pre.Size = new System.Drawing.Size(75, 23);
-            this.btnDevolucion_Pre.TabIndex = 3;
-            this.btnDevolucion_Pre.Text = "Devolución";
-            this.btnDevolucion_Pre.UseVisualStyleBackColor = true;
+            this.btDevolucion_Presupuesto.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btDevolucion_Presupuesto.Location = new System.Drawing.Point(1089, 0);
+            this.btDevolucion_Presupuesto.Name = "btDevolucion_Presupuesto";
+            this.btDevolucion_Presupuesto.Size = new System.Drawing.Size(75, 23);
+            this.btDevolucion_Presupuesto.TabIndex = 3;
+            this.btDevolucion_Presupuesto.Text = "Devolución";
+            this.btDevolucion_Presupuesto.UseVisualStyleBackColor = true;
             // 
             // Grid_Presupuesto
             // 
@@ -555,11 +555,11 @@ namespace Gestaller
             // 
             // panel4_Pre
             // 
-            this.panel4_Pre.Controls.Add(this.btnImprimir_Pre);
-            this.panel4_Pre.Controls.Add(this.btnPresupuestor_Pre);
-            this.panel4_Pre.Controls.Add(this.btnProforma_Pre);
-            this.panel4_Pre.Controls.Add(this.btnFactura_Pre);
-            this.panel4_Pre.Controls.Add(this.btnBorrarPresupuesto_Pre);
+            this.panel4_Pre.Controls.Add(this.btImprimir_Presupuesto);
+            this.panel4_Pre.Controls.Add(this.btPresupuestor_Presupuesto);
+            this.panel4_Pre.Controls.Add(this.btProforma_Presupuesto);
+            this.panel4_Pre.Controls.Add(this.btFactura_Presupuesto);
+            this.panel4_Pre.Controls.Add(this.btBorrarPresupuesto_Presupuesto);
             this.panel4_Pre.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel4_Pre.Location = new System.Drawing.Point(0, 529);
             this.panel4_Pre.Margin = new System.Windows.Forms.Padding(0);
@@ -567,66 +567,66 @@ namespace Gestaller
             this.panel4_Pre.Size = new System.Drawing.Size(1164, 20);
             this.panel4_Pre.TabIndex = 13;
             // 
-            // btnImprimir_Pre
+            // btImprimir_Presupuesto
             // 
-            this.btnImprimir_Pre.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnImprimir_Pre.Location = new System.Drawing.Point(789, 0);
-            this.btnImprimir_Pre.Name = "btnImprimir_Pre";
-            this.btnImprimir_Pre.Size = new System.Drawing.Size(75, 20);
-            this.btnImprimir_Pre.TabIndex = 0;
-            this.btnImprimir_Pre.Text = "Imprimir";
-            this.btnImprimir_Pre.UseVisualStyleBackColor = true;
+            this.btImprimir_Presupuesto.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btImprimir_Presupuesto.Location = new System.Drawing.Point(789, 0);
+            this.btImprimir_Presupuesto.Name = "btImprimir_Presupuesto";
+            this.btImprimir_Presupuesto.Size = new System.Drawing.Size(75, 20);
+            this.btImprimir_Presupuesto.TabIndex = 0;
+            this.btImprimir_Presupuesto.Text = "Imprimir";
+            this.btImprimir_Presupuesto.UseVisualStyleBackColor = true;
             // 
-            // btnPresupuestor_Pre
+            // btPresupuestor_Presupuesto
             // 
-            this.btnPresupuestor_Pre.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnPresupuestor_Pre.Location = new System.Drawing.Point(864, 0);
-            this.btnPresupuestor_Pre.Name = "btnPresupuestor_Pre";
-            this.btnPresupuestor_Pre.Size = new System.Drawing.Size(75, 20);
-            this.btnPresupuestor_Pre.TabIndex = 1;
-            this.btnPresupuestor_Pre.Text = "Gen. Presu";
-            this.btnPresupuestor_Pre.UseVisualStyleBackColor = true;
+            this.btPresupuestor_Presupuesto.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btPresupuestor_Presupuesto.Location = new System.Drawing.Point(864, 0);
+            this.btPresupuestor_Presupuesto.Name = "btPresupuestor_Presupuesto";
+            this.btPresupuestor_Presupuesto.Size = new System.Drawing.Size(75, 20);
+            this.btPresupuestor_Presupuesto.TabIndex = 1;
+            this.btPresupuestor_Presupuesto.Text = "Gen. Presu";
+            this.btPresupuestor_Presupuesto.UseVisualStyleBackColor = true;
             // 
-            // btnProforma_Pre
+            // btProforma_Presupuesto
             // 
-            this.btnProforma_Pre.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnProforma_Pre.Location = new System.Drawing.Point(939, 0);
-            this.btnProforma_Pre.Name = "btnProforma_Pre";
-            this.btnProforma_Pre.Size = new System.Drawing.Size(75, 20);
-            this.btnProforma_Pre.TabIndex = 2;
-            this.btnProforma_Pre.Text = "Gen. Profor.";
-            this.btnProforma_Pre.UseVisualStyleBackColor = true;
+            this.btProforma_Presupuesto.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btProforma_Presupuesto.Location = new System.Drawing.Point(939, 0);
+            this.btProforma_Presupuesto.Name = "btProforma_Presupuesto";
+            this.btProforma_Presupuesto.Size = new System.Drawing.Size(75, 20);
+            this.btProforma_Presupuesto.TabIndex = 2;
+            this.btProforma_Presupuesto.Text = "Gen. Profor.";
+            this.btProforma_Presupuesto.UseVisualStyleBackColor = true;
             // 
-            // btnFactura_Pre
+            // btFactura_Presupuesto
             // 
-            this.btnFactura_Pre.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnFactura_Pre.Location = new System.Drawing.Point(1014, 0);
-            this.btnFactura_Pre.Name = "btnFactura_Pre";
-            this.btnFactura_Pre.Size = new System.Drawing.Size(75, 20);
-            this.btnFactura_Pre.TabIndex = 3;
-            this.btnFactura_Pre.Text = "Gen.Factur.";
-            this.btnFactura_Pre.UseVisualStyleBackColor = true;
+            this.btFactura_Presupuesto.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btFactura_Presupuesto.Location = new System.Drawing.Point(1014, 0);
+            this.btFactura_Presupuesto.Name = "btFactura_Presupuesto";
+            this.btFactura_Presupuesto.Size = new System.Drawing.Size(75, 20);
+            this.btFactura_Presupuesto.TabIndex = 3;
+            this.btFactura_Presupuesto.Text = "Gen.Factur.";
+            this.btFactura_Presupuesto.UseVisualStyleBackColor = true;
             // 
-            // btnBorrarPresupuesto_Pre
+            // btBorrarPresupuesto_Presupuesto
             // 
-            this.btnBorrarPresupuesto_Pre.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnBorrarPresupuesto_Pre.Location = new System.Drawing.Point(1089, 0);
-            this.btnBorrarPresupuesto_Pre.Name = "btnBorrarPresupuesto_Pre";
-            this.btnBorrarPresupuesto_Pre.Size = new System.Drawing.Size(75, 20);
-            this.btnBorrarPresupuesto_Pre.TabIndex = 4;
-            this.btnBorrarPresupuesto_Pre.Text = "Borrar Pre.";
-            this.btnBorrarPresupuesto_Pre.UseVisualStyleBackColor = true;
+            this.btBorrarPresupuesto_Presupuesto.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btBorrarPresupuesto_Presupuesto.Location = new System.Drawing.Point(1089, 0);
+            this.btBorrarPresupuesto_Presupuesto.Name = "btBorrarPresupuesto_Presupuesto";
+            this.btBorrarPresupuesto_Presupuesto.Size = new System.Drawing.Size(75, 20);
+            this.btBorrarPresupuesto_Presupuesto.TabIndex = 4;
+            this.btBorrarPresupuesto_Presupuesto.Text = "Borrar Pre.";
+            this.btBorrarPresupuesto_Presupuesto.UseVisualStyleBackColor = true;
             // 
             // flowLayoutPanel3Producto_Pre
             // 
             this.flowLayoutPanel3Producto_Pre.AutoScroll = true;
-            this.flowLayoutPanel3Producto_Pre.Controls.Add(this.Referencia_Pre);
-            this.flowLayoutPanel3Producto_Pre.Controls.Add(this.Descripción_Pre);
-            this.flowLayoutPanel3Producto_Pre.Controls.Add(this.PVP_Pre);
-            this.flowLayoutPanel3Producto_Pre.Controls.Add(this.Cantidad_Pre);
-            this.flowLayoutPanel3Producto_Pre.Controls.Add(this.Descuento_Pre);
-            this.flowLayoutPanel3Producto_Pre.Controls.Add(this.Total_Linea_Pre);
-            this.flowLayoutPanel3Producto_Pre.Controls.Add(this.IVA_Producto_Pre);
+            this.flowLayoutPanel3Producto_Pre.Controls.Add(this.Referencia_Presupuesto);
+            this.flowLayoutPanel3Producto_Pre.Controls.Add(this.Descripción_Presupuesto);
+            this.flowLayoutPanel3Producto_Pre.Controls.Add(this.PVP_Presupuesto);
+            this.flowLayoutPanel3Producto_Pre.Controls.Add(this.Cantidad_Presupuesto);
+            this.flowLayoutPanel3Producto_Pre.Controls.Add(this.Descuento_Presupuesto);
+            this.flowLayoutPanel3Producto_Pre.Controls.Add(this.Total_Linea_Presupuesto);
+            this.flowLayoutPanel3Producto_Pre.Controls.Add(this.IVA_Producto_Presupuesto);
             this.flowLayoutPanel3Producto_Pre.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel3Producto_Pre.Location = new System.Drawing.Point(3, 290);
             this.flowLayoutPanel3Producto_Pre.Margin = new System.Windows.Forms.Padding(3, 0, 0, 0);
@@ -634,67 +634,67 @@ namespace Gestaller
             this.flowLayoutPanel3Producto_Pre.Size = new System.Drawing.Size(1161, 54);
             this.flowLayoutPanel3Producto_Pre.TabIndex = 9;
             // 
-            // Referencia_Pre
+            // Referencia_Presupuesto
             // 
-            this.Referencia_Pre.CueText = "Ref.Producto";
-            this.Referencia_Pre.FormattingEnabled = true;
-            this.Referencia_Pre.Location = new System.Drawing.Point(3, 3);
-            this.Referencia_Pre.Name = "Referencia_Pre";
-            this.Referencia_Pre.Size = new System.Drawing.Size(121, 21);
-            this.Referencia_Pre.TabIndex = 0;
-            this.Referencia_Pre.SelectionChangeCommitted += new System.EventHandler(this.Referencia_Pre_SelectionChangeCommitted);
+            this.Referencia_Presupuesto.CueText = "Ref.Producto";
+            this.Referencia_Presupuesto.FormattingEnabled = true;
+            this.Referencia_Presupuesto.Location = new System.Drawing.Point(3, 3);
+            this.Referencia_Presupuesto.Name = "Referencia_Presupuesto";
+            this.Referencia_Presupuesto.Size = new System.Drawing.Size(121, 21);
+            this.Referencia_Presupuesto.TabIndex = 0;
+            this.Referencia_Presupuesto.SelectionChangeCommitted += new System.EventHandler(this.Referencia_Pre_SelectionChangeCommitted);
             // 
-            // Descripción_Pre
+            // Descripción_Presupuesto
             // 
-            this.Descripción_Pre.CueText = "Decripción";
-            this.Descripción_Pre.FormattingEnabled = true;
-            this.Descripción_Pre.Location = new System.Drawing.Point(130, 3);
-            this.Descripción_Pre.Name = "Descripción_Pre";
-            this.Descripción_Pre.Size = new System.Drawing.Size(375, 21);
-            this.Descripción_Pre.TabIndex = 1;
-            this.Descripción_Pre.SelectionChangeCommitted += new System.EventHandler(this.Descripción_Pre_SelectionChangeCommitted);
+            this.Descripción_Presupuesto.CueText = "Decripción";
+            this.Descripción_Presupuesto.FormattingEnabled = true;
+            this.Descripción_Presupuesto.Location = new System.Drawing.Point(130, 3);
+            this.Descripción_Presupuesto.Name = "Descripción_Presupuesto";
+            this.Descripción_Presupuesto.Size = new System.Drawing.Size(375, 21);
+            this.Descripción_Presupuesto.TabIndex = 1;
+            this.Descripción_Presupuesto.SelectionChangeCommitted += new System.EventHandler(this.Descripción_Pre_SelectionChangeCommitted);
             // 
-            // PVP_Pre
+            // PVP_Presupuesto
             // 
-            this.PVP_Pre.CueText = "P.V.P.";
-            this.PVP_Pre.Location = new System.Drawing.Point(511, 3);
-            this.PVP_Pre.Name = "PVP_Pre";
-            this.PVP_Pre.Size = new System.Drawing.Size(121, 20);
-            this.PVP_Pre.TabIndex = 2;
+            this.PVP_Presupuesto.CueText = "P.V.P.";
+            this.PVP_Presupuesto.Location = new System.Drawing.Point(511, 3);
+            this.PVP_Presupuesto.Name = "PVP_Presupuesto";
+            this.PVP_Presupuesto.Size = new System.Drawing.Size(121, 20);
+            this.PVP_Presupuesto.TabIndex = 2;
             // 
-            // Cantidad_Pre
+            // Cantidad_Presupuesto
             // 
-            this.Cantidad_Pre.CueText = "Cantidad";
-            this.Cantidad_Pre.FormattingEnabled = true;
-            this.Cantidad_Pre.Location = new System.Drawing.Point(638, 3);
-            this.Cantidad_Pre.Name = "Cantidad_Pre";
-            this.Cantidad_Pre.Size = new System.Drawing.Size(121, 21);
-            this.Cantidad_Pre.TabIndex = 3;
+            this.Cantidad_Presupuesto.CueText = "Cantidad";
+            this.Cantidad_Presupuesto.FormattingEnabled = true;
+            this.Cantidad_Presupuesto.Location = new System.Drawing.Point(638, 3);
+            this.Cantidad_Presupuesto.Name = "Cantidad_Presupuesto";
+            this.Cantidad_Presupuesto.Size = new System.Drawing.Size(121, 21);
+            this.Cantidad_Presupuesto.TabIndex = 3;
             // 
-            // Descuento_Pre
+            // Descuento_Presupuesto
             // 
-            this.Descuento_Pre.CueText = "Descuento";
-            this.Descuento_Pre.FormattingEnabled = true;
-            this.Descuento_Pre.Location = new System.Drawing.Point(765, 3);
-            this.Descuento_Pre.Name = "Descuento_Pre";
-            this.Descuento_Pre.Size = new System.Drawing.Size(121, 21);
-            this.Descuento_Pre.TabIndex = 4;
+            this.Descuento_Presupuesto.CueText = "Descuento";
+            this.Descuento_Presupuesto.FormattingEnabled = true;
+            this.Descuento_Presupuesto.Location = new System.Drawing.Point(765, 3);
+            this.Descuento_Presupuesto.Name = "Descuento_Presupuesto";
+            this.Descuento_Presupuesto.Size = new System.Drawing.Size(121, 21);
+            this.Descuento_Presupuesto.TabIndex = 4;
             // 
-            // Total_Linea_Pre
+            // Total_Linea_Presupuesto
             // 
-            this.Total_Linea_Pre.CueText = "Total Línea";
-            this.Total_Linea_Pre.Location = new System.Drawing.Point(892, 3);
-            this.Total_Linea_Pre.Name = "Total_Linea_Pre";
-            this.Total_Linea_Pre.Size = new System.Drawing.Size(121, 20);
-            this.Total_Linea_Pre.TabIndex = 5;
+            this.Total_Linea_Presupuesto.CueText = "Total Línea";
+            this.Total_Linea_Presupuesto.Location = new System.Drawing.Point(892, 3);
+            this.Total_Linea_Presupuesto.Name = "Total_Linea_Presupuesto";
+            this.Total_Linea_Presupuesto.Size = new System.Drawing.Size(121, 20);
+            this.Total_Linea_Presupuesto.TabIndex = 5;
             // 
-            // IVA_Producto_Pre
+            // IVA_Producto_Presupuesto
             // 
-            this.IVA_Producto_Pre.CueText = "I.V.A.";
-            this.IVA_Producto_Pre.Location = new System.Drawing.Point(1019, 3);
-            this.IVA_Producto_Pre.Name = "IVA_Producto_Pre";
-            this.IVA_Producto_Pre.Size = new System.Drawing.Size(121, 20);
-            this.IVA_Producto_Pre.TabIndex = 6;
+            this.IVA_Producto_Presupuesto.CueText = "I.V.A.";
+            this.IVA_Producto_Presupuesto.Location = new System.Drawing.Point(1019, 3);
+            this.IVA_Producto_Presupuesto.Name = "IVA_Producto_Presupuesto";
+            this.IVA_Producto_Presupuesto.Size = new System.Drawing.Size(121, 20);
+            this.IVA_Producto_Presupuesto.TabIndex = 6;
             // 
             // label4Observacion_Pre
             // 
@@ -709,10 +709,10 @@ namespace Gestaller
             // 
             // panel2_Pre
             // 
-            this.panel2_Pre.Controls.Add(this.btnFirstPage_Pre);
-            this.panel2_Pre.Controls.Add(this.btnPreviousPage_Pre);
-            this.panel2_Pre.Controls.Add(this.btnnNextPage_Pre);
-            this.panel2_Pre.Controls.Add(this.btnLastPage_Pre);
+            this.panel2_Pre.Controls.Add(this.btFirstPage_Presupuesto);
+            this.panel2_Pre.Controls.Add(this.btPreviousPage_Presupuesto);
+            this.panel2_Pre.Controls.Add(this.btNextPage_Presupuesto);
+            this.panel2_Pre.Controls.Add(this.btLastPage_Presupuesto);
             this.panel2_Pre.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2_Pre.Location = new System.Drawing.Point(0, 247);
             this.panel2_Pre.Margin = new System.Windows.Forms.Padding(0);
@@ -720,45 +720,45 @@ namespace Gestaller
             this.panel2_Pre.Size = new System.Drawing.Size(1164, 23);
             this.panel2_Pre.TabIndex = 7;
             // 
-            // btnFirstPage_Pre
+            // btFirstPage_Presupuesto
             // 
-            this.btnFirstPage_Pre.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnFirstPage_Pre.Location = new System.Drawing.Point(1064, 0);
-            this.btnFirstPage_Pre.Name = "btnFirstPage_Pre";
-            this.btnFirstPage_Pre.Size = new System.Drawing.Size(25, 23);
-            this.btnFirstPage_Pre.TabIndex = 0;
-            this.btnFirstPage_Pre.Text = "|<";
-            this.btnFirstPage_Pre.UseVisualStyleBackColor = true;
+            this.btFirstPage_Presupuesto.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btFirstPage_Presupuesto.Location = new System.Drawing.Point(1064, 0);
+            this.btFirstPage_Presupuesto.Name = "btFirstPage_Presupuesto";
+            this.btFirstPage_Presupuesto.Size = new System.Drawing.Size(25, 23);
+            this.btFirstPage_Presupuesto.TabIndex = 0;
+            this.btFirstPage_Presupuesto.Text = "|<";
+            this.btFirstPage_Presupuesto.UseVisualStyleBackColor = true;
             // 
-            // btnPreviousPage_Pre
+            // btPreviousPage_Presupuesto
             // 
-            this.btnPreviousPage_Pre.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnPreviousPage_Pre.Location = new System.Drawing.Point(1089, 0);
-            this.btnPreviousPage_Pre.Name = "btnPreviousPage_Pre";
-            this.btnPreviousPage_Pre.Size = new System.Drawing.Size(25, 23);
-            this.btnPreviousPage_Pre.TabIndex = 1;
-            this.btnPreviousPage_Pre.Text = "<";
-            this.btnPreviousPage_Pre.UseVisualStyleBackColor = true;
+            this.btPreviousPage_Presupuesto.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btPreviousPage_Presupuesto.Location = new System.Drawing.Point(1089, 0);
+            this.btPreviousPage_Presupuesto.Name = "btPreviousPage_Presupuesto";
+            this.btPreviousPage_Presupuesto.Size = new System.Drawing.Size(25, 23);
+            this.btPreviousPage_Presupuesto.TabIndex = 1;
+            this.btPreviousPage_Presupuesto.Text = "<";
+            this.btPreviousPage_Presupuesto.UseVisualStyleBackColor = true;
             // 
-            // btnnNextPage_Pre
+            // btNextPage_Presupuesto
             // 
-            this.btnnNextPage_Pre.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnnNextPage_Pre.Location = new System.Drawing.Point(1114, 0);
-            this.btnnNextPage_Pre.Name = "btnnNextPage_Pre";
-            this.btnnNextPage_Pre.Size = new System.Drawing.Size(25, 23);
-            this.btnnNextPage_Pre.TabIndex = 2;
-            this.btnnNextPage_Pre.Text = ">";
-            this.btnnNextPage_Pre.UseVisualStyleBackColor = true;
+            this.btNextPage_Presupuesto.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btNextPage_Presupuesto.Location = new System.Drawing.Point(1114, 0);
+            this.btNextPage_Presupuesto.Name = "btNextPage_Presupuesto";
+            this.btNextPage_Presupuesto.Size = new System.Drawing.Size(25, 23);
+            this.btNextPage_Presupuesto.TabIndex = 2;
+            this.btNextPage_Presupuesto.Text = ">";
+            this.btNextPage_Presupuesto.UseVisualStyleBackColor = true;
             // 
-            // btnLastPage_Pre
+            // btLastPage_Presupuesto
             // 
-            this.btnLastPage_Pre.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnLastPage_Pre.Location = new System.Drawing.Point(1139, 0);
-            this.btnLastPage_Pre.Name = "btnLastPage_Pre";
-            this.btnLastPage_Pre.Size = new System.Drawing.Size(25, 23);
-            this.btnLastPage_Pre.TabIndex = 3;
-            this.btnLastPage_Pre.Text = ">|";
-            this.btnLastPage_Pre.UseVisualStyleBackColor = true;
+            this.btLastPage_Presupuesto.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btLastPage_Presupuesto.Location = new System.Drawing.Point(1139, 0);
+            this.btLastPage_Presupuesto.Name = "btLastPage_Presupuesto";
+            this.btLastPage_Presupuesto.Size = new System.Drawing.Size(25, 23);
+            this.btLastPage_Presupuesto.TabIndex = 3;
+            this.btLastPage_Presupuesto.Text = ">|";
+            this.btLastPage_Presupuesto.UseVisualStyleBackColor = true;
             // 
             // tabPageProforma
             // 
@@ -1894,18 +1894,18 @@ namespace Gestaller
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1Presupuesto;
         private System.Windows.Forms.Label label1Cliente_Pre;
         private System.Windows.Forms.Panel panel1_Pre;
-        private System.Windows.Forms.Button btn_Search_Pre;
+        private System.Windows.Forms.Button btBuscar_Presupuesto;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1Cliente_Pre;
         private System.Windows.Forms.Label label2Presupuesto_Pre;
-        private Views.CueComboBox Cliente_Pre;
-        private Views.CueComboBox Matricula_Pre;
-        private Views.CueComboBox Marca_Pre;
-        private Views.CueTextBox Km_Pre;
+        private Views.CueComboBox Cliente_Presupuesto;
+        private Views.CueComboBox Matricula_Presupuesto;
+        private Views.CueComboBox Marca_Presupuesto;
+        private Views.CueTextBox Km_Presupuesto;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2Presupuesto_Pre;
-        private Views.CueComboBox Presupuesto_Pre;
-        private Views.CueComboBox Proforma_Pre;
-        private Views.CueComboBox Factura_Pre;
-        private System.Windows.Forms.DateTimePicker Fecha_Pre;
+        private Views.CueComboBox Presupuesto_Presupuesto;
+        private Views.CueComboBox Proforma_Presupuesto;
+        private Views.CueComboBox Factura_Presupuesto;
+        private System.Windows.Forms.DateTimePicker Fecha_Presupuesto;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1Proforma;
         private System.Windows.Forms.Label label1Cliente_Pro;
         private System.Windows.Forms.Panel panel1_Pro;
@@ -1954,11 +1954,11 @@ namespace Gestaller
         private System.Windows.Forms.Button btnBorrarFactura_F;
         private System.Windows.Forms.DataGridView Grid_Factura;
         private System.Windows.Forms.Panel panel2_Pre;
-        private System.Windows.Forms.Button btnFirstPage_Pre;
-        private System.Windows.Forms.Button btnPreviousPage_Pre;
-        private System.Windows.Forms.Button btnnNextPage_Pre;
-        private System.Windows.Forms.Button btnLastPage_Pre;
-        private System.Windows.Forms.RichTextBox Observaciones_Pre;
+        private System.Windows.Forms.Button btFirstPage_Presupuesto;
+        private System.Windows.Forms.Button btPreviousPage_Presupuesto;
+        private System.Windows.Forms.Button btNextPage_Presupuesto;
+        private System.Windows.Forms.Button btLastPage_Presupuesto;
+        private System.Windows.Forms.RichTextBox Observaciones_Presupuesto;
         private System.Windows.Forms.Panel panel2_Pro;
         private System.Windows.Forms.Button btnFirstPage_Proforma;
         private System.Windows.Forms.Button btnPreviousPage_Proforma;
@@ -1966,16 +1966,16 @@ namespace Gestaller
         private System.Windows.Forms.Button btnLastPage_Proforma;
         private System.Windows.Forms.RichTextBox Observaciones_Proforma;
         private System.Windows.Forms.Panel panel3_Pre;
-        private System.Windows.Forms.Button btnAnadir_Pre;
-        private System.Windows.Forms.Button btnBorrarObj_Pre;
-        private System.Windows.Forms.Button btnModificar_Pre;
-        private System.Windows.Forms.Button btnDevolucion_Pre;
+        private System.Windows.Forms.Button btAnadir_Presupuesto;
+        private System.Windows.Forms.Button btBorrarObj_Presupuesto;
+        private System.Windows.Forms.Button btModificar_Presupuesto;
+        private System.Windows.Forms.Button btDevolucion_Presupuesto;
         private System.Windows.Forms.DataGridView Grid_Presupuesto;
         private System.Windows.Forms.Panel panel4_Pre;
-        private System.Windows.Forms.Button btnPresupuestor_Pre;
-        private System.Windows.Forms.Button btnProforma_Pre;
-        private System.Windows.Forms.Button btnFactura_Pre;
-        private System.Windows.Forms.Button btnBorrarPresupuesto_Pre;
+        private System.Windows.Forms.Button btPresupuestor_Presupuesto;
+        private System.Windows.Forms.Button btProforma_Presupuesto;
+        private System.Windows.Forms.Button btFactura_Presupuesto;
+        private System.Windows.Forms.Button btBorrarPresupuesto_Presupuesto;
         private System.Windows.Forms.Panel panel3_Pro;
         private System.Windows.Forms.Button btnAnadir_Proforma;
         private System.Windows.Forms.Button btnBorrarObj_Proforma;
@@ -1986,17 +1986,17 @@ namespace Gestaller
         private System.Windows.Forms.Button btnProforma_Proforma;
         private System.Windows.Forms.Button btnFactura_Proforma;
         private System.Windows.Forms.Button btnBorrarProforma_Proforma;
-        private Views.CueComboBox Referencia_Pre;
-        private Views.CueComboBox Descripción_Pre;
-        private Views.CueTextBox PVP_Pre;
-        private Views.CueComboBox Cantidad_Pre;
-        private Views.CueComboBox Descuento_Pre;
-        private Views.CueTextBox Total_Linea_Pre;
-        private Views.CueTextBox IVA_Producto_Pre;
+        private Views.CueComboBox Referencia_Presupuesto;
+        private Views.CueComboBox Descripción_Presupuesto;
+        private Views.CueTextBox PVP_Presupuesto;
+        private Views.CueComboBox Cantidad_Presupuesto;
+        private Views.CueComboBox Descuento_Presupuesto;
+        private Views.CueTextBox Total_Linea_Presupuesto;
+        private Views.CueTextBox IVA_Producto_Presupuesto;
         private Views.CueTextBox Base_Factura;
         private Views.CueTextBox IVA_Factura;
         private Views.CueTextBox Total_Factura;
-        private Views.CueComboBox Modelo_Pre;
+        private Views.CueComboBox Modelo_Presupuesto;
         private System.Windows.Forms.Button btnModificar_Proforma;
         private System.Windows.Forms.Label label3Producto_Pre;
         private System.Windows.Forms.Label label4Observacion_Pre;
@@ -2021,7 +2021,7 @@ namespace Gestaller
         private Views.CueComboBox Descuento_Factura;
         private Views.CueTextBox Total_Linea_Factura;
         private Views.CueTextBox IVA_Producto_Factura;
-        private System.Windows.Forms.Button btnImprimir_Pre;
+        private System.Windows.Forms.Button btImprimir_Presupuesto;
         private System.Windows.Forms.Button btnImprimir_Proforma;
         private System.Windows.Forms.Button btnImprimir_F;
         private Views.CueComboBox Marca_Proforma;

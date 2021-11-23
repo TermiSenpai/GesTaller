@@ -58,9 +58,9 @@ namespace Gestaller
             {
                 // Presupuesto
                 case 0:
-                    Referencia_Pre.Text = items[_selectedCell].reference.ToString();
-                    Descripción_Pre.Text = items[_selectedCell].description;
-                    PVP_Pre.Text = items[_selectedCell].PVP.ToString();
+                    Referencia_Presupuesto.Text = items[_selectedCell].reference.ToString();
+                    Descripción_Presupuesto.Text = items[_selectedCell].description;
+                    PVP_Presupuesto.Text = items[_selectedCell].PVP.ToString();
                     break;
 
                 // Proforma
@@ -85,15 +85,15 @@ namespace Gestaller
             {
                 // Presupuesto tab
                 case 0:
-                    Cliente_Pre.Text = _clientVehicle.contact_fullName;
-                    Matricula_Pre.Text = _clientVehicle.vehicle_enroll;
-                    Marca_Pre.Text = _clientVehicle.vehicle_brand;
-                    Modelo_Pre.Text = _clientVehicle.vehicle_model;
-                    Km_Pre.Text = _clientVehicle.vehicle_kms;
-                    Presupuesto_Pre.Text = _order.numBudget.ToString();
-                    Proforma_Pre.Text = _order.numProForma.ToString();
-                    Factura_Pre.Text = _order.numInvoice.ToString();
-                    Fecha_Pre.Value = _order.dateBudget;
+                    Cliente_Presupuesto.Text = _clientVehicle.contact_fullName;
+                    Matricula_Presupuesto.Text = _clientVehicle.vehicle_enroll;
+                    Marca_Presupuesto.Text = _clientVehicle.vehicle_brand;
+                    Modelo_Presupuesto.Text = _clientVehicle.vehicle_model;
+                    Km_Presupuesto.Text = _clientVehicle.vehicle_kms;
+                    Presupuesto_Presupuesto.Text = _order.numBudget.ToString();
+                    Proforma_Presupuesto.Text = _order.numProForma.ToString();
+                    Factura_Presupuesto.Text = _order.numInvoice.ToString();
+                    Fecha_Presupuesto.Value = _order.dateBudget;
                     break;
 
                 // Proforma tab
@@ -148,8 +148,8 @@ namespace Gestaller
 
             for (int i = 0; i < items.Count(); i++)
             {
-                Referencia_Pre.Items.Add(items[i].reference);
-                Descripción_Pre.Items.Add(items[i].description);
+                Referencia_Presupuesto.Items.Add(items[i].reference);
+                Descripción_Presupuesto.Items.Add(items[i].description);
 
                 Referencia_Proforma.Items.Add(items[i].reference);
                 Descripción_Proforma.Items.Add(items[i].description);
@@ -167,13 +167,13 @@ namespace Gestaller
             for (int i = 0; i < orders.Count(); i++)
             {
                 // [PRESUPUESTO]
-                Factura_Pre.Items.Add(orders[i].numInvoice);
-                Proforma_Pre.Items.Add(orders[i].numProForma);
-                Presupuesto_Pre.Items.Add(orders[i].numBudget);
-                Modelo_Pre.Items.Add(contactsVehicles[i].vehicle_model);
-                Marca_Pre.Items.Add(contactsVehicles[i].vehicle_brand);
-                Matricula_Pre.Items.Add(contactsVehicles[i].vehicle_enroll);
-                Cliente_Pre.Items.Add(contactsVehicles[i].contact_fullName);
+                Factura_Presupuesto.Items.Add(orders[i].numInvoice);
+                Proforma_Presupuesto.Items.Add(orders[i].numProForma);
+                Presupuesto_Presupuesto.Items.Add(orders[i].numBudget);
+                Modelo_Presupuesto.Items.Add(contactsVehicles[i].vehicle_model);
+                Marca_Presupuesto.Items.Add(contactsVehicles[i].vehicle_brand);
+                Matricula_Presupuesto.Items.Add(contactsVehicles[i].vehicle_enroll);
+                Cliente_Presupuesto.Items.Add(contactsVehicles[i].contact_fullName);
 
                 // [PROFORMA]
                 Factura_Proforma.Items.Add(orders[i].numInvoice);
@@ -208,31 +208,31 @@ namespace Gestaller
 
         private void cueComboBox1Cliente_Cliente_Pre_SelectionChangeCommitted(object sender, EventArgs e)
         {
-            _comboIndex = Cliente_Pre.SelectedIndex;
+            _comboIndex = Cliente_Presupuesto.SelectedIndex;
             changesActiveElements();
         }
 
         private void cueComboBox2Cliente_Matricula_Pre_SelectionChangeCommitted(object sender, EventArgs e)
         {
-            _comboIndex = Matricula_Pre.SelectedIndex;
+            _comboIndex = Matricula_Presupuesto.SelectedIndex;
             changesActiveElements();
         }
 
         private void cueComboBox1Presupuesto_BudgetNum_Pre_SelectionChangeCommitted(object sender, EventArgs e)
         {
-            _comboIndex = Presupuesto_Pre.SelectedIndex;
+            _comboIndex = Presupuesto_Presupuesto.SelectedIndex;
             changesActiveElements();
         }
 
         private void cueComboBox2Presupuesto_ProformaNum_Pre_SelectionChangeCommitted(object sender, EventArgs e)
         {
-            _comboIndex = Proforma_Pre.SelectedIndex;
+            _comboIndex = Proforma_Presupuesto.SelectedIndex;
             changesActiveElements();
         }
 
         private void cueComboBox3Presupuesto_InvoiceNum_Pre_SelectionChangeCommitted(object sender, EventArgs e)
         {
-            _comboIndex = Factura_Pre.SelectedIndex;
+            _comboIndex = Factura_Presupuesto.SelectedIndex;
             changesActiveElements();
         }
 
@@ -242,13 +242,13 @@ namespace Gestaller
 
         private void Referencia_Pre_SelectionChangeCommitted(object sender, EventArgs e)
         {
-            _selectedCell = Referencia_Pre.SelectedIndex;
+            _selectedCell = Referencia_Presupuesto.SelectedIndex;
             setItemsToComboBox();
         }
 
         private void Descripción_Pre_SelectionChangeCommitted(object sender, EventArgs e)
         {
-            _selectedCell = Descripción_Pre.SelectedIndex;
+            _selectedCell = Descripción_Presupuesto.SelectedIndex;
             setItemsToComboBox();
         }
 
