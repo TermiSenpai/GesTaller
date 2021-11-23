@@ -50,10 +50,20 @@ namespace Gestaller
             int selectedCell = dataGridViewDepositos.CurrentCell.RowIndex;
             cellClickEvent(selectedCell);
         }
+        
+        private void button1Create_Click(object sender, EventArgs e)
+        {
+            createIncoming();
+        }
 
         #endregion
 
         #region private methods
+
+        private void createIncoming()
+        {
+
+        }
 
         private void changesComboBoxes()
         {
@@ -85,7 +95,7 @@ namespace Gestaller
                 if (control is CueComboBox)
                 {
                     ((CueComboBox)control).ResetText();
-                    ((CueComboBox)control).SelectedIndex = -1;
+                    //((CueComboBox)control).SelectedIndex = -1;
                 }
 
                 if (control is CueTextBox)
@@ -97,6 +107,9 @@ namespace Gestaller
                 {
                     ((DateTimePicker)control).Value = DateTime.Today;
                 }
+
+                if (control is RichTextBox)
+                    ((RichTextBox)control).ResetText();
             }
         }
 

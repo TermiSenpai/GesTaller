@@ -274,6 +274,7 @@ namespace Gestaller
             this.button1Create.TabIndex = 0;
             this.button1Create.Text = "Crear";
             this.button1Create.UseVisualStyleBackColor = true;
+            this.button1Create.Click += new System.EventHandler(this.button1Create_Click);
             // 
             // button2Modificar
             // 
@@ -403,7 +404,7 @@ namespace Gestaller
             // dateTimePicker2
             // 
             this.dateTimePicker2.CustomFormat = " dd";
-            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimePicker2.Location = new System.Drawing.Point(124, 3);
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(121, 20);
