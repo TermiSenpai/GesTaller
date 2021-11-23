@@ -87,7 +87,7 @@ namespace Gestaller
             this.Total_Proforma = new Gestaller.Views.CueTextBox();
             this.label1Cliente_Pro = new System.Windows.Forms.Label();
             this.panel1_Pro = new System.Windows.Forms.Panel();
-            this.btn_Search_Proforma = new System.Windows.Forms.Button();
+            this.btBuscar_Proforma = new System.Windows.Forms.Button();
             this.flowLayoutPanel1Cliente_Pro = new System.Windows.Forms.FlowLayoutPanel();
             this.Cliente_Proforma = new Gestaller.Views.CueComboBox();
             this.Matricula_Proforma = new Gestaller.Views.CueComboBox();
@@ -101,24 +101,24 @@ namespace Gestaller
             this.Factura_Proforma = new Gestaller.Views.CueComboBox();
             this.Fecha_Proforma = new System.Windows.Forms.DateTimePicker();
             this.panel3_Pro = new System.Windows.Forms.Panel();
-            this.btnAnadir_Proforma = new System.Windows.Forms.Button();
-            this.btnBorrarObj_Proforma = new System.Windows.Forms.Button();
-            this.btnModificar_Proforma = new System.Windows.Forms.Button();
-            this.btnDevolucion_Proforma = new System.Windows.Forms.Button();
+            this.btAnadir_Proforma = new System.Windows.Forms.Button();
+            this.btBorrarObj_Proforma = new System.Windows.Forms.Button();
+            this.btModificar_Proforma = new System.Windows.Forms.Button();
+            this.btDevolucion_Proforma = new System.Windows.Forms.Button();
             this.label3Producto_Pro = new System.Windows.Forms.Label();
             this.label4Observacion_Pro = new System.Windows.Forms.Label();
             this.panel2_Pro = new System.Windows.Forms.Panel();
-            this.btnFirstPage_Proforma = new System.Windows.Forms.Button();
-            this.btnPreviousPage_Proforma = new System.Windows.Forms.Button();
-            this.btnNextPage_Proforma = new System.Windows.Forms.Button();
-            this.btnLastPage_Proforma = new System.Windows.Forms.Button();
+            this.btFirstPage_Proforma = new System.Windows.Forms.Button();
+            this.btPreviousPage_Proforma = new System.Windows.Forms.Button();
+            this.btNextPage_Proforma = new System.Windows.Forms.Button();
+            this.btLastPage_Proforma = new System.Windows.Forms.Button();
             this.Grid_Proforma = new System.Windows.Forms.DataGridView();
             this.panel4_Pro = new System.Windows.Forms.Panel();
-            this.btnImprimir_Proforma = new System.Windows.Forms.Button();
-            this.btnPresupuesto_Proforma = new System.Windows.Forms.Button();
-            this.btnProforma_Proforma = new System.Windows.Forms.Button();
-            this.btnFactura_Proforma = new System.Windows.Forms.Button();
-            this.btnBorrarProforma_Proforma = new System.Windows.Forms.Button();
+            this.btImprimir_Proforma = new System.Windows.Forms.Button();
+            this.btPresupuesto_Proforma = new System.Windows.Forms.Button();
+            this.btProforma_Proforma = new System.Windows.Forms.Button();
+            this.btFactura_Proforma = new System.Windows.Forms.Button();
+            this.btBorrarProforma_Proforma = new System.Windows.Forms.Button();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.Referencia_Proforma = new Gestaller.Views.CueComboBox();
             this.Descripción_Proforma = new Gestaller.Views.CueComboBox();
@@ -862,7 +862,7 @@ namespace Gestaller
             // 
             // panel1_Pro
             // 
-            this.panel1_Pro.Controls.Add(this.btn_Search_Proforma);
+            this.panel1_Pro.Controls.Add(this.btBuscar_Proforma);
             this.panel1_Pro.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1_Pro.Location = new System.Drawing.Point(0, 76);
             this.panel1_Pro.Margin = new System.Windows.Forms.Padding(0);
@@ -870,15 +870,15 @@ namespace Gestaller
             this.panel1_Pro.Size = new System.Drawing.Size(1164, 23);
             this.panel1_Pro.TabIndex = 2;
             // 
-            // btn_Search_Proforma
+            // btBuscar_Proforma
             // 
-            this.btn_Search_Proforma.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btn_Search_Proforma.Location = new System.Drawing.Point(1089, 0);
-            this.btn_Search_Proforma.Name = "btn_Search_Proforma";
-            this.btn_Search_Proforma.Size = new System.Drawing.Size(75, 23);
-            this.btn_Search_Proforma.TabIndex = 0;
-            this.btn_Search_Proforma.Text = "Buscar";
-            this.btn_Search_Proforma.UseVisualStyleBackColor = true;
+            this.btBuscar_Proforma.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btBuscar_Proforma.Location = new System.Drawing.Point(1089, 0);
+            this.btBuscar_Proforma.Name = "btBuscar_Proforma";
+            this.btBuscar_Proforma.Size = new System.Drawing.Size(75, 23);
+            this.btBuscar_Proforma.TabIndex = 0;
+            this.btBuscar_Proforma.Text = "Buscar";
+            this.btBuscar_Proforma.UseVisualStyleBackColor = true;
             // 
             // flowLayoutPanel1Cliente_Pro
             // 
@@ -1004,10 +1004,10 @@ namespace Gestaller
             // 
             // panel3_Pro
             // 
-            this.panel3_Pro.Controls.Add(this.btnAnadir_Proforma);
-            this.panel3_Pro.Controls.Add(this.btnBorrarObj_Proforma);
-            this.panel3_Pro.Controls.Add(this.btnModificar_Proforma);
-            this.panel3_Pro.Controls.Add(this.btnDevolucion_Proforma);
+            this.panel3_Pro.Controls.Add(this.btAnadir_Proforma);
+            this.panel3_Pro.Controls.Add(this.btBorrarObj_Proforma);
+            this.panel3_Pro.Controls.Add(this.btModificar_Proforma);
+            this.panel3_Pro.Controls.Add(this.btDevolucion_Proforma);
             this.panel3_Pro.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3_Pro.Location = new System.Drawing.Point(0, 344);
             this.panel3_Pro.Margin = new System.Windows.Forms.Padding(0);
@@ -1015,45 +1015,45 @@ namespace Gestaller
             this.panel3_Pro.Size = new System.Drawing.Size(1164, 23);
             this.panel3_Pro.TabIndex = 10;
             // 
-            // btnAnadir_Proforma
+            // btAnadir_Proforma
             // 
-            this.btnAnadir_Proforma.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnAnadir_Proforma.Location = new System.Drawing.Point(864, 0);
-            this.btnAnadir_Proforma.Name = "btnAnadir_Proforma";
-            this.btnAnadir_Proforma.Size = new System.Drawing.Size(75, 23);
-            this.btnAnadir_Proforma.TabIndex = 0;
-            this.btnAnadir_Proforma.Text = "Añadir";
-            this.btnAnadir_Proforma.UseVisualStyleBackColor = true;
+            this.btAnadir_Proforma.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btAnadir_Proforma.Location = new System.Drawing.Point(864, 0);
+            this.btAnadir_Proforma.Name = "btAnadir_Proforma";
+            this.btAnadir_Proforma.Size = new System.Drawing.Size(75, 23);
+            this.btAnadir_Proforma.TabIndex = 0;
+            this.btAnadir_Proforma.Text = "Añadir";
+            this.btAnadir_Proforma.UseVisualStyleBackColor = true;
             // 
-            // btnBorrarObj_Proforma
+            // btBorrarObj_Proforma
             // 
-            this.btnBorrarObj_Proforma.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnBorrarObj_Proforma.Location = new System.Drawing.Point(939, 0);
-            this.btnBorrarObj_Proforma.Name = "btnBorrarObj_Proforma";
-            this.btnBorrarObj_Proforma.Size = new System.Drawing.Size(75, 23);
-            this.btnBorrarObj_Proforma.TabIndex = 1;
-            this.btnBorrarObj_Proforma.Text = "Borrar";
-            this.btnBorrarObj_Proforma.UseVisualStyleBackColor = true;
+            this.btBorrarObj_Proforma.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btBorrarObj_Proforma.Location = new System.Drawing.Point(939, 0);
+            this.btBorrarObj_Proforma.Name = "btBorrarObj_Proforma";
+            this.btBorrarObj_Proforma.Size = new System.Drawing.Size(75, 23);
+            this.btBorrarObj_Proforma.TabIndex = 1;
+            this.btBorrarObj_Proforma.Text = "Borrar";
+            this.btBorrarObj_Proforma.UseVisualStyleBackColor = true;
             // 
-            // btnModificar_Proforma
+            // btModificar_Proforma
             // 
-            this.btnModificar_Proforma.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnModificar_Proforma.Location = new System.Drawing.Point(1014, 0);
-            this.btnModificar_Proforma.Name = "btnModificar_Proforma";
-            this.btnModificar_Proforma.Size = new System.Drawing.Size(75, 23);
-            this.btnModificar_Proforma.TabIndex = 2;
-            this.btnModificar_Proforma.Text = "Modificar";
-            this.btnModificar_Proforma.UseVisualStyleBackColor = true;
+            this.btModificar_Proforma.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btModificar_Proforma.Location = new System.Drawing.Point(1014, 0);
+            this.btModificar_Proforma.Name = "btModificar_Proforma";
+            this.btModificar_Proforma.Size = new System.Drawing.Size(75, 23);
+            this.btModificar_Proforma.TabIndex = 2;
+            this.btModificar_Proforma.Text = "Modificar";
+            this.btModificar_Proforma.UseVisualStyleBackColor = true;
             // 
-            // btnDevolucion_Proforma
+            // btDevolucion_Proforma
             // 
-            this.btnDevolucion_Proforma.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnDevolucion_Proforma.Location = new System.Drawing.Point(1089, 0);
-            this.btnDevolucion_Proforma.Name = "btnDevolucion_Proforma";
-            this.btnDevolucion_Proforma.Size = new System.Drawing.Size(75, 23);
-            this.btnDevolucion_Proforma.TabIndex = 3;
-            this.btnDevolucion_Proforma.Text = "Devolución";
-            this.btnDevolucion_Proforma.UseVisualStyleBackColor = true;
+            this.btDevolucion_Proforma.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btDevolucion_Proforma.Location = new System.Drawing.Point(1089, 0);
+            this.btDevolucion_Proforma.Name = "btDevolucion_Proforma";
+            this.btDevolucion_Proforma.Size = new System.Drawing.Size(75, 23);
+            this.btDevolucion_Proforma.TabIndex = 3;
+            this.btDevolucion_Proforma.Text = "Devolución";
+            this.btDevolucion_Proforma.UseVisualStyleBackColor = true;
             // 
             // label3Producto_Pro
             // 
@@ -1079,10 +1079,10 @@ namespace Gestaller
             // 
             // panel2_Pro
             // 
-            this.panel2_Pro.Controls.Add(this.btnFirstPage_Proforma);
-            this.panel2_Pro.Controls.Add(this.btnPreviousPage_Proforma);
-            this.panel2_Pro.Controls.Add(this.btnNextPage_Proforma);
-            this.panel2_Pro.Controls.Add(this.btnLastPage_Proforma);
+            this.panel2_Pro.Controls.Add(this.btFirstPage_Proforma);
+            this.panel2_Pro.Controls.Add(this.btPreviousPage_Proforma);
+            this.panel2_Pro.Controls.Add(this.btNextPage_Proforma);
+            this.panel2_Pro.Controls.Add(this.btLastPage_Proforma);
             this.panel2_Pro.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2_Pro.Location = new System.Drawing.Point(0, 247);
             this.panel2_Pro.Margin = new System.Windows.Forms.Padding(0);
@@ -1090,45 +1090,45 @@ namespace Gestaller
             this.panel2_Pro.Size = new System.Drawing.Size(1164, 23);
             this.panel2_Pro.TabIndex = 7;
             // 
-            // btnFirstPage_Proforma
+            // btFirstPage_Proforma
             // 
-            this.btnFirstPage_Proforma.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnFirstPage_Proforma.Location = new System.Drawing.Point(1064, 0);
-            this.btnFirstPage_Proforma.Name = "btnFirstPage_Proforma";
-            this.btnFirstPage_Proforma.Size = new System.Drawing.Size(25, 23);
-            this.btnFirstPage_Proforma.TabIndex = 0;
-            this.btnFirstPage_Proforma.Text = "|<";
-            this.btnFirstPage_Proforma.UseVisualStyleBackColor = true;
+            this.btFirstPage_Proforma.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btFirstPage_Proforma.Location = new System.Drawing.Point(1064, 0);
+            this.btFirstPage_Proforma.Name = "btFirstPage_Proforma";
+            this.btFirstPage_Proforma.Size = new System.Drawing.Size(25, 23);
+            this.btFirstPage_Proforma.TabIndex = 0;
+            this.btFirstPage_Proforma.Text = "|<";
+            this.btFirstPage_Proforma.UseVisualStyleBackColor = true;
             // 
-            // btnPreviousPage_Proforma
+            // btPreviousPage_Proforma
             // 
-            this.btnPreviousPage_Proforma.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnPreviousPage_Proforma.Location = new System.Drawing.Point(1089, 0);
-            this.btnPreviousPage_Proforma.Name = "btnPreviousPage_Proforma";
-            this.btnPreviousPage_Proforma.Size = new System.Drawing.Size(25, 23);
-            this.btnPreviousPage_Proforma.TabIndex = 1;
-            this.btnPreviousPage_Proforma.Text = "<";
-            this.btnPreviousPage_Proforma.UseVisualStyleBackColor = true;
+            this.btPreviousPage_Proforma.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btPreviousPage_Proforma.Location = new System.Drawing.Point(1089, 0);
+            this.btPreviousPage_Proforma.Name = "btPreviousPage_Proforma";
+            this.btPreviousPage_Proforma.Size = new System.Drawing.Size(25, 23);
+            this.btPreviousPage_Proforma.TabIndex = 1;
+            this.btPreviousPage_Proforma.Text = "<";
+            this.btPreviousPage_Proforma.UseVisualStyleBackColor = true;
             // 
-            // btnNextPage_Proforma
+            // btNextPage_Proforma
             // 
-            this.btnNextPage_Proforma.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnNextPage_Proforma.Location = new System.Drawing.Point(1114, 0);
-            this.btnNextPage_Proforma.Name = "btnNextPage_Proforma";
-            this.btnNextPage_Proforma.Size = new System.Drawing.Size(25, 23);
-            this.btnNextPage_Proforma.TabIndex = 2;
-            this.btnNextPage_Proforma.Text = ">";
-            this.btnNextPage_Proforma.UseVisualStyleBackColor = true;
+            this.btNextPage_Proforma.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btNextPage_Proforma.Location = new System.Drawing.Point(1114, 0);
+            this.btNextPage_Proforma.Name = "btNextPage_Proforma";
+            this.btNextPage_Proforma.Size = new System.Drawing.Size(25, 23);
+            this.btNextPage_Proforma.TabIndex = 2;
+            this.btNextPage_Proforma.Text = ">";
+            this.btNextPage_Proforma.UseVisualStyleBackColor = true;
             // 
-            // btnLastPage_Proforma
+            // btLastPage_Proforma
             // 
-            this.btnLastPage_Proforma.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnLastPage_Proforma.Location = new System.Drawing.Point(1139, 0);
-            this.btnLastPage_Proforma.Name = "btnLastPage_Proforma";
-            this.btnLastPage_Proforma.Size = new System.Drawing.Size(25, 23);
-            this.btnLastPage_Proforma.TabIndex = 3;
-            this.btnLastPage_Proforma.Text = ">|";
-            this.btnLastPage_Proforma.UseVisualStyleBackColor = true;
+            this.btLastPage_Proforma.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btLastPage_Proforma.Location = new System.Drawing.Point(1139, 0);
+            this.btLastPage_Proforma.Name = "btLastPage_Proforma";
+            this.btLastPage_Proforma.Size = new System.Drawing.Size(25, 23);
+            this.btLastPage_Proforma.TabIndex = 3;
+            this.btLastPage_Proforma.Text = ">|";
+            this.btLastPage_Proforma.UseVisualStyleBackColor = true;
             // 
             // Grid_Proforma
             // 
@@ -1143,11 +1143,11 @@ namespace Gestaller
             // 
             // panel4_Pro
             // 
-            this.panel4_Pro.Controls.Add(this.btnImprimir_Proforma);
-            this.panel4_Pro.Controls.Add(this.btnPresupuesto_Proforma);
-            this.panel4_Pro.Controls.Add(this.btnProforma_Proforma);
-            this.panel4_Pro.Controls.Add(this.btnFactura_Proforma);
-            this.panel4_Pro.Controls.Add(this.btnBorrarProforma_Proforma);
+            this.panel4_Pro.Controls.Add(this.btImprimir_Proforma);
+            this.panel4_Pro.Controls.Add(this.btPresupuesto_Proforma);
+            this.panel4_Pro.Controls.Add(this.btProforma_Proforma);
+            this.panel4_Pro.Controls.Add(this.btFactura_Proforma);
+            this.panel4_Pro.Controls.Add(this.btBorrarProforma_Proforma);
             this.panel4_Pro.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel4_Pro.Location = new System.Drawing.Point(0, 526);
             this.panel4_Pro.Margin = new System.Windows.Forms.Padding(0);
@@ -1155,55 +1155,55 @@ namespace Gestaller
             this.panel4_Pro.Size = new System.Drawing.Size(1164, 23);
             this.panel4_Pro.TabIndex = 13;
             // 
-            // btnImprimir_Proforma
+            // btImprimir_Proforma
             // 
-            this.btnImprimir_Proforma.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnImprimir_Proforma.Location = new System.Drawing.Point(789, 0);
-            this.btnImprimir_Proforma.Name = "btnImprimir_Proforma";
-            this.btnImprimir_Proforma.Size = new System.Drawing.Size(75, 23);
-            this.btnImprimir_Proforma.TabIndex = 0;
-            this.btnImprimir_Proforma.Text = "Imprimir";
-            this.btnImprimir_Proforma.UseVisualStyleBackColor = true;
+            this.btImprimir_Proforma.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btImprimir_Proforma.Location = new System.Drawing.Point(789, 0);
+            this.btImprimir_Proforma.Name = "btImprimir_Proforma";
+            this.btImprimir_Proforma.Size = new System.Drawing.Size(75, 23);
+            this.btImprimir_Proforma.TabIndex = 0;
+            this.btImprimir_Proforma.Text = "Imprimir";
+            this.btImprimir_Proforma.UseVisualStyleBackColor = true;
             // 
-            // btnPresupuesto_Proforma
+            // btPresupuesto_Proforma
             // 
-            this.btnPresupuesto_Proforma.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnPresupuesto_Proforma.Location = new System.Drawing.Point(864, 0);
-            this.btnPresupuesto_Proforma.Name = "btnPresupuesto_Proforma";
-            this.btnPresupuesto_Proforma.Size = new System.Drawing.Size(75, 23);
-            this.btnPresupuesto_Proforma.TabIndex = 1;
-            this.btnPresupuesto_Proforma.Text = "Gen. Presu";
-            this.btnPresupuesto_Proforma.UseVisualStyleBackColor = true;
+            this.btPresupuesto_Proforma.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btPresupuesto_Proforma.Location = new System.Drawing.Point(864, 0);
+            this.btPresupuesto_Proforma.Name = "btPresupuesto_Proforma";
+            this.btPresupuesto_Proforma.Size = new System.Drawing.Size(75, 23);
+            this.btPresupuesto_Proforma.TabIndex = 1;
+            this.btPresupuesto_Proforma.Text = "Gen. Presu";
+            this.btPresupuesto_Proforma.UseVisualStyleBackColor = true;
             // 
-            // btnProforma_Proforma
+            // btProforma_Proforma
             // 
-            this.btnProforma_Proforma.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnProforma_Proforma.Location = new System.Drawing.Point(939, 0);
-            this.btnProforma_Proforma.Name = "btnProforma_Proforma";
-            this.btnProforma_Proforma.Size = new System.Drawing.Size(75, 23);
-            this.btnProforma_Proforma.TabIndex = 2;
-            this.btnProforma_Proforma.Text = "Gen. Profor.";
-            this.btnProforma_Proforma.UseVisualStyleBackColor = true;
+            this.btProforma_Proforma.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btProforma_Proforma.Location = new System.Drawing.Point(939, 0);
+            this.btProforma_Proforma.Name = "btProforma_Proforma";
+            this.btProforma_Proforma.Size = new System.Drawing.Size(75, 23);
+            this.btProforma_Proforma.TabIndex = 2;
+            this.btProforma_Proforma.Text = "Gen. Profor.";
+            this.btProforma_Proforma.UseVisualStyleBackColor = true;
             // 
-            // btnFactura_Proforma
+            // btFactura_Proforma
             // 
-            this.btnFactura_Proforma.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnFactura_Proforma.Location = new System.Drawing.Point(1014, 0);
-            this.btnFactura_Proforma.Name = "btnFactura_Proforma";
-            this.btnFactura_Proforma.Size = new System.Drawing.Size(75, 23);
-            this.btnFactura_Proforma.TabIndex = 3;
-            this.btnFactura_Proforma.Text = "Gen.Factur.";
-            this.btnFactura_Proforma.UseVisualStyleBackColor = true;
+            this.btFactura_Proforma.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btFactura_Proforma.Location = new System.Drawing.Point(1014, 0);
+            this.btFactura_Proforma.Name = "btFactura_Proforma";
+            this.btFactura_Proforma.Size = new System.Drawing.Size(75, 23);
+            this.btFactura_Proforma.TabIndex = 3;
+            this.btFactura_Proforma.Text = "Gen.Factur.";
+            this.btFactura_Proforma.UseVisualStyleBackColor = true;
             // 
-            // btnBorrarProforma_Proforma
+            // btBorrarProforma_Proforma
             // 
-            this.btnBorrarProforma_Proforma.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnBorrarProforma_Proforma.Location = new System.Drawing.Point(1089, 0);
-            this.btnBorrarProforma_Proforma.Name = "btnBorrarProforma_Proforma";
-            this.btnBorrarProforma_Proforma.Size = new System.Drawing.Size(75, 23);
-            this.btnBorrarProforma_Proforma.TabIndex = 4;
-            this.btnBorrarProforma_Proforma.Text = "Borrar Pro.";
-            this.btnBorrarProforma_Proforma.UseVisualStyleBackColor = true;
+            this.btBorrarProforma_Proforma.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btBorrarProforma_Proforma.Location = new System.Drawing.Point(1089, 0);
+            this.btBorrarProforma_Proforma.Name = "btBorrarProforma_Proforma";
+            this.btBorrarProforma_Proforma.Size = new System.Drawing.Size(75, 23);
+            this.btBorrarProforma_Proforma.TabIndex = 4;
+            this.btBorrarProforma_Proforma.Text = "Borrar Pro.";
+            this.btBorrarProforma_Proforma.UseVisualStyleBackColor = true;
             // 
             // flowLayoutPanel1
             // 
@@ -1909,7 +1909,7 @@ namespace Gestaller
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1Proforma;
         private System.Windows.Forms.Label label1Cliente_Pro;
         private System.Windows.Forms.Panel panel1_Pro;
-        private System.Windows.Forms.Button btn_Search_Proforma;
+        private System.Windows.Forms.Button btBuscar_Proforma;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1Cliente_Pro;
         private Views.CueComboBox Cliente_Proforma;
         private Views.CueComboBox Matricula_Proforma;
@@ -1960,10 +1960,10 @@ namespace Gestaller
         private System.Windows.Forms.Button btLastPage_Presupuesto;
         private System.Windows.Forms.RichTextBox Observaciones_Presupuesto;
         private System.Windows.Forms.Panel panel2_Pro;
-        private System.Windows.Forms.Button btnFirstPage_Proforma;
-        private System.Windows.Forms.Button btnPreviousPage_Proforma;
-        private System.Windows.Forms.Button btnNextPage_Proforma;
-        private System.Windows.Forms.Button btnLastPage_Proforma;
+        private System.Windows.Forms.Button btFirstPage_Proforma;
+        private System.Windows.Forms.Button btPreviousPage_Proforma;
+        private System.Windows.Forms.Button btNextPage_Proforma;
+        private System.Windows.Forms.Button btLastPage_Proforma;
         private System.Windows.Forms.RichTextBox Observaciones_Proforma;
         private System.Windows.Forms.Panel panel3_Pre;
         private System.Windows.Forms.Button btAnadir_Presupuesto;
@@ -1977,15 +1977,15 @@ namespace Gestaller
         private System.Windows.Forms.Button btFactura_Presupuesto;
         private System.Windows.Forms.Button btBorrarPresupuesto_Presupuesto;
         private System.Windows.Forms.Panel panel3_Pro;
-        private System.Windows.Forms.Button btnAnadir_Proforma;
-        private System.Windows.Forms.Button btnBorrarObj_Proforma;
-        private System.Windows.Forms.Button btnDevolucion_Proforma;
+        private System.Windows.Forms.Button btAnadir_Proforma;
+        private System.Windows.Forms.Button btBorrarObj_Proforma;
+        private System.Windows.Forms.Button btDevolucion_Proforma;
         private System.Windows.Forms.DataGridView Grid_Proforma;
         private System.Windows.Forms.Panel panel4_Pro;
-        private System.Windows.Forms.Button btnPresupuesto_Proforma;
-        private System.Windows.Forms.Button btnProforma_Proforma;
-        private System.Windows.Forms.Button btnFactura_Proforma;
-        private System.Windows.Forms.Button btnBorrarProforma_Proforma;
+        private System.Windows.Forms.Button btPresupuesto_Proforma;
+        private System.Windows.Forms.Button btProforma_Proforma;
+        private System.Windows.Forms.Button btFactura_Proforma;
+        private System.Windows.Forms.Button btBorrarProforma_Proforma;
         private Views.CueComboBox Referencia_Presupuesto;
         private Views.CueComboBox Descripción_Presupuesto;
         private Views.CueTextBox PVP_Presupuesto;
@@ -1997,7 +1997,7 @@ namespace Gestaller
         private Views.CueTextBox IVA_Factura;
         private Views.CueTextBox Total_Factura;
         private Views.CueComboBox Modelo_Presupuesto;
-        private System.Windows.Forms.Button btnModificar_Proforma;
+        private System.Windows.Forms.Button btModificar_Proforma;
         private System.Windows.Forms.Label label3Producto_Pre;
         private System.Windows.Forms.Label label4Observacion_Pre;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3Producto_Pre;
@@ -2022,7 +2022,7 @@ namespace Gestaller
         private Views.CueTextBox Total_Linea_Factura;
         private Views.CueTextBox IVA_Producto_Factura;
         private System.Windows.Forms.Button btImprimir_Presupuesto;
-        private System.Windows.Forms.Button btnImprimir_Proforma;
+        private System.Windows.Forms.Button btImprimir_Proforma;
         private System.Windows.Forms.Button btnImprimir_F;
         private Views.CueComboBox Marca_Proforma;
         private System.Windows.Forms.DateTimePicker Fecha_F;
