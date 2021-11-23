@@ -186,6 +186,7 @@ namespace Gestaller
             this.btVaciar_Productos.TabIndex = 3;
             this.btVaciar_Productos.Text = "Vaciar";
             this.btVaciar_Productos.UseVisualStyleBackColor = true;
+            this.btVaciar_Productos.Click += new System.EventHandler(this.btVaciar_Productos_Click);
             // 
             // Grid_Productos
             // 
