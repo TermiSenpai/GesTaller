@@ -72,8 +72,8 @@ namespace Gestaller
 
                 // Factura
                 case 2:
-                    Referencia_F.Text = items[_selectedCell].reference.ToString();
-                    Descripcion_F.Text = items[_selectedCell].description;
+                    Referencia_Factura.Text = items[_selectedCell].reference.ToString();
+                    Descripcion_Factura.Text = items[_selectedCell].description;
                     PVP_Factura.Text = items[_selectedCell].PVP.ToString();
                     break;
             }
@@ -115,11 +115,11 @@ namespace Gestaller
                     Matricula_Factura.Text = _clientVehicle.vehicle_enroll;
                     Marca_Factura.Text = _clientVehicle.vehicle_brand;
                     Modelo_Factura.Text = _clientVehicle.vehicle_model;
-                    Kilometro_Factura.Text = _clientVehicle.vehicle_kms;
-                    Presupuesto_F.Text = _order.numBudget.ToString();
-                    Proforma_F.Text = _order.numProForma.ToString();
-                    Factura_F.Text = _order.numInvoice.ToString();
-                    Fecha_F.Value = _order.dateBudget;
+                    Km_Factura.Text = _clientVehicle.vehicle_kms;
+                    Presupuesto_Factura.Text = _order.numBudget.ToString();
+                    Proforma_Factura.Text = _order.numProForma.ToString();
+                    Factura_Factura.Text = _order.numInvoice.ToString();
+                    Fecha_Factura.Value = _order.dateBudget;
                     break;
             }
         }
@@ -154,8 +154,8 @@ namespace Gestaller
                 Referencia_Proforma.Items.Add(items[i].reference);
                 Descripción_Proforma.Items.Add(items[i].description);
 
-                Referencia_F.Items.Add(items[i].reference);
-                Descripcion_F.Items.Add(items[i].description);
+                Referencia_Factura.Items.Add(items[i].reference);
+                Descripcion_Factura.Items.Add(items[i].description);
             }
         }
 
@@ -185,9 +185,9 @@ namespace Gestaller
                 Cliente_Proforma.Items.Add(contactsVehicles[i].contact_fullName);
 
                 // [FACTURA]
-                Factura_F.Items.Add(orders[i].numInvoice);
-                Proforma_F.Items.Add(orders[i].numProForma);
-                Presupuesto_F.Items.Add(orders[i].numBudget);
+                Factura_Factura.Items.Add(orders[i].numInvoice);
+                Proforma_Factura.Items.Add(orders[i].numProForma);
+                Presupuesto_Factura.Items.Add(orders[i].numBudget);
                 Modelo_Factura.Items.Add(contactsVehicles[i].vehicle_model);
                 Marca_Factura.Items.Add(contactsVehicles[i].vehicle_brand);
                 Matricula_Factura.Items.Add(contactsVehicles[i].vehicle_enroll);
@@ -358,19 +358,19 @@ namespace Gestaller
 
         private void Presupuesto_F_SelectionChangeCommitted(object sender, EventArgs e)
         {
-            _comboIndex = Presupuesto_F.SelectedIndex;
+            _comboIndex = Presupuesto_Factura.SelectedIndex;
             changesActiveElements();
         }
 
         private void Proforma_F_SelectionChangeCommitted(object sender, EventArgs e)
         {
-            _comboIndex = Proforma_F.SelectedIndex;
+            _comboIndex = Proforma_Factura.SelectedIndex;
             changesActiveElements();
         }
 
         private void Factura_F_SelectionChangeCommitted(object sender, EventArgs e)
         {
-            _comboIndex = Factura_F.SelectedIndex;
+            _comboIndex = Factura_Factura.SelectedIndex;
             changesActiveElements();
         }
 
@@ -380,13 +380,13 @@ namespace Gestaller
 
         private void Referencia_F_SelectionChangeCommitted(object sender, EventArgs e)
         {
-            _selectedCell = Referencia_F.SelectedIndex;
+            _selectedCell = Referencia_Factura.SelectedIndex;
             setItemsToComboBox();
         }
 
         private void Descripcion_F_SelectionChangeCommitted(object sender, EventArgs e)
         {
-            _selectedCell = Descripcion_F.SelectedIndex;
+            _selectedCell = Descripcion_Factura.SelectedIndex;
             setItemsToComboBox();
         }
 

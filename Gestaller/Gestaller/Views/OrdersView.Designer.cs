@@ -131,8 +131,8 @@ namespace Gestaller
             this.tabPageFactura = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel1Factura = new System.Windows.Forms.TableLayoutPanel();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
-            this.Referencia_F = new Gestaller.Views.CueComboBox();
-            this.Descripcion_F = new Gestaller.Views.CueComboBox();
+            this.Referencia_Factura = new Gestaller.Views.CueComboBox();
+            this.Descripcion_Factura = new Gestaller.Views.CueComboBox();
             this.PVP_Factura = new Gestaller.Views.CueTextBox();
             this.Cantidad_Factura = new Gestaller.Views.CueComboBox();
             this.Descuento_Factura = new Gestaller.Views.CueComboBox();
@@ -140,39 +140,39 @@ namespace Gestaller
             this.IVA_Producto_Factura = new Gestaller.Views.CueTextBox();
             this.label1Cliente_F = new System.Windows.Forms.Label();
             this.panel1_F = new System.Windows.Forms.Panel();
-            this.btn_Search_F = new System.Windows.Forms.Button();
+            this.btBuscar_Factura = new System.Windows.Forms.Button();
             this.flowLayoutPanel1Cliente_F = new System.Windows.Forms.FlowLayoutPanel();
             this.Cliente_Factura = new Gestaller.Views.CueComboBox();
             this.Matricula_Factura = new Gestaller.Views.CueComboBox();
             this.Marca_Factura = new Gestaller.Views.CueComboBox();
             this.Modelo_Factura = new Gestaller.Views.CueComboBox();
-            this.Kilometro_Factura = new Gestaller.Views.CueTextBox();
+            this.Km_Factura = new Gestaller.Views.CueTextBox();
             this.label2Presupuesto_F = new System.Windows.Forms.Label();
             this.flowLayoutPanel2Presupuesto_F = new System.Windows.Forms.FlowLayoutPanel();
-            this.Presupuesto_F = new Gestaller.Views.CueComboBox();
-            this.Proforma_F = new Gestaller.Views.CueComboBox();
-            this.Factura_F = new Gestaller.Views.CueComboBox();
-            this.Fecha_F = new System.Windows.Forms.DateTimePicker();
+            this.Presupuesto_Factura = new Gestaller.Views.CueComboBox();
+            this.Proforma_Factura = new Gestaller.Views.CueComboBox();
+            this.Factura_Factura = new Gestaller.Views.CueComboBox();
+            this.Fecha_Factura = new System.Windows.Forms.DateTimePicker();
             this.panel2_F = new System.Windows.Forms.Panel();
-            this.btnFirstPage_F = new System.Windows.Forms.Button();
-            this.btnPreviousPage_F = new System.Windows.Forms.Button();
-            this.btnNextPage_F = new System.Windows.Forms.Button();
-            this.btnLastPage_F = new System.Windows.Forms.Button();
+            this.btFirstPage_Factura = new System.Windows.Forms.Button();
+            this.btPreviousPage_Factura = new System.Windows.Forms.Button();
+            this.btNextPage_Factura = new System.Windows.Forms.Button();
+            this.btLastPage_Factura = new System.Windows.Forms.Button();
             this.panel3_F = new System.Windows.Forms.Panel();
-            this.btnAnadir_F = new System.Windows.Forms.Button();
-            this.btnBorrarObj_F = new System.Windows.Forms.Button();
-            this.btnModificar_F = new System.Windows.Forms.Button();
-            this.btnDevolucion_F = new System.Windows.Forms.Button();
+            this.btAnadir_Factura = new System.Windows.Forms.Button();
+            this.btBorrarObj_Factura = new System.Windows.Forms.Button();
+            this.btModificar_Factura = new System.Windows.Forms.Button();
+            this.btDevolucion_Factura = new System.Windows.Forms.Button();
             this.panel4_F = new System.Windows.Forms.Panel();
-            this.btnImprimir_F = new System.Windows.Forms.Button();
-            this.btnPresupuesto_F = new System.Windows.Forms.Button();
-            this.button11GenProforma_F = new System.Windows.Forms.Button();
-            this.button12GenInvoice_F = new System.Windows.Forms.Button();
-            this.btnBorrarFactura_F = new System.Windows.Forms.Button();
+            this.btImprimir_Factura = new System.Windows.Forms.Button();
+            this.btPresupuesto_Factura = new System.Windows.Forms.Button();
+            this.btGenProforma_Factura = new System.Windows.Forms.Button();
+            this.btGenInvoice_Factura = new System.Windows.Forms.Button();
+            this.btBorrarFactura_Factura = new System.Windows.Forms.Button();
             this.Grid_Factura = new System.Windows.Forms.DataGridView();
             this.label3Producto_F = new System.Windows.Forms.Label();
             this.label4Observacion_F = new System.Windows.Forms.Label();
-            this.Observaciones_F = new System.Windows.Forms.RichTextBox();
+            this.Observaciones_Factura = new System.Windows.Forms.RichTextBox();
             this.Panel3Impuestos_Factura = new System.Windows.Forms.Panel();
             this.Base_Factura = new Gestaller.Views.CueTextBox();
             this.IVA_Factura = new Gestaller.Views.CueTextBox();
@@ -1319,7 +1319,7 @@ namespace Gestaller
             this.tableLayoutPanel1Factura.Controls.Add(this.Grid_Factura, 0, 11);
             this.tableLayoutPanel1Factura.Controls.Add(this.label3Producto_F, 0, 6);
             this.tableLayoutPanel1Factura.Controls.Add(this.label4Observacion_F, 0, 8);
-            this.tableLayoutPanel1Factura.Controls.Add(this.Observaciones_F, 0, 9);
+            this.tableLayoutPanel1Factura.Controls.Add(this.Observaciones_Factura, 0, 9);
             this.tableLayoutPanel1Factura.Controls.Add(this.Panel3Impuestos_Factura, 0, 12);
             this.tableLayoutPanel1Factura.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1Factura.Location = new System.Drawing.Point(3, 3);
@@ -1346,8 +1346,8 @@ namespace Gestaller
             // flowLayoutPanel2
             // 
             this.flowLayoutPanel2.AutoScroll = true;
-            this.flowLayoutPanel2.Controls.Add(this.Referencia_F);
-            this.flowLayoutPanel2.Controls.Add(this.Descripcion_F);
+            this.flowLayoutPanel2.Controls.Add(this.Referencia_Factura);
+            this.flowLayoutPanel2.Controls.Add(this.Descripcion_Factura);
             this.flowLayoutPanel2.Controls.Add(this.PVP_Factura);
             this.flowLayoutPanel2.Controls.Add(this.Cantidad_Factura);
             this.flowLayoutPanel2.Controls.Add(this.Descuento_Factura);
@@ -1360,25 +1360,25 @@ namespace Gestaller
             this.flowLayoutPanel2.Size = new System.Drawing.Size(1161, 54);
             this.flowLayoutPanel2.TabIndex = 7;
             // 
-            // Referencia_F
+            // Referencia_Factura
             // 
-            this.Referencia_F.CueText = "Ref.Producto";
-            this.Referencia_F.FormattingEnabled = true;
-            this.Referencia_F.Location = new System.Drawing.Point(3, 3);
-            this.Referencia_F.Name = "Referencia_F";
-            this.Referencia_F.Size = new System.Drawing.Size(121, 21);
-            this.Referencia_F.TabIndex = 0;
-            this.Referencia_F.SelectionChangeCommitted += new System.EventHandler(this.Referencia_F_SelectionChangeCommitted);
+            this.Referencia_Factura.CueText = "Ref.Producto";
+            this.Referencia_Factura.FormattingEnabled = true;
+            this.Referencia_Factura.Location = new System.Drawing.Point(3, 3);
+            this.Referencia_Factura.Name = "Referencia_Factura";
+            this.Referencia_Factura.Size = new System.Drawing.Size(121, 21);
+            this.Referencia_Factura.TabIndex = 0;
+            this.Referencia_Factura.SelectionChangeCommitted += new System.EventHandler(this.Referencia_F_SelectionChangeCommitted);
             // 
-            // Descripcion_F
+            // Descripcion_Factura
             // 
-            this.Descripcion_F.CueText = "Decripción";
-            this.Descripcion_F.FormattingEnabled = true;
-            this.Descripcion_F.Location = new System.Drawing.Point(130, 3);
-            this.Descripcion_F.Name = "Descripcion_F";
-            this.Descripcion_F.Size = new System.Drawing.Size(375, 21);
-            this.Descripcion_F.TabIndex = 1;
-            this.Descripcion_F.SelectionChangeCommitted += new System.EventHandler(this.Descripcion_F_SelectionChangeCommitted);
+            this.Descripcion_Factura.CueText = "Decripción";
+            this.Descripcion_Factura.FormattingEnabled = true;
+            this.Descripcion_Factura.Location = new System.Drawing.Point(130, 3);
+            this.Descripcion_Factura.Name = "Descripcion_Factura";
+            this.Descripcion_Factura.Size = new System.Drawing.Size(375, 21);
+            this.Descripcion_Factura.TabIndex = 1;
+            this.Descripcion_Factura.SelectionChangeCommitted += new System.EventHandler(this.Descripcion_F_SelectionChangeCommitted);
             // 
             // PVP_Factura
             // 
@@ -1435,7 +1435,7 @@ namespace Gestaller
             // 
             // panel1_F
             // 
-            this.panel1_F.Controls.Add(this.btn_Search_F);
+            this.panel1_F.Controls.Add(this.btBuscar_Factura);
             this.panel1_F.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1_F.Location = new System.Drawing.Point(0, 76);
             this.panel1_F.Margin = new System.Windows.Forms.Padding(0);
@@ -1443,15 +1443,15 @@ namespace Gestaller
             this.panel1_F.Size = new System.Drawing.Size(1164, 23);
             this.panel1_F.TabIndex = 2;
             // 
-            // btn_Search_F
+            // btBuscar_Factura
             // 
-            this.btn_Search_F.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btn_Search_F.Location = new System.Drawing.Point(1089, 0);
-            this.btn_Search_F.Name = "btn_Search_F";
-            this.btn_Search_F.Size = new System.Drawing.Size(75, 23);
-            this.btn_Search_F.TabIndex = 0;
-            this.btn_Search_F.Text = "Buscar";
-            this.btn_Search_F.UseVisualStyleBackColor = true;
+            this.btBuscar_Factura.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btBuscar_Factura.Location = new System.Drawing.Point(1089, 0);
+            this.btBuscar_Factura.Name = "btBuscar_Factura";
+            this.btBuscar_Factura.Size = new System.Drawing.Size(75, 23);
+            this.btBuscar_Factura.TabIndex = 0;
+            this.btBuscar_Factura.Text = "Buscar";
+            this.btBuscar_Factura.UseVisualStyleBackColor = true;
             // 
             // flowLayoutPanel1Cliente_F
             // 
@@ -1459,7 +1459,7 @@ namespace Gestaller
             this.flowLayoutPanel1Cliente_F.Controls.Add(this.Matricula_Factura);
             this.flowLayoutPanel1Cliente_F.Controls.Add(this.Marca_Factura);
             this.flowLayoutPanel1Cliente_F.Controls.Add(this.Modelo_Factura);
-            this.flowLayoutPanel1Cliente_F.Controls.Add(this.Kilometro_Factura);
+            this.flowLayoutPanel1Cliente_F.Controls.Add(this.Km_Factura);
             this.flowLayoutPanel1Cliente_F.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1Cliente_F.Location = new System.Drawing.Point(3, 23);
             this.flowLayoutPanel1Cliente_F.Name = "flowLayoutPanel1Cliente_F";
@@ -1504,13 +1504,13 @@ namespace Gestaller
             this.Modelo_Factura.Size = new System.Drawing.Size(248, 21);
             this.Modelo_Factura.TabIndex = 3;
             // 
-            // Kilometro_Factura
+            // Km_Factura
             // 
-            this.Kilometro_Factura.CueText = "Kilometros";
-            this.Kilometro_Factura.Location = new System.Drawing.Point(765, 3);
-            this.Kilometro_Factura.Name = "Kilometro_Factura";
-            this.Kilometro_Factura.Size = new System.Drawing.Size(121, 20);
-            this.Kilometro_Factura.TabIndex = 4;
+            this.Km_Factura.CueText = "Kilometros";
+            this.Km_Factura.Location = new System.Drawing.Point(765, 3);
+            this.Km_Factura.Name = "Km_Factura";
+            this.Km_Factura.Size = new System.Drawing.Size(121, 20);
+            this.Km_Factura.TabIndex = 4;
             // 
             // label2Presupuesto_F
             // 
@@ -1526,10 +1526,10 @@ namespace Gestaller
             // flowLayoutPanel2Presupuesto_F
             // 
             this.flowLayoutPanel2Presupuesto_F.AutoScroll = true;
-            this.flowLayoutPanel2Presupuesto_F.Controls.Add(this.Presupuesto_F);
-            this.flowLayoutPanel2Presupuesto_F.Controls.Add(this.Proforma_F);
-            this.flowLayoutPanel2Presupuesto_F.Controls.Add(this.Factura_F);
-            this.flowLayoutPanel2Presupuesto_F.Controls.Add(this.Fecha_F);
+            this.flowLayoutPanel2Presupuesto_F.Controls.Add(this.Presupuesto_Factura);
+            this.flowLayoutPanel2Presupuesto_F.Controls.Add(this.Proforma_Factura);
+            this.flowLayoutPanel2Presupuesto_F.Controls.Add(this.Factura_Factura);
+            this.flowLayoutPanel2Presupuesto_F.Controls.Add(this.Fecha_Factura);
             this.flowLayoutPanel2Presupuesto_F.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel2Presupuesto_F.Location = new System.Drawing.Point(3, 119);
             this.flowLayoutPanel2Presupuesto_F.Margin = new System.Windows.Forms.Padding(3, 0, 0, 0);
@@ -1537,51 +1537,51 @@ namespace Gestaller
             this.flowLayoutPanel2Presupuesto_F.Size = new System.Drawing.Size(1161, 54);
             this.flowLayoutPanel2Presupuesto_F.TabIndex = 4;
             // 
-            // Presupuesto_F
+            // Presupuesto_Factura
             // 
-            this.Presupuesto_F.CueText = "Nº Presupuesto";
-            this.Presupuesto_F.FormattingEnabled = true;
-            this.Presupuesto_F.Location = new System.Drawing.Point(3, 3);
-            this.Presupuesto_F.Name = "Presupuesto_F";
-            this.Presupuesto_F.Size = new System.Drawing.Size(121, 21);
-            this.Presupuesto_F.TabIndex = 0;
-            this.Presupuesto_F.SelectionChangeCommitted += new System.EventHandler(this.Presupuesto_F_SelectionChangeCommitted);
+            this.Presupuesto_Factura.CueText = "Nº Presupuesto";
+            this.Presupuesto_Factura.FormattingEnabled = true;
+            this.Presupuesto_Factura.Location = new System.Drawing.Point(3, 3);
+            this.Presupuesto_Factura.Name = "Presupuesto_Factura";
+            this.Presupuesto_Factura.Size = new System.Drawing.Size(121, 21);
+            this.Presupuesto_Factura.TabIndex = 0;
+            this.Presupuesto_Factura.SelectionChangeCommitted += new System.EventHandler(this.Presupuesto_F_SelectionChangeCommitted);
             // 
-            // Proforma_F
+            // Proforma_Factura
             // 
-            this.Proforma_F.CueText = "Nº Proforma";
-            this.Proforma_F.FormattingEnabled = true;
-            this.Proforma_F.Location = new System.Drawing.Point(130, 3);
-            this.Proforma_F.Name = "Proforma_F";
-            this.Proforma_F.Size = new System.Drawing.Size(121, 21);
-            this.Proforma_F.TabIndex = 1;
-            this.Proforma_F.SelectionChangeCommitted += new System.EventHandler(this.Proforma_F_SelectionChangeCommitted);
+            this.Proforma_Factura.CueText = "Nº Proforma";
+            this.Proforma_Factura.FormattingEnabled = true;
+            this.Proforma_Factura.Location = new System.Drawing.Point(130, 3);
+            this.Proforma_Factura.Name = "Proforma_Factura";
+            this.Proforma_Factura.Size = new System.Drawing.Size(121, 21);
+            this.Proforma_Factura.TabIndex = 1;
+            this.Proforma_Factura.SelectionChangeCommitted += new System.EventHandler(this.Proforma_F_SelectionChangeCommitted);
             // 
-            // Factura_F
+            // Factura_Factura
             // 
-            this.Factura_F.CueText = "Nº Factura";
-            this.Factura_F.FormattingEnabled = true;
-            this.Factura_F.Location = new System.Drawing.Point(257, 3);
-            this.Factura_F.Name = "Factura_F";
-            this.Factura_F.Size = new System.Drawing.Size(121, 21);
-            this.Factura_F.TabIndex = 2;
-            this.Factura_F.SelectionChangeCommitted += new System.EventHandler(this.Factura_F_SelectionChangeCommitted);
+            this.Factura_Factura.CueText = "Nº Factura";
+            this.Factura_Factura.FormattingEnabled = true;
+            this.Factura_Factura.Location = new System.Drawing.Point(257, 3);
+            this.Factura_Factura.Name = "Factura_Factura";
+            this.Factura_Factura.Size = new System.Drawing.Size(121, 21);
+            this.Factura_Factura.TabIndex = 2;
+            this.Factura_Factura.SelectionChangeCommitted += new System.EventHandler(this.Factura_F_SelectionChangeCommitted);
             // 
-            // Fecha_F
+            // Fecha_Factura
             // 
-            this.Fecha_F.CustomFormat = "";
-            this.Fecha_F.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.Fecha_F.Location = new System.Drawing.Point(384, 3);
-            this.Fecha_F.Name = "Fecha_F";
-            this.Fecha_F.Size = new System.Drawing.Size(121, 20);
-            this.Fecha_F.TabIndex = 3;
+            this.Fecha_Factura.CustomFormat = "";
+            this.Fecha_Factura.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.Fecha_Factura.Location = new System.Drawing.Point(384, 3);
+            this.Fecha_Factura.Name = "Fecha_Factura";
+            this.Fecha_Factura.Size = new System.Drawing.Size(121, 20);
+            this.Fecha_Factura.TabIndex = 3;
             // 
             // panel2_F
             // 
-            this.panel2_F.Controls.Add(this.btnFirstPage_F);
-            this.panel2_F.Controls.Add(this.btnPreviousPage_F);
-            this.panel2_F.Controls.Add(this.btnNextPage_F);
-            this.panel2_F.Controls.Add(this.btnLastPage_F);
+            this.panel2_F.Controls.Add(this.btFirstPage_Factura);
+            this.panel2_F.Controls.Add(this.btPreviousPage_Factura);
+            this.panel2_F.Controls.Add(this.btNextPage_Factura);
+            this.panel2_F.Controls.Add(this.btLastPage_Factura);
             this.panel2_F.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2_F.Location = new System.Drawing.Point(0, 173);
             this.panel2_F.Margin = new System.Windows.Forms.Padding(0);
@@ -1589,52 +1589,52 @@ namespace Gestaller
             this.panel2_F.Size = new System.Drawing.Size(1164, 23);
             this.panel2_F.TabIndex = 5;
             // 
-            // btnFirstPage_F
+            // btFirstPage_Factura
             // 
-            this.btnFirstPage_F.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnFirstPage_F.Location = new System.Drawing.Point(1064, 0);
-            this.btnFirstPage_F.Name = "btnFirstPage_F";
-            this.btnFirstPage_F.Size = new System.Drawing.Size(25, 23);
-            this.btnFirstPage_F.TabIndex = 0;
-            this.btnFirstPage_F.Text = "|<";
-            this.btnFirstPage_F.UseVisualStyleBackColor = true;
+            this.btFirstPage_Factura.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btFirstPage_Factura.Location = new System.Drawing.Point(1064, 0);
+            this.btFirstPage_Factura.Name = "btFirstPage_Factura";
+            this.btFirstPage_Factura.Size = new System.Drawing.Size(25, 23);
+            this.btFirstPage_Factura.TabIndex = 0;
+            this.btFirstPage_Factura.Text = "|<";
+            this.btFirstPage_Factura.UseVisualStyleBackColor = true;
             // 
-            // btnPreviousPage_F
+            // btPreviousPage_Factura
             // 
-            this.btnPreviousPage_F.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnPreviousPage_F.Location = new System.Drawing.Point(1089, 0);
-            this.btnPreviousPage_F.Name = "btnPreviousPage_F";
-            this.btnPreviousPage_F.Size = new System.Drawing.Size(25, 23);
-            this.btnPreviousPage_F.TabIndex = 1;
-            this.btnPreviousPage_F.Text = "<";
-            this.btnPreviousPage_F.UseVisualStyleBackColor = true;
+            this.btPreviousPage_Factura.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btPreviousPage_Factura.Location = new System.Drawing.Point(1089, 0);
+            this.btPreviousPage_Factura.Name = "btPreviousPage_Factura";
+            this.btPreviousPage_Factura.Size = new System.Drawing.Size(25, 23);
+            this.btPreviousPage_Factura.TabIndex = 1;
+            this.btPreviousPage_Factura.Text = "<";
+            this.btPreviousPage_Factura.UseVisualStyleBackColor = true;
             // 
-            // btnNextPage_F
+            // btNextPage_Factura
             // 
-            this.btnNextPage_F.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnNextPage_F.Location = new System.Drawing.Point(1114, 0);
-            this.btnNextPage_F.Name = "btnNextPage_F";
-            this.btnNextPage_F.Size = new System.Drawing.Size(25, 23);
-            this.btnNextPage_F.TabIndex = 2;
-            this.btnNextPage_F.Text = ">";
-            this.btnNextPage_F.UseVisualStyleBackColor = true;
+            this.btNextPage_Factura.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btNextPage_Factura.Location = new System.Drawing.Point(1114, 0);
+            this.btNextPage_Factura.Name = "btNextPage_Factura";
+            this.btNextPage_Factura.Size = new System.Drawing.Size(25, 23);
+            this.btNextPage_Factura.TabIndex = 2;
+            this.btNextPage_Factura.Text = ">";
+            this.btNextPage_Factura.UseVisualStyleBackColor = true;
             // 
-            // btnLastPage_F
+            // btLastPage_Factura
             // 
-            this.btnLastPage_F.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnLastPage_F.Location = new System.Drawing.Point(1139, 0);
-            this.btnLastPage_F.Name = "btnLastPage_F";
-            this.btnLastPage_F.Size = new System.Drawing.Size(25, 23);
-            this.btnLastPage_F.TabIndex = 3;
-            this.btnLastPage_F.Text = ">|";
-            this.btnLastPage_F.UseVisualStyleBackColor = true;
+            this.btLastPage_Factura.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btLastPage_Factura.Location = new System.Drawing.Point(1139, 0);
+            this.btLastPage_Factura.Name = "btLastPage_Factura";
+            this.btLastPage_Factura.Size = new System.Drawing.Size(25, 23);
+            this.btLastPage_Factura.TabIndex = 3;
+            this.btLastPage_Factura.Text = ">|";
+            this.btLastPage_Factura.UseVisualStyleBackColor = true;
             // 
             // panel3_F
             // 
-            this.panel3_F.Controls.Add(this.btnAnadir_F);
-            this.panel3_F.Controls.Add(this.btnBorrarObj_F);
-            this.panel3_F.Controls.Add(this.btnModificar_F);
-            this.panel3_F.Controls.Add(this.btnDevolucion_F);
+            this.panel3_F.Controls.Add(this.btAnadir_Factura);
+            this.panel3_F.Controls.Add(this.btBorrarObj_Factura);
+            this.panel3_F.Controls.Add(this.btModificar_Factura);
+            this.panel3_F.Controls.Add(this.btDevolucion_Factura);
             this.panel3_F.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3_F.Location = new System.Drawing.Point(0, 344);
             this.panel3_F.Margin = new System.Windows.Forms.Padding(0);
@@ -1642,53 +1642,53 @@ namespace Gestaller
             this.panel3_F.Size = new System.Drawing.Size(1164, 23);
             this.panel3_F.TabIndex = 10;
             // 
-            // btnAnadir_F
+            // btAnadir_Factura
             // 
-            this.btnAnadir_F.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnAnadir_F.Location = new System.Drawing.Point(864, 0);
-            this.btnAnadir_F.Name = "btnAnadir_F";
-            this.btnAnadir_F.Size = new System.Drawing.Size(75, 23);
-            this.btnAnadir_F.TabIndex = 0;
-            this.btnAnadir_F.Text = "Añadir";
-            this.btnAnadir_F.UseVisualStyleBackColor = true;
+            this.btAnadir_Factura.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btAnadir_Factura.Location = new System.Drawing.Point(864, 0);
+            this.btAnadir_Factura.Name = "btAnadir_Factura";
+            this.btAnadir_Factura.Size = new System.Drawing.Size(75, 23);
+            this.btAnadir_Factura.TabIndex = 0;
+            this.btAnadir_Factura.Text = "Añadir";
+            this.btAnadir_Factura.UseVisualStyleBackColor = true;
             // 
-            // btnBorrarObj_F
+            // btBorrarObj_Factura
             // 
-            this.btnBorrarObj_F.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnBorrarObj_F.Location = new System.Drawing.Point(939, 0);
-            this.btnBorrarObj_F.Name = "btnBorrarObj_F";
-            this.btnBorrarObj_F.Size = new System.Drawing.Size(75, 23);
-            this.btnBorrarObj_F.TabIndex = 1;
-            this.btnBorrarObj_F.Text = "Borrar";
-            this.btnBorrarObj_F.UseVisualStyleBackColor = true;
+            this.btBorrarObj_Factura.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btBorrarObj_Factura.Location = new System.Drawing.Point(939, 0);
+            this.btBorrarObj_Factura.Name = "btBorrarObj_Factura";
+            this.btBorrarObj_Factura.Size = new System.Drawing.Size(75, 23);
+            this.btBorrarObj_Factura.TabIndex = 1;
+            this.btBorrarObj_Factura.Text = "Borrar";
+            this.btBorrarObj_Factura.UseVisualStyleBackColor = true;
             // 
-            // btnModificar_F
+            // btModificar_Factura
             // 
-            this.btnModificar_F.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnModificar_F.Location = new System.Drawing.Point(1014, 0);
-            this.btnModificar_F.Name = "btnModificar_F";
-            this.btnModificar_F.Size = new System.Drawing.Size(75, 23);
-            this.btnModificar_F.TabIndex = 2;
-            this.btnModificar_F.Text = "Modificar";
-            this.btnModificar_F.UseVisualStyleBackColor = true;
+            this.btModificar_Factura.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btModificar_Factura.Location = new System.Drawing.Point(1014, 0);
+            this.btModificar_Factura.Name = "btModificar_Factura";
+            this.btModificar_Factura.Size = new System.Drawing.Size(75, 23);
+            this.btModificar_Factura.TabIndex = 2;
+            this.btModificar_Factura.Text = "Modificar";
+            this.btModificar_Factura.UseVisualStyleBackColor = true;
             // 
-            // btnDevolucion_F
+            // btDevolucion_Factura
             // 
-            this.btnDevolucion_F.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnDevolucion_F.Location = new System.Drawing.Point(1089, 0);
-            this.btnDevolucion_F.Name = "btnDevolucion_F";
-            this.btnDevolucion_F.Size = new System.Drawing.Size(75, 23);
-            this.btnDevolucion_F.TabIndex = 3;
-            this.btnDevolucion_F.Text = "Devolución";
-            this.btnDevolucion_F.UseVisualStyleBackColor = true;
+            this.btDevolucion_Factura.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btDevolucion_Factura.Location = new System.Drawing.Point(1089, 0);
+            this.btDevolucion_Factura.Name = "btDevolucion_Factura";
+            this.btDevolucion_Factura.Size = new System.Drawing.Size(75, 23);
+            this.btDevolucion_Factura.TabIndex = 3;
+            this.btDevolucion_Factura.Text = "Devolución";
+            this.btDevolucion_Factura.UseVisualStyleBackColor = true;
             // 
             // panel4_F
             // 
-            this.panel4_F.Controls.Add(this.btnImprimir_F);
-            this.panel4_F.Controls.Add(this.btnPresupuesto_F);
-            this.panel4_F.Controls.Add(this.button11GenProforma_F);
-            this.panel4_F.Controls.Add(this.button12GenInvoice_F);
-            this.panel4_F.Controls.Add(this.btnBorrarFactura_F);
+            this.panel4_F.Controls.Add(this.btImprimir_Factura);
+            this.panel4_F.Controls.Add(this.btPresupuesto_Factura);
+            this.panel4_F.Controls.Add(this.btGenProforma_Factura);
+            this.panel4_F.Controls.Add(this.btGenInvoice_Factura);
+            this.panel4_F.Controls.Add(this.btBorrarFactura_Factura);
             this.panel4_F.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel4_F.Location = new System.Drawing.Point(0, 526);
             this.panel4_F.Margin = new System.Windows.Forms.Padding(0);
@@ -1696,55 +1696,55 @@ namespace Gestaller
             this.panel4_F.Size = new System.Drawing.Size(1164, 23);
             this.panel4_F.TabIndex = 13;
             // 
-            // btnImprimir_F
+            // btImprimir_Factura
             // 
-            this.btnImprimir_F.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnImprimir_F.Location = new System.Drawing.Point(789, 0);
-            this.btnImprimir_F.Name = "btnImprimir_F";
-            this.btnImprimir_F.Size = new System.Drawing.Size(75, 23);
-            this.btnImprimir_F.TabIndex = 0;
-            this.btnImprimir_F.Text = "Imprimir";
-            this.btnImprimir_F.UseVisualStyleBackColor = true;
+            this.btImprimir_Factura.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btImprimir_Factura.Location = new System.Drawing.Point(789, 0);
+            this.btImprimir_Factura.Name = "btImprimir_Factura";
+            this.btImprimir_Factura.Size = new System.Drawing.Size(75, 23);
+            this.btImprimir_Factura.TabIndex = 0;
+            this.btImprimir_Factura.Text = "Imprimir";
+            this.btImprimir_Factura.UseVisualStyleBackColor = true;
             // 
-            // btnPresupuesto_F
+            // btPresupuesto_Factura
             // 
-            this.btnPresupuesto_F.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnPresupuesto_F.Location = new System.Drawing.Point(864, 0);
-            this.btnPresupuesto_F.Name = "btnPresupuesto_F";
-            this.btnPresupuesto_F.Size = new System.Drawing.Size(75, 23);
-            this.btnPresupuesto_F.TabIndex = 1;
-            this.btnPresupuesto_F.Text = "Gen. Presu";
-            this.btnPresupuesto_F.UseVisualStyleBackColor = true;
+            this.btPresupuesto_Factura.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btPresupuesto_Factura.Location = new System.Drawing.Point(864, 0);
+            this.btPresupuesto_Factura.Name = "btPresupuesto_Factura";
+            this.btPresupuesto_Factura.Size = new System.Drawing.Size(75, 23);
+            this.btPresupuesto_Factura.TabIndex = 1;
+            this.btPresupuesto_Factura.Text = "Gen. Presu";
+            this.btPresupuesto_Factura.UseVisualStyleBackColor = true;
             // 
-            // button11GenProforma_F
+            // btGenProforma_Factura
             // 
-            this.button11GenProforma_F.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button11GenProforma_F.Location = new System.Drawing.Point(939, 0);
-            this.button11GenProforma_F.Name = "button11GenProforma_F";
-            this.button11GenProforma_F.Size = new System.Drawing.Size(75, 23);
-            this.button11GenProforma_F.TabIndex = 2;
-            this.button11GenProforma_F.Text = "Gen. Profor.";
-            this.button11GenProforma_F.UseVisualStyleBackColor = true;
+            this.btGenProforma_Factura.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btGenProforma_Factura.Location = new System.Drawing.Point(939, 0);
+            this.btGenProforma_Factura.Name = "btGenProforma_Factura";
+            this.btGenProforma_Factura.Size = new System.Drawing.Size(75, 23);
+            this.btGenProforma_Factura.TabIndex = 2;
+            this.btGenProforma_Factura.Text = "Gen. Profor.";
+            this.btGenProforma_Factura.UseVisualStyleBackColor = true;
             // 
-            // button12GenInvoice_F
+            // btGenInvoice_Factura
             // 
-            this.button12GenInvoice_F.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button12GenInvoice_F.Location = new System.Drawing.Point(1014, 0);
-            this.button12GenInvoice_F.Name = "button12GenInvoice_F";
-            this.button12GenInvoice_F.Size = new System.Drawing.Size(75, 23);
-            this.button12GenInvoice_F.TabIndex = 3;
-            this.button12GenInvoice_F.Text = "Gen.Factur.";
-            this.button12GenInvoice_F.UseVisualStyleBackColor = true;
+            this.btGenInvoice_Factura.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btGenInvoice_Factura.Location = new System.Drawing.Point(1014, 0);
+            this.btGenInvoice_Factura.Name = "btGenInvoice_Factura";
+            this.btGenInvoice_Factura.Size = new System.Drawing.Size(75, 23);
+            this.btGenInvoice_Factura.TabIndex = 3;
+            this.btGenInvoice_Factura.Text = "Gen.Factur.";
+            this.btGenInvoice_Factura.UseVisualStyleBackColor = true;
             // 
-            // btnBorrarFactura_F
+            // btBorrarFactura_Factura
             // 
-            this.btnBorrarFactura_F.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnBorrarFactura_F.Location = new System.Drawing.Point(1089, 0);
-            this.btnBorrarFactura_F.Name = "btnBorrarFactura_F";
-            this.btnBorrarFactura_F.Size = new System.Drawing.Size(75, 23);
-            this.btnBorrarFactura_F.TabIndex = 4;
-            this.btnBorrarFactura_F.Text = "Borrar Pre.";
-            this.btnBorrarFactura_F.UseVisualStyleBackColor = true;
+            this.btBorrarFactura_Factura.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btBorrarFactura_Factura.Location = new System.Drawing.Point(1089, 0);
+            this.btBorrarFactura_Factura.Name = "btBorrarFactura_Factura";
+            this.btBorrarFactura_Factura.Size = new System.Drawing.Size(75, 23);
+            this.btBorrarFactura_Factura.TabIndex = 4;
+            this.btBorrarFactura_Factura.Text = "Borrar Pre.";
+            this.btBorrarFactura_Factura.UseVisualStyleBackColor = true;
             // 
             // Grid_Factura
             // 
@@ -1779,14 +1779,14 @@ namespace Gestaller
             this.label4Observacion_F.TabIndex = 8;
             this.label4Observacion_F.Text = "OBSERVACIONES";
             // 
-            // Observaciones_F
+            // Observaciones_Factura
             // 
-            this.Observaciones_F.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Observaciones_F.Location = new System.Drawing.Point(3, 293);
-            this.Observaciones_F.Name = "Observaciones_F";
-            this.Observaciones_F.Size = new System.Drawing.Size(1158, 48);
-            this.Observaciones_F.TabIndex = 9;
-            this.Observaciones_F.Text = "";
+            this.Observaciones_Factura.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Observaciones_Factura.Location = new System.Drawing.Point(3, 293);
+            this.Observaciones_Factura.Name = "Observaciones_Factura";
+            this.Observaciones_Factura.Size = new System.Drawing.Size(1158, 48);
+            this.Observaciones_Factura.TabIndex = 9;
+            this.Observaciones_Factura.Text = "";
             // 
             // Panel3Impuestos_Factura
             // 
@@ -1924,34 +1924,34 @@ namespace Gestaller
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1Factura;
         private System.Windows.Forms.Label label1Cliente_F;
         private System.Windows.Forms.Panel panel1_F;
-        private System.Windows.Forms.Button btn_Search_F;
+        private System.Windows.Forms.Button btBuscar_Factura;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1Cliente_F;
         private Views.CueComboBox Cliente_Factura;
         private Views.CueComboBox Matricula_Factura;
         private Views.CueComboBox Marca_Factura;
         private Views.CueComboBox Modelo_Factura;
-        private Views.CueTextBox Kilometro_Factura;
+        private Views.CueTextBox Km_Factura;
         private System.Windows.Forms.Label label2Presupuesto_F;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2Presupuesto_F;
-        private Views.CueComboBox Factura_F;
-        private Views.CueComboBox Presupuesto_F;
-        private Views.CueComboBox Proforma_F;
+        private Views.CueComboBox Factura_Factura;
+        private Views.CueComboBox Presupuesto_Factura;
+        private Views.CueComboBox Proforma_Factura;
         private System.Windows.Forms.Panel panel2_F;
-        private System.Windows.Forms.Button btnFirstPage_F;
-        private System.Windows.Forms.Button btnPreviousPage_F;
-        private System.Windows.Forms.Button btnNextPage_F;
-        private System.Windows.Forms.Button btnLastPage_F;
-        private System.Windows.Forms.RichTextBox Observaciones_F;
+        private System.Windows.Forms.Button btFirstPage_Factura;
+        private System.Windows.Forms.Button btPreviousPage_Factura;
+        private System.Windows.Forms.Button btNextPage_Factura;
+        private System.Windows.Forms.Button btLastPage_Factura;
+        private System.Windows.Forms.RichTextBox Observaciones_Factura;
         private System.Windows.Forms.Panel panel3_F;
-        private System.Windows.Forms.Button btnAnadir_F;
-        private System.Windows.Forms.Button btnBorrarObj_F;
-        private System.Windows.Forms.Button btnModificar_F;
-        private System.Windows.Forms.Button btnDevolucion_F;
+        private System.Windows.Forms.Button btAnadir_Factura;
+        private System.Windows.Forms.Button btBorrarObj_Factura;
+        private System.Windows.Forms.Button btModificar_Factura;
+        private System.Windows.Forms.Button btDevolucion_Factura;
         private System.Windows.Forms.Panel panel4_F;
-        private System.Windows.Forms.Button btnPresupuesto_F;
-        private System.Windows.Forms.Button button11GenProforma_F;
-        private System.Windows.Forms.Button button12GenInvoice_F;
-        private System.Windows.Forms.Button btnBorrarFactura_F;
+        private System.Windows.Forms.Button btPresupuesto_Factura;
+        private System.Windows.Forms.Button btGenProforma_Factura;
+        private System.Windows.Forms.Button btGenInvoice_Factura;
+        private System.Windows.Forms.Button btBorrarFactura_Factura;
         private System.Windows.Forms.DataGridView Grid_Factura;
         private System.Windows.Forms.Panel panel2_Pre;
         private System.Windows.Forms.Button btFirstPage_Presupuesto;
@@ -2014,8 +2014,8 @@ namespace Gestaller
         private Views.CueTextBox Total_Linea_Proforma;
         private Views.CueTextBox IVA_Producto_Proforma;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
-        private Views.CueComboBox Referencia_F;
-        private Views.CueComboBox Descripcion_F;
+        private Views.CueComboBox Referencia_Factura;
+        private Views.CueComboBox Descripcion_Factura;
         private Views.CueTextBox PVP_Factura;
         private Views.CueComboBox Cantidad_Factura;
         private Views.CueComboBox Descuento_Factura;
@@ -2023,9 +2023,9 @@ namespace Gestaller
         private Views.CueTextBox IVA_Producto_Factura;
         private System.Windows.Forms.Button btImprimir_Presupuesto;
         private System.Windows.Forms.Button btImprimir_Proforma;
-        private System.Windows.Forms.Button btnImprimir_F;
+        private System.Windows.Forms.Button btImprimir_Factura;
         private Views.CueComboBox Marca_Proforma;
-        private System.Windows.Forms.DateTimePicker Fecha_F;
+        private System.Windows.Forms.DateTimePicker Fecha_Factura;
         private System.Windows.Forms.Panel Panel3Impuestos_Factura;
         private System.Windows.Forms.Panel panel1;
         private Views.CueTextBox Base_Presupuesto;
