@@ -12,14 +12,36 @@ namespace Gestaller
 {
     public partial class WarehouseView : Form
     {
+        BussinessLogicLayer _bussinessLogicLayer = new BussinessLogicLayer();
+
         public WarehouseView()
         {
             InitializeComponent();
         }
 
-        private void cueTextBox1_TextChanged(object sender, EventArgs e)
+        #region events
+        
+        private void WarehouseView_Load(object sender, EventArgs e)
         {
-
+            getDB();
         }
+
+        #endregion
+
+        #region private methods
+
+        private void getDB()
+        {
+            List<Item> items = getItems();
+
+            Grid_Productos.DataSource = items;
+        }
+
+        private List<Item> getItems()
+        {
+            return _bussinessLogicLayer.GetItems();
+        }
+
+        #endregion
     }
 }
