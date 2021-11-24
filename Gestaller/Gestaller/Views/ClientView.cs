@@ -83,7 +83,7 @@ namespace Gestaller
             contact.fax = Fax_ClienteVehiculo.Text;
             contact.email = Email_ClienteVehiculo.Text;
 
-            _bussinessLogicLayer.newContact(contact);
+            //_bussinessLogicLayer.newContact(contact);
 
             vehicle.enroll = Matricula_ClienteVehiculo.Text;
             vehicle.brand = Marca_ClienteVehiculo.Text;
@@ -92,7 +92,7 @@ namespace Gestaller
             vehicle.kms = Kilometros_ClienteVehiculo.Text;
             vehicle.engineType = TipoMotor_ClienteVehiculo.Text;
 
-            _bussinessLogicLayer.newVehicle(vehicle);
+            //_bussinessLogicLayer.newVehicle(vehicle);
 
             getDB();
         }

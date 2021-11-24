@@ -49,6 +49,7 @@
     <Compile Include="DataClasses\Contact.cs" />
     <Compile Include="DataClasses\ContactVehicle.cs" />
     <Compile Include="DataClasses\Incoming.cs" />
+    <Compile Include="DataClasses\Iva.cs" />
     <Compile Include="DataClasses\Order.cs" />
     <Compile Include="DataClasses\Item.cs" />
     <Compile Include="DataClasses\Order2Item.cs" />
