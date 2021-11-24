@@ -15,6 +15,9 @@ namespace Gestaller
     {
         List<Control> _controls = new List<Control>();
         BussinessLogicLayer _bussinessLogicLayer = new BussinessLogicLayer();
+        Item _currentItem;
+
+        private int _currentIndex;
 
         public WarehouseView()
         {
@@ -29,14 +32,58 @@ namespace Gestaller
             addControls();
         }
         
+        private void Grid_Productos_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            _currentIndex = Grid_Productos.CurrentCell.RowIndex;
+            selectItem();
+            itemToCombo();
+        }
+        
         private void btVaciar_Productos_Click(object sender, EventArgs e)
         {
             clearText();
         }
 
+        #region selectedComboBox
+
+        private void Referecia_Productos_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            _currentIndex = Referecia_Productos.SelectedIndex;
+            selectItem();
+            itemToCombo();
+        }
+
+        private void Descripcion_Productos_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            _currentIndex = Descripcion_Productos.SelectedIndex;
+            selectItem();
+            itemToCombo();
+        }
+
+        #endregion
+
         #endregion
 
         #region private methods
+
+        private void selectItem()
+        {
+            List<Item> item = getItems();
+            currentItem(item[_currentIndex]);
+        }
+
+        private void itemToCombo()
+        {
+            Referecia_Productos.Text = _currentItem.reference.ToString();
+            Descripcion_Productos.Text = _currentItem.description;
+            Base_Productos.Text = _currentItem.basePrice.ToString();
+            PVP_Productos.Text = _currentItem.PVP.ToString();
+        }
+
+        private void currentItem(Item item)
+        {
+            _currentItem = item;
+        }
 
         private void clearText()
         {

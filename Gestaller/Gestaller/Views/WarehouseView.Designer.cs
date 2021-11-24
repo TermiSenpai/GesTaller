@@ -40,12 +40,6 @@ namespace Gestaller
             this.Grid_Productos = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
-            this.Referecia_Productos = new Gestaller.Views.CueComboBox();
-            this.Proveedor_Productos = new Gestaller.Views.CueTextBox();
-            this.Descripcion_Productos = new Gestaller.Views.CueComboBox();
-            this.Base_Productos = new Gestaller.Views.CueTextBox();
-            this.IVA_Productos = new Gestaller.Views.CueComboBox();
-            this.PVP_Productos = new Gestaller.Views.CueComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.Detallada_Productos = new System.Windows.Forms.RichTextBox();
             this.Proveedores = new System.Windows.Forms.TabPage();
@@ -58,6 +52,12 @@ namespace Gestaller
             this.btBorrar_Proveedores = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.Referecia_Productos = new Gestaller.Views.CueComboBox();
+            this.Proveedor_Productos = new Gestaller.Views.CueTextBox();
+            this.Descripcion_Productos = new Gestaller.Views.CueComboBox();
+            this.Base_Productos = new Gestaller.Views.CueTextBox();
+            this.IVA_Productos = new Gestaller.Views.CueComboBox();
+            this.PVP_Productos = new Gestaller.Views.CueComboBox();
             this.NIF_Proveedores = new Gestaller.Views.CueComboBox();
             this.Nombre_Proveedores = new Gestaller.Views.CueComboBox();
             this.Localidad_Proveedores = new Gestaller.Views.CueComboBox();
@@ -196,6 +196,7 @@ namespace Gestaller
             this.Grid_Productos.Name = "Grid_Productos";
             this.Grid_Productos.Size = new System.Drawing.Size(780, 282);
             this.Grid_Productos.TabIndex = 5;
+            this.Grid_Productos.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.Grid_Productos_CellMouseClick);
             // 
             // label2
             // 
@@ -221,58 +222,6 @@ namespace Gestaller
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
             this.flowLayoutPanel2.Size = new System.Drawing.Size(780, 90);
             this.flowLayoutPanel2.TabIndex = 1;
-            // 
-            // Referecia_Productos
-            // 
-            this.Referecia_Productos.CueText = "Referencia";
-            this.Referecia_Productos.FormattingEnabled = true;
-            this.Referecia_Productos.Location = new System.Drawing.Point(3, 3);
-            this.Referecia_Productos.Name = "Referecia_Productos";
-            this.Referecia_Productos.Size = new System.Drawing.Size(121, 21);
-            this.Referecia_Productos.TabIndex = 0;
-            // 
-            // Proveedor_Productos
-            // 
-            this.Proveedor_Productos.CueText = "Proveedor";
-            this.Proveedor_Productos.Location = new System.Drawing.Point(130, 3);
-            this.Proveedor_Productos.Name = "Proveedor_Productos";
-            this.Proveedor_Productos.Size = new System.Drawing.Size(121, 20);
-            this.Proveedor_Productos.TabIndex = 1;
-            // 
-            // Descripcion_Productos
-            // 
-            this.Descripcion_Productos.CueText = "Descripción";
-            this.Descripcion_Productos.FormattingEnabled = true;
-            this.Descripcion_Productos.Location = new System.Drawing.Point(257, 3);
-            this.Descripcion_Productos.Name = "Descripcion_Productos";
-            this.Descripcion_Productos.Size = new System.Drawing.Size(375, 21);
-            this.Descripcion_Productos.TabIndex = 2;
-            // 
-            // Base_Productos
-            // 
-            this.Base_Productos.CueText = "Precio Base";
-            this.Base_Productos.Location = new System.Drawing.Point(638, 3);
-            this.Base_Productos.Name = "Base_Productos";
-            this.Base_Productos.Size = new System.Drawing.Size(121, 20);
-            this.Base_Productos.TabIndex = 3;
-            // 
-            // IVA_Productos
-            // 
-            this.IVA_Productos.CueText = "I.V.A.";
-            this.IVA_Productos.FormattingEnabled = true;
-            this.IVA_Productos.Location = new System.Drawing.Point(3, 30);
-            this.IVA_Productos.Name = "IVA_Productos";
-            this.IVA_Productos.Size = new System.Drawing.Size(121, 21);
-            this.IVA_Productos.TabIndex = 4;
-            // 
-            // PVP_Productos
-            // 
-            this.PVP_Productos.CueText = "P.V.P.";
-            this.PVP_Productos.FormattingEnabled = true;
-            this.PVP_Productos.Location = new System.Drawing.Point(130, 30);
-            this.PVP_Productos.Name = "PVP_Productos";
-            this.PVP_Productos.Size = new System.Drawing.Size(121, 21);
-            this.PVP_Productos.TabIndex = 5;
             // 
             // label3
             // 
@@ -422,6 +371,60 @@ namespace Gestaller
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(780, 150);
             this.flowLayoutPanel1.TabIndex = 1;
+            // 
+            // Referecia_Productos
+            // 
+            this.Referecia_Productos.CueText = "Referencia";
+            this.Referecia_Productos.FormattingEnabled = true;
+            this.Referecia_Productos.Location = new System.Drawing.Point(3, 3);
+            this.Referecia_Productos.Name = "Referecia_Productos";
+            this.Referecia_Productos.Size = new System.Drawing.Size(121, 21);
+            this.Referecia_Productos.TabIndex = 0;
+            this.Referecia_Productos.SelectionChangeCommitted += new System.EventHandler(this.Referecia_Productos_SelectionChangeCommitted);
+            // 
+            // Proveedor_Productos
+            // 
+            this.Proveedor_Productos.CueText = "Proveedor";
+            this.Proveedor_Productos.Location = new System.Drawing.Point(130, 3);
+            this.Proveedor_Productos.Name = "Proveedor_Productos";
+            this.Proveedor_Productos.Size = new System.Drawing.Size(121, 20);
+            this.Proveedor_Productos.TabIndex = 1;
+            // 
+            // Descripcion_Productos
+            // 
+            this.Descripcion_Productos.CueText = "Descripción";
+            this.Descripcion_Productos.FormattingEnabled = true;
+            this.Descripcion_Productos.Location = new System.Drawing.Point(257, 3);
+            this.Descripcion_Productos.Name = "Descripcion_Productos";
+            this.Descripcion_Productos.Size = new System.Drawing.Size(375, 21);
+            this.Descripcion_Productos.TabIndex = 2;
+            this.Descripcion_Productos.SelectionChangeCommitted += new System.EventHandler(this.Descripcion_Productos_SelectionChangeCommitted);
+            // 
+            // Base_Productos
+            // 
+            this.Base_Productos.CueText = "Precio Base";
+            this.Base_Productos.Location = new System.Drawing.Point(638, 3);
+            this.Base_Productos.Name = "Base_Productos";
+            this.Base_Productos.Size = new System.Drawing.Size(121, 20);
+            this.Base_Productos.TabIndex = 3;
+            // 
+            // IVA_Productos
+            // 
+            this.IVA_Productos.CueText = "I.V.A.";
+            this.IVA_Productos.FormattingEnabled = true;
+            this.IVA_Productos.Location = new System.Drawing.Point(3, 30);
+            this.IVA_Productos.Name = "IVA_Productos";
+            this.IVA_Productos.Size = new System.Drawing.Size(121, 21);
+            this.IVA_Productos.TabIndex = 4;
+            // 
+            // PVP_Productos
+            // 
+            this.PVP_Productos.CueText = "P.V.P.";
+            this.PVP_Productos.FormattingEnabled = true;
+            this.PVP_Productos.Location = new System.Drawing.Point(130, 30);
+            this.PVP_Productos.Name = "PVP_Productos";
+            this.PVP_Productos.Size = new System.Drawing.Size(121, 21);
+            this.PVP_Productos.TabIndex = 5;
             // 
             // NIF_Proveedores
             // 
