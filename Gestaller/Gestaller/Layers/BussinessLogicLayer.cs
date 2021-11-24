@@ -56,14 +56,9 @@ namespace Gestaller
             return _dataLayerDummie.GetTaxRate();
         }
 
-        public void newContact(Contact contact)
+        public List<Iva> getIvas()
         {
-            _dataLayerDummie.addContact(contact);
-        }
-
-        public void newVehicle(Vehicle vehicle)
-        {
-            _dataLayerDummie.addVehicle(vehicle);
+            return _dataLayerDummie.getIvas();
         }
     }
 }

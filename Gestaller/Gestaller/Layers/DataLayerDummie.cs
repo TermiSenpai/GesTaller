@@ -12,8 +12,15 @@ namespace Gestaller
         {
             List<Iva> ivas = new List<Iva>();
 
-            Iva firstIva = new Iva(21, "normal");
-            Iva secondIva = new Iva(2, "reducido");
+            Iva firstIva = new Iva();
+
+            firstIva.iva = 21;
+            firstIva.description = "Normal";
+
+            Iva secondIva = new Iva();
+
+            secondIva.iva = 2;
+            secondIva.description = "reducido";
 
             ivas.Add(firstIva);
             ivas.Add(secondIva);

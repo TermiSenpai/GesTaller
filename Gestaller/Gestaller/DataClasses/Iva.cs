@@ -19,8 +19,8 @@ namespace Gestaller
             this.description = description;
         }
 
-        int iva                 { get; set; }
-        string description      { get; set; }
+        public int iva                 { get; set; }
+        public string description      { get; set; }
 
     }
 }

@@ -482,7 +482,6 @@ namespace Gestaller
             this.cueTextBoxHost.Name = "cueTextBoxHost";
             this.cueTextBoxHost.Size = new System.Drawing.Size(121, 23);
             this.cueTextBoxHost.TabIndex = 1;
-            this.cueTextBoxHost.TextChanged += new System.EventHandler(this.cueTextBox1_TextChanged);
             // 
             // cueTextBoxPuerto
             // 
@@ -502,6 +501,7 @@ namespace Gestaller
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "OptionsView";
             this.Text = "Opciones";
+            this.Load += new System.EventHandler(this.OptionsView_Load);
             this.tableOpciones.ResumeLayout(false);
             this.tableOpciones.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewIVA)).EndInit();
