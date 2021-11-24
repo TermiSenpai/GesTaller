@@ -4,16 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Gestaller.DataClasses
+namespace Gestaller
 {
-    class Iva
+    public class Iva
     {
-        Iva()
+        public Iva()
         {
 
         }
 
-        Iva(int iva, string description)
+        public Iva(int iva, string description)
         {
             this.iva = iva;
             this.description = description;
