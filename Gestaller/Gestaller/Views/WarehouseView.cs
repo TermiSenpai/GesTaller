@@ -30,6 +30,7 @@ namespace Gestaller
         {
             getDB();
             addControls();
+            setComboItems();
         }
         
         private void Grid_Productos_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
@@ -65,6 +66,17 @@ namespace Gestaller
         #endregion
 
         #region private methods
+
+        private void setComboItems()
+        {
+            List<Item> items = getItems();
+            for(int i = 0; i<items.Count(); i++)
+            {
+                Referecia_Productos.Items.Add(items[i]);
+                Descripcion_Productos.Items.Add(items[i]);
+                PVP_Productos.Items.Add(items[i]);
+            }
+        }
 
         private void selectItem()
         {
