@@ -8,10 +8,29 @@ namespace Gestaller
 {
     class DataLayerDummie
     {
-            List<Contact> _contacts = new List<Contact>();
-            
+        public List<Iva> getIvas()
+        {
+            List<Iva> ivas = new List<Iva>();
+
+            Iva firstIva = new Iva();
+
+            firstIva.iva = 21;
+            firstIva.description = "Normal";
+
+            Iva secondIva = new Iva();
+
+            secondIva.iva = 2;
+            secondIva.description = "reducido";
+
+            ivas.Add(firstIva);
+            ivas.Add(secondIva);
+
+            return ivas;
+        }
+
         public List<Contact> GetContacts()
         {
+            List<Contact> contacts = new List<Contact>();
 
             Contact firstContact = new Contact();
             firstContact.id = 1;
@@ -41,10 +60,10 @@ namespace Gestaller
             secondContact.phone = "989 87 75 29";
             secondContact.mobile = "684 11 23 16";
 
-            _contacts.Add(firstContact);
-            _contacts.Add(secondContact);
+            contacts.Add(firstContact);
+            contacts.Add(secondContact);
 
-            return _contacts;
+            return contacts;
         }
 
         public List<Vehicle> GetVehicles()
@@ -111,21 +130,6 @@ namespace Gestaller
             List<TaxRate> taxRates = new List<TaxRate>();
             taxRates.Add(new TaxRate(1, "Tax1"));
             return taxRates;
-        }
-
-        public void addContact(Contact contact)
-        {
-            contact.id = _contacts.Count();
-
-            _contacts.Add(contact);
-        }
-        public void addVehicle(Vehicle vehicle)
-        {
-/*
-            vehicle.id = _vehicles.Count();
-
-            _vehicles.Add(vehicle);
-*/
         }
     }
 }
