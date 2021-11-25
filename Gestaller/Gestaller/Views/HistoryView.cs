@@ -20,21 +20,40 @@ namespace Gestaller
 
         #region events
 
-        private void HistoryView_Load(object sender, EventArgs e)
-        {
-            getDB();
-        }
+        private void HistoryView_Load(object sender, EventArgs e) => getDB();
         
-        private void button1Hist_Contable_Ver_Click(object sender, EventArgs e)
+        #endregion
+
+        #region private methods
+
+        // busca las facturas entre el rango de fechas
+
+        // obtiene la lista de ordenes y la selecciona como source para el grid
+        private void getDB()
         {
-            dateSearch();
+            List<Order> orders = getOrders();
+
+            dataGridView1Hist_Contable.DataSource = orders;
+            dataGridView1.DataSource = orders;
+            dataGridView2.DataSource = orders;
+        }
+
+        // Obtiene la lista de ordenes del bussiness layer
+        private List<Order> getOrders()
+        {
+            return _bussinessLogicLayer.GetOrders();
         }
 
         #endregion
 
-        #region provate methods
+        #region contable events
+        
+        private void button1Hist_Contable_Ver_Click(object sender, EventArgs e) => dateSearch();
 
-        // busca las facturas entre el rango de fechas
+        #endregion
+
+        #region contable private methods
+        
         private void dateSearch()
         {
             DateTime dateIni = dateTimePicker1Hist_Contable_FechaInicio.Value;
@@ -49,20 +68,6 @@ namespace Gestaller
                 }             
             }
             dataGridView1Hist_Contable.DataSource = dateOrders;
-        }
-
-        // obtiene la lista de ordenes y la selecciona como source para el grid
-        private void getDB()
-        {
-            List<Order> orders = getOrders();
-
-            dataGridView1Hist_Contable.DataSource = orders;
-        }
-
-        // Obtiene la lista de ordenes del bussiness layer
-        private List<Order> getOrders()
-        {
-            return _bussinessLogicLayer.GetOrders();
         }
 
         #endregion
