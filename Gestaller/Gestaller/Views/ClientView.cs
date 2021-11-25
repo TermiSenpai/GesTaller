@@ -37,7 +37,10 @@ namespace Gestaller
         private void getDB()
         {
             List<ContactVehicle> contactsVehicles = getContactsVehicles();
+            List<Contact> contacts = _bussinessLogicLayer.GetContacts();
             Grid_ClienteVehiculo.DataSource = contactsVehicles;
+            Grid_DatosBancarios.DataSource = contacts;
+            Grid_OtrasDirecciones.DataSource = contacts;
         }
 
         // Vaciar texto (botón vaciar)
