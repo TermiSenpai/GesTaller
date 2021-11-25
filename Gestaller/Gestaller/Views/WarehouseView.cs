@@ -25,7 +25,12 @@ namespace Gestaller
         }
 
         #region events
-        
+
+        private void btVaciar_Proveedores_Click(object sender, EventArgs e)
+        {
+            clearText();
+        }
+
         private void WarehouseView_Load(object sender, EventArgs e)
         {
             getDB();
@@ -128,6 +133,25 @@ namespace Gestaller
             _controls.Add(IVA_Productos);
             _controls.Add(PVP_Productos);
             _controls.Add(Detallada_Productos);
+
+            _controls.Add(NIF_Proveedores);
+            _controls.Add(Nombre_Proveedores);
+            _controls.Add(Descripcion_Productos);
+            _controls.Add(Localidad_Proveedores);
+            _controls.Add(Direccion_Proveedores);
+            _controls.Add(Provincia_Proveedores);
+            _controls.Add(CP_Proveedores);
+            _controls.Add(Movil_Proveedores);
+            _controls.Add(Telefono_Proveedores);
+            _controls.Add(Fax_Proveedores);
+            _controls.Add(Email_Proveedores);
+            _controls.Add(NoCuenta_Proveedores);
+            _controls.Add(Entidad_Proveedores);
+            _controls.Add(firmaPago_Proveedores);
+            _controls.Add(diasPago_Proveedores);
+            _controls.Add(Localidad2_Proveedores);
+            _controls.Add(Direccion2_Proveedores);
+            _controls.Add(Provincia2_Proveedores);
         }
 
         private void getDB()
@@ -144,5 +168,6 @@ namespace Gestaller
 
         #endregion
 
+        
     }
 }
