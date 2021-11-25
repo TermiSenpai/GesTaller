@@ -44,27 +44,27 @@ namespace Gestaller
             this.button1Hist_Contable_Ver = new System.Windows.Forms.Button();
             this.dataGridView1Hist_Contable = new System.Windows.Forms.DataGridView();
             this.panel2Hist_Contable = new System.Windows.Forms.Panel();
-            this.cueTextBox1 = new Gestaller.Views.CueTextBox();
             this.tabPageHistFacturas = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel1Hist_Facturas = new System.Windows.Forms.TableLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.cueTextBox2 = new Gestaller.Views.CueTextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.cueComboBox1 = new Gestaller.Views.CueComboBox();
-            this.cueComboBox2 = new Gestaller.Views.CueComboBox();
-            this.cueComboBox3 = new Gestaller.Views.CueComboBox();
-            this.cueComboBox4 = new Gestaller.Views.CueComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.tabPageHistDeposito = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel1Hist_Depositos = new System.Windows.Forms.TableLayoutPanel();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.cueTextBox1 = new Gestaller.Views.CueTextBox();
+            this.cueTextBox2 = new Gestaller.Views.CueTextBox();
+            this.cueComboBox1 = new Gestaller.Views.CueComboBox();
+            this.cueComboBox2 = new Gestaller.Views.CueComboBox();
+            this.cueComboBox3 = new Gestaller.Views.CueComboBox();
+            this.cueComboBox4 = new Gestaller.Views.CueComboBox();
             this.cueComboBox5 = new Gestaller.Views.CueComboBox();
             this.cueComboBox6 = new Gestaller.Views.CueComboBox();
             this.cueComboBox7 = new Gestaller.Views.CueComboBox();
             this.cueComboBox8 = new Gestaller.Views.CueComboBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.tabControl1Historial.SuspendLayout();
             this.tabPageHistContable.SuspendLayout();
             this.tableHist_Contable.SuspendLayout();
@@ -247,16 +247,6 @@ namespace Gestaller
             this.panel2Hist_Contable.Size = new System.Drawing.Size(783, 23);
             this.panel2Hist_Contable.TabIndex = 4;
             // 
-            // cueTextBox1
-            // 
-            this.cueTextBox1.CueText = "Total €";
-            this.cueTextBox1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.cueTextBox1.Location = new System.Drawing.Point(0, 0);
-            this.cueTextBox1.Margin = new System.Windows.Forms.Padding(9, 3, 3, 3);
-            this.cueTextBox1.Name = "cueTextBox1";
-            this.cueTextBox1.Size = new System.Drawing.Size(121, 20);
-            this.cueTextBox1.TabIndex = 0;
-            // 
             // tabPageHistFacturas
             // 
             this.tabPageHistFacturas.Controls.Add(this.tableLayoutPanel1Hist_Facturas);
@@ -297,16 +287,6 @@ namespace Gestaller
             this.panel1.Size = new System.Drawing.Size(783, 23);
             this.panel1.TabIndex = 5;
             // 
-            // cueTextBox2
-            // 
-            this.cueTextBox2.CueText = "Total € sin I.V.A.";
-            this.cueTextBox2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.cueTextBox2.Location = new System.Drawing.Point(0, 0);
-            this.cueTextBox2.Margin = new System.Windows.Forms.Padding(9, 3, 3, 3);
-            this.cueTextBox2.Name = "cueTextBox2";
-            this.cueTextBox2.Size = new System.Drawing.Size(121, 20);
-            this.cueTextBox2.TabIndex = 0;
-            // 
             // dataGridView1
             // 
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
@@ -328,42 +308,6 @@ namespace Gestaller
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(780, 58);
             this.flowLayoutPanel1.TabIndex = 1;
-            // 
-            // cueComboBox1
-            // 
-            this.cueComboBox1.CueText = "Matrícula";
-            this.cueComboBox1.FormattingEnabled = true;
-            this.cueComboBox1.Location = new System.Drawing.Point(3, 3);
-            this.cueComboBox1.Name = "cueComboBox1";
-            this.cueComboBox1.Size = new System.Drawing.Size(121, 21);
-            this.cueComboBox1.TabIndex = 0;
-            // 
-            // cueComboBox2
-            // 
-            this.cueComboBox2.CueText = "Cliente";
-            this.cueComboBox2.FormattingEnabled = true;
-            this.cueComboBox2.Location = new System.Drawing.Point(130, 3);
-            this.cueComboBox2.Name = "cueComboBox2";
-            this.cueComboBox2.Size = new System.Drawing.Size(121, 21);
-            this.cueComboBox2.TabIndex = 1;
-            // 
-            // cueComboBox3
-            // 
-            this.cueComboBox3.CueText = "Marca";
-            this.cueComboBox3.FormattingEnabled = true;
-            this.cueComboBox3.Location = new System.Drawing.Point(257, 3);
-            this.cueComboBox3.Name = "cueComboBox3";
-            this.cueComboBox3.Size = new System.Drawing.Size(121, 21);
-            this.cueComboBox3.TabIndex = 2;
-            // 
-            // cueComboBox4
-            // 
-            this.cueComboBox4.CueText = "Modelo";
-            this.cueComboBox4.FormattingEnabled = true;
-            this.cueComboBox4.Location = new System.Drawing.Point(384, 3);
-            this.cueComboBox4.Name = "cueComboBox4";
-            this.cueComboBox4.Size = new System.Drawing.Size(121, 21);
-            this.cueComboBox4.TabIndex = 3;
             // 
             // label1
             // 
@@ -427,6 +371,73 @@ namespace Gestaller
             this.flowLayoutPanel2.Size = new System.Drawing.Size(780, 58);
             this.flowLayoutPanel2.TabIndex = 3;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.label2.Location = new System.Drawing.Point(3, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(780, 23);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "HISTORIAL DE DEPÓSITOS";
+            // 
+            // cueTextBox1
+            // 
+            this.cueTextBox1.CueText = "Total €";
+            this.cueTextBox1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.cueTextBox1.Location = new System.Drawing.Point(0, 0);
+            this.cueTextBox1.Margin = new System.Windows.Forms.Padding(9, 3, 3, 3);
+            this.cueTextBox1.Name = "cueTextBox1";
+            this.cueTextBox1.Size = new System.Drawing.Size(121, 20);
+            this.cueTextBox1.TabIndex = 0;
+            // 
+            // cueTextBox2
+            // 
+            this.cueTextBox2.CueText = "Total € sin I.V.A.";
+            this.cueTextBox2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.cueTextBox2.Location = new System.Drawing.Point(0, 0);
+            this.cueTextBox2.Margin = new System.Windows.Forms.Padding(9, 3, 3, 3);
+            this.cueTextBox2.Name = "cueTextBox2";
+            this.cueTextBox2.Size = new System.Drawing.Size(121, 20);
+            this.cueTextBox2.TabIndex = 0;
+            // 
+            // cueComboBox1
+            // 
+            this.cueComboBox1.CueText = "Matrícula";
+            this.cueComboBox1.FormattingEnabled = true;
+            this.cueComboBox1.Location = new System.Drawing.Point(3, 3);
+            this.cueComboBox1.Name = "cueComboBox1";
+            this.cueComboBox1.Size = new System.Drawing.Size(121, 21);
+            this.cueComboBox1.TabIndex = 0;
+            // 
+            // cueComboBox2
+            // 
+            this.cueComboBox2.CueText = "Cliente";
+            this.cueComboBox2.FormattingEnabled = true;
+            this.cueComboBox2.Location = new System.Drawing.Point(130, 3);
+            this.cueComboBox2.Name = "cueComboBox2";
+            this.cueComboBox2.Size = new System.Drawing.Size(121, 21);
+            this.cueComboBox2.TabIndex = 1;
+            // 
+            // cueComboBox3
+            // 
+            this.cueComboBox3.CueText = "Marca";
+            this.cueComboBox3.FormattingEnabled = true;
+            this.cueComboBox3.Location = new System.Drawing.Point(257, 3);
+            this.cueComboBox3.Name = "cueComboBox3";
+            this.cueComboBox3.Size = new System.Drawing.Size(121, 21);
+            this.cueComboBox3.TabIndex = 2;
+            // 
+            // cueComboBox4
+            // 
+            this.cueComboBox4.CueText = "Modelo";
+            this.cueComboBox4.FormattingEnabled = true;
+            this.cueComboBox4.Location = new System.Drawing.Point(384, 3);
+            this.cueComboBox4.Name = "cueComboBox4";
+            this.cueComboBox4.Size = new System.Drawing.Size(121, 21);
+            this.cueComboBox4.TabIndex = 3;
+            // 
             // cueComboBox5
             // 
             this.cueComboBox5.CueText = "Matrícula";
@@ -462,17 +473,6 @@ namespace Gestaller
             this.cueComboBox8.Name = "cueComboBox8";
             this.cueComboBox8.Size = new System.Drawing.Size(121, 21);
             this.cueComboBox8.TabIndex = 3;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.label2.Location = new System.Drawing.Point(3, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(780, 23);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "HISTORIAL DE DEPÓSITOS";
             // 
             // HistoryView
             // 
