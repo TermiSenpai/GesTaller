@@ -44,10 +44,7 @@ namespace Gestaller
         }
 
         // Vaciar texto (botón vaciar)
-        private void button1_Click(object sender, EventArgs e)
-        {
-            clearText();
-        }
+        private void button1_Click(object sender, EventArgs e) => clearText();
 
         // Al hacer click en cualquier celda se activa el evento
         private void dataGrid_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
@@ -62,6 +59,7 @@ namespace Gestaller
             setToComboBox();
         }
 
+        // Click en el boton añadir
         private void button3AnadirCv_Click(object sender, EventArgs e) => newContact();
 
         #endregion
@@ -246,48 +244,56 @@ namespace Gestaller
 
         #region comboBoxSelectionEvent
 
+        // selección y cambio de valor en cueComboBoxEmpresa
         private void cueComboBoxEmpresa_SelectionChangeCommitted(object sender, EventArgs e)
         {
             _comboIndex = Empresa_ClienteVehiculo.SelectedIndex;
             changesComboBoxes();
         }
 
+        // selección y cambio de valor en cueComboBoxCIF
         private void cueComboBoxCIF_SelectionChangeCommitted(object sender, EventArgs e)
         {
             _comboIndex = CIF_ClienteVehiculo.SelectedIndex;
             changesComboBoxes();
         }
 
+        // selección y cambio de valor en cueComboBoxNombre
         private void cueComboBoxNombre_SelectionChangeCommitted(object sender, EventArgs e)
         {
             _comboIndex = Nombre_ClienteVehiculo.SelectedIndex;
             changesComboBoxes();
         }
 
+        // selección y cambio de valor en cueComboBoxDireccion
         private void cueComboBoxDireccion_SelectionChangeCommitted(object sender, EventArgs e)
         {
             _comboIndex = Direccion_ClienteVehiculo.SelectedIndex;
             changesComboBoxes();
         }
 
+        // selección y cambio de valor en cueComboBoxMovil
         private void cueComboBoxMovil_SelectionChangeCommitted(object sender, EventArgs e)
         {
             _comboIndex = Movil_ClienteVehiculo.SelectedIndex;
             changesComboBoxes();
         }
 
+        // selección y cambio de valor en cueComboBoxEmail
         private void cueComboBoxEmail_SelectionChangeCommitted(object sender, EventArgs e)
         {
             _comboIndex = Email_ClienteVehiculo.SelectedIndex;
             changesComboBoxes();
         }
 
+        // selección y cambio de valor en cueComboBoxMatricula
         private void cueComboBoxMatricula_SelectionChangeCommitted(object sender, EventArgs e)
         {
             _comboIndex = Matricula_ClienteVehiculo.SelectedIndex;
             changesComboBoxes();
         }
 
+        // selección y cambio de valor en cueComboBoxBastidor
         private void cueComboBoxBastidor_SelectionChangeCommitted(object sender, EventArgs e)
         {
             _comboIndex = Bastidor_ClienteVehiculo.SelectedIndex;
