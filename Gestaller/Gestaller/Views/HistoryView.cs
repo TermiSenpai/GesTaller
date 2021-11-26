@@ -20,13 +20,12 @@ namespace Gestaller
 
         #region events
 
+        // Al cargar la vista
         private void HistoryView_Load(object sender, EventArgs e) => getDB();
         
         #endregion
 
         #region private methods
-
-        // busca las facturas entre el rango de fechas
 
         // obtiene la lista de ordenes y la selecciona como source para el grid
         private void getDB()
@@ -48,12 +47,14 @@ namespace Gestaller
 
         #region contable events
         
+        // Click en boton ver
         private void button1Hist_Contable_Ver_Click(object sender, EventArgs e) => dateSearch();
 
         #endregion
 
         #region contable private methods
-        
+
+        // busca las facturas entre el rango de fechas
         private void dateSearch()
         {
             DateTime dateIni = dateTimePicker1Hist_Contable_FechaInicio.Value;

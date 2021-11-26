@@ -22,54 +22,61 @@ namespace Gestaller
         public IncomingView()
         {
             InitializeComponent();
-            addControls();
         }
 
         #region events
 
+        // Al cargar la vista
         private void IncomingView_Load(object sender, EventArgs e)
         {
+            //añade controles
+            addControls(); 
+            // obtiene la lista de incomings
             getIncomingDB();
+            // obtiene la lista de vehiculos
             getVehicleDB();
+            // obtiene la lista de incomings y las añade a los items respectivos del comboBox
             incomingItemSet();
         }
 
-        private void button7Vaciar_Click(object sender, EventArgs e)
-        {
-            clearText();
-        }
+        // Al hacer click en el boton vaciar
+        private void button7Vaciar_Click(object sender, EventArgs e) => clearText();
 
+        // Al hacer click en cualquier dato del dataGrid de vehiculos
         private void dataGridViewVehicles_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
             int selectedCell = Grid_Vehicles_Recepciones.CurrentCell.RowIndex;
             cellClickEvent(selectedCell);
         }
 
+        // Al hacer click en cualquier dato del dataGrid de Incomings
         private void dataGridViewDepositos_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
             int selectedCell = Grid_Depositos_Recepciones.CurrentCell.RowIndex;
             cellClickEvent(selectedCell);
         }
         
-        private void button1Create_Click(object sender, EventArgs e)
-        {
-            createIncoming();
-        }
+        // Al hacer click en el botón crear
+        private void button1Create_Click(object sender, EventArgs e) => createIncoming();
 
         #endregion
 
         #region private methods
 
+        // TODO
+        // Genera un incoming nuevo
         private void createIncoming()
         {
 
         }
 
+        // CueComboBox al ser modificado
         private void changesComboBoxes()
         {
             List<ContactVehicle> contactsVehicles = getContactsVehicles();
             List<Incoming> incomings = getIncomings();
-
+            
+            // Cambia el contacVehicle e incoming seleccionado a otro
             selectContactVehicle(contactsVehicles[_comboIndex]);
             selectIncoming(incomings[_comboIndex]);
 
@@ -95,6 +102,8 @@ namespace Gestaller
                 if (control is CueComboBox)
                 {
                     ((CueComboBox)control).ResetText();
+
+                    // Genera un crasheo que no se encontró la causa y se solucionó comentando la linea
                     //((CueComboBox)control).SelectedIndex = -1;
                 }
 
@@ -120,14 +129,14 @@ namespace Gestaller
             _controls.Add(Matricula_Recepciones);
             _controls.Add(Marca_Recepciones);
             _controls.Add(Modelo_Recepciones);
-            _controls.Add(Km_Vehiculo_Recepciones);
-            _controls.Add(TipoMotor_Recepciones);
-            _controls.Add(Bastidor_Recepciones);
-            _controls.Add(Recepcion_Recepciones); // recepción
-            _controls.Add(Estimado_Recepciones); // Estimado
-            _controls.Add(Entrega_Recepciones); // Entrega
-            _controls.Add(Km_Recepciones_Recepciones); // kilometros recepciones
-            _controls.Add(Daños_Recepciones); // daños
+            _controls.Add(Km_Vehiculo_Recepciones);         // Kilómetros del vehiculo
+            _controls.Add(TipoMotor_Recepciones);           // Tipo de motor
+            _controls.Add(Bastidor_Recepciones);            // Bastidor
+            _controls.Add(Recepcion_Recepciones);           // recepción
+            _controls.Add(Estimado_Recepciones);            // Estimado
+            _controls.Add(Entrega_Recepciones);             // Entrega
+            _controls.Add(Km_Recepciones_Recepciones);      // kilometros recepciones
+            _controls.Add(Daños_Recepciones);               // daños
         }
 
         // Obtener datos de incomings
@@ -147,16 +156,10 @@ namespace Gestaller
         }
 
         // ContactVehicle activo
-        private void selectContactVehicle(ContactVehicle contactVehicle)
-        {
-            _clientVehicle = contactVehicle;
-        }
+        private void selectContactVehicle(ContactVehicle contactVehicle) => _clientVehicle = contactVehicle;
 
         // Incoming activo
-        private void selectIncoming(Incoming incoming)
-        {
-            _incoming = incoming;
-        }
+        private void selectIncoming(Incoming incoming) => _incoming = incoming;
 
         // Añade los elementos activos al valor del comboBox
         private void setToComboBox()

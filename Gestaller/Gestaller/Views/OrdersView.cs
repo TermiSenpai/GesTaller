@@ -28,6 +28,7 @@ namespace Gestaller
 
         #region events
 
+        // Al cargar la vista
         private void OrdersView_Load(object sender, EventArgs e)
         {
             getDB();
@@ -39,6 +40,7 @@ namespace Gestaller
 
         #region private methods
 
+        // Cambia los elementos activos a los nuevos
         private void changesActiveElements()
         {
             List<ContactVehicle> contactsVehicles = getContactsVehicles();
@@ -50,10 +52,11 @@ namespace Gestaller
             setToComboBox();
         }
 
+        // Modifica el item cargado en los comboBoxes
         private void setItemsToComboBox()
         {
             List<Item> items = getItems();
-
+            // Dependiendo del index tab en el que se encuentre
             switch (ordenesTab.SelectedIndex)
             {
                 // Presupuesto
@@ -79,8 +82,10 @@ namespace Gestaller
             }
         }
 
+        // Modifica el valor o texto con los elementos activos 
         private void setToComboBox()
         {
+            // Dependiendo del index tab en el que se encuentre
             switch (ordenesTab.SelectedIndex)
             {
                 // Presupuesto tab
@@ -124,6 +129,7 @@ namespace Gestaller
             }
         }
 
+        // Obtiene los datos y los añade al dataGrid
         private void getDB()
         {
             List<Item> items = _businessLogicLayer.GetItems();
@@ -132,33 +138,43 @@ namespace Gestaller
             Grid_Factura.DataSource = items;
         }
 
+        // Modifica el contacVehicle actual por el nuevo
         private void selectActiveContactVehicle(ContactVehicle contactVehicle) => _clientVehicle = contactVehicle;
 
+        // Modifica la orden actual por el nuevo
         private void selectActiveOrder(Order order) => _order = order;
 
+        // Obtiene la lista de contactsVehicles
         private List<ContactVehicle> getContactsVehicles() => _businessLogicLayer.GetContactVehicles();
 
+        // Obtiene la lista de ordenes
         private List<Order> getOrders() => _businessLogicLayer.GetOrders();
 
+        // Obtiene la lista de items
         private List<Item> getItems() => _businessLogicLayer.GetItems();
 
+        // Añade los items a la lista del comboBox
         private void setComboItems()
         {
             List<Item> items = getItems();
 
             for (int i = 0; i < items.Count(); i++)
             {
+                // Presupuesto
                 Referencia_Presupuesto.Items.Add(items[i].reference);
                 Descripción_Presupuesto.Items.Add(items[i].description);
 
+                // Proforma
                 Referencia_Proforma.Items.Add(items[i].reference);
                 Descripción_Proforma.Items.Add(items[i].description);
 
+                // Factura
                 Referencia_Factura.Items.Add(items[i].reference);
                 Descripcion_Factura.Items.Add(items[i].description);
             }
         }
 
+        // añade los clientes a la lista de items del comboBox
         private void setClientItems()
         {
             List<ContactVehicle> contactsVehicles = _businessLogicLayer.GetContactVehicles();
@@ -202,6 +218,7 @@ namespace Gestaller
 
         #region budget events
 
+        // Al hacer click en cualquier dato del dataGrid de presupuestos
         private void dataGridView3_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e) => budgetCellClick();
 
         #region presupuesto client comboBox selection event
@@ -258,6 +275,7 @@ namespace Gestaller
 
         #region budget private methods
 
+        // modifica la celda activa con la que trabajamos y añade el item al comboBox
         void budgetCellClick()
         {
             _selectedCell = Grid_Presupuesto.CurrentCell.RowIndex;
@@ -271,6 +289,7 @@ namespace Gestaller
 
         #region proforma events
 
+        // Al hacer click en cualquier dato del grid de proforma
         private void Grid_Proforma_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e) => proformaCellClick();
 
         #region proforma comboBox selection event
@@ -327,6 +346,7 @@ namespace Gestaller
 
         #region proforma private methods
 
+        // Cambia la celda activa y añade en el comboBox el item seleccionado
         private void proformaCellClick()
         {
             _selectedCell = Grid_Proforma.CurrentCell.RowIndex;
@@ -340,6 +360,7 @@ namespace Gestaller
 
         #region invoice events
 
+        // Al hacer click en cualquier dato del grid de factura
         private void Grid_Factura_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e) => invoiceCellClick();
 
         #region invoice comboBox selection event
@@ -396,6 +417,7 @@ namespace Gestaller
 
         #region invoice private methods
 
+        // Modifica la celda y añade los items al comboBox
         private void invoiceCellClick()
         {
             _selectedCell = Grid_Presupuesto.CurrentCell.RowIndex;

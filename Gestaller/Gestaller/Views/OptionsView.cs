@@ -18,20 +18,28 @@ namespace Gestaller
             InitializeComponent();
         }
 
-        private void OptionsView_Load(object sender, EventArgs e)
-        {
-            getDB();
-        }
+        #region events
 
+        // Al cargar la vista
+        private void OptionsView_Load(object sender, EventArgs e) => getDB();
+
+        #endregion
+
+        #region private methods
+
+        // obtiene la base de datos del IVA
         private void getDB()
         {
             List<Iva> ivas = getIvas();
             dataGridViewIVA.DataSource = ivas;
         }
 
+        // obtiene la lista de IVAS
         private List<Iva> getIvas()
         {
             return _bussinessLogicLayer.getIvas();
         }
+
+        #endregion
     }
 }
