@@ -16,38 +16,33 @@ namespace Gestaller
         public MainMenu()
         {
             InitializeComponent();
-            adaptForm(IsOnScreen(this));
         }
 
         #region Eventos
-        private void btnClientes_Click(object sender, EventArgs e)
-        {
-            showChildForm(new ClientView());
-        }
-        private void btnRecepciones_Click(object sender, EventArgs e)
-        {
-            showChildForm(new IncomingView());
-        }
-        private void btnOrdenes_Click(object sender, EventArgs e)
-        {
-            showChildForm(new OrdersView());
-        }
-        private void btnHistorial_Click(object sender, EventArgs e)
-        {
-            showChildForm(new HistoryView());
-        }
-        private void btnAlmacen_Click(object sender, EventArgs e)
-        {
-            showChildForm(new WarehouseView());
-        }
-        private void btnOpciones_Click(object sender, EventArgs e)
-        {
-            showChildForm(new OptionsView());
-        }
+
+        // clientes btn
+        private void btnClientes_Click(object sender, EventArgs e) => showChildForm(new ClientView());
+        
+        // recepciones btn
+        private void btnRecepciones_Click(object sender, EventArgs e) => showChildForm(new IncomingView());
+
+        //ordenes btn
+        private void btnOrdenes_Click(object sender, EventArgs e) => showChildForm(new OrdersView());
+
+        // historial btn
+        private void btnHistorial_Click(object sender, EventArgs e) => showChildForm(new HistoryView());
+
+        // almacen btn
+        private void btnAlmacen_Click(object sender, EventArgs e) => showChildForm(new WarehouseView());
+
+        // opciones btn
+        private void btnOpciones_Click(object sender, EventArgs e) => showChildForm(new OptionsView());
 
         #endregion
 
         #region Funciones privadas
+        
+        // Añade el form seleccionado al panel y lo hace visible
         private void showChildForm(Form childForm)
         {
             //si hay un formulario activo se cierra
@@ -69,6 +64,7 @@ namespace Gestaller
             childForm.Show();
         }
 
+        // Comprueba si la vista es visible al cargarse el programa
         private bool IsOnScreen(Form form)
         {
             Screen[] screens = Screen.AllScreens;
@@ -84,8 +80,11 @@ namespace Gestaller
             }
             return false;
         }
+        
         // TODO
         // Detectar desaparición de segunda pantalla
+
+        // Si no es visible se ajusta a una posición donde si lo sea
         private void adaptForm(bool visible)
         { 
             if (!visible)
@@ -94,39 +93,8 @@ namespace Gestaller
             }
         }
 
-        #endregion
-
-        #region FormEvents
-        private void MainMenu_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            switch (WindowState)
-            {
-                case FormWindowState.Maximized:
-                    Properties.Settings.Default.Location = RestoreBounds.Location;
-                    Properties.Settings.Default.Size = RestoreBounds.Size;
-                    Properties.Settings.Default.Maximized = true;
-                    Properties.Settings.Default.Minimized = false;
-                    break;
-
-                case FormWindowState.Normal:
-                    Properties.Settings.Default.Location = Location;
-                    Properties.Settings.Default.Size = Size;
-                    Properties.Settings.Default.Maximized = false;
-                    Properties.Settings.Default.Minimized = false;
-                    break;
-
-                default:
-                    Properties.Settings.Default.Location = RestoreBounds.Location;
-                    Properties.Settings.Default.Size = RestoreBounds.Size;
-                    Properties.Settings.Default.Maximized = false;
-                    Properties.Settings.Default.Minimized = true;
-                    break;
-            }
-
-            Properties.Settings.Default.Save();
-        }
-
-        private void MainMenu_Load(object sender, EventArgs e)
+        // Carga las opciones guardadas en la ultima sesión
+        private void loadLastSettings()
         {
             if (Properties.Settings.Default.Maximized)
             {
@@ -149,6 +117,50 @@ namespace Gestaller
             }
         }
 
+        #endregion
+
+        #region FormEvents
+
+        // Al cerrar el programa
+        private void MainMenu_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            switch (WindowState)
+            {
+                case FormWindowState.Maximized:
+                    // Guarda la posición maximizada
+                    Properties.Settings.Default.Location = RestoreBounds.Location;
+                    Properties.Settings.Default.Size = RestoreBounds.Size;
+                    Properties.Settings.Default.Maximized = true;
+                    Properties.Settings.Default.Minimized = false;
+                    break;
+
+                case FormWindowState.Normal:
+                    // Guarda la posición y el tamaño
+                    Properties.Settings.Default.Location = Location;
+                    Properties.Settings.Default.Size = Size;
+                    Properties.Settings.Default.Maximized = false;
+                    Properties.Settings.Default.Minimized = false;
+                    break;
+
+                default:
+                    // Guarda la posición minimizada
+                    Properties.Settings.Default.Location = RestoreBounds.Location;
+                    Properties.Settings.Default.Size = RestoreBounds.Size;
+                    Properties.Settings.Default.Maximized = false;
+                    Properties.Settings.Default.Minimized = true;
+                    break;
+            }
+
+            // Guarda las propiedades
+            Properties.Settings.Default.Save();
+        }
+
+        // Al cargar la vista
+        private void MainMenu_Load(object sender, EventArgs e)
+        {
+            loadLastSettings();
+            adaptForm(IsOnScreen(this));
+        }
 
         #endregion
 
