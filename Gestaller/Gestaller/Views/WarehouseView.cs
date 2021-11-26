@@ -26,11 +26,7 @@ namespace Gestaller
 
         #region events
 
-        private void btVaciar_Proveedores_Click(object sender, EventArgs e)
-        {
-            clearText();
-        }
-
+        // Al cargar la vista
         private void WarehouseView_Load(object sender, EventArgs e)
         {
             getDB();
@@ -38,6 +34,10 @@ namespace Gestaller
             setComboItems();
         }
         
+        // Click en boton vaciar de proveedores
+        private void btVaciar_Proveedores_Click(object sender, EventArgs e) => clearText();
+        
+        // Al clickar en cualquier dato del dataGrid de productos
         private void Grid_Productos_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
             _currentIndex = Grid_Productos.CurrentCell.RowIndex;
@@ -45,10 +45,8 @@ namespace Gestaller
             itemToCombo();
         }
         
-        private void btVaciar_Productos_Click(object sender, EventArgs e)
-        {
-            clearText();
-        }
+        // click en bton vaciar de productos
+        private void btVaciar_Productos_Click(object sender, EventArgs e) =>  clearText();
 
         #region selectedComboBox
 
@@ -72,6 +70,7 @@ namespace Gestaller
 
         #region private methods
 
+        // añade los items en la lista del comboBox
         private void setComboItems()
         {
             List<Item> items = getItems();
@@ -83,12 +82,14 @@ namespace Gestaller
             }
         }
 
+        // Busca el item con la ID seleccionada
         private void selectItem()
         {
             List<Item> item = getItems();
             currentItem(item[_currentIndex]);
         }
 
+        // modifica el texto de los comboBoxes con el item activo
         private void itemToCombo()
         {
             Referecia_Productos.Text = _currentItem.reference.ToString();
@@ -97,11 +98,10 @@ namespace Gestaller
             PVP_Productos.Text = _currentItem.PVP.ToString();
         }
 
-        private void currentItem(Item item)
-        {
-            _currentItem = item;
-        }
+        // selecciona el item activo
+        private void currentItem(Item item) => _currentItem = item;
 
+        // Vacia el texto
         private void clearText()
         {
             foreach (Control control in _controls)
@@ -124,6 +124,7 @@ namespace Gestaller
             }
         }
 
+        // añade la lista de controles
         private void addControls()
         {
             _controls.Add(Referecia_Productos);
@@ -154,6 +155,7 @@ namespace Gestaller
             _controls.Add(Provincia2_Proveedores);
         }
 
+        // obtiene la lista de items y las muestra en el dataGrid
         private void getDB()
         {
             List<Item> items = getItems();
@@ -161,13 +163,12 @@ namespace Gestaller
             Grid_Productos.DataSource = items;
         }
 
+        // Obtiene la lista de items
         private List<Item> getItems()
         {
             return _bussinessLogicLayer.GetItems();
         }
 
         #endregion
-
-        
     }
 }
